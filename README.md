@@ -6,3 +6,16 @@ FuS-KG a KG covering information on activity performance, social role participat
 - Tania Bailoni: tbailoni@fbk.eu
 - Gianluca Apriceno: apriceno@fbk.eu
 - Mauro Dragoni: dragoni@fbk.eu.
+
+## Modules
+
+- fscore
+- fsacti
+- fsmumo
+- fstemp
+- fsreci
+- fsuser
+- fsfood
+- fsbarr
+- fsdise
+- fsguid
