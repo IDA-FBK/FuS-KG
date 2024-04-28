@@ -1,0 +1,168 @@
+@prefix : <https://w3id.org/fuskg/temp#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fsacti: <https://w3id.org/fuskg/activity#> .
+@prefix fsreci: <https://w3id.org/fuskg/recipe#> .
+@prefix fstemp: <https://w3id.org/fuskg/temporal#> .
+@base <https://w3id.org/fuskg/temp> .
+
+<https://w3id.org/fuskg/temp> rdf:type owl:Ontology ;
+                               owl:imports <http://www.w3.org/2006/time#2016> ,
+                                           <http://www.w3.org/ns/dcat> ;
+                               <http://purl.org/dc/terms/creator> "Gianluca Apriceno" ,
+                                                                  "Mauro Dragoni" ,
+                                                                  "Tania Bailoni" ;
+                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-sa/4.0/" ;
+                               <http://purl.org/dc/terms/publisher> "Digital Health and Wellbeing Research Group, Fondazione Bruno Kessler <https://digitalhealthcenter.fbk.eu>" ;
+                               <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>" ;
+                               <http://purl.org/dc/terms/title> "MuMoNut: A Multi-Modal Knowledge Graph for the Nutrition Domain" ;
+                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "mm" ;
+                               <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/MuMoNut/ontology/2023/1/mm#" ;
+                               owl:versionInfo 1.00 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/fuskg/temp#afterStep
+:afterStep rdf:type owl:ObjectProperty ;
+           rdfs:domain :TemporalStep ;
+           rdfs:range :TemporalStep ;
+           rdfs:comment "Property used to connect a TemporalStep with the next one."@en ,
+                        "after step"@en ,
+                        "step successivo"@it .
+
+
+###  https://w3id.org/fuskg/temp#beforeStep
+:beforeStep rdf:type owl:ObjectProperty ;
+            rdfs:domain :TemporalStep ;
+            rdfs:range :TemporalStep ;
+            rdfs:comment "Property used to connect a TemporalStep with the previous one."@en ;
+            rdfs:label "before step"@en ,
+                       "step precedente"@it .
+
+
+###  https://w3id.org/fuskg/temp#hasFirstRecipeStep
+:hasFirstRecipeStep rdf:type owl:ObjectProperty ;
+                    rdfs:domain <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
+                    rdfs:range :RecipeStep ;
+                    rdfs:comment "Property used to connect a Recipe with its first RecipeStep."@en ,
+                                 "has first recipe step" ;
+                    rdfs:label "ha step iniziale ricetta"@it .
+
+
+###  https://w3id.org/fuskg/temp#hasStepDescription
+:hasStepDescription rdf:type owl:ObjectProperty ;
+                    rdfs:domain :TemporalStep ;
+                    rdfs:range :StepDescription ;
+                    rdfs:comment "Property used to connect a Temporal Step with its corresponding StepDescription."@en ;
+                    rdfs:label "ha descrizione Step"@it ,
+                               "has Step Description"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/fuskg/temp#orderedStepBegin
+:orderedStepBegin rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :TemporalStep ;
+                  rdfs:range xsd:float ;
+                  rdfs:comment "Begin (frame or seconds) of a TemporalStep."@en ;
+                  rdfs:label "begin temporal step"@en ,
+                             "inizio step temporale"@it .
+
+
+###  https://w3id.org/fuskg/temp#orderedStepEnd
+:orderedStepEnd rdf:type owl:DatatypeProperty ;
+                rdfs:domain :TemporalStep ;
+                rdfs:range xsd:float ;
+                rdfs:comment "End (frame or seconds) of a TemporalStep."@en ;
+                rdfs:label "fine step temporale"@it ,
+                           "temporal step end"@en .
+
+
+###  https://w3id.org/fuskg/temp#resourceURL
+:resourceURL rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:anyURI ;
+             rdfs:comment "URL pointing to a resource."@en ;
+             rdfs:label "URL resource"@en ,
+                        "URL risorsa"@it .
+
+
+###  https://w3id.org/fuskg/temp#stepDescription
+:stepDescription rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :StepDescription ;
+                 rdfs:range xsd:string ;
+                 rdfs:comment "Text description of a StepDescription." ;
+                 rdfs:label "description step"@en ,
+                            "descrizione step"@it .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.fbk.eu/ontologies/virtualcoach#Recipe
+<http://www.fbk.eu/ontologies/virtualcoach#Recipe> rdf:type owl:Class .
+
+
+###  https://w3id.org/fuskg/temp#Recipe1m
+:Recipe1m rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
+          rdfs:comment "Concept denoting recipes of Recipe1m+ dataset."@en ;
+          rdfs:label "Recipe1m"@en ,
+                     "Recipe1m"@it .
+
+
+###  https://w3id.org/fuskg/temp#RecipeStep
+:RecipeStep rdf:type owl:Class ;
+            rdfs:subClassOf :TemporalStep ;
+            rdfs:comment "Concept used to represent a step of a recipe."@en ;
+            rdfs:label "Recipe step"@en ,
+                       "Step ricetta"@it .
+
+
+###  https://w3id.org/fuskg/temp#StepDescription
+:StepDescription rdf:type owl:Class ;
+                 rdfs:comment "Class used to represent a generic description step."@en ;
+                 rdfs:label "Descrizione step"@it ,
+                            "Step description"@en .
+
+
+###  https://w3id.org/fuskg/temp#Tasty
+:Tasty rdf:type owl:Class ;
+       rdfs:subClassOf <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
+       rdfs:comment "Concept denoting recipes of Tasty dataset."@en ;
+       rdfs:label "Tasty"@en ,
+                  "Tasty"@it .
+
+
+###  https://w3id.org/fuskg/temp#TemporalStep
+:TemporalStep rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/2006/time#ProperInterval> ;
+              rdfs:comment "Concept denoting a generic temporal step."@en ;
+              rdfs:label "Step temporale"@it ,
+                         "Temporal step"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

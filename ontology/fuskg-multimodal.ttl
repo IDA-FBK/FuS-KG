@@ -1,0 +1,223 @@
+@prefix : <https://w3id.org/fuskg/multimodal#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix fsacti: <https://w3id.org/fuskg/activity#> .
+@prefix fsmumo: <https://w3id.org/fuskg/multimodal#> .
+@prefix fsreci: <https://w3id.org/fuskg/recipe#> .
+@base <https://w3id.org/fuskg/multimodal> .
+
+<https://w3id.org/fuskg/multimodal> rdf:type owl:Ontology ;
+                                     owl:imports <http://www.w3.org/ns/dcat> ;
+                                     <http://purl.org/dc/terms/creator> "Gianluca Apriceno" ,
+                                                                        "Mauro Dragoni" ,
+                                                                        "Tania Bailoni" ;
+                                     <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-sa/4.0/" ;
+                                     <http://purl.org/dc/terms/publisher> "Digital Health and Wellbeing Research Group, Fondazione Bruno Kessler <https://digitalhealthcenter.fbk.eu>" ;
+                                     <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>" ;
+                                     <http://purl.org/dc/terms/title> "MuMoNut: A Multi-Modal Knowledge Graph for the Nutrition Domain" ;
+                                     <http://purl.org/vocab/vann/preferredNamespacePrefix> "mm" ;
+                                     <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/MuMoNut/ontology/2023/1/mm#" ;
+                                     owl:versionInfo 1.00 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/fuskg/multimodal#hasModalDescriptor
+fsmumo:hasModalDescriptor rdf:type owl:ObjectProperty ;
+                          rdfs:domain <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
+                          rdfs:range fsmumo:ModalDescriptor ;
+                          rdfs:comment "Property used to a connect a Recipe with its corresponding ModalDescriptor(s)."@en ;
+                          rdfs:label "ha descrittore modale"@it ,
+                                     "has modal descriptor" .
+
+
+###  https://w3id.org/fuskg/multimodal#hasModality
+fsmumo:hasModality rdf:type owl:ObjectProperty ;
+                   rdfs:domain fsmumo:ModalDescriptor ;
+                   rdfs:range fsmumo:Modality ;
+                   rdfs:comment "Property used to connect a ModalDescriptor with its correspondig Modality."@en ;
+                   rdfs:label "ha modalita'"@it ,
+                              "has modality"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/fuskg/multimodal#fps
+fsmumo:fps rdf:type owl:DatatypeProperty ;
+           rdfs:domain fsmumo:Video ;
+           rdfs:range xsd:float ;
+           rdfs:comment "Frame per second of a Video."@en ;
+           rdfs:label "Frame al secondo"@it ,
+                      "Frame per second"@en .
+
+
+###  https://w3id.org/fuskg/multimodal#hasPathInArtifact
+fsmumo:hasPathInArtifact rdf:type owl:DatatypeProperty ;
+                         rdfs:domain fsmumo:ModalDescriptor ;
+                         rdfs:range xsd:string ;
+                         rdfs:comment "Path inside an artifact (e.g., an archive)."@en ;
+                         rdfs:label "Path inside artifact"@en ,
+                                    "Percorso dentro artefatto"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#height
+fsmumo:height rdf:type owl:DatatypeProperty ;
+              rdfs:domain [ rdf:type owl:Class ;
+                            owl:unionOf ( fsmumo:Image
+                                          fsmumo:Video
+                                        )
+                          ] ;
+              rdfs:range xsd:int ;
+              rdfs:comment "Height of an image or video (related to resolution)."@en ;
+              rdfs:label "altezza"@it ,
+                         "height"@en .
+
+
+###  https://w3id.org/fuskg/multimodal#resourceURL
+fsmumo:resourceURL rdf:type owl:DatatypeProperty ;
+                   rdfs:domain fsmumo:ModalDescriptor ;
+                   rdfs:range xsd:anyURI ;
+                   rdfs:comment "URL pointing to a resource."@en ;
+                   rdfs:label "URL resource"@en ,
+                              "URL risorsa"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#width
+fsmumo:width rdf:type owl:DatatypeProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( fsmumo:Image
+                                         fsmumo:Video
+                                       )
+                         ] ;
+             rdfs:range xsd:int ;
+             rdfs:comment "Width of an image or video (related to resolution)."@en ;
+             rdfs:label "larghezza"@it ,
+                        "width"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.fbk.eu/ontologies/virtualcoach#Recipe
+<http://www.fbk.eu/ontologies/virtualcoach#Recipe> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2006/time#ProperInterval
+<http://www.w3.org/2006/time#ProperInterval> rdf:type owl:Class .
+
+
+###  https://w3id.org/fuskg/multimodal#Audio
+fsmumo:Audio rdf:type owl:Class ;
+             rdfs:subClassOf fsmumo:Modality ;
+             rdfs:comment "Concept denoting Audio modality."@en ;
+             rdfs:label "Audio"@en ,
+                        "Audio"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#DataStream
+fsmumo:DataStream rdf:type owl:Class ;
+                  rdfs:subClassOf fsmumo:Modality ;
+                  rdfs:comment "Concept denoting DataStream modality."@en ;
+                  rdfs:label "Data stream"@en ,
+                             "Stream dati"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#Image
+fsmumo:Image rdf:type owl:Class ;
+             rdfs:subClassOf fsmumo:Modality ;
+             rdfs:comment "Concept denoting Image modality."@en ;
+             rdfs:label "Image"@en ,
+                        "Immagine"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#ModalDescriptor
+fsmumo:ModalDescriptor rdf:type owl:Class ;
+                       rdfs:subClassOf <http://www.w3.org/ns/dcat#Resource> ;
+                       rdfs:comment "Concept used to connect a resource with its modality."@en ;
+                       rdfs:label "Descrittore modale"@it ,
+                                  "Modal descriptor"@en .
+
+
+###  https://w3id.org/fuskg/multimodal#Modality
+fsmumo:Modality rdf:type owl:Class ;
+                rdfs:comment "Parent class used to specify a data modality of a resource"@en ;
+                rdfs:label "Modalita'"@it ,
+                           "Modality"@en .
+
+
+###  https://w3id.org/fuskg/multimodal#Recipe1m
+fsmumo:Recipe1m rdf:type owl:Class ;
+                rdfs:subClassOf <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
+                rdfs:comment "Concept denoting recipes of Recipe1m+ dataset."@en ;
+                rdfs:label "Recipe1m"@en ,
+                           "Recipe1m"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#RecipeStep
+fsmumo:RecipeStep rdf:type owl:Class ;
+                  rdfs:subClassOf fsmumo:TemporalStep ;
+                  rdfs:comment "Concept used to represent a step of a recipe."@en ;
+                  rdfs:label "Recipe step"@en ,
+                             "Step ricetta"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#Tasty
+fsmumo:Tasty rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
+             rdfs:comment "Concept denoting recipes of Tasty dataset."@en ;
+             rdfs:label "Tasty"@en ,
+                        "Tasty"@it .
+
+
+###  https://w3id.org/fuskg/multimodal#TemporalStep
+fsmumo:TemporalStep rdf:type owl:Class ;
+                    rdfs:subClassOf <http://www.w3.org/2006/time#ProperInterval> ;
+                    rdfs:comment "Concept denoting a generic temporal step."@en ;
+                    rdfs:label "Step temporale"@it ,
+                               "Temporal step"@en .
+
+
+###  https://w3id.org/fuskg/multimodal#Text
+fsmumo:Text rdf:type owl:Class ;
+            rdfs:subClassOf fsmumo:Modality ;
+            rdfs:comment "Concept denoting Text modality."@en ;
+            rdfs:label "Testo"@it ,
+                       "Text"@en .
+
+
+###  https://w3id.org/fuskg/multimodal#Video
+fsmumo:Video rdf:type owl:Class ;
+             rdfs:subClassOf fsmumo:Modality ;
+             rdfs:comment "Concept denoting Video modality."@en ;
+             rdfs:label "Video"@en ,
+                        "Video"@it .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
