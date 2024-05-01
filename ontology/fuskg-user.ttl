@@ -1,28 +1,28 @@
-@prefix : <http://www.fbk.eu/ontologies/virtualcoach#> .
+@prefix : <https://w3id.org/fuskg/user#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix fsuser: <https://w3id.org/fuskg/user#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix virtualcoach: <http://www.fbk.eu/ontologies/virtualcoach#> .
-@base <http://www.fbk.eu/ontologies/virtualcoach> .
+@base <https://w3id.org/fuskg/user> .
 
-<http://www.fbk.eu/ontologies/virtualcoach> rdf:type owl:Ontology ;
-                                             dcterms:creator "Claudio Eccher" ,
-                                                             "Mauro Dragoni" ,
-                                                             "Rosa Maimone" ,
-                                                             "Tania Bailoni" ;
-                                             dcterms:issued "2017-05-02"^^xsd:date ;
-                                             dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-                                             dcterms:modified "2017-05-14"^^xsd:date ;
-                                             dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>" ;
-                                             dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
-                                             dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
-                                             vann:preferredNamespacePrefix "vc" ;
-                                             vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#" ;
-                                             owl:versionInfo "1.02" .
+<https://w3id.org/fuskg/user> rdf:type owl:Ontology ;
+                               dcterms:creator "Claudio Eccher"^^xsd:string ,
+                                               "Mauro Dragoni"^^xsd:string ,
+                                               "Rosa Maimone"^^xsd:string ,
+                                               "Tania Bailoni"^^xsd:string ;
+                               dcterms:issued "2017-05-02"^^xsd:date ;
+                               dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+                               dcterms:modified "2017-05-14"^^xsd:date ;
+                               dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
+                               dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
+                               dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
+                               vann:preferredNamespacePrefix "vc"^^xsd:string ;
+                               vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#"^^xsd:string ;
+                               owl:versionInfo "1.02"^^xsd:string .
 
 #################################################################
 #    Annotation properties
@@ -64,114 +64,6 @@ vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
 vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#activeCategory
-virtualcoach:activeCategory rdf:type owl:AnnotationProperty .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#appliesTo
-virtualcoach:appliesTo rdf:type owl:AnnotationProperty .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#command
-virtualcoach:command rdf:type owl:AnnotationProperty ;
-                     rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#commonSense
-virtualcoach:commonSense rdf:type owl:AnnotationProperty .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#foodId
-virtualcoach:foodId rdf:type owl:AnnotationProperty ;
-                    rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#hasForbiddenCategory
-virtualcoach:hasForbiddenCategory rdf:type owl:AnnotationProperty ;
-                                  rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#hasMandatoryCategory
-virtualcoach:hasMandatoryCategory rdf:type owl:AnnotationProperty ;
-                                  rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#hasMonitoredValue
-virtualcoach:hasMonitoredValue rdf:type owl:AnnotationProperty ;
-                               rdfs:domain "" ;
-                               rdfs:range "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#hasMonitoredValueInterval
-virtualcoach:hasMonitoredValueInterval rdf:type owl:AnnotationProperty ;
-                                       rdfs:range "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#hasOperator
-virtualcoach:hasOperator rdf:type owl:AnnotationProperty ;
-                         rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#hasPriority
-virtualcoach:hasPriority rdf:type owl:AnnotationProperty ;
-                         rdfs:domain "" ;
-                         rdfs:range "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#hasRuleId
-virtualcoach:hasRuleId rdf:type owl:AnnotationProperty ;
-                       rdfs:domain "" ;
-                       rdfs:range "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#id
-virtualcoach:id rdf:type owl:AnnotationProperty .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#interfaceLabel
-virtualcoach:interfaceLabel rdf:type owl:AnnotationProperty ;
-                            rdfs:domain "" ;
-                            rdfs:range "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#isRecipeConsumedFood
-virtualcoach:isRecipeConsumedFood rdf:type owl:AnnotationProperty .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#isUnspecifiedFood
-virtualcoach:isUnspecifiedFood rdf:type owl:AnnotationProperty .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#lowerBound
-virtualcoach:lowerBound rdf:type owl:AnnotationProperty ;
-                        rdfs:range xsd:double .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#monitoredEntity
-virtualcoach:monitoredEntity rdf:type owl:AnnotationProperty ;
-                             rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#monitoredEntityType
-virtualcoach:monitoredEntityType rdf:type owl:AnnotationProperty ;
-                                 rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#productCategory
-virtualcoach:productCategory rdf:type owl:AnnotationProperty ;
-                             rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#timing
-virtualcoach:timing rdf:type owl:AnnotationProperty ;
-                    rdfs:domain "" .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#upperBound
-virtualcoach:upperBound rdf:type owl:AnnotationProperty ;
-                        rdfs:range xsd:double .
-
-
 ###  http://www.w3.org/2000/01/rdf-schema#domain
 rdfs:domain rdf:type owl:AnnotationProperty .
 
@@ -180,330 +72,438 @@ rdfs:domain rdf:type owl:AnnotationProperty .
 rdfs:range rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/fuskg/user#activeCategory
+fsuser:activeCategory rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/fuskg/user#appliesTo
+fsuser:appliesTo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/fuskg/user#command
+fsuser:command rdf:type owl:AnnotationProperty ;
+               rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#commonSense
+fsuser:commonSense rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/fuskg/user#foodId
+fsuser:foodId rdf:type owl:AnnotationProperty ;
+              rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#hasForbiddenCategory
+fsuser:hasForbiddenCategory rdf:type owl:AnnotationProperty ;
+                            rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#hasMandatoryCategory
+fsuser:hasMandatoryCategory rdf:type owl:AnnotationProperty ;
+                            rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#hasMonitoredValue
+fsuser:hasMonitoredValue rdf:type owl:AnnotationProperty ;
+                         rdfs:domain "" ;
+                         rdfs:range "" .
+
+
+###  https://w3id.org/fuskg/user#hasMonitoredValueInterval
+fsuser:hasMonitoredValueInterval rdf:type owl:AnnotationProperty ;
+                                 rdfs:range "" .
+
+
+###  https://w3id.org/fuskg/user#hasOperator
+fsuser:hasOperator rdf:type owl:AnnotationProperty ;
+                   rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#hasPriority
+fsuser:hasPriority rdf:type owl:AnnotationProperty ;
+                   rdfs:domain "" ;
+                   rdfs:range "" .
+
+
+###  https://w3id.org/fuskg/user#hasRuleId
+fsuser:hasRuleId rdf:type owl:AnnotationProperty ;
+                 rdfs:domain "" ;
+                 rdfs:range "" .
+
+
+###  https://w3id.org/fuskg/user#id
+fsuser:id rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/fuskg/user#interfaceLabel
+fsuser:interfaceLabel rdf:type owl:AnnotationProperty ;
+                      rdfs:domain "" ;
+                      rdfs:range "" .
+
+
+###  https://w3id.org/fuskg/user#isRecipeConsumedFood
+fsuser:isRecipeConsumedFood rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/fuskg/user#isUnspecifiedFood
+fsuser:isUnspecifiedFood rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/fuskg/user#lowerBound
+fsuser:lowerBound rdf:type owl:AnnotationProperty ;
+                  rdfs:range xsd:double .
+
+
+###  https://w3id.org/fuskg/user#monitoredEntity
+fsuser:monitoredEntity rdf:type owl:AnnotationProperty ;
+                       rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#monitoredEntityType
+fsuser:monitoredEntityType rdf:type owl:AnnotationProperty ;
+                           rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#productCategory
+fsuser:productCategory rdf:type owl:AnnotationProperty ;
+                       rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#timing
+fsuser:timing rdf:type owl:AnnotationProperty ;
+              rdfs:domain "" .
+
+
+###  https://w3id.org/fuskg/user#upperBound
+fsuser:upperBound rdf:type owl:AnnotationProperty ;
+                  rdfs:range xsd:double .
+
+
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://www.fbk.eu/ontologies/virtualcoach#belongsProfile
-virtualcoach:belongsProfile rdf:type owl:ObjectProperty ;
-                            owl:inverseOf virtualcoach:containsUser ;
-                            rdfs:domain virtualcoach:User ;
-                            rdfs:range virtualcoach:Profile .
+###  https://w3id.org/fuskg/user#belongsProfile
+fsuser:belongsProfile rdf:type owl:ObjectProperty ;
+                      owl:inverseOf fsuser:containsUser ;
+                      rdfs:domain fsuser:User ;
+                      rdfs:range fsuser:Profile .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#consumed
-virtualcoach:consumed rdf:type owl:ObjectProperty ;
-                      rdfs:domain virtualcoach:User ;
-                      rdfs:label "consumed"@en ,
-                                 "ha consumato"@it .
+###  https://w3id.org/fuskg/user#consumed
+fsuser:consumed rdf:type owl:ObjectProperty ;
+                rdfs:domain fsuser:User ;
+                rdfs:label "consumed"@en ,
+                           "ha consumato"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#contains
-virtualcoach:contains rdf:type owl:ObjectProperty ;
-                      rdfs:label "contains"@en ,
-                                 "contiene"@it .
+###  https://w3id.org/fuskg/user#contains
+fsuser:contains rdf:type owl:ObjectProperty ;
+                rdfs:label "contains"@en ,
+                           "contiene"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#containsUser
-virtualcoach:containsUser rdf:type owl:ObjectProperty ;
-                          rdfs:domain virtualcoach:Profile ;
-                          rdfs:range virtualcoach:User .
+###  https://w3id.org/fuskg/user#containsUser
+fsuser:containsUser rdf:type owl:ObjectProperty ;
+                    rdfs:domain fsuser:Profile ;
+                    rdfs:range fsuser:User .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasActivity
-virtualcoach:hasActivity rdf:type owl:ObjectProperty .
+###  https://w3id.org/fuskg/user#hasActivity
+fsuser:hasActivity rdf:type owl:ObjectProperty .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasConsumedFood
-virtualcoach:hasConsumedFood rdf:type owl:ObjectProperty ;
-                             rdfs:range virtualcoach:ConsumedFood ;
-                             rdfs:label "ha Consumato Cibo"@it ,
-                                        "has Consumed Food"@en .
+###  https://w3id.org/fuskg/user#hasConsumedFood
+fsuser:hasConsumedFood rdf:type owl:ObjectProperty ;
+                       rdfs:range fsuser:ConsumedFood ;
+                       rdfs:label "ha Consumato Cibo"@it ,
+                                  "has Consumed Food"@en .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasFood
-virtualcoach:hasFood rdf:type owl:ObjectProperty ;
-                     rdfs:label "ha Cibo"@it ,
-                                "has Food"@en .
+###  https://w3id.org/fuskg/user#hasFood
+fsuser:hasFood rdf:type owl:ObjectProperty ;
+               rdfs:label "ha Cibo"@it ,
+                          "has Food"@en .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasNutrient
-virtualcoach:hasNutrient rdf:type owl:ObjectProperty ;
-                         rdfs:label "ha Nutriente"@it ,
-                                    "has Nutrient"@en .
+###  https://w3id.org/fuskg/user#hasNutrient
+fsuser:hasNutrient rdf:type owl:ObjectProperty ;
+                   rdfs:label "ha Nutriente"@it ,
+                              "has Nutrient"@en .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasRecipeFood
-virtualcoach:hasRecipeFood rdf:type owl:ObjectProperty .
+###  https://w3id.org/fuskg/user#hasRecipeFood
+fsuser:hasRecipeFood rdf:type owl:ObjectProperty .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasUser
-virtualcoach:hasUser rdf:type owl:ObjectProperty ;
-                     rdfs:domain virtualcoach:PerformedActivity ;
-                     rdfs:range virtualcoach:User ;
-                     rdfs:label "ha Utente"@it ,
-                                "has User"@en .
+###  https://w3id.org/fuskg/user#hasUser
+fsuser:hasUser rdf:type owl:ObjectProperty ;
+               rdfs:domain fsuser:PerformedActivity ;
+               rdfs:range fsuser:User ;
+               rdfs:label "ha Utente"@it ,
+                          "has User"@en .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationMeal
-virtualcoach:hasViolationMeal rdf:type owl:ObjectProperty ;
-                              rdfs:domain virtualcoach:Violation .
+###  https://w3id.org/fuskg/user#hasViolationMeal
+fsuser:hasViolationMeal rdf:type owl:ObjectProperty ;
+                        rdfs:domain fsuser:Violation .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationRule
-virtualcoach:hasViolationRule rdf:type owl:ObjectProperty ;
-                              rdfs:domain virtualcoach:Violation .
+###  https://w3id.org/fuskg/user#hasViolationRule
+fsuser:hasViolationRule rdf:type owl:ObjectProperty ;
+                        rdfs:domain fsuser:Violation .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationUser
-virtualcoach:hasViolationUser rdf:type owl:ObjectProperty ;
-                              rdfs:domain virtualcoach:Violation ;
-                              rdfs:range virtualcoach:User .
+###  https://w3id.org/fuskg/user#hasViolationUser
+fsuser:hasViolationUser rdf:type owl:ObjectProperty ;
+                        rdfs:domain fsuser:Violation ;
+                        rdfs:range fsuser:User .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#monitor
-virtualcoach:monitor rdf:type owl:ObjectProperty ;
-                     rdfs:range virtualcoach:User .
+###  https://w3id.org/fuskg/user#monitor
+fsuser:monitor rdf:type owl:ObjectProperty ;
+               rdfs:range fsuser:User .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#performed
-virtualcoach:performed rdf:type owl:ObjectProperty ;
-                       rdfs:domain virtualcoach:User ;
-                       rdfs:range virtualcoach:PerformedActivity .
+###  https://w3id.org/fuskg/user#performed
+fsuser:performed rdf:type owl:ObjectProperty ;
+                 rdfs:domain fsuser:User ;
+                 rdfs:range fsuser:PerformedActivity .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  http://www.fbk.eu/ontologies/virtualcoach#activityDuration
-virtualcoach:activityDuration rdf:type owl:DatatypeProperty .
+###  https://w3id.org/fuskg/user#activityDuration
+fsuser:activityDuration rdf:type owl:DatatypeProperty .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#activityEndTimestamp
-virtualcoach:activityEndTimestamp rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain virtualcoach:PerformedActivity .
+###  https://w3id.org/fuskg/user#activityEndTimestamp
+fsuser:activityEndTimestamp rdf:type owl:DatatypeProperty ;
+                            rdfs:domain fsuser:PerformedActivity .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#activityStartTimestamp
-virtualcoach:activityStartTimestamp rdf:type owl:DatatypeProperty ;
-                                    rdfs:domain virtualcoach:PerformedActivity .
+###  https://w3id.org/fuskg/user#activityStartTimestamp
+fsuser:activityStartTimestamp rdf:type owl:DatatypeProperty ;
+                              rdfs:domain fsuser:PerformedActivity .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#amountCalories
-virtualcoach:amountCalories rdf:type owl:DatatypeProperty ;
-                            rdfs:range xsd:double ;
-                            rdfs:label "amount of Calories"@en ,
-                                       "quantità Calorie"@it .
+###  https://w3id.org/fuskg/user#amountCalories
+fsuser:amountCalories rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:double ;
+                      rdfs:label "amount of Calories"@en ,
+                                 "quantità Calorie"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#amountEnergy
-virtualcoach:amountEnergy rdf:type owl:DatatypeProperty ;
-                          rdfs:range xsd:double ;
-                          rdfs:label "amount of Energy"@en ,
-                                     "quantità Energia"@it .
+###  https://w3id.org/fuskg/user#amountEnergy
+fsuser:amountEnergy rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:double ;
+                    rdfs:label "amount of Energy"@en ,
+                               "quantità Energia"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#amountFood
-virtualcoach:amountFood rdf:type owl:DatatypeProperty ;
-                        rdfs:range xsd:double ;
-                        rdfs:label "amount of Food"@en ,
-                                   "quantità Cibo"@it .
+###  https://w3id.org/fuskg/user#amountFood
+fsuser:amountFood rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:double ;
+                  rdfs:label "amount of Food"@en ,
+                             "quantità Cibo"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#amountNutrient
-virtualcoach:amountNutrient rdf:type owl:DatatypeProperty ;
-                            rdfs:range xsd:double ;
-                            rdfs:label "amount of Nutrient"@en ,
-                                       "quantità Nutriente"@it .
+###  https://w3id.org/fuskg/user#amountNutrient
+fsuser:amountNutrient rdf:type owl:DatatypeProperty ;
+                      rdfs:range xsd:double ;
+                      rdfs:label "amount of Nutrient"@en ,
+                                 "quantità Nutriente"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#amountWater
-virtualcoach:amountWater rdf:type owl:DatatypeProperty ;
-                         rdfs:range xsd:double ;
-                         rdfs:label "amount of Water"@en ,
-                                    "quantità Acqua"@it .
+###  https://w3id.org/fuskg/user#amountWater
+fsuser:amountWater rdf:type owl:DatatypeProperty ;
+                   rdfs:range xsd:double ;
+                   rdfs:label "amount of Water"@en ,
+                              "quantità Acqua"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#bounds
-virtualcoach:bounds rdf:type owl:DatatypeProperty ;
-                    rdfs:domain virtualcoach:ViolationInterval ;
-                    rdfs:range xsd:double .
+###  https://w3id.org/fuskg/user#bounds
+fsuser:bounds rdf:type owl:DatatypeProperty ;
+              rdfs:domain fsuser:ViolationInterval ;
+              rdfs:range xsd:double .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#duration
-virtualcoach:duration rdf:type owl:DatatypeProperty ;
-                      rdfs:range xsd:int .
+###  https://w3id.org/fuskg/user#duration
+fsuser:duration rdf:type owl:DatatypeProperty ;
+                rdfs:range xsd:int .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#ediblePart
-virtualcoach:ediblePart rdf:type owl:DatatypeProperty ;
-                        rdfs:range xsd:double ;
-                        rdfs:label "edible part"@en ,
-                                   "parte edibile"@it .
+###  https://w3id.org/fuskg/user#ediblePart
+fsuser:ediblePart rdf:type owl:DatatypeProperty ;
+                  rdfs:range xsd:double ;
+                  rdfs:label "edible part"@en ,
+                             "parte edibile"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasDailyCaloricIntake
-virtualcoach:hasDailyCaloricIntake rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain virtualcoach:User .
+###  https://w3id.org/fuskg/user#hasDailyCaloricIntake
+fsuser:hasDailyCaloricIntake rdf:type owl:DatatypeProperty ;
+                             rdfs:domain fsuser:User .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasMETCorrection
-virtualcoach:hasMETCorrection rdf:type owl:DatatypeProperty ;
-                              rdfs:domain virtualcoach:PerformedActivity .
+###  https://w3id.org/fuskg/user#hasMETCorrection
+fsuser:hasMETCorrection rdf:type owl:DatatypeProperty ;
+                        rdfs:domain fsuser:PerformedActivity .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasMETValue
-virtualcoach:hasMETValue rdf:type owl:DatatypeProperty .
+###  https://w3id.org/fuskg/user#hasMETValue
+fsuser:hasMETValue rdf:type owl:DatatypeProperty .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasRuleDefinition
-virtualcoach:hasRuleDefinition rdf:type owl:DatatypeProperty ;
-                               rdfs:range xsd:string .
+###  https://w3id.org/fuskg/user#hasRuleDefinition
+fsuser:hasRuleDefinition rdf:type owl:DatatypeProperty ;
+                         rdfs:range xsd:string .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasTimestamp
-virtualcoach:hasTimestamp rdf:type owl:DatatypeProperty ;
-                          rdfs:range xsd:int ;
-                          rdfs:label "ha etichetta temporale"@it ,
-                                     "has timestamp"@en .
+###  https://w3id.org/fuskg/user#hasTimestamp
+fsuser:hasTimestamp rdf:type owl:DatatypeProperty ;
+                    rdfs:range xsd:int ;
+                    rdfs:label "ha etichetta temporale"@it ,
+                               "has timestamp"@en .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasUnitKCalValue
-virtualcoach:hasUnitKCalValue rdf:type owl:DatatypeProperty .
+###  https://w3id.org/fuskg/user#hasUnitKCalValue
+fsuser:hasUnitKCalValue rdf:type owl:DatatypeProperty .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasUserId
-virtualcoach:hasUserId rdf:type owl:DatatypeProperty ;
-                       rdfs:domain virtualcoach:User ;
-                       rdfs:range xsd:string .
+###  https://w3id.org/fuskg/user#hasUserId
+fsuser:hasUserId rdf:type owl:DatatypeProperty ;
+                 rdfs:domain fsuser:User ;
+                 rdfs:range xsd:string .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationEndTime
-virtualcoach:hasViolationEndTime rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain virtualcoach:Violation .
+###  https://w3id.org/fuskg/user#hasViolationEndTime
+fsuser:hasViolationEndTime rdf:type owl:DatatypeProperty ;
+                           rdfs:domain fsuser:Violation .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationEntity
-virtualcoach:hasViolationEntity rdf:type owl:DatatypeProperty ;
-                                rdfs:domain virtualcoach:Violation ;
-                                rdfs:range xsd:string .
+###  https://w3id.org/fuskg/user#hasViolationEntity
+fsuser:hasViolationEntity rdf:type owl:DatatypeProperty ;
+                          rdfs:domain fsuser:Violation ;
+                          rdfs:range xsd:string .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationEntityType
-virtualcoach:hasViolationEntityType rdf:type owl:DatatypeProperty ;
-                                    rdfs:domain virtualcoach:Violation ;
+###  https://w3id.org/fuskg/user#hasViolationEntityType
+fsuser:hasViolationEntityType rdf:type owl:DatatypeProperty ;
+                              rdfs:domain fsuser:Violation ;
+                              rdfs:range xsd:string .
+
+
+###  https://w3id.org/fuskg/user#hasViolationExpectedQuantity
+fsuser:hasViolationExpectedQuantity rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain fsuser:Violation ;
                                     rdfs:range xsd:string .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationExpectedQuantity
-virtualcoach:hasViolationExpectedQuantity rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain virtualcoach:Violation ;
-                                          rdfs:range xsd:string .
+###  https://w3id.org/fuskg/user#hasViolationHistory
+fsuser:hasViolationHistory rdf:type owl:DatatypeProperty ;
+                           rdfs:domain fsuser:Violation ;
+                           rdfs:range xsd:integer .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationHistory
-virtualcoach:hasViolationHistory rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain virtualcoach:Violation ;
-                                 rdfs:range xsd:integer .
+###  https://w3id.org/fuskg/user#hasViolationLevel
+fsuser:hasViolationLevel rdf:type owl:DatatypeProperty ;
+                         rdfs:domain [ rdf:type owl:Class ;
+                                       owl:unionOf ( fsuser:Violation
+                                                     fsuser:ViolationInterval
+                                                   )
+                                     ] ;
+                         rdfs:range xsd:integer .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationLevel
-virtualcoach:hasViolationLevel rdf:type owl:DatatypeProperty ;
-                               rdfs:domain [ rdf:type owl:Class ;
-                                             owl:unionOf ( virtualcoach:Violation
-                                                           virtualcoach:ViolationInterval
-                                                         )
-                                           ] ;
-                               rdfs:range xsd:integer .
+###  https://w3id.org/fuskg/user#hasViolationPriority
+fsuser:hasViolationPriority rdf:type owl:DatatypeProperty ;
+                            rdfs:domain fsuser:Violation ;
+                            rdfs:range xsd:integer .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationPriority
-virtualcoach:hasViolationPriority rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain virtualcoach:Violation ;
-                                  rdfs:range xsd:integer .
+###  https://w3id.org/fuskg/user#hasViolationQuantity
+fsuser:hasViolationQuantity rdf:type owl:DatatypeProperty ;
+                            rdfs:domain fsuser:Violation ;
+                            rdfs:range xsd:string .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationQuantity
-virtualcoach:hasViolationQuantity rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain virtualcoach:Violation ;
-                                  rdfs:range xsd:string .
+###  https://w3id.org/fuskg/user#hasViolationRuleId
+fsuser:hasViolationRuleId rdf:type owl:DatatypeProperty ;
+                          rdfs:domain fsuser:Violation ;
+                          rdfs:range xsd:int .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationRuleId
-virtualcoach:hasViolationRuleId rdf:type owl:DatatypeProperty ;
-                                rdfs:domain virtualcoach:Violation ;
-                                rdfs:range xsd:int .
+###  https://w3id.org/fuskg/user#hasViolationStartTime
+fsuser:hasViolationStartTime rdf:type owl:DatatypeProperty ;
+                             rdfs:domain fsuser:Violation .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationStartTime
-virtualcoach:hasViolationStartTime rdf:type owl:DatatypeProperty ;
-                                   rdfs:domain virtualcoach:Violation .
+###  https://w3id.org/fuskg/user#hasViolationTiming
+fsuser:hasViolationTiming rdf:type owl:DatatypeProperty ;
+                          rdfs:domain fsuser:Violation ;
+                          rdfs:range xsd:string .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationTiming
-virtualcoach:hasViolationTiming rdf:type owl:DatatypeProperty ;
-                                rdfs:domain virtualcoach:Violation ;
-                                rdfs:range xsd:string .
+###  https://w3id.org/fuskg/user#hasViolationValidityTimespan
+fsuser:hasViolationValidityTimespan rdf:type owl:DatatypeProperty ;
+                                    rdfs:domain fsuser:Violation ;
+                                    rdfs:range xsd:string .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#hasViolationValidityTimespan
-virtualcoach:hasViolationValidityTimespan rdf:type owl:DatatypeProperty ;
-                                          rdfs:domain virtualcoach:Violation ;
-                                          rdfs:range xsd:string .
-
-
-###  http://www.fbk.eu/ontologies/virtualcoach#unit
-virtualcoach:unit rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:string ;
-                  rdfs:label "unit"@en ,
-                             "unità"@it .
+###  https://w3id.org/fuskg/user#unit
+fsuser:unit rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:string ;
+            rdfs:label "unit"@en ,
+                       "unità"@it .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://www.fbk.eu/ontologies/virtualcoach#ConsumedFood
-virtualcoach:ConsumedFood rdf:type owl:Class ;
-                          rdfs:comment "This concept enables the reification of the relationships between a user and the amount of a specific food consumed during a specific meal."@en ;
-                          rdfs:label "Cibo Consumato"@it ,
-                                     "Consumed Food"@en .
+###  https://w3id.org/fuskg/user#ConsumedFood
+fsuser:ConsumedFood rdf:type owl:Class ;
+                    rdfs:comment "This concept enables the reification of the relationships between a user and the amount of a specific food consumed during a specific meal."@en ;
+                    rdfs:label "Cibo Consumato"@it ,
+                               "Consumed Food"@en .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#PerformedActivity
-virtualcoach:PerformedActivity rdf:type owl:Class ;
-                               rdfs:comment "This concept enables the reification of the relationships between a user and the duration of a specific performed activity."@en ;
-                               rdfs:label "Attività Svolta"@it ,
-                                          "Performed Activity"@en .
+###  https://w3id.org/fuskg/user#PerformedActivity
+fsuser:PerformedActivity rdf:type owl:Class ;
+                         rdfs:comment "This concept enables the reification of the relationships between a user and the duration of a specific performed activity."@en ;
+                         rdfs:label "Attività Svolta"@it ,
+                                    "Performed Activity"@en .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#Profile
-virtualcoach:Profile rdf:type owl:Class ;
-                     rdfs:comment "This concept enables the representation of different types of user profiles. Examples are profiles denoting people with specific allergies or dietary habits."@en ;
-                     rdfs:label "Profile"@en ,
-                                "Profilo"@it .
+###  https://w3id.org/fuskg/user#Profile
+fsuser:Profile rdf:type owl:Class ;
+               rdfs:comment "This concept enables the representation of different types of user profiles. Examples are profiles denoting people with specific allergies or dietary habits."@en ;
+               rdfs:label "Profile"@en ,
+                          "Profilo"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#User
-virtualcoach:User rdf:type owl:Class ;
-                  rdfs:comment "This is the root concept for the User branch. All sub-concepts represent a specific category of users, if necessary."@en ;
-                  rdfs:label "User"@en ,
-                             "Utente"@it .
+###  https://w3id.org/fuskg/user#User
+fsuser:User rdf:type owl:Class ;
+            rdfs:comment "This is the root concept for the User branch. All sub-concepts represent a specific category of users, if necessary."@en ;
+            rdfs:label "User"@en ,
+                       "Utente"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#Violation
-virtualcoach:Violation rdf:type owl:Class ;
-                       rdfs:comment "This concept represents violations associated with a specific user. Instances of the Violation concept can be the result of reasoning activities provided by third-party applications."@en ;
-                       rdfs:label "Violation"@en ,
-                                  "Violazione"@it .
+###  https://w3id.org/fuskg/user#Violation
+fsuser:Violation rdf:type owl:Class ;
+                 rdfs:comment "This concept represents violations associated with a specific user. Instances of the Violation concept can be the result of reasoning activities provided by third-party applications."@en ;
+                 rdfs:label "Violation"@en ,
+                            "Violazione"@it .
 
 
-###  http://www.fbk.eu/ontologies/virtualcoach#ViolationInterval
-virtualcoach:ViolationInterval rdf:type owl:Class ;
-                               rdfs:comment "This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation."@en ;
-                               rdfs:label "Intervalli di Violazione"@it ,
-                                          "Violation Interval"@en .
+###  https://w3id.org/fuskg/user#ViolationInterval
+fsuser:ViolationInterval rdf:type owl:Class ;
+                         rdfs:comment "This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation."@en ;
+                         rdfs:label "Intervalli di Violazione"@it ,
+                                    "Violation Interval"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
