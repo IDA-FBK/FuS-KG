@@ -11,14 +11,15 @@
 @base <https://w3id.org/fuskg/food> .
 
 <https://w3id.org/fuskg/food> rdf:type owl:Ontology ;
+                               owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-core.ttl> ;
                                dcterms:creator "Claudio Eccher" ,
-                                               "Mauro Dragoni" ,
+                                               "Mauro Dragoni"^^xsd:string ,
                                                "Rosa Maimone" ,
-                                               "Tania Bailoni" ;
+                                               "Tania Bailoni"^^xsd:string ;
                                dcterms:issued "2017-05-02"^^xsd:date ;
                                dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
                                dcterms:modified "2017-05-14"^^xsd:date ;
-                               dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>" ;
+                               dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
                                dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
                                dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
                                vann:preferredNamespacePrefix "vc" ;
@@ -193,30 +194,12 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/fuskg/food#contains
-fsfood:contains rdf:type owl:ObjectProperty ;
-                rdfs:domain fsfood:Food ;
-                rdfs:range fsfood:Food ;
-                rdfs:label "contains"@en ,
-                           "contiene"@it .
-
-
 ###  https://w3id.org/fuskg/food#hasFood
 fsfood:hasFood rdf:type owl:ObjectProperty ;
                rdfs:domain fsfood:RecipeFood ;
-               rdfs:range fsfood:Food ;
                rdfs:comment "Property used to connect a RecipeFood with its corresponding Food."@en ;
                rdfs:label "ha Cibo"@it ,
                           "has Food"@en .
-
-
-###  https://w3id.org/fuskg/food#hasNutrient
-fsfood:hasNutrient rdf:type owl:ObjectProperty ;
-                   rdfs:domain fsfood:Food ;
-                   rdfs:range fsfood:Nutrient ;
-                   rdfs:comment "Property used to connect a Food with its nutrients."@en ;
-                   rdfs:label "ha Nutriente"@it ,
-                              "has Nutrient"@en .
 
 
 ###  https://w3id.org/fuskg/food#hasRecipeFood
@@ -255,7 +238,6 @@ fsfood:amountFood rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/fuskg/food#amountNutrient
 fsfood:amountNutrient rdf:type owl:DatatypeProperty ;
-                      rdfs:domain fsfood:Nutrient ;
                       rdfs:range xsd:double ;
                       rdfs:label "amount of Nutrient"@en ,
                                  "quantit  Nutriente"@it .
@@ -270,7 +252,6 @@ fsfood:amountWater rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/fuskg/food#ediblePart
 fsfood:ediblePart rdf:type owl:DatatypeProperty ;
-                  rdfs:domain fsfood:Food ;
                   rdfs:range xsd:double ;
                   rdfs:label "edible part"@en ,
                              "parte edibile"@it .
@@ -278,7 +259,6 @@ fsfood:ediblePart rdf:type owl:DatatypeProperty ;
 
 ###  https://w3id.org/fuskg/food#unit
 fsfood:unit rdf:type owl:DatatypeProperty ;
-            rdfs:domain fsfood:Nutrient ;
             rdfs:range xsd:string ;
             rdfs:label "unit"@en ,
                        "unit "@it .
@@ -347,7 +327,7 @@ fsfood:Alanine rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Alcohol
 fsfood:Alcohol rdf:type owl:Class ;
-               rdfs:subClassOf fsfood:Nutrient ;
+               rdfs:subClassOf fscore:Nutrient ;
                rdfs:comment "Concept denoting values corresponding to Alcohol amounts."@en ;
                rdfs:label "Alcohol"@en ,
                           "Alcool"@it .
@@ -372,7 +352,7 @@ fsfood:Algae rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Aminoacid
 fsfood:Aminoacid rdf:type owl:Class ;
-                 rdfs:subClassOf fsfood:Nutrient ;
+                 rdfs:subClassOf fscore:Nutrient ;
                  rdfs:comment "Concept denoting nutrients belonging to the Aminoacid category."@en ;
                  rdfs:label "Aminoacid"@en ,
                             "Amminoacidi"@it .
@@ -462,7 +442,7 @@ fsfood:AsparticAcid rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#BasicFood
 fsfood:BasicFood rdf:type owl:Class ;
-                 rdfs:subClassOf fsfood:Food ;
+                 rdfs:subClassOf fscore:Food ;
                  rdfs:comment "Concept denoting foods belonging to the Basic Food category."@en ;
                  rdfs:label "Alimento Base"@it ,
                             "Basic Food"@en .
@@ -600,7 +580,7 @@ fsfood:CannedVegetables rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Carbs
 fsfood:Carbs rdf:type owl:Class ;
-             rdfs:subClassOf fsfood:Nutrient ;
+             rdfs:subClassOf fscore:Nutrient ;
              rdfs:comment "Concept denoting values corresponding to Carbs amounts."@en ;
              rdfs:label "Carboidrati"@it ,
                         "Carbs"@en .
@@ -634,11 +614,7 @@ fsfood:CerealsAndGrainProducts rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Cheese
 fsfood:Cheese rdf:type owl:Class ;
-              rdfs:subClassOf fsfood:MilkAndDairyProducts ,
-                              [ rdf:type owl:Restriction ;
-                                owl:onProperty fsfood:contains ;
-                                owl:someValuesFrom fsfood:MilkAndDairyProducts
-                              ] ;
+              rdfs:subClassOf fsfood:MilkAndDairyProducts ;
               rdfs:comment "Concept denoting foods belonging to the Cheese category."@en ;
               rdfs:label "Cheese"@en ,
                          "Formaggio"@it ;
@@ -690,17 +666,6 @@ fsfood:ColdCuts rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#ComposedFood
 fsfood:ComposedFood rdf:type owl:Class ;
-                    owl:equivalentClass [ owl:intersectionOf ( fsfood:Food
-                                                               [ rdf:type owl:Restriction ;
-                                                                 owl:onProperty fsfood:contains ;
-                                                                 owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                      owl:unionOf ( fsfood:BasicFood
-                                                                                                  )
-                                                                                    ]
-                                                               ]
-                                                             ) ;
-                                          rdf:type owl:Class
-                                        ] ;
                     rdfs:comment "Concept denoting foods belonging to the Composed Food category."@en ;
                     rdfs:label "Alimento Composto"@it ,
                                "Composed Food"@en .
@@ -765,7 +730,7 @@ fsfood:Desserts rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#DietaryFiber
 fsfood:DietaryFiber rdf:type owl:Class ;
-                    rdfs:subClassOf fsfood:Nutrient ;
+                    rdfs:subClassOf fscore:Nutrient ;
                     rdfs:comment "Concept denoting values corresponding to Dietary Fiber amounts."@en ;
                     rdfs:label "Dietary Fiber"@en ,
                                "Fibra Alimentare"@it .
@@ -911,13 +876,6 @@ fsfood:FolicAcid rdf:type owl:Class ;
                  rdfs:comment "Concept denoting values corresponding to Folic Acid amounts."@en ;
                  rdfs:label "Acido Folico"@it ,
                             "Folic Acid"@en .
-
-
-###  https://w3id.org/fuskg/food#Food
-fsfood:Food rdf:type owl:Class ;
-            rdfs:comment "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."@en ;
-            rdfs:label "Alimento"@it ,
-                       "Food"@en .
 
 
 ###  https://w3id.org/fuskg/food#FreshAlgae
@@ -1401,7 +1359,7 @@ fsfood:LinolenicAcid rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Lipid
 fsfood:Lipid rdf:type owl:Class ;
-             rdfs:subClassOf fsfood:Nutrient ;
+             rdfs:subClassOf fscore:Nutrient ;
              rdfs:comment "Concept denoting values corresponding to Lipids amounts."@en ;
              rdfs:label "Lipidi"@it ,
                         "Lipids"@en .
@@ -1508,7 +1466,7 @@ fsfood:MilkAndYogurt rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Mineral
 fsfood:Mineral rdf:type owl:Class ;
-               rdfs:subClassOf fsfood:Nutrient ;
+               rdfs:subClassOf fscore:Nutrient ;
                rdfs:comment "Concept denoting nutrients belonging to the Mineral category."@en ;
                rdfs:label "Minerali"@it ,
                           "Minerals"@en .
@@ -1581,13 +1539,6 @@ fsfood:NutSeedAndOliveProducts rdf:type owl:Class ;
                                rdfs:label "Noci, Frutta a Guscio, Semi e Olive"@it ,
                                           "Nuts, Seeds and Olives"@en ;
                                fsfood:activeCategory "1" .
-
-
-###  https://w3id.org/fuskg/food#Nutrient
-fsfood:Nutrient rdf:type owl:Class ;
-                rdfs:comment "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."@en ;
-                rdfs:label "Nutrient"@en ,
-                           "Nutriente"@it .
 
 
 ###  https://w3id.org/fuskg/food#Nuts
@@ -1666,15 +1617,7 @@ fsfood:PantothenicAcid rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Pasta
 fsfood:Pasta rdf:type owl:Class ;
-             rdfs:subClassOf fsfood:CerealsAndGrainProducts ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty fsfood:contains ;
-                               owl:someValuesFrom fsfood:WheatFlour
-                             ] ,
-                             [ rdf:type owl:Restriction ;
-                               owl:onProperty fsfood:contains ;
-                               owl:someValuesFrom fsfood:WholeWheatFlour
-                             ] ;
+             rdfs:subClassOf fsfood:CerealsAndGrainProducts ;
              rdfs:comment "Concept denoting foods belonging to the Pasta category."@en ;
              rdfs:label "Pasta"@en ,
                         "Pasta"@it ;
@@ -1854,7 +1797,7 @@ fsfood:Proline rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Protein
 fsfood:Protein rdf:type owl:Class ;
-               rdfs:subClassOf fsfood:Nutrient ;
+               rdfs:subClassOf fscore:Nutrient ;
                rdfs:comment "Concept denoting values corresponding to Protein amounts."@en ;
                rdfs:label "Protein"@en ,
                           "Proteine"@it .
@@ -1878,7 +1821,7 @@ fsfood:RabbitLeanWhiteMeat rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Recipe
 fsfood:Recipe rdf:type owl:Class ;
-              rdfs:subClassOf fsfood:Food ;
+              rdfs:subClassOf fscore:Food ;
               rdfs:comment "Concept denoting Recipies containing one or more Recipe Food."@en ;
               rdfs:label "Recipe"@en ,
                          "Ricette"@it .
@@ -1969,19 +1912,7 @@ fsfood:Sausages rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#SausagesAndColdCuts
 fsfood:SausagesAndColdCuts rdf:type owl:Class ;
-                           rdfs:subClassOf fsfood:BasicFood ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty fsfood:contains ;
-                                             owl:someValuesFrom fsfood:FattyRedMeat
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty fsfood:contains ;
-                                             owl:someValuesFrom fsfood:Salt
-                                           ] ,
-                                           [ rdf:type owl:Restriction ;
-                                             owl:onProperty fsfood:contains ;
-                                             owl:someValuesFrom fsfood:Spices
-                                           ] ;
+                           rdfs:subClassOf fsfood:BasicFood ;
                            rdfs:comment "Concept denoting foods belonging to the Sausages and Cold Cuts category."@en ;
                            rdfs:label "Salumi e Insaccati"@it ,
                                       "Sausages and Cold Cuts"@en ;
@@ -2341,7 +2272,7 @@ fsfood:VegetalProtein rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#Vitamin
 fsfood:Vitamin rdf:type owl:Class ;
-               rdfs:subClassOf fsfood:Nutrient ;
+               rdfs:subClassOf fscore:Nutrient ;
                rdfs:comment "Concept denoting nutrients belonging to the Vitamin category."@en ;
                rdfs:label "Vitamin"@en ,
                           "Vitamine"@it .
