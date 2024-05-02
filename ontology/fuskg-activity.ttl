@@ -8,7 +8,8 @@
 @prefix fscore: <https://w3id.org/fuskg/core#> .
 @base <https://w3id.org/fuskg/activity> .
 
-<https://w3id.org/fuskg/activity> rdf:type owl:Ontology .
+<https://w3id.org/fuskg/activity> rdf:type owl:Ontology ;
+                                   owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-core.ttl> .
 
 #################################################################
 #    Annotation properties
@@ -24,10 +25,6 @@ rdfs:range rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/fuskg/activity#commonSense
 fsacti:commonSense rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/activity#id
-fsacti:id rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -228,13 +225,6 @@ fsacti:WinterActivities rdf:type owl:Class ;
                         rdfs:comment "Concept denoting activities belonging to the Winter Activities category."@en ;
                         rdfs:label "Attività Invernali"@it ,
                                    "Winter Activities"@en .
-
-
-###  https://w3id.org/fuskg/core#Activity
-fscore:Activity rdf:type owl:Class ;
-                rdfs:comment "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."@en ;
-                rdfs:label "Activity"@en ,
-                           "Attività"@it .
 
 
 #################################################################
