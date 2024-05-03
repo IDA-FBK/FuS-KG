@@ -196,19 +196,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://w3id.org/fuskg/food#hasFood
 fsfood:hasFood rdf:type owl:ObjectProperty ;
-               rdfs:domain fsfood:RecipeFood ;
                rdfs:comment "Property used to connect a RecipeFood with its corresponding Food."@en ;
                rdfs:label "ha Cibo"@it ,
                           "has Food"@en .
-
-
-###  https://w3id.org/fuskg/food#hasRecipeFood
-fsfood:hasRecipeFood rdf:type owl:ObjectProperty ;
-                     rdfs:domain fsfood:Recipe ;
-                     rdfs:range fsfood:RecipeFood ;
-                     rdfs:comment "Property used to connect a Recipe with its RecipeFood (s)."@en ;
-                     rdfs:label "ha ingrediente"@it ,
-                                "has Recipe Food"@en .
 
 
 #################################################################
@@ -666,6 +656,11 @@ fsfood:ColdCuts rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/food#ComposedFood
 fsfood:ComposedFood rdf:type owl:Class ;
+                    rdfs:subClassOf fscore:Food ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty fscore:contains ;
+                                      owl:someValuesFrom fsfood:BasicFood
+                                    ] ;
                     rdfs:comment "Concept denoting foods belonging to the Composed Food category."@en ;
                     rdfs:label "Alimento Composto"@it ,
                                "Composed Food"@en .
@@ -718,14 +713,6 @@ fsfood:Dessert rdf:type owl:Class ;
                rdfs:label "Dessert"@en ,
                           "Dessert"@it ;
                fsfood:activeCategory "1" .
-
-
-###  https://w3id.org/fuskg/food#Desserts
-fsfood:Desserts rdf:type owl:Class ;
-                rdfs:subClassOf fsfood:HelisRecipe ;
-                rdfs:comment "Concept denoting Desserts containing one or more Recipe Food."@en ;
-                rdfs:label "Dessert"@it ,
-                           "Desserts"@en .
 
 
 ###  https://w3id.org/fuskg/food#DietaryFiber
@@ -793,14 +780,6 @@ fsfood:EicosenoicAcid rdf:type owl:Class ;
                                  "Eicosenoic Acid"@en .
 
 
-###  https://w3id.org/fuskg/food#Entree
-fsfood:Entree rdf:type owl:Class ;
-              rdfs:subClassOf fsfood:HelisRecipe ;
-              rdfs:comment "Concept denoting Entrees containing one or more Recipe Food."@en ;
-              rdfs:label "Antipasti"@it ,
-                         "Entrees"@en .
-
-
 ###  https://w3id.org/fuskg/food#ErucicAcid
 fsfood:ErucicAcid rdf:type owl:Class ;
                   rdfs:subClassOf fsfood:Lipid ;
@@ -852,14 +831,6 @@ fsfood:FishAndSeafood rdf:type owl:Class ;
                       rdfs:label "Fish and Seafood"@en ,
                                  "Pesce, Molluschi e Crostacei"@it ;
                       fsfood:activeCategory "1" .
-
-
-###  https://w3id.org/fuskg/food#FishCourses
-fsfood:FishCourses rdf:type owl:Class ;
-                   rdfs:subClassOf fsfood:HelisRecipe ;
-                   rdfs:comment "Concept denoting Fish Courses containing one or more Recipe Food."@en ;
-                   rdfs:label "Fish Courses"@en ,
-                              "Secondi Piatti di Pesce"@it .
 
 
 ###  https://w3id.org/fuskg/food#Flour
@@ -1208,14 +1179,6 @@ fsfood:GoatLeanWhiteMeat rdf:type owl:Class ;
                                     "Goat Lean White Meat"@en .
 
 
-###  https://w3id.org/fuskg/food#HelisRecipe
-fsfood:HelisRecipe rdf:type owl:Class ;
-                   rdfs:subClassOf fsfood:Recipe ;
-                   rdfs:comment "Concept denoting Recipies of RecipeDB and Turconi datasets."@en ;
-                   rdfs:label "Helis Recipe"@en ,
-                              "Helis Ricette"@it .
-
-
 ###  https://w3id.org/fuskg/food#Histidine
 fsfood:Histidine rdf:type owl:Class ;
                  rdfs:subClassOf fsfood:PolarAminoacid ;
@@ -1381,14 +1344,6 @@ fsfood:Magnesium rdf:type owl:Class ;
                             "Magnesium"@en .
 
 
-###  https://w3id.org/fuskg/food#MainCourses
-fsfood:MainCourses rdf:type owl:Class ;
-                   rdfs:subClassOf fsfood:HelisRecipe ;
-                   rdfs:comment "Concept denoting Main Courses containing one or more Recipe Food."@en ;
-                   rdfs:label "Main Courses"@en ,
-                              "Primi Piatti"@it .
-
-
 ###  https://w3id.org/fuskg/food#Maltose
 fsfood:Maltose rdf:type owl:Class ;
                rdfs:subClassOf fsfood:Carbs ;
@@ -1429,14 +1384,6 @@ fsfood:Meat rdf:type owl:Class ;
             rdfs:label "Carne"@it ,
                        "Meat"@en ;
             fsfood:activeCategory "1" .
-
-
-###  https://w3id.org/fuskg/food#MeatCourses
-fsfood:MeatCourses rdf:type owl:Class ;
-                   rdfs:subClassOf fsfood:HelisRecipe ;
-                   rdfs:comment "Concept denoting Meat Courses containing one or more Recipe Food."@en ;
-                   rdfs:label "Meat Courses"@en ,
-                              "Secondi Piatti di Carne"@it .
 
 
 ###  https://w3id.org/fuskg/food#Methionine
@@ -1819,21 +1766,6 @@ fsfood:RabbitLeanWhiteMeat rdf:type owl:Class ;
                                       "Rabbit Lean White Meat"@en .
 
 
-###  https://w3id.org/fuskg/food#Recipe
-fsfood:Recipe rdf:type owl:Class ;
-              rdfs:subClassOf fscore:Food ;
-              rdfs:comment "Concept denoting Recipies containing one or more Recipe Food."@en ;
-              rdfs:label "Recipe"@en ,
-                         "Ricette"@it .
-
-
-###  https://w3id.org/fuskg/food#RecipeFood
-fsfood:RecipeFood rdf:type owl:Class ;
-                  rdfs:comment "Recipes are described by a list of instances of the concept Food. The RecipeFood concept reifies the relationship between a Recipe, the specific Food and its amount in the Recipe."@en ;
-                  rdfs:label "Ingredienti Ricette"@it ,
-                             "Recipe Food"@en .
-
-
 ###  https://w3id.org/fuskg/food#RedMeat
 fsfood:RedMeat rdf:type owl:Class ;
                rdfs:subClassOf fsfood:Meat ;
@@ -1893,14 +1825,6 @@ fsfood:SaturatedLipid rdf:type owl:Class ;
                                  "Saturated Lipids"@en .
 
 
-###  https://w3id.org/fuskg/food#Sauces
-fsfood:Sauces rdf:type owl:Class ;
-              rdfs:subClassOf fsfood:HelisRecipe ;
-              rdfs:comment "Concept denoting Sauces containing one or more Recipe Food."@en ;
-              rdfs:label "Salse"@it ,
-                         "Sauces"@en .
-
-
 ###  https://w3id.org/fuskg/food#Sausages
 fsfood:Sausages rdf:type owl:Class ;
                 rdfs:subClassOf fsfood:SausagesAndColdCuts ;
@@ -1950,14 +1874,6 @@ fsfood:Shellfish rdf:type owl:Class ;
                  rdfs:comment "Concept denoting foods belonging to the Shellfish category."@en ;
                  rdfs:label "Crostacei"@it ,
                             "Shellfish"@en .
-
-
-###  https://w3id.org/fuskg/food#SideDishes
-fsfood:SideDishes rdf:type owl:Class ;
-                  rdfs:subClassOf fsfood:HelisRecipe ;
-                  rdfs:comment "Concept denoting Side Dishes containing one or more Recipe Food."@en ;
-                  rdfs:label "Contorni"@it ,
-                             "Side Dishes"@en .
 
 
 ###  https://w3id.org/fuskg/food#SmokedFish
