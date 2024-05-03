@@ -10,9 +10,10 @@
 @base <https://w3id.org/fuskg/user> .
 
 <https://w3id.org/fuskg/user> rdf:type owl:Ontology ;
-                               dcterms:creator "Claudio Eccher"^^xsd:string ,
+                               owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-guidelines.ttl> ;
+                               dcterms:creator "Claudio Eccher" ,
                                                "Mauro Dragoni"^^xsd:string ,
-                                               "Rosa Maimone"^^xsd:string ,
+                                               "Rosa Maimone" ,
                                                "Tania Bailoni"^^xsd:string ;
                                dcterms:issued "2017-05-02"^^xsd:date ;
                                dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
@@ -20,8 +21,8 @@
                                dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
                                dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
                                dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
-                               vann:preferredNamespacePrefix "vc"^^xsd:string ;
-                               vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#"^^xsd:string ;
+                               vann:preferredNamespacePrefix "vc" ;
+                               vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#" ;
                                owl:versionInfo "1.02"^^xsd:string .
 
 #################################################################
@@ -290,41 +291,6 @@ fsuser:activityStartTimestamp rdf:type owl:DatatypeProperty ;
                               rdfs:domain fsuser:PerformedActivity .
 
 
-###  https://w3id.org/fuskg/user#amountCalories
-fsuser:amountCalories rdf:type owl:DatatypeProperty ;
-                      rdfs:range xsd:double ;
-                      rdfs:label "amount of Calories"@en ,
-                                 "quantità Calorie"@it .
-
-
-###  https://w3id.org/fuskg/user#amountEnergy
-fsuser:amountEnergy rdf:type owl:DatatypeProperty ;
-                    rdfs:range xsd:double ;
-                    rdfs:label "amount of Energy"@en ,
-                               "quantità Energia"@it .
-
-
-###  https://w3id.org/fuskg/user#amountFood
-fsuser:amountFood rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:double ;
-                  rdfs:label "amount of Food"@en ,
-                             "quantità Cibo"@it .
-
-
-###  https://w3id.org/fuskg/user#amountNutrient
-fsuser:amountNutrient rdf:type owl:DatatypeProperty ;
-                      rdfs:range xsd:double ;
-                      rdfs:label "amount of Nutrient"@en ,
-                                 "quantità Nutriente"@it .
-
-
-###  https://w3id.org/fuskg/user#amountWater
-fsuser:amountWater rdf:type owl:DatatypeProperty ;
-                   rdfs:range xsd:double ;
-                   rdfs:label "amount of Water"@en ,
-                              "quantità Acqua"@it .
-
-
 ###  https://w3id.org/fuskg/user#bounds
 fsuser:bounds rdf:type owl:DatatypeProperty ;
               rdfs:domain fsuser:ViolationInterval ;
@@ -334,13 +300,6 @@ fsuser:bounds rdf:type owl:DatatypeProperty ;
 ###  https://w3id.org/fuskg/user#duration
 fsuser:duration rdf:type owl:DatatypeProperty ;
                 rdfs:range xsd:int .
-
-
-###  https://w3id.org/fuskg/user#ediblePart
-fsuser:ediblePart rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:double ;
-                  rdfs:label "edible part"@en ,
-                             "parte edibile"@it .
 
 
 ###  https://w3id.org/fuskg/user#hasDailyCaloricIntake
