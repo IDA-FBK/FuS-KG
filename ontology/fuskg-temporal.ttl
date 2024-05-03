@@ -11,7 +11,9 @@
 
 <https://w3id.org/fuskg/temporal> rdf:type owl:Ontology ;
                                    owl:imports <http://www.w3.org/2006/time#2016> ,
-                                               <http://www.w3.org/ns/dcat> ;
+                                               <http://www.w3.org/ns/dcat> ,
+                                               <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-activity.ttl> ,
+                                               <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-recipes.ttl> ;
                                    <http://purl.org/dc/terms/creator> "Gianluca Apriceno" ,
                                                                       "Mauro Dragoni"^^xsd:string ,
                                                                       "Tania Bailoni"^^xsd:string ;
@@ -63,7 +65,6 @@ fstemp:beforeStep rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/fuskg/temporal#hasFirstRecipeStep
 fstemp:hasFirstRecipeStep rdf:type owl:ObjectProperty ;
-                          rdfs:domain <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
                           rdfs:range fstemp:RecipeStep ;
                           rdfs:comment "Property used to connect a Recipe with its first RecipeStep."@en ,
                                        "has first recipe step" ;
@@ -122,18 +123,6 @@ fstemp:stepDescription rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
-###  http://www.fbk.eu/ontologies/virtualcoach#Recipe
-<http://www.fbk.eu/ontologies/virtualcoach#Recipe> rdf:type owl:Class .
-
-
-###  https://w3id.org/fuskg/temporal#Recipe1m
-fstemp:Recipe1m rdf:type owl:Class ;
-                rdfs:subClassOf <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
-                rdfs:comment "Concept denoting recipes of Recipe1m+ dataset."@en ;
-                rdfs:label "Recipe1m"@en ,
-                           "Recipe1m"@it .
-
-
 ###  https://w3id.org/fuskg/temporal#RecipeStep
 fstemp:RecipeStep rdf:type owl:Class ;
                   rdfs:subClassOf fstemp:TemporalStep ;
@@ -147,14 +136,6 @@ fstemp:StepDescription rdf:type owl:Class ;
                        rdfs:comment "Class used to represent a generic description step."@en ;
                        rdfs:label "Descrizione step"@it ,
                                   "Step description"@en .
-
-
-###  https://w3id.org/fuskg/temporal#Tasty
-fstemp:Tasty rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.fbk.eu/ontologies/virtualcoach#Recipe> ;
-             rdfs:comment "Concept denoting recipes of Tasty dataset."@en ;
-             rdfs:label "Tasty"@en ,
-                        "Tasty"@it .
 
 
 ###  https://w3id.org/fuskg/temporal#TemporalStep
