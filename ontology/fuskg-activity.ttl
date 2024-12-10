@@ -4,16 +4,67 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix fsacti: <https://w3id.org/fuskg/activity#> .
 @prefix fscore: <https://w3id.org/fuskg/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/fuskg/activity> .
 
 <https://w3id.org/fuskg/activity> rdf:type owl:Ontology ;
-                                   owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-core.ttl> .
+                                   owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-core.ttl> ;
+                                   dcterms:modified "2024-12-06" ;
+                                   vann:preferredNamespacePrefix "fsacti" ;
+                                   dcterms:creator "Gianluca Apriceno" ,
+                                                   "Jacopo Bennati" ,
+                                                   "Mauro Dragoni" ;
+                                   dcterms:title "Activity Module of Functional Status Knowledge Graph (FuS-KG)"@en ;
+                                   dcterms:issued "2017-05-02" ;
+                                   owl:versionInfo "1.0.0"@en ;
+                                   dcterms:creator "Tania Bailoni" ;
+                                   dcterms:publisher "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                                   vann:preferredNamespaceUri "https://w3id.org/fuskg/activity#" ;
+                                   dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+                                   dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
 
 ###  http://www.w3.org/2000/01/rdf-schema#domain
 rdfs:domain rdf:type owl:AnnotationProperty .
@@ -23,8 +74,31 @@ rdfs:domain rdf:type owl:AnnotationProperty .
 rdfs:range rdf:type owl:AnnotationProperty .
 
 
+###  https://w3id.org/fuskg/activity#activityCode
+fsacti:activityCode rdf:type owl:AnnotationProperty .
+
+
 ###  https://w3id.org/fuskg/activity#commonSense
-fsacti:commonSense rdf:type owl:AnnotationProperty .
+fsacti:commonSense rdf:type owl:AnnotationProperty ;
+                   rdfs:comment "This annotation is used to specify common sense labels of activities."@en ;
+                   rdfs:label "common sense"@en ,
+                              "senso comue"@it .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/fuskg/activity#practicedBy
+fsacti:practicedBy rdf:type owl:ObjectProperty ;
+                   rdfs:domain fsacti:SpecializedActivity ;
+                   rdfs:range fsacti:PractitionerType .
+
+
+###  https://w3id.org/fuskg/activity#specializes
+fsacti:specializes rdf:type owl:ObjectProperty ;
+                   rdfs:domain fsacti:SpecializedActivity ;
+                   rdfs:range fscore:Activity .
 
 
 #################################################################
@@ -32,27 +106,21 @@ fsacti:commonSense rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  https://w3id.org/fuskg/activity#hasMETValue
-fsacti:hasMETValue rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/activity#hasMETValueLightEffort
-fsacti:hasMETValueLightEffort rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/activity#hasMETValueVigorousEffort
-fsacti:hasMETValueVigorousEffort rdf:type owl:DatatypeProperty .
+fsacti:hasMETValue rdf:type owl:DatatypeProperty ;
+                   rdfs:domain fsacti:SpecializedActivity ;
+                   rdfs:range xsd:double ;
+                   rdfs:comment "This property specifies the MET value of an activity."@en ;
+                   rdfs:label "ha valore MET"@en ,
+                              "has MET value"@en .
 
 
 ###  https://w3id.org/fuskg/activity#hasUnitKCalValue
-fsacti:hasUnitKCalValue rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/activity#hasUnitKCalValueLightEffort
-fsacti:hasUnitKCalValueLightEffort rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/activity#hasUnitKCalValueVigorousEffort
-fsacti:hasUnitKCalValueVigorousEffort rdf:type owl:DatatypeProperty .
+fsacti:hasUnitKCalValue rdf:type owl:DatatypeProperty ;
+                        rdfs:domain fsacti:SpecializedActivity ;
+                        rdfs:range xsd:double ;
+                        rdfs:comment "This property specifies the value of Kcal a person spends per kg of weight performing one minute of an activity."@en ;
+                        rdfs:label "ha valore di unita' di Kcal"@en ,
+                                   "has Kcal unit value"@en .
 
 
 #################################################################
@@ -147,6 +215,10 @@ fsacti:PhysicalActivity rdf:type owl:Class ;
                                    "Physical Activity"@en .
 
 
+###  https://w3id.org/fuskg/activity#PractitionerType
+fsacti:PractitionerType rdf:type owl:Class .
+
+
 ###  https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies
 fsacti:RelaxingActivityAndHobbies rdf:type owl:Class ;
                                   rdfs:subClassOf fsacti:LifeActivity ;
@@ -187,6 +259,10 @@ fsacti:SexualActivity rdf:type owl:Class ;
                                  "Sexual Activity"@en .
 
 
+###  https://w3id.org/fuskg/activity#SpecializedActivity
+fsacti:SpecializedActivity rdf:type owl:Class .
+
+
 ###  https://w3id.org/fuskg/activity#Sports
 fsacti:Sports rdf:type owl:Class ;
               rdfs:subClassOf fsacti:PhysicalActivity ;
@@ -225,6 +301,10 @@ fsacti:WinterActivities rdf:type owl:Class ;
                         rdfs:comment "Concept denoting activities belonging to the Winter Activities category."@en ;
                         rdfs:label "Attività Invernali"@it ,
                                    "Winter Activities"@en .
+
+
+###  https://w3id.org/fuskg/core#Activity
+fscore:Activity rdf:type owl:Class .
 
 
 #################################################################
@@ -493,6 +573,12 @@ fsacti:ACTIVITY-01070 rdf:type owl:NamedIndividual ,
                                  "unicycling"@en ;
                       fsacti:commonSense "ciclismo in monociclo"@it ,
                                          "unicycling"@en .
+
+
+###  https://w3id.org/fuskg/activity#ACTIVITY-01080
+fsacti:ACTIVITY-01080 rdf:type owl:NamedIndividual ,
+                               fsacti:Bicycling ;
+                      rdfs:label "E-bike (electrically assisted)"@en .
 
 
 ###  https://w3id.org/fuskg/activity#ACTIVITY-02001
@@ -13684,6 +13770,43 @@ fsacti:ACTIVITY-20095 rdf:type owl:NamedIndividual ,
                                          "manual labor, heavy maintenance"@en .
 
 
+###  https://w3id.org/fuskg/activity#Adult
+fsacti:Adult rdf:type owl:NamedIndividual ,
+                      fsacti:PractitionerType .
+
+
+###  https://w3id.org/fuskg/activity#AdultWheelchair
+fsacti:AdultWheelchair rdf:type owl:NamedIndividual ,
+                                fsacti:PractitionerType .
+
+
+###  https://w3id.org/fuskg/activity#OlderAdult
+fsacti:OlderAdult rdf:type owl:NamedIndividual ,
+                           fsacti:PractitionerType .
+
+
+###  https://w3id.org/fuskg/activity#S-ACTIVITY-01080-AD
+fsacti:S-ACTIVITY-01080-AD rdf:type owl:NamedIndividual ,
+                                    fsacti:SpecializedActivity ;
+                           fsacti:practicedBy fsacti:Adult ;
+                           fsacti:specializes fsacti:ACTIVITY-01080 ;
+                           fsacti:hasMETValue 6.8 ;
+                           fsacti:hasUnitKCalValue 0.113333333 ;
+                           rdfs:label "E-bike (electrically assisted) without electronic support"@en ;
+                           fsacti:activityCode "01080"@en .
+
+
+###  https://w3id.org/fuskg/activity#S-ACTIVITY-01084-AD
+fsacti:S-ACTIVITY-01084-AD rdf:type owl:NamedIndividual ,
+                                    fsacti:SpecializedActivity ;
+                           fsacti:practicedBy fsacti:Adult ;
+                           fsacti:specializes fsacti:ACTIVITY-01080 ;
+                           fsacti:hasMETValue 6.0 ;
+                           fsacti:hasUnitKCalValue 0.1 ;
+                           rdfs:label "E-bike (electrically assisted) with light electronic support"@en ;
+                           fsacti:activityCode "01084"@en .
+
+
 #################################################################
 #    Annotations
 #################################################################
@@ -13706,4 +13829,4 @@ fsacti:ACTIVITY-20095 rdf:type owl:NamedIndividual ,
 <http://www.fbk.eu/ontologies/virtualcoach#ACTIVITY-v2090-A> fsacti:commonSense "slimnastics"@it .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

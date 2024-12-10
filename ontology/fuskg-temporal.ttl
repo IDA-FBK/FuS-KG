@@ -4,25 +4,27 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix fsacti: <https://w3id.org/fuskg/activity#> .
+@prefix fsfood: <https://w3id.org/fuskg/food#> .
 @prefix fsreci: <https://w3id.org/fuskg/recipe#> .
 @prefix fstemp: <https://w3id.org/fuskg/temporal#> .
 @base <https://w3id.org/fuskg/temporal> .
 
 <https://w3id.org/fuskg/temporal> rdf:type owl:Ontology ;
-                                   owl:imports <http://www.w3.org/2006/time#2016> ,
-                                               <http://www.w3.org/ns/dcat> ,
-                                               <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-activity.ttl> ,
-                                               <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-recipes.ttl> ;
+                                   owl:imports <http://www.w3.org/ns/dcat> ,
+                                               <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-recipes.ttl> ,
+                                               time: ,
+                                               <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-activity.ttl> ;
                                    <http://purl.org/dc/terms/creator> "Gianluca Apriceno" ,
-                                                                      "Mauro Dragoni"^^xsd:string ,
-                                                                      "Tania Bailoni"^^xsd:string ;
-                                   <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-sa/4.0/" ;
-                                   <http://purl.org/dc/terms/publisher> "Digital Health and Wellbeing Research Group, Fondazione Bruno Kessler <https://digitalhealthcenter.fbk.eu>" ;
+                                                                      "Mauro Dragoni" ;
+                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fuskg/temporal#" ;
+                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "fstemp" ;
                                    <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>" ;
-                                   <http://purl.org/dc/terms/title> "MuMoNut: A Multi-Modal Knowledge Graph for the Nutrition Domain" ;
-                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "mm" ;
-                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.semanticweb.org/MuMoNut/ontology/2023/1/mm#" ;
+                                   <http://purl.org/dc/terms/title> "Temporal Module of the Functional Status Knowledge Graph (FuS-KG)" ;
+                                   <http://purl.org/dc/terms/creator> "Tania Bailoni" ;
+                                   <http://purl.org/dc/terms/publisher> "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                                   <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc-sa/4.0/" ;
                                    owl:versionInfo 1.00 .
 
 #################################################################
@@ -65,10 +67,11 @@ fstemp:beforeStep rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/fuskg/temporal#hasFirstRecipeStep
 fstemp:hasFirstRecipeStep rdf:type owl:ObjectProperty ;
+                          rdfs:domain fsreci:Recipe ;
                           rdfs:range fstemp:RecipeStep ;
-                          rdfs:comment "Property used to connect a Recipe with its first RecipeStep."@en ,
-                                       "has first recipe step" ;
-                          rdfs:label "ha step iniziale ricetta"@it .
+                          rdfs:comment "Property used to connect a Recipe with its first RecipeStep."@en ;
+                          rdfs:label "ha step iniziale della ricetta"@it ,
+                                     "has first recipe step"@en .
 
 
 ###  https://w3id.org/fuskg/temporal#hasStepDescription
@@ -76,13 +79,20 @@ fstemp:hasStepDescription rdf:type owl:ObjectProperty ;
                           rdfs:domain fstemp:TemporalStep ;
                           rdfs:range fstemp:StepDescription ;
                           rdfs:comment "Property used to connect a Temporal Step with its corresponding StepDescription."@en ;
-                          rdfs:label "ha descrizione Step"@it ,
+                          rdfs:label "ha descrizione dello Step"@it ,
                                      "has Step Description"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://w3id.org/fuskg/temporal#duration
+fstemp:duration rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf time:numericDuration ;
+                rdfs:label "durata"@it ,
+                           "duration"@en .
+
 
 ###  https://w3id.org/fuskg/temporal#orderedStepBegin
 fstemp:orderedStepBegin rdf:type owl:DatatypeProperty ;
@@ -102,19 +112,11 @@ fstemp:orderedStepEnd rdf:type owl:DatatypeProperty ;
                                  "temporal step end"@en .
 
 
-###  https://w3id.org/fuskg/temporal#resourceURL
-fstemp:resourceURL rdf:type owl:DatatypeProperty ;
-                   rdfs:range xsd:anyURI ;
-                   rdfs:comment "URL pointing to a resource."@en ;
-                   rdfs:label "URL resource"@en ,
-                              "URL risorsa"@it .
-
-
 ###  https://w3id.org/fuskg/temporal#stepDescription
 fstemp:stepDescription rdf:type owl:DatatypeProperty ;
                        rdfs:domain fstemp:StepDescription ;
                        rdfs:range xsd:string ;
-                       rdfs:comment "Text description of a StepDescription." ;
+                       rdfs:comment "Text description of an instance of StepDescription." ;
                        rdfs:label "description step"@en ,
                                   "descrizione step"@it .
 
@@ -123,27 +125,63 @@ fstemp:stepDescription rdf:type owl:DatatypeProperty ;
 #    Classes
 #################################################################
 
+###  https://w3id.org/fuskg/recipe#Recipe
+fsreci:Recipe rdf:type owl:Class .
+
+
+###  https://w3id.org/fuskg/temporal#Day
+fstemp:Day rdf:type owl:Class ;
+           rdfs:subClassOf fstemp:Timespan ;
+           rdfs:comment "Concept defigning a time period of one day."@en ;
+           rdfs:label "Day"@en ,
+                      "Giornata"@it .
+
+
+###  https://w3id.org/fuskg/temporal#Meal
+fstemp:Meal rdf:type owl:Class ;
+            rdfs:subClassOf time:Instant ;
+            rdfs:comment "This concept enables the definition of a Meal as the time a person eats exploited for monitoring users."@en ;
+            rdfs:label "Meal"@en ,
+                       "Pasto"@it .
+
+
 ###  https://w3id.org/fuskg/temporal#RecipeStep
 fstemp:RecipeStep rdf:type owl:Class ;
                   rdfs:subClassOf fstemp:TemporalStep ;
-                  rdfs:comment "Concept used to represent a step of a recipe."@en ;
+                  rdfs:comment "This concept is used to represent a step of a recipe."@en ;
                   rdfs:label "Recipe step"@en ,
                              "Step ricetta"@it .
 
 
 ###  https://w3id.org/fuskg/temporal#StepDescription
 fstemp:StepDescription rdf:type owl:Class ;
-                       rdfs:comment "Class used to represent a generic description step."@en ;
+                       rdfs:comment "This concept is used to represent a generic description step."@en ;
                        rdfs:label "Descrizione step"@it ,
                                   "Step description"@en .
 
 
 ###  https://w3id.org/fuskg/temporal#TemporalStep
 fstemp:TemporalStep rdf:type owl:Class ;
-                    rdfs:subClassOf <http://www.w3.org/2006/time#ProperInterval> ;
-                    rdfs:comment "Concept denoting a generic temporal step."@en ;
+                    rdfs:subClassOf time:ProperInterval ;
+                    rdfs:comment "This concept defines generic temporal steps."@en ;
                     rdfs:label "Step temporale"@it ,
                                "Temporal step"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  https://w3id.org/fuskg/temporal#Timespan
+fstemp:Timespan rdf:type owl:Class ;
+                rdfs:subClassOf time:ProperInterval ;
+                rdfs:comment "This concept enables the definition of custom time period exploited for monitoring users."@en ;
+                rdfs:label "Intervallo Temporale"@it ,
+                           "Timespan"@en .
+
+
+###  https://w3id.org/fuskg/temporal#Week
+fstemp:Week rdf:type owl:Class ;
+            rdfs:subClassOf fstemp:Timespan ;
+            rdfs:comment "Concept defigning a time period of one week."@en ;
+            rdfs:label "Settimana"@it ,
+                       "Week"@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

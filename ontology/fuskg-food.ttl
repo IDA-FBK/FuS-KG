@@ -11,20 +11,21 @@
 @base <https://w3id.org/fuskg/food> .
 
 <https://w3id.org/fuskg/food> rdf:type owl:Ontology ;
-                               owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-core.ttl> ;
-                               dcterms:creator "Claudio Eccher" ,
-                                               "Mauro Dragoni"^^xsd:string ,
-                                               "Rosa Maimone" ,
-                                               "Tania Bailoni"^^xsd:string ;
+                               owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-core.ttl> ;
+                               owl:versionInfo "1.02" ;
+                               dcterms:creator "Gianluca Apriceno" ,
+                                               "Mauro Dragoni" ,
+                                               "Rosa Maimone" ;
                                dcterms:issued "2017-05-02"^^xsd:date ;
+                               vann:preferredNamespaceUri "https://w3id.org/fuskg/food#" ;
+                               dcterms:creator "Tania Bailoni" ;
+                               dcterms:publisher "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                               dcterms:creator "Claudio Eccher" ;
+                               vann:preferredNamespacePrefix "fsfood" ;
+                               dcterms:modified "2024-05-13"^^xsd:date ;
                                dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-                               dcterms:modified "2017-05-14"^^xsd:date ;
-                               dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
                                dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
-                               dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
-                               vann:preferredNamespacePrefix "vc" ;
-                               vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#" ;
-                               owl:versionInfo "1.02" .
+                               dcterms:title "Food Module of Functional Status Knowledge Graph (FuS-KG)"@en .
 
 #################################################################
 #    Annotation properties
@@ -74,112 +75,18 @@ rdfs:domain rdf:type owl:AnnotationProperty .
 rdfs:range rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/fuskg/food#activeCategory
-fsfood:activeCategory rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/food#appliesTo
-fsfood:appliesTo rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/food#command
-fsfood:command rdf:type owl:AnnotationProperty ;
-               rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#commonSense
-fsfood:commonSense rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/fuskg/food#foodId
 fsfood:foodId rdf:type owl:AnnotationProperty ;
               rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#hasForbiddenCategory
-fsfood:hasForbiddenCategory rdf:type owl:AnnotationProperty ;
-                            rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#hasMandatoryCategory
-fsfood:hasMandatoryCategory rdf:type owl:AnnotationProperty ;
-                            rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#hasMonitoredValue
-fsfood:hasMonitoredValue rdf:type owl:AnnotationProperty ;
-                         rdfs:domain "" ;
-                         rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/food#hasMonitoredValueInterval
-fsfood:hasMonitoredValueInterval rdf:type owl:AnnotationProperty ;
-                                 rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/food#hasOperator
-fsfood:hasOperator rdf:type owl:AnnotationProperty ;
-                   rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#hasPriority
-fsfood:hasPriority rdf:type owl:AnnotationProperty ;
-                   rdfs:domain "" ;
-                   rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/food#hasRuleId
-fsfood:hasRuleId rdf:type owl:AnnotationProperty ;
-                 rdfs:domain "" ;
-                 rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/food#id
-fsfood:id rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/food#interfaceLabel
-fsfood:interfaceLabel rdf:type owl:AnnotationProperty ;
-                      rdfs:domain "" ;
-                      rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/food#isRecipeConsumedFood
-fsfood:isRecipeConsumedFood rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/fuskg/food#isUnspecifiedFood
 fsfood:isUnspecifiedFood rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/fuskg/food#lowerBound
-fsfood:lowerBound rdf:type owl:AnnotationProperty ;
-                  rdfs:range xsd:double .
-
-
-###  https://w3id.org/fuskg/food#monitoredEntity
-fsfood:monitoredEntity rdf:type owl:AnnotationProperty ;
-                       rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#monitoredEntityType
-fsfood:monitoredEntityType rdf:type owl:AnnotationProperty ;
-                           rdfs:domain "" .
-
-
 ###  https://w3id.org/fuskg/food#productCategory
 fsfood:productCategory rdf:type owl:AnnotationProperty ;
                        rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#timing
-fsfood:timing rdf:type owl:AnnotationProperty ;
-              rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/food#upperBound
-fsfood:upperBound rdf:type owl:AnnotationProperty ;
-                  rdfs:range xsd:double .
 
 
 #################################################################
@@ -194,11 +101,8 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/fuskg/food#hasFood
-fsfood:hasFood rdf:type owl:ObjectProperty ;
-               rdfs:comment "Property used to connect a RecipeFood with its corresponding Food."@en ;
-               rdfs:label "ha Cibo"@it ,
-                          "has Food"@en .
+###  https://w3id.org/fuskg/core#contains
+fscore:contains rdf:type owl:ObjectProperty .
 
 
 #################################################################
@@ -207,56 +111,69 @@ fsfood:hasFood rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/fuskg/food#amountCalories
 fsfood:amountCalories rdf:type owl:DatatypeProperty ;
+                      rdfs:domain fscore:Food ;
                       rdfs:range xsd:double ;
+                      rdfs:comment "specifies the amount of calories"@en ;
                       rdfs:label "amount of Calories"@en ,
-                                 "quantit  Calorie"@it .
+                                 "quantita' di Calorie"@it .
 
 
 ###  https://w3id.org/fuskg/food#amountEnergy
 fsfood:amountEnergy rdf:type owl:DatatypeProperty ;
+                    rdfs:domain fscore:Food ;
                     rdfs:range xsd:double ;
+                    rdfs:comment "specifies the amount of energy"@en ;
                     rdfs:label "amount of Energy"@en ,
-                               "quantit  Energia"@it .
-
-
-###  https://w3id.org/fuskg/food#amountFood
-fsfood:amountFood rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:double ;
-                  rdfs:label "amount of Food"@en ,
-                             "quantit  Cibo"@it .
+                               "quantita' di Energia"@it .
 
 
 ###  https://w3id.org/fuskg/food#amountNutrient
 fsfood:amountNutrient rdf:type owl:DatatypeProperty ;
+                      rdfs:domain fscore:Nutrient ;
                       rdfs:range xsd:double ;
+                      rdfs:comment "specifies the amount of the nutrient"@en ;
                       rdfs:label "amount of Nutrient"@en ,
-                                 "quantit  Nutriente"@it .
+                                 "quantita' di Nutriente"@it .
 
 
 ###  https://w3id.org/fuskg/food#amountWater
 fsfood:amountWater rdf:type owl:DatatypeProperty ;
+                   rdfs:domain fscore:Food ;
                    rdfs:range xsd:double ;
+                   rdfs:comment "specifies the amount of water"@en ;
                    rdfs:label "amount of Water"@en ,
-                              "quantit  Acqua"@it .
+                              "quantita' di Acqua"@it .
 
 
 ###  https://w3id.org/fuskg/food#ediblePart
 fsfood:ediblePart rdf:type owl:DatatypeProperty ;
+                  rdfs:domain fscore:Food ;
                   rdfs:range xsd:double ;
+                  rdfs:comment "specifies the amount of the edible part of a food"@en ;
                   rdfs:label "edible part"@en ,
                              "parte edibile"@it .
 
 
 ###  https://w3id.org/fuskg/food#unit
 fsfood:unit rdf:type owl:DatatypeProperty ;
+            rdfs:domain fscore:Nutrient ;
             rdfs:range xsd:string ;
+            rdfs:comment "specifies the unit of measure"@en ;
             rdfs:label "unit"@en ,
-                       "unit "@it .
+                       "unita'"@it .
 
 
 #################################################################
 #    Classes
 #################################################################
+
+###  https://w3id.org/fuskg/core#Food
+fscore:Food rdf:type owl:Class .
+
+
+###  https://w3id.org/fuskg/core#Nutrient
+fscore:Nutrient rdf:type owl:Class .
+
 
 ###  https://w3id.org/fuskg/food#AdultBovineFattyRedMeat
 fsfood:AdultBovineFattyRedMeat rdf:type owl:Class ;
@@ -303,8 +220,7 @@ fsfood:AgedCheese rdf:type owl:Class ;
                   rdfs:subClassOf fsfood:Cheese ;
                   rdfs:comment "Concept denoting foods belonging to the Aged Cheese category."@en ;
                   rdfs:label "Aged Cheese"@en ,
-                             "Formaggi Stagionati"@it ;
-                  fsfood:activeCategory "1" .
+                             "Formaggi Stagionati"@it .
 
 
 ###  https://w3id.org/fuskg/food#Alanine
@@ -328,8 +244,7 @@ fsfood:AlcoholicBeverages rdf:type owl:Class ;
                           rdfs:subClassOf fsfood:Beverages ;
                           rdfs:comment "Concept denoting foods belonging to the Alcoholic Beverages category."@en ;
                           rdfs:label "Alcoholic Beverages"@en ,
-                                     "Bevande Alcoliche"@it ;
-                          fsfood:activeCategory "1" .
+                                     "Bevande Alcoliche"@it .
 
 
 ###  https://w3id.org/fuskg/food#Algae
@@ -353,8 +268,7 @@ fsfood:AnimalFats rdf:type owl:Class ;
                   rdfs:subClassOf fsfood:AnimalFatsAndOils ;
                   rdfs:comment "Concept denoting foods belonging to the Animal Fats category."@en ;
                   rdfs:label "Animal Fats"@en ,
-                             "Grasso Animale"@it ;
-                  fsfood:activeCategory "1" .
+                             "Grasso Animale"@it .
 
 
 ###  https://w3id.org/fuskg/food#AnimalFatsAndOils
@@ -378,8 +292,7 @@ fsfood:AnimalMilk rdf:type owl:Class ;
                   rdfs:subClassOf fsfood:MilkAndYogurt ;
                   rdfs:comment "Concept denoting foods belonging to the Animal Milk category."@en ;
                   rdfs:label "Animal Milk"@en ,
-                             "Latte Animale"@it ;
-                  fsfood:activeCategory "1" .
+                             "Latte Animale"@it .
 
 
 ###  https://w3id.org/fuskg/food#AnimalProtein
@@ -483,8 +396,7 @@ fsfood:BiscuitsAndCrackers rdf:type owl:Class ;
                            rdfs:subClassOf fsfood:CerealsAndGrainProducts ;
                            rdfs:comment "Concept denoting foods belonging to the Bicuits and Crackers category."@en ;
                            rdfs:label "Bicuits and Crackers"@en ,
-                                      "Biscotti e Crackers"@it ;
-                           fsfood:activeCategory "1" .
+                                      "Biscotti e Crackers"@it .
 
 
 ###  https://w3id.org/fuskg/food#Bread
@@ -492,8 +404,7 @@ fsfood:Bread rdf:type owl:Class ;
              rdfs:subClassOf fsfood:CerealsAndGrainProducts ;
              rdfs:comment "Concept denoting foods belonging to the Bread category."@en ;
              rdfs:label "Bread"@en ,
-                        "Pane"@it ;
-             fsfood:activeCategory "1" .
+                        "Pane"@it .
 
 
 ###  https://w3id.org/fuskg/food#BrinedFish
@@ -589,8 +500,7 @@ fsfood:Cereals rdf:type owl:Class ;
                rdfs:subClassOf fsfood:CerealsAndGrainProducts ;
                rdfs:comment "Concept denoting foods belonging to the Cereals category."@en ;
                rdfs:label "Cereali"@it ,
-                          "Cereals"@en ;
-               fsfood:activeCategory "1" .
+                          "Cereals"@en .
 
 
 ###  https://w3id.org/fuskg/food#CerealsAndGrainProducts
@@ -598,8 +508,7 @@ fsfood:CerealsAndGrainProducts rdf:type owl:Class ;
                                rdfs:subClassOf fsfood:BasicFood ;
                                rdfs:comment "Concept denoting foods belonging to the Cereal and Grain Products category."@en ;
                                rdfs:label "Cereal and Grain Products"@en ,
-                                          "Cereali e Prodotti Derivati"@it ;
-                               fsfood:activeCategory "1" .
+                                          "Cereali e Prodotti Derivati"@it .
 
 
 ###  https://w3id.org/fuskg/food#Cheese
@@ -607,8 +516,7 @@ fsfood:Cheese rdf:type owl:Class ;
               rdfs:subClassOf fsfood:MilkAndDairyProducts ;
               rdfs:comment "Concept denoting foods belonging to the Cheese category."@en ;
               rdfs:label "Cheese"@en ,
-                         "Formaggio"@it ;
-              fsfood:activeCategory "1" .
+                         "Formaggio"@it .
 
 
 ###  https://w3id.org/fuskg/food#Chlorine
@@ -624,8 +532,7 @@ fsfood:ChocolateAndCocoa rdf:type owl:Class ;
                          rdfs:subClassOf fsfood:SugarAndSweets ;
                          rdfs:comment "Concept denoting foods belonging to the Chocolate and Cocoa category."@en ;
                          rdfs:label "Chocolate and Cocoa"@en ,
-                                    "Cioccolato e Cacao"@it ;
-                         fsfood:activeCategory "1" .
+                                    "Cioccolato e Cacao"@it .
 
 
 ###  https://w3id.org/fuskg/food#Cholesterol
@@ -641,8 +548,7 @@ fsfood:CoffeeAndSubstitutes rdf:type owl:Class ;
                             rdfs:subClassOf fsfood:Beverages ;
                             rdfs:comment "Concept denoting foods belonging to the Coffee and Substitutes category."@en ;
                             rdfs:label "Caff  e Sostituti"@it ,
-                                       "Coffee and Substitutes"@en ;
-                            fsfood:activeCategory "1" .
+                                       "Coffee and Substitutes"@en .
 
 
 ###  https://w3id.org/fuskg/food#ColdCuts
@@ -650,8 +556,7 @@ fsfood:ColdCuts rdf:type owl:Class ;
                 rdfs:subClassOf fsfood:SausagesAndColdCuts ;
                 rdfs:comment "Concept denoting foods belonging to the Cold Cuts category."@en ;
                 rdfs:label "Cold Cuts"@en ,
-                           "Salumi"@it ;
-                fsfood:activeCategory "1" .
+                           "Salumi"@it .
 
 
 ###  https://w3id.org/fuskg/food#ComposedFood
@@ -711,8 +616,7 @@ fsfood:Dessert rdf:type owl:Class ;
                rdfs:subClassOf fsfood:SugarAndSweets ;
                rdfs:comment "Concept denoting foods belonging to the Dessert category."@en ;
                rdfs:label "Dessert"@en ,
-                          "Dessert"@it ;
-               fsfood:activeCategory "1" .
+                          "Dessert"@it .
 
 
 ###  https://w3id.org/fuskg/food#DietaryFiber
@@ -768,8 +672,7 @@ fsfood:Eggs rdf:type owl:Class ;
             rdfs:subClassOf fsfood:BasicFood ;
             rdfs:comment "Concept denoting foods belonging to the Eggs category."@en ;
             rdfs:label "Eggs"@en ,
-                       "Uova"@it ;
-            fsfood:activeCategory "1" .
+                       "Uova"@it .
 
 
 ###  https://w3id.org/fuskg/food#EicosenoicAcid
@@ -793,8 +696,7 @@ fsfood:FatsAndOils rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:BasicFood ;
                    rdfs:comment "Concept denoting foods belonging to the Fats and Oils category."@en ;
                    rdfs:label "Fats and Oils"@en ,
-                              "Grassi e Oli"@it ;
-                   fsfood:activeCategory "1" .
+                              "Grassi e Oli"@it .
 
 
 ###  https://w3id.org/fuskg/food#FattyRedMeat
@@ -802,8 +704,7 @@ fsfood:FattyRedMeat rdf:type owl:Class ;
                     rdfs:subClassOf fsfood:RedMeat ;
                     rdfs:comment "Concept denoting foods belonging to the Fatty Red Meat category."@en ;
                     rdfs:label "Carne Rossa Grassa"@it ,
-                               "Fatty Red Meat"@en ;
-                    fsfood:activeCategory "1" .
+                               "Fatty Red Meat"@en .
 
 
 ###  https://w3id.org/fuskg/food#FattyWhiteMeat
@@ -811,8 +712,7 @@ fsfood:FattyWhiteMeat rdf:type owl:Class ;
                       rdfs:subClassOf fsfood:WhiteMeat ;
                       rdfs:comment "Concept denoting foods belonging to the Fatty White Meat category."@en ;
                       rdfs:label "Carne Bianca Grassa"@it ,
-                                 "Fatty White Meat"@en ;
-                      fsfood:activeCategory "1" .
+                                 "Fatty White Meat"@en .
 
 
 ###  https://w3id.org/fuskg/food#Fish
@@ -820,8 +720,7 @@ fsfood:Fish rdf:type owl:Class ;
             rdfs:subClassOf fsfood:FishAndSeafood ;
             rdfs:comment "Concept denoting foods belonging to the Fish category."@en ;
             rdfs:label "Fish"@en ,
-                       "Pesce"@it ;
-            fsfood:activeCategory "1" .
+                       "Pesce"@it .
 
 
 ###  https://w3id.org/fuskg/food#FishAndSeafood
@@ -829,8 +728,7 @@ fsfood:FishAndSeafood rdf:type owl:Class ;
                       rdfs:subClassOf fsfood:BasicFood ;
                       rdfs:comment "Concept denoting foods belonging to the Fish and Seafood category."@en ;
                       rdfs:label "Fish and Seafood"@en ,
-                                 "Pesce, Molluschi e Crostacei"@it ;
-                      fsfood:activeCategory "1" .
+                                 "Pesce, Molluschi e Crostacei"@it .
 
 
 ###  https://w3id.org/fuskg/food#Flour
@@ -862,8 +760,7 @@ fsfood:FreshCereals rdf:type owl:Class ;
                     rdfs:subClassOf fsfood:Cereals ;
                     rdfs:comment "Concept denoting foods belonging to the Fresh Cereals category."@en ;
                     rdfs:label "Cereali Freschi"@it ,
-                               "Fresh Cereals"@en ;
-                    fsfood:activeCategory "1" .
+                               "Fresh Cereals"@en .
 
 
 ###  https://w3id.org/fuskg/food#FreshCheese
@@ -871,8 +768,7 @@ fsfood:FreshCheese rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:Cheese ;
                    rdfs:comment "Concept denoting foods belonging to the Fresh Cheese category."@en ;
                    rdfs:label "Formaggi Freschi"@it ,
-                              "Fresh Cheese"@en ;
-                   fsfood:activeCategory "1" .
+                              "Fresh Cheese"@en .
 
 
 ###  https://w3id.org/fuskg/food#FreshCulinaryErbs
@@ -896,8 +792,7 @@ fsfood:FreshFruits rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:Fruits ;
                    rdfs:comment "Concept denoting foods belonging to the Fresh Fruits category."@en ;
                    rdfs:label "Fresh Fruits"@en ,
-                              "Frutta Fresca"@it ;
-                   fsfood:activeCategory "1" .
+                              "Frutta Fresca"@it .
 
 
 ###  https://w3id.org/fuskg/food#FreshLegumes
@@ -1012,8 +907,7 @@ fsfood:FreshVegetables rdf:type owl:Class ;
                        rdfs:subClassOf fsfood:StarchyFreeVegetables ;
                        rdfs:comment "Concept denoting foods belonging to the Fresh Starchy Free Vegetables category."@en ;
                        rdfs:label "Fresh Starchy Free Vegetables"@en ,
-                                  "Verdure ed Ortaggi Freschi a Basso Contenuto di Amido"@it ;
-                       fsfood:activeCategory "1" .
+                                  "Verdure ed Ortaggi Freschi a Basso Contenuto di Amido"@it .
 
 
 ###  https://w3id.org/fuskg/food#FrozenFish
@@ -1109,8 +1003,7 @@ fsfood:FruitBasedBeverages rdf:type owl:Class ;
                            rdfs:subClassOf fsfood:Fruits ;
                            rdfs:comment "Concept denoting foods belonging to the Fruit Based Beverages category."@en ;
                            rdfs:label "Fruit Based Beverages"@en ,
-                                      "Spremute o Bevande a base di Frutta"@it ;
-                           fsfood:activeCategory "1" .
+                                      "Spremute o Bevande a base di Frutta"@it .
 
 
 ###  https://w3id.org/fuskg/food#FruitJuices
@@ -1118,8 +1011,7 @@ fsfood:FruitJuices rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:SweetBeveragesAndJuices ;
                    rdfs:comment "Concept denoting foods belonging to the Fruit Juices category."@en ;
                    rdfs:label "Fruit Juices"@en ,
-                              "Succhi di Frutta"@it ;
-                   fsfood:activeCategory "1" .
+                              "Succhi di Frutta"@it .
 
 
 ###  https://w3id.org/fuskg/food#FruitPeel
@@ -1135,8 +1027,7 @@ fsfood:Fruits rdf:type owl:Class ;
               rdfs:subClassOf fsfood:BasicFood ;
               rdfs:comment "Concept denoting foods belonging to the Fruits category."@en ;
               rdfs:label "Fruits"@en ,
-                         "Frutta"@it ;
-              fsfood:activeCategory "1" .
+                         "Frutta"@it .
 
 
 ###  https://w3id.org/fuskg/food#Galactose
@@ -1192,8 +1083,7 @@ fsfood:IceCream rdf:type owl:Class ;
                 rdfs:subClassOf fsfood:SugarAndSweets ;
                 rdfs:comment "Concept denoting foods belonging to the Ice Cream category."@en ;
                 rdfs:label "Gelato"@it ,
-                           "Ice Cream"@en ;
-                fsfood:activeCategory "1" .
+                           "Ice Cream"@en .
 
 
 ###  https://w3id.org/fuskg/food#Iodine
@@ -1225,8 +1115,7 @@ fsfood:Jam rdf:type owl:Class ;
            rdfs:subClassOf fsfood:SweetSpreads ;
            rdfs:comment "Concept denoting foods belonging to the Jam category."@en ;
            rdfs:label "Jam"@en ,
-                      "Marmellata"@it ;
-           fsfood:activeCategory "1" .
+                      "Marmellata"@it .
 
 
 ###  https://w3id.org/fuskg/food#Lactose
@@ -1274,8 +1163,7 @@ fsfood:LeanRedMeat rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:RedMeat ;
                    rdfs:comment "Concept denoting foods belonging to the Lean Red Meat category."@en ;
                    rdfs:label "Carne Rossa Magra"@it ,
-                              "Lean Red Meat"@en ;
-                   fsfood:activeCategory "1" .
+                              "Lean Red Meat"@en .
 
 
 ###  https://w3id.org/fuskg/food#LeanWhiteMeat
@@ -1283,8 +1171,7 @@ fsfood:LeanWhiteMeat rdf:type owl:Class ;
                      rdfs:subClassOf fsfood:WhiteMeat ;
                      rdfs:comment "Concept denoting foods belonging to the Lean White Meat category."@en ;
                      rdfs:label "Carne Bianca Magra"@it ,
-                                "Lean White Meat"@en ;
-                     fsfood:activeCategory "1" .
+                                "Lean White Meat"@en .
 
 
 ###  https://w3id.org/fuskg/food#LegumesAndLegumeProducts
@@ -1292,8 +1179,7 @@ fsfood:LegumesAndLegumeProducts rdf:type owl:Class ;
                                 rdfs:subClassOf fsfood:VegetablesAndLegumes ;
                                 rdfs:comment "Concept denoting foods belonging to the Legumes and Legume Products category."@en ;
                                 rdfs:label "Legumes and Legume Products"@en ,
-                                           "Legumi e Prodotti a Base di Legumi"@it ;
-                                fsfood:activeCategory "1" .
+                                           "Legumi e Prodotti a Base di Legumi"@it .
 
 
 ###  https://w3id.org/fuskg/food#Leucine
@@ -1365,8 +1251,7 @@ fsfood:MarinatedFish rdf:type owl:Class ;
                      rdfs:subClassOf fsfood:ProcessedFish ;
                      rdfs:comment "Concept denoting foods belonging to the Marinated Fish category."@en ;
                      rdfs:label "Marinated Fish"@en ,
-                                "Pesce Sott'Olio"@it ;
-                     fsfood:activeCategory "1" .
+                                "Pesce Sott'Olio"@it .
 
 
 ###  https://w3id.org/fuskg/food#MarinatedMushrooms
@@ -1382,8 +1267,7 @@ fsfood:Meat rdf:type owl:Class ;
             rdfs:subClassOf fsfood:BasicFood ;
             rdfs:comment "Concept denoting foods belonging to the Meat category."@en ;
             rdfs:label "Carne"@it ,
-                       "Meat"@en ;
-            fsfood:activeCategory "1" .
+                       "Meat"@en .
 
 
 ###  https://w3id.org/fuskg/food#Methionine
@@ -1407,8 +1291,7 @@ fsfood:MilkAndYogurt rdf:type owl:Class ;
                      rdfs:subClassOf fsfood:MilkAndDairyProducts ;
                      rdfs:comment "Concept denoting foods belonging to the Milk and Yogurt category."@en ;
                      rdfs:label "Latte e Yogurt"@it ,
-                                "Milk and Yogurt"@en ;
-                     fsfood:activeCategory "1" .
+                                "Milk and Yogurt"@en .
 
 
 ###  https://w3id.org/fuskg/food#Mineral
@@ -1424,8 +1307,7 @@ fsfood:Mollusc rdf:type owl:Class ;
                rdfs:subClassOf fsfood:FishAndSeafood ;
                rdfs:comment "Concept denoting foods belonging to the Mollusc category."@en ;
                rdfs:label "Mollusc"@en ,
-                          "Molluschi"@it ;
-               fsfood:activeCategory "1" .
+                          "Molluschi"@it .
 
 
 ###  https://w3id.org/fuskg/food#MonounsaturatedLipid
@@ -1475,8 +1357,7 @@ fsfood:NonAlcoholicBeverages rdf:type owl:Class ;
                              rdfs:subClassOf fsfood:Beverages ;
                              rdfs:comment "Concept denoting foods belonging to the Non-Alcoholic Beverages category."@en ;
                              rdfs:label "Bevande Analcoliche"@it ,
-                                        "Non-Alcoholic Beverages"@en ;
-                             fsfood:activeCategory "1" .
+                                        "Non-Alcoholic Beverages"@en .
 
 
 ###  https://w3id.org/fuskg/food#NutSeedAndOliveProducts
@@ -1484,8 +1365,7 @@ fsfood:NutSeedAndOliveProducts rdf:type owl:Class ;
                                rdfs:subClassOf fsfood:BasicFood ;
                                rdfs:comment "Concept denoting foods belonging to the Nuts, Seeds and Olives category."@en ;
                                rdfs:label "Noci, Frutta a Guscio, Semi e Olive"@it ,
-                                          "Nuts, Seeds and Olives"@en ;
-                               fsfood:activeCategory "1" .
+                                          "Nuts, Seeds and Olives"@en .
 
 
 ###  https://w3id.org/fuskg/food#Nuts
@@ -1493,8 +1373,7 @@ fsfood:Nuts rdf:type owl:Class ;
             rdfs:subClassOf fsfood:NutSeedAndOliveProducts ;
             rdfs:comment "Concept denoting foods belonging to the Nuts category."@en ;
             rdfs:label "Noci e Frutta a Guscio"@it ,
-                       "Nuts"@en ;
-            fsfood:activeCategory "1" .
+                       "Nuts"@en .
 
 
 ###  https://w3id.org/fuskg/food#OleicAcid
@@ -1510,8 +1389,7 @@ fsfood:OlivesAndOliveProducts rdf:type owl:Class ;
                               rdfs:subClassOf fsfood:NutSeedAndOliveProducts ;
                               rdfs:comment "Concept denoting foods belonging to the Olives and Olive Products category."@en ;
                               rdfs:label "Olive e Prodotti di Olive"@it ,
-                                         "Olives and Olive Products"@en ;
-                              fsfood:activeCategory "1" .
+                                         "Olives and Olive Products"@en .
 
 
 ###  https://w3id.org/fuskg/food#OtherLeanRedMeat
@@ -1567,8 +1445,7 @@ fsfood:Pasta rdf:type owl:Class ;
              rdfs:subClassOf fsfood:CerealsAndGrainProducts ;
              rdfs:comment "Concept denoting foods belonging to the Pasta category."@en ;
              rdfs:label "Pasta"@en ,
-                        "Pasta"@it ;
-             fsfood:activeCategory "1" .
+                        "Pasta"@it .
 
 
 ###  https://w3id.org/fuskg/food#Pastry
@@ -1576,8 +1453,7 @@ fsfood:Pastry rdf:type owl:Class ;
               rdfs:subClassOf fsfood:SugarAndSweets ;
               rdfs:comment "Concept denoting foods belonging to the Pastry category."@en ;
               rdfs:label "Paste e Pasticcini"@it ,
-                         "Pastry"@en ;
-              fsfood:activeCategory "1" .
+                         "Pastry"@en .
 
 
 ###  https://w3id.org/fuskg/food#Phenylalanine
@@ -1601,8 +1477,7 @@ fsfood:PizzaAndFocacciaBread rdf:type owl:Class ;
                              rdfs:subClassOf fsfood:CerealsAndGrainProducts ;
                              rdfs:comment "Concept denoting foods belonging to the Pizzas and \"Focaccia\" Breadcategory."@en ;
                              rdfs:label "Pizzas and \"Focaccia\" Bread"@en ,
-                                        "Pizze e Focacce"@it ;
-                             fsfood:activeCategory "1" .
+                                        "Pizze e Focacce"@it .
 
 
 ###  https://w3id.org/fuskg/food#PolarAminoacid
@@ -1730,8 +1605,7 @@ fsfood:ProcessedVegetables rdf:type owl:Class ;
                            rdfs:subClassOf fsfood:StarchyFreeVegetables ;
                            rdfs:comment "Concept denoting foods belonging to the Processed Starchy Free Vegetables category."@en ;
                            rdfs:label "Processed Starchy Free Vegetables"@en ,
-                                      "Verdure e Ortaggi Conservati a Basso Contenuto di Amido"@it ;
-                           fsfood:activeCategory "1" .
+                                      "Verdure e Ortaggi Conservati a Basso Contenuto di Amido"@it .
 
 
 ###  https://w3id.org/fuskg/food#Proline
@@ -1772,8 +1646,7 @@ fsfood:RedMeat rdf:type owl:Class ;
                owl:disjointWith fsfood:WhiteMeat ;
                rdfs:comment "Concept denoting foods belonging to the Red Meat category."@en ;
                rdfs:label "Carne Rossa"@it ,
-                          "Red Meat"@en ;
-               fsfood:activeCategory "1" .
+                          "Red Meat"@en .
 
 
 ###  https://w3id.org/fuskg/food#RetinolEquivalent
@@ -1789,8 +1662,7 @@ fsfood:Rice rdf:type owl:Class ;
             rdfs:subClassOf fsfood:CerealsAndGrainProducts ;
             rdfs:comment "Concept denoting foods belonging to the Rice category."@en ;
             rdfs:label "Rice"@en ,
-                       "Riso"@it ;
-            fsfood:activeCategory "1" .
+                       "Riso"@it .
 
 
 ###  https://w3id.org/fuskg/food#RoastedNuts
@@ -1830,8 +1702,7 @@ fsfood:Sausages rdf:type owl:Class ;
                 rdfs:subClassOf fsfood:SausagesAndColdCuts ;
                 rdfs:comment "Concept denoting foods belonging to the Sausages category."@en ;
                 rdfs:label "Insaccati"@it ,
-                           "Sausages"@en ;
-                fsfood:activeCategory "1" .
+                           "Sausages"@en .
 
 
 ###  https://w3id.org/fuskg/food#SausagesAndColdCuts
@@ -1839,8 +1710,7 @@ fsfood:SausagesAndColdCuts rdf:type owl:Class ;
                            rdfs:subClassOf fsfood:BasicFood ;
                            rdfs:comment "Concept denoting foods belonging to the Sausages and Cold Cuts category."@en ;
                            rdfs:label "Salumi e Insaccati"@it ,
-                                      "Sausages and Cold Cuts"@en ;
-                           fsfood:activeCategory "1" .
+                                      "Sausages and Cold Cuts"@en .
 
 
 ###  https://w3id.org/fuskg/food#Seeds
@@ -1848,8 +1718,7 @@ fsfood:Seeds rdf:type owl:Class ;
              rdfs:subClassOf fsfood:NutSeedAndOliveProducts ;
              rdfs:comment "Concept denoting foods belonging to the Seeds category."@en ;
              rdfs:label "Seeds"@en ,
-                        "Semi"@it ;
-             fsfood:activeCategory "1" .
+                        "Semi"@it .
 
 
 ###  https://w3id.org/fuskg/food#Selenium
@@ -1897,8 +1766,7 @@ fsfood:SoyProducts rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:ProcessedLegumes ;
                    rdfs:comment "Concept denoting foods belonging to the Soy Products category."@en ;
                    rdfs:label "Prodotti a Base di Soia"@it ,
-                              "Soy Products"@en ;
-                   fsfood:activeCategory "1" .
+                              "Soy Products"@en .
 
 
 ###  https://w3id.org/fuskg/food#SpecialBread
@@ -1906,8 +1774,7 @@ fsfood:SpecialBread rdf:type owl:Class ;
                     rdfs:subClassOf fsfood:Bread ;
                     rdfs:comment "Concept denoting foods belonging to the Spercial Bread category."@en ;
                     rdfs:label "Pane Speciale"@it ,
-                               "Spercial Bread"@en ;
-                    fsfood:activeCategory "1" .
+                               "Spercial Bread"@en .
 
 
 ###  https://w3id.org/fuskg/food#Spices
@@ -1915,8 +1782,7 @@ fsfood:Spices rdf:type owl:Class ;
               rdfs:subClassOf fsfood:BasicFood ;
               rdfs:comment "Concept denoting foods belonging to the Spices category."@en ;
               rdfs:label "Spezie"@it ,
-                         "Spices"@en ;
-              fsfood:activeCategory "1" .
+                         "Spices"@en .
 
 
 ###  https://w3id.org/fuskg/food#SpiritsAndLiquor
@@ -1924,8 +1790,7 @@ fsfood:SpiritsAndLiquor rdf:type owl:Class ;
                         rdfs:subClassOf fsfood:AlcoholicBeverages ;
                         rdfs:comment "Concept denoting foods belonging to the Spirits and Liquor category."@en ;
                         rdfs:label "Spirits and Liquor"@en ,
-                                   "Superalcolici"@it ;
-                        fsfood:activeCategory "1" .
+                                   "Superalcolici"@it .
 
 
 ###  https://w3id.org/fuskg/food#Starch
@@ -1941,8 +1806,7 @@ fsfood:StarchyFreeVegetables rdf:type owl:Class ;
                              rdfs:subClassOf fsfood:Vegetables ;
                              rdfs:comment "Concept denoting foods belonging to the Starchy Free Vegetables category."@en ;
                              rdfs:label "Starchy Free Vegetables"@en ,
-                                        "Verdure con Basso Contenuto di amido"@it ;
-                             fsfood:activeCategory "1" .
+                                        "Verdure con Basso Contenuto di amido"@it .
 
 
 ###  https://w3id.org/fuskg/food#StarchyVegetables
@@ -1950,8 +1814,7 @@ fsfood:StarchyVegetables rdf:type owl:Class ;
                          rdfs:subClassOf fsfood:Vegetables ;
                          rdfs:comment "Concept denoting foods belonging to the Starchy Vegetables category."@en ;
                          rdfs:label "Starchy Vegetables"@en ,
-                                    "Verdure Amidacee"@it ;
-                         fsfood:activeCategory "1" .
+                                    "Verdure Amidacee"@it .
 
 
 ###  https://w3id.org/fuskg/food#StearicAcid
@@ -1975,8 +1838,7 @@ fsfood:SugarAndSweeteners rdf:type owl:Class ;
                           rdfs:subClassOf fsfood:SugarAndSweets ;
                           rdfs:comment "Concept denoting foods belonging to the Sugar category."@en ;
                           rdfs:label "Sugar and Sweeteners"@en ,
-                                     "Zucchero e Dolcificanti"@it ;
-                          fsfood:activeCategory "1" .
+                                     "Zucchero e Dolcificanti"@it .
 
 
 ###  https://w3id.org/fuskg/food#SugarAndSweets
@@ -2000,8 +1862,7 @@ fsfood:SweetBeveragesAndJuices rdf:type owl:Class ;
                                rdfs:subClassOf fsfood:NonAlcoholicBeverages ;
                                rdfs:comment "Concept denoting foods belonging to the Sweet Beverages and Juices category."@en ;
                                rdfs:label "Bevande Zuccherate e Succhi"@it ,
-                                          "Sweet Beverages and Juices"@en ;
-                               fsfood:activeCategory "1" .
+                                          "Sweet Beverages and Juices"@en .
 
 
 ###  https://w3id.org/fuskg/food#SweetSnacksAndBrioches
@@ -2009,8 +1870,7 @@ fsfood:SweetSnacksAndBrioches rdf:type owl:Class ;
                               rdfs:subClassOf fsfood:SugarAndSweets ;
                               rdfs:comment "Concept denoting foods belonging to the Sweet Snacks and Brioches category."@en ;
                               rdfs:label "Merendine Dolci e Brioches"@it ,
-                                         "Sweet Snacks and Brioches"@en ;
-                              fsfood:activeCategory "1" .
+                                         "Sweet Snacks and Brioches"@en .
 
 
 ###  https://w3id.org/fuskg/food#SweetSpreads
@@ -2018,8 +1878,7 @@ fsfood:SweetSpreads rdf:type owl:Class ;
                     rdfs:subClassOf fsfood:SugarAndSweets ;
                     rdfs:comment "Concept denoting foods belonging to the Sweet Spreads category."@en ;
                     rdfs:label "Dolci Spalmabili"@it ,
-                               "Sweet Spreads"@en ;
-                    fsfood:activeCategory "1" .
+                               "Sweet Spreads"@en .
 
 
 ###  https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts
@@ -2131,8 +1990,7 @@ fsfood:Vegetables rdf:type owl:Class ;
                   rdfs:subClassOf fsfood:VegetablesAndLegumes ;
                   rdfs:comment "Concept denoting foods belonging to the Vegetables category."@en ;
                   rdfs:label "Vegetables"@en ,
-                             "Verdure e Ortaggi"@it ;
-                  fsfood:activeCategory "1" .
+                             "Verdure e Ortaggi"@it .
 
 
 ###  https://w3id.org/fuskg/food#VegetablesAndLegumes
@@ -2148,8 +2006,7 @@ fsfood:VegetalEVOOils rdf:type owl:Class ;
                       rdfs:subClassOf fsfood:VegetalOils ;
                       rdfs:comment "Concept denoting foods belonging to the Vegetal Extra-Vergin Olive Oils category."@en ;
                       rdfs:label "Oli Extra Vergine di Oliva Vegetali"@it ,
-                                 "Vegetal Extra-Vergin Olive Oils"@en ;
-                      fsfood:activeCategory "1" .
+                                 "Vegetal Extra-Vergin Olive Oils"@en .
 
 
 ###  https://w3id.org/fuskg/food#VegetalFats
@@ -2157,8 +2014,7 @@ fsfood:VegetalFats rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:VegetalFatsAndOils ;
                    rdfs:comment "Concept denoting foods belonging to the Vegetal Fats category."@en ;
                    rdfs:label "Grassi Vegetali"@it ,
-                              "Vegetal Fats"@en ;
-                   fsfood:activeCategory "1" .
+                              "Vegetal Fats"@en .
 
 
 ###  https://w3id.org/fuskg/food#VegetalFatsAndOils
@@ -2174,8 +2030,7 @@ fsfood:VegetalOils rdf:type owl:Class ;
                    rdfs:subClassOf fsfood:VegetalFatsAndOils ;
                    rdfs:comment "Concept denoting foods belonging to the Vegetal Oils category."@en ;
                    rdfs:label "Oli Vegetali"@it ,
-                              "Vegetal Oils"@en ;
-                   fsfood:activeCategory "1" .
+                              "Vegetal Oils"@en .
 
 
 ###  https://w3id.org/fuskg/food#VegetalProtein
@@ -2287,8 +2142,7 @@ fsfood:WhiteMeat rdf:type owl:Class ;
                  rdfs:subClassOf fsfood:Meat ;
                  rdfs:comment "Concept denoting foods belonging to the White Meat category."@en ;
                  rdfs:label "Carne Bianca"@it ,
-                            "White Meat"@en ;
-                 fsfood:activeCategory "1" .
+                            "White Meat"@en .
 
 
 ###  https://w3id.org/fuskg/food#WholeWheatFlour
@@ -2312,8 +2166,7 @@ fsfood:Yogurt rdf:type owl:Class ;
               rdfs:subClassOf fsfood:MilkAndYogurt ;
               rdfs:comment "Concept denoting foods belonging to the Yogurt category."@en ;
               rdfs:label "Yogurt"@en ,
-                         "Yogurt"@it ;
-              fsfood:activeCategory "1" .
+                         "Yogurt"@it .
 
 
 ###  https://w3id.org/fuskg/food#Zinc
@@ -2347,4 +2200,4 @@ fsfood:Zinc rdf:type owl:Class ;
 ] .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

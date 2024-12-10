@@ -13,21 +13,22 @@
 @base <https://w3id.org/fuskg/guidelines> .
 
 <https://w3id.org/fuskg/guidelines> rdf:type owl:Ontology ;
-                                     owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-barriers.ttl> ,
-                                                 <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-temporal.ttl> ;
-                                     dcterms:creator "Claudio Eccher" ,
-                                                     "Mauro Dragoni"^^xsd:string ,
-                                                     "Rosa Maimone" ,
-                                                     "Tania Bailoni"^^xsd:string ;
+                                     owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-temporal.ttl> ,
+                                                 <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-barriers.ttl> ;
+                                     owl:versionInfo "1.00" ;
+                                     dcterms:creator "Gianluca Apriceno" ;
+                                     dcterms:modified "2024-05-16"^^xsd:date ;
+                                     dcterms:creator "Mauro Dragoni" ,
+                                                     "Rosa Maimone" ;
                                      dcterms:issued "2017-05-02"^^xsd:date ;
+                                     dcterms:creator "Tania Bailoni" ;
+                                     vann:preferredNamespaceUri "https://w3id.org/fuskg/guidelines" ;
+                                     dcterms:publisher "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                                     dcterms:creator "Claudio Eccher" ;
+                                     vann:preferredNamespacePrefix "fsguid" ;
+                                     dcterms:title "Guidelines Module of Functional Status Knowledge Graph (FuS-KG)"@en ;
                                      dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-                                     dcterms:modified "2017-05-14"^^xsd:date ;
-                                     dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
-                                     dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
-                                     dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
-                                     vann:preferredNamespacePrefix "vc" ;
-                                     vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#" ;
-                                     owl:versionInfo "1.02"^^xsd:string .
+                                     dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
 
 #################################################################
 #    Annotation properties
@@ -85,19 +86,10 @@ fsguid:activeCategory rdf:type owl:AnnotationProperty .
 fsguid:appliesTo rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/fuskg/guidelines#commonSense
-fsguid:commonSense rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/fuskg/guidelines#hasMonitoredValue
 fsguid:hasMonitoredValue rdf:type owl:AnnotationProperty ;
                          rdfs:domain "" ;
                          rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval
-fsguid:hasMonitoredValueInterval rdf:type owl:AnnotationProperty ;
-                                 rdfs:range "" .
 
 
 ###  https://w3id.org/fuskg/guidelines#hasOperator
@@ -117,24 +109,6 @@ fsguid:hasRuleId rdf:type owl:AnnotationProperty ;
                  rdfs:range "" .
 
 
-###  https://w3id.org/fuskg/guidelines#id
-fsguid:id rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#interfaceLabel
-fsguid:interfaceLabel rdf:type owl:AnnotationProperty ;
-                      rdfs:domain "" ;
-                      rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/guidelines#isRecipeConsumedFood
-fsguid:isRecipeConsumedFood rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#isUnspecifiedFood
-fsguid:isUnspecifiedFood rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/fuskg/guidelines#lowerBound
 fsguid:lowerBound rdf:type owl:AnnotationProperty ;
                   rdfs:range xsd:double .
@@ -148,11 +122,6 @@ fsguid:monitoredEntity rdf:type owl:AnnotationProperty ;
 ###  https://w3id.org/fuskg/guidelines#monitoredEntityType
 fsguid:monitoredEntityType rdf:type owl:AnnotationProperty ;
                            rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/guidelines#productCategory
-fsguid:productCategory rdf:type owl:AnnotationProperty ;
-                       rdfs:domain "" .
 
 
 ###  https://w3id.org/fuskg/guidelines#timing
@@ -169,197 +138,31 @@ fsguid:upperBound rdf:type owl:AnnotationProperty ;
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/fuskg/guidelines#belongsProfile
-fsguid:belongsProfile rdf:type owl:ObjectProperty ;
-                      owl:inverseOf fsguid:containsUser .
+###  https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval
+fsguid:hasMonitoredValueInterval rdf:type owl:ObjectProperty ;
+                                 rdfs:domain fsguid:MonitoringRule ;
+                                 rdfs:range fsguid:ValueInterval .
 
 
-###  https://w3id.org/fuskg/guidelines#consumed
-fsguid:consumed rdf:type owl:ObjectProperty ;
-                rdfs:label "consumed"@en ,
-                           "ha consumato"@it .
-
-
-###  https://w3id.org/fuskg/guidelines#contains
-fsguid:contains rdf:type owl:ObjectProperty ;
-                rdfs:label "contains"@en ,
-                           "contiene"@it .
-
-
-###  https://w3id.org/fuskg/guidelines#containsUser
-fsguid:containsUser rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasActivity
-fsguid:hasActivity rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasConsumedFood
-fsguid:hasConsumedFood rdf:type owl:ObjectProperty ;
-                       rdfs:label "ha Consumato Cibo"@it ,
-                                  "has Consumed Food"@en .
-
-
-###  https://w3id.org/fuskg/guidelines#hasFood
-fsguid:hasFood rdf:type owl:ObjectProperty ;
-               rdfs:label "ha Cibo"@it ,
-                          "has Food"@en .
-
-
-###  https://w3id.org/fuskg/guidelines#hasNutrient
-fsguid:hasNutrient rdf:type owl:ObjectProperty ;
-                   rdfs:label "ha Nutriente"@it ,
-                              "has Nutrient"@en .
-
-
-###  https://w3id.org/fuskg/guidelines#hasRecipeFood
-fsguid:hasRecipeFood rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasUser
-fsguid:hasUser rdf:type owl:ObjectProperty ;
-               rdfs:label "ha Utente"@it ,
-                          "has User"@en .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationMeal
-fsguid:hasViolationMeal rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationRule
-fsguid:hasViolationRule rdf:type owl:ObjectProperty ;
-                        rdfs:range fsguid:MonitoringRule .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationUser
-fsguid:hasViolationUser rdf:type owl:ObjectProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#monitor
-fsguid:monitor rdf:type owl:ObjectProperty ;
-               rdfs:domain fsguid:MonitoringRule .
-
-
-###  https://w3id.org/fuskg/guidelines#performed
-fsguid:performed rdf:type owl:ObjectProperty .
+###  https://w3id.org/fuskg/guidelines#monitors
+fsguid:monitors rdf:type owl:ObjectProperty ;
+                rdfs:domain fsguid:MonitoringRule ;
+                rdfs:comment "This property specifies the subject of a MonitoringRule."@en ;
+                rdfs:label "monitora"@it ,
+                           "monitors"@en .
 
 
 #################################################################
 #    Data properties
 #################################################################
 
-###  https://w3id.org/fuskg/guidelines#activityDuration
-fsguid:activityDuration rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#activityEndTimestamp
-fsguid:activityEndTimestamp rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#activityStartTimestamp
-fsguid:activityStartTimestamp rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#bounds
-fsguid:bounds rdf:type owl:DatatypeProperty ;
-              rdfs:range xsd:double .
-
-
-###  https://w3id.org/fuskg/guidelines#duration
-fsguid:duration rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:int .
-
-
-###  https://w3id.org/fuskg/guidelines#hasDailyCaloricIntake
-fsguid:hasDailyCaloricIntake rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasMETCorrection
-fsguid:hasMETCorrection rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasMETValue
-fsguid:hasMETValue rdf:type owl:DatatypeProperty .
-
-
 ###  https://w3id.org/fuskg/guidelines#hasRuleDefinition
 fsguid:hasRuleDefinition rdf:type owl:DatatypeProperty ;
                          rdfs:domain fsguid:MonitoringRule ;
-                         rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/guidelines#hasTimestamp
-fsguid:hasTimestamp rdf:type owl:DatatypeProperty ;
-                    rdfs:range xsd:int ;
-                    rdfs:label "ha etichetta temporale"@it ,
-                               "has timestamp"@en .
-
-
-###  https://w3id.org/fuskg/guidelines#hasUnitKCalValue
-fsguid:hasUnitKCalValue rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasUserId
-fsguid:hasUserId rdf:type owl:DatatypeProperty ;
-                 rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationEndTime
-fsguid:hasViolationEndTime rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationEntity
-fsguid:hasViolationEntity rdf:type owl:DatatypeProperty ;
-                          rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationEntityType
-fsguid:hasViolationEntityType rdf:type owl:DatatypeProperty ;
-                              rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationExpectedQuantity
-fsguid:hasViolationExpectedQuantity rdf:type owl:DatatypeProperty ;
-                                    rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationHistory
-fsguid:hasViolationHistory rdf:type owl:DatatypeProperty ;
-                           rdfs:range xsd:integer .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationLevel
-fsguid:hasViolationLevel rdf:type owl:DatatypeProperty ;
-                         rdfs:range xsd:integer .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationPriority
-fsguid:hasViolationPriority rdf:type owl:DatatypeProperty ;
-                            rdfs:range xsd:integer .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationQuantity
-fsguid:hasViolationQuantity rdf:type owl:DatatypeProperty ;
-                            rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationRuleId
-fsguid:hasViolationRuleId rdf:type owl:DatatypeProperty ;
-                          rdfs:range xsd:int .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationStartTime
-fsguid:hasViolationStartTime rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationTiming
-fsguid:hasViolationTiming rdf:type owl:DatatypeProperty ;
-                          rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/guidelines#hasViolationValidityTimespan
-fsguid:hasViolationValidityTimespan rdf:type owl:DatatypeProperty ;
-                                    rdfs:range xsd:string .
+                         rdfs:range xsd:string ;
+                         rdfs:comment "This property specifies the definition of the MonitoringRule."@en ;
+                         rdfs:label "ha definizione della regola"@it ,
+                                    "has rule definition"@en .
 
 
 #################################################################
@@ -380,4 +183,4 @@ fsguid:ValueInterval rdf:type owl:Class ;
                                 "Value Interval"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

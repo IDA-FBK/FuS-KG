@@ -7,14 +7,66 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix doid: <http://purl.obolibrary.org/obo/doid#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix terms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix fsbarr: <https://w3id.org/fuskg/barrier#> .
 @prefix fscore: <https://w3id.org/fuskg/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix oboInOwl: <http://www.geneontology.org/formats/oboInOwl#> .
 @base <https://w3id.org/fuskg/barrier> .
 
 <https://w3id.org/fuskg/barrier> rdf:type owl:Ontology ;
-                                  owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-core.ttl> .
+                                  owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-core.ttl> ;
+                                  dcterms:modified "2024-05-09" ;
+                                  dcterms:creator "Gianluca Apriceno" ,
+                                                  "Mauro Dragoni" ;
+                                  owl:versionInfo "1.0.0"@en ;
+                                  dcterms:creator "Tania Bailoni" ;
+                                  dcterms:publisher "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                                  dcterms:title "Barriers Module of Functional Status Knowledge Graph (FuS-KG)"@en ;
+                                  vann:preferredNamespaceUri "https://w3id.org/fuskg/barrier#" ;
+                                  vann:preferredNamespacePrefix "fsbarr" ;
+                                  dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+                                  dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dcterms:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+dcterms:rights rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Object Properties
@@ -46,54 +98,83 @@
 ###  https://w3id.org/fuskg/barrier#hasBehavior
 fsbarr:hasBehavior rdf:type owl:ObjectProperty ;
                    rdfs:domain fsbarr:Patient ;
-                   rdfs:range fsbarr:StageOfChange .
+                   rdfs:range fsbarr:StageOfChange ;
+                   rdfs:comment "This property specifies the State of change a Patient is in."@en ;
+                   rdfs:label "ha comportamento"@it ,
+                              "has behavior"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#hasDiagnosis
 fsbarr:hasDiagnosis rdf:type owl:ObjectProperty ;
                     rdfs:domain fsbarr:Patient ;
-                    rdfs:range fsbarr:DiseaseRelation .
+                    rdfs:range fsbarr:DiseaseRelation ;
+                    rdfs:comment "This property specifies the diagnosis of a Patient connecting the istance of the patient to an instance of the class DiseaseRelation."@en ;
+                    rdfs:label "ha diagnosi"@it ,
+                               "has diagnosis"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#hasDisease
 fsbarr:hasDisease rdf:type owl:ObjectProperty ;
                   rdfs:domain fsbarr:DiseaseRelation ;
-                  rdfs:comment "The hasDisease property can be called diseaseValue (the type of disease) http://www.w3.org/TR/swbp-n-aryRelations/." .
+                  rdfs:comment "The hasDisease property can be called diseaseValue (the type of disease) http://www.w3.org/TR/swbp-n-aryRelations/." ;
+                  rdfs:label "ha malattia"@it ,
+                             "has disease"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#hasIntensity
 fsbarr:hasIntensity rdf:type owl:ObjectProperty ;
-                    rdfs:range fsbarr:IntensityLevel .
+                    rdfs:range fsbarr:IntensityLevel ;
+                    rdfs:comment "This property defines the intensity of an instance."@en ;
+                    rdfs:label "ha intensita'"@it ,
+                               "has intensity"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#hasInteresting
 fsbarr:hasInteresting rdf:type owl:ObjectProperty ;
-                      rdfs:domain fsbarr:Patient .
+                      rdfs:domain fsbarr:Patient ;
+                      rdfs:comment "This property specifies what a Patient finds interesting."@en ;
+                      rdfs:label "ha interesse"@it ,
+                                 "has interesting"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#hasSign
 fsbarr:hasSign rdf:type owl:ObjectProperty ;
                owl:inverseOf fsbarr:isSignOf ;
-               rdfs:range fsbarr:Sign .
+               rdfs:range fsbarr:Sign ;
+               rdfs:comment "This property specifies the Sign relating to the doman instance."@en ;
+               rdfs:label "ha simbolo"@it ,
+                          "has sign"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#hasSuitable
-fsbarr:hasSuitable rdf:type owl:ObjectProperty .
+fsbarr:hasSuitable rdf:type owl:ObjectProperty ;
+                   rdfs:comment "This property specifies what the domain instance has suitable."@en ;
+                   rdfs:label "e' adattabile a"@it ,
+                              "has suitable"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#isSignOf
 fsbarr:isSignOf rdf:type owl:ObjectProperty ;
-                rdfs:domain fsbarr:Sign .
+                rdfs:domain fsbarr:Sign ;
+                rdfs:comment "This property specifies what the Sign signifies."@en ;
+                rdfs:label "e' simbolo di"@it ,
+                           "is sign of"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#isSuitableFor
-fsbarr:isSuitableFor rdf:type owl:ObjectProperty .
+fsbarr:isSuitableFor rdf:type owl:ObjectProperty ;
+                     rdfs:comment "This property specifies what is suitable for the domain instance."@en ;
+                     rdfs:label "e' adatto per"@it ,
+                                "is suitable for"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#isTriggeredBy
 fsbarr:isTriggeredBy rdf:type owl:ObjectProperty ;
                      rdfs:domain fsbarr:HealthBarrier ;
-                     rdfs:range fsbarr:DiseaseRelation .
+                     rdfs:range fsbarr:DiseaseRelation ;
+                     rdfs:comment "This property specifies the HealthBarrier that is triggered by the DiseaseRelation."@en ;
+                     rdfs:label "e' innescato da"@it ,
+                                "is triggered by"@en .
 
 
 #################################################################
@@ -220,33 +301,50 @@ fsbarr:isTriggeredBy rdf:type owl:ObjectProperty ;
 
 ###  https://w3id.org/fuskg/barrier#Action
 fsbarr:Action rdf:type owl:Class ;
-              rdfs:subClassOf fsbarr:StageOfChange .
+              rdfs:subClassOf fsbarr:StageOfChange ;
+              rdfs:comment "This concept defines the Action state of change."@en ;
+              rdfs:label "Action"@en ,
+                         "Azione"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#ClimaticCondition
 fsbarr:ClimaticCondition rdf:type owl:Class ;
-                         rdfs:subClassOf fsbarr:EnvironmentBarrier .
+                         rdfs:subClassOf fsbarr:EnvironmentBarrier ;
+                         rdfs:comment "This concept defines the barriers regarding Climatic Conditions."@en ;
+                         rdfs:label "Climatic Condition"@en ,
+                                    "Condizione Climatica"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#CognitiveBarrier
 fsbarr:CognitiveBarrier rdf:type owl:Class ;
-                        rdfs:subClassOf fscore:Barrier .
+                        rdfs:subClassOf fscore:Barrier ;
+                        rdfs:comment "This concept represents cognitive barriers refering to mental obstacles and biases."@en ;
+                        rdfs:label "Barriera Cognitiva"@it ,
+                                   "Cognitive Barrier"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#Contemplation
 fsbarr:Contemplation rdf:type owl:Class ;
-                     rdfs:subClassOf fsbarr:StageOfChange .
+                     rdfs:subClassOf fsbarr:StageOfChange ;
+                     rdfs:comment "This concept defines the Contemplation state of change."@en ;
+                     rdfs:label "Contemplation"@en ,
+                                "Contemplazione"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#DiseaseRelation
 fsbarr:DiseaseRelation rdf:type owl:Class ;
                        rdfs:comment """The DiseaseRelation class is created to be a place-holder class. This relation holds the disease type and the name (instance) of the patient class. For the example, X patient has breast tumor), the individual X has a property hasDisease that has another object (DiseaseRelation_1, an instance of the class DiseaseRelation) as its value. please see the website below for more details 
-http://www.w3.org/TR/swbp-n-aryRelations/""" .
+http://www.w3.org/TR/swbp-n-aryRelations/"""@en ;
+                       rdfs:label "Disease Relation"@en ,
+                                  "Relazione con Malattia"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#EnvironmentBarrier
 fsbarr:EnvironmentBarrier rdf:type owl:Class ;
-                          rdfs:subClassOf fscore:Barrier .
+                          rdfs:subClassOf fscore:Barrier ;
+                          rdfs:comment "This concept specifies environmental barriers."@en ;
+                          rdfs:label "Barriera Ambientale"@it ,
+                                     "Environment Barrier"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#EquipmentCost
@@ -255,43 +353,65 @@ fsbarr:EquipmentCost rdf:type owl:Class ;
 
 
 ###  https://w3id.org/fuskg/barrier#ExerciseType
-fsbarr:ExerciseType rdf:type owl:Class .
+fsbarr:ExerciseType rdf:type owl:Class ;
+                    rdfs:comment "This concept represents the root concept of exercise types."@en ;
+                    rdfs:label "Exercise Type"@en ,
+                               "Tipo di Esercizio" .
 
 
 ###  https://w3id.org/fuskg/barrier#Fear
 fsbarr:Fear rdf:type owl:Class ;
-            rdfs:subClassOf fsbarr:PsychologicalBarrier .
+            rdfs:subClassOf fsbarr:PsychologicalBarrier ;
+            rdfs:comment "This concept specifies the barriers regarding user's fear."@en ;
+            rdfs:label "Fear"@en ,
+                       "Paura"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#HealthBarrier
 fsbarr:HealthBarrier rdf:type owl:Class ;
-                     rdfs:subClassOf fscore:Barrier .
+                     rdfs:subClassOf fscore:Barrier ;
+                     rdfs:comment "This concept specifies barriers relating to health."@en ;
+                     rdfs:label "Barriera sulla Salute"@it ,
+                                "Health Barrier"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#IntensityLevel
 fsbarr:IntensityLevel rdf:type owl:Class ;
-                      rdfs:comment "The level of intensity depends on how hard you have to work to do the activity. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" .
+                      rdfs:comment "The level of intensity depends on how hard you have to work to do the activity. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" ;
+                      rdfs:label "Intensity Level"@en ,
+                                 "Livello d'intensita'"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#JobCondition
 fsbarr:JobCondition rdf:type owl:Class ;
-                    rdfs:subClassOf fsbarr:PersonalBarrier .
+                    rdfs:subClassOf fsbarr:PersonalBarrier ;
+                    rdfs:comment "This concept specifies the barriers regarding the user's job condition."@en ;
+                    rdfs:label "Condizione Lavorativa"@it ,
+                               "Job Condition"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#LackOfSafety
 fsbarr:LackOfSafety rdf:type owl:Class ;
-                    rdfs:subClassOf fsbarr:EnvironmentBarrier .
+                    rdfs:subClassOf fsbarr:EnvironmentBarrier ;
+                    rdfs:comment "This concept specifies the barriers regarding the lack of safety."@en ;
+                    rdfs:label "Lack of Safety"@en ,
+                               "Mancanza di Sicurezza"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#LackOfSupport
 fsbarr:LackOfSupport rdf:type owl:Class ;
-                     rdfs:subClassOf fsbarr:SocialBarrier .
+                     rdfs:subClassOf fsbarr:SocialBarrier ;
+                     rdfs:comment "This concept specifies the barriers regarding the user's lack of support."@en ;
+                     rdfs:label "Lack of Support"@en ,
+                                "Mancanza di Supporto"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#Light
 fsbarr:Light rdf:type owl:Class ;
              rdfs:subClassOf fsbarr:IntensityLevel ;
-             rdfs:comment "Light-intensity activities are common daily activities that don't require much effort. On a scale of 0 to 10, light-intensity activity is a 3 or 5. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" .
+             rdfs:comment "Light-intensity activities are common daily activities that don't require much effort. On a scale of 0 to 10, light-intensity activity is a 3 or 5. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" ;
+             rdfs:label "Leggero"@it ,
+                        "Light"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#Maintenance
@@ -302,16 +422,24 @@ fsbarr:Maintenance rdf:type owl:Class ;
 ###  https://w3id.org/fuskg/barrier#Moderate
 fsbarr:Moderate rdf:type owl:Class ;
                 rdfs:subClassOf fsbarr:IntensityLevel ;
-                rdfs:comment "Moderate-intensity activity is a 5 or 6 on a scale of 0 to 10. It produces noticeable increases in breathing and heart rate. A person doing moderate-intensity activity can talk but not sing. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" .
+                rdfs:comment "Moderate-intensity activity is a 5 or 6 on a scale of 0 to 10. It produces noticeable increases in breathing and heart rate. A person doing moderate-intensity activity can talk but not sing. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" ;
+                rdfs:label "Moderate"@en ,
+                           "Moderato"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#Patient
-fsbarr:Patient rdf:type owl:Class .
+fsbarr:Patient rdf:type owl:Class ;
+               rdfs:comment "This concept defines Patients."@en ;
+               rdfs:label "Patient"@en ,
+                          "Paziente"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#PersonalBarrier
 fsbarr:PersonalBarrier rdf:type owl:Class ;
-                       rdfs:subClassOf fscore:Barrier .
+                       rdfs:subClassOf fscore:Barrier ;
+                       rdfs:comment "This concept specifies personal barriers of the user."@en ;
+                       rdfs:label "Barriera Personale"@it ,
+                                  "Personal Barrier"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#PreContemplation
@@ -326,7 +454,10 @@ fsbarr:Preparation rdf:type owl:Class ;
 
 ###  https://w3id.org/fuskg/barrier#PsychologicalBarrier
 fsbarr:PsychologicalBarrier rdf:type owl:Class ;
-                            rdfs:subClassOf fscore:Barrier .
+                            rdfs:subClassOf fscore:Barrier ;
+                            rdfs:comment "This concept specifies psycological barriers."@en ;
+                            rdfs:label "Barriera Psicologica"@it ,
+                                       "Psychological Barrier"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#Racing
@@ -335,16 +466,25 @@ fsbarr:Racing rdf:type owl:Class ;
 
 
 ###  https://w3id.org/fuskg/barrier#Sign
-fsbarr:Sign rdf:type owl:Class .
+fsbarr:Sign rdf:type owl:Class ;
+            rdfs:comment "This concept specifies different types of sings."@en ;
+            rdfs:label "Sign"@en ,
+                       "Simbolo"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#SocialBarrier
 fsbarr:SocialBarrier rdf:type owl:Class ;
-                     rdfs:subClassOf fscore:Barrier .
+                     rdfs:subClassOf fscore:Barrier ;
+                     rdfs:comment "This concept specifies barriers relating to social aspects of the user's life."@en ;
+                     rdfs:label "Barriera Sociale"@it ,
+                                "Social Barrier"@en .
 
 
 ###  https://w3id.org/fuskg/barrier#StageOfChange
-fsbarr:StageOfChange rdf:type owl:Class .
+fsbarr:StageOfChange rdf:type owl:Class ;
+                     rdfs:comment "This concept pecifies the states of change of a patient."@en ;
+                     rdfs:label "State of Change"@en ,
+                                "Stato di Cambiamento"@it .
 
 
 ###  https://w3id.org/fuskg/barrier#Swimming
@@ -361,7 +501,9 @@ fsbarr:Termination rdf:type owl:Class ;
 ###  https://w3id.org/fuskg/barrier#Vigorous
 fsbarr:Vigorous rdf:type owl:Class ;
                 rdfs:subClassOf fsbarr:IntensityLevel ;
-                rdfs:comment "Vigorous-intensity activity is a 7 or 8 on a scale of 0 to 10. Vigorous-intensity activities make your heart, lungs, and muscles work hard. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" .
+                rdfs:comment "Vigorous-intensity activity is a 7 or 8 on a scale of 0 to 10. Vigorous-intensity activities make your heart, lungs, and muscles work hard. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart" ;
+                rdfs:label "Vigoroso"@it ,
+                           "Vigorous"@en .
 
 
 #################################################################
@@ -3368,4 +3510,13 @@ fsbarr:WeightThrow rdf:type owl:NamedIndividual ,
                    rdfs:comment "A family of heavy weight throwing events, in which the objective is to either throw the weight as far as possible or as high as possible." .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+#################################################################
+#    Annotations
+#################################################################
+
+fsbarr:EquipmentCost rdfs:label "Equipment Cost"@en ,
+                                "Costo dell'attrezzatura"@it ;
+                     rdfs:comment "This concept specifies the barriers regarding the cost of equipment."@en .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

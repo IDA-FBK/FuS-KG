@@ -5,26 +5,27 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
-@prefix fsfood: <https://w3id.org/fuskg/food> .
+@prefix fsfood: <https://w3id.org/fuskg/food#> .
 @prefix fsreci: <https://w3id.org/fuskg/recipe#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/fuskg/recipe> .
 
 <https://w3id.org/fuskg/recipe> rdf:type owl:Ontology ;
-                                 owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-food.ttl> ;
-                                 dcterms:creator "Claudio Eccher" ,
-                                                 "Mauro Dragoni"^^xsd:string ,
-                                                 "Rosa Maimone" ,
-                                                 "Tania Bailoni"^^xsd:string ;
+                                 owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-disease.ttl> ;
+                                 owl:versionInfo "1.02" ;
+                                 dcterms:creator "Gianluca Apriceno" ;
+                                 vann:preferredNamespacePrefix "fsreci" ;
+                                 dcterms:creator "Mauro Dragoni" ,
+                                                 "Rosa Maimone" ;
                                  dcterms:issued "2017-05-02"^^xsd:date ;
+                                 dcterms:creator "Tania Bailoni" ;
+                                 dcterms:publisher "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                                 dcterms:creator "Claudio Eccher" ;
+                                 dcterms:title "Recipes Module of Functional Status Knowledge Graph (FuS-KG)"@en ;
+                                 dcterms:modified "2024-05-13"^^xsd:date ;
+                                 vann:preferredNamespaceUri "https://w3id.org/fuskg/recipe#" ;
                                  dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-                                 dcterms:modified "2017-05-14"^^xsd:date ;
-                                 dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
-                                 dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
-                                 dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
-                                 vann:preferredNamespacePrefix "vc" ;
-                                 vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#" ;
-                                 owl:versionInfo "1.02" .
+                                 dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
 
 #################################################################
 #    Annotation properties
@@ -74,110 +75,6 @@ rdfs:domain rdf:type owl:AnnotationProperty .
 rdfs:range rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/fuskg/recipe#activeCategory
-fsreci:activeCategory rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/recipe#appliesTo
-fsreci:appliesTo rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/recipe#command
-fsreci:command rdf:type owl:AnnotationProperty ;
-               rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#commonSense
-fsreci:commonSense rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/recipe#foodId
-fsreci:foodId rdf:type owl:AnnotationProperty ;
-              rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#hasForbiddenCategory
-fsreci:hasForbiddenCategory rdf:type owl:AnnotationProperty ;
-                            rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#hasMandatoryCategory
-fsreci:hasMandatoryCategory rdf:type owl:AnnotationProperty ;
-                            rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#hasMonitoredValue
-fsreci:hasMonitoredValue rdf:type owl:AnnotationProperty ;
-                         rdfs:domain "" ;
-                         rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/recipe#hasMonitoredValueInterval
-fsreci:hasMonitoredValueInterval rdf:type owl:AnnotationProperty ;
-                                 rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/recipe#hasOperator
-fsreci:hasOperator rdf:type owl:AnnotationProperty ;
-                   rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#hasPriority
-fsreci:hasPriority rdf:type owl:AnnotationProperty ;
-                   rdfs:domain "" ;
-                   rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/recipe#hasRuleId
-fsreci:hasRuleId rdf:type owl:AnnotationProperty ;
-                 rdfs:domain "" ;
-                 rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/recipe#interfaceLabel
-fsreci:interfaceLabel rdf:type owl:AnnotationProperty ;
-                      rdfs:domain "" ;
-                      rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/recipe#isRecipeConsumedFood
-fsreci:isRecipeConsumedFood rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/recipe#isUnspecifiedFood
-fsreci:isUnspecifiedFood rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/recipe#lowerBound
-fsreci:lowerBound rdf:type owl:AnnotationProperty ;
-                  rdfs:range xsd:double .
-
-
-###  https://w3id.org/fuskg/recipe#monitoredEntity
-fsreci:monitoredEntity rdf:type owl:AnnotationProperty ;
-                       rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#monitoredEntityType
-fsreci:monitoredEntityType rdf:type owl:AnnotationProperty ;
-                           rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#productCategory
-fsreci:productCategory rdf:type owl:AnnotationProperty ;
-                       rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#timing
-fsreci:timing rdf:type owl:AnnotationProperty ;
-              rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/recipe#upperBound
-fsreci:upperBound rdf:type owl:AnnotationProperty ;
-                  rdfs:range xsd:double .
-
-
 #################################################################
 #    Datatypes
 #################################################################
@@ -190,9 +87,13 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/fuskg/food#hasFood
-<https://w3id.org/fuskg/food#hasFood> rdfs:domain fsreci:RecipeFood ;
-                                      rdfs:range <https://w3id.org/fuskg/core#Food> .
+###  https://w3id.org/fuskg/recipe#hasFood
+fsreci:hasFood rdf:type owl:ObjectProperty ;
+               rdfs:domain fsreci:RecipeFood ;
+               rdfs:range <https://w3id.org/fuskg/core#Food> ;
+               rdfs:comment "Property used to connect a RecipeFood with its corresponding Food."@en ;
+               rdfs:label "ha cibo"@it ,
+                          "has food"@en .
 
 
 ###  https://w3id.org/fuskg/recipe#hasRecipeFood
@@ -205,20 +106,30 @@ fsreci:hasRecipeFood rdf:type owl:ObjectProperty ;
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/fuskg/recipe#amountFood
+fsreci:amountFood rdf:type owl:DatatypeProperty ;
+                  rdfs:domain fsreci:RecipeFood ;
+                  rdfs:range xsd:double ;
+                  rdfs:comment "specifies the amount of food"@en ;
+                  rdfs:label "amount of Food"@en ,
+                             "quantita' di Cibo"@it .
+
+
+#################################################################
 #    Classes
 #################################################################
 
-###  https://w3id.org/fuskg/food#ComposedFood
-<https://w3id.org/fuskg/food#ComposedFood> rdf:type owl:Class ;
-                                           rdfs:comment "Concept denoting foods belonging to the Composed Food category."@en ;
-                                           rdfs:label "Alimento Composto"@it ,
-                                                      "Composed Food"@en .
+###  https://w3id.org/fuskg/core#Food
+<https://w3id.org/fuskg/core#Food> rdf:type owl:Class .
 
 
 ###  https://w3id.org/fuskg/recipe#Desserts
 fsreci:Desserts rdf:type owl:Class ;
                 rdfs:subClassOf fsreci:HelisRecipe ;
-                rdfs:comment "Concept denoting Desserts containing one or more Recipe Food."@en ;
+                rdfs:comment "Concept denoting Desserts from the RecipeDB and Turconi datasets."@en ;
                 rdfs:label "Dessert"@it ,
                            "Desserts"@en .
 
@@ -226,7 +137,7 @@ fsreci:Desserts rdf:type owl:Class ;
 ###  https://w3id.org/fuskg/recipe#Entree
 fsreci:Entree rdf:type owl:Class ;
               rdfs:subClassOf fsreci:HelisRecipe ;
-              rdfs:comment "Concept denoting Entrees containing one or more Recipe Food."@en ;
+              rdfs:comment "Concept denoting Entrees from the RecipeDB and Turconi datasets."@en ;
               rdfs:label "Antipasti"@it ,
                          "Entrees"@en .
 
@@ -234,7 +145,7 @@ fsreci:Entree rdf:type owl:Class ;
 ###  https://w3id.org/fuskg/recipe#FishCourses
 fsreci:FishCourses rdf:type owl:Class ;
                    rdfs:subClassOf fsreci:HelisRecipe ;
-                   rdfs:comment "Concept denoting Fish Courses containing one or more Recipe Food."@en ;
+                   rdfs:comment "Concept denoting Fish Courses from the RecipeDB and Turconi datasets."@en ;
                    rdfs:label "Fish Courses"@en ,
                               "Secondi Piatti di Pesce"@it .
 
@@ -242,9 +153,34 @@ fsreci:FishCourses rdf:type owl:Class ;
 ###  https://w3id.org/fuskg/recipe#HelisRecipe
 fsreci:HelisRecipe rdf:type owl:Class ;
                    rdfs:subClassOf fsreci:Recipe ;
-                   rdfs:comment "Concept denoting Recipies of RecipeDB and Turconi datasets."@en ;
+                   rdfs:comment "Concept denoting Recipes from the RecipeDB and Turconi datasets."@en ;
                    rdfs:label "Helis Recipe"@en ,
                               "Helis Ricette"@it .
+
+
+###  https://w3id.org/fuskg/recipe#MainCourses
+fsreci:MainCourses rdf:type owl:Class ;
+                   rdfs:subClassOf fsreci:HelisRecipe ;
+                   rdfs:comment "Concept denoting Main Courses from the RecipeDB and Turconi datasets."@en ;
+                   rdfs:label "Main Courses"@en ,
+                              "Primi Piatti"@it .
+
+
+###  https://w3id.org/fuskg/recipe#MeatCourses
+fsreci:MeatCourses rdf:type owl:Class ;
+                   rdfs:subClassOf fsreci:HelisRecipe ;
+                   rdfs:comment "Concept denoting Meat Courses from the RecipeDB and Turconi datasets."@en ;
+                   rdfs:label "Meat Courses"@en ,
+                              "Secondi Piatti di Carne"@it .
+
+
+###  https://w3id.org/fuskg/recipe#Recipe
+fsreci:Recipe rdf:type owl:Class ;
+              rdfs:subClassOf <https://w3id.org/fuskg/core#Food> ;
+              rdfs:comment "Root concept denoting Recipes collecetd from different sources. Recipes are specified as a list of RecipeFood denoting the ingredients (the specific food and its quantity) of the recipe."@en ;
+              rdfs:label "Recipe"@en ,
+                         "Ricette"@it .
+
 
 ###  https://w3id.org/fuskg/recipe#Recipe1m
 fsreci:Recipe1m rdf:type owl:Class ;
@@ -252,6 +188,30 @@ fsreci:Recipe1m rdf:type owl:Class ;
                 rdfs:comment "Concept denoting recipes of Recipe1m+ dataset."@en ;
                 rdfs:label "Recipe1m"@en ,
                            "Recipe1m"@it .
+
+
+###  https://w3id.org/fuskg/recipe#RecipeFood
+fsreci:RecipeFood rdf:type owl:Class ;
+                  rdfs:comment "The RecipeFood concept reifies the relationship between a Recipe, the specific Food in the Recipe and its amount."@en ;
+                  rdfs:label "Ingredienti Ricette"@it ,
+                             "Recipe Food"@en .
+
+
+###  https://w3id.org/fuskg/recipe#Sauces
+fsreci:Sauces rdf:type owl:Class ;
+              rdfs:subClassOf fsreci:HelisRecipe ;
+              rdfs:comment "Concept denoting Sauces from the RecipeDB and Turconi datasets."@en ;
+              rdfs:label "Salse"@it ,
+                         "Sauces"@en .
+
+
+###  https://w3id.org/fuskg/recipe#SideDishes
+fsreci:SideDishes rdf:type owl:Class ;
+                  rdfs:subClassOf fsreci:HelisRecipe ;
+                  rdfs:comment "Concept denoting Side Dishes from the RecipeDB and Turconi datasets."@en ;
+                  rdfs:label "Contorni"@it ,
+                             "Side Dishes"@en .
+
 
 ###  https://w3id.org/fuskg/recipe#Tasty
 fsreci:Tasty rdf:type owl:Class ;
@@ -261,51 +221,4 @@ fsreci:Tasty rdf:type owl:Class ;
                         "Tasty"@it .
 
 
-###  https://w3id.org/fuskg/recipe#MainCourses
-fsreci:MainCourses rdf:type owl:Class ;
-                   rdfs:subClassOf fsreci:HelisRecipe ;
-                   rdfs:comment "Concept denoting Main Courses containing one or more Recipe Food."@en ;
-                   rdfs:label "Main Courses"@en ,
-                              "Primi Piatti"@it .
-
-
-###  https://w3id.org/fuskg/recipe#MeatCourses
-fsreci:MeatCourses rdf:type owl:Class ;
-                   rdfs:subClassOf fsreci:HelisRecipe ;
-                   rdfs:comment "Concept denoting Meat Courses containing one or more Recipe Food."@en ;
-                   rdfs:label "Meat Courses"@en ,
-                              "Secondi Piatti di Carne"@it .
-
-
-###  https://w3id.org/fuskg/recipe#Recipe
-fsreci:Recipe rdf:type owl:Class ;
-              rdfs:subClassOf <https://w3id.org/fuskg/core#Food> ;
-              rdfs:comment "Concept denoting Recipies containing one or more Recipe Food."@en ;
-              rdfs:label "Recipe"@en ,
-                         "Ricette"@it .
-
-
-###  https://w3id.org/fuskg/recipe#RecipeFood
-fsreci:RecipeFood rdf:type owl:Class ;
-                  rdfs:comment "Recipes are described by a list of instances of the concept Food. The RecipeFood concept reifies the relationship between a Recipe, the specific Food and its amount in the Recipe."@en ;
-                  rdfs:label "Ingredienti Ricette"@it ,
-                             "Recipe Food"@en .
-
-
-###  https://w3id.org/fuskg/recipe#Sauces
-fsreci:Sauces rdf:type owl:Class ;
-              rdfs:subClassOf fsreci:HelisRecipe ;
-              rdfs:comment "Concept denoting Sauces containing one or more Recipe Food."@en ;
-              rdfs:label "Salse"@it ,
-                         "Sauces"@en .
-
-
-###  https://w3id.org/fuskg/recipe#SideDishes
-fsreci:SideDishes rdf:type owl:Class ;
-                  rdfs:subClassOf fsreci:HelisRecipe ;
-                  rdfs:comment "Concept denoting Side Dishes containing one or more Recipe Food."@en ;
-                  rdfs:label "Contorni"@it ,
-                             "Side Dishes"@en .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

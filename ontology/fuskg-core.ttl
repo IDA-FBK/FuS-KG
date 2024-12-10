@@ -4,21 +4,24 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix fscore: <https://w3id.org/fuskg/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/fuskg/core> .
 
 <https://w3id.org/fuskg/core> rdf:type owl:Ontology ;
-                               dcterms:creator "Gianluca Apriceno"^^xsd:string ,
-                                               "Mauro Dragoni"^^xsd:string ,
-                                               "Tania Bailoni"^^xsd:string ;
-                               dcterms:issued "2024-03-01"^^xsd:string ;
-                               dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-                               dcterms:modified "2024-04-26"^^xsd:string ;
-                               dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
-                               dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
+                               dcterms:creator "Gianluca Apriceno" ;
+                               dcterms:issued "2024-03-01" ;
+                               dcterms:modified "2024-04-26" ;
+                               dcterms:creator "Mauro Dragoni" ;
                                dcterms:title "Functional Status Knowledge Graph (FuS-KG)"@en ;
-                               owl:versionInfo "1.0.0"@en .
+                               vann:preferredNamespaceUri "https://w3id.org/fuskg/core#" ;
+                               owl:versionInfo "1.0.0"@en ;
+                               dcterms:creator "Tania Bailoni" ;
+                               dcterms:publisher "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                               vann:preferredNamespacePrefix "fscore" ;
+                               dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
+                               dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
 
 #################################################################
 #    Annotation properties
@@ -52,6 +55,14 @@ dcterms:rights rdf:type owl:AnnotationProperty .
 dcterms:title rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2000/01/rdf-schema#domain
 rdfs:domain rdf:type owl:AnnotationProperty .
 
@@ -81,20 +92,27 @@ fscore:source rdf:type owl:AnnotationProperty .
 ###  https://w3id.org/fuskg/core#affectsPerformingOf
 fscore:affectsPerformingOf rdf:type owl:ObjectProperty ;
                            rdfs:domain fscore:Barrier ;
-                           rdfs:range fscore:Activity .
+                           rdfs:range fscore:Activity ;
+                           rdfs:comment "This property defines the relationship between a barrier affecting the performing of an activity."@en ;
+                           rdfs:label "affects performing of"@en ,
+                                      "influenza l'esecuzione di"@it .
 
 
-###  https://w3id.org/fuskg/core#concernsConsuptionOf
-fscore:concernsConsuptionOf rdf:type owl:ObjectProperty ;
-                            rdfs:domain fscore:Barrier ;
-                            rdfs:range fscore:Food ,
-                                       fscore:Nutrient .
+###  https://w3id.org/fuskg/core#concernsConsumptionOf
+fscore:concernsConsumptionOf rdf:type owl:ObjectProperty ;
+                             rdfs:domain fscore:Barrier ;
+                             rdfs:range fscore:Food ,
+                                        fscore:Nutrient ;
+                             rdfs:comment "This property defines the relationship between a barrier and the consumption of a food or nutrient."@en ;
+                             rdfs:label "concerns consumption of"@en ,
+                                        "riguarda il consumo di"@it .
 
 
 ###  https://w3id.org/fuskg/core#contains
 fscore:contains rdf:type owl:ObjectProperty ;
                 rdfs:domain fscore:Food ;
                 rdfs:range fscore:Food ;
+                rdfs:comment "This property specifies that a food contains another food"@en ;
                 rdfs:label "contains"@en ,
                            "contiene"@it .
 
@@ -103,6 +121,7 @@ fscore:contains rdf:type owl:ObjectProperty ;
 fscore:hasNutrient rdf:type owl:ObjectProperty ;
                    rdfs:domain fscore:Food ;
                    rdfs:range fscore:Nutrient ;
+                   rdfs:comment "This property specifies the nutrient(s) contained ia a food."@en ;
                    rdfs:label "ha Nutriente"@it ,
                               "has Nutrient"@en .
 
@@ -119,7 +138,10 @@ fscore:Activity rdf:type owl:Class ;
 
 
 ###  https://w3id.org/fuskg/core#Barrier
-fscore:Barrier rdf:type owl:Class .
+fscore:Barrier rdf:type owl:Class ;
+               rdfs:comment "This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers."@en ;
+               rdfs:label "Barrier"@en ,
+                          "Barriera"@it .
 
 
 ###  https://w3id.org/fuskg/core#Food
@@ -136,4 +158,4 @@ fscore:Nutrient rdf:type owl:Class ;
                            "Nutriente"@it .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi

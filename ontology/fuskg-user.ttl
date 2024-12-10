@@ -4,26 +4,31 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix fsacti: <https://w3id.org/fuskg/activity#> .
+@prefix fsbarr: <https://w3id.org/fuskg/barrier#> .
+@prefix fscore: <https://w3id.org/fuskg/core#> .
+@prefix fsguid: <https://w3id.org/fuskg/guidelines#> .
+@prefix fstemp: <https://w3id.org/fuskg/temporal#> .
 @prefix fsuser: <https://w3id.org/fuskg/user#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://w3id.org/fuskg/user> .
 
 <https://w3id.org/fuskg/user> rdf:type owl:Ontology ;
-                               owl:imports <https://horus-ai.fbk.eu/fuskg/ontology/fuskg-guidelines.ttl> ;
-                               dcterms:creator "Claudio Eccher" ,
-                                               "Mauro Dragoni"^^xsd:string ,
-                                               "Rosa Maimone" ,
-                                               "Tania Bailoni"^^xsd:string ;
+                               owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-guidelines.ttl> ;
+                               vann:preferredNamespaceUri "https://w3id.org/fuskg/user#" ;
+                               dcterms:creator "Gianluca Apriceno" ,
+                                               "Mauro Dragoni" ;
                                dcterms:issued "2017-05-02"^^xsd:date ;
+                               dcterms:creator "Tania Bailoni" ;
+                               dcterms:publisher "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" ;
+                               vann:preferredNamespacePrefix "fsuser" ;
+                               owl:versionInfo 1.00 ;
+                               dcterms:title "User Module of Functional Status Knowledge Graph (FuS-KG)"@en ;
                                dcterms:license <https://creativecommons.org/licenses/by-nc-sa/4.0/> ;
-                               dcterms:modified "2017-05-14"^^xsd:date ;
-                               dcterms:publisher "Health and Wellbeing, Fondazione Bruno Kessler <https://ehealth.fbk.eu>"^^xsd:string ;
-                               dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en ;
-                               dcterms:title "Healthy Lifestyle Support (HeLiS) ontology"@en ;
-                               vann:preferredNamespacePrefix "vc" ;
-                               vann:preferredNamespaceUri "http://www.fbk.eu/ontologies/virtualcoach#" ;
-                               owl:versionInfo "1.02"^^xsd:string .
+                               dcterms:modified "2024-05-21"^^xsd:date ;
+                               dcterms:rights "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
 
 #################################################################
 #    Annotation properties
@@ -73,28 +78,6 @@ rdfs:domain rdf:type owl:AnnotationProperty .
 rdfs:range rdf:type owl:AnnotationProperty .
 
 
-###  https://w3id.org/fuskg/user#activeCategory
-fsuser:activeCategory rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/user#appliesTo
-fsuser:appliesTo rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/user#command
-fsuser:command rdf:type owl:AnnotationProperty ;
-               rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/user#commonSense
-fsuser:commonSense rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/user#foodId
-fsuser:foodId rdf:type owl:AnnotationProperty ;
-              rdfs:domain "" .
-
-
 ###  https://w3id.org/fuskg/user#hasForbiddenCategory
 fsuser:hasForbiddenCategory rdf:type owl:AnnotationProperty ;
                             rdfs:domain "" .
@@ -103,17 +86,6 @@ fsuser:hasForbiddenCategory rdf:type owl:AnnotationProperty ;
 ###  https://w3id.org/fuskg/user#hasMandatoryCategory
 fsuser:hasMandatoryCategory rdf:type owl:AnnotationProperty ;
                             rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/user#hasMonitoredValue
-fsuser:hasMonitoredValue rdf:type owl:AnnotationProperty ;
-                         rdfs:domain "" ;
-                         rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/user#hasMonitoredValueInterval
-fsuser:hasMonitoredValueInterval rdf:type owl:AnnotationProperty ;
-                                 rdfs:range "" .
 
 
 ###  https://w3id.org/fuskg/user#hasOperator
@@ -127,48 +99,13 @@ fsuser:hasPriority rdf:type owl:AnnotationProperty ;
                    rdfs:range "" .
 
 
-###  https://w3id.org/fuskg/user#hasRuleId
-fsuser:hasRuleId rdf:type owl:AnnotationProperty ;
-                 rdfs:domain "" ;
-                 rdfs:range "" .
-
-
-###  https://w3id.org/fuskg/user#id
-fsuser:id rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/user#interfaceLabel
-fsuser:interfaceLabel rdf:type owl:AnnotationProperty ;
-                      rdfs:domain "" ;
-                      rdfs:range "" .
-
-
 ###  https://w3id.org/fuskg/user#isRecipeConsumedFood
 fsuser:isRecipeConsumedFood rdf:type owl:AnnotationProperty .
-
-
-###  https://w3id.org/fuskg/user#isUnspecifiedFood
-fsuser:isUnspecifiedFood rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/fuskg/user#lowerBound
 fsuser:lowerBound rdf:type owl:AnnotationProperty ;
                   rdfs:range xsd:double .
-
-
-###  https://w3id.org/fuskg/user#monitoredEntity
-fsuser:monitoredEntity rdf:type owl:AnnotationProperty ;
-                       rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/user#monitoredEntityType
-fsuser:monitoredEntityType rdf:type owl:AnnotationProperty ;
-                           rdfs:domain "" .
-
-
-###  https://w3id.org/fuskg/user#productCategory
-fsuser:productCategory rdf:type owl:AnnotationProperty ;
-                       rdfs:domain "" .
 
 
 ###  https://w3id.org/fuskg/user#timing
@@ -189,88 +126,104 @@ fsuser:upperBound rdf:type owl:AnnotationProperty ;
 fsuser:belongsProfile rdf:type owl:ObjectProperty ;
                       owl:inverseOf fsuser:containsUser ;
                       rdfs:domain fsuser:User ;
-                      rdfs:range fsuser:Profile .
+                      rdfs:range fsuser:Profile ;
+                      rdfs:comment "This property specifies to which Profile a User belongs."@en ;
+                      rdfs:label "appartiena al profilo"@it ,
+                                 "belongs to profile"@en .
 
 
 ###  https://w3id.org/fuskg/user#consumed
 fsuser:consumed rdf:type owl:ObjectProperty ;
                 rdfs:domain fsuser:User ;
+                rdfs:range fsuser:Meal ;
+                rdfs:comment "This property specifies what the user has consumed during a Meal. The Meal is defined as a list of ConsumedFood instances indicating the food and the amount eaten."@en ;
                 rdfs:label "consumed"@en ,
                            "ha consumato"@it .
-
-
-###  https://w3id.org/fuskg/user#contains
-fsuser:contains rdf:type owl:ObjectProperty ;
-                rdfs:label "contains"@en ,
-                           "contiene"@it .
 
 
 ###  https://w3id.org/fuskg/user#containsUser
 fsuser:containsUser rdf:type owl:ObjectProperty ;
                     rdfs:domain fsuser:Profile ;
-                    rdfs:range fsuser:User .
+                    rdfs:range fsuser:User ;
+                    rdfs:comment "This property specifies the user(s) contained in a profile."@en ;
+                    rdfs:label "contains user"@en ,
+                               "contiene l'utente"@it .
 
 
 ###  https://w3id.org/fuskg/user#hasActivity
-fsuser:hasActivity rdf:type owl:ObjectProperty .
+fsuser:hasActivity rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Class ;
+                                 owl:unionOf ( fsuser:EffortCaloriesEquivalent
+                                               fsuser:PerformedActivity
+                                             )
+                               ] ;
+                   rdfs:range fscore:Activity ;
+                   rdfs:comment "This property specifies which activity the domain instance refers to."@en ;
+                   rdfs:label "ha attivita'"@it ,
+                              "has activity"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasConsumedFood
 fsuser:hasConsumedFood rdf:type owl:ObjectProperty ;
+                       rdfs:domain fsuser:Meal ;
                        rdfs:range fsuser:ConsumedFood ;
+                       rdfs:comment "This property specifies what (ConsumedFood) the user has consumed during a Meal. The ConsumedFood instance indicates the food and the amount eaten."@en ;
                        rdfs:label "ha Consumato Cibo"@it ,
                                   "has Consumed Food"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasFood
 fsuser:hasFood rdf:type owl:ObjectProperty ;
+               rdfs:domain fsuser:ConsumedFood ;
+               rdfs:range fscore:Food ;
+               rdfs:comment "This property specifies which food has been consumed."@en ;
                rdfs:label "ha Cibo"@it ,
                           "has Food"@en .
 
 
-###  https://w3id.org/fuskg/user#hasNutrient
-fsuser:hasNutrient rdf:type owl:ObjectProperty ;
-                   rdfs:label "ha Nutriente"@it ,
-                              "has Nutrient"@en .
-
-
-###  https://w3id.org/fuskg/user#hasRecipeFood
-fsuser:hasRecipeFood rdf:type owl:ObjectProperty .
-
-
 ###  https://w3id.org/fuskg/user#hasUser
 fsuser:hasUser rdf:type owl:ObjectProperty ;
-               rdfs:domain fsuser:PerformedActivity ;
+               rdfs:domain fsuser:Meal ,
+                           fsuser:PerformedActivity ;
                rdfs:range fsuser:User ;
+               rdfs:comment "This property specifies which user the domain instance refers to. In detail which user performed the activity if the domain instance is a PerformedActivity, and which user ate a meal if the domain instance belongs to Meal."@en ;
                rdfs:label "ha Utente"@it ,
                           "has User"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationMeal
 fsuser:hasViolationMeal rdf:type owl:ObjectProperty ;
-                        rdfs:domain fsuser:Violation .
+                        rdfs:domain fsuser:Violation ;
+                        rdfs:range fsuser:Meal ;
+                        rdfs:comment "This property specifies which Meal triggered the violation."@en ;
+                        rdfs:label "ha violazione sul pasto"@it ,
+                                   "has violation on Meal"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationRule
 fsuser:hasViolationRule rdf:type owl:ObjectProperty ;
-                        rdfs:domain fsuser:Violation .
+                        rdfs:domain fsuser:Violation ;
+                        rdfs:comment "This property specifies which rule is violated."@en ;
+                        rdfs:label "ha violazione sulla regola"@it ,
+                                   "has violation on rule"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationUser
 fsuser:hasViolationUser rdf:type owl:ObjectProperty ;
                         rdfs:domain fsuser:Violation ;
-                        rdfs:range fsuser:User .
-
-
-###  https://w3id.org/fuskg/user#monitor
-fsuser:monitor rdf:type owl:ObjectProperty ;
-               rdfs:range fsuser:User .
+                        rdfs:range fsuser:User ;
+                        rdfs:comment "This property specifies which User the violation refers to."@en ;
+                        rdfs:label "ha violazione per l'utente"@it ,
+                                   "has violation User"@en .
 
 
 ###  https://w3id.org/fuskg/user#performed
 fsuser:performed rdf:type owl:ObjectProperty ;
                  rdfs:domain fsuser:User ;
-                 rdfs:range fsuser:PerformedActivity .
+                 rdfs:range fsuser:PerformedActivity ;
+                 rdfs:comment "This property specifies an activity performed by a user. The PerformedActivity instance indicates the activity the User did and its duration."@en ;
+                 rdfs:label "ha eseguito"@it ,
+                            "performed"@en .
 
 
 #################################################################
@@ -278,93 +231,124 @@ fsuser:performed rdf:type owl:ObjectProperty ;
 #################################################################
 
 ###  https://w3id.org/fuskg/user#activityDuration
-fsuser:activityDuration rdf:type owl:DatatypeProperty .
+fsuser:activityDuration rdf:type owl:DatatypeProperty ;
+                        rdfs:domain [ rdf:type owl:Class ;
+                                      owl:unionOf ( fsuser:EffortCaloriesEquivalent
+                                                    fsuser:PerformedActivity
+                                                  )
+                                    ] ;
+                        rdfs:comment "This property specifies the duration of the activity."@en ;
+                        rdfs:label "activity duration"@en ,
+                                   "durata attivita'"@it .
 
 
 ###  https://w3id.org/fuskg/user#activityEndTimestamp
 fsuser:activityEndTimestamp rdf:type owl:DatatypeProperty ;
-                            rdfs:domain fsuser:PerformedActivity .
+                            rdfs:domain fsuser:PerformedActivity ;
+                            rdfs:comment "This property specifies the timestamp of the end of the activity."@en ;
+                            rdfs:label "activity end timestamp"@en ,
+                                       "timestamp di fine attivita'"@it .
 
 
 ###  https://w3id.org/fuskg/user#activityStartTimestamp
 fsuser:activityStartTimestamp rdf:type owl:DatatypeProperty ;
-                              rdfs:domain fsuser:PerformedActivity .
+                              rdfs:domain fsuser:PerformedActivity ;
+                              rdfs:comment "This property specifies the timestamp of the start of the activity."@en ;
+                              rdfs:label "activity start timestamp"@en ,
+                                         "timestamp di inizio attivita'"@it .
 
 
 ###  https://w3id.org/fuskg/user#bounds
 fsuser:bounds rdf:type owl:DatatypeProperty ;
               rdfs:domain fsuser:ViolationInterval ;
-              rdfs:range xsd:double .
-
-
-###  https://w3id.org/fuskg/user#duration
-fsuser:duration rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:int .
+              rdfs:range xsd:double ;
+              rdfs:comment "This property specifies the bounds of a violation interval."@en ;
+              rdfs:label "bounds"@en ,
+                         "limiti"@it .
 
 
 ###  https://w3id.org/fuskg/user#hasDailyCaloricIntake
 fsuser:hasDailyCaloricIntake rdf:type owl:DatatypeProperty ;
-                             rdfs:domain fsuser:User .
+                             rdfs:domain fsuser:User ;
+                             rdfs:range xsd:double ;
+                             rdfs:comment "This property specifies the daily caloric intake of a user."@en ;
+                             rdfs:label "ha apporto calorico giornaliero"@it ,
+                                        "has daily caloric intake"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasMETCorrection
 fsuser:hasMETCorrection rdf:type owl:DatatypeProperty ;
-                        rdfs:domain fsuser:PerformedActivity .
-
-
-###  https://w3id.org/fuskg/user#hasMETValue
-fsuser:hasMETValue rdf:type owl:DatatypeProperty .
-
-
-###  https://w3id.org/fuskg/user#hasRuleDefinition
-fsuser:hasRuleDefinition rdf:type owl:DatatypeProperty ;
-                         rdfs:range xsd:string .
+                        rdfs:domain fsuser:PerformedActivity ;
+                        rdfs:range xsd:double ;
+                        rdfs:comment "This property specifies the corrected MET of the activity performed by the user."@en ;
+                        rdfs:label "ha MET corretto"@it ,
+                                   "has MET correction"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasTimestamp
 fsuser:hasTimestamp rdf:type owl:DatatypeProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( fsuser:Meal
+                                                fsuser:Violation
+                                              )
+                                ] ;
                     rdfs:range xsd:int ;
+                    rdfs:comment "This property specifies the timestamp of a Meal or Violation."@en ;
                     rdfs:label "ha etichetta temporale"@it ,
                                "has timestamp"@en .
-
-
-###  https://w3id.org/fuskg/user#hasUnitKCalValue
-fsuser:hasUnitKCalValue rdf:type owl:DatatypeProperty .
 
 
 ###  https://w3id.org/fuskg/user#hasUserId
 fsuser:hasUserId rdf:type owl:DatatypeProperty ;
                  rdfs:domain fsuser:User ;
-                 rdfs:range xsd:string .
+                 rdfs:range xsd:string ;
+                 rdfs:comment "This property specifies the id identifying the user."@en ;
+                 rdfs:label "ha id utente"@it ,
+                            "has user id"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationEndTime
 fsuser:hasViolationEndTime rdf:type owl:DatatypeProperty ;
-                           rdfs:domain fsuser:Violation .
+                           rdfs:domain fsuser:Violation ;
+                           rdfs:comment "This property specifies the time at which the violation ends."@en ;
+                           rdfs:label "ha orario di fine violazione"@it ,
+                                      "has violation end time"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationEntity
 fsuser:hasViolationEntity rdf:type owl:DatatypeProperty ;
                           rdfs:domain fsuser:Violation ;
-                          rdfs:range xsd:string .
+                          rdfs:range xsd:string ;
+                          rdfs:comment "This property specifies the entity of the violation."@en ;
+                          rdfs:label "ha entita' di violazine"@it ,
+                                     "has violation entity"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationEntityType
 fsuser:hasViolationEntityType rdf:type owl:DatatypeProperty ;
                               rdfs:domain fsuser:Violation ;
-                              rdfs:range xsd:string .
+                              rdfs:range xsd:string ;
+                              rdfs:comment "This property specifies the entity type of the violation."@en ;
+                              rdfs:label "ha tipologia di entita' di violazione"@it ,
+                                         "has violation entity type"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationExpectedQuantity
 fsuser:hasViolationExpectedQuantity rdf:type owl:DatatypeProperty ;
                                     rdfs:domain fsuser:Violation ;
-                                    rdfs:range xsd:string .
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "This property specifies the expected quantity of the violation."@en ;
+                                    rdfs:label "ha quantita' di violazione attesa"@it ,
+                                               "has violation expected quantity"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationHistory
 fsuser:hasViolationHistory rdf:type owl:DatatypeProperty ;
                            rdfs:domain fsuser:Violation ;
-                           rdfs:range xsd:integer .
+                           rdfs:range xsd:integer ;
+                           rdfs:comment "This property specifies the gistory of the violation as an integer."@en ;
+                           rdfs:label "ha storia di violazione"@it ,
+                                      "has violation history"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationLevel
@@ -374,60 +358,120 @@ fsuser:hasViolationLevel rdf:type owl:DatatypeProperty ;
                                                      fsuser:ViolationInterval
                                                    )
                                      ] ;
-                         rdfs:range xsd:integer .
+                         rdfs:range xsd:integer ;
+                         rdfs:comment "This property specifies the level of the violation."@en ;
+                         rdfs:label "ha livello di violazione"@it ,
+                                    "has violation level"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationPriority
 fsuser:hasViolationPriority rdf:type owl:DatatypeProperty ;
                             rdfs:domain fsuser:Violation ;
-                            rdfs:range xsd:integer .
+                            rdfs:range xsd:integer ;
+                            rdfs:comment "This property specifies the the priority of the violation as an integer."@en ;
+                            rdfs:label "ha priorita' di violazione"@it ,
+                                       "has violation priority"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationQuantity
 fsuser:hasViolationQuantity rdf:type owl:DatatypeProperty ;
                             rdfs:domain fsuser:Violation ;
-                            rdfs:range xsd:string .
+                            rdfs:range xsd:string ;
+                            rdfs:comment "This property specifies the quantity of the violation."@en ;
+                            rdfs:label "ha quantita' di violazione"@it ,
+                                       "has violation quantity"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationRuleId
 fsuser:hasViolationRuleId rdf:type owl:DatatypeProperty ;
                           rdfs:domain fsuser:Violation ;
-                          rdfs:range xsd:int .
+                          rdfs:range xsd:int ;
+                          rdfs:comment "This property specifies the id of the rule violated."@en ;
+                          rdfs:label "ha id della regola violata"@it ,
+                                     "has violation rule id"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationStartTime
 fsuser:hasViolationStartTime rdf:type owl:DatatypeProperty ;
-                             rdfs:domain fsuser:Violation .
+                             rdfs:domain fsuser:Violation ;
+                             rdfs:comment "This property specifies the the time at which the violation started."@en ;
+                             rdfs:label "ha orario di inizio violazione"@it ,
+                                        "has violation start time"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationTiming
 fsuser:hasViolationTiming rdf:type owl:DatatypeProperty ;
                           rdfs:domain fsuser:Violation ;
-                          rdfs:range xsd:string .
+                          rdfs:range xsd:string ;
+                          rdfs:comment "This property specifies the timing of the violation."@en ;
+                          rdfs:label "ha tempistica della violazione"@it ,
+                                     "has violation timing"@en .
 
 
 ###  https://w3id.org/fuskg/user#hasViolationValidityTimespan
 fsuser:hasViolationValidityTimespan rdf:type owl:DatatypeProperty ;
                                     rdfs:domain fsuser:Violation ;
-                                    rdfs:range xsd:string .
-
-
-###  https://w3id.org/fuskg/user#unit
-fsuser:unit rdf:type owl:DatatypeProperty ;
-            rdfs:range xsd:string ;
-            rdfs:label "unit"@en ,
-                       "unità"@it .
+                                    rdfs:range xsd:string ;
+                                    rdfs:comment "This property specifies the timespan during which the violation is valid."@en ;
+                                    rdfs:label "ha arco temporale di validita' di violazione"@it ,
+                                               "has violation validity timespan"@en .
 
 
 #################################################################
 #    Classes
 #################################################################
 
+###  https://w3id.org/fuskg/core#Activity
+fscore:Activity rdf:type owl:Class .
+
+
+###  https://w3id.org/fuskg/core#Food
+fscore:Food rdf:type owl:Class .
+
+
+###  https://w3id.org/fuskg/user#Breakfast
+fsuser:Breakfast rdf:type owl:Class ;
+                 rdfs:subClassOf fsuser:Meal ;
+                 rdfs:comment "Concept denoting meals representing a Breakfast consumed by a user."@en ;
+                 rdfs:label "Breakfast"@en ,
+                            "Colazione"@it .
+
+
 ###  https://w3id.org/fuskg/user#ConsumedFood
 fsuser:ConsumedFood rdf:type owl:Class ;
                     rdfs:comment "This concept enables the reification of the relationships between a user and the amount of a specific food consumed during a specific meal."@en ;
                     rdfs:label "Cibo Consumato"@it ,
                                "Consumed Food"@en .
+
+
+###  https://w3id.org/fuskg/user#Dinner
+fsuser:Dinner rdf:type owl:Class ;
+              rdfs:subClassOf fsuser:Meal ;
+              rdfs:comment "Concept denoting meals representing a Dinner consumed by a user."@en ;
+              rdfs:label "Cena"@it ,
+                         "Dinner"@en .
+
+
+###  https://w3id.org/fuskg/user#EffortCaloriesEquivalent
+fsuser:EffortCaloriesEquivalent rdf:type owl:Class ;
+                                rdfs:comment "This concept enables the reification of the relationships between a user, his/her body features and the energy consuption associated with each activity."@en ;
+                                rdfs:label "Effort Calories Equivalent"@en ,
+                                           "Equivalente in Calorie dello Sforzo"@it .
+
+
+###  https://w3id.org/fuskg/user#Lunch
+fsuser:Lunch rdf:type owl:Class ;
+             rdfs:subClassOf fsuser:Meal ;
+             rdfs:comment "Concept denoting meals representing a Lunch consumed by a user."@en ;
+             rdfs:label "Lunch"@en ,
+                        "Pranzo"@it .
+
+
+###  https://w3id.org/fuskg/user#Meal
+fsuser:Meal rdf:type owl:Class ;
+            rdfs:comment "This concept is the abstract representation of the meals that a user can consume during a day. Sub-concepts represent specific types of meals."@en ;
+            rdfs:label "Meal"@en ,
+                       "Pasto"@it .
 
 
 ###  https://w3id.org/fuskg/user#PerformedActivity
@@ -442,6 +486,14 @@ fsuser:Profile rdf:type owl:Class ;
                rdfs:comment "This concept enables the representation of different types of user profiles. Examples are profiles denoting people with specific allergies or dietary habits."@en ;
                rdfs:label "Profile"@en ,
                           "Profilo"@it .
+
+
+###  https://w3id.org/fuskg/user#Snack
+fsuser:Snack rdf:type owl:Class ;
+             rdfs:subClassOf fsuser:Meal ;
+             rdfs:comment "Concept denoting meals representing a Snack consumed by a user."@en ;
+             rdfs:label "Merenda"@it ,
+                        "Snack"@en .
 
 
 ###  https://w3id.org/fuskg/user#User
@@ -465,4 +517,4 @@ fsuser:ViolationInterval rdf:type owl:Class ;
                                     "Violation Interval"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
