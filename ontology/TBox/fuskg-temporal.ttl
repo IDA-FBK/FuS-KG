@@ -13,9 +13,9 @@
 
 <https://w3id.org/fuskg/temporal> rdf:type owl:Ontology ;
                                    owl:imports <http://www.w3.org/ns/dcat> ,
-                                               <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-recipes.ttl> ,
+                                               <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-recipes.ttl> ,
                                                time: ,
-                                               <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-activity.ttl> ;
+                                               <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-activity.ttl> ;
                                    <http://purl.org/dc/terms/creator> "Gianluca Apriceno" ,
                                                                       "Mauro Dragoni" ;
                                    <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fuskg/temporal#" ;

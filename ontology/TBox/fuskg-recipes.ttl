@@ -11,7 +11,7 @@
 @base <https://w3id.org/fuskg/recipe> .
 
 <https://w3id.org/fuskg/recipe> rdf:type owl:Ontology ;
-                                 owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-disease.ttl> ;
+                                 owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-disease.ttl> ;
                                  owl:versionInfo "1.02" ;
                                  dcterms:creator "Gianluca Apriceno" ;
                                  vann:preferredNamespacePrefix "fsreci" ;

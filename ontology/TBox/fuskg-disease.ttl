@@ -12,7 +12,7 @@
 @base <https://w3id.org/fuskg/disease> .
 
 <https://w3id.org/fuskg/disease> rdf:type owl:Ontology ;
-                                  owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-food.ttl> ;
+                                  owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-food.ttl> ;
                                   dcterms:creator "Gianluca Apriceno" ,
                                                   "Mauro Dragoni" ,
                                                   "Tania Bailoni" ;

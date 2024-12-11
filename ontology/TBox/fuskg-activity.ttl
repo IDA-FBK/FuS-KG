@@ -11,7 +11,7 @@
 @base <https://w3id.org/fuskg/activity> .
 
 <https://w3id.org/fuskg/activity> rdf:type owl:Ontology ;
-                                   owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-core.ttl> ;
+                                   owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-core.ttl> ;
                                    dcterms:modified "2024-12-06" ;
                                    vann:preferredNamespacePrefix "fsacti" ;
                                    dcterms:creator "Gianluca Apriceno" ,

@@ -15,7 +15,7 @@
 @base <https://w3id.org/fuskg/barrier> .
 
 <https://w3id.org/fuskg/barrier> rdf:type owl:Ontology ;
-                                  owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-core.ttl> ;
+                                  owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-core.ttl> ;
                                   dcterms:modified "2024-05-09" ;
                                   dcterms:creator "Gianluca Apriceno" ,
                                                   "Mauro Dragoni" ;

@@ -13,8 +13,8 @@
 @base <https://w3id.org/fuskg/guidelines> .
 
 <https://w3id.org/fuskg/guidelines> rdf:type owl:Ontology ;
-                                     owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-temporal.ttl> ,
-                                                 <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-barriers.ttl> ;
+                                     owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-temporal.ttl> ,
+                                                 <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-barriers.ttl> ;
                                      owl:versionInfo "1.00" ;
                                      dcterms:creator "Gianluca Apriceno" ;
                                      dcterms:modified "2024-05-16"^^xsd:date ;

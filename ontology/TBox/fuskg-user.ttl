@@ -16,7 +16,7 @@
 @base <https://w3id.org/fuskg/user> .
 
 <https://w3id.org/fuskg/user> rdf:type owl:Ontology ;
-                               owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-guidelines.ttl> ;
+                               owl:imports <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-guidelines.ttl> ;
                                vann:preferredNamespaceUri "https://w3id.org/fuskg/user#" ;
                                dcterms:creator "Gianluca Apriceno" ,
                                                "Mauro Dragoni" ;

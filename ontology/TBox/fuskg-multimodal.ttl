@@ -14,8 +14,8 @@
 
 <https://w3id.org/fuskg/multimodal> rdf:type owl:Ontology ;
                                      owl:imports <http://www.w3.org/ns/dcat> ,
-                                                 <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-activity.ttl> ,
-                                                 <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/fuskg-recipes.ttl> ;
+                                                 <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-activity.ttl> ,
+                                                 <https://raw.githubusercontent.com/IDA-FBK/FuS-KG/refs/heads/update-modules/ontology/TBox/fuskg-recipes.ttl> ;
                                      dcterms:creator "Gianluca Apriceno" ,
                                                      "Mauro Dragoni" ,
                                                      "Tania Bailoni" ;
