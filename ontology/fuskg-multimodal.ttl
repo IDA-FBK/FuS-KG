@@ -10,7 +10,7 @@
 @prefix fsmumo: <https://w3id.org/fuskg/multimodal#> .
 @prefix fsreci: <https://w3id.org/fuskg/recipe#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/fuskg/multimodal> .
+@base <https://w3id.org/fuskg/multimodal#> .
 
 <https://w3id.org/fuskg/multimodal> rdf:type owl:Ontology ;
                                      owl:imports <http://www.w3.org/ns/dcat> ,
@@ -215,6 +215,10 @@ fsmumo:Video rdf:type owl:Class ;
              rdfs:comment "Concept denoting Video modality."@en ;
              rdfs:label "Video"@en ,
                         "Video"@it .
+
+
+###  https://w3id.org/fuskg/recipe#Recipe
+fsreci:Recipe rdfs:subClassOf fsmumo:ModalEntity .
 
 
 #################################################################
