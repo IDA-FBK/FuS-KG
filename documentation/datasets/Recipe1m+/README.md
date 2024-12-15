@@ -1,6 +1,6 @@
 # Recipe1M+ Images Dataset
 
-The Recipe1M+ dataset consists of images organized in tar files, each approximately 210 GiB in size, making the total dataset size roughly 3.36 TiB.
+The [Recipe1M+](https://im2recipe.csail.mit.edu/) dataset consists of images organized in tar files, each approximately 210 GiB in size, making the total dataset size roughly 3.36 TiB.
 
 ## Dataset Structure
 
