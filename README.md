@@ -78,7 +78,7 @@ modularity and reusability.
 - **USER:** [[DIAGRAM]](/diagrams/user/user_module.png) [[TBOX]](/ontology/TBox/fuskg-user.ttl)
 
 > [!NOTE]  
-> For more information, please also refer to Section 5 of the paper.
+> For more information, please refer to Section 5 of the paper and to the [README.md](https://github.com/IDA-FBK/FuS-KG/blob/update-modules/diagrams/README.md) inside the diagrams folders.
 
 ### 4. **Ontology Construction:** 
 
@@ -93,6 +93,7 @@ of integrating and managing FSI.
 > [!NOTE]  
 > - For more information, please also refer to Section 6 of the paper.
 > - All the ABox are available at: [[FusKG-Abox]](/ontology/ABox/).
+> - Two Turtle files showing how to model user’s health data within FuS-KG and the sequence of steps required to complete an activity (not cooking domain) with a corresponding resource available online, are available [here](/example/) (also used in the notebook).
 
 ## 🚀 Google Colab Notebook
 
