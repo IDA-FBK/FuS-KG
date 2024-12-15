@@ -27,9 +27,9 @@ This file is an example of an activity (i.e., remove lampashade - not cooking do
 - **Modal Descriptor**: The multimodal descriptor (`fsmumo:hasModalDescriptor`) links the activity to an online video resource, which is associated with a specific modality (with specific metadata info, e.g., width, height and fps), to support the activity.
 
 
-> **Explore and interact with those files in the Notebook:**
+> **Interact with those files in the Notebook:**
 > 
-><a href="https://colab.research.google.com/github/IDA-FBK/FuS-KG/tree/update-modules/notebook" style="text-decoration: none;">
+><a href="https://github.com/IDA-FBK/FuS-KG/tree/update-modules/notebook" style="text-decoration: none;">
 >  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
 ></a>
 
