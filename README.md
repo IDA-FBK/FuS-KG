@@ -29,7 +29,7 @@ privacy and ethical issues relating to user data.
 The building pipeline of the FuS-KG is divided into 4 blocks:
 ### 1. **Context Analysis**
 
-The first block of the pipeline is the context analysis, which primarily involves a comprehensive review of the literature about resources on Food Systems Interoperability (FSI). The outcome of this analysis is the formulation of the following research questions:
+The first block of the pipeline is the context analysis, which primarily involves a comprehensive review of the literature about resources on FSI. The outcome of this analysis is the formulation of the following research questions:
 
 - **REQ<sub>1</sub>**: Which is the set of conceptual domains covering the entire knowledge required to represent completely and effectively the FSI of a user, and how such domains can be integrated with the dynamicity of user-generated knowledge?  
 - **REQ<sub>2</sub>**: How should the entire elicited knowledge representing the whole FSI domains be structured to be reused by different solutions with different goals?  
