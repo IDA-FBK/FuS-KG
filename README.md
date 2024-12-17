@@ -23,24 +23,25 @@ databases of motivational messages or explainability algorithms; and, (iii) mana
 privacy and ethical issues relating to user data.
 
 ## Building Pipeline
+<br>
 <div align="center"> <img src="./diagrams/pipeline/fuskg-building_pipeline.png" alt="FuSKG Building Pipeline"> </div>
-
+<br><br>
 
 The building pipeline of the FuS-KG is divided into 4 blocks:
 ### 1. **Context Analysis**
 
-The first block of the pipeline is the context analysis, which primarily involves a comprehensive review of the literature about resources on FSI. The outcome of this analysis is the formulation of the following research questions (REQ<sub>s</sub>):
+The first block of the pipeline is the context analysis, which primarily involves a comprehensive review of the literature about resources on FSI. The outcome of this analysis is the formulation of the following research questions (RQ<sub>s</sub>):
 
-- **REQ<sub>1</sub>**: Which is the set of conceptual domains covering the entire knowledge required to represent completely and effectively the FSI of a user, and how such domains can be integrated with the dynamicity of user-generated knowledge?  
-- **REQ<sub>2</sub>**: How should the entire elicited knowledge representing the whole FSI domains be structured to be reused by different solutions with different goals?  
-- **REQ<sub>3</sub>**: Which is a suitable methodology to build and maintain a highly complex and large-scale knowledge graph integrating knowledge representing complementary domains?  
+- **RQ<sub>1</sub>**: Which is the set of conceptual domains covering the entire knowledge required to represent completely and effectively the FSI of a user, and how such domains can be integrated with the dynamicity of user-generated knowledge?  
+- **RQ<sub>2</sub>**: How should the entire elicited knowledge representing the whole FSI domains be structured to be reused by different solutions with different goals?  
+- **RQ<sub>3</sub>**: Which is a suitable methodology to build and maintain a highly complex and large-scale knowledge graph integrating knowledge representing complementary domains?  
 
 These questions guide our investigation into how FSI can be managed, integrated, and utilized within FuS-KG.
 
 ### 2. **Co-design Activities:** 
 
-This phase is crucial for identifying a comprehensive set of requirements REQ<sub>s</sub> that FuS-KG has to satisfy. Each requirement
-is further decomposed into a list of competency questions CQ<sub>s</sub> to refine the scope of
+This phase is crucial for identifying a comprehensive set of requirements (REQ<sub>s</sub>) that FuS-KG has to satisfy. Each requirement
+is further decomposed into a list of competency questions (CQ<sub>s</sub>) to refine the scope of
 FuS-KG.
 
 - **REQ<sub>1</sub>**: Conceptualize food domain at a granular level (nutrients to complex recipes).
@@ -57,6 +58,7 @@ FuS-KG.
 
 ### 3. **Modularization**
 <div align="center"> <img src="./diagrams/fuskg-modules/fuskg-modules.png" alt="FuSKG Modules"> </div>
+<br>
 
 The third block focuses on the modularization of the knowledge. In
 this phase, the knowledge about different domains is divided into distinct “knowledge
@@ -64,7 +66,8 @@ modules”. Each module encapsulates information related to a specific domain, s
 as user, activities, and food. This modular approach facilitates easier management and
 scalability of the knowledge base. Furthermore, by adopting a domain-specific split,
 we ensure that each module can be developed and updated independently, promoting
-modularity and reusability.
+modularity and reusability. To achieve this, the modularization followed the principles of the Modular ontology modeling (MOMo) methodology.
+<br>
 
 - **CORE:** [[DIAGRAM]](/diagrams/core/core_module.png) [[TBOX]](/ontology/TBox/fuskg-core.ttl)
 - **FOOD:** [[DIAGRAM]](/diagrams/food/food_module.png) [[TBOX]](/ontology/TBox/fuskg-food.ttl)
