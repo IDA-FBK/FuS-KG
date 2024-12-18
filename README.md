@@ -33,8 +33,8 @@ The building pipeline of the FuS-KG is divided into 4 blocks:
 The first block of the pipeline is the context analysis, which primarily involves a comprehensive review of the literature about resources on FSI. The outcome of this analysis is the formulation of the following research questions (RQ<sub>s</sub>):
 
 - **RQ<sub>1</sub>**: Which is the set of conceptual domains covering the entire knowledge required to represent completely and effectively the FSI of a user, and how such domains can be integrated with the dynamicity of user-generated knowledge?  
-- **RQ<sub>2</sub>**: How should the entire elicited knowledge representing the whole FSI domains be structured to be reused by different solutions with different goals?  
-- **RQ<sub>3</sub>**: Which is a suitable methodology to build and maintain a highly complex and large-scale knowledge graph integrating knowledge representing complementary domains?  
+- **RQ<sub>2</sub>**: : How the whole elicited knowledge representing all the FSI domains should be structured to be reused by different solutions having different goals?  
+- **RQ<sub>3</sub>**: Which is a suitable methodology to build and maintain a highly complex and huge size KG integrating knowledge representing complementary domains?  
 
 These questions guide our investigation into how FSI can be managed, integrated, and utilized within FuS-KG.
 
