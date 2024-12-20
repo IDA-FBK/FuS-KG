@@ -11,4 +11,4 @@
 - **fuskg-usda-foods-nutrients.ttl:** food and nutrients of [USDA](https://fdc.nal.usda.gov/).
 - **fuskg-helis-foods-nutrients.ttl:** food and nutrients from HeLiS.
 - **fuskg-usda-foods-nutrients-recipe1m.ttl:** connects recipe1m+ recipes with USDA foods and nutrients.
-- **fuskg-usda-foods-nutrients-recipe-helis.ttl:** connects HeLiS recipes with HeLiS foods and nutrients.
+- **fuskg-foods-nutrients-recipe-helis.ttl:** connects HeLiS recipes with HeLiS foods and nutrients.
