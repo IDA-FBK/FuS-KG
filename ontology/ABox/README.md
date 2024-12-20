@@ -8,5 +8,7 @@
 - **fuskg-recipes-recipessteps-tasty.ttl:** connects recipes labels of tasty with their steps.
 - **fuskg-multimodal-recipe1m.ttl:** connects recipes of recipe1m+ with their corresponding images ([archive](https://fbk.sharepoint.com/:f:/s/IDA/EvsBg8UfMy5Cqh6lbrBAVn4BCWfBJq7Jks_6sRDD_kArAQ?e=oamRuY)).
 - **fuskg-multimodal-recipe1m.ttl:** connects recipes of recipe1m+ with their corresponding videos ([archive](https://fbk.sharepoint.com/:f:/s/IDA/EoA_tdSP9MpCo_ebxoOY7bwBztKr9asvB_pqNIjJ48p32w?e=f1qg6M)).
-- **fuskg-usda-food-nutrients.ttl:** food and nutrients of [USDA](https://fdc.nal.usda.gov/).
-- **fuskg-usda-food-nutrients-recipe1m.ttl:** connecs recipe1m+ with USDA food and nutrients.
+- **fuskg-usda-foods-nutrients.ttl:** food and nutrients of [USDA](https://fdc.nal.usda.gov/).
+- **fuskg-helis-foods-nutrients.ttl:** food and nutrients from HeLiS.
+- **fuskg-usda-foods-nutrients-recipe1m.ttl:** connects recipe1m+ recipes with USDA foods and nutrients.
+- **fuskg-usda-foods-nutrients-recipe-helis.ttl:** connects HeLiS recipes with HeLiS foods and nutrients.
