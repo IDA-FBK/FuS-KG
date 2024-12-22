@@ -33,3 +33,18 @@ If you have downloaded the notebook to your local machine and want to run it on 
 - Make sure you have a stable internet connection.
 - If you need to install any dependencies, make sure to run the appropriate setup cells first.
 - You can also modify the code and rerun the cells as needed.
+
+## ⚙️Troubleshooting
+
+#### Memory Issue on Free Colab Accounts
+
+Free Colab accounts provide approximately 12GB of RAM (CPU). When loading large graphs, you might encounter this error:
+
+> "Your session crashed after using all available RAM."
+
+This indicates the session ended due to exceeding all the available RAM memory. To resolve this:
+
+1. Run the setup cell (the first cell in the notebook), followed by the cell that caused the error.
+2. If the problem persists, go to `Runtime > Restart runtime`, then rerun the setup cell, followed by the cell that caused the error.
+
+💡 **Tip**: For additional memory, consider upgrading to a Colab Pro account.
