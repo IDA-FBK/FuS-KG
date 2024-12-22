@@ -1,4 +1,4 @@
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/IDA-FBK/FuS-KG/tree/update-modules/notebook)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook)
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
@@ -81,7 +81,7 @@ modularity and reusability. To achieve this, the modularization followed the pri
 - **USER:** [[DIAGRAM]](/diagrams/user/user_module.png) [[TBOX]](/ontology/TBox/fuskg-user.ttl)
 
 > [!NOTE]  
-> For more information, please refer to Section 5 of the paper and to the [README.md](https://github.com/IDA-FBK/FuS-KG/blob/update-modules/diagrams/README.md) inside the diagrams folder.
+> For more information, please refer to Section 5 of the paper and to the [README.md](./diagrams/README.md) inside the diagrams folder.
 
 ### 4. **Ontology Construction:** 
 
@@ -104,7 +104,7 @@ We have implemented a Python **Colab Notebook** showing how to interact with FuS
 
 Click below to access the interactive notebook:
 
-<a href="https://github.com/IDA-FBK/FuS-KG/tree/update-modules/notebook" style="text-decoration: none;">
+<a href="https://github.com/IDA-FBK/FuS-KG/tree/main/notebook" style="text-decoration: none;">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
 </a>
 
@@ -112,7 +112,7 @@ Click below to access the interactive notebook:
 
 > **⚠️ Important**
 > 
-> To load and run the notebook correctly, please follow the instructions in the [README.md](https://github.com/IDA-FBK/FuS-KG/blob/update-modules/notebook/README.md).
+> To load and run the notebook correctly, please follow the instructions in the [README.md](https://github.com/IDA-FBK/FuS-KG/blob/main/notebook/README.md).
 
 ## Authors
 - Tania Bailoni: tbailoni@fbk.eu
