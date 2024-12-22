@@ -29,7 +29,7 @@ This file is an example of an activity (i.e., remove lampashade - not cooking do
 
 > **Interact with those files in the Notebook:**
 > 
-><a href="https://github.com/IDA-FBK/FuS-KG/tree/update-modules/notebook" style="text-decoration: none;">
+><a href="https://github.com/IDA-FBK/FuS-KG/tree/main/notebook" style="text-decoration: none;">
 >  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
 ></a>
 
