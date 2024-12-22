@@ -30,7 +30,7 @@ The example folder includes two Turtle files:
 
 ### Notebook
 
-The Notebook folder contains a Python Colab Notebook showing how to interact with FuS-KG modules by performing SPARQL queries based on the CQs of each REQ together with a [README.md](https://github.com/IDA-FBK/FuS-KG/blob/update-modules/notebook/README.md)
+The Notebook folder contains a Python Colab Notebook showing how to interact with FuS-KG modules by performing SPARQL queries based on the CQs of each REQ together with a [README.md](https://github.com/IDA-FBK/FuS-KG/blob/main/notebook/README.md)
 to guide you through the process of loading and running the notebook.
 
 ### Ontology
