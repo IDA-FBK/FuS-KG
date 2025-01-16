@@ -15,7 +15,7 @@ Welcome to the documentation section of the repository! This directory acts as t
 
 ### Datasets
 
-The datasets folder provides information about the multi-modal data sources used inside FuS-KG (i.e., [Recipe1M+](https://im2recipe.csail.mit.edu/) and [Tasty Video Dataset](https://cvml.comp.nus.edu.sg/tasty/index.html)).
+The datasets folder provides [links to the sources](https://github.com/IDA-FBK/FuS-KG/tree/main/documentation/datasets/Source-Links) integrated inside FuS-KG, along with information about the multi-modal data sources used within FuS-KG (i.e., [Recipe1M+](https://im2recipe.csail.mit.edu/) and [Tasty Video Dataset](https://cvml.comp.nus.edu.sg/tasty/index.html)).
 
 ### Diagrams
 
