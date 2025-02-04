@@ -1,4 +1,5 @@
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook) [![HTML Documentation](https://img.shields.io/badge/Widoco-Documentation-blue)](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html)
+
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
@@ -69,19 +70,19 @@ we ensure that each module can be developed and updated independently, promoting
 modularity and reusability. To achieve this, the modularization followed the principles of the Modular ontology modeling (MOMo) methodology.
 <br>
 
-- **CORE:** [[DIAGRAM]](/diagrams/core/core_module.png) [[TBOX]](/ontology/TBox/fuskg-core.ttl)
-- **FOOD:** [[DIAGRAM]](/diagrams/food/food_module.png) [[TBOX]](/ontology/TBox/fuskg-food.ttl)
-- **ACTIVITY:** [[DIAGRAM]](/diagrams/activity/activity_module.png) [[TBOX]](/ontology/TBox/fuskg-activity.ttl)
-- **BARRIER:** [[DIAGRAM]](/diagrams/barrier/barrier_module.png) [[TBOX]](/ontology/TBox/fuskg-barriers.ttl)
-- **DISEASE:** [[DIAGRAM]](/diagrams/disease/disease_module.png) [[TBOX]](/ontology/TBox/fuskg-disease.ttl)
-- **RECIPES:** [[DIAGRAM]](/diagrams/recipes/recipes_module.png) [[TBOX]](/ontology/TBox/fuskg-recipes.ttl)
-- **MULTI-MODAL:** [[DIAGRAM]](/diagrams/multi-modal/multi-modal_module.png) [[TBOX]](/ontology/TBox/fuskg-multimodal.ttl)
-- **TEMPORAL:** [[DIAGRAM]](/diagrams/temporal/temporal_module.png) [[TBOX]](/ontology/TBox/fuskg-temporal.ttl)
-- **GUIDELINES:** [[DIAGRAM]](/diagrams/guidelines/guidelines_module.png) [[TBOX]](/ontology/TBox/fuskg-guidelines.ttl)
-- **USER:** [[DIAGRAM]](/diagrams/user/user_module.png) [[TBOX]](/ontology/TBox/fuskg-user.ttl)
+- **CORE:** [[DIAGRAM]](/diagrams/core/core_module.png) [[TBOX]](/ontology/TBox/fuskg-core.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html)
+- **FOOD:** [[DIAGRAM]](/diagrams/food/food_module.png) [[TBOX]](/ontology/TBox/fuskg-food.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Food/index-en.html)
+- **ACTIVITY:** [[DIAGRAM]](/diagrams/activity/activity_module.png) [[TBOX]](/ontology/TBox/fuskg-activity.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Activity/index-en.html)
+- **BARRIER:** [[DIAGRAM]](/diagrams/barrier/barrier_module.png) [[TBOX]](/ontology/TBox/fuskg-barriers.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Barriers/index-en.html)
+- **DISEASE:** [[DIAGRAM]](/diagrams/disease/disease_module.png) [[TBOX]](/ontology/TBox/fuskg-disease.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Disease/index-en.html)
+- **RECIPES:** [[DIAGRAM]](/diagrams/recipes/recipes_module.png) [[TBOX]](/ontology/TBox/fuskg-recipes.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Recipes/index-en.html)
+- **MULTI-MODAL:** [[DIAGRAM]](/diagrams/multi-modal/multi-modal_module.png) [[TBOX]](/ontology/TBox/fuskg-multimodal.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Multimodal/index-en.html)
+- **TEMPORAL:** [[DIAGRAM]](/diagrams/temporal/temporal_module.png) [[TBOX]](/ontology/TBox/fuskg-temporal.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Temporal/index-en.html)
+- **GUIDELINES:** [[DIAGRAM]](/diagrams/guidelines/guidelines_module.png) [[TBOX]](/ontology/TBox/fuskg-guidelines.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Guidelines/index-en.html)
+- **USER:** [[DIAGRAM]](/diagrams/user/user_module.png) [[TBOX]](/ontology/TBox/fuskg-user.ttl) [[HTML-DOC]](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/User/index-en.html)
 
 > [!NOTE]  
-> For more information, please refer to Section 5 of the paper and to the [README.md](./diagrams/README.md) inside the diagrams folder.
+> For more information, please refer to Section 5 of the paper, the [README.md](https://github.com/IDA-FBK/FuS-KG/blob/update-modules/diagrams/README.md) in the diagrams folders, and the available [HTML-DOCS](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html)
 
 ### 4. **Ontology Construction:** 
 
