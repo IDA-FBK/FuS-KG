@@ -25,6 +25,8 @@ The datasets folder provides [links to the sources](https://github.com/IDA-FBK/F
 
 The diagrams folder contains visual representations of the modules of FuS-KG and a corresponding [README.md](https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/README.md) explaining each module.
 
+**HTML Modules Documentation** available at [https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html)
+
 ### Example
 
 The example folder includes two Turtle files:
