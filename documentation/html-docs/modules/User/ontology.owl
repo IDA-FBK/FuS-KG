@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/fuskg/user#"
+     xml:base="https://w3id.org/fuskg/user"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:core="https://w3id.org/fuskg/core#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:food="https://w3id.org/fuskg/food#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:user="https://w3id.org/fuskg/user#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+     xmlns:schema="http://schema.org/"
+     xmlns:activity="https://w3id.org/fuskg/activity#"
+     xmlns:guidelines="https://w3id.org/fuskg/guidelines#">
+    <owl:Ontology rdf:about="https://w3id.org/fuskg/user">
+        <owl:imports rdf:resource="https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-guidelines.ttl"/>
+        <terms:creator>Gianluca Apriceno</terms:creator>
+        <terms:creator>Mauro Dragoni</terms:creator>
+        <terms:creator>Tania Bailoni</terms:creator>
+        <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2017-05-02</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-05-21</terms:modified>
+        <terms:publisher>Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler &lt;https://digitalhealthcenter-en.fbk.eu/home&gt;</terms:publisher>
+        <terms:rights xml:lang="en">CreativeCommons 4.0 NonCommercial-ShareAlike &lt;https://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</terms:rights>
+        <terms:title xml:lang="en">User Module of Functional Status Knowledge Graph (FuS-KG)</terms:title>
+        <vann:preferredNamespacePrefix>fsuser</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/fuskg/user#</vann:preferredNamespaceUri>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.00</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#domain -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#activeCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#activeCategory"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#appliesTo -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#appliesTo"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#hasMonitoredValue -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#hasMonitoredValue">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#hasOperator -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#hasOperator">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#hasPriority -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#hasPriority">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#hasRuleId -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#hasRuleId">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#lowerBound -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#lowerBound">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#monitoredEntity -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#monitoredEntity">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#monitoredEntityType -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#monitoredEntityType">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#timing -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#timing">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#upperBound -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/guidelines#upperBound">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasForbiddenCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#hasForbiddenCategory">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasMandatoryCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#hasMandatoryCategory">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasOperator -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#hasOperator">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasPriority -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#hasPriority">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#isRecipeConsumedFood -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#isRecipeConsumedFood"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#lowerBound -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#lowerBound">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#timing -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#timing">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#upperBound -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/user#upperBound">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/guidelines#MonitoringRule"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/guidelines#ValueInterval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#monitors -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/guidelines#monitors">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/guidelines#MonitoringRule"/>
+        <rdfs:comment xml:lang="en">This property specifies the subject of a MonitoringRule.</rdfs:comment>
+        <rdfs:label xml:lang="it">monitora</rdfs:label>
+        <rdfs:label xml:lang="en">monitors</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#belongsProfile -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#belongsProfile">
+        <owl:inverseOf rdf:resource="https://w3id.org/fuskg/user#containsUser"/>
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#Profile"/>
+        <rdfs:comment xml:lang="en">This property specifies to which Profile a User belongs.</rdfs:comment>
+        <rdfs:label xml:lang="it">appartiena al profilo</rdfs:label>
+        <rdfs:label xml:lang="en">belongs to profile</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#consumed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#consumed">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:comment xml:lang="en">This property specifies what the user has consumed during a Meal. The Meal is defined as a list of ConsumedFood instances indicating the food and the amount eaten.</rdfs:comment>
+        <rdfs:label xml:lang="en">consumed</rdfs:label>
+        <rdfs:label xml:lang="it">ha consumato</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#containsUser -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#containsUser">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Profile"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:comment xml:lang="en">This property specifies the user(s) contained in a profile.</rdfs:comment>
+        <rdfs:label xml:lang="en">contains user</rdfs:label>
+        <rdfs:label xml:lang="it">contiene l&apos;utente</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasActivity -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#hasActivity">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#EffortCaloriesEquivalent"/>
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#PerformedActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Activity"/>
+        <rdfs:comment xml:lang="en">This property specifies which activity the domain instance refers to.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha attivita&apos;</rdfs:label>
+        <rdfs:label xml:lang="en">has activity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasConsumedFood -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#hasConsumedFood">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#ConsumedFood"/>
+        <rdfs:comment xml:lang="en">This property specifies what (ConsumedFood) the user has consumed during a Meal. The ConsumedFood instance indicates the food and the amount eaten.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha Consumato Cibo</rdfs:label>
+        <rdfs:label xml:lang="en">has Consumed Food</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasFood -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#hasFood">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#ConsumedFood"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:comment xml:lang="en">This property specifies which food has been consumed.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha Cibo</rdfs:label>
+        <rdfs:label xml:lang="en">has Food</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasUser -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#hasUser">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#PerformedActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:comment xml:lang="en">This property specifies which user the domain instance refers to. In detail which user performed the activity if the domain instance is a PerformedActivity, and which user ate a meal if the domain instance belongs to Meal.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha Utente</rdfs:label>
+        <rdfs:label xml:lang="en">has User</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationMeal -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#hasViolationMeal">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:comment xml:lang="en">This property specifies which Meal triggered the violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha violazione sul pasto</rdfs:label>
+        <rdfs:label xml:lang="en">has violation on Meal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationRule -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#hasViolationRule">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:comment xml:lang="en">This property specifies which rule is violated.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha violazione sulla regola</rdfs:label>
+        <rdfs:label xml:lang="en">has violation on rule</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationUser -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#hasViolationUser">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:comment xml:lang="en">This property specifies which User the violation refers to.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha violazione per l&apos;utente</rdfs:label>
+        <rdfs:label xml:lang="en">has violation User</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#performed -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/user#performed">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/user#PerformedActivity"/>
+        <rdfs:comment xml:lang="en">This property specifies an activity performed by a user. The PerformedActivity instance indicates the activity the User did and its duration.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha eseguito</rdfs:label>
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#hasRuleDefinition -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/guidelines#hasRuleDefinition">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/guidelines#MonitoringRule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the definition of the MonitoringRule.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha definizione della regola</rdfs:label>
+        <rdfs:label xml:lang="en">has rule definition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#activityDuration -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#activityDuration">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#EffortCaloriesEquivalent"/>
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#PerformedActivity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">This property specifies the duration of the activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">activity duration</rdfs:label>
+        <rdfs:label xml:lang="it">durata attivita&apos;</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#activityEndTimestamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#activityEndTimestamp">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#PerformedActivity"/>
+        <rdfs:comment xml:lang="en">This property specifies the timestamp of the end of the activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">activity end timestamp</rdfs:label>
+        <rdfs:label xml:lang="it">timestamp di fine attivita&apos;</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#activityStartTimestamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#activityStartTimestamp">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#PerformedActivity"/>
+        <rdfs:comment xml:lang="en">This property specifies the timestamp of the start of the activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">activity start timestamp</rdfs:label>
+        <rdfs:label xml:lang="it">timestamp di inizio attivita&apos;</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#bounds -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#bounds">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#ViolationInterval"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">This property specifies the bounds of a violation interval.</rdfs:comment>
+        <rdfs:label xml:lang="en">bounds</rdfs:label>
+        <rdfs:label xml:lang="it">limiti</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasDailyCaloricIntake -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasDailyCaloricIntake">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">This property specifies the daily caloric intake of a user.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha apporto calorico giornaliero</rdfs:label>
+        <rdfs:label xml:lang="en">has daily caloric intake</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasMETCorrection -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasMETCorrection">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#PerformedActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">This property specifies the corrected MET of the activity performed by the user.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha MET corretto</rdfs:label>
+        <rdfs:label xml:lang="en">has MET correction</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasTimestamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasTimestamp">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#Meal"/>
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#Violation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">This property specifies the timestamp of a Meal or Violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha etichetta temporale</rdfs:label>
+        <rdfs:label xml:lang="en">has timestamp</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasUserId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasUserId">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the id identifying the user.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha id utente</rdfs:label>
+        <rdfs:label xml:lang="en">has user id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationEndTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationEndTime">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:comment xml:lang="en">This property specifies the time at which the violation ends.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha orario di fine violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation end time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationEntity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationEntity">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the entity of the violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha entita&apos; di violazine</rdfs:label>
+        <rdfs:label xml:lang="en">has violation entity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationEntityType -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationEntityType">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the entity type of the violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha tipologia di entita&apos; di violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation entity type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationExpectedQuantity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationExpectedQuantity">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the expected quantity of the violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha quantita&apos; di violazione attesa</rdfs:label>
+        <rdfs:label xml:lang="en">has violation expected quantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationHistory -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationHistory">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">This property specifies the gistory of the violation as an integer.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha storia di violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation history</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationLevel">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#Violation"/>
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/user#ViolationInterval"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">This property specifies the level of the violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha livello di violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationPriority -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationPriority">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">This property specifies the the priority of the violation as an integer.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha priorita&apos; di violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationQuantity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationQuantity">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the quantity of the violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha quantita&apos; di violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation quantity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationRuleId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationRuleId">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">This property specifies the id of the rule violated.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha id della regola violata</rdfs:label>
+        <rdfs:label xml:lang="en">has violation rule id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationStartTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationStartTime">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:comment xml:lang="en">This property specifies the the time at which the violation started.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha orario di inizio violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation start time</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationTiming -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationTiming">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the timing of the violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha tempistica della violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation timing</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#hasViolationValidityTimespan -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/user#hasViolationValidityTimespan">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/user#Violation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property specifies the timespan during which the violation is valid.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha arco temporale di validita&apos; di violazione</rdfs:label>
+        <rdfs:label xml:lang="en">has violation validity timespan</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Activity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Activity"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Food -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Food"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#MonitoringRule -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/guidelines#MonitoringRule">
+        <rdfs:comment xml:lang="en">This concept enables the definition of rules that can be associated to a specific user or to a specific profile in order to support monitoring activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Monitoring Rule</rdfs:label>
+        <rdfs:label xml:lang="it">Regole di Monitoraggio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/guidelines#ValueInterval -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/guidelines#ValueInterval">
+        <rdfs:comment xml:lang="en">This concept enables the definition of numerical intervals of the form [lowerBound, upperBound] that can be associated with an instance of the MonitoringRule concept.</rdfs:comment>
+        <rdfs:label xml:lang="it">Intervalli</rdfs:label>
+        <rdfs:label xml:lang="en">Value Interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#Breakfast -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#Breakfast">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Breakfast consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="en">Breakfast</rdfs:label>
+        <rdfs:label xml:lang="it">Colazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#ConsumedFood -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#ConsumedFood">
+        <rdfs:comment xml:lang="en">This concept enables the reification of the relationships between a user and the amount of a specific food consumed during a specific meal.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cibo Consumato</rdfs:label>
+        <rdfs:label xml:lang="en">Consumed Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#Dinner -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#Dinner">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Dinner consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cena</rdfs:label>
+        <rdfs:label xml:lang="en">Dinner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#EffortCaloriesEquivalent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#EffortCaloriesEquivalent">
+        <rdfs:comment xml:lang="en">This concept enables the reification of the relationships between a user, his/her body features and the energy consuption associated with each activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Effort Calories Equivalent</rdfs:label>
+        <rdfs:label xml:lang="it">Equivalente in Calorie dello Sforzo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#Lunch -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#Lunch">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Lunch consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lunch</rdfs:label>
+        <rdfs:label xml:lang="it">Pranzo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#Meal -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#Meal">
+        <rdfs:comment xml:lang="en">This concept is the abstract representation of the meals that a user can consume during a day. Sub-concepts represent specific types of meals.</rdfs:comment>
+        <rdfs:label xml:lang="en">Meal</rdfs:label>
+        <rdfs:label xml:lang="it">Pasto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#PerformedActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#PerformedActivity">
+        <rdfs:comment xml:lang="en">This concept enables the reification of the relationships between a user and the duration of a specific performed activity.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività Svolta</rdfs:label>
+        <rdfs:label xml:lang="en">Performed Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#Profile -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#Profile">
+        <rdfs:comment xml:lang="en">This concept enables the representation of different types of user profiles. Examples are profiles denoting people with specific allergies or dietary habits.</rdfs:comment>
+        <rdfs:label xml:lang="en">Profile</rdfs:label>
+        <rdfs:label xml:lang="it">Profilo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#Snack -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#Snack">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/user#Meal"/>
+        <rdfs:comment xml:lang="en">Concept denoting meals representing a Snack consumed by a user.</rdfs:comment>
+        <rdfs:label xml:lang="it">Merenda</rdfs:label>
+        <rdfs:label xml:lang="en">Snack</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#User -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#User">
+        <rdfs:comment xml:lang="en">This is the root concept for the User branch. All sub-concepts represent a specific category of users, if necessary.</rdfs:comment>
+        <rdfs:label xml:lang="en">User</rdfs:label>
+        <rdfs:label xml:lang="it">Utente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#Violation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#Violation">
+        <rdfs:comment xml:lang="en">This concept represents violations associated with a specific user. Instances of the Violation concept can be the result of reasoning activities provided by third-party applications.</rdfs:comment>
+        <rdfs:label xml:lang="en">Violation</rdfs:label>
+        <rdfs:label xml:lang="it">Violazione</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/user#ViolationInterval -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/user#ViolationInterval">
+        <rdfs:comment xml:lang="en">This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation.</rdfs:comment>
+        <rdfs:label xml:lang="it">Intervalli di Violazione</rdfs:label>
+        <rdfs:label xml:lang="en">Violation Interval</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

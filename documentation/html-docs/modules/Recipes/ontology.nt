@@ -1,0 +1,402 @@
+<https://w3id.org/fuskg/recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fuskg/recipe> <http://www.w3.org/2002/07/owl#imports> <https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-disease.ttl> .
+<https://w3id.org/fuskg/recipe> <http://www.w3.org/2002/07/owl#imports> <https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-multimodal.ttl> .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/creator> "Claudio Eccher" .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/creator> "Gianluca Apriceno" .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/creator> "Mauro Dragoni" .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/creator> "Rosa Maimone" .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/creator> "Tania Bailoni" .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/issued> "2017-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/modified> "2024-05-13"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/publisher> "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
+<https://w3id.org/fuskg/recipe> <http://purl.org/dc/terms/title> "Recipes Module of Functional Status Knowledge Graph (FuS-KG)"@en .
+<https://w3id.org/fuskg/recipe> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fsreci" .
+<https://w3id.org/fuskg/recipe> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fuskg/recipe#" .
+<https://w3id.org/fuskg/recipe> <http://www.w3.org/2002/07/owl#versionInfo> "1.02" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#range
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/disease#hasDisease
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/disease#DiseaseRiskLevel> .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/disease#Disease> .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the Disease a Disease Risk Level refers to."@en .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#label> "ha malattia"@it .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#label> "has disease"@en .
+# 
+# https://w3id.org/fuskg/disease#hasFood
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/disease#DiseaseRiskLevel> .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the Food a Disease Risk Level refers to."@en .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "ha cibo"@it .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "has food"@en .
+# 
+# https://w3id.org/fuskg/multimodal#hasModalDescriptor
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalEntity> .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a ModalEntity with its corresponding ModalDescriptor(s)."@en .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "ha descrittore modale"@it .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "has modal descriptor" .
+# 
+# https://w3id.org/fuskg/multimodal#hasModality
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a ModalDescriptor with its correspondig Modality."@en .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#label> "ha modalita'"@it .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#label> "has modality"@en .
+# 
+# https://w3id.org/fuskg/recipe#hasFood
+<https://w3id.org/fuskg/recipe#hasFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/recipe#hasFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/recipe#RecipeFood> .
+<https://w3id.org/fuskg/recipe#hasFood> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/recipe#hasFood> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a RecipeFood with its corresponding Food."@en .
+<https://w3id.org/fuskg/recipe#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "ha cibo"@it .
+<https://w3id.org/fuskg/recipe#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "has food"@en .
+# 
+# https://w3id.org/fuskg/recipe#hasRecipeFood
+<https://w3id.org/fuskg/recipe#hasRecipeFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/recipe#hasRecipeFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/recipe#Recipe> .
+<https://w3id.org/fuskg/recipe#hasRecipeFood> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/recipe#RecipeFood> .
+<https://w3id.org/fuskg/recipe#hasRecipeFood> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a Recipe with its RecipeFood (s)."@en .
+<https://w3id.org/fuskg/recipe#hasRecipeFood> <http://www.w3.org/2000/01/rdf-schema#label> "ha ingrediente"@it .
+<https://w3id.org/fuskg/recipe#hasRecipeFood> <http://www.w3.org/2000/01/rdf-schema#label> "has Recipe Food"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/disease#riskLevel
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/disease#DiseaseRiskLevel> .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the risk level of a DiseaseRiskLevel instance as an integer."@en .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "livello di rischio"@it .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "risk level"@en .
+# 
+# https://w3id.org/fuskg/multimodal#fps
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#Video> .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#comment> "Frame per second of a Video."@en .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#label> "Frame al secondo"@it .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#label> "Frame per second"@en .
+# 
+# https://w3id.org/fuskg/multimodal#hasPathInArtifact
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "Path inside an artifact (e.g., an archive)."@en .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Path inside artifact"@en .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Percorso dentro artefatto"@it .
+# 
+# https://w3id.org/fuskg/multimodal#height
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Height of an image or video (related to resolution)."@en .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#label> "altezza"@it .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
+# 
+# https://w3id.org/fuskg/multimodal#resourceURL
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL pointing to a resource."@en .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL resource"@en .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL risorsa"@it .
+# 
+# https://w3id.org/fuskg/multimodal#width
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Width of an image or video (related to resolution)."@en .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#label> "larghezza"@it .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#label> "width"@en .
+# 
+# https://w3id.org/fuskg/recipe#amountFood
+<https://w3id.org/fuskg/recipe#amountFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/recipe#amountFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/recipe#RecipeFood> .
+<https://w3id.org/fuskg/recipe#amountFood> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/recipe#amountFood> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies the amount of food"@en .
+<https://w3id.org/fuskg/recipe#amountFood> <http://www.w3.org/2000/01/rdf-schema#label> "amount of Food"@en .
+<https://w3id.org/fuskg/recipe#amountFood> <http://www.w3.org/2000/01/rdf-schema#label> "quantita' di Cibo"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2006/time#ProperInterval
+<http://www.w3.org/2006/time#ProperInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/core#Food
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/disease#Disease
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "Root concept that specifies diseases"@en .
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease"@en .
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Malattia"@it .
+# 
+# https://w3id.org/fuskg/disease#DiseaseRiskLevel
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept specifying the risk level of a disease correlated to a food"@en .
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Disease Risk Level"@en .
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Livello di Rischio della Malattia"@it .
+# 
+# https://w3id.org/fuskg/multimodal#Audio
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Audio modality."@en .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@en .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@it .
+# 
+# https://w3id.org/fuskg/multimodal#DataStream
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting DataStream modality."@en .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#label> "Data stream"@en .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#label> "Stream dati"@it .
+# 
+# https://w3id.org/fuskg/multimodal#Image
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Image modality."@en .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Immagine"@it .
+# 
+# https://w3id.org/fuskg/multimodal#ModalDescriptor
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept used to connect a modal entity with its modality."@en .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "Descrittore modale"@it .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "Modal descriptor"@en .
+# 
+# https://w3id.org/fuskg/multimodal#ModalEntity
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Root class used to specify modal entities that can be associated with one or more modal resources."@en .
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entita' Modale"@it .
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Modal Entity"@en .
+# 
+# https://w3id.org/fuskg/multimodal#Modality
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent class used to specify a data modality of a resource"@en .
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modalita'"@it .
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modality"@en .
+# 
+# https://w3id.org/fuskg/multimodal#Text
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Text modality."@en .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#label> "Testo"@it .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#label> "Text"@en .
+# 
+# https://w3id.org/fuskg/multimodal#Video
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Video modality."@en .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@en .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@it .
+# 
+# https://w3id.org/fuskg/recipe#Desserts
+<https://w3id.org/fuskg/recipe#Desserts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#Desserts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#HelisRecipe> .
+<https://w3id.org/fuskg/recipe#Desserts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Desserts from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#Desserts> <http://www.w3.org/2000/01/rdf-schema#label> "Dessert"@it .
+<https://w3id.org/fuskg/recipe#Desserts> <http://www.w3.org/2000/01/rdf-schema#label> "Desserts"@en .
+# 
+# https://w3id.org/fuskg/recipe#Entree
+<https://w3id.org/fuskg/recipe#Entree> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#Entree> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#HelisRecipe> .
+<https://w3id.org/fuskg/recipe#Entree> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Entrees from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#Entree> <http://www.w3.org/2000/01/rdf-schema#label> "Antipasti"@it .
+<https://w3id.org/fuskg/recipe#Entree> <http://www.w3.org/2000/01/rdf-schema#label> "Entrees"@en .
+# 
+# https://w3id.org/fuskg/recipe#FishCourses
+<https://w3id.org/fuskg/recipe#FishCourses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#FishCourses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#HelisRecipe> .
+<https://w3id.org/fuskg/recipe#FishCourses> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Fish Courses from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#FishCourses> <http://www.w3.org/2000/01/rdf-schema#label> "Fish Courses"@en .
+<https://w3id.org/fuskg/recipe#FishCourses> <http://www.w3.org/2000/01/rdf-schema#label> "Secondi Piatti di Pesce"@it .
+# 
+# https://w3id.org/fuskg/recipe#HelisRecipe
+<https://w3id.org/fuskg/recipe#HelisRecipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#HelisRecipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#Recipe> .
+<https://w3id.org/fuskg/recipe#HelisRecipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Recipes from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#HelisRecipe> <http://www.w3.org/2000/01/rdf-schema#label> "Helis Recipe"@en .
+<https://w3id.org/fuskg/recipe#HelisRecipe> <http://www.w3.org/2000/01/rdf-schema#label> "Helis Ricette"@it .
+# 
+# https://w3id.org/fuskg/recipe#MainCourses
+<https://w3id.org/fuskg/recipe#MainCourses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#MainCourses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#HelisRecipe> .
+<https://w3id.org/fuskg/recipe#MainCourses> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Main Courses from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#MainCourses> <http://www.w3.org/2000/01/rdf-schema#label> "Main Courses"@en .
+<https://w3id.org/fuskg/recipe#MainCourses> <http://www.w3.org/2000/01/rdf-schema#label> "Primi Piatti"@it .
+# 
+# https://w3id.org/fuskg/recipe#MeatCourses
+<https://w3id.org/fuskg/recipe#MeatCourses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#MeatCourses> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#HelisRecipe> .
+<https://w3id.org/fuskg/recipe#MeatCourses> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Meat Courses from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#MeatCourses> <http://www.w3.org/2000/01/rdf-schema#label> "Meat Courses"@en .
+<https://w3id.org/fuskg/recipe#MeatCourses> <http://www.w3.org/2000/01/rdf-schema#label> "Secondi Piatti di Carne"@it .
+# 
+# https://w3id.org/fuskg/recipe#Recipe
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#ModalEntity> .
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Root concept denoting Recipes collecetd from different sources. Recipes are specified as a list of RecipeFood denoting the ingredients (the specific food and its quantity) of the recipe."@en .
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe"@en .
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#label> "Ricette"@it .
+# 
+# https://w3id.org/fuskg/recipe#Recipe1m
+<https://w3id.org/fuskg/recipe#Recipe1m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#Recipe1m> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#Recipe> .
+<https://w3id.org/fuskg/recipe#Recipe1m> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting recipes of Recipe1m+ dataset."@en .
+<https://w3id.org/fuskg/recipe#Recipe1m> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe1m"@en .
+<https://w3id.org/fuskg/recipe#Recipe1m> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe1m"@it .
+# 
+# https://w3id.org/fuskg/recipe#RecipeFood
+<https://w3id.org/fuskg/recipe#RecipeFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#RecipeFood> <http://www.w3.org/2000/01/rdf-schema#comment> "The RecipeFood concept reifies the relationship between a Recipe, the specific Food in the Recipe and its amount."@en .
+<https://w3id.org/fuskg/recipe#RecipeFood> <http://www.w3.org/2000/01/rdf-schema#label> "Ingredienti Ricette"@it .
+<https://w3id.org/fuskg/recipe#RecipeFood> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe Food"@en .
+# 
+# https://w3id.org/fuskg/recipe#Sauces
+<https://w3id.org/fuskg/recipe#Sauces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#Sauces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#HelisRecipe> .
+<https://w3id.org/fuskg/recipe#Sauces> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Sauces from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#Sauces> <http://www.w3.org/2000/01/rdf-schema#label> "Salse"@it .
+<https://w3id.org/fuskg/recipe#Sauces> <http://www.w3.org/2000/01/rdf-schema#label> "Sauces"@en .
+# 
+# https://w3id.org/fuskg/recipe#SideDishes
+<https://w3id.org/fuskg/recipe#SideDishes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#SideDishes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#HelisRecipe> .
+<https://w3id.org/fuskg/recipe#SideDishes> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Side Dishes from the RecipeDB and Turconi datasets."@en .
+<https://w3id.org/fuskg/recipe#SideDishes> <http://www.w3.org/2000/01/rdf-schema#label> "Contorni"@it .
+<https://w3id.org/fuskg/recipe#SideDishes> <http://www.w3.org/2000/01/rdf-schema#label> "Side Dishes"@en .
+# 
+# https://w3id.org/fuskg/recipe#Tasty
+<https://w3id.org/fuskg/recipe#Tasty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#Tasty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/recipe#Recipe> .
+<https://w3id.org/fuskg/recipe#Tasty> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting recipes of Tasty dataset."@en .
+<https://w3id.org/fuskg/recipe#Tasty> <http://www.w3.org/2000/01/rdf-schema#label> "Tasty"@en .
+<https://w3id.org/fuskg/recipe#Tasty> <http://www.w3.org/2000/01/rdf-schema#label> "Tasty"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Text> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#DataStream> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Audio> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

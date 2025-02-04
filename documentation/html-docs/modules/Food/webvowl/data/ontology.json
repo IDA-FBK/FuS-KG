@@ -1,0 +1,7482 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/fuskg/core", "https://w3id.org/fuskg/food" ],
+    "title" : {
+      "en" : "Food Module of Functional Status Knowledge Graph (FuS-KG)"
+    },
+    "iri" : "https://w3id.org/fuskg/food",
+    "version" : "1.02",
+    "author" : [ "Tania Bailoni", "Claudio Eccher", "Mauro Dragoni", "Rosa Maimone", "Gianluca Apriceno" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Gianluca Apriceno",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Tania Bailoni",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Claudio Eccher",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Rosa Maimone",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mauro Dragoni",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fsfood",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2024-05-13",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fuskg/food#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.02",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Food Module of Functional Status Knowledge Graph (FuS-KG)",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2017-05-02",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:Class"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "172",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "177",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "225",
+    "type" : "owl:Class"
+  }, {
+    "id" : "178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "238",
+    "type" : "owl:Class"
+  }, {
+    "id" : "240",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "243",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:Class"
+  }, {
+    "id" : "256",
+    "type" : "owl:Class"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "259",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "226",
+    "type" : "owl:Class"
+  }, {
+    "id" : "252",
+    "type" : "owl:Class"
+  }, {
+    "id" : "290",
+    "type" : "owl:Class"
+  }, {
+    "id" : "263",
+    "type" : "owl:Class"
+  }, {
+    "id" : "196",
+    "type" : "owl:Class"
+  }, {
+    "id" : "239",
+    "type" : "owl:Class"
+  }, {
+    "id" : "224",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "218",
+    "type" : "owl:Class"
+  }, {
+    "id" : "312",
+    "type" : "owl:Class"
+  }, {
+    "id" : "278",
+    "type" : "owl:Class"
+  }, {
+    "id" : "275",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "273",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "341",
+    "type" : "owl:Class"
+  }, {
+    "id" : "345",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "214",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "182",
+    "type" : "owl:Class"
+  }, {
+    "id" : "382",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "165",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "248",
+    "type" : "owl:Class"
+  }, {
+    "id" : "264",
+    "type" : "owl:Class"
+  }, {
+    "id" : "310",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "391",
+    "type" : "owl:Class"
+  }, {
+    "id" : "392",
+    "type" : "owl:Class"
+  }, {
+    "id" : "393",
+    "type" : "owl:Class"
+  }, {
+    "id" : "394",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "owl:Class"
+  }, {
+    "id" : "311",
+    "type" : "owl:Class"
+  }, {
+    "id" : "395",
+    "type" : "owl:Class"
+  }, {
+    "id" : "398",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "322",
+    "type" : "owl:Class"
+  }, {
+    "id" : "209",
+    "type" : "owl:Class"
+  }, {
+    "id" : "230",
+    "type" : "owl:Class"
+  }, {
+    "id" : "249",
+    "type" : "owl:Class"
+  }, {
+    "id" : "291",
+    "type" : "owl:Class"
+  }, {
+    "id" : "434",
+    "type" : "owl:Class"
+  }, {
+    "id" : "160",
+    "type" : "owl:Class"
+  }, {
+    "id" : "233",
+    "type" : "owl:Class"
+  }, {
+    "id" : "173",
+    "type" : "owl:Class"
+  }, {
+    "id" : "246",
+    "type" : "owl:Class"
+  }, {
+    "id" : "367",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "271",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "357",
+    "type" : "owl:Class"
+  }, {
+    "id" : "269",
+    "type" : "owl:Class"
+  }, {
+    "id" : "192",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "327",
+    "type" : "owl:Class"
+  }, {
+    "id" : "476",
+    "type" : "owl:Class"
+  }, {
+    "id" : "186",
+    "type" : "owl:Class"
+  }, {
+    "id" : "300",
+    "type" : "owl:Class"
+  }, {
+    "id" : "424",
+    "type" : "owl:Class"
+  }, {
+    "id" : "468",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "458",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "428",
+    "type" : "owl:Class"
+  }, {
+    "id" : "429",
+    "type" : "owl:Class"
+  }, {
+    "id" : "419",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "423",
+    "type" : "owl:Class"
+  }, {
+    "id" : "425",
+    "type" : "owl:Class"
+  }, {
+    "id" : "298",
+    "type" : "owl:Class"
+  }, {
+    "id" : "426",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "305",
+    "type" : "owl:Class"
+  }, {
+    "id" : "427",
+    "type" : "owl:Class"
+  }, {
+    "id" : "329",
+    "type" : "owl:Class"
+  }, {
+    "id" : "258",
+    "type" : "owl:Class"
+  }, {
+    "id" : "435",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "438",
+    "type" : "owl:Class"
+  }, {
+    "id" : "281",
+    "type" : "owl:Class"
+  }, {
+    "id" : "372",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "303",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "529",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "530",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "531",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "349",
+    "type" : "owl:Class"
+  }, {
+    "id" : "422",
+    "type" : "owl:Class"
+  }, {
+    "id" : "497",
+    "type" : "owl:Class"
+  }, {
+    "id" : "124",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "260",
+    "type" : "owl:Class"
+  }, {
+    "id" : "158",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "234",
+    "type" : "owl:Class"
+  }, {
+    "id" : "235",
+    "type" : "owl:Class"
+  }, {
+    "id" : "198",
+    "type" : "owl:Class"
+  }, {
+    "id" : "176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "308",
+    "type" : "owl:Class"
+  }, {
+    "id" : "294",
+    "type" : "owl:Class"
+  }, {
+    "id" : "262",
+    "type" : "owl:Class"
+  }, {
+    "id" : "364",
+    "type" : "owl:Class"
+  }, {
+    "id" : "371",
+    "type" : "owl:Class"
+  }, {
+    "id" : "168",
+    "type" : "owl:Class"
+  }, {
+    "id" : "407",
+    "type" : "owl:Class"
+  }, {
+    "id" : "257",
+    "type" : "owl:Class"
+  }, {
+    "id" : "237",
+    "type" : "owl:Class"
+  }, {
+    "id" : "211",
+    "type" : "owl:Class"
+  }, {
+    "id" : "421",
+    "type" : "owl:Class"
+  }, {
+    "id" : "536",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "189",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "379",
+    "type" : "owl:Class"
+  }, {
+    "id" : "417",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "420",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "232",
+    "type" : "owl:Class"
+  }, {
+    "id" : "492",
+    "type" : "owl:Class"
+  }, {
+    "id" : "163",
+    "type" : "owl:Class"
+  }, {
+    "id" : "175",
+    "type" : "owl:Class"
+  }, {
+    "id" : "236",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "495",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "241",
+    "type" : "owl:Class"
+  }, {
+    "id" : "297",
+    "type" : "owl:Class"
+  }, {
+    "id" : "309",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "352",
+    "type" : "owl:Class"
+  }, {
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "299",
+    "type" : "owl:Class"
+  }, {
+    "id" : "289",
+    "type" : "owl:Class"
+  }, {
+    "id" : "180",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "286",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "539",
+    "type" : "owl:Class"
+  }, {
+    "id" : "222",
+    "type" : "owl:Class"
+  }, {
+    "id" : "374",
+    "type" : "owl:Class"
+  }, {
+    "id" : "244",
+    "type" : "owl:Class"
+  }, {
+    "id" : "537",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "220",
+    "type" : "owl:Class"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "267",
+    "type" : "owl:Class"
+  }, {
+    "id" : "228",
+    "type" : "owl:Class"
+  }, {
+    "id" : "542",
+    "type" : "owl:Class"
+  }, {
+    "id" : "538",
+    "type" : "owl:Class"
+  }, {
+    "id" : "184",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "307",
+    "type" : "owl:Class"
+  }, {
+    "id" : "261",
+    "type" : "owl:Class"
+  }, {
+    "id" : "331",
+    "type" : "owl:Class"
+  }, {
+    "id" : "229",
+    "type" : "owl:Class"
+  }, {
+    "id" : "133",
+    "type" : "owl:Class"
+  }, {
+    "id" : "373",
+    "type" : "owl:Class"
+  }, {
+    "id" : "265",
+    "type" : "owl:Class"
+  }, {
+    "id" : "216",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "306",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:Class"
+  }, {
+    "id" : "457",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "212",
+    "type" : "owl:Class"
+  }, {
+    "id" : "191",
+    "type" : "owl:Class"
+  }, {
+    "id" : "339",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "540",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "543",
+    "type" : "owl:Class"
+  }, {
+    "id" : "336",
+    "type" : "owl:Class"
+  }, {
+    "id" : "369",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "534",
+    "type" : "owl:Class"
+  }, {
+    "id" : "333",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "188",
+    "type" : "owl:Class"
+  }, {
+    "id" : "231",
+    "type" : "owl:Class"
+  }, {
+    "id" : "319",
+    "type" : "owl:Class"
+  }, {
+    "id" : "375",
+    "type" : "owl:Class"
+  }, {
+    "id" : "314",
+    "type" : "owl:Class"
+  }, {
+    "id" : "437",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "436",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "541",
+    "type" : "owl:Class"
+  }, {
+    "id" : "205",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/fuskg/food#MilkAndYogurt",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MilkAndYogurt",
+      "en" : "Milk and Yogurt",
+      "it" : "Latte e Yogurt"
+    },
+    "subClasses" : [ "2", "3", "4" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Milk and Yogurt category."
+    },
+    "id" : "0",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#WhiteBread",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhiteBread",
+      "en" : "White Bread",
+      "it" : "Pane Comune"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the White Bread category."
+    },
+    "id" : "26",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetalFatsAndOils",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetalFatsAndOils",
+      "en" : "Vegetal Fats and Oils",
+      "it" : "Grassi e Oli Vegetali"
+    },
+    "subClasses" : [ "34", "35" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Vegetal Fats and Oils category."
+    },
+    "id" : "32",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Phenylalanine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phenylalanine",
+      "en" : "Phenylalanine",
+      "it" : "Fenilalanina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Phenylalanine amounts."
+    },
+    "id" : "50",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#NonAlcoholicBeverages",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NonAlcoholicBeverages",
+      "en" : "Non-Alcoholic Beverages",
+      "it" : "Bevande Analcoliche"
+    },
+    "subClasses" : [ "54", "55" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Non-Alcoholic Beverages category."
+    },
+    "id" : "52",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshOilyLeanFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshOilyLeanFish",
+      "en" : "Fresh Oily Lean Fish",
+      "it" : "Pesce Azzurro Magro Fresco"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Oily Lean Fish category."
+    },
+    "id" : "56",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Cystine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cystine",
+      "en" : "Cystine",
+      "it" : "Cistina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Cystine amounts."
+    },
+    "id" : "58",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Pasta",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pasta",
+      "en" : "Pasta",
+      "it" : "Pasta"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Pasta category."
+    },
+    "id" : "59",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#TableCream",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TableCream",
+      "en" : "Table Cream",
+      "it" : "Panna"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Table Cream category."
+    },
+    "id" : "61",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedLegumes",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedLegumes",
+      "en" : "Processed Legumes",
+      "it" : "Legumi Confezionati e Lavorati"
+    },
+    "subClasses" : [ "12" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Legumes category."
+    },
+    "id" : "13",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ColdCuts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ColdCuts",
+      "en" : "Cold Cuts",
+      "it" : "Salumi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Cold Cuts category."
+    },
+    "id" : "63",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenNotOilyMediumFatFish",
+      "en" : "Frozen Semi-fat White Fish",
+      "it" : "Pesce Bianco Semigrasso Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen White (Not Oily) Semi-Fat Fish category."
+    },
+    "id" : "66",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshFruits",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshFruits",
+      "en" : "Fresh Fruits",
+      "it" : "Frutta Fresca"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Fruits category."
+    },
+    "id" : "86",
+    "superClasses" : [ "87" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "89", "48" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshOilyMediumFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshOilyMediumFatFish",
+      "en" : "Fresh Oily Semi-Fat Fish",
+      "it" : "Pesce Azzurro Fresco Semigrasso"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Oily Semi-Fat Fish category."
+    },
+    "id" : "99",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AdultBovineFattyRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdultBovineFattyRedMeat",
+      "en" : "Adult Bovine Fatty Red Meat",
+      "it" : "Carne Rossa Grassa di Bovino Adulto"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Adult Bovine Fatty Red Meat category."
+    },
+    "id" : "123",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Jam",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Jam",
+      "en" : "Jam",
+      "it" : "Marmellata"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Jam category."
+    },
+    "id" : "126",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AnimalFatsAndOils",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnimalFatsAndOils",
+      "en" : "Animal Fats and Oils",
+      "it" : "Grassi e Oli Animali"
+    },
+    "subClasses" : [ "17" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Animal Fats and Oils category."
+    },
+    "id" : "18",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FruitBasedBeverages",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FruitBasedBeverages",
+      "en" : "Fruit Based Beverages",
+      "it" : "Spremute o Bevande a base di Frutta"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fruit Based Beverages category."
+    },
+    "id" : "139",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Magnesium",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Magnesium",
+      "en" : "Magnesium",
+      "it" : "Magnesio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Magnesium amounts."
+    },
+    "id" : "154",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#MonounsaturatedLipid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MonounsaturatedLipid",
+      "en" : "Monounsaturated Fat",
+      "it" : "Grassi Monoinsaturi"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Monounsaturated Fat amounts."
+    },
+    "id" : "82",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#WholeWheatFlour",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WholeWheatFlour",
+      "en" : "Whole Wheat Four",
+      "it" : "Farine Integrali"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Whole Wheat Four category."
+    },
+    "id" : "172",
+    "superClasses" : [ "173" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FatsAndOils",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FatsAndOils",
+      "en" : "Fats and Oils",
+      "it" : "Grassi e Oli"
+    },
+    "subClasses" : [ "32", "18" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fats and Oils category."
+    },
+    "id" : "33",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Tyrosine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tyrosine",
+      "en" : "Tyrosine",
+      "it" : "Tirosina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Tyrosine amounts."
+    },
+    "id" : "177",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenOilyFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenOilyFatFish",
+      "en" : "Frozen Oily Fat Fish",
+      "it" : "Pesce Azzurro Grasso Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Oily Fat Fish category."
+    },
+    "id" : "179",
+    "superClasses" : [ "180" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Starch",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Starch",
+      "en" : "Starch",
+      "it" : "Amido"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Starch amounts."
+    },
+    "id" : "147",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#OlivesAndOliveProducts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OlivesAndOliveProducts",
+      "en" : "Olives and Olive Products",
+      "it" : "Olive e Prodotti di Olive"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Olives and Olive Products category."
+    },
+    "id" : "225",
+    "superClasses" : [ "226" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PolarAminoacid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PolarAminoacid",
+      "en" : "Polar Aminoacid",
+      "it" : "Amminoacidi Polari"
+    },
+    "subClasses" : [ "230", "177", "231", "232", "233", "234", "235", "236", "237" ],
+    "comment" : {
+      "en" : "Concept denoting nutrients belonging to the Polar Aminoacid category."
+    },
+    "id" : "178",
+    "superClasses" : [ "229" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ArachidicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArachidicAcid",
+      "en" : "Arachidic Acid",
+      "it" : "Acido Arachidico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Arachidic Acid amounts."
+    },
+    "id" : "122",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshShellfish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshShellfish",
+      "en" : "Fresh Shellfish",
+      "it" : "Crostacei Freschi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Shellfish category."
+    },
+    "id" : "238",
+    "superClasses" : [ "239" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshCheese",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshCheese",
+      "en" : "Fresh Cheese",
+      "it" : "Formaggi Freschi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Cheese category."
+    },
+    "id" : "240",
+    "superClasses" : [ "241" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AnimalLipid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnimalLipid",
+      "en" : "Animal Lipids",
+      "it" : "Lipidi Animali"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Animal Lipid amounts."
+    },
+    "id" : "31",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SweetsAndCakesMakingProducts",
+      "en" : "Products to Make Sweets and Cakes",
+      "it" : "Prodotti per Fare Dolci e Torte"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Products to Make Sweets and Cakes category."
+    },
+    "id" : "243",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#OleicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OleicAcid",
+      "en" : "Oleic Acid",
+      "it" : "Acido Oleico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Oleic Acid amounts."
+    },
+    "id" : "91",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#DryCulinaryErbs",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DryCulinaryErbs",
+      "en" : "Dry Culinary Erbs",
+      "it" : "Erbe Aromatiche Secche"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Dry Culinary Erbs category."
+    },
+    "id" : "256",
+    "superClasses" : [ "257" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SweetSpreads",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SweetSpreads",
+      "en" : "Sweet Spreads",
+      "it" : "Dolci Spalmabili"
+    },
+    "subClasses" : [ "258", "126" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sweet Spreads category."
+    },
+    "id" : "127",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CannedVegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CannedVegetables",
+      "en" : "Marinated Vegetables",
+      "it" : "Verdure Sott'Olio"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Marinated Vegetables category."
+    },
+    "id" : "259",
+    "superClasses" : [ "260" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetableLipid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetableLipid",
+      "en" : "Vegetable Lipids",
+      "it" : "Lipidi Vegetali"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vegetal Protein amounts."
+    },
+    "id" : "117",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#NutSeedAndOliveProducts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NutSeedAndOliveProducts",
+      "en" : "Nuts, Seeds and Olives",
+      "it" : "Noci, Frutta a Guscio, Semi e Olive"
+    },
+    "subClasses" : [ "261", "262", "225" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Nuts, Seeds and Olives category."
+    },
+    "id" : "226",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshNotOilyFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshNotOilyFish",
+      "en" : "White Fresh Fish",
+      "it" : "Pesce Fresco Bianco"
+    },
+    "subClasses" : [ "263", "264", "265" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh White (Not Oily) Fish category."
+    },
+    "id" : "252",
+    "superClasses" : [ "220" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#BetaCarotene",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BetaCarotene",
+      "en" : "Beta-Carotene",
+      "it" : "Beta Carotene"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Beta-Carotene amounts."
+    },
+    "id" : "290",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshNotOilyLeanFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshNotOilyLeanFish",
+      "en" : "Fresh White Lean Fish",
+      "it" : "Pesce Bianco Magro Fresco"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh White (Not Oily) Lean Fish category."
+    },
+    "id" : "263",
+    "superClasses" : [ "252" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AlcoholicBeverages",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AlcoholicBeverages",
+      "en" : "Alcoholic Beverages",
+      "it" : "Bevande Alcoliche"
+    },
+    "subClasses" : [ "298", "299", "300" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Alcoholic Beverages category."
+    },
+    "id" : "196",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Shellfish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Shellfish",
+      "en" : "Shellfish",
+      "it" : "Crostacei"
+    },
+    "subClasses" : [ "238", "305" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Shellfish category."
+    },
+    "id" : "239",
+    "superClasses" : [ "192" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedFish",
+      "en" : "Processed Fish",
+      "it" : "Pesce Confezionato o Lavorato"
+    },
+    "subClasses" : [ "306", "307", "308", "309", "310" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Fish category."
+    },
+    "id" : "224",
+    "superClasses" : [ "191" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#Food",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Food",
+      "en" : "Food",
+      "it" : "Alimento"
+    },
+    "subClasses" : [ "176", "311" ],
+    "comment" : {
+      "en" : "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Fructose",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fructose",
+      "en" : "Fructose",
+      "it" : "Fruttosio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Fructose amounts."
+    },
+    "id" : "218",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Zinc",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Zinc",
+      "en" : "Zinc",
+      "it" : "Zinco"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Zinc amounts."
+    },
+    "id" : "312",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SugarAndSweeteners",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SugarAndSweeteners",
+      "en" : "Sugar and Sweeteners",
+      "it" : "Zucchero e Dolcificanti"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sugar category."
+    },
+    "id" : "278",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CandiedFruits",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CandiedFruits",
+      "en" : "Candied Fruits",
+      "it" : "Frutta Candita"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Candied Fruits category."
+    },
+    "id" : "275",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FruitJuices",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FruitJuices",
+      "en" : "Fruit Juices",
+      "it" : "Succhi di Frutta"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fruit Juices category."
+    },
+    "id" : "149",
+    "superClasses" : [ "55" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Eggs",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Eggs",
+      "en" : "Eggs",
+      "it" : "Uova"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Eggs category."
+    },
+    "id" : "273",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Fruits",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fruits",
+      "en" : "Fruits",
+      "it" : "Frutta"
+    },
+    "subClasses" : [ "139", "86", "160", "163" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fruits category."
+    },
+    "id" : "87",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PowderedMilk",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PowderedMilk",
+      "en" : "Powdered Milk",
+      "it" : "Latte in Polvere"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Powdered Milk category."
+    },
+    "id" : "4",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Alcohol",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Alcohol",
+      "en" : "Alcohol",
+      "it" : "Alcool"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Alcohol amounts."
+    },
+    "id" : "341",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetalEVOOils",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetalEVOOils",
+      "en" : "Vegetal Extra-Vergin Olive Oils",
+      "it" : "Oli Extra Vergine di Oliva Vegetali"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Vegetal Extra-Vergin Olive Oils category."
+    },
+    "id" : "345",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LauricAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LauricAcid",
+      "en" : "Lauric Acid",
+      "it" : "Acido Laurico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Lauric Acid amounts."
+    },
+    "id" : "15",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CarbsSoluble",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CarbsSoluble",
+      "en" : "Soluble Carbs",
+      "it" : "Carboidrati Solubili"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Soluble Carbs amounts."
+    },
+    "id" : "214",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Lipid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lipid",
+      "en" : "Lipids",
+      "it" : "Lipidi"
+    },
+    "subClasses" : [ "131", "136", "82", "91", "96", "102", "106", "112", "117", "122", "69", "75", "79", "9", "15", "20", "25", "31", "39", "43", "372", "373", "374", "375" ],
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Lipids amounts."
+    },
+    "id" : "10",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LeanGameMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeanGameMeat",
+      "en" : "Lean Game Meat",
+      "it" : "Carne di Selvaggina Magra"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Lean Game Meat category."
+    },
+    "id" : "182",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PantothenicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PantothenicAcid",
+      "en" : "Pantothenic Acid",
+      "it" : "Acido Pantotenico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Pantothenic Acid amounts."
+    },
+    "id" : "382",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#EicosenoicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EicosenoicAcid",
+      "en" : "Eicosenoic Acid",
+      "it" : "Acido Eicosenoico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Eicosenoic Acid amounts."
+    },
+    "id" : "20",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CoffeeAndSubstitutes",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CoffeeAndSubstitutes",
+      "en" : "Coffee and Substitutes",
+      "it" : "Caff  e Sostituti"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Coffee and Substitutes category."
+    },
+    "id" : "203",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Isoleucine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Isoleucine",
+      "en" : "Isoleucine",
+      "it" : "Isoleucina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Isoleucine amounts."
+    },
+    "id" : "165",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#RabbitFattyWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RabbitFattyWhiteMeat",
+      "en" : "Rabbit Fatty White Meat",
+      "it" : "Carne Bianca Grassa di Coniglio"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Rabbit Fatty White Meat category."
+    },
+    "id" : "37",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshMollusc",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshMollusc",
+      "en" : "Fresh Mollusc",
+      "it" : "Molluschi Freschi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Mollusc category."
+    },
+    "id" : "248",
+    "superClasses" : [ "249" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshNotOilyFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshNotOilyFatFish",
+      "en" : "Fresh White Fat Fish",
+      "it" : "Pesce Bianco Grasso Fresco"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh White (Not Oily) Fat Fish category."
+    },
+    "id" : "264",
+    "superClasses" : [ "252" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#MarinatedFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MarinatedFish",
+      "en" : "Marinated Fish",
+      "it" : "Pesce Sott'Olio"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Marinated Fish category."
+    },
+    "id" : "310",
+    "superClasses" : [ "224" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#Nutrient",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nutrient",
+      "en" : "Nutrient",
+      "it" : "Nutriente"
+    },
+    "subClasses" : [ "155", "10", "85", "331", "142", "229", "341", "291" ],
+    "comment" : {
+      "en" : "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."
+    },
+    "attributes" : [ "external" ],
+    "id" : "89"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SausagesAndColdCuts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SausagesAndColdCuts",
+      "en" : "Sausages and Cold Cuts",
+      "it" : "Salumi e Insaccati"
+    },
+    "subClasses" : [ "314", "63", "319" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sausages and Cold Cuts category."
+    },
+    "id" : "64",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminB12",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminB12",
+      "en" : "Vitamin B12",
+      "it" : "Vitamina B12"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin B12 amounts."
+    },
+    "id" : "391",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Sulfur",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sulfur",
+      "en" : "Sulfur",
+      "it" : "Zolfo"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Sulfur amounts."
+    },
+    "id" : "392",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Rice",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rice",
+      "en" : "Rice",
+      "it" : "Riso"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Rice category."
+    },
+    "id" : "393",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Phosphorus",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Phosphorus",
+      "en" : "Phosphorus",
+      "it" : "Fosforo"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Phosphorus amounts."
+    },
+    "id" : "394",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Alanine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Alanine",
+      "en" : "Alanine",
+      "it" : "Alanina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Alanine amounts."
+    },
+    "id" : "171",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ComposedFood",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ComposedFood",
+      "en" : "Composed Food",
+      "it" : "Alimento Composto"
+    },
+    "subClasses" : [ "322" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Composed Food category."
+    },
+    "id" : "311",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Iron",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Iron",
+      "en" : "Iron",
+      "it" : "Ferro"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Iron amounts."
+    },
+    "id" : "395",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Manganese",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manganese",
+      "en" : "Manganese",
+      "it" : "Manganese"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Manganese amounts."
+    },
+    "id" : "398",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AdultBovineLeanRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdultBovineLeanRedMeat",
+      "en" : "Adult Bovine Lean Red Meat",
+      "it" : "Carne Rossa Magra di Bovino Adulto"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Adult Bovine Lean Red Meat category."
+    },
+    "id" : "201",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Broth",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Broth",
+      "en" : "Broth",
+      "it" : "Brodo"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Broth category."
+    },
+    "id" : "322",
+    "superClasses" : [ "311" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Lactose",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lactose",
+      "en" : "Lactose",
+      "it" : "Lattosio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Lactose amounts."
+    },
+    "id" : "209",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Histidine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Histidine",
+      "en" : "Histidine",
+      "it" : "Istidina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Histidine amounts."
+    },
+    "id" : "230",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Mollusc",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mollusc",
+      "en" : "Mollusc",
+      "it" : "Molluschi"
+    },
+    "subClasses" : [ "286", "248" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Mollusc category."
+    },
+    "id" : "249",
+    "superClasses" : [ "192" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Vitamin",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vitamin",
+      "en" : "Vitamin",
+      "it" : "Vitamine"
+    },
+    "subClasses" : [ "290", "419", "420", "391", "421", "422", "423", "424", "425", "426", "382", "427", "428", "429" ],
+    "comment" : {
+      "en" : "Concept denoting nutrients belonging to the Vitamin category."
+    },
+    "id" : "291",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SpecialBread",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpecialBread",
+      "en" : "Spercial Bread",
+      "it" : "Pane Speciale"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Spercial Bread category."
+    },
+    "id" : "434",
+    "superClasses" : [ "27" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#DryFruits",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DryFruits",
+      "en" : "Dry Fruits",
+      "it" : "Frutta Secca"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Dry Fruits category."
+    },
+    "id" : "160",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Tryptophan",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tryptophan",
+      "en" : "Tryptophan",
+      "it" : "Triptofano"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Tryptophan amounts."
+    },
+    "id" : "233",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Flour",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flour",
+      "en" : "Flour",
+      "it" : "Farine"
+    },
+    "subClasses" : [ "435", "172" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Flour category."
+    },
+    "id" : "173",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Mushrooms",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mushrooms",
+      "en" : "Mushrooms",
+      "it" : "Funghi"
+    },
+    "subClasses" : [ "436", "212" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Mushrooms category."
+    },
+    "id" : "246",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenOilyMediumFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenOilyMediumFatFish",
+      "en" : "Frozen Oily Semi-Fat Fish",
+      "it" : "Pesce Azzurro Semigrasso Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Oily Semi-Fat Fish category."
+    },
+    "id" : "367",
+    "superClasses" : [ "180" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#TeaBeverages",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TeaBeverages",
+      "en" : "Tea Based Beverages",
+      "it" : "Bevande a Base di T "
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Tea Based Beverages category."
+    },
+    "id" : "54",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenNotOilyFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenNotOilyFish",
+      "en" : "Frozen White Fish",
+      "it" : "Pesce Bianco Surgelato"
+    },
+    "subClasses" : [ "437", "438", "66" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen White (Not Oily) Fish category."
+    },
+    "id" : "67",
+    "superClasses" : [ "308" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Syrups",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Syrups",
+      "en" : "Syrups",
+      "it" : "Sciroppi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Syrups category."
+    },
+    "id" : "271",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#WaterBeverage",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WaterBeverage",
+      "en" : "Water",
+      "it" : "Acqua"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Water category."
+    },
+    "id" : "207",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PalmitoleicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmitoleicAcid",
+      "en" : "Palmitoleic Acid",
+      "it" : "Acido Palmitoleico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Palmitoleic Acid amounts."
+    },
+    "id" : "106",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#Barrier",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Barrier",
+      "en" : "Barrier",
+      "it" : "Barriera"
+    },
+    "comment" : {
+      "en" : "This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers."
+    },
+    "attributes" : [ "external" ],
+    "id" : "151"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Bread",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bread",
+      "en" : "Bread",
+      "it" : "Pane"
+    },
+    "subClasses" : [ "26", "434" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Bread category."
+    },
+    "id" : "27",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#StarchyVegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StarchyVegetables",
+      "en" : "Starchy Vegetables",
+      "it" : "Verdure Amidacee"
+    },
+    "subClasses" : [ "457", "458" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Starchy Vegetables category."
+    },
+    "id" : "119",
+    "superClasses" : [ "109" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#GoatLeanWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GoatLeanWhiteMeat",
+      "en" : "Goat Lean White Meat",
+      "it" : "Carne Bianca Magra di Capretto"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Goat Lean White Meat category."
+    },
+    "id" : "357",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Salt",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Salt",
+      "en" : "Salt",
+      "it" : "Sale"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Salt category."
+    },
+    "id" : "269",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FishAndSeafood",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FishAndSeafood",
+      "en" : "Fish and Seafood",
+      "it" : "Pesce, Molluschi e Crostacei"
+    },
+    "subClasses" : [ "249", "239", "191" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fish and Seafood category."
+    },
+    "id" : "192",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Maltose",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Maltose",
+      "en" : "Maltose",
+      "it" : "Maltosio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Maltose amounts."
+    },
+    "id" : "141",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtherPolyunsaturatedLipid",
+      "en" : "Other Polyunsaturated Fat",
+      "it" : "Altri Grassi Polinsaturi"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to other Polyunsaturated Fat amounts."
+    },
+    "id" : "9",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CannedOrCookedFruit",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CannedOrCookedFruit",
+      "en" : "Canned or Cooked Fruit",
+      "it" : "Frutta in Scatola o Cotta"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Canned or Cooked Fruit category."
+    },
+    "id" : "327",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#DryAlgae",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DryAlgae",
+      "en" : "Dry Algae",
+      "it" : "Alghe Secche"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Dry Algae category."
+    },
+    "id" : "476",
+    "superClasses" : [ "114" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedCereals",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedCereals",
+      "en" : "Processed Cereals",
+      "it" : "Cereali Confezionati e Lavorati"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Cereals category."
+    },
+    "id" : "186",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Beer",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Beer",
+      "en" : "Beer",
+      "it" : "Birra"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Beer category."
+    },
+    "id" : "300",
+    "superClasses" : [ "196" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminB6",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminB6",
+      "en" : "Vitamin B6",
+      "it" : "Vitamina B6"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin B6 amounts."
+    },
+    "id" : "424",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshVegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshVegetables",
+      "en" : "Fresh Starchy Free Vegetables",
+      "it" : "Verdure ed Ortaggi Freschi a Basso Contenuto di Amido"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Starchy Free Vegetables category."
+    },
+    "id" : "468",
+    "superClasses" : [ "108" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SweetBeveragesAndJuices",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SweetBeveragesAndJuices",
+      "en" : "Sweet Beverages and Juices",
+      "it" : "Bevande Zuccherate e Succhi"
+    },
+    "subClasses" : [ "149" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sweet Beverages and Juices category."
+    },
+    "id" : "55",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#StearicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StearicAcid",
+      "en" : "Stearic Acid",
+      "it" : "Acido Stearico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Stearic Acid amounts."
+    },
+    "id" : "25",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedStarchyVegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedStarchyVegetables",
+      "en" : "Processed Starchy Vegetables",
+      "it" : "Verdure Amidacee Conservate e Lavorate"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Starchy Vegetables category."
+    },
+    "id" : "458",
+    "superClasses" : [ "119" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Leucine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Leucine",
+      "en" : "Leucine",
+      "it" : "Leucina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Leucine amounts."
+    },
+    "id" : "129",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminB1",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminB1",
+      "en" : "Vitamin B1",
+      "it" : "Vitamina B1"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin B1 amounts."
+    },
+    "id" : "428",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminB2",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminB2",
+      "en" : "Vitamin B2",
+      "it" : "Vitamina B2"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin B2 amounts."
+    },
+    "id" : "429",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Niacin",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Niacin",
+      "en" : "Vitamin B3",
+      "it" : "Vitamina B3"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Niacin (Vitamin B3) amounts."
+    },
+    "id" : "419",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenVegetablesAndLegumes",
+      "en" : "Frozen Vegetables and Legumes",
+      "it" : "Verdure e Legumi Surgelati"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Vegetables and Legumes category."
+    },
+    "id" : "45",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Protein",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Protein",
+      "en" : "Protein",
+      "it" : "Proteine"
+    },
+    "subClasses" : [ "84", "93" ],
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Protein amounts."
+    },
+    "id" : "85",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminC",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminC",
+      "en" : "Vitamin C",
+      "it" : "Vitamina C"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin C amounts."
+    },
+    "id" : "423",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminD",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminD",
+      "en" : "Vitamin D",
+      "it" : "Vitamina D"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin D amounts."
+    },
+    "id" : "425",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Wine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wine",
+      "en" : "Wine",
+      "it" : "Vino"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Wine category."
+    },
+    "id" : "298",
+    "superClasses" : [ "196" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminE",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminE",
+      "en" : "Vitamin E",
+      "it" : "Vitamina E"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin E amounts."
+    },
+    "id" : "426",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#WhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhiteMeat",
+      "en" : "White Meat",
+      "it" : "Carne Bianca"
+    },
+    "subClasses" : [ "98", "23" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the White Meat category."
+    },
+    "id" : "73",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedShellfish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedShellfish",
+      "en" : "Processed Shellfish",
+      "it" : "Crostacei Confezionati"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Shellfish category."
+    },
+    "id" : "305",
+    "superClasses" : [ "239" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminA",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminA",
+      "en" : "Vitamin A",
+      "it" : "Vitamina A"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin A amounts."
+    },
+    "id" : "427",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LambLeanWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LambLeanWhiteMeat",
+      "en" : "Lamb Lean White Meat",
+      "it" : "Carne Bianca Magra di Agnello"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Lamb Lean White Meat category."
+    },
+    "id" : "329",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Cream",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cream",
+      "en" : "Cream",
+      "it" : "Crema"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Cream category."
+    },
+    "id" : "258",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#WheatFlour",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WheatFlour",
+      "en" : "Wheat Flour",
+      "it" : "Farine Raffinate"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Wheat Flour category."
+    },
+    "id" : "435",
+    "superClasses" : [ "173" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PoultryFattyWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PoultryFattyWhiteMeat",
+      "en" : "Poultry with Skin or Poultry Fatty Meat",
+      "it" : "Pollame con Pelle"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Poultry with Skin or Poultry Fatty Meat category."
+    },
+    "id" : "29",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenNotOilyLeanFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenNotOilyLeanFish",
+      "en" : "Frozen White Lean Fish",
+      "it" : "Pesce Bianco Magro Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen White (Not Oily) Lean Fish category."
+    },
+    "id" : "438",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Candy",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Candy",
+      "en" : "Candy",
+      "it" : "Caramelle"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Candy category."
+    },
+    "id" : "281",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LinoleicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinoleicAcid",
+      "en" : "Linoleic Acid",
+      "it" : "Acido Linoleico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Linoleic Acid amounts."
+    },
+    "id" : "372",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LegumesAndLegumeProducts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LegumesAndLegumeProducts",
+      "en" : "Legumes and Legume Products",
+      "it" : "Legumi e Prodotti a Base di Legumi"
+    },
+    "subClasses" : [ "13", "71" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Legumes and Legume Products category."
+    },
+    "id" : "62",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshCereals",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshCereals",
+      "en" : "Fresh Cereals",
+      "it" : "Cereali Freschi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Cereals category."
+    },
+    "id" : "144",
+    "superClasses" : [ "145" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Meat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Meat",
+      "en" : "Meat",
+      "it" : "Carne"
+    },
+    "subClasses" : [ "73", "77", "6" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Meat category."
+    },
+    "id" : "7",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Pastry",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Pastry",
+      "en" : "Pastry",
+      "it" : "Paste e Pasticcini"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Pastry category."
+    },
+    "id" : "303",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SoyProducts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoyProducts",
+      "en" : "Soy Products",
+      "it" : "Prodotti a Base di Soia"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Soy Products category."
+    },
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "529",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "530",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FattyWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FattyWhiteMeat",
+      "en" : "Fatty White Meat",
+      "it" : "Carne Bianca Grassa"
+    },
+    "subClasses" : [ "22", "29", "37", "41" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fatty White Meat category."
+    },
+    "id" : "23",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "531",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetablesAndLegumes",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetablesAndLegumes",
+      "en" : "Vegetables and Legumes",
+      "it" : "Verdura, Ortaggi e Legumi"
+    },
+    "subClasses" : [ "45", "109", "62" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Vegetables and Legumes category."
+    },
+    "id" : "46",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#RedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RedMeat",
+      "en" : "Red Meat",
+      "it" : "Carne Rossa"
+    },
+    "subClasses" : [ "124", "189" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Red Meat category."
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#TomatoSauces",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TomatoSauces",
+      "en" : "Tomato Sauces",
+      "it" : "Salse di Pomodoro"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Tomato Sauces category."
+    },
+    "id" : "349",
+    "superClasses" : [ "260" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FolicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FolicAcid",
+      "en" : "Folic Acid",
+      "it" : "Acido Folico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Folic Acid amounts."
+    },
+    "id" : "422",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#RoastedNuts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RoastedNuts",
+      "en" : "Roasted Nuts",
+      "it" : "Noci Tostate"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Roasted Nuts category."
+    },
+    "id" : "497",
+    "superClasses" : [ "261" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FattyRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FattyRedMeat",
+      "en" : "Fatty Red Meat",
+      "it" : "Carne Rossa Grassa"
+    },
+    "subClasses" : [ "369", "123", "379" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fatty Red Meat category."
+    },
+    "id" : "124",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetalOils",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetalOils",
+      "en" : "Vegetal Oils",
+      "it" : "Oli Vegetali"
+    },
+    "subClasses" : [ "345" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Vegetal Oils category."
+    },
+    "id" : "35",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedVegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedVegetables",
+      "en" : "Processed Starchy Free Vegetables",
+      "it" : "Verdure e Ortaggi Conservati a Basso Contenuto di Amido"
+    },
+    "subClasses" : [ "349", "352", "259" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Starchy Free Vegetables category."
+    },
+    "id" : "260",
+    "superClasses" : [ "108" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Glycine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Glycine",
+      "en" : "Glycine",
+      "it" : "Glicina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Glycine amounts."
+    },
+    "id" : "158",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LeanWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeanWhiteMeat",
+      "en" : "Lean White Meat",
+      "it" : "Carne Bianca Magra"
+    },
+    "subClasses" : [ "357", "329", "333", "336", "339" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Lean White Meat category."
+    },
+    "id" : "98",
+    "superClasses" : [ "73" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AnimalFats",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnimalFats",
+      "en" : "Animal Fats",
+      "it" : "Grasso Animale"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Animal Fats category."
+    },
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AsparticAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AsparticAcid",
+      "en" : "Aspartic Acid",
+      "it" : "Acido Aspartico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Aspartic Acid amounts."
+    },
+    "id" : "234",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Arginine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Arginine",
+      "en" : "Arginine",
+      "it" : "Arginina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Arginine amounts."
+    },
+    "id" : "235",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PorkLeanRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PorkLeanRedMeat",
+      "en" : "Pork Lean Red Meat",
+      "it" : "Carne Rossa Magra di Suino"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Pork Lean Red Meat category."
+    },
+    "id" : "198",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#BasicFood",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BasicFood",
+      "en" : "Basic Food",
+      "it" : "Alimento Base"
+    },
+    "subClasses" : [ "244", "64", "46", "269", "273", "192", "87", "53", "33", "246", "60", "226", "7", "407", "257", "1" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Basic Food category."
+    },
+    "id" : "176",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenFish",
+      "en" : "Frozen Fish",
+      "it" : "Pesce Surgelato"
+    },
+    "subClasses" : [ "67", "180" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Fish category."
+    },
+    "id" : "308",
+    "superClasses" : [ "224" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#IceCream",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IceCream",
+      "en" : "Ice Cream",
+      "it" : "Gelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Ice Cream category."
+    },
+    "id" : "294",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Seeds",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seeds",
+      "en" : "Seeds",
+      "it" : "Semi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Seeds category."
+    },
+    "id" : "262",
+    "superClasses" : [ "226" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AgedCheese",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AgedCheese",
+      "en" : "Aged Cheese",
+      "it" : "Formaggi Stagionati"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Aged Cheese category."
+    },
+    "id" : "364",
+    "superClasses" : [ "241" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenOilyLeanFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenOilyLeanFish",
+      "en" : "Frozen Oily Lean Fish",
+      "it" : "Pesce Azzurro Magro Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Oily Lean Fish category."
+    },
+    "id" : "371",
+    "superClasses" : [ "180" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Proline",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Proline",
+      "en" : "Proline",
+      "it" : "Prolina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Proline amounts."
+    },
+    "id" : "168",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Spices",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Spices",
+      "en" : "Spices",
+      "it" : "Spezie"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Spices category."
+    },
+    "id" : "407",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CulinaryErbs",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CulinaryErbs",
+      "en" : "Culinary Erbs",
+      "it" : "Erbe Aromatiche"
+    },
+    "subClasses" : [ "534", "256" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Culinary Erbs category."
+    },
+    "id" : "257",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Serine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Serine",
+      "en" : "Serine",
+      "it" : "Serina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Serina amounts."
+    },
+    "id" : "237",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#DryMushrooms",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DryMushrooms",
+      "en" : "Dry Mushrooms",
+      "it" : "Funghi Secchi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Dry Mushrooms category."
+    },
+    "id" : "211",
+    "superClasses" : [ "212" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#RetinolEquivalent",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RetinolEquivalent",
+      "en" : "Retinol Equivalent",
+      "it" : "Retinolo Equivalente"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Retinol Equivalent amounts."
+    },
+    "id" : "421",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshAlgae",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshAlgae",
+      "en" : "Fresh Algae",
+      "it" : "Alghe Fresche"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Algae category."
+    },
+    "id" : "536",
+    "superClasses" : [ "114" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ArachidonicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArachidonicAcid",
+      "en" : "Arachidonic Acid",
+      "it" : "Acido Arachidonico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Arachidonic Acid amounts."
+    },
+    "id" : "69",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Mineral",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mineral",
+      "en" : "Minerals",
+      "it" : "Minerali"
+    },
+    "subClasses" : [ "154", "537", "538", "392", "394", "539", "540", "395", "541", "398", "312", "542", "543" ],
+    "comment" : {
+      "en" : "Concept denoting nutrients belonging to the Mineral category."
+    },
+    "id" : "155",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LeanRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LeanRedMeat",
+      "en" : "Lean Red Meat",
+      "it" : "Carne Rossa Magra"
+    },
+    "subClasses" : [ "188", "194", "198", "201", "205" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Lean Red Meat category."
+    },
+    "id" : "189",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Carbs",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Carbs",
+      "en" : "Carbs",
+      "it" : "Carboidrati"
+    },
+    "subClasses" : [ "209", "214", "218", "222", "228", "184", "141", "147" ],
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Carbs amounts."
+    },
+    "id" : "142",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AnimalMilk",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnimalMilk",
+      "en" : "Animal Milk",
+      "it" : "Latte Animale"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Animal Milk category."
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PorkFattyRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PorkFattyRedMeat",
+      "en" : "Pork Fatty Red Meat",
+      "it" : "Carne Rossa Grassa di Suino"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Pork Fatty Red Meat category."
+    },
+    "id" : "379",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#Activity",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "en" : "Activity",
+      "it" : "Attività"
+    },
+    "comment" : {
+      "en" : "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."
+    },
+    "attributes" : [ "external" ],
+    "id" : "417"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetalFats",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetalFats",
+      "en" : "Vegetal Fats",
+      "it" : "Grassi Vegetali"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Vegetal Fats category."
+    },
+    "id" : "34",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Biotin",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Biotin",
+      "en" : "Biotin",
+      "it" : "Biotina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Biotin amounts."
+    },
+    "id" : "420",
+    "superClasses" : [ "291" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#MyristicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MyristicAcid",
+      "en" : "Myristic Acid",
+      "it" : "Acido Miristico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Myristic Acid amounts."
+    },
+    "id" : "96",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#GlutamicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GlutamicAcid",
+      "en" : "Glutamic Acid",
+      "it" : "Acido Glutammico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Glutamic Acid amounts."
+    },
+    "id" : "232",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#BiscuitsAndCrackers",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiscuitsAndCrackers",
+      "en" : "Bicuits and Crackers",
+      "it" : "Biscotti e Crackers"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Bicuits and Crackers category."
+    },
+    "id" : "492",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FruitPeel",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FruitPeel",
+      "en" : "Fruit Peel",
+      "it" : "Scorza di Frutta"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fruit Peel category."
+    },
+    "id" : "163",
+    "superClasses" : [ "87" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshOilyFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshOilyFatFish",
+      "en" : "Fresh Oily Fat Fish",
+      "it" : "Pesce Azzurro Grasso Fresco"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Oily Fat Fish category."
+    },
+    "id" : "175",
+    "superClasses" : [ "57" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Threonine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Threonine",
+      "en" : "Threonine",
+      "it" : "Treonina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Threonine amounts."
+    },
+    "id" : "236",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#EPAAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EPAAcid",
+      "en" : "EPA Acid",
+      "it" : "Acido EPA"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to EPA Acid amounts."
+    },
+    "id" : "112",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PizzaAndFocacciaBread",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PizzaAndFocacciaBread",
+      "en" : "Pizzas and \"Focaccia\" Bread",
+      "it" : "Pizze e Focacce"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Pizzas and \"Focaccia\" Breadcategory."
+    },
+    "id" : "495",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ButyricCaproicCaprylicCapricAcid",
+      "en" : "Sum of Butyric Caproic Caprylic and Capric Acid",
+      "it" : "Somma degli Acidi Butirrico Caproico Caprilico e Caprico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to the sum of Butyric Caproic Caprylic and Capric Acid amounts."
+    },
+    "id" : "39",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshOilyFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshOilyFish",
+      "en" : "Fresh Oily Fish",
+      "it" : "Pesce Fresco Azzurro"
+    },
+    "subClasses" : [ "99", "56", "175" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Oily Fish category."
+    },
+    "id" : "57",
+    "superClasses" : [ "220" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Cheese",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cheese",
+      "en" : "Cheese",
+      "it" : "Formaggio"
+    },
+    "subClasses" : [ "240", "364" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Cheese category."
+    },
+    "id" : "241",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Dessert",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dessert",
+      "en" : "Dessert",
+      "it" : "Dessert"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Dessert category."
+    },
+    "id" : "297",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#BrinedFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BrinedFish",
+      "en" : "Brined Fish",
+      "it" : "Pesce in Salamoia"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Brined Fish category."
+    },
+    "id" : "309",
+    "superClasses" : [ "224" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LambFattyWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LambFattyWhiteMeat",
+      "en" : "Lamb Fatty White Meat",
+      "it" : "Carne Bianca Grassa di Agnello"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Lamb Fatty White Meat category."
+    },
+    "id" : "41",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetableBasedBeverages",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetableBasedBeverages",
+      "en" : "Vegetable Based Beverages",
+      "it" : "Bevande di Verdura"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Vegetable Based Beverages category."
+    },
+    "id" : "352",
+    "superClasses" : [ "260" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AdultSheepLeanRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdultSheepLeanRedMeat",
+      "en" : "Adult Sheep Lean Red Meat",
+      "it" : "Carne Rossa Magra di Pecora"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Adult Sheep Lean Red Meat category."
+    },
+    "id" : "194",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SpiritsAndLiquor",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpiritsAndLiquor",
+      "en" : "Spirits and Liquor",
+      "it" : "Superalcolici"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Spirits and Liquor category."
+    },
+    "id" : "299",
+    "superClasses" : [ "196" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ChocolateAndCocoa",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChocolateAndCocoa",
+      "en" : "Chocolate and Cocoa",
+      "it" : "Cioccolato e Cacao"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Chocolate and Cocoa category."
+    },
+    "id" : "289",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenOilyFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenOilyFish",
+      "en" : "Frozen Oily Fish",
+      "it" : "Pesce Azzurro Surgelato"
+    },
+    "subClasses" : [ "367", "371", "179" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Oily Fish category."
+    },
+    "id" : "180",
+    "superClasses" : [ "308" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#MilkAndDairyProducts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MilkAndDairyProducts",
+      "en" : "Milk and Dairy Products",
+      "it" : "Latte e Prodotti Derivati"
+    },
+    "subClasses" : [ "0", "241", "61" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Milk and Dairy Products category."
+    },
+    "id" : "1",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VealFattyWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VealFattyWhiteMeat",
+      "en" : "Veal Fatty White Meat",
+      "it" : "Carne Bianca Grassa di Vitello"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Veal Fatty White Meat category."
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedMollusc",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedMollusc",
+      "en" : "Processed Mollusc",
+      "it" : "Molluschi Confezionati e Lavorati"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Mollusc category."
+    },
+    "id" : "286",
+    "superClasses" : [ "249" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#DHAAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DHAAcid",
+      "en" : "DHA Acid",
+      "it" : "Acido DHA"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to DHA Acid amounts."
+    },
+    "id" : "79",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Chlorine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Chlorine",
+      "en" : "Chlorine",
+      "it" : "Cloro"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Chlorine amounts."
+    },
+    "id" : "539",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Galactose",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Galactose",
+      "en" : "Galactose",
+      "it" : "Galattosio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Galactose amounts."
+    },
+    "id" : "222",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ErucicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ErucicAcid",
+      "en" : "Erucic Acid",
+      "it" : "Acido Erucico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Erucic Acid amounts."
+    },
+    "id" : "374",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SugarAndSweets",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SugarAndSweets",
+      "en" : "Sugar and Sweets",
+      "it" : "Zucchero e Dolci"
+    },
+    "subClasses" : [ "243", "327", "289", "294", "297", "303", "267", "271", "275", "278", "281", "127" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sugar and Sweets category."
+    },
+    "id" : "244",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Potassium",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Potassium",
+      "en" : "Potassium",
+      "it" : "Potassio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Potassium amounts."
+    },
+    "id" : "537",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VegetalProtein",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VegetalProtein",
+      "en" : "Vegetal Protein",
+      "it" : "Proteine Vegetali"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vegetal Protein amounts."
+    },
+    "id" : "93",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshFish",
+      "en" : "Fresh Fish",
+      "it" : "Pesce Fresco"
+    },
+    "subClasses" : [ "252", "57" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Fish category."
+    },
+    "id" : "220",
+    "superClasses" : [ "191" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Algae",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Algae",
+      "en" : "Algae",
+      "it" : "Alghe"
+    },
+    "subClasses" : [ "536", "476" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Algae category."
+    },
+    "id" : "114",
+    "superClasses" : [ "109" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SweetSnacksAndBrioches",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SweetSnacksAndBrioches",
+      "en" : "Sweet Snacks and Brioches",
+      "it" : "Merendine Dolci e Brioches"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sweet Snacks and Brioches category."
+    },
+    "id" : "267",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Sucrose",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sucrose",
+      "en" : "Sucrose",
+      "it" : "Saccarosio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Sucrose amounts."
+    },
+    "id" : "228",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Selenium",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Selenium",
+      "en" : "Selenium",
+      "it" : "Selenio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Selenium amounts."
+    },
+    "id" : "542",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Copper",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Copper",
+      "en" : "Copper",
+      "it" : "Rame"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Copper amounts."
+    },
+    "id" : "538",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Glucose",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Glucose",
+      "en" : "Glucose",
+      "it" : "Glucosio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Glucose amounts."
+    },
+    "id" : "184",
+    "superClasses" : [ "142" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CerealsAndGrainProducts",
+      "en" : "Cereal and Grain Products",
+      "it" : "Cereali e Prodotti Derivati"
+    },
+    "subClasses" : [ "145", "27", "393", "59", "492", "173", "495" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Cereal and Grain Products category."
+    },
+    "id" : "60",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SmokedFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SmokedFish",
+      "en" : "Smoked Fish",
+      "it" : "Pesce Affumicato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Smoked Fish category."
+    },
+    "id" : "307",
+    "superClasses" : [ "224" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Nuts",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nuts",
+      "en" : "Nuts",
+      "it" : "Noci e Frutta a Guscio"
+    },
+    "subClasses" : [ "497" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Nuts category."
+    },
+    "id" : "261",
+    "superClasses" : [ "226" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#DietaryFiber",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DietaryFiber",
+      "en" : "Dietary Fiber",
+      "it" : "Fibra Alimentare"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Dietary Fiber amounts."
+    },
+    "id" : "331",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Aminoacid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aminoacid",
+      "en" : "Aminoacid",
+      "it" : "Amminoacidi"
+    },
+    "subClasses" : [ "51", "178" ],
+    "comment" : {
+      "en" : "Concept denoting nutrients belonging to the Aminoacid category."
+    },
+    "id" : "229",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Valine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Valine",
+      "en" : "Valine",
+      "it" : "Valina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Valine amounts."
+    },
+    "id" : "133",
+    "superClasses" : [ "51" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#BehenicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BehenicAcid",
+      "en" : "Behenic Acid",
+      "it" : "Acido Beenico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Behenic Acid amounts."
+    },
+    "id" : "373",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshNotOilyMediumFatFish",
+      "en" : "Fresh Semi-fat White Fish",
+      "it" : "Pesce Bianco Semigrasso Fresco"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh White (Not Oily) Semi-Fat Fish category."
+    },
+    "id" : "265",
+    "superClasses" : [ "252" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#MarinatedMushrooms",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MarinatedMushrooms",
+      "en" : "Preserved Marinated Mushrooms",
+      "it" : "Funghi Conservati Sott'Olio"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Preserved Marinated Mushrooms category."
+    },
+    "id" : "216",
+    "superClasses" : [ "212" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshLegumes",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshLegumes",
+      "en" : "Fresh Legumes",
+      "it" : "Legumi Freschi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Legumes category."
+    },
+    "id" : "71",
+    "superClasses" : [ "62" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SaltedFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SaltedFish",
+      "en" : "Salted Fish",
+      "it" : "Pesce sotto Sale"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Salted Fish category."
+    },
+    "id" : "306",
+    "superClasses" : [ "224" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#StarchyFreeVegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StarchyFreeVegetables",
+      "en" : "Starchy Free Vegetables",
+      "it" : "Verdure con Basso Contenuto di amido"
+    },
+    "subClasses" : [ "468", "260" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Starchy Free Vegetables category."
+    },
+    "id" : "108",
+    "superClasses" : [ "109" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshStarchyVegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshStarchyVegetables",
+      "en" : "Fresh Starchy Vegetables",
+      "it" : "Verdure Amidacee Fresche"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Starchy Vegetables category."
+    },
+    "id" : "457",
+    "superClasses" : [ "119" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Beverages",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Beverages",
+      "en" : "Beverages",
+      "it" : "Bevande"
+    },
+    "subClasses" : [ "196", "52", "203", "207" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Beverages category."
+    },
+    "id" : "53",
+    "superClasses" : [ "176" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedMushrooms",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedMushrooms",
+      "en" : "Processed Mushrooms",
+      "it" : "Funghi Confezionati e Lavorati"
+    },
+    "subClasses" : [ "211", "216" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Mushrooms category."
+    },
+    "id" : "212",
+    "superClasses" : [ "246" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Fish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Fish",
+      "en" : "Fish",
+      "it" : "Pesce"
+    },
+    "subClasses" : [ "220", "224" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fish category."
+    },
+    "id" : "191",
+    "superClasses" : [ "192" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PoultryLeanWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PoultryLeanWhiteMeat",
+      "en" : "Skinned Poultry Lean Meat",
+      "it" : "Pollame Senza Pelle"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Skinned Poultry Lean Meat category."
+    },
+    "id" : "339",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SaturatedLipid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SaturatedLipid",
+      "en" : "Saturated Lipids",
+      "it" : "Lipidi Saturi"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Saturated Lipids amounts."
+    },
+    "id" : "75",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Calcium",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Calcium",
+      "en" : "Calcium",
+      "it" : "Calcio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Calcium amounts."
+    },
+    "id" : "540",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#OtherMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtherMeat",
+      "en" : "Other Meat Types",
+      "it" : "Altri Tipi di Carne"
+    },
+    "subClasses" : [ "182" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Other Meat Types category."
+    },
+    "id" : "77",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Sodium",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sodium",
+      "en" : "Sodium",
+      "it" : "Sodio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Sodium amounts."
+    },
+    "id" : "543",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VealLeanWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VealLeanWhiteMeat",
+      "en" : "Veal Lean White Meat",
+      "it" : "Carne Bianca Magra di Vitello"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Veal Lean White Meat category."
+    },
+    "id" : "336",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AdultSheepFattyRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdultSheepFattyRedMeat",
+      "en" : "Adult Sheep Fatty Red Meat",
+      "it" : "Carne Rossa Grassa di Pecora"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category."
+    },
+    "id" : "369",
+    "superClasses" : [ "124" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Cholesterol",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cholesterol",
+      "en" : "Cholesterol",
+      "it" : "Colesterolo"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Cholesterol amounts."
+    },
+    "id" : "136",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Cereals",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Cereals",
+      "en" : "Cereals",
+      "it" : "Cereali"
+    },
+    "subClasses" : [ "186", "144" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Cereals category."
+    },
+    "id" : "145",
+    "superClasses" : [ "60" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshCulinaryErbs",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshCulinaryErbs",
+      "en" : "Fresh Culinary Erbs",
+      "it" : "Erbe Aromatiche Fresche"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Culinary Erbs category."
+    },
+    "id" : "534",
+    "superClasses" : [ "257" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#RabbitLeanWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RabbitLeanWhiteMeat",
+      "en" : "Rabbit Lean White Meat",
+      "it" : "Carne Bianca Magra di Coniglio"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Rabbit Lean White Meat category."
+    },
+    "id" : "333",
+    "superClasses" : [ "98" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PalmiticAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PalmiticAcid",
+      "en" : "Palmitic Acid",
+      "it" : "Acido Palmitico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Palmitic Acid amounts."
+    },
+    "id" : "43",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ApolarAminoacid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ApolarAminoacid",
+      "en" : "Apolar Aminoacid",
+      "it" : "Amminoacidi Apolari"
+    },
+    "subClasses" : [ "50", "158", "58", "165", "168", "171", "129", "133", "138" ],
+    "comment" : {
+      "en" : "Concept denoting nutrients belonging to the Apolar Aminoacid category."
+    },
+    "id" : "51",
+    "superClasses" : [ "229" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#PolyunsaturatedLipid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PolyunsaturatedLipid",
+      "en" : "Polyunsaturated Fat",
+      "it" : "Grassi Polinsaturi"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Polyunsaturated Fat amounts."
+    },
+    "id" : "131",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#OtherLeanRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OtherLeanRedMeat",
+      "en" : "Other Lean Red Meat",
+      "it" : "Altra Carne Rossa Magra"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Other Lean Red Meat category."
+    },
+    "id" : "188",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Lysine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lysine",
+      "en" : "Lysine",
+      "it" : "Lisina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Lysine amounts."
+    },
+    "id" : "231",
+    "superClasses" : [ "178" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Sausages",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sausages",
+      "en" : "Sausages",
+      "it" : "Insaccati"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sausages category."
+    },
+    "id" : "319",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#MyristoleicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MyristoleicAcid",
+      "en" : "Myristoleic Acid",
+      "it" : "Acido Miristoleico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Myristoleic Acid amounts."
+    },
+    "id" : "375",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CannedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CannedMeat",
+      "en" : "Canned Meat",
+      "it" : "Carne in Scatola"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Canned Meat category."
+    },
+    "id" : "314",
+    "superClasses" : [ "64" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenNotOilyFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenNotOilyFatFish",
+      "en" : "Frozen White Fat Fish",
+      "it" : "Pesce Bianco Grasso Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen White (Not Oily) Fat Fish category."
+    },
+    "id" : "437",
+    "superClasses" : [ "67" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#LinolenicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LinolenicAcid",
+      "en" : "Linolenic Acid",
+      "it" : "Acido Linolenico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Linolenic Acid amounts."
+    },
+    "id" : "102",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Yogurt",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Yogurt",
+      "en" : "Yogurt",
+      "it" : "Yogurt"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Yogurt category."
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshMushrooms",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshMushrooms",
+      "en" : "Fresh Mushrooms",
+      "it" : "Funghi Freschi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Mushrooms category."
+    },
+    "id" : "436",
+    "superClasses" : [ "246" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AnimalProtein",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnimalProtein",
+      "en" : "Animal Protein",
+      "it" : "Proteine Animali"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Animal Protein amounts."
+    },
+    "id" : "84",
+    "superClasses" : [ "85" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Vegetables",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vegetables",
+      "en" : "Vegetables",
+      "it" : "Verdure e Ortaggi"
+    },
+    "subClasses" : [ "108", "114", "119" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Vegetables category."
+    },
+    "id" : "109",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Iodine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Iodine",
+      "en" : "Iodine",
+      "it" : "Iodio"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Iodine amounts."
+    },
+    "id" : "541",
+    "superClasses" : [ "155" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AdultGoatLeanRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdultGoatLeanRedMeat",
+      "en" : "Adult Goat Lean Red Meat",
+      "it" : "Carne Rossa Magra di Capra"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Adult Goat Lean Red Meat category."
+    },
+    "id" : "205",
+    "superClasses" : [ "189" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Methionine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Methionine",
+      "en" : "Methionine",
+      "it" : "Metionina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Methionine amounts."
+    },
+    "id" : "138",
+    "superClasses" : [ "51" ]
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "150",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "213",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "215",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "253",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "255",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "266",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "268",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "270",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "272",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "274",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "276",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "277",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "279",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "280",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "282",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "283",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "284",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "285",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "287",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "288",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "292",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "293",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "295",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "296",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "301",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "302",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "304",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "313",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "315",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "316",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "317",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "318",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "320",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "321",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "323",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "324",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "325",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "326",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "328",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "330",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "332",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "334",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "335",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "337",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "338",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "340",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "342",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "343",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "344",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "346",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "347",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "348",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "350",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "351",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "353",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "354",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "355",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "356",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "358",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "359",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "360",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "361",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "362",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "363",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "365",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "366",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "368",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "370",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "376",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "377",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "378",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "380",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "381",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "383",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "384",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "385",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "386",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "387",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "388",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "389",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "390",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "396",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "397",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "399",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "400",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "401",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "402",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "403",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "404",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "405",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "406",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "408",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "409",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "410",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "411",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "412",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "413",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "414",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "415",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "416",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "418",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "430",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "431",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "432",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "433",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "439",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "440",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "441",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "442",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "443",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "444",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "445",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "446",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "447",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "448",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "449",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "450",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "451",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "452",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "453",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "454",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "455",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "456",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "459",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "460",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "461",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "462",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "463",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "464",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "465",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "466",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "467",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "469",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "470",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "471",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "472",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "473",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "474",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "475",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "477",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "478",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "479",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "480",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "481",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "482",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "483",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "484",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "485",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "486",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "487",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "488",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "489",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "490",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "491",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "493",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "494",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "496",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "498",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "499",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "500",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "501",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "502",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "503",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "504",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "505",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "506",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "507",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "508",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "509",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "510",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "511",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "512",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "513",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "514",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "515",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "516",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "517",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "518",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "519",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "520",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "521",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "522",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "523",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "524",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "525",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "526",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "527",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "528",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "532",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "533",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "535",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "544",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "545",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "546",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "547",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "548",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "549",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "550",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "551",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "552",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "553",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "554",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "555",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "556",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "557",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "558",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "559",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "560",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "561",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "562",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "563",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "564",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "565",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "566",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "567",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "568",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "569",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "570",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "571",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "572",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "573",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "574",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "575",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "576",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "577",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "578",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "579",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "580",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "581",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "582",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "583",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "584",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "585",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "586",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "587",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "588",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "589",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "590",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "591",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "592",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "593",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "594",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "595",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "596",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "597",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "598",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "599",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "600",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "601",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "602",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "603",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "604",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "605",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "606",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "607",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "608",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "609",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "610",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "611",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "612",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "613",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "614",
+    "type" : "owl:disjointWith"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "10",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "8"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "10",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "14"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "16"
+  }, {
+    "range" : "10",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "19"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "10",
+    "domain" : "25",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "24"
+  }, {
+    "range" : "23",
+    "domain" : "29",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "10",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "30"
+  }, {
+    "range" : "23",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "10",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "23",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "range" : "10",
+    "domain" : "43",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "42"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#amountCalories",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "amountCalories",
+      "en" : "amount of Calories",
+      "it" : "quantita' di Calorie"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "specifies the amount of calories"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "47"
+  }, {
+    "range" : "62",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "10",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "62",
+    "domain" : "71",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "7",
+    "domain" : "73",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "10",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "74"
+  }, {
+    "range" : "7",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "10",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "10",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "85",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "83"
+  }, {
+    "range" : "10",
+    "domain" : "91",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "90"
+  }, {
+    "range" : "85",
+    "domain" : "93",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "92"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "10",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "73",
+    "domain" : "98",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "10",
+    "domain" : "102",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "101"
+  }, {
+    "range" : "73",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "range" : "0",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "10",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "109",
+    "domain" : "108",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "32",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "range" : "10",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "109",
+    "domain" : "114",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "range" : "32",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "115"
+  }, {
+    "range" : "10",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "range" : "109",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "118"
+  }, {
+    "range" : "52",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "10",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "52",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "51",
+    "domain" : "129",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "10",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "51",
+    "domain" : "133",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "range" : "10",
+    "domain" : "136",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "135"
+  }, {
+    "range" : "51",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
+  }, {
+    "range" : "142",
+    "domain" : "141",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
+  }, {
+    "range" : "145",
+    "domain" : "144",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "142",
+    "domain" : "147",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "range" : "55",
+    "domain" : "149",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#concernsConsumptionOf",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "concernsConsumptionOf",
+      "en" : "concerns consumption of",
+      "it" : "riguarda il consumo di"
+    },
+    "domain" : "151",
+    "comment" : {
+      "en" : "This property defines the relationship between a barrier and the consumption of a food or nutrient."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "150"
+  }, {
+    "range" : "87",
+    "domain" : "139",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
+  }, {
+    "range" : "51",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "153"
+  }, {
+    "range" : "87",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "51",
+    "domain" : "158",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "157"
+  }, {
+    "range" : "87",
+    "domain" : "160",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "51",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "87",
+    "domain" : "163",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "51",
+    "domain" : "165",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "57",
+    "domain" : "99",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
+  }, {
+    "range" : "51",
+    "domain" : "168",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "167"
+  }, {
+    "range" : "57",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "51",
+    "domain" : "171",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "57",
+    "domain" : "175",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "77",
+    "domain" : "182",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "181"
+  }, {
+    "range" : "142",
+    "domain" : "184",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "183"
+  }, {
+    "range" : "145",
+    "domain" : "186",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "185"
+  }, {
+    "range" : "189",
+    "domain" : "188",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
+  }, {
+    "range" : "192",
+    "domain" : "191",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "189",
+    "domain" : "194",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "53",
+    "domain" : "196",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "189",
+    "domain" : "198",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "53",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "189",
+    "domain" : "201",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "53",
+    "domain" : "203",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "189",
+    "domain" : "205",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "204"
+  }, {
+    "range" : "53",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "142",
+    "domain" : "209",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "212",
+    "domain" : "211",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "142",
+    "domain" : "214",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "213"
+  }, {
+    "range" : "212",
+    "domain" : "216",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "215"
+  }, {
+    "range" : "142",
+    "domain" : "218",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "191",
+    "domain" : "220",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "142",
+    "domain" : "222",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "191",
+    "domain" : "224",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "142",
+    "domain" : "228",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "192",
+    "domain" : "239",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "range" : "176",
+    "domain" : "246",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "249",
+    "domain" : "248",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "176",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "220",
+    "domain" : "252",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "range" : "176",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "220",
+    "domain" : "57",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "range" : "176",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "range" : "244",
+    "domain" : "267",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
+  }, {
+    "range" : "176",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
+  }, {
+    "range" : "244",
+    "domain" : "271",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
+  }, {
+    "range" : "176",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "272"
+  }, {
+    "range" : "244",
+    "domain" : "275",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "274"
+  }, {
+    "range" : "176",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
+  }, {
+    "range" : "244",
+    "domain" : "278",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "277"
+  }, {
+    "range" : "176",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
+  }, {
+    "range" : "244",
+    "domain" : "281",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
+  }, {
+    "range" : "176",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "282"
+  }, {
+    "range" : "244",
+    "domain" : "127",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "range" : "176",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
+  }, {
+    "range" : "249",
+    "domain" : "286",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "178",
+    "domain" : "236",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "287"
+  }, {
+    "range" : "244",
+    "domain" : "289",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "range" : "178",
+    "domain" : "237",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "292"
+  }, {
+    "range" : "244",
+    "domain" : "294",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "293"
+  }, {
+    "range" : "176",
+    "domain" : "244",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "295"
+  }, {
+    "range" : "244",
+    "domain" : "297",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "296"
+  }, {
+    "range" : "176",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "301"
+  }, {
+    "range" : "244",
+    "domain" : "303",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "302"
+  }, {
+    "range" : "176",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
+  }, {
+    "range" : "64",
+    "domain" : "314",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "313"
+  }, {
+    "range" : "178",
+    "domain" : "231",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "315"
+  }, {
+    "range" : "64",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "316"
+  }, {
+    "range" : "178",
+    "domain" : "232",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "317"
+  }, {
+    "range" : "64",
+    "domain" : "319",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "318"
+  }, {
+    "range" : "178",
+    "domain" : "233",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "320"
+  }, {
+    "range" : "311",
+    "domain" : "322",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "321"
+  }, {
+    "range" : "178",
+    "domain" : "234",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "323"
+  }, {
+    "range" : "244",
+    "domain" : "243",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "324"
+  }, {
+    "range" : "178",
+    "domain" : "235",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "325"
+  }, {
+    "range" : "244",
+    "domain" : "327",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "326"
+  }, {
+    "range" : "98",
+    "domain" : "329",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "328"
+  }, {
+    "range" : "89",
+    "domain" : "331",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "330"
+  }, {
+    "range" : "98",
+    "domain" : "333",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "332"
+  }, {
+    "range" : "89",
+    "domain" : "142",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "334"
+  }, {
+    "range" : "98",
+    "domain" : "336",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "335"
+  }, {
+    "range" : "89",
+    "domain" : "229",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "337"
+  }, {
+    "range" : "98",
+    "domain" : "339",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "338"
+  }, {
+    "range" : "89",
+    "domain" : "341",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "340"
+  }, {
+    "range" : "178",
+    "domain" : "230",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "342"
+  }, {
+    "range" : "89",
+    "domain" : "291",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "343"
+  }, {
+    "range" : "178",
+    "domain" : "177",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "344"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#contains",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "contains",
+      "en" : "contains",
+      "it" : "contiene"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "This property specifies that a food contains another food"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "346"
+  }, {
+    "range" : "1",
+    "domain" : "241",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "347"
+  }, {
+    "range" : "260",
+    "domain" : "349",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "348"
+  }, {
+    "range" : "1",
+    "domain" : "61",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "350"
+  }, {
+    "range" : "260",
+    "domain" : "352",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "351"
+  }, {
+    "range" : "89",
+    "domain" : "155",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "353"
+  }, {
+    "range" : "260",
+    "domain" : "259",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "354"
+  }, {
+    "range" : "89",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "355"
+  }, {
+    "range" : "98",
+    "domain" : "357",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "356"
+  }, {
+    "range" : "89",
+    "domain" : "85",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "358"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#hasNutrient",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "hasNutrient",
+      "en" : "has Nutrient",
+      "it" : "ha Nutriente"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "This property specifies the nutrient(s) contained ia a food."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "359"
+  }, {
+    "range" : "6",
+    "domain" : "189",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "360"
+  }, {
+    "range" : "241",
+    "domain" : "240",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "361"
+  }, {
+    "range" : "33",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "362"
+  }, {
+    "range" : "241",
+    "domain" : "364",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "363"
+  }, {
+    "range" : "33",
+    "domain" : "18",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "365"
+  }, {
+    "range" : "180",
+    "domain" : "367",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "366"
+  }, {
+    "range" : "124",
+    "domain" : "369",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "368"
+  }, {
+    "range" : "180",
+    "domain" : "371",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "370"
+  }, {
+    "range" : "124",
+    "domain" : "123",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "376"
+  }, {
+    "range" : "180",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "377"
+  }, {
+    "range" : "124",
+    "domain" : "379",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "378"
+  }, {
+    "range" : "1",
+    "domain" : "0",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "380"
+  }, {
+    "range" : "35",
+    "domain" : "345",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "381"
+  }, {
+    "range" : "10",
+    "domain" : "372",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "383"
+  }, {
+    "range" : "46",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "384"
+  }, {
+    "range" : "10",
+    "domain" : "373",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "385"
+  }, {
+    "range" : "46",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "386"
+  }, {
+    "range" : "10",
+    "domain" : "374",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "387"
+  }, {
+    "range" : "6",
+    "domain" : "124",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "388"
+  }, {
+    "range" : "10",
+    "domain" : "375",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "389"
+  }, {
+    "range" : "226",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "390"
+  }, {
+    "range" : "1",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "396"
+  }, {
+    "range" : "7",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "397"
+  }, {
+    "range" : "33",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "399"
+  }, {
+    "range" : "46",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "400"
+  }, {
+    "range" : "87",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "401"
+  }, {
+    "range" : "192",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "402"
+  }, {
+    "range" : "64",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "403"
+  }, {
+    "range" : "269",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "404"
+  }, {
+    "range" : "244",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "405"
+  }, {
+    "range" : "407",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "406"
+  }, {
+    "range" : "1",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "408"
+  }, {
+    "range" : "7",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "409"
+  }, {
+    "range" : "226",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "410"
+  }, {
+    "range" : "33",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "411"
+  }, {
+    "range" : "273",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "412"
+  }, {
+    "range" : "87",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "413"
+  }, {
+    "range" : "192",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "414"
+  }, {
+    "range" : "407",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "415"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#affectsPerformingOf",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "417",
+    "label" : {
+      "IRI-based" : "affectsPerformingOf",
+      "en" : "affects performing of",
+      "it" : "influenza l'esecuzione di"
+    },
+    "domain" : "151",
+    "comment" : {
+      "en" : "This property defines the relationship between a barrier affecting the performing of an activity."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "416"
+  }, {
+    "range" : "46",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "418"
+  }, {
+    "range" : "244",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "430"
+  }, {
+    "range" : "269",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "431"
+  }, {
+    "range" : "407",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "432"
+  }, {
+    "range" : "64",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "433"
+  }, {
+    "range" : "7",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "439"
+  }, {
+    "range" : "87",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "440"
+  }, {
+    "range" : "226",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "441"
+  }, {
+    "range" : "1",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "442"
+  }, {
+    "range" : "407",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "443"
+  }, {
+    "range" : "64",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "444"
+  }, {
+    "range" : "46",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "445"
+  }, {
+    "range" : "244",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "446"
+  }, {
+    "range" : "269",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "447"
+  }, {
+    "range" : "226",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "448"
+  }, {
+    "range" : "1",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "449"
+  }, {
+    "range" : "192",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "450"
+  }, {
+    "range" : "46",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "451"
+  }, {
+    "range" : "7",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "452"
+  }, {
+    "range" : "87",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "453"
+  }, {
+    "range" : "64",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "454"
+  }, {
+    "range" : "269",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "455"
+  }, {
+    "range" : "244",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "456"
+  }, {
+    "range" : "407",
+    "domain" : "273",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "459"
+  }, {
+    "range" : "64",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "460"
+  }, {
+    "range" : "67",
+    "domain" : "66",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "461"
+  }, {
+    "range" : "269",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "462"
+  }, {
+    "range" : "229",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "463"
+  }, {
+    "range" : "244",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "464"
+  }, {
+    "range" : "229",
+    "domain" : "178",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "465"
+  }, {
+    "range" : "407",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "466"
+  }, {
+    "range" : "108",
+    "domain" : "468",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "467"
+  }, {
+    "range" : "108",
+    "domain" : "260",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "469"
+  }, {
+    "range" : "27",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "470"
+  }, {
+    "range" : "226",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "471"
+  }, {
+    "range" : "27",
+    "domain" : "434",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "472"
+  }, {
+    "range" : "119",
+    "domain" : "457",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "473"
+  }, {
+    "range" : "119",
+    "domain" : "458",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "474"
+  }, {
+    "range" : "192",
+    "domain" : "249",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "475"
+  }, {
+    "range" : "46",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "477"
+  }, {
+    "range" : "244",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "478"
+  }, {
+    "range" : "269",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "479"
+  }, {
+    "range" : "226",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "480"
+  }, {
+    "range" : "407",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "481"
+  }, {
+    "range" : "64",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "482"
+  }, {
+    "range" : "244",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "483"
+  }, {
+    "range" : "407",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "484"
+  }, {
+    "range" : "60",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "485"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "486"
+  }, {
+    "range" : "60",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "487"
+  }, {
+    "range" : "46",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "488"
+  }, {
+    "range" : "60",
+    "domain" : "393",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "489"
+  }, {
+    "range" : "60",
+    "domain" : "59",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "490"
+  }, {
+    "range" : "60",
+    "domain" : "492",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "491"
+  }, {
+    "range" : "60",
+    "domain" : "173",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "493"
+  }, {
+    "range" : "60",
+    "domain" : "495",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "494"
+  }, {
+    "range" : "261",
+    "domain" : "497",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "496"
+  }, {
+    "range" : "67",
+    "domain" : "437",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "498"
+  }, {
+    "range" : "67",
+    "domain" : "438",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "499"
+  }, {
+    "range" : "269",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "500"
+  }, {
+    "range" : "226",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "501"
+  }, {
+    "range" : "64",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "502"
+  }, {
+    "range" : "46",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "503"
+  }, {
+    "range" : "244",
+    "domain" : "192",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "504"
+  }, {
+    "range" : "1",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "505"
+  }, {
+    "range" : "7",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "506"
+  }, {
+    "range" : "99",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "507"
+  }, {
+    "range" : "99",
+    "domain" : "175",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "508"
+  }, {
+    "range" : "73",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "509"
+  }, {
+    "range" : "46",
+    "domain" : "244",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "510"
+  }, {
+    "range" : "56",
+    "domain" : "175",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "511"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#contains",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "176",
+    "label" : {
+      "IRI-based" : "contains",
+      "en" : "contains",
+      "it" : "contiene"
+    },
+    "domain" : "311",
+    "comment" : {
+      "en" : "This property specifies that a food contains another food"
+    },
+    "attributes" : [ "object", "someValues", "external" ],
+    "id" : "512"
+  }, {
+    "range" : "46",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "513"
+  }, {
+    "range" : "244",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "514"
+  }, {
+    "range" : "46",
+    "domain" : "407",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "515"
+  }, {
+    "range" : "244",
+    "domain" : "407",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "516"
+  }, {
+    "range" : "244",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "517"
+  }, {
+    "range" : "407",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "518"
+  }, {
+    "range" : "407",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "519"
+  }, {
+    "range" : "46",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "520"
+  }, {
+    "range" : "64",
+    "domain" : "269",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "521"
+  }, {
+    "range" : "46",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "522"
+  }, {
+    "range" : "244",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "523"
+  }, {
+    "range" : "269",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "524"
+  }, {
+    "range" : "46",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "525"
+  }, {
+    "range" : "407",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "526"
+  }, {
+    "range" : "64",
+    "domain" : "226",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "527"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#ediblePart",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "ediblePart",
+      "en" : "edible part",
+      "it" : "parte edibile"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "specifies the amount of the edible part of a food"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "528"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#amountNutrient",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "range" : "529",
+    "label" : {
+      "IRI-based" : "amountNutrient",
+      "en" : "amount of Nutrient",
+      "it" : "quantita' di Nutriente"
+    },
+    "domain" : "89",
+    "comment" : {
+      "en" : "specifies the amount of the nutrient"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "532"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#amountWater",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "range" : "531",
+    "label" : {
+      "IRI-based" : "amountWater",
+      "en" : "amount of Water",
+      "it" : "quantita' di Acqua"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "specifies the amount of water"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "533"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#amountEnergy",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "range" : "530",
+    "label" : {
+      "IRI-based" : "amountEnergy",
+      "en" : "amount of Energy",
+      "it" : "quantita' di Energia"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "specifies the amount of energy"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "535"
+  }, {
+    "range" : "155",
+    "domain" : "392",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "544"
+  }, {
+    "range" : "155",
+    "domain" : "394",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "545"
+  }, {
+    "range" : "155",
+    "domain" : "539",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "546"
+  }, {
+    "range" : "155",
+    "domain" : "540",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "547"
+  }, {
+    "range" : "155",
+    "domain" : "395",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "548"
+  }, {
+    "range" : "155",
+    "domain" : "541",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "549"
+  }, {
+    "range" : "155",
+    "domain" : "398",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "550"
+  }, {
+    "range" : "155",
+    "domain" : "312",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "551"
+  }, {
+    "range" : "155",
+    "domain" : "542",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "552"
+  }, {
+    "range" : "155",
+    "domain" : "543",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "553"
+  }, {
+    "range" : "155",
+    "domain" : "538",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "554"
+  }, {
+    "range" : "224",
+    "domain" : "306",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "555"
+  }, {
+    "range" : "224",
+    "domain" : "307",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "556"
+  }, {
+    "range" : "224",
+    "domain" : "308",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "557"
+  }, {
+    "range" : "224",
+    "domain" : "309",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "558"
+  }, {
+    "range" : "224",
+    "domain" : "310",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "559"
+  }, {
+    "range" : "48",
+    "domain" : "176",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "560"
+  }, {
+    "range" : "48",
+    "domain" : "311",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "561"
+  }, {
+    "range" : "155",
+    "domain" : "154",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "562"
+  }, {
+    "range" : "155",
+    "domain" : "537",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "563"
+  }, {
+    "range" : "239",
+    "domain" : "238",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "564"
+  }, {
+    "range" : "246",
+    "domain" : "212",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "565"
+  }, {
+    "range" : "239",
+    "domain" : "305",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "566"
+  }, {
+    "range" : "291",
+    "domain" : "425",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "567"
+  }, {
+    "range" : "252",
+    "domain" : "263",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "568"
+  }, {
+    "range" : "291",
+    "domain" : "426",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "569"
+  }, {
+    "range" : "252",
+    "domain" : "264",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "570"
+  }, {
+    "range" : "291",
+    "domain" : "382",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "571"
+  }, {
+    "range" : "252",
+    "domain" : "265",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "572"
+  }, {
+    "range" : "291",
+    "domain" : "427",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "573"
+  }, {
+    "range" : "257",
+    "domain" : "534",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "574"
+  }, {
+    "range" : "291",
+    "domain" : "428",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "575"
+  }, {
+    "range" : "257",
+    "domain" : "256",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "576"
+  }, {
+    "range" : "291",
+    "domain" : "429",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "577"
+  }, {
+    "range" : "196",
+    "domain" : "298",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "578"
+  }, {
+    "range" : "173",
+    "domain" : "435",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "579"
+  }, {
+    "range" : "196",
+    "domain" : "299",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "580"
+  }, {
+    "range" : "173",
+    "domain" : "172",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "581"
+  }, {
+    "range" : "196",
+    "domain" : "300",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "582"
+  }, {
+    "range" : "246",
+    "domain" : "436",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "583"
+  }, {
+    "range" : "226",
+    "domain" : "261",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "584"
+  }, {
+    "range" : "291",
+    "domain" : "423",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "585"
+  }, {
+    "range" : "226",
+    "domain" : "262",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "586"
+  }, {
+    "range" : "291",
+    "domain" : "424",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "587"
+  }, {
+    "range" : "226",
+    "domain" : "225",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "588"
+  }, {
+    "range" : "114",
+    "domain" : "536",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "589"
+  }, {
+    "range" : "176",
+    "domain" : "407",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "590"
+  }, {
+    "range" : "114",
+    "domain" : "476",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "591"
+  }, {
+    "range" : "176",
+    "domain" : "257",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "592"
+  }, {
+    "range" : "291",
+    "domain" : "290",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "593"
+  }, {
+    "range" : "176",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "594"
+  }, {
+    "range" : "291",
+    "domain" : "419",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "595"
+  }, {
+    "range" : "308",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "596"
+  }, {
+    "range" : "291",
+    "domain" : "420",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "597"
+  }, {
+    "range" : "308",
+    "domain" : "180",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "598"
+  }, {
+    "range" : "291",
+    "domain" : "391",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "599"
+  }, {
+    "range" : "127",
+    "domain" : "258",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "600"
+  }, {
+    "range" : "291",
+    "domain" : "421",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "601"
+  }, {
+    "range" : "127",
+    "domain" : "126",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "602"
+  }, {
+    "range" : "291",
+    "domain" : "422",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "603"
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#unit",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "unit",
+      "en" : "unit",
+      "it" : "unita'"
+    },
+    "domain" : "89",
+    "comment" : {
+      "en" : "specifies the unit of measure"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "604"
+  }, {
+    "range" : "33",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "605"
+  }, {
+    "range" : "192",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "606"
+  }, {
+    "range" : "87",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "607"
+  }, {
+    "range" : "7",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "608"
+  }, {
+    "range" : "1",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "609"
+  }, {
+    "range" : "226",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "610"
+  }, {
+    "range" : "269",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "611"
+  }, {
+    "range" : "64",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "612"
+  }, {
+    "range" : "257",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "613"
+  }, {
+    "range" : "273",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "614"
+  } ]
+}

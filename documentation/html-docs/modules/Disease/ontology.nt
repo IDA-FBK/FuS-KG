@@ -1,0 +1,2007 @@
+<https://w3id.org/fuskg/disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fuskg/disease> <http://www.w3.org/2002/07/owl#imports> <https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-food.ttl> .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/creator> "Gianluca Apriceno" .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/creator> "Mauro Dragoni" .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/creator> "Tania Bailoni" .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/issued> "2024-03-01" .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/modified> "2024-05-10" .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/publisher> "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
+<https://w3id.org/fuskg/disease> <http://purl.org/dc/terms/title> "Disease Module of Functional Status Knowledge Graph (FuS-KG)"@en .
+<https://w3id.org/fuskg/disease> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fsdise" .
+<https://w3id.org/fuskg/disease> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fuskg/disease#" .
+<https://w3id.org/fuskg/disease> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#range
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/food#foodId
+<https://w3id.org/fuskg/food#foodId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/food#foodId> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/food#isUnspecifiedFood
+<https://w3id.org/fuskg/food#isUnspecifiedFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/food#productCategory
+<https://w3id.org/fuskg/food#productCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/food#productCategory> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/core#contains
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/fuskg/disease#hasDisease
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/disease#DiseaseRiskLevel> .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/disease#Disease> .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the Disease a Disease Risk Level refers to."@en .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#label> "ha malattia"@it .
+<https://w3id.org/fuskg/disease#hasDisease> <http://www.w3.org/2000/01/rdf-schema#label> "has disease"@en .
+# 
+# https://w3id.org/fuskg/disease#hasFood
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/disease#DiseaseRiskLevel> .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the Food a Disease Risk Level refers to."@en .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "ha cibo"@it .
+<https://w3id.org/fuskg/disease#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "has food"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/disease#riskLevel
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/disease#DiseaseRiskLevel> .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the risk level of a DiseaseRiskLevel instance as an integer."@en .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "livello di rischio"@it .
+<https://w3id.org/fuskg/disease#riskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "risk level"@en .
+# 
+# https://w3id.org/fuskg/food#amountCalories
+<https://w3id.org/fuskg/food#amountCalories> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/food#amountCalories> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/food#amountCalories> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/food#amountCalories> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies the amount of calories"@en .
+<https://w3id.org/fuskg/food#amountCalories> <http://www.w3.org/2000/01/rdf-schema#label> "amount of Calories"@en .
+<https://w3id.org/fuskg/food#amountCalories> <http://www.w3.org/2000/01/rdf-schema#label> "quantita' di Calorie"@it .
+# 
+# https://w3id.org/fuskg/food#amountEnergy
+<https://w3id.org/fuskg/food#amountEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/food#amountEnergy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/food#amountEnergy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/food#amountEnergy> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies the amount of energy"@en .
+<https://w3id.org/fuskg/food#amountEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "amount of Energy"@en .
+<https://w3id.org/fuskg/food#amountEnergy> <http://www.w3.org/2000/01/rdf-schema#label> "quantita' di Energia"@it .
+# 
+# https://w3id.org/fuskg/food#amountNutrient
+<https://w3id.org/fuskg/food#amountNutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/food#amountNutrient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#amountNutrient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/food#amountNutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies the amount of the nutrient"@en .
+<https://w3id.org/fuskg/food#amountNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "amount of Nutrient"@en .
+<https://w3id.org/fuskg/food#amountNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "quantita' di Nutriente"@it .
+# 
+# https://w3id.org/fuskg/food#amountWater
+<https://w3id.org/fuskg/food#amountWater> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/food#amountWater> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/food#amountWater> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/food#amountWater> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies the amount of water"@en .
+<https://w3id.org/fuskg/food#amountWater> <http://www.w3.org/2000/01/rdf-schema#label> "amount of Water"@en .
+<https://w3id.org/fuskg/food#amountWater> <http://www.w3.org/2000/01/rdf-schema#label> "quantita' di Acqua"@it .
+# 
+# https://w3id.org/fuskg/food#ediblePart
+<https://w3id.org/fuskg/food#ediblePart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/food#ediblePart> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/food#ediblePart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/food#ediblePart> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies the amount of the edible part of a food"@en .
+<https://w3id.org/fuskg/food#ediblePart> <http://www.w3.org/2000/01/rdf-schema#label> "edible part"@en .
+<https://w3id.org/fuskg/food#ediblePart> <http://www.w3.org/2000/01/rdf-schema#label> "parte edibile"@it .
+# 
+# https://w3id.org/fuskg/food#unit
+<https://w3id.org/fuskg/food#unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/food#unit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#unit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/food#unit> <http://www.w3.org/2000/01/rdf-schema#comment> "specifies the unit of measure"@en .
+<https://w3id.org/fuskg/food#unit> <http://www.w3.org/2000/01/rdf-schema#label> "unit"@en .
+<https://w3id.org/fuskg/food#unit> <http://www.w3.org/2000/01/rdf-schema#label> "unita'"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/core#Food
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/core#Nutrient
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/disease#Disease
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/2000/01/rdf-schema#comment> "Root concept that specifies diseases"@en .
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Disease"@en .
+<https://w3id.org/fuskg/disease#Disease> <http://www.w3.org/2000/01/rdf-schema#label> "Malattia"@it .
+# 
+# https://w3id.org/fuskg/disease#DiseaseRiskLevel
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept specifying the risk level of a disease correlated to a food"@en .
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Disease Risk Level"@en .
+<https://w3id.org/fuskg/disease#DiseaseRiskLevel> <http://www.w3.org/2000/01/rdf-schema#label> "Livello di Rischio della Malattia"@it .
+# 
+# https://w3id.org/fuskg/food#AdultBovineFattyRedMeat
+<https://w3id.org/fuskg/food#AdultBovineFattyRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AdultBovineFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FattyRedMeat> .
+<https://w3id.org/fuskg/food#AdultBovineFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Adult Bovine Fatty Red Meat category."@en .
+<https://w3id.org/fuskg/food#AdultBovineFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Bovine Fatty Red Meat"@en .
+<https://w3id.org/fuskg/food#AdultBovineFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Grassa di Bovino Adulto"@it .
+# 
+# https://w3id.org/fuskg/food#AdultBovineLeanRedMeat
+<https://w3id.org/fuskg/food#AdultBovineLeanRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AdultBovineLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanRedMeat> .
+<https://w3id.org/fuskg/food#AdultBovineLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Adult Bovine Lean Red Meat category."@en .
+<https://w3id.org/fuskg/food#AdultBovineLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Bovine Lean Red Meat"@en .
+<https://w3id.org/fuskg/food#AdultBovineLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Magra di Bovino Adulto"@it .
+# 
+# https://w3id.org/fuskg/food#AdultGoatLeanRedMeat
+<https://w3id.org/fuskg/food#AdultGoatLeanRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AdultGoatLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanRedMeat> .
+<https://w3id.org/fuskg/food#AdultGoatLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Adult Goat Lean Red Meat category."@en .
+<https://w3id.org/fuskg/food#AdultGoatLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Goat Lean Red Meat"@en .
+<https://w3id.org/fuskg/food#AdultGoatLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Magra di Capra"@it .
+# 
+# https://w3id.org/fuskg/food#AdultSheepFattyRedMeat
+<https://w3id.org/fuskg/food#AdultSheepFattyRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AdultSheepFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FattyRedMeat> .
+<https://w3id.org/fuskg/food#AdultSheepFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category."@en .
+<https://w3id.org/fuskg/food#AdultSheepFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Sheep Fatty Red Meat"@en .
+<https://w3id.org/fuskg/food#AdultSheepFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Grassa di Pecora"@it .
+# 
+# https://w3id.org/fuskg/food#AdultSheepLeanRedMeat
+<https://w3id.org/fuskg/food#AdultSheepLeanRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AdultSheepLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanRedMeat> .
+<https://w3id.org/fuskg/food#AdultSheepLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Adult Sheep Lean Red Meat category."@en .
+<https://w3id.org/fuskg/food#AdultSheepLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Adult Sheep Lean Red Meat"@en .
+<https://w3id.org/fuskg/food#AdultSheepLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Magra di Pecora"@it .
+# 
+# https://w3id.org/fuskg/food#AgedCheese
+<https://w3id.org/fuskg/food#AgedCheese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AgedCheese> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Cheese> .
+<https://w3id.org/fuskg/food#AgedCheese> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Aged Cheese category."@en .
+<https://w3id.org/fuskg/food#AgedCheese> <http://www.w3.org/2000/01/rdf-schema#label> "Aged Cheese"@en .
+<https://w3id.org/fuskg/food#AgedCheese> <http://www.w3.org/2000/01/rdf-schema#label> "Formaggi Stagionati"@it .
+# 
+# https://w3id.org/fuskg/food#Alanine
+<https://w3id.org/fuskg/food#Alanine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Alanine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Alanine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Alanine amounts."@en .
+<https://w3id.org/fuskg/food#Alanine> <http://www.w3.org/2000/01/rdf-schema#label> "Alanina"@it .
+<https://w3id.org/fuskg/food#Alanine> <http://www.w3.org/2000/01/rdf-schema#label> "Alanine"@en .
+# 
+# https://w3id.org/fuskg/food#Alcohol
+<https://w3id.org/fuskg/food#Alcohol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Alcohol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#Alcohol> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Alcohol amounts."@en .
+<https://w3id.org/fuskg/food#Alcohol> <http://www.w3.org/2000/01/rdf-schema#label> "Alcohol"@en .
+<https://w3id.org/fuskg/food#Alcohol> <http://www.w3.org/2000/01/rdf-schema#label> "Alcool"@it .
+# 
+# https://w3id.org/fuskg/food#AlcoholicBeverages
+<https://w3id.org/fuskg/food#AlcoholicBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Beverages> .
+<https://w3id.org/fuskg/food#AlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Alcoholic Beverages category."@en .
+<https://w3id.org/fuskg/food#AlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Alcoholic Beverages"@en .
+<https://w3id.org/fuskg/food#AlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Bevande Alcoliche"@it .
+# 
+# https://w3id.org/fuskg/food#Algae
+<https://w3id.org/fuskg/food#Algae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Algae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vegetables> .
+<https://w3id.org/fuskg/food#Algae> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Algae category."@en .
+<https://w3id.org/fuskg/food#Algae> <http://www.w3.org/2000/01/rdf-schema#label> "Algae"@en .
+<https://w3id.org/fuskg/food#Algae> <http://www.w3.org/2000/01/rdf-schema#label> "Alghe"@it .
+# 
+# https://w3id.org/fuskg/food#Aminoacid
+<https://w3id.org/fuskg/food#Aminoacid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Aminoacid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#Aminoacid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting nutrients belonging to the Aminoacid category."@en .
+<https://w3id.org/fuskg/food#Aminoacid> <http://www.w3.org/2000/01/rdf-schema#label> "Aminoacid"@en .
+<https://w3id.org/fuskg/food#Aminoacid> <http://www.w3.org/2000/01/rdf-schema#label> "Amminoacidi"@it .
+# 
+# https://w3id.org/fuskg/food#AnimalFats
+<https://w3id.org/fuskg/food#AnimalFats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AnimalFats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#AnimalFatsAndOils> .
+<https://w3id.org/fuskg/food#AnimalFats> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Animal Fats category."@en .
+<https://w3id.org/fuskg/food#AnimalFats> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Fats"@en .
+<https://w3id.org/fuskg/food#AnimalFats> <http://www.w3.org/2000/01/rdf-schema#label> "Grasso Animale"@it .
+# 
+# https://w3id.org/fuskg/food#AnimalFatsAndOils
+<https://w3id.org/fuskg/food#AnimalFatsAndOils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AnimalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FatsAndOils> .
+<https://w3id.org/fuskg/food#AnimalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Animal Fats and Oils category."@en .
+<https://w3id.org/fuskg/food#AnimalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Fats and Oils"@en .
+<https://w3id.org/fuskg/food#AnimalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#label> "Grassi e Oli Animali"@it .
+# 
+# https://w3id.org/fuskg/food#AnimalLipid
+<https://w3id.org/fuskg/food#AnimalLipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AnimalLipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#AnimalLipid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Animal Lipid amounts."@en .
+<https://w3id.org/fuskg/food#AnimalLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Lipids"@en .
+<https://w3id.org/fuskg/food#AnimalLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Lipidi Animali"@it .
+# 
+# https://w3id.org/fuskg/food#AnimalMilk
+<https://w3id.org/fuskg/food#AnimalMilk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AnimalMilk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#MilkAndYogurt> .
+<https://w3id.org/fuskg/food#AnimalMilk> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Animal Milk category."@en .
+<https://w3id.org/fuskg/food#AnimalMilk> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Milk"@en .
+<https://w3id.org/fuskg/food#AnimalMilk> <http://www.w3.org/2000/01/rdf-schema#label> "Latte Animale"@it .
+# 
+# https://w3id.org/fuskg/food#AnimalProtein
+<https://w3id.org/fuskg/food#AnimalProtein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AnimalProtein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Protein> .
+<https://w3id.org/fuskg/food#AnimalProtein> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Animal Protein amounts."@en .
+<https://w3id.org/fuskg/food#AnimalProtein> <http://www.w3.org/2000/01/rdf-schema#label> "Animal Protein"@en .
+<https://w3id.org/fuskg/food#AnimalProtein> <http://www.w3.org/2000/01/rdf-schema#label> "Proteine Animali"@it .
+# 
+# https://w3id.org/fuskg/food#ApolarAminoacid
+<https://w3id.org/fuskg/food#ApolarAminoacid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ApolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Aminoacid> .
+<https://w3id.org/fuskg/food#ApolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting nutrients belonging to the Apolar Aminoacid category."@en .
+<https://w3id.org/fuskg/food#ApolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#label> "Amminoacidi Apolari"@it .
+<https://w3id.org/fuskg/food#ApolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#label> "Apolar Aminoacid"@en .
+# 
+# https://w3id.org/fuskg/food#ArachidicAcid
+<https://w3id.org/fuskg/food#ArachidicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ArachidicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#ArachidicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Arachidic Acid amounts."@en .
+<https://w3id.org/fuskg/food#ArachidicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Arachidico"@it .
+<https://w3id.org/fuskg/food#ArachidicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Arachidic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#ArachidonicAcid
+<https://w3id.org/fuskg/food#ArachidonicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ArachidonicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#ArachidonicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Arachidonic Acid amounts."@en .
+<https://w3id.org/fuskg/food#ArachidonicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Arachidonico"@it .
+<https://w3id.org/fuskg/food#ArachidonicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Arachidonic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Arginine
+<https://w3id.org/fuskg/food#Arginine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Arginine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#Arginine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Arginine amounts."@en .
+<https://w3id.org/fuskg/food#Arginine> <http://www.w3.org/2000/01/rdf-schema#label> "Arginina"@it .
+<https://w3id.org/fuskg/food#Arginine> <http://www.w3.org/2000/01/rdf-schema#label> "Arginine"@en .
+# 
+# https://w3id.org/fuskg/food#AsparticAcid
+<https://w3id.org/fuskg/food#AsparticAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#AsparticAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#AsparticAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Aspartic Acid amounts."@en .
+<https://w3id.org/fuskg/food#AsparticAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Aspartico"@it .
+<https://w3id.org/fuskg/food#AsparticAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Aspartic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#BasicFood
+<https://w3id.org/fuskg/food#BasicFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#BasicFood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/food#BasicFood> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Basic Food category."@en .
+<https://w3id.org/fuskg/food#BasicFood> <http://www.w3.org/2000/01/rdf-schema#label> "Alimento Base"@it .
+<https://w3id.org/fuskg/food#BasicFood> <http://www.w3.org/2000/01/rdf-schema#label> "Basic Food"@en .
+# 
+# https://w3id.org/fuskg/food#Beer
+<https://w3id.org/fuskg/food#Beer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Beer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#AlcoholicBeverages> .
+<https://w3id.org/fuskg/food#Beer> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Beer category."@en .
+<https://w3id.org/fuskg/food#Beer> <http://www.w3.org/2000/01/rdf-schema#label> "Beer"@en .
+<https://w3id.org/fuskg/food#Beer> <http://www.w3.org/2000/01/rdf-schema#label> "Birra"@it .
+# 
+# https://w3id.org/fuskg/food#BehenicAcid
+<https://w3id.org/fuskg/food#BehenicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#BehenicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#BehenicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Behenic Acid amounts."@en .
+<https://w3id.org/fuskg/food#BehenicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Beenico"@it .
+<https://w3id.org/fuskg/food#BehenicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Behenic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#BetaCarotene
+<https://w3id.org/fuskg/food#BetaCarotene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#BetaCarotene> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#BetaCarotene> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Beta-Carotene amounts."@en .
+<https://w3id.org/fuskg/food#BetaCarotene> <http://www.w3.org/2000/01/rdf-schema#label> "Beta Carotene"@it .
+<https://w3id.org/fuskg/food#BetaCarotene> <http://www.w3.org/2000/01/rdf-schema#label> "Beta-Carotene"@en .
+# 
+# https://w3id.org/fuskg/food#Beverages
+<https://w3id.org/fuskg/food#Beverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Beverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#Beverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Beverages category."@en .
+<https://w3id.org/fuskg/food#Beverages> <http://www.w3.org/2000/01/rdf-schema#label> "Bevande"@it .
+<https://w3id.org/fuskg/food#Beverages> <http://www.w3.org/2000/01/rdf-schema#label> "Beverages"@en .
+# 
+# https://w3id.org/fuskg/food#Biotin
+<https://w3id.org/fuskg/food#Biotin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Biotin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#Biotin> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Biotin amounts."@en .
+<https://w3id.org/fuskg/food#Biotin> <http://www.w3.org/2000/01/rdf-schema#label> "Biotin"@en .
+<https://w3id.org/fuskg/food#Biotin> <http://www.w3.org/2000/01/rdf-schema#label> "Biotina"@it .
+# 
+# https://w3id.org/fuskg/food#BiscuitsAndCrackers
+<https://w3id.org/fuskg/food#BiscuitsAndCrackers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#BiscuitsAndCrackers> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+<https://w3id.org/fuskg/food#BiscuitsAndCrackers> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Bicuits and Crackers category."@en .
+<https://w3id.org/fuskg/food#BiscuitsAndCrackers> <http://www.w3.org/2000/01/rdf-schema#label> "Bicuits and Crackers"@en .
+<https://w3id.org/fuskg/food#BiscuitsAndCrackers> <http://www.w3.org/2000/01/rdf-schema#label> "Biscotti e Crackers"@it .
+# 
+# https://w3id.org/fuskg/food#Bread
+<https://w3id.org/fuskg/food#Bread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Bread> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+<https://w3id.org/fuskg/food#Bread> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Bread category."@en .
+<https://w3id.org/fuskg/food#Bread> <http://www.w3.org/2000/01/rdf-schema#label> "Bread"@en .
+<https://w3id.org/fuskg/food#Bread> <http://www.w3.org/2000/01/rdf-schema#label> "Pane"@it .
+# 
+# https://w3id.org/fuskg/food#BrinedFish
+<https://w3id.org/fuskg/food#BrinedFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#BrinedFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedFish> .
+<https://w3id.org/fuskg/food#BrinedFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Brined Fish category."@en .
+<https://w3id.org/fuskg/food#BrinedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Brined Fish"@en .
+<https://w3id.org/fuskg/food#BrinedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce in Salamoia"@it .
+# 
+# https://w3id.org/fuskg/food#Broth
+<https://w3id.org/fuskg/food#Broth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Broth> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ComposedFood> .
+<https://w3id.org/fuskg/food#Broth> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Broth category."@en .
+<https://w3id.org/fuskg/food#Broth> <http://www.w3.org/2000/01/rdf-schema#label> "Brodo"@it .
+<https://w3id.org/fuskg/food#Broth> <http://www.w3.org/2000/01/rdf-schema#label> "Broth"@en .
+# 
+# https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid
+<https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to the sum of Butyric Caproic Caprylic and Capric Acid amounts."@en .
+<https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Somma degli Acidi Butirrico Caproico Caprilico e Caprico"@it .
+<https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Sum of Butyric Caproic Caprylic and Capric Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Calcium
+<https://w3id.org/fuskg/food#Calcium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Calcium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Calcium> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Calcium amounts."@en .
+<https://w3id.org/fuskg/food#Calcium> <http://www.w3.org/2000/01/rdf-schema#label> "Calcio"@it .
+<https://w3id.org/fuskg/food#Calcium> <http://www.w3.org/2000/01/rdf-schema#label> "Calcium"@en .
+# 
+# https://w3id.org/fuskg/food#CandiedFruits
+<https://w3id.org/fuskg/food#CandiedFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CandiedFruits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#CandiedFruits> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Candied Fruits category."@en .
+<https://w3id.org/fuskg/food#CandiedFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Candied Fruits"@en .
+<https://w3id.org/fuskg/food#CandiedFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Frutta Candita"@it .
+# 
+# https://w3id.org/fuskg/food#Candy
+<https://w3id.org/fuskg/food#Candy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Candy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#Candy> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Candy category."@en .
+<https://w3id.org/fuskg/food#Candy> <http://www.w3.org/2000/01/rdf-schema#label> "Candy"@en .
+<https://w3id.org/fuskg/food#Candy> <http://www.w3.org/2000/01/rdf-schema#label> "Caramelle"@it .
+# 
+# https://w3id.org/fuskg/food#CannedMeat
+<https://w3id.org/fuskg/food#CannedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CannedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SausagesAndColdCuts> .
+<https://w3id.org/fuskg/food#CannedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Canned Meat category."@en .
+<https://w3id.org/fuskg/food#CannedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Canned Meat"@en .
+<https://w3id.org/fuskg/food#CannedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne in Scatola"@it .
+# 
+# https://w3id.org/fuskg/food#CannedOrCookedFruit
+<https://w3id.org/fuskg/food#CannedOrCookedFruit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CannedOrCookedFruit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#CannedOrCookedFruit> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Canned or Cooked Fruit category."@en .
+<https://w3id.org/fuskg/food#CannedOrCookedFruit> <http://www.w3.org/2000/01/rdf-schema#label> "Canned or Cooked Fruit"@en .
+<https://w3id.org/fuskg/food#CannedOrCookedFruit> <http://www.w3.org/2000/01/rdf-schema#label> "Frutta in Scatola o Cotta"@it .
+# 
+# https://w3id.org/fuskg/food#CannedVegetables
+<https://w3id.org/fuskg/food#CannedVegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CannedVegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedVegetables> .
+<https://w3id.org/fuskg/food#CannedVegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Marinated Vegetables category."@en .
+<https://w3id.org/fuskg/food#CannedVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Marinated Vegetables"@en .
+<https://w3id.org/fuskg/food#CannedVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure Sott'Olio"@it .
+# 
+# https://w3id.org/fuskg/food#Carbs
+<https://w3id.org/fuskg/food#Carbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Carbs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#Carbs> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Carbs amounts."@en .
+<https://w3id.org/fuskg/food#Carbs> <http://www.w3.org/2000/01/rdf-schema#label> "Carboidrati"@it .
+<https://w3id.org/fuskg/food#Carbs> <http://www.w3.org/2000/01/rdf-schema#label> "Carbs"@en .
+# 
+# https://w3id.org/fuskg/food#CarbsSoluble
+<https://w3id.org/fuskg/food#CarbsSoluble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CarbsSoluble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#CarbsSoluble> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Soluble Carbs amounts."@en .
+<https://w3id.org/fuskg/food#CarbsSoluble> <http://www.w3.org/2000/01/rdf-schema#label> "Carboidrati Solubili"@it .
+<https://w3id.org/fuskg/food#CarbsSoluble> <http://www.w3.org/2000/01/rdf-schema#label> "Soluble Carbs"@en .
+# 
+# https://w3id.org/fuskg/food#Cereals
+<https://w3id.org/fuskg/food#Cereals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Cereals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+<https://w3id.org/fuskg/food#Cereals> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Cereals category."@en .
+<https://w3id.org/fuskg/food#Cereals> <http://www.w3.org/2000/01/rdf-schema#label> "Cereali"@it .
+<https://w3id.org/fuskg/food#Cereals> <http://www.w3.org/2000/01/rdf-schema#label> "Cereals"@en .
+# 
+# https://w3id.org/fuskg/food#CerealsAndGrainProducts
+<https://w3id.org/fuskg/food#CerealsAndGrainProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CerealsAndGrainProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#CerealsAndGrainProducts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Cereal and Grain Products category."@en .
+<https://w3id.org/fuskg/food#CerealsAndGrainProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Cereal and Grain Products"@en .
+<https://w3id.org/fuskg/food#CerealsAndGrainProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Cereali e Prodotti Derivati"@it .
+# 
+# https://w3id.org/fuskg/food#Cheese
+<https://w3id.org/fuskg/food#Cheese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Cheese> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#MilkAndDairyProducts> .
+<https://w3id.org/fuskg/food#Cheese> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Cheese category."@en .
+<https://w3id.org/fuskg/food#Cheese> <http://www.w3.org/2000/01/rdf-schema#label> "Cheese"@en .
+<https://w3id.org/fuskg/food#Cheese> <http://www.w3.org/2000/01/rdf-schema#label> "Formaggio"@it .
+# 
+# https://w3id.org/fuskg/food#Chlorine
+<https://w3id.org/fuskg/food#Chlorine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Chlorine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Chlorine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Chlorine amounts."@en .
+<https://w3id.org/fuskg/food#Chlorine> <http://www.w3.org/2000/01/rdf-schema#label> "Chlorine"@en .
+<https://w3id.org/fuskg/food#Chlorine> <http://www.w3.org/2000/01/rdf-schema#label> "Cloro"@it .
+# 
+# https://w3id.org/fuskg/food#ChocolateAndCocoa
+<https://w3id.org/fuskg/food#ChocolateAndCocoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ChocolateAndCocoa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#ChocolateAndCocoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Chocolate and Cocoa category."@en .
+<https://w3id.org/fuskg/food#ChocolateAndCocoa> <http://www.w3.org/2000/01/rdf-schema#label> "Chocolate and Cocoa"@en .
+<https://w3id.org/fuskg/food#ChocolateAndCocoa> <http://www.w3.org/2000/01/rdf-schema#label> "Cioccolato e Cacao"@it .
+# 
+# https://w3id.org/fuskg/food#Cholesterol
+<https://w3id.org/fuskg/food#Cholesterol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Cholesterol> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#Cholesterol> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Cholesterol amounts."@en .
+<https://w3id.org/fuskg/food#Cholesterol> <http://www.w3.org/2000/01/rdf-schema#label> "Cholesterol"@en .
+<https://w3id.org/fuskg/food#Cholesterol> <http://www.w3.org/2000/01/rdf-schema#label> "Colesterolo"@it .
+# 
+# https://w3id.org/fuskg/food#CoffeeAndSubstitutes
+<https://w3id.org/fuskg/food#CoffeeAndSubstitutes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CoffeeAndSubstitutes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Beverages> .
+<https://w3id.org/fuskg/food#CoffeeAndSubstitutes> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Coffee and Substitutes category."@en .
+<https://w3id.org/fuskg/food#CoffeeAndSubstitutes> <http://www.w3.org/2000/01/rdf-schema#label> "Caff  e Sostituti"@it .
+<https://w3id.org/fuskg/food#CoffeeAndSubstitutes> <http://www.w3.org/2000/01/rdf-schema#label> "Coffee and Substitutes"@en .
+# 
+# https://w3id.org/fuskg/food#ColdCuts
+<https://w3id.org/fuskg/food#ColdCuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ColdCuts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SausagesAndColdCuts> .
+<https://w3id.org/fuskg/food#ColdCuts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Cold Cuts category."@en .
+<https://w3id.org/fuskg/food#ColdCuts> <http://www.w3.org/2000/01/rdf-schema#label> "Cold Cuts"@en .
+<https://w3id.org/fuskg/food#ColdCuts> <http://www.w3.org/2000/01/rdf-schema#label> "Salumi"@it .
+# 
+# https://w3id.org/fuskg/food#ComposedFood
+<https://w3id.org/fuskg/food#ComposedFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ComposedFood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/food#ComposedFood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/fuskg/food#BasicFood> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/fuskg/core#contains> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://w3id.org/fuskg/food#ComposedFood> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Composed Food category."@en .
+<https://w3id.org/fuskg/food#ComposedFood> <http://www.w3.org/2000/01/rdf-schema#label> "Alimento Composto"@it .
+<https://w3id.org/fuskg/food#ComposedFood> <http://www.w3.org/2000/01/rdf-schema#label> "Composed Food"@en .
+# 
+# https://w3id.org/fuskg/food#Copper
+<https://w3id.org/fuskg/food#Copper> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Copper> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Copper> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Copper amounts."@en .
+<https://w3id.org/fuskg/food#Copper> <http://www.w3.org/2000/01/rdf-schema#label> "Copper"@en .
+<https://w3id.org/fuskg/food#Copper> <http://www.w3.org/2000/01/rdf-schema#label> "Rame"@it .
+# 
+# https://w3id.org/fuskg/food#Cream
+<https://w3id.org/fuskg/food#Cream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Cream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SweetSpreads> .
+<https://w3id.org/fuskg/food#Cream> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Cream category."@en .
+<https://w3id.org/fuskg/food#Cream> <http://www.w3.org/2000/01/rdf-schema#label> "Cream"@en .
+<https://w3id.org/fuskg/food#Cream> <http://www.w3.org/2000/01/rdf-schema#label> "Crema"@it .
+# 
+# https://w3id.org/fuskg/food#CulinaryErbs
+<https://w3id.org/fuskg/food#CulinaryErbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#CulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#CulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Culinary Erbs category."@en .
+<https://w3id.org/fuskg/food#CulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#label> "Culinary Erbs"@en .
+<https://w3id.org/fuskg/food#CulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#label> "Erbe Aromatiche"@it .
+# 
+# https://w3id.org/fuskg/food#Cystine
+<https://w3id.org/fuskg/food#Cystine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Cystine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Cystine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Cystine amounts."@en .
+<https://w3id.org/fuskg/food#Cystine> <http://www.w3.org/2000/01/rdf-schema#label> "Cistina"@it .
+<https://w3id.org/fuskg/food#Cystine> <http://www.w3.org/2000/01/rdf-schema#label> "Cystine"@en .
+# 
+# https://w3id.org/fuskg/food#DHAAcid
+<https://w3id.org/fuskg/food#DHAAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#DHAAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#DHAAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to DHA Acid amounts."@en .
+<https://w3id.org/fuskg/food#DHAAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido DHA"@it .
+<https://w3id.org/fuskg/food#DHAAcid> <http://www.w3.org/2000/01/rdf-schema#label> "DHA Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Dessert
+<https://w3id.org/fuskg/food#Dessert> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Dessert> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#Dessert> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Dessert category."@en .
+<https://w3id.org/fuskg/food#Dessert> <http://www.w3.org/2000/01/rdf-schema#label> "Dessert"@en .
+<https://w3id.org/fuskg/food#Dessert> <http://www.w3.org/2000/01/rdf-schema#label> "Dessert"@it .
+# 
+# https://w3id.org/fuskg/food#DietaryFiber
+<https://w3id.org/fuskg/food#DietaryFiber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#DietaryFiber> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#DietaryFiber> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Dietary Fiber amounts."@en .
+<https://w3id.org/fuskg/food#DietaryFiber> <http://www.w3.org/2000/01/rdf-schema#label> "Dietary Fiber"@en .
+<https://w3id.org/fuskg/food#DietaryFiber> <http://www.w3.org/2000/01/rdf-schema#label> "Fibra Alimentare"@it .
+# 
+# https://w3id.org/fuskg/food#DryAlgae
+<https://w3id.org/fuskg/food#DryAlgae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#DryAlgae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Algae> .
+<https://w3id.org/fuskg/food#DryAlgae> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Dry Algae category."@en .
+<https://w3id.org/fuskg/food#DryAlgae> <http://www.w3.org/2000/01/rdf-schema#label> "Alghe Secche"@it .
+<https://w3id.org/fuskg/food#DryAlgae> <http://www.w3.org/2000/01/rdf-schema#label> "Dry Algae"@en .
+# 
+# https://w3id.org/fuskg/food#DryCulinaryErbs
+<https://w3id.org/fuskg/food#DryCulinaryErbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#DryCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CulinaryErbs> .
+<https://w3id.org/fuskg/food#DryCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Dry Culinary Erbs category."@en .
+<https://w3id.org/fuskg/food#DryCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#label> "Dry Culinary Erbs"@en .
+<https://w3id.org/fuskg/food#DryCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#label> "Erbe Aromatiche Secche"@it .
+# 
+# https://w3id.org/fuskg/food#DryFruits
+<https://w3id.org/fuskg/food#DryFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#DryFruits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Fruits> .
+<https://w3id.org/fuskg/food#DryFruits> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Dry Fruits category."@en .
+<https://w3id.org/fuskg/food#DryFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Dry Fruits"@en .
+<https://w3id.org/fuskg/food#DryFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Frutta Secca"@it .
+# 
+# https://w3id.org/fuskg/food#DryMushrooms
+<https://w3id.org/fuskg/food#DryMushrooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#DryMushrooms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedMushrooms> .
+<https://w3id.org/fuskg/food#DryMushrooms> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Dry Mushrooms category."@en .
+<https://w3id.org/fuskg/food#DryMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Dry Mushrooms"@en .
+<https://w3id.org/fuskg/food#DryMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Funghi Secchi"@it .
+# 
+# https://w3id.org/fuskg/food#EPAAcid
+<https://w3id.org/fuskg/food#EPAAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#EPAAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#EPAAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to EPA Acid amounts."@en .
+<https://w3id.org/fuskg/food#EPAAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido EPA"@it .
+<https://w3id.org/fuskg/food#EPAAcid> <http://www.w3.org/2000/01/rdf-schema#label> "EPA Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Eggs
+<https://w3id.org/fuskg/food#Eggs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Eggs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#Eggs> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Eggs category."@en .
+<https://w3id.org/fuskg/food#Eggs> <http://www.w3.org/2000/01/rdf-schema#label> "Eggs"@en .
+<https://w3id.org/fuskg/food#Eggs> <http://www.w3.org/2000/01/rdf-schema#label> "Uova"@it .
+# 
+# https://w3id.org/fuskg/food#EicosenoicAcid
+<https://w3id.org/fuskg/food#EicosenoicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#EicosenoicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#EicosenoicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Eicosenoic Acid amounts."@en .
+<https://w3id.org/fuskg/food#EicosenoicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Eicosenoico"@it .
+<https://w3id.org/fuskg/food#EicosenoicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Eicosenoic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#ErucicAcid
+<https://w3id.org/fuskg/food#ErucicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ErucicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#ErucicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Erucic Acid amounts."@en .
+<https://w3id.org/fuskg/food#ErucicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Erucico"@it .
+<https://w3id.org/fuskg/food#ErucicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Erucic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#FatsAndOils
+<https://w3id.org/fuskg/food#FatsAndOils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FatsAndOils> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#FatsAndOils> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fats and Oils category."@en .
+<https://w3id.org/fuskg/food#FatsAndOils> <http://www.w3.org/2000/01/rdf-schema#label> "Fats and Oils"@en .
+<https://w3id.org/fuskg/food#FatsAndOils> <http://www.w3.org/2000/01/rdf-schema#label> "Grassi e Oli"@it .
+# 
+# https://w3id.org/fuskg/food#FattyRedMeat
+<https://w3id.org/fuskg/food#FattyRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#RedMeat> .
+<https://w3id.org/fuskg/food#FattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fatty Red Meat category."@en .
+<https://w3id.org/fuskg/food#FattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Grassa"@it .
+<https://w3id.org/fuskg/food#FattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Fatty Red Meat"@en .
+# 
+# https://w3id.org/fuskg/food#FattyWhiteMeat
+<https://w3id.org/fuskg/food#FattyWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#WhiteMeat> .
+<https://w3id.org/fuskg/food#FattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fatty White Meat category."@en .
+<https://w3id.org/fuskg/food#FattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Grassa"@it .
+<https://w3id.org/fuskg/food#FattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Fatty White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#Fish
+<https://w3id.org/fuskg/food#Fish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Fish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FishAndSeafood> .
+<https://w3id.org/fuskg/food#Fish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fish category."@en .
+<https://w3id.org/fuskg/food#Fish> <http://www.w3.org/2000/01/rdf-schema#label> "Fish"@en .
+<https://w3id.org/fuskg/food#Fish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce"@it .
+# 
+# https://w3id.org/fuskg/food#FishAndSeafood
+<https://w3id.org/fuskg/food#FishAndSeafood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FishAndSeafood> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#FishAndSeafood> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fish and Seafood category."@en .
+<https://w3id.org/fuskg/food#FishAndSeafood> <http://www.w3.org/2000/01/rdf-schema#label> "Fish and Seafood"@en .
+<https://w3id.org/fuskg/food#FishAndSeafood> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce, Molluschi e Crostacei"@it .
+# 
+# https://w3id.org/fuskg/food#Flour
+<https://w3id.org/fuskg/food#Flour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Flour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+<https://w3id.org/fuskg/food#Flour> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Flour category."@en .
+<https://w3id.org/fuskg/food#Flour> <http://www.w3.org/2000/01/rdf-schema#label> "Farine"@it .
+<https://w3id.org/fuskg/food#Flour> <http://www.w3.org/2000/01/rdf-schema#label> "Flour"@en .
+# 
+# https://w3id.org/fuskg/food#FolicAcid
+<https://w3id.org/fuskg/food#FolicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FolicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#FolicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Folic Acid amounts."@en .
+<https://w3id.org/fuskg/food#FolicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Folico"@it .
+<https://w3id.org/fuskg/food#FolicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Folic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#FreshAlgae
+<https://w3id.org/fuskg/food#FreshAlgae> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshAlgae> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Algae> .
+<https://w3id.org/fuskg/food#FreshAlgae> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Algae category."@en .
+<https://w3id.org/fuskg/food#FreshAlgae> <http://www.w3.org/2000/01/rdf-schema#label> "Alghe Fresche"@it .
+<https://w3id.org/fuskg/food#FreshAlgae> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Algae"@en .
+# 
+# https://w3id.org/fuskg/food#FreshCereals
+<https://w3id.org/fuskg/food#FreshCereals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshCereals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Cereals> .
+<https://w3id.org/fuskg/food#FreshCereals> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Cereals category."@en .
+<https://w3id.org/fuskg/food#FreshCereals> <http://www.w3.org/2000/01/rdf-schema#label> "Cereali Freschi"@it .
+<https://w3id.org/fuskg/food#FreshCereals> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Cereals"@en .
+# 
+# https://w3id.org/fuskg/food#FreshCheese
+<https://w3id.org/fuskg/food#FreshCheese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshCheese> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Cheese> .
+<https://w3id.org/fuskg/food#FreshCheese> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Cheese category."@en .
+<https://w3id.org/fuskg/food#FreshCheese> <http://www.w3.org/2000/01/rdf-schema#label> "Formaggi Freschi"@it .
+<https://w3id.org/fuskg/food#FreshCheese> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Cheese"@en .
+# 
+# https://w3id.org/fuskg/food#FreshCulinaryErbs
+<https://w3id.org/fuskg/food#FreshCulinaryErbs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CulinaryErbs> .
+<https://w3id.org/fuskg/food#FreshCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Culinary Erbs category."@en .
+<https://w3id.org/fuskg/food#FreshCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#label> "Erbe Aromatiche Fresche"@it .
+<https://w3id.org/fuskg/food#FreshCulinaryErbs> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Culinary Erbs"@en .
+# 
+# https://w3id.org/fuskg/food#FreshFish
+<https://w3id.org/fuskg/food#FreshFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Fish> .
+<https://w3id.org/fuskg/food#FreshFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Fish category."@en .
+<https://w3id.org/fuskg/food#FreshFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Fish"@en .
+<https://w3id.org/fuskg/food#FreshFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Fresco"@it .
+# 
+# https://w3id.org/fuskg/food#FreshFruits
+<https://w3id.org/fuskg/food#FreshFruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshFruits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Fruits> .
+<https://w3id.org/fuskg/food#FreshFruits> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Fruits category."@en .
+<https://w3id.org/fuskg/food#FreshFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Fruits"@en .
+<https://w3id.org/fuskg/food#FreshFruits> <http://www.w3.org/2000/01/rdf-schema#label> "Frutta Fresca"@it .
+# 
+# https://w3id.org/fuskg/food#FreshLegumes
+<https://w3id.org/fuskg/food#FreshLegumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshLegumes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LegumesAndLegumeProducts> .
+<https://w3id.org/fuskg/food#FreshLegumes> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Legumes category."@en .
+<https://w3id.org/fuskg/food#FreshLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Legumes"@en .
+<https://w3id.org/fuskg/food#FreshLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Legumi Freschi"@it .
+# 
+# https://w3id.org/fuskg/food#FreshMollusc
+<https://w3id.org/fuskg/food#FreshMollusc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshMollusc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mollusc> .
+<https://w3id.org/fuskg/food#FreshMollusc> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Mollusc category."@en .
+<https://w3id.org/fuskg/food#FreshMollusc> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Mollusc"@en .
+<https://w3id.org/fuskg/food#FreshMollusc> <http://www.w3.org/2000/01/rdf-schema#label> "Molluschi Freschi"@it .
+# 
+# https://w3id.org/fuskg/food#FreshMushrooms
+<https://w3id.org/fuskg/food#FreshMushrooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshMushrooms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mushrooms> .
+<https://w3id.org/fuskg/food#FreshMushrooms> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Mushrooms category."@en .
+<https://w3id.org/fuskg/food#FreshMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Mushrooms"@en .
+<https://w3id.org/fuskg/food#FreshMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Funghi Freschi"@it .
+# 
+# https://w3id.org/fuskg/food#FreshNotOilyFatFish
+<https://w3id.org/fuskg/food#FreshNotOilyFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshNotOilyFish> .
+<https://w3id.org/fuskg/food#FreshNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh White (Not Oily) Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FreshNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh White Fat Fish"@en .
+<https://w3id.org/fuskg/food#FreshNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Bianco Grasso Fresco"@it .
+# 
+# https://w3id.org/fuskg/food#FreshNotOilyFish
+<https://w3id.org/fuskg/food#FreshNotOilyFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshFish> .
+<https://w3id.org/fuskg/food#FreshNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh White (Not Oily) Fish category."@en .
+<https://w3id.org/fuskg/food#FreshNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Fresco Bianco"@it .
+<https://w3id.org/fuskg/food#FreshNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "White Fresh Fish"@en .
+# 
+# https://w3id.org/fuskg/food#FreshNotOilyLeanFish
+<https://w3id.org/fuskg/food#FreshNotOilyLeanFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshNotOilyFish> .
+<https://w3id.org/fuskg/food#FreshNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh White (Not Oily) Lean Fish category."@en .
+<https://w3id.org/fuskg/food#FreshNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh White Lean Fish"@en .
+<https://w3id.org/fuskg/food#FreshNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Bianco Magro Fresco"@it .
+# 
+# https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish
+<https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshNotOilyFish> .
+<https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh White (Not Oily) Semi-Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Semi-fat White Fish"@en .
+<https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Bianco Semigrasso Fresco"@it .
+# 
+# https://w3id.org/fuskg/food#FreshOilyFatFish
+<https://w3id.org/fuskg/food#FreshOilyFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshOilyFish> .
+<https://w3id.org/fuskg/food#FreshOilyFatFish> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/fuskg/food#FreshOilyLeanFish> .
+<https://w3id.org/fuskg/food#FreshOilyFatFish> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/fuskg/food#FreshOilyMediumFatFish> .
+<https://w3id.org/fuskg/food#FreshOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Oily Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FreshOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Oily Fat Fish"@en .
+<https://w3id.org/fuskg/food#FreshOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Azzurro Grasso Fresco"@it .
+# 
+# https://w3id.org/fuskg/food#FreshOilyFish
+<https://w3id.org/fuskg/food#FreshOilyFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshOilyFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshFish> .
+<https://w3id.org/fuskg/food#FreshOilyFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Oily Fish category."@en .
+<https://w3id.org/fuskg/food#FreshOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Oily Fish"@en .
+<https://w3id.org/fuskg/food#FreshOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Fresco Azzurro"@it .
+# 
+# https://w3id.org/fuskg/food#FreshOilyLeanFish
+<https://w3id.org/fuskg/food#FreshOilyLeanFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshOilyFish> .
+<https://w3id.org/fuskg/food#FreshOilyLeanFish> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/fuskg/food#FreshOilyMediumFatFish> .
+<https://w3id.org/fuskg/food#FreshOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Oily Lean Fish category."@en .
+<https://w3id.org/fuskg/food#FreshOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Oily Lean Fish"@en .
+<https://w3id.org/fuskg/food#FreshOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Azzurro Magro Fresco"@it .
+# 
+# https://w3id.org/fuskg/food#FreshOilyMediumFatFish
+<https://w3id.org/fuskg/food#FreshOilyMediumFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FreshOilyFish> .
+<https://w3id.org/fuskg/food#FreshOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Oily Semi-Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FreshOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Oily Semi-Fat Fish"@en .
+<https://w3id.org/fuskg/food#FreshOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Azzurro Fresco Semigrasso"@it .
+# 
+# https://w3id.org/fuskg/food#FreshShellfish
+<https://w3id.org/fuskg/food#FreshShellfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshShellfish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Shellfish> .
+<https://w3id.org/fuskg/food#FreshShellfish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Shellfish category."@en .
+<https://w3id.org/fuskg/food#FreshShellfish> <http://www.w3.org/2000/01/rdf-schema#label> "Crostacei Freschi"@it .
+<https://w3id.org/fuskg/food#FreshShellfish> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Shellfish"@en .
+# 
+# https://w3id.org/fuskg/food#FreshStarchyVegetables
+<https://w3id.org/fuskg/food#FreshStarchyVegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#StarchyVegetables> .
+<https://w3id.org/fuskg/food#FreshStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Starchy Vegetables category."@en .
+<https://w3id.org/fuskg/food#FreshStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Starchy Vegetables"@en .
+<https://w3id.org/fuskg/food#FreshStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure Amidacee Fresche"@it .
+# 
+# https://w3id.org/fuskg/food#FreshVegetables
+<https://w3id.org/fuskg/food#FreshVegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FreshVegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#StarchyFreeVegetables> .
+<https://w3id.org/fuskg/food#FreshVegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fresh Starchy Free Vegetables category."@en .
+<https://w3id.org/fuskg/food#FreshVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Fresh Starchy Free Vegetables"@en .
+<https://w3id.org/fuskg/food#FreshVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure ed Ortaggi Freschi a Basso Contenuto di Amido"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenFish
+<https://w3id.org/fuskg/food#FrozenFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedFish> .
+<https://w3id.org/fuskg/food#FrozenFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen Fish"@en .
+<https://w3id.org/fuskg/food#FrozenFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenNotOilyFatFish
+<https://w3id.org/fuskg/food#FrozenNotOilyFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenNotOilyFish> .
+<https://w3id.org/fuskg/food#FrozenNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen White (Not Oily) Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen White Fat Fish"@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Bianco Grasso Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenNotOilyFish
+<https://w3id.org/fuskg/food#FrozenNotOilyFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenFish> .
+<https://w3id.org/fuskg/food#FrozenNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen White (Not Oily) Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen White Fish"@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Bianco Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenNotOilyLeanFish
+<https://w3id.org/fuskg/food#FrozenNotOilyLeanFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenNotOilyFish> .
+<https://w3id.org/fuskg/food#FrozenNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen White (Not Oily) Lean Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen White Lean Fish"@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Bianco Magro Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish
+<https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenNotOilyFish> .
+<https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen White (Not Oily) Semi-Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen Semi-fat White Fish"@en .
+<https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Bianco Semigrasso Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenOilyFatFish
+<https://w3id.org/fuskg/food#FrozenOilyFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenOilyFish> .
+<https://w3id.org/fuskg/food#FrozenOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen Oily Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen Oily Fat Fish"@en .
+<https://w3id.org/fuskg/food#FrozenOilyFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Azzurro Grasso Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenOilyFish
+<https://w3id.org/fuskg/food#FrozenOilyFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenOilyFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenFish> .
+<https://w3id.org/fuskg/food#FrozenOilyFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen Oily Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen Oily Fish"@en .
+<https://w3id.org/fuskg/food#FrozenOilyFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Azzurro Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenOilyLeanFish
+<https://w3id.org/fuskg/food#FrozenOilyLeanFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenOilyFish> .
+<https://w3id.org/fuskg/food#FrozenOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen Oily Lean Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen Oily Lean Fish"@en .
+<https://w3id.org/fuskg/food#FrozenOilyLeanFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Azzurro Magro Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenOilyMediumFatFish
+<https://w3id.org/fuskg/food#FrozenOilyMediumFatFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FrozenOilyFish> .
+<https://w3id.org/fuskg/food#FrozenOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen Oily Semi-Fat Fish category."@en .
+<https://w3id.org/fuskg/food#FrozenOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen Oily Semi-Fat Fish"@en .
+<https://w3id.org/fuskg/food#FrozenOilyMediumFatFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Azzurro Semigrasso Surgelato"@it .
+# 
+# https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes
+<https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#VegetablesAndLegumes> .
+<https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Frozen Vegetables and Legumes category."@en .
+<https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Frozen Vegetables and Legumes"@en .
+<https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure e Legumi Surgelati"@it .
+# 
+# https://w3id.org/fuskg/food#Fructose
+<https://w3id.org/fuskg/food#Fructose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Fructose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#Fructose> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Fructose amounts."@en .
+<https://w3id.org/fuskg/food#Fructose> <http://www.w3.org/2000/01/rdf-schema#label> "Fructose"@en .
+<https://w3id.org/fuskg/food#Fructose> <http://www.w3.org/2000/01/rdf-schema#label> "Fruttosio"@it .
+# 
+# https://w3id.org/fuskg/food#FruitBasedBeverages
+<https://w3id.org/fuskg/food#FruitBasedBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FruitBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Fruits> .
+<https://w3id.org/fuskg/food#FruitBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fruit Based Beverages category."@en .
+<https://w3id.org/fuskg/food#FruitBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Fruit Based Beverages"@en .
+<https://w3id.org/fuskg/food#FruitBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Spremute o Bevande a base di Frutta"@it .
+# 
+# https://w3id.org/fuskg/food#FruitJuices
+<https://w3id.org/fuskg/food#FruitJuices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FruitJuices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SweetBeveragesAndJuices> .
+<https://w3id.org/fuskg/food#FruitJuices> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fruit Juices category."@en .
+<https://w3id.org/fuskg/food#FruitJuices> <http://www.w3.org/2000/01/rdf-schema#label> "Fruit Juices"@en .
+<https://w3id.org/fuskg/food#FruitJuices> <http://www.w3.org/2000/01/rdf-schema#label> "Succhi di Frutta"@it .
+# 
+# https://w3id.org/fuskg/food#FruitPeel
+<https://w3id.org/fuskg/food#FruitPeel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#FruitPeel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Fruits> .
+<https://w3id.org/fuskg/food#FruitPeel> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fruit Peel category."@en .
+<https://w3id.org/fuskg/food#FruitPeel> <http://www.w3.org/2000/01/rdf-schema#label> "Fruit Peel"@en .
+<https://w3id.org/fuskg/food#FruitPeel> <http://www.w3.org/2000/01/rdf-schema#label> "Scorza di Frutta"@it .
+# 
+# https://w3id.org/fuskg/food#Fruits
+<https://w3id.org/fuskg/food#Fruits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Fruits> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#Fruits> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Fruits category."@en .
+<https://w3id.org/fuskg/food#Fruits> <http://www.w3.org/2000/01/rdf-schema#label> "Fruits"@en .
+<https://w3id.org/fuskg/food#Fruits> <http://www.w3.org/2000/01/rdf-schema#label> "Frutta"@it .
+# 
+# https://w3id.org/fuskg/food#Galactose
+<https://w3id.org/fuskg/food#Galactose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Galactose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#Galactose> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Galactose amounts."@en .
+<https://w3id.org/fuskg/food#Galactose> <http://www.w3.org/2000/01/rdf-schema#label> "Galactose"@en .
+<https://w3id.org/fuskg/food#Galactose> <http://www.w3.org/2000/01/rdf-schema#label> "Galattosio"@it .
+# 
+# https://w3id.org/fuskg/food#Glucose
+<https://w3id.org/fuskg/food#Glucose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Glucose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#Glucose> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Glucose amounts."@en .
+<https://w3id.org/fuskg/food#Glucose> <http://www.w3.org/2000/01/rdf-schema#label> "Glucose"@en .
+<https://w3id.org/fuskg/food#Glucose> <http://www.w3.org/2000/01/rdf-schema#label> "Glucosio"@it .
+# 
+# https://w3id.org/fuskg/food#GlutamicAcid
+<https://w3id.org/fuskg/food#GlutamicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#GlutamicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#GlutamicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Glutamic Acid amounts."@en .
+<https://w3id.org/fuskg/food#GlutamicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Glutammico"@it .
+<https://w3id.org/fuskg/food#GlutamicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Glutamic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Glycine
+<https://w3id.org/fuskg/food#Glycine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Glycine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Glycine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Glycine amounts."@en .
+<https://w3id.org/fuskg/food#Glycine> <http://www.w3.org/2000/01/rdf-schema#label> "Glicina"@it .
+<https://w3id.org/fuskg/food#Glycine> <http://www.w3.org/2000/01/rdf-schema#label> "Glycine"@en .
+# 
+# https://w3id.org/fuskg/food#GoatLeanWhiteMeat
+<https://w3id.org/fuskg/food#GoatLeanWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#GoatLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanWhiteMeat> .
+<https://w3id.org/fuskg/food#GoatLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Goat Lean White Meat category."@en .
+<https://w3id.org/fuskg/food#GoatLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Magra di Capretto"@it .
+<https://w3id.org/fuskg/food#GoatLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Goat Lean White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#Histidine
+<https://w3id.org/fuskg/food#Histidine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Histidine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#Histidine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Histidine amounts."@en .
+<https://w3id.org/fuskg/food#Histidine> <http://www.w3.org/2000/01/rdf-schema#label> "Histidine"@en .
+<https://w3id.org/fuskg/food#Histidine> <http://www.w3.org/2000/01/rdf-schema#label> "Istidina"@it .
+# 
+# https://w3id.org/fuskg/food#IceCream
+<https://w3id.org/fuskg/food#IceCream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#IceCream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#IceCream> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Ice Cream category."@en .
+<https://w3id.org/fuskg/food#IceCream> <http://www.w3.org/2000/01/rdf-schema#label> "Gelato"@it .
+<https://w3id.org/fuskg/food#IceCream> <http://www.w3.org/2000/01/rdf-schema#label> "Ice Cream"@en .
+# 
+# https://w3id.org/fuskg/food#Iodine
+<https://w3id.org/fuskg/food#Iodine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Iodine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Iodine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Iodine amounts."@en .
+<https://w3id.org/fuskg/food#Iodine> <http://www.w3.org/2000/01/rdf-schema#label> "Iodine"@en .
+<https://w3id.org/fuskg/food#Iodine> <http://www.w3.org/2000/01/rdf-schema#label> "Iodio"@it .
+# 
+# https://w3id.org/fuskg/food#Iron
+<https://w3id.org/fuskg/food#Iron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Iron> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Iron> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Iron amounts."@en .
+<https://w3id.org/fuskg/food#Iron> <http://www.w3.org/2000/01/rdf-schema#label> "Ferro"@it .
+<https://w3id.org/fuskg/food#Iron> <http://www.w3.org/2000/01/rdf-schema#label> "Iron"@en .
+# 
+# https://w3id.org/fuskg/food#Isoleucine
+<https://w3id.org/fuskg/food#Isoleucine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Isoleucine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Isoleucine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Isoleucine amounts."@en .
+<https://w3id.org/fuskg/food#Isoleucine> <http://www.w3.org/2000/01/rdf-schema#label> "Isoleucina"@it .
+<https://w3id.org/fuskg/food#Isoleucine> <http://www.w3.org/2000/01/rdf-schema#label> "Isoleucine"@en .
+# 
+# https://w3id.org/fuskg/food#Jam
+<https://w3id.org/fuskg/food#Jam> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Jam> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SweetSpreads> .
+<https://w3id.org/fuskg/food#Jam> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Jam category."@en .
+<https://w3id.org/fuskg/food#Jam> <http://www.w3.org/2000/01/rdf-schema#label> "Jam"@en .
+<https://w3id.org/fuskg/food#Jam> <http://www.w3.org/2000/01/rdf-schema#label> "Marmellata"@it .
+# 
+# https://w3id.org/fuskg/food#Lactose
+<https://w3id.org/fuskg/food#Lactose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Lactose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#Lactose> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Lactose amounts."@en .
+<https://w3id.org/fuskg/food#Lactose> <http://www.w3.org/2000/01/rdf-schema#label> "Lactose"@en .
+<https://w3id.org/fuskg/food#Lactose> <http://www.w3.org/2000/01/rdf-schema#label> "Lattosio"@it .
+# 
+# https://w3id.org/fuskg/food#LambFattyWhiteMeat
+<https://w3id.org/fuskg/food#LambFattyWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LambFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FattyWhiteMeat> .
+<https://w3id.org/fuskg/food#LambFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Lamb Fatty White Meat category."@en .
+<https://w3id.org/fuskg/food#LambFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Grassa di Agnello"@it .
+<https://w3id.org/fuskg/food#LambFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Lamb Fatty White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#LambLeanWhiteMeat
+<https://w3id.org/fuskg/food#LambLeanWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LambLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanWhiteMeat> .
+<https://w3id.org/fuskg/food#LambLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Lamb Lean White Meat category."@en .
+<https://w3id.org/fuskg/food#LambLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Magra di Agnello"@it .
+<https://w3id.org/fuskg/food#LambLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Lamb Lean White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#LauricAcid
+<https://w3id.org/fuskg/food#LauricAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LauricAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#LauricAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Lauric Acid amounts."@en .
+<https://w3id.org/fuskg/food#LauricAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Laurico"@it .
+<https://w3id.org/fuskg/food#LauricAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Lauric Acid"@en .
+# 
+# https://w3id.org/fuskg/food#LeanGameMeat
+<https://w3id.org/fuskg/food#LeanGameMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LeanGameMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#OtherMeat> .
+<https://w3id.org/fuskg/food#LeanGameMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Lean Game Meat category."@en .
+<https://w3id.org/fuskg/food#LeanGameMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne di Selvaggina Magra"@it .
+<https://w3id.org/fuskg/food#LeanGameMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Lean Game Meat"@en .
+# 
+# https://w3id.org/fuskg/food#LeanRedMeat
+<https://w3id.org/fuskg/food#LeanRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#RedMeat> .
+<https://w3id.org/fuskg/food#LeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Lean Red Meat category."@en .
+<https://w3id.org/fuskg/food#LeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Magra"@it .
+<https://w3id.org/fuskg/food#LeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Lean Red Meat"@en .
+# 
+# https://w3id.org/fuskg/food#LeanWhiteMeat
+<https://w3id.org/fuskg/food#LeanWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#WhiteMeat> .
+<https://w3id.org/fuskg/food#LeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Lean White Meat category."@en .
+<https://w3id.org/fuskg/food#LeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Magra"@it .
+<https://w3id.org/fuskg/food#LeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Lean White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#LegumesAndLegumeProducts
+<https://w3id.org/fuskg/food#LegumesAndLegumeProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LegumesAndLegumeProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#VegetablesAndLegumes> .
+<https://w3id.org/fuskg/food#LegumesAndLegumeProducts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Legumes and Legume Products category."@en .
+<https://w3id.org/fuskg/food#LegumesAndLegumeProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Legumes and Legume Products"@en .
+<https://w3id.org/fuskg/food#LegumesAndLegumeProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Legumi e Prodotti a Base di Legumi"@it .
+# 
+# https://w3id.org/fuskg/food#Leucine
+<https://w3id.org/fuskg/food#Leucine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Leucine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Leucine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Leucine amounts."@en .
+<https://w3id.org/fuskg/food#Leucine> <http://www.w3.org/2000/01/rdf-schema#label> "Leucina"@it .
+<https://w3id.org/fuskg/food#Leucine> <http://www.w3.org/2000/01/rdf-schema#label> "Leucine"@en .
+# 
+# https://w3id.org/fuskg/food#LinoleicAcid
+<https://w3id.org/fuskg/food#LinoleicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LinoleicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#LinoleicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Linoleic Acid amounts."@en .
+<https://w3id.org/fuskg/food#LinoleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Linoleico"@it .
+<https://w3id.org/fuskg/food#LinoleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Linoleic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#LinolenicAcid
+<https://w3id.org/fuskg/food#LinolenicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#LinolenicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#LinolenicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Linolenic Acid amounts."@en .
+<https://w3id.org/fuskg/food#LinolenicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Linolenico"@it .
+<https://w3id.org/fuskg/food#LinolenicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Linolenic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Lipid
+<https://w3id.org/fuskg/food#Lipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Lipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#Lipid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Lipids amounts."@en .
+<https://w3id.org/fuskg/food#Lipid> <http://www.w3.org/2000/01/rdf-schema#label> "Lipidi"@it .
+<https://w3id.org/fuskg/food#Lipid> <http://www.w3.org/2000/01/rdf-schema#label> "Lipids"@en .
+# 
+# https://w3id.org/fuskg/food#Lysine
+<https://w3id.org/fuskg/food#Lysine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Lysine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#Lysine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Lysine amounts."@en .
+<https://w3id.org/fuskg/food#Lysine> <http://www.w3.org/2000/01/rdf-schema#label> "Lisina"@it .
+<https://w3id.org/fuskg/food#Lysine> <http://www.w3.org/2000/01/rdf-schema#label> "Lysine"@en .
+# 
+# https://w3id.org/fuskg/food#Magnesium
+<https://w3id.org/fuskg/food#Magnesium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Magnesium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Magnesium> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Magnesium amounts."@en .
+<https://w3id.org/fuskg/food#Magnesium> <http://www.w3.org/2000/01/rdf-schema#label> "Magnesio"@it .
+<https://w3id.org/fuskg/food#Magnesium> <http://www.w3.org/2000/01/rdf-schema#label> "Magnesium"@en .
+# 
+# https://w3id.org/fuskg/food#Maltose
+<https://w3id.org/fuskg/food#Maltose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Maltose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#Maltose> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Maltose amounts."@en .
+<https://w3id.org/fuskg/food#Maltose> <http://www.w3.org/2000/01/rdf-schema#label> "Maltose"@en .
+<https://w3id.org/fuskg/food#Maltose> <http://www.w3.org/2000/01/rdf-schema#label> "Maltosio"@it .
+# 
+# https://w3id.org/fuskg/food#Manganese
+<https://w3id.org/fuskg/food#Manganese> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Manganese> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Manganese> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Manganese amounts."@en .
+<https://w3id.org/fuskg/food#Manganese> <http://www.w3.org/2000/01/rdf-schema#label> "Manganese"@en .
+<https://w3id.org/fuskg/food#Manganese> <http://www.w3.org/2000/01/rdf-schema#label> "Manganese"@it .
+# 
+# https://w3id.org/fuskg/food#MarinatedFish
+<https://w3id.org/fuskg/food#MarinatedFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#MarinatedFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedFish> .
+<https://w3id.org/fuskg/food#MarinatedFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Marinated Fish category."@en .
+<https://w3id.org/fuskg/food#MarinatedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Marinated Fish"@en .
+<https://w3id.org/fuskg/food#MarinatedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Sott'Olio"@it .
+# 
+# https://w3id.org/fuskg/food#MarinatedMushrooms
+<https://w3id.org/fuskg/food#MarinatedMushrooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#MarinatedMushrooms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedMushrooms> .
+<https://w3id.org/fuskg/food#MarinatedMushrooms> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Preserved Marinated Mushrooms category."@en .
+<https://w3id.org/fuskg/food#MarinatedMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Funghi Conservati Sott'Olio"@it .
+<https://w3id.org/fuskg/food#MarinatedMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Preserved Marinated Mushrooms"@en .
+# 
+# https://w3id.org/fuskg/food#Meat
+<https://w3id.org/fuskg/food#Meat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Meat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#Meat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Meat category."@en .
+<https://w3id.org/fuskg/food#Meat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne"@it .
+<https://w3id.org/fuskg/food#Meat> <http://www.w3.org/2000/01/rdf-schema#label> "Meat"@en .
+# 
+# https://w3id.org/fuskg/food#Methionine
+<https://w3id.org/fuskg/food#Methionine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Methionine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Methionine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Methionine amounts."@en .
+<https://w3id.org/fuskg/food#Methionine> <http://www.w3.org/2000/01/rdf-schema#label> "Methionine"@en .
+<https://w3id.org/fuskg/food#Methionine> <http://www.w3.org/2000/01/rdf-schema#label> "Metionina"@it .
+# 
+# https://w3id.org/fuskg/food#MilkAndDairyProducts
+<https://w3id.org/fuskg/food#MilkAndDairyProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#MilkAndDairyProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#MilkAndDairyProducts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Milk and Dairy Products category."@en .
+<https://w3id.org/fuskg/food#MilkAndDairyProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Latte e Prodotti Derivati"@it .
+<https://w3id.org/fuskg/food#MilkAndDairyProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Milk and Dairy Products"@en .
+# 
+# https://w3id.org/fuskg/food#MilkAndYogurt
+<https://w3id.org/fuskg/food#MilkAndYogurt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#MilkAndYogurt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#MilkAndDairyProducts> .
+<https://w3id.org/fuskg/food#MilkAndYogurt> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Milk and Yogurt category."@en .
+<https://w3id.org/fuskg/food#MilkAndYogurt> <http://www.w3.org/2000/01/rdf-schema#label> "Latte e Yogurt"@it .
+<https://w3id.org/fuskg/food#MilkAndYogurt> <http://www.w3.org/2000/01/rdf-schema#label> "Milk and Yogurt"@en .
+# 
+# https://w3id.org/fuskg/food#Mineral
+<https://w3id.org/fuskg/food#Mineral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Mineral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#Mineral> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting nutrients belonging to the Mineral category."@en .
+<https://w3id.org/fuskg/food#Mineral> <http://www.w3.org/2000/01/rdf-schema#label> "Minerali"@it .
+<https://w3id.org/fuskg/food#Mineral> <http://www.w3.org/2000/01/rdf-schema#label> "Minerals"@en .
+# 
+# https://w3id.org/fuskg/food#Mollusc
+<https://w3id.org/fuskg/food#Mollusc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Mollusc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FishAndSeafood> .
+<https://w3id.org/fuskg/food#Mollusc> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Mollusc category."@en .
+<https://w3id.org/fuskg/food#Mollusc> <http://www.w3.org/2000/01/rdf-schema#label> "Mollusc"@en .
+<https://w3id.org/fuskg/food#Mollusc> <http://www.w3.org/2000/01/rdf-schema#label> "Molluschi"@it .
+# 
+# https://w3id.org/fuskg/food#MonounsaturatedLipid
+<https://w3id.org/fuskg/food#MonounsaturatedLipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#MonounsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#MonounsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Monounsaturated Fat amounts."@en .
+<https://w3id.org/fuskg/food#MonounsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Grassi Monoinsaturi"@it .
+<https://w3id.org/fuskg/food#MonounsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Monounsaturated Fat"@en .
+# 
+# https://w3id.org/fuskg/food#Mushrooms
+<https://w3id.org/fuskg/food#Mushrooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Mushrooms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#Mushrooms> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Mushrooms category."@en .
+<https://w3id.org/fuskg/food#Mushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Funghi"@it .
+<https://w3id.org/fuskg/food#Mushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Mushrooms"@en .
+# 
+# https://w3id.org/fuskg/food#MyristicAcid
+<https://w3id.org/fuskg/food#MyristicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#MyristicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#MyristicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Myristic Acid amounts."@en .
+<https://w3id.org/fuskg/food#MyristicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Miristico"@it .
+<https://w3id.org/fuskg/food#MyristicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Myristic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#MyristoleicAcid
+<https://w3id.org/fuskg/food#MyristoleicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#MyristoleicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#MyristoleicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Myristoleic Acid amounts."@en .
+<https://w3id.org/fuskg/food#MyristoleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Miristoleico"@it .
+<https://w3id.org/fuskg/food#MyristoleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Myristoleic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Niacin
+<https://w3id.org/fuskg/food#Niacin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Niacin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#Niacin> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Niacin (Vitamin B3) amounts."@en .
+<https://w3id.org/fuskg/food#Niacin> <http://www.w3.org/2000/01/rdf-schema#label> "Niacin"@en .
+<https://w3id.org/fuskg/food#Niacin> <http://www.w3.org/2000/01/rdf-schema#label> "Niacina"@it .
+<https://w3id.org/fuskg/food#Niacin> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin B3"@en .
+<https://w3id.org/fuskg/food#Niacin> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina B3"@it .
+# 
+# https://w3id.org/fuskg/food#NonAlcoholicBeverages
+<https://w3id.org/fuskg/food#NonAlcoholicBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#NonAlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Beverages> .
+<https://w3id.org/fuskg/food#NonAlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Non-Alcoholic Beverages category."@en .
+<https://w3id.org/fuskg/food#NonAlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Bevande Analcoliche"@it .
+<https://w3id.org/fuskg/food#NonAlcoholicBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Non-Alcoholic Beverages"@en .
+# 
+# https://w3id.org/fuskg/food#NutSeedAndOliveProducts
+<https://w3id.org/fuskg/food#NutSeedAndOliveProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#NutSeedAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#NutSeedAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Nuts, Seeds and Olives category."@en .
+<https://w3id.org/fuskg/food#NutSeedAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Noci, Frutta a Guscio, Semi e Olive"@it .
+<https://w3id.org/fuskg/food#NutSeedAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Nuts, Seeds and Olives"@en .
+# 
+# https://w3id.org/fuskg/food#Nuts
+<https://w3id.org/fuskg/food#Nuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Nuts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#NutSeedAndOliveProducts> .
+<https://w3id.org/fuskg/food#Nuts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Nuts category."@en .
+<https://w3id.org/fuskg/food#Nuts> <http://www.w3.org/2000/01/rdf-schema#label> "Noci e Frutta a Guscio"@it .
+<https://w3id.org/fuskg/food#Nuts> <http://www.w3.org/2000/01/rdf-schema#label> "Nuts"@en .
+# 
+# https://w3id.org/fuskg/food#OleicAcid
+<https://w3id.org/fuskg/food#OleicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#OleicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#OleicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Oleic Acid amounts."@en .
+<https://w3id.org/fuskg/food#OleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Oleico"@it .
+<https://w3id.org/fuskg/food#OleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Oleic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#OlivesAndOliveProducts
+<https://w3id.org/fuskg/food#OlivesAndOliveProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#OlivesAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#NutSeedAndOliveProducts> .
+<https://w3id.org/fuskg/food#OlivesAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Olives and Olive Products category."@en .
+<https://w3id.org/fuskg/food#OlivesAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Olive e Prodotti di Olive"@it .
+<https://w3id.org/fuskg/food#OlivesAndOliveProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Olives and Olive Products"@en .
+# 
+# https://w3id.org/fuskg/food#OtherLeanRedMeat
+<https://w3id.org/fuskg/food#OtherLeanRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#OtherLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanRedMeat> .
+<https://w3id.org/fuskg/food#OtherLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Other Lean Red Meat category."@en .
+<https://w3id.org/fuskg/food#OtherLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Altra Carne Rossa Magra"@it .
+<https://w3id.org/fuskg/food#OtherLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Other Lean Red Meat"@en .
+# 
+# https://w3id.org/fuskg/food#OtherMeat
+<https://w3id.org/fuskg/food#OtherMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#OtherMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Meat> .
+<https://w3id.org/fuskg/food#OtherMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Other Meat Types category."@en .
+<https://w3id.org/fuskg/food#OtherMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Altri Tipi di Carne"@it .
+<https://w3id.org/fuskg/food#OtherMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Other Meat Types"@en .
+# 
+# https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid
+<https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to other Polyunsaturated Fat amounts."@en .
+<https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Altri Grassi Polinsaturi"@it .
+<https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Other Polyunsaturated Fat"@en .
+# 
+# https://w3id.org/fuskg/food#PalmiticAcid
+<https://w3id.org/fuskg/food#PalmiticAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PalmiticAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#PalmiticAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Palmitic Acid amounts."@en .
+<https://w3id.org/fuskg/food#PalmiticAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Palmitico"@it .
+<https://w3id.org/fuskg/food#PalmiticAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Palmitic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#PalmitoleicAcid
+<https://w3id.org/fuskg/food#PalmitoleicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PalmitoleicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#PalmitoleicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Palmitoleic Acid amounts."@en .
+<https://w3id.org/fuskg/food#PalmitoleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Palmitoleico"@it .
+<https://w3id.org/fuskg/food#PalmitoleicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Palmitoleic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#PantothenicAcid
+<https://w3id.org/fuskg/food#PantothenicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PantothenicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#PantothenicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Pantothenic Acid amounts."@en .
+<https://w3id.org/fuskg/food#PantothenicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Pantotenico"@it .
+<https://w3id.org/fuskg/food#PantothenicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Pantothenic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Pasta
+<https://w3id.org/fuskg/food#Pasta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Pasta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+<https://w3id.org/fuskg/food#Pasta> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Pasta category."@en .
+<https://w3id.org/fuskg/food#Pasta> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta"@en .
+<https://w3id.org/fuskg/food#Pasta> <http://www.w3.org/2000/01/rdf-schema#label> "Pasta"@it .
+# 
+# https://w3id.org/fuskg/food#Pastry
+<https://w3id.org/fuskg/food#Pastry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Pastry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#Pastry> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Pastry category."@en .
+<https://w3id.org/fuskg/food#Pastry> <http://www.w3.org/2000/01/rdf-schema#label> "Paste e Pasticcini"@it .
+<https://w3id.org/fuskg/food#Pastry> <http://www.w3.org/2000/01/rdf-schema#label> "Pastry"@en .
+# 
+# https://w3id.org/fuskg/food#Phenylalanine
+<https://w3id.org/fuskg/food#Phenylalanine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Phenylalanine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Phenylalanine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Phenylalanine amounts."@en .
+<https://w3id.org/fuskg/food#Phenylalanine> <http://www.w3.org/2000/01/rdf-schema#label> "Fenilalanina"@it .
+<https://w3id.org/fuskg/food#Phenylalanine> <http://www.w3.org/2000/01/rdf-schema#label> "Phenylalanine"@en .
+# 
+# https://w3id.org/fuskg/food#Phosphorus
+<https://w3id.org/fuskg/food#Phosphorus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Phosphorus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Phosphorus> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Phosphorus amounts."@en .
+<https://w3id.org/fuskg/food#Phosphorus> <http://www.w3.org/2000/01/rdf-schema#label> "Fosforo"@it .
+<https://w3id.org/fuskg/food#Phosphorus> <http://www.w3.org/2000/01/rdf-schema#label> "Phosphorus"@en .
+# 
+# https://w3id.org/fuskg/food#PizzaAndFocacciaBread
+<https://w3id.org/fuskg/food#PizzaAndFocacciaBread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PizzaAndFocacciaBread> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+<https://w3id.org/fuskg/food#PizzaAndFocacciaBread> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Pizzas and \"Focaccia\" Breadcategory."@en .
+<https://w3id.org/fuskg/food#PizzaAndFocacciaBread> <http://www.w3.org/2000/01/rdf-schema#label> "Pizzas and \"Focaccia\" Bread"@en .
+<https://w3id.org/fuskg/food#PizzaAndFocacciaBread> <http://www.w3.org/2000/01/rdf-schema#label> "Pizze e Focacce"@it .
+# 
+# https://w3id.org/fuskg/food#PolarAminoacid
+<https://w3id.org/fuskg/food#PolarAminoacid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Aminoacid> .
+<https://w3id.org/fuskg/food#PolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting nutrients belonging to the Polar Aminoacid category."@en .
+<https://w3id.org/fuskg/food#PolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#label> "Amminoacidi Polari"@it .
+<https://w3id.org/fuskg/food#PolarAminoacid> <http://www.w3.org/2000/01/rdf-schema#label> "Polar Aminoacid"@en .
+# 
+# https://w3id.org/fuskg/food#PolyunsaturatedLipid
+<https://w3id.org/fuskg/food#PolyunsaturatedLipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#PolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Polyunsaturated Fat amounts."@en .
+<https://w3id.org/fuskg/food#PolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Grassi Polinsaturi"@it .
+<https://w3id.org/fuskg/food#PolyunsaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Polyunsaturated Fat"@en .
+# 
+# https://w3id.org/fuskg/food#PorkFattyRedMeat
+<https://w3id.org/fuskg/food#PorkFattyRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PorkFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FattyRedMeat> .
+<https://w3id.org/fuskg/food#PorkFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Pork Fatty Red Meat category."@en .
+<https://w3id.org/fuskg/food#PorkFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Grassa di Suino"@it .
+<https://w3id.org/fuskg/food#PorkFattyRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Pork Fatty Red Meat"@en .
+# 
+# https://w3id.org/fuskg/food#PorkLeanRedMeat
+<https://w3id.org/fuskg/food#PorkLeanRedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PorkLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanRedMeat> .
+<https://w3id.org/fuskg/food#PorkLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Pork Lean Red Meat category."@en .
+<https://w3id.org/fuskg/food#PorkLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa Magra di Suino"@it .
+<https://w3id.org/fuskg/food#PorkLeanRedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Pork Lean Red Meat"@en .
+# 
+# https://w3id.org/fuskg/food#Potassium
+<https://w3id.org/fuskg/food#Potassium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Potassium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Potassium> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Potassium amounts."@en .
+<https://w3id.org/fuskg/food#Potassium> <http://www.w3.org/2000/01/rdf-schema#label> "Potassio"@it .
+<https://w3id.org/fuskg/food#Potassium> <http://www.w3.org/2000/01/rdf-schema#label> "Potassium"@en .
+# 
+# https://w3id.org/fuskg/food#PoultryFattyWhiteMeat
+<https://w3id.org/fuskg/food#PoultryFattyWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PoultryFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FattyWhiteMeat> .
+<https://w3id.org/fuskg/food#PoultryFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Poultry with Skin or Poultry Fatty Meat category."@en .
+<https://w3id.org/fuskg/food#PoultryFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Pollame con Pelle"@it .
+<https://w3id.org/fuskg/food#PoultryFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Poultry with Skin or Poultry Fatty Meat"@en .
+# 
+# https://w3id.org/fuskg/food#PoultryLeanWhiteMeat
+<https://w3id.org/fuskg/food#PoultryLeanWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PoultryLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanWhiteMeat> .
+<https://w3id.org/fuskg/food#PoultryLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Skinned Poultry Lean Meat category."@en .
+<https://w3id.org/fuskg/food#PoultryLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Pollame Senza Pelle"@it .
+<https://w3id.org/fuskg/food#PoultryLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Skinned Poultry Lean Meat"@en .
+# 
+# https://w3id.org/fuskg/food#PowderedMilk
+<https://w3id.org/fuskg/food#PowderedMilk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#PowderedMilk> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#MilkAndYogurt> .
+<https://w3id.org/fuskg/food#PowderedMilk> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Powdered Milk category."@en .
+<https://w3id.org/fuskg/food#PowderedMilk> <http://www.w3.org/2000/01/rdf-schema#label> "Latte in Polvere"@it .
+<https://w3id.org/fuskg/food#PowderedMilk> <http://www.w3.org/2000/01/rdf-schema#label> "Powdered Milk"@en .
+# 
+# https://w3id.org/fuskg/food#ProcessedCereals
+<https://w3id.org/fuskg/food#ProcessedCereals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedCereals> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Cereals> .
+<https://w3id.org/fuskg/food#ProcessedCereals> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Cereals category."@en .
+<https://w3id.org/fuskg/food#ProcessedCereals> <http://www.w3.org/2000/01/rdf-schema#label> "Cereali Confezionati e Lavorati"@it .
+<https://w3id.org/fuskg/food#ProcessedCereals> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Cereals"@en .
+# 
+# https://w3id.org/fuskg/food#ProcessedFish
+<https://w3id.org/fuskg/food#ProcessedFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Fish> .
+<https://w3id.org/fuskg/food#ProcessedFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Fish category."@en .
+<https://w3id.org/fuskg/food#ProcessedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Confezionato o Lavorato"@it .
+<https://w3id.org/fuskg/food#ProcessedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Fish"@en .
+# 
+# https://w3id.org/fuskg/food#ProcessedLegumes
+<https://w3id.org/fuskg/food#ProcessedLegumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedLegumes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LegumesAndLegumeProducts> .
+<https://w3id.org/fuskg/food#ProcessedLegumes> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Legumes category."@en .
+<https://w3id.org/fuskg/food#ProcessedLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Legumi Confezionati e Lavorati"@it .
+<https://w3id.org/fuskg/food#ProcessedLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Legumes"@en .
+# 
+# https://w3id.org/fuskg/food#ProcessedMollusc
+<https://w3id.org/fuskg/food#ProcessedMollusc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedMollusc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mollusc> .
+<https://w3id.org/fuskg/food#ProcessedMollusc> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Mollusc category."@en .
+<https://w3id.org/fuskg/food#ProcessedMollusc> <http://www.w3.org/2000/01/rdf-schema#label> "Molluschi Confezionati e Lavorati"@it .
+<https://w3id.org/fuskg/food#ProcessedMollusc> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Mollusc"@en .
+# 
+# https://w3id.org/fuskg/food#ProcessedMushrooms
+<https://w3id.org/fuskg/food#ProcessedMushrooms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedMushrooms> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mushrooms> .
+<https://w3id.org/fuskg/food#ProcessedMushrooms> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Mushrooms category."@en .
+<https://w3id.org/fuskg/food#ProcessedMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Funghi Confezionati e Lavorati"@it .
+<https://w3id.org/fuskg/food#ProcessedMushrooms> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Mushrooms"@en .
+# 
+# https://w3id.org/fuskg/food#ProcessedShellfish
+<https://w3id.org/fuskg/food#ProcessedShellfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedShellfish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Shellfish> .
+<https://w3id.org/fuskg/food#ProcessedShellfish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Shellfish category."@en .
+<https://w3id.org/fuskg/food#ProcessedShellfish> <http://www.w3.org/2000/01/rdf-schema#label> "Crostacei Confezionati"@it .
+<https://w3id.org/fuskg/food#ProcessedShellfish> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Shellfish"@en .
+# 
+# https://w3id.org/fuskg/food#ProcessedStarchyVegetables
+<https://w3id.org/fuskg/food#ProcessedStarchyVegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#StarchyVegetables> .
+<https://w3id.org/fuskg/food#ProcessedStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Starchy Vegetables category."@en .
+<https://w3id.org/fuskg/food#ProcessedStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Starchy Vegetables"@en .
+<https://w3id.org/fuskg/food#ProcessedStarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure Amidacee Conservate e Lavorate"@it .
+# 
+# https://w3id.org/fuskg/food#ProcessedVegetables
+<https://w3id.org/fuskg/food#ProcessedVegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#ProcessedVegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#StarchyFreeVegetables> .
+<https://w3id.org/fuskg/food#ProcessedVegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Processed Starchy Free Vegetables category."@en .
+<https://w3id.org/fuskg/food#ProcessedVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Processed Starchy Free Vegetables"@en .
+<https://w3id.org/fuskg/food#ProcessedVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure e Ortaggi Conservati a Basso Contenuto di Amido"@it .
+# 
+# https://w3id.org/fuskg/food#Proline
+<https://w3id.org/fuskg/food#Proline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Proline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Proline> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Proline amounts."@en .
+<https://w3id.org/fuskg/food#Proline> <http://www.w3.org/2000/01/rdf-schema#label> "Prolina"@it .
+<https://w3id.org/fuskg/food#Proline> <http://www.w3.org/2000/01/rdf-schema#label> "Proline"@en .
+# 
+# https://w3id.org/fuskg/food#Protein
+<https://w3id.org/fuskg/food#Protein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Protein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#Protein> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Protein amounts."@en .
+<https://w3id.org/fuskg/food#Protein> <http://www.w3.org/2000/01/rdf-schema#label> "Protein"@en .
+<https://w3id.org/fuskg/food#Protein> <http://www.w3.org/2000/01/rdf-schema#label> "Proteine"@it .
+# 
+# https://w3id.org/fuskg/food#RabbitFattyWhiteMeat
+<https://w3id.org/fuskg/food#RabbitFattyWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#RabbitFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FattyWhiteMeat> .
+<https://w3id.org/fuskg/food#RabbitFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Rabbit Fatty White Meat category."@en .
+<https://w3id.org/fuskg/food#RabbitFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Grassa di Coniglio"@it .
+<https://w3id.org/fuskg/food#RabbitFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Rabbit Fatty White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#RabbitLeanWhiteMeat
+<https://w3id.org/fuskg/food#RabbitLeanWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#RabbitLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanWhiteMeat> .
+<https://w3id.org/fuskg/food#RabbitLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Rabbit Lean White Meat category."@en .
+<https://w3id.org/fuskg/food#RabbitLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Magra di Coniglio"@it .
+<https://w3id.org/fuskg/food#RabbitLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Rabbit Lean White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#RedMeat
+<https://w3id.org/fuskg/food#RedMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#RedMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Meat> .
+<https://w3id.org/fuskg/food#RedMeat> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/fuskg/food#WhiteMeat> .
+<https://w3id.org/fuskg/food#RedMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Red Meat category."@en .
+<https://w3id.org/fuskg/food#RedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Rossa"@it .
+<https://w3id.org/fuskg/food#RedMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Red Meat"@en .
+# 
+# https://w3id.org/fuskg/food#RetinolEquivalent
+<https://w3id.org/fuskg/food#RetinolEquivalent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#RetinolEquivalent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#RetinolEquivalent> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Retinol Equivalent amounts."@en .
+<https://w3id.org/fuskg/food#RetinolEquivalent> <http://www.w3.org/2000/01/rdf-schema#label> "Retinol Equivalent"@en .
+<https://w3id.org/fuskg/food#RetinolEquivalent> <http://www.w3.org/2000/01/rdf-schema#label> "Retinolo Equivalente"@it .
+# 
+# https://w3id.org/fuskg/food#Rice
+<https://w3id.org/fuskg/food#Rice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Rice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+<https://w3id.org/fuskg/food#Rice> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Rice category."@en .
+<https://w3id.org/fuskg/food#Rice> <http://www.w3.org/2000/01/rdf-schema#label> "Rice"@en .
+<https://w3id.org/fuskg/food#Rice> <http://www.w3.org/2000/01/rdf-schema#label> "Riso"@it .
+# 
+# https://w3id.org/fuskg/food#RoastedNuts
+<https://w3id.org/fuskg/food#RoastedNuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#RoastedNuts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Nuts> .
+<https://w3id.org/fuskg/food#RoastedNuts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Roasted Nuts category."@en .
+<https://w3id.org/fuskg/food#RoastedNuts> <http://www.w3.org/2000/01/rdf-schema#label> "Noci Tostate"@it .
+<https://w3id.org/fuskg/food#RoastedNuts> <http://www.w3.org/2000/01/rdf-schema#label> "Roasted Nuts"@en .
+# 
+# https://w3id.org/fuskg/food#Salt
+<https://w3id.org/fuskg/food#Salt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Salt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#Salt> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Salt category."@en .
+<https://w3id.org/fuskg/food#Salt> <http://www.w3.org/2000/01/rdf-schema#label> "Sale"@it .
+<https://w3id.org/fuskg/food#Salt> <http://www.w3.org/2000/01/rdf-schema#label> "Salt"@en .
+# 
+# https://w3id.org/fuskg/food#SaltedFish
+<https://w3id.org/fuskg/food#SaltedFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SaltedFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedFish> .
+<https://w3id.org/fuskg/food#SaltedFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Salted Fish category."@en .
+<https://w3id.org/fuskg/food#SaltedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce sotto Sale"@it .
+<https://w3id.org/fuskg/food#SaltedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Salted Fish"@en .
+# 
+# https://w3id.org/fuskg/food#SaturatedLipid
+<https://w3id.org/fuskg/food#SaturatedLipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#SaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Saturated Lipids amounts."@en .
+<https://w3id.org/fuskg/food#SaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Lipidi Saturi"@it .
+<https://w3id.org/fuskg/food#SaturatedLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Saturated Lipids"@en .
+# 
+# https://w3id.org/fuskg/food#Sausages
+<https://w3id.org/fuskg/food#Sausages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Sausages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SausagesAndColdCuts> .
+<https://w3id.org/fuskg/food#Sausages> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Sausages category."@en .
+<https://w3id.org/fuskg/food#Sausages> <http://www.w3.org/2000/01/rdf-schema#label> "Insaccati"@it .
+<https://w3id.org/fuskg/food#Sausages> <http://www.w3.org/2000/01/rdf-schema#label> "Sausages"@en .
+# 
+# https://w3id.org/fuskg/food#SausagesAndColdCuts
+<https://w3id.org/fuskg/food#SausagesAndColdCuts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SausagesAndColdCuts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#SausagesAndColdCuts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Sausages and Cold Cuts category."@en .
+<https://w3id.org/fuskg/food#SausagesAndColdCuts> <http://www.w3.org/2000/01/rdf-schema#label> "Salumi e Insaccati"@it .
+<https://w3id.org/fuskg/food#SausagesAndColdCuts> <http://www.w3.org/2000/01/rdf-schema#label> "Sausages and Cold Cuts"@en .
+# 
+# https://w3id.org/fuskg/food#Seeds
+<https://w3id.org/fuskg/food#Seeds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Seeds> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#NutSeedAndOliveProducts> .
+<https://w3id.org/fuskg/food#Seeds> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Seeds category."@en .
+<https://w3id.org/fuskg/food#Seeds> <http://www.w3.org/2000/01/rdf-schema#label> "Seeds"@en .
+<https://w3id.org/fuskg/food#Seeds> <http://www.w3.org/2000/01/rdf-schema#label> "Semi"@it .
+# 
+# https://w3id.org/fuskg/food#Selenium
+<https://w3id.org/fuskg/food#Selenium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Selenium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Selenium> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Selenium amounts."@en .
+<https://w3id.org/fuskg/food#Selenium> <http://www.w3.org/2000/01/rdf-schema#label> "Selenio"@it .
+<https://w3id.org/fuskg/food#Selenium> <http://www.w3.org/2000/01/rdf-schema#label> "Selenium"@en .
+# 
+# https://w3id.org/fuskg/food#Serine
+<https://w3id.org/fuskg/food#Serine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Serine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#Serine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Serina amounts."@en .
+<https://w3id.org/fuskg/food#Serine> <http://www.w3.org/2000/01/rdf-schema#label> "Serina"@it .
+<https://w3id.org/fuskg/food#Serine> <http://www.w3.org/2000/01/rdf-schema#label> "Serine"@en .
+# 
+# https://w3id.org/fuskg/food#Shellfish
+<https://w3id.org/fuskg/food#Shellfish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Shellfish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FishAndSeafood> .
+<https://w3id.org/fuskg/food#Shellfish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Shellfish category."@en .
+<https://w3id.org/fuskg/food#Shellfish> <http://www.w3.org/2000/01/rdf-schema#label> "Crostacei"@it .
+<https://w3id.org/fuskg/food#Shellfish> <http://www.w3.org/2000/01/rdf-schema#label> "Shellfish"@en .
+# 
+# https://w3id.org/fuskg/food#SmokedFish
+<https://w3id.org/fuskg/food#SmokedFish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SmokedFish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedFish> .
+<https://w3id.org/fuskg/food#SmokedFish> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Smoked Fish category."@en .
+<https://w3id.org/fuskg/food#SmokedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Pesce Affumicato"@it .
+<https://w3id.org/fuskg/food#SmokedFish> <http://www.w3.org/2000/01/rdf-schema#label> "Smoked Fish"@en .
+# 
+# https://w3id.org/fuskg/food#Sodium
+<https://w3id.org/fuskg/food#Sodium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Sodium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Sodium> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Sodium amounts."@en .
+<https://w3id.org/fuskg/food#Sodium> <http://www.w3.org/2000/01/rdf-schema#label> "Sodio"@it .
+<https://w3id.org/fuskg/food#Sodium> <http://www.w3.org/2000/01/rdf-schema#label> "Sodium"@en .
+# 
+# https://w3id.org/fuskg/food#SoyProducts
+<https://w3id.org/fuskg/food#SoyProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SoyProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedLegumes> .
+<https://w3id.org/fuskg/food#SoyProducts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Soy Products category."@en .
+<https://w3id.org/fuskg/food#SoyProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Prodotti a Base di Soia"@it .
+<https://w3id.org/fuskg/food#SoyProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Soy Products"@en .
+# 
+# https://w3id.org/fuskg/food#SpecialBread
+<https://w3id.org/fuskg/food#SpecialBread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SpecialBread> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Bread> .
+<https://w3id.org/fuskg/food#SpecialBread> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Spercial Bread category."@en .
+<https://w3id.org/fuskg/food#SpecialBread> <http://www.w3.org/2000/01/rdf-schema#label> "Pane Speciale"@it .
+<https://w3id.org/fuskg/food#SpecialBread> <http://www.w3.org/2000/01/rdf-schema#label> "Spercial Bread"@en .
+# 
+# https://w3id.org/fuskg/food#Spices
+<https://w3id.org/fuskg/food#Spices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Spices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#Spices> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Spices category."@en .
+<https://w3id.org/fuskg/food#Spices> <http://www.w3.org/2000/01/rdf-schema#label> "Spezie"@it .
+<https://w3id.org/fuskg/food#Spices> <http://www.w3.org/2000/01/rdf-schema#label> "Spices"@en .
+# 
+# https://w3id.org/fuskg/food#SpiritsAndLiquor
+<https://w3id.org/fuskg/food#SpiritsAndLiquor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SpiritsAndLiquor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#AlcoholicBeverages> .
+<https://w3id.org/fuskg/food#SpiritsAndLiquor> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Spirits and Liquor category."@en .
+<https://w3id.org/fuskg/food#SpiritsAndLiquor> <http://www.w3.org/2000/01/rdf-schema#label> "Spirits and Liquor"@en .
+<https://w3id.org/fuskg/food#SpiritsAndLiquor> <http://www.w3.org/2000/01/rdf-schema#label> "Superalcolici"@it .
+# 
+# https://w3id.org/fuskg/food#Starch
+<https://w3id.org/fuskg/food#Starch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Starch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#Starch> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Starch amounts."@en .
+<https://w3id.org/fuskg/food#Starch> <http://www.w3.org/2000/01/rdf-schema#label> "Amido"@it .
+<https://w3id.org/fuskg/food#Starch> <http://www.w3.org/2000/01/rdf-schema#label> "Starch"@en .
+# 
+# https://w3id.org/fuskg/food#StarchyFreeVegetables
+<https://w3id.org/fuskg/food#StarchyFreeVegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#StarchyFreeVegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vegetables> .
+<https://w3id.org/fuskg/food#StarchyFreeVegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Starchy Free Vegetables category."@en .
+<https://w3id.org/fuskg/food#StarchyFreeVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Starchy Free Vegetables"@en .
+<https://w3id.org/fuskg/food#StarchyFreeVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure con Basso Contenuto di amido"@it .
+# 
+# https://w3id.org/fuskg/food#StarchyVegetables
+<https://w3id.org/fuskg/food#StarchyVegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#StarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vegetables> .
+<https://w3id.org/fuskg/food#StarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Starchy Vegetables category."@en .
+<https://w3id.org/fuskg/food#StarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Starchy Vegetables"@en .
+<https://w3id.org/fuskg/food#StarchyVegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure Amidacee"@it .
+# 
+# https://w3id.org/fuskg/food#StearicAcid
+<https://w3id.org/fuskg/food#StearicAcid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#StearicAcid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#StearicAcid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Stearic Acid amounts."@en .
+<https://w3id.org/fuskg/food#StearicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Acido Stearico"@it .
+<https://w3id.org/fuskg/food#StearicAcid> <http://www.w3.org/2000/01/rdf-schema#label> "Stearic Acid"@en .
+# 
+# https://w3id.org/fuskg/food#Sucrose
+<https://w3id.org/fuskg/food#Sucrose> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Sucrose> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Carbs> .
+<https://w3id.org/fuskg/food#Sucrose> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Sucrose amounts."@en .
+<https://w3id.org/fuskg/food#Sucrose> <http://www.w3.org/2000/01/rdf-schema#label> "Saccarosio"@it .
+<https://w3id.org/fuskg/food#Sucrose> <http://www.w3.org/2000/01/rdf-schema#label> "Sucrose"@en .
+# 
+# https://w3id.org/fuskg/food#SugarAndSweeteners
+<https://w3id.org/fuskg/food#SugarAndSweeteners> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SugarAndSweeteners> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#SugarAndSweeteners> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Sugar category."@en .
+<https://w3id.org/fuskg/food#SugarAndSweeteners> <http://www.w3.org/2000/01/rdf-schema#label> "Sugar and Sweeteners"@en .
+<https://w3id.org/fuskg/food#SugarAndSweeteners> <http://www.w3.org/2000/01/rdf-schema#label> "Zucchero e Dolcificanti"@it .
+# 
+# https://w3id.org/fuskg/food#SugarAndSweets
+<https://w3id.org/fuskg/food#SugarAndSweets> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SugarAndSweets> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#SugarAndSweets> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Sugar and Sweets category."@en .
+<https://w3id.org/fuskg/food#SugarAndSweets> <http://www.w3.org/2000/01/rdf-schema#label> "Sugar and Sweets"@en .
+<https://w3id.org/fuskg/food#SugarAndSweets> <http://www.w3.org/2000/01/rdf-schema#label> "Zucchero e Dolci"@it .
+# 
+# https://w3id.org/fuskg/food#Sulfur
+<https://w3id.org/fuskg/food#Sulfur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Sulfur> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Sulfur> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Sulfur amounts."@en .
+<https://w3id.org/fuskg/food#Sulfur> <http://www.w3.org/2000/01/rdf-schema#label> "Sulfur"@en .
+<https://w3id.org/fuskg/food#Sulfur> <http://www.w3.org/2000/01/rdf-schema#label> "Zolfo"@it .
+# 
+# https://w3id.org/fuskg/food#SweetBeveragesAndJuices
+<https://w3id.org/fuskg/food#SweetBeveragesAndJuices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SweetBeveragesAndJuices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#NonAlcoholicBeverages> .
+<https://w3id.org/fuskg/food#SweetBeveragesAndJuices> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Sweet Beverages and Juices category."@en .
+<https://w3id.org/fuskg/food#SweetBeveragesAndJuices> <http://www.w3.org/2000/01/rdf-schema#label> "Bevande Zuccherate e Succhi"@it .
+<https://w3id.org/fuskg/food#SweetBeveragesAndJuices> <http://www.w3.org/2000/01/rdf-schema#label> "Sweet Beverages and Juices"@en .
+# 
+# https://w3id.org/fuskg/food#SweetSnacksAndBrioches
+<https://w3id.org/fuskg/food#SweetSnacksAndBrioches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SweetSnacksAndBrioches> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#SweetSnacksAndBrioches> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Sweet Snacks and Brioches category."@en .
+<https://w3id.org/fuskg/food#SweetSnacksAndBrioches> <http://www.w3.org/2000/01/rdf-schema#label> "Merendine Dolci e Brioches"@it .
+<https://w3id.org/fuskg/food#SweetSnacksAndBrioches> <http://www.w3.org/2000/01/rdf-schema#label> "Sweet Snacks and Brioches"@en .
+# 
+# https://w3id.org/fuskg/food#SweetSpreads
+<https://w3id.org/fuskg/food#SweetSpreads> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SweetSpreads> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#SweetSpreads> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Sweet Spreads category."@en .
+<https://w3id.org/fuskg/food#SweetSpreads> <http://www.w3.org/2000/01/rdf-schema#label> "Dolci Spalmabili"@it .
+<https://w3id.org/fuskg/food#SweetSpreads> <http://www.w3.org/2000/01/rdf-schema#label> "Sweet Spreads"@en .
+# 
+# https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts
+<https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Products to Make Sweets and Cakes category."@en .
+<https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Prodotti per Fare Dolci e Torte"@it .
+<https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts> <http://www.w3.org/2000/01/rdf-schema#label> "Products to Make Sweets and Cakes"@en .
+# 
+# https://w3id.org/fuskg/food#Syrups
+<https://w3id.org/fuskg/food#Syrups> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Syrups> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#SugarAndSweets> .
+<https://w3id.org/fuskg/food#Syrups> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Syrups category."@en .
+<https://w3id.org/fuskg/food#Syrups> <http://www.w3.org/2000/01/rdf-schema#label> "Sciroppi"@it .
+<https://w3id.org/fuskg/food#Syrups> <http://www.w3.org/2000/01/rdf-schema#label> "Syrups"@en .
+# 
+# https://w3id.org/fuskg/food#TableCream
+<https://w3id.org/fuskg/food#TableCream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#TableCream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#MilkAndDairyProducts> .
+<https://w3id.org/fuskg/food#TableCream> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Table Cream category."@en .
+<https://w3id.org/fuskg/food#TableCream> <http://www.w3.org/2000/01/rdf-schema#label> "Panna"@it .
+<https://w3id.org/fuskg/food#TableCream> <http://www.w3.org/2000/01/rdf-schema#label> "Table Cream"@en .
+# 
+# https://w3id.org/fuskg/food#TeaBeverages
+<https://w3id.org/fuskg/food#TeaBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#TeaBeverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#NonAlcoholicBeverages> .
+<https://w3id.org/fuskg/food#TeaBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Tea Based Beverages category."@en .
+<https://w3id.org/fuskg/food#TeaBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Bevande a Base di T "@it .
+<https://w3id.org/fuskg/food#TeaBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Tea Based Beverages"@en .
+# 
+# https://w3id.org/fuskg/food#Threonine
+<https://w3id.org/fuskg/food#Threonine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Threonine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#Threonine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Threonine amounts."@en .
+<https://w3id.org/fuskg/food#Threonine> <http://www.w3.org/2000/01/rdf-schema#label> "Threonine"@en .
+<https://w3id.org/fuskg/food#Threonine> <http://www.w3.org/2000/01/rdf-schema#label> "Treonina"@it .
+# 
+# https://w3id.org/fuskg/food#TomatoSauces
+<https://w3id.org/fuskg/food#TomatoSauces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#TomatoSauces> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedVegetables> .
+<https://w3id.org/fuskg/food#TomatoSauces> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Tomato Sauces category."@en .
+<https://w3id.org/fuskg/food#TomatoSauces> <http://www.w3.org/2000/01/rdf-schema#label> "Salse di Pomodoro"@it .
+<https://w3id.org/fuskg/food#TomatoSauces> <http://www.w3.org/2000/01/rdf-schema#label> "Tomato Sauces"@en .
+# 
+# https://w3id.org/fuskg/food#Tryptophan
+<https://w3id.org/fuskg/food#Tryptophan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Tryptophan> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#Tryptophan> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Tryptophan amounts."@en .
+<https://w3id.org/fuskg/food#Tryptophan> <http://www.w3.org/2000/01/rdf-schema#label> "Triptofano"@it .
+<https://w3id.org/fuskg/food#Tryptophan> <http://www.w3.org/2000/01/rdf-schema#label> "Tryptophan"@en .
+# 
+# https://w3id.org/fuskg/food#Tyrosine
+<https://w3id.org/fuskg/food#Tyrosine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Tyrosine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#PolarAminoacid> .
+<https://w3id.org/fuskg/food#Tyrosine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Tyrosine amounts."@en .
+<https://w3id.org/fuskg/food#Tyrosine> <http://www.w3.org/2000/01/rdf-schema#label> "Tirosina"@it .
+<https://w3id.org/fuskg/food#Tyrosine> <http://www.w3.org/2000/01/rdf-schema#label> "Tyrosine"@en .
+# 
+# https://w3id.org/fuskg/food#Valine
+<https://w3id.org/fuskg/food#Valine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Valine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ApolarAminoacid> .
+<https://w3id.org/fuskg/food#Valine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Valine amounts."@en .
+<https://w3id.org/fuskg/food#Valine> <http://www.w3.org/2000/01/rdf-schema#label> "Valina"@it .
+<https://w3id.org/fuskg/food#Valine> <http://www.w3.org/2000/01/rdf-schema#label> "Valine"@en .
+# 
+# https://w3id.org/fuskg/food#VealFattyWhiteMeat
+<https://w3id.org/fuskg/food#VealFattyWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VealFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FattyWhiteMeat> .
+<https://w3id.org/fuskg/food#VealFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Veal Fatty White Meat category."@en .
+<https://w3id.org/fuskg/food#VealFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Grassa di Vitello"@it .
+<https://w3id.org/fuskg/food#VealFattyWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Veal Fatty White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#VealLeanWhiteMeat
+<https://w3id.org/fuskg/food#VealLeanWhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VealLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#LeanWhiteMeat> .
+<https://w3id.org/fuskg/food#VealLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Veal Lean White Meat category."@en .
+<https://w3id.org/fuskg/food#VealLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca Magra di Vitello"@it .
+<https://w3id.org/fuskg/food#VealLeanWhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Veal Lean White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#VegetableBasedBeverages
+<https://w3id.org/fuskg/food#VegetableBasedBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetableBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#ProcessedVegetables> .
+<https://w3id.org/fuskg/food#VegetableBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Vegetable Based Beverages category."@en .
+<https://w3id.org/fuskg/food#VegetableBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Bevande di Verdura"@it .
+<https://w3id.org/fuskg/food#VegetableBasedBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetable Based Beverages"@en .
+# 
+# https://w3id.org/fuskg/food#VegetableLipid
+<https://w3id.org/fuskg/food#VegetableLipid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetableLipid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Lipid> .
+<https://w3id.org/fuskg/food#VegetableLipid> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vegetal Protein amounts."@en .
+<https://w3id.org/fuskg/food#VegetableLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Lipidi Vegetali"@it .
+<https://w3id.org/fuskg/food#VegetableLipid> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetable Lipids"@en .
+# 
+# https://w3id.org/fuskg/food#Vegetables
+<https://w3id.org/fuskg/food#Vegetables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Vegetables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#VegetablesAndLegumes> .
+<https://w3id.org/fuskg/food#Vegetables> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Vegetables category."@en .
+<https://w3id.org/fuskg/food#Vegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetables"@en .
+<https://w3id.org/fuskg/food#Vegetables> <http://www.w3.org/2000/01/rdf-schema#label> "Verdure e Ortaggi"@it .
+# 
+# https://w3id.org/fuskg/food#VegetablesAndLegumes
+<https://w3id.org/fuskg/food#VegetablesAndLegumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#BasicFood> .
+<https://w3id.org/fuskg/food#VegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Vegetables and Legumes category."@en .
+<https://w3id.org/fuskg/food#VegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetables and Legumes"@en .
+<https://w3id.org/fuskg/food#VegetablesAndLegumes> <http://www.w3.org/2000/01/rdf-schema#label> "Verdura, Ortaggi e Legumi"@it .
+# 
+# https://w3id.org/fuskg/food#VegetalEVOOils
+<https://w3id.org/fuskg/food#VegetalEVOOils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetalEVOOils> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#VegetalOils> .
+<https://w3id.org/fuskg/food#VegetalEVOOils> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Vegetal Extra-Vergin Olive Oils category."@en .
+<https://w3id.org/fuskg/food#VegetalEVOOils> <http://www.w3.org/2000/01/rdf-schema#label> "Oli Extra Vergine di Oliva Vegetali"@it .
+<https://w3id.org/fuskg/food#VegetalEVOOils> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetal Extra-Vergin Olive Oils"@en .
+# 
+# https://w3id.org/fuskg/food#VegetalFats
+<https://w3id.org/fuskg/food#VegetalFats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetalFats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#VegetalFatsAndOils> .
+<https://w3id.org/fuskg/food#VegetalFats> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Vegetal Fats category."@en .
+<https://w3id.org/fuskg/food#VegetalFats> <http://www.w3.org/2000/01/rdf-schema#label> "Grassi Vegetali"@it .
+<https://w3id.org/fuskg/food#VegetalFats> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetal Fats"@en .
+# 
+# https://w3id.org/fuskg/food#VegetalFatsAndOils
+<https://w3id.org/fuskg/food#VegetalFatsAndOils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#FatsAndOils> .
+<https://w3id.org/fuskg/food#VegetalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Vegetal Fats and Oils category."@en .
+<https://w3id.org/fuskg/food#VegetalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#label> "Grassi e Oli Vegetali"@it .
+<https://w3id.org/fuskg/food#VegetalFatsAndOils> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetal Fats and Oils"@en .
+# 
+# https://w3id.org/fuskg/food#VegetalOils
+<https://w3id.org/fuskg/food#VegetalOils> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetalOils> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#VegetalFatsAndOils> .
+<https://w3id.org/fuskg/food#VegetalOils> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Vegetal Oils category."@en .
+<https://w3id.org/fuskg/food#VegetalOils> <http://www.w3.org/2000/01/rdf-schema#label> "Oli Vegetali"@it .
+<https://w3id.org/fuskg/food#VegetalOils> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetal Oils"@en .
+# 
+# https://w3id.org/fuskg/food#VegetalProtein
+<https://w3id.org/fuskg/food#VegetalProtein> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VegetalProtein> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Protein> .
+<https://w3id.org/fuskg/food#VegetalProtein> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vegetal Protein amounts."@en .
+<https://w3id.org/fuskg/food#VegetalProtein> <http://www.w3.org/2000/01/rdf-schema#label> "Proteine Vegetali"@it .
+<https://w3id.org/fuskg/food#VegetalProtein> <http://www.w3.org/2000/01/rdf-schema#label> "Vegetal Protein"@en .
+# 
+# https://w3id.org/fuskg/food#Vitamin
+<https://w3id.org/fuskg/food#Vitamin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Vitamin> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/food#Vitamin> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting nutrients belonging to the Vitamin category."@en .
+<https://w3id.org/fuskg/food#Vitamin> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin"@en .
+<https://w3id.org/fuskg/food#Vitamin> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamine"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminA
+<https://w3id.org/fuskg/food#VitaminA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminA> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin A amounts."@en .
+<https://w3id.org/fuskg/food#VitaminA> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin A"@en .
+<https://w3id.org/fuskg/food#VitaminA> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina A"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminB1
+<https://w3id.org/fuskg/food#VitaminB1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminB1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminB1> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin B1 amounts."@en .
+<https://w3id.org/fuskg/food#VitaminB1> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin B1"@en .
+<https://w3id.org/fuskg/food#VitaminB1> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina B1"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminB12
+<https://w3id.org/fuskg/food#VitaminB12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminB12> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminB12> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin B12 amounts."@en .
+<https://w3id.org/fuskg/food#VitaminB12> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin B12"@en .
+<https://w3id.org/fuskg/food#VitaminB12> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina B12"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminB2
+<https://w3id.org/fuskg/food#VitaminB2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminB2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminB2> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin B2 amounts."@en .
+<https://w3id.org/fuskg/food#VitaminB2> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin B2"@en .
+<https://w3id.org/fuskg/food#VitaminB2> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina B2"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminB6
+<https://w3id.org/fuskg/food#VitaminB6> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminB6> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminB6> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin B6 amounts."@en .
+<https://w3id.org/fuskg/food#VitaminB6> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin B6"@en .
+<https://w3id.org/fuskg/food#VitaminB6> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina B6"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminC
+<https://w3id.org/fuskg/food#VitaminC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminC> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin C amounts."@en .
+<https://w3id.org/fuskg/food#VitaminC> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin C"@en .
+<https://w3id.org/fuskg/food#VitaminC> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina C"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminD
+<https://w3id.org/fuskg/food#VitaminD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminD> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminD> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin D amounts."@en .
+<https://w3id.org/fuskg/food#VitaminD> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin D"@en .
+<https://w3id.org/fuskg/food#VitaminD> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina D"@it .
+# 
+# https://w3id.org/fuskg/food#VitaminE
+<https://w3id.org/fuskg/food#VitaminE> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#VitaminE> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Vitamin> .
+<https://w3id.org/fuskg/food#VitaminE> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Vitamin E amounts."@en .
+<https://w3id.org/fuskg/food#VitaminE> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamin E"@en .
+<https://w3id.org/fuskg/food#VitaminE> <http://www.w3.org/2000/01/rdf-schema#label> "Vitamina E"@it .
+# 
+# https://w3id.org/fuskg/food#WaterBeverage
+<https://w3id.org/fuskg/food#WaterBeverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#WaterBeverage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Beverages> .
+<https://w3id.org/fuskg/food#WaterBeverage> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Water category."@en .
+<https://w3id.org/fuskg/food#WaterBeverage> <http://www.w3.org/2000/01/rdf-schema#label> "Acqua"@it .
+<https://w3id.org/fuskg/food#WaterBeverage> <http://www.w3.org/2000/01/rdf-schema#label> "Water"@en .
+# 
+# https://w3id.org/fuskg/food#WheatFlour
+<https://w3id.org/fuskg/food#WheatFlour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#WheatFlour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Flour> .
+<https://w3id.org/fuskg/food#WheatFlour> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Wheat Flour category."@en .
+<https://w3id.org/fuskg/food#WheatFlour> <http://www.w3.org/2000/01/rdf-schema#label> "Farine Raffinate"@it .
+<https://w3id.org/fuskg/food#WheatFlour> <http://www.w3.org/2000/01/rdf-schema#label> "Wheat Flour"@en .
+# 
+# https://w3id.org/fuskg/food#WhiteBread
+<https://w3id.org/fuskg/food#WhiteBread> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#WhiteBread> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Bread> .
+<https://w3id.org/fuskg/food#WhiteBread> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the White Bread category."@en .
+<https://w3id.org/fuskg/food#WhiteBread> <http://www.w3.org/2000/01/rdf-schema#label> "Pane Comune"@it .
+<https://w3id.org/fuskg/food#WhiteBread> <http://www.w3.org/2000/01/rdf-schema#label> "White Bread"@en .
+# 
+# https://w3id.org/fuskg/food#WhiteMeat
+<https://w3id.org/fuskg/food#WhiteMeat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#WhiteMeat> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Meat> .
+<https://w3id.org/fuskg/food#WhiteMeat> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the White Meat category."@en .
+<https://w3id.org/fuskg/food#WhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "Carne Bianca"@it .
+<https://w3id.org/fuskg/food#WhiteMeat> <http://www.w3.org/2000/01/rdf-schema#label> "White Meat"@en .
+# 
+# https://w3id.org/fuskg/food#WholeWheatFlour
+<https://w3id.org/fuskg/food#WholeWheatFlour> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#WholeWheatFlour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Flour> .
+<https://w3id.org/fuskg/food#WholeWheatFlour> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Whole Wheat Four category."@en .
+<https://w3id.org/fuskg/food#WholeWheatFlour> <http://www.w3.org/2000/01/rdf-schema#label> "Farine Integrali"@it .
+<https://w3id.org/fuskg/food#WholeWheatFlour> <http://www.w3.org/2000/01/rdf-schema#label> "Whole Wheat Four"@en .
+# 
+# https://w3id.org/fuskg/food#Wine
+<https://w3id.org/fuskg/food#Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#AlcoholicBeverages> .
+<https://w3id.org/fuskg/food#Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Wine category."@en .
+<https://w3id.org/fuskg/food#Wine> <http://www.w3.org/2000/01/rdf-schema#label> "Vino"@it .
+<https://w3id.org/fuskg/food#Wine> <http://www.w3.org/2000/01/rdf-schema#label> "Wine"@en .
+# 
+# https://w3id.org/fuskg/food#Yogurt
+<https://w3id.org/fuskg/food#Yogurt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Yogurt> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#MilkAndYogurt> .
+<https://w3id.org/fuskg/food#Yogurt> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting foods belonging to the Yogurt category."@en .
+<https://w3id.org/fuskg/food#Yogurt> <http://www.w3.org/2000/01/rdf-schema#label> "Yogurt"@en .
+<https://w3id.org/fuskg/food#Yogurt> <http://www.w3.org/2000/01/rdf-schema#label> "Yogurt"@it .
+# 
+# https://w3id.org/fuskg/food#Zinc
+<https://w3id.org/fuskg/food#Zinc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/food#Zinc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/food#Mineral> .
+<https://w3id.org/fuskg/food#Zinc> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting values corresponding to Zinc amounts."@en .
+<https://w3id.org/fuskg/food#Zinc> <http://www.w3.org/2000/01/rdf-schema#label> "Zinc"@en .
+<https://w3id.org/fuskg/food#Zinc> <http://www.w3.org/2000/01/rdf-schema#label> "Zinco"@it .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid2 <http://www.w3.org/2002/07/owl#members> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#VegetablesAndLegumes> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#SugarAndSweets> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#Spices> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#SausagesAndColdCuts> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#Salt> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#NutSeedAndOliveProducts> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#MilkAndDairyProducts> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#Meat> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#Fruits> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#FishAndSeafood> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#FatsAndOils> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#Eggs> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#CulinaryErbs> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/food#CerealsAndGrainProducts> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

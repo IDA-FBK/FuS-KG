@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="resources/primer.css" media="screen"/>
+<link rel="stylesheet" href="resources/rec.css" media="screen"/>
+<link rel="stylesheet" href="resources/extra.css" media="screen"/>
+<link rel="stylesheet" href="resources/owl.css" media="screen"/>
+<link rel="stylesheet" href="resources/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="resources/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="resources/slider.css" media="screen"/>
+<meta name="color-scheme" content="dark light">
+<script type="module" src="resources/dark-mode-toggle.mjs"></script><div class="darkmode">
+	<dark-mode-toggle class="slider"></dark-mode-toggle>
+</div>
+ <title>User Module of Functional Status Knowledge Graph (FuS-KG)</title>
+
+
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/user#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/user#","name":"User Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/user#", "dateReleased":"Tue Feb 04 15:07:24 CET 2025", "dateModified":"2024-05-21", "version":"1.00", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
+
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
+
+<body>
+<div class="container">
+<div class="head">
+<div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
+<h1>User Module of Functional Status Knowledge Graph (FuS-KG)</h1>
+
+
+<dl>
+<dt>Modified on: 2024-05-21</dt>
+<dt>Latest version:</dt>
+<dd><a href="https://w3id.org/fuskg/user#">https://w3id.org/fuskg/user#</a></dd>
+<dt>Revision:</dt>
+<dd>1.00</dd>
+<dt>Issued on:</dt>
+<dd>2017-05-02</dd>
+<dt>Authors:</dt>
+<dd>Gianluca Apriceno</dd><dd>Mauro Dragoni</dd><dd>Tania Bailoni</dd>
+
+<dt>Publisher:</dt>
+<dd>Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home></dd>
+<dt>Imported Ontologies:</dt>
+<dd><a href="http://www.w3.org/2004/02/skos/core">core</a></dd><dd><a href="http://www.w3.org/2006/time">time</a></dd><dd><a href="http://www.w3.org/ns/dcat">dcat</a></dd><dd><a href="http://www.w3.org/ns/prov-o#">prov-o#</a></dd><dd><a href="https://w3id.org/fuskg/activity">activity</a></dd><dd><a href="https://w3id.org/fuskg/barrier">barrier</a></dd><dd><a href="https://w3id.org/fuskg/core">core</a></dd><dd><a href="https://w3id.org/fuskg/disease">disease</a></dd><dd><a href="https://w3id.org/fuskg/food">food</a></dd><dd><a href="https://w3id.org/fuskg/guidelines">guidelines</a></dd><dd><a href="https://w3id.org/fuskg/multimodal">multimodal</a></dd><dd><a href="https://w3id.org/fuskg/recipe">recipe</a></dd><dd><a href="https://w3id.org/fuskg/temporal">temporal</a></dd>
+
+<dt>Download serialization:</dt><dd><span><a href="ontology.jsonld" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.owl" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License:</dt><dd><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="https://img.shields.io/badge/License-https://creativecommons.org/licenses/by_nc_sa/4.0/-blue.svg" alt="https://creativecommons.org/licenses/by-nc-sa/4.0/" /></a>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
+<dd>Gianluca Apriceno, Mauro Dragoni, Tania Bailoni. User Module of Functional Status Knowledge Graph (FuS-KG). Revision: 1.00.</dd>
+</dl>
+
+<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+</div>
+<div class="status">
+<div>
+<span>User Module Specification</span>
+</div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>fsacti</b></td><td>&lt;https://w3id.org/fuskg/activity#&gt;</td></tr>
+<tr><td><b>fsbarr</b></td><td>&lt;https://w3id.org/fuskg/barrier#&gt;</td></tr>
+<tr><td><b>fscore</b></td><td>&lt;https://w3id.org/fuskg/core#&gt;</td></tr>
+<tr><td><b>fsguid</b></td><td>&lt;https://w3id.org/fuskg/guidelines#&gt;</td></tr>
+<tr><td><b>fstemp</b></td><td>&lt;https://w3id.org/fuskg/temporal#&gt;</td></tr>
+<tr><td><b>fsuser</b></td><td>&lt;https://w3id.org/fuskg/user#&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>time</b></td><td>&lt;http://www.w3.org/2006/time#&gt;</td></tr>
+<tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">User Module of Functional Status Knowledge Graph (FuS-KG): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Breakfast" title="https://w3id.org/fuskg/user#Breakfast">Breakfast</a>
+   </li>
+   <li>
+      <a href="#ConsumedFood" title="https://w3id.org/fuskg/user#ConsumedFood">Consumed Food</a>
+   </li>
+   <li>
+      <a href="#Dinner" title="https://w3id.org/fuskg/user#Dinner">Dinner</a>
+   </li>
+   <li>
+      <a href="#EffortCaloriesEquivalent"
+         title="https://w3id.org/fuskg/user#EffortCaloriesEquivalent">Effort Calories Equivalent</a>
+   </li>
+   <li>
+      <a href="#Lunch" title="https://w3id.org/fuskg/user#Lunch">Lunch</a>
+   </li>
+   <li>
+      <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a>
+   </li>
+   <li>
+      <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a>
+   </li>
+   <li>
+      <a href="#Profile" title="https://w3id.org/fuskg/user#Profile">Profile</a>
+   </li>
+   <li>
+      <a href="#Snack" title="https://w3id.org/fuskg/user#Snack">Snack</a>
+   </li>
+   <li>
+      <a href="#User" title="https://w3id.org/fuskg/user#User">User</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a>
+   </li>
+   <li>
+      <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a>
+   </li>
+   <li>
+      <a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a>
+   </li>
+   <li>
+      <a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a>
+   </li>
+   <li>
+      <a href="#containsUser" title="https://w3id.org/fuskg/user#containsUser">contains user</a>
+   </li>
+   <li>
+      <a href="#hasActivity" title="https://w3id.org/fuskg/user#hasActivity">has activity</a>
+   </li>
+   <li>
+      <a href="#hasConsumedFood" title="https://w3id.org/fuskg/user#hasConsumedFood">has Consumed Food</a>
+   </li>
+   <li>
+      <a href="#hasFood" title="https://w3id.org/fuskg/user#hasFood">has Food</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval"
+         title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">
+         <span>has Monitored Value Interval</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a>
+   </li>
+   <li>
+      <a href="#hasViolationMeal" title="https://w3id.org/fuskg/user#hasViolationMeal">has violation on Meal</a>
+   </li>
+   <li>
+      <a href="#hasViolationRule" title="https://w3id.org/fuskg/user#hasViolationRule">has violation on rule</a>
+   </li>
+   <li>
+      <a href="#hasViolationUser" title="https://w3id.org/fuskg/user#hasViolationUser">has violation User</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a>
+   </li>
+   <li>
+      <a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#activityDuration" title="https://w3id.org/fuskg/user#activityDuration">activity duration</a>
+   </li>
+   <li>
+      <a href="#activityEndTimestamp" title="https://w3id.org/fuskg/user#activityEndTimestamp">activity end timestamp</a>
+   </li>
+   <li>
+      <a href="#activityStartTimestamp"
+         title="https://w3id.org/fuskg/user#activityStartTimestamp">activity start timestamp</a>
+   </li>
+   <li>
+      <a href="#bounds" title="https://w3id.org/fuskg/user#bounds">bounds</a>
+   </li>
+   <li>
+      <a href="#hasDailyCaloricIntake"
+         title="https://w3id.org/fuskg/user#hasDailyCaloricIntake">has daily caloric intake</a>
+   </li>
+   <li>
+      <a href="#hasMETCorrection" title="https://w3id.org/fuskg/user#hasMETCorrection">has MET correction</a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#hasRuleDefinition"
+         title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a>
+   </li>
+   <li>
+      <a href="#hasTimestamp" title="https://w3id.org/fuskg/user#hasTimestamp">has timestamp</a>
+   </li>
+   <li>
+      <a href="#hasUserId" title="https://w3id.org/fuskg/user#hasUserId">has user id</a>
+   </li>
+   <li>
+      <a href="#hasViolationEndTime" title="https://w3id.org/fuskg/user#hasViolationEndTime">has violation end time</a>
+   </li>
+   <li>
+      <a href="#hasViolationEntity" title="https://w3id.org/fuskg/user#hasViolationEntity">has violation entity</a>
+   </li>
+   <li>
+      <a href="#hasViolationEntityType"
+         title="https://w3id.org/fuskg/user#hasViolationEntityType">has violation entity type</a>
+   </li>
+   <li>
+      <a href="#hasViolationExpectedQuantity"
+         title="https://w3id.org/fuskg/user#hasViolationExpectedQuantity">has violation expected quantity</a>
+   </li>
+   <li>
+      <a href="#hasViolationHistory" title="https://w3id.org/fuskg/user#hasViolationHistory">has violation history</a>
+   </li>
+   <li>
+      <a href="#hasViolationLevel" title="https://w3id.org/fuskg/user#hasViolationLevel">has violation level</a>
+   </li>
+   <li>
+      <a href="#hasViolationPriority" title="https://w3id.org/fuskg/user#hasViolationPriority">has violation priority</a>
+   </li>
+   <li>
+      <a href="#hasViolationQuantity" title="https://w3id.org/fuskg/user#hasViolationQuantity">has violation quantity</a>
+   </li>
+   <li>
+      <a href="#hasViolationRuleId" title="https://w3id.org/fuskg/user#hasViolationRuleId">has violation rule id</a>
+   </li>
+   <li>
+      <a href="#hasViolationStartTime"
+         title="https://w3id.org/fuskg/user#hasViolationStartTime">has violation start time</a>
+   </li>
+   <li>
+      <a href="#hasViolationTiming" title="https://w3id.org/fuskg/user#hasViolationTiming">has violation timing</a>
+   </li>
+   <li>
+      <a href="#hasViolationValidityTimespan"
+         title="https://w3id.org/fuskg/user#hasViolationValidityTimespan">has violation validity timespan</a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#activeCategory" title="https://w3id.org/fuskg/guidelines#activeCategory">
+         <span>active Category</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#appliesTo" title="https://w3id.org/fuskg/guidelines#appliesTo">
+         <span>applies To</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2000/01/rdf-schema#domain" title="http://www.w3.org/2000/01/rdf-schema#domain">
+         <span>domain</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasForbiddenCategory" title="https://w3id.org/fuskg/user#hasForbiddenCategory">
+         <span>has Forbidden Category</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasMandatoryCategory" title="https://w3id.org/fuskg/user#hasMandatoryCategory">
+         <span>has Mandatory Category</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValue"
+         title="https://w3id.org/fuskg/guidelines#hasMonitoredValue">
+         <span>has Monitored Value</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#hasOperator" title="https://w3id.org/fuskg/guidelines#hasOperator">
+         <span>has Operator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasOperator" title="https://w3id.org/fuskg/user#hasOperator">
+         <span>has Operator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#hasPriority" title="https://w3id.org/fuskg/guidelines#hasPriority">
+         <span>has Priority</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasPriority" title="https://w3id.org/fuskg/user#hasPriority">
+         <span>has Priority</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#hasRuleId" title="https://w3id.org/fuskg/guidelines#hasRuleId">
+         <span>has Rule Id</span>
+      </a>
+   </li>
+   <li>
+      <a href="#isRecipeConsumedFood" title="https://w3id.org/fuskg/user#isRecipeConsumedFood">
+         <span>is Recipe Consumed Food</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued">
+         <span>issued</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound">
+         <span>lower Bound</span>
+      </a>
+   </li>
+   <li>
+      <a href="#lowerBound" title="https://w3id.org/fuskg/user#lowerBound">
+         <span>lower Bound</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
+         <span>modified</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#monitoredEntity"
+         title="https://w3id.org/fuskg/guidelines#monitoredEntity">
+         <span>monitored Entity</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#monitoredEntityType"
+         title="https://w3id.org/fuskg/guidelines#monitoredEntityType">
+         <span>monitored Entity Type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespacePrefix"
+         title="http://purl.org/vocab/vann/preferredNamespacePrefix">
+         <span>preferred Namespace Prefix</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri">
+         <span>preferred Namespace Uri</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher">
+         <span>publisher</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2000/01/rdf-schema#range" title="http://www.w3.org/2000/01/rdf-schema#range">
+         <span>range</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights">
+         <span>rights</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#timing" title="https://w3id.org/fuskg/guidelines#timing">
+         <span>timing</span>
+      </a>
+   </li>
+   <li>
+      <a href="#timing" title="https://w3id.org/fuskg/user#timing">
+         <span>timing</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+   <li>
+      <a href="#https://w3id.org/fuskg/guidelines#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound">
+         <span>upper Bound</span>
+      </a>
+   </li>
+   <li>
+      <a href="#upperBound" title="https://w3id.org/fuskg/user#upperBound">
+         <span>upper Bound</span>
+      </a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">User Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
+<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+
+</span></div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for User Module of Functional Status Knowledge Graph (FuS-KG) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by User Module of Functional Status Knowledge Graph (FuS-KG).
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Breakfast" title="https://w3id.org/fuskg/user#Breakfast">Breakfast</a></li>
+  <li><a href="#ConsumedFood" title="https://w3id.org/fuskg/user#ConsumedFood">Consumed Food</a></li>
+  <li><a href="#Dinner" title="https://w3id.org/fuskg/user#Dinner">Dinner</a></li>
+  <li><a href="#EffortCaloriesEquivalent" title="https://w3id.org/fuskg/user#EffortCaloriesEquivalent">Effort Calories Equivalent</a></li>
+  <li><a href="#Lunch" title="https://w3id.org/fuskg/user#Lunch">Lunch</a></li>
+  <li><a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a></li>
+  <li><a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a></li>
+  <li><a href="#Profile" title="https://w3id.org/fuskg/user#Profile">Profile</a></li>
+  <li><a href="#Snack" title="https://w3id.org/fuskg/user#Snack">Snack</a></li>
+  <li><a href="#User" title="https://w3id.org/fuskg/user#User">User</a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a></li>
+  <li><a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a></li>
+  <li><a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a></li>
+ </ul>
+ <div class="entity" id="Breakfast">
+  <h3>Breakfast<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Breakfast</p>
+  <div class="comment">
+   <span class="markdown">Concept denoting meals representing a Breakfast consumed by a user.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ConsumedFood">
+  <h3>Consumed Food<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#ConsumedFood</p>
+  <div class="comment">
+   <span class="markdown">This concept enables the reification of the relationships between a user and the amount of a specific food consumed during a specific meal.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasFood" title="https://w3id.org/fuskg/user#hasFood">has Food</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasConsumedFood" title="https://w3id.org/fuskg/user#hasConsumedFood">has Consumed Food</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Dinner">
+  <h3>Dinner<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Dinner</p>
+  <div class="comment">
+   <span class="markdown">Concept denoting meals representing a Dinner consumed by a user.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EffortCaloriesEquivalent">
+  <h3>Effort Calories Equivalent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#EffortCaloriesEquivalent</p>
+  <div class="comment">
+   <span class="markdown">This concept enables the reification of the relationships between a user, his/her body features and the energy consuption associated with each activity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#activityDuration" title="https://w3id.org/fuskg/user#activityDuration">activity duration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasActivity" title="https://w3id.org/fuskg/user#hasActivity">has activity</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Lunch">
+  <h3>Lunch<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Lunch</p>
+  <div class="comment">
+   <span class="markdown">Concept denoting meals representing a Lunch consumed by a user.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Meal">
+  <h3>Meal<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Meal</p>
+  <div class="comment">
+   <span class="markdown">This concept is the abstract representation of the meals that a user can consume during a day. Sub-concepts represent specific types of meals.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Breakfast" title="https://w3id.org/fuskg/user#Breakfast">Breakfast</a> <sup class="type-c" title="class">c</sup>, <a href="#Dinner" title="https://w3id.org/fuskg/user#Dinner">Dinner</a> <sup class="type-c" title="class">c</sup>, <a href="#Lunch" title="https://w3id.org/fuskg/user#Lunch">Lunch</a> <sup class="type-c" title="class">c</sup>, <a href="#Snack" title="https://w3id.org/fuskg/user#Snack">Snack</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasConsumedFood" title="https://w3id.org/fuskg/user#hasConsumedFood">has Consumed Food</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasTimestamp" title="https://w3id.org/fuskg/user#hasTimestamp">has timestamp</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasViolationMeal" title="https://w3id.org/fuskg/user#hasViolationMeal">has violation on Meal</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#MonitoringRule">
+  <h3>Monitoring Rule<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#MonitoringRule</p>
+  <div class="comment">
+   <span class="markdown">This concept enables the definition of rules that can be associated to a specific user or to a specific profile in order to support monitoring activities.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval" title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">has Monitored Value Interval</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/fuskg/guidelines#hasRuleDefinition" title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/fuskg/guidelines#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PerformedActivity">
+  <h3>Performed Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#PerformedActivity</p>
+  <div class="comment">
+   <span class="markdown">This concept enables the reification of the relationships between a user and the duration of a specific performed activity.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#activityDuration" title="https://w3id.org/fuskg/user#activityDuration">activity duration</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#activityEndTimestamp" title="https://w3id.org/fuskg/user#activityEndTimestamp">activity end timestamp</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#activityStartTimestamp" title="https://w3id.org/fuskg/user#activityStartTimestamp">activity start timestamp</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasMETCorrection" title="https://w3id.org/fuskg/user#hasMETCorrection">has MET correction</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasActivity" title="https://w3id.org/fuskg/user#hasActivity">has activity</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Profile">
+  <h3>Profile<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Profile</p>
+  <div class="comment">
+   <span class="markdown">This concept enables the representation of different types of user profiles. Examples are profiles denoting people with specific allergies or dietary habits.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#containsUser" title="https://w3id.org/fuskg/user#containsUser">contains user</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Snack">
+  <h3>Snack<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Snack</p>
+  <div class="comment">
+   <span class="markdown">Concept denoting meals representing a Snack consumed by a user.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="User">
+  <h3>User<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#User</p>
+  <div class="comment">
+   <span class="markdown">This is the root concept for the User branch. All sub-concepts represent a specific category of users, if necessary.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a> <sup class="type-op" title="object property">op</sup>, <a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDailyCaloricIntake" title="https://w3id.org/fuskg/user#hasDailyCaloricIntake">has daily caloric intake</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasUserId" title="https://w3id.org/fuskg/user#hasUserId">has user id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#containsUser" title="https://w3id.org/fuskg/user#containsUser">contains user</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasViolationUser" title="https://w3id.org/fuskg/user#hasViolationUser">has violation User</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#ValueInterval">
+  <h3>Value Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#ValueInterval</p>
+  <div class="comment">
+   <span class="markdown">This concept enables the definition of numerical intervals of the form [lowerBound, upperBound] that can be associated with an instance of the MonitoringRule concept.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval" title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">has Monitored Value Interval</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Violation">
+  <h3>Violation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Violation</p>
+  <div class="comment">
+   <span class="markdown">This concept represents violations associated with a specific user. Instances of the Violation concept can be the result of reasoning activities provided by third-party applications.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasTimestamp" title="https://w3id.org/fuskg/user#hasTimestamp">has timestamp</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationUser" title="https://w3id.org/fuskg/user#hasViolationUser">has violation User</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasViolationEndTime" title="https://w3id.org/fuskg/user#hasViolationEndTime">has violation end time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationEntity" title="https://w3id.org/fuskg/user#hasViolationEntity">has violation entity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationEntityType" title="https://w3id.org/fuskg/user#hasViolationEntityType">has violation entity type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationExpectedQuantity" title="https://w3id.org/fuskg/user#hasViolationExpectedQuantity">has violation expected quantity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationHistory" title="https://w3id.org/fuskg/user#hasViolationHistory">has violation history</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationLevel" title="https://w3id.org/fuskg/user#hasViolationLevel">has violation level</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationMeal" title="https://w3id.org/fuskg/user#hasViolationMeal">has violation on Meal</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasViolationRule" title="https://w3id.org/fuskg/user#hasViolationRule">has violation on rule</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasViolationPriority" title="https://w3id.org/fuskg/user#hasViolationPriority">has violation priority</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationQuantity" title="https://w3id.org/fuskg/user#hasViolationQuantity">has violation quantity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationRuleId" title="https://w3id.org/fuskg/user#hasViolationRuleId">has violation rule id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationStartTime" title="https://w3id.org/fuskg/user#hasViolationStartTime">has violation start time</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationTiming" title="https://w3id.org/fuskg/user#hasViolationTiming">has violation timing</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationValidityTimespan" title="https://w3id.org/fuskg/user#hasViolationValidityTimespan">has violation validity timespan</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ViolationInterval">
+  <h3>Violation Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#ViolationInterval</p>
+  <div class="comment">
+   <span class="markdown">This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#bounds" title="https://w3id.org/fuskg/user#bounds">bounds</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationLevel" title="https://w3id.org/fuskg/user#hasViolationLevel">has violation level</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a></li>
+  <li><a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a></li>
+  <li><a href="#containsUser" title="https://w3id.org/fuskg/user#containsUser">contains user</a></li>
+  <li><a href="#hasActivity" title="https://w3id.org/fuskg/user#hasActivity">has activity</a></li>
+  <li><a href="#hasConsumedFood" title="https://w3id.org/fuskg/user#hasConsumedFood">has Consumed Food</a></li>
+  <li><a href="#hasFood" title="https://w3id.org/fuskg/user#hasFood">has Food</a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval" title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval"> <span>has Monitored Value Interval</span> </a></li>
+  <li><a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a></li>
+  <li><a href="#hasViolationMeal" title="https://w3id.org/fuskg/user#hasViolationMeal">has violation on Meal</a></li>
+  <li><a href="#hasViolationRule" title="https://w3id.org/fuskg/user#hasViolationRule">has violation on rule</a></li>
+  <li><a href="#hasViolationUser" title="https://w3id.org/fuskg/user#hasViolationUser">has violation User</a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a></li>
+  <li><a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a></li>
+ </ul>
+ <div class="entity" id="belongsProfile">
+  <h3>belongs to profile<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#belongsProfile</p>
+  <div class="comment">
+   <span class="markdown">This property specifies to which Profile a User belongs.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Profile" title="https://w3id.org/fuskg/user#Profile">Profile</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#containsUser" title="https://w3id.org/fuskg/user#containsUser">contains user</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="consumed">
+  <h3>consumed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#consumed</p>
+  <div class="comment">
+   <span class="markdown">This property specifies what the user has consumed during a Meal. The Meal is defined as a list of ConsumedFood instances indicating the food and the amount eaten.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsUser">
+  <h3>contains user<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#containsUser</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the user(s) contained in a profile.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Profile" title="https://w3id.org/fuskg/user#Profile">Profile</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasActivity">
+  <h3>has activity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasActivity</p>
+  <div class="comment">
+   <span class="markdown">This property specifies which activity the domain instance refers to.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#EffortCaloriesEquivalent" title="https://w3id.org/fuskg/user#EffortCaloriesEquivalent">Effort Calories Equivalent</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/fuskg/core#Activity" target="_blank" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasConsumedFood">
+  <h3>has Consumed Food<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasConsumedFood</p>
+  <div class="comment">
+   <span class="markdown">This property specifies what (ConsumedFood) the user has consumed during a Meal. The ConsumedFood instance indicates the food and the amount eaten.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ConsumedFood" title="https://w3id.org/fuskg/user#ConsumedFood">Consumed Food</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasFood">
+  <h3>has Food<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasFood</p>
+  <div class="comment">
+   <span class="markdown">This property specifies which food has been consumed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ConsumedFood" title="https://w3id.org/fuskg/user#ConsumedFood">Consumed Food</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/fuskg/core#Food" target="_blank" title="https://w3id.org/fuskg/core#Food">Food</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">
+  <h3>has Monitored Value Interval<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/fuskg/guidelines#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasUser">
+  <h3>has User<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasUser</p>
+  <div class="comment">
+   <span class="markdown">This property specifies which user the domain instance refers to. In detail which user performed the activity if the domain instance is a PerformedActivity, and which user ate a meal if the domain instance belongs to Meal.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationMeal">
+  <h3>has violation on Meal<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationMeal</p>
+  <div class="comment">
+   <span class="markdown">This property specifies which Meal triggered the violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationRule">
+  <h3>has violation on rule<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationRule</p>
+  <div class="comment">
+   <span class="markdown">This property specifies which rule is violated.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationUser">
+  <h3>has violation User<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationUser</p>
+  <div class="comment">
+   <span class="markdown">This property specifies which User the violation refers to.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#monitors">
+  <h3>monitors<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#monitors</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the subject of a MonitoringRule.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="performed">
+  <h3>performed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#performed</p>
+  <div class="comment">
+   <span class="markdown">This property specifies an activity performed by a user. The PerformedActivity instance indicates the activity the User did and its duration.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#activityDuration" title="https://w3id.org/fuskg/user#activityDuration">activity duration</a></li>
+  <li><a href="#activityEndTimestamp" title="https://w3id.org/fuskg/user#activityEndTimestamp">activity end timestamp</a></li>
+  <li><a href="#activityStartTimestamp" title="https://w3id.org/fuskg/user#activityStartTimestamp">activity start timestamp</a></li>
+  <li><a href="#bounds" title="https://w3id.org/fuskg/user#bounds">bounds</a></li>
+  <li><a href="#hasDailyCaloricIntake" title="https://w3id.org/fuskg/user#hasDailyCaloricIntake">has daily caloric intake</a></li>
+  <li><a href="#hasMETCorrection" title="https://w3id.org/fuskg/user#hasMETCorrection">has MET correction</a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#hasRuleDefinition" title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a></li>
+  <li><a href="#hasTimestamp" title="https://w3id.org/fuskg/user#hasTimestamp">has timestamp</a></li>
+  <li><a href="#hasUserId" title="https://w3id.org/fuskg/user#hasUserId">has user id</a></li>
+  <li><a href="#hasViolationEndTime" title="https://w3id.org/fuskg/user#hasViolationEndTime">has violation end time</a></li>
+  <li><a href="#hasViolationEntity" title="https://w3id.org/fuskg/user#hasViolationEntity">has violation entity</a></li>
+  <li><a href="#hasViolationEntityType" title="https://w3id.org/fuskg/user#hasViolationEntityType">has violation entity type</a></li>
+  <li><a href="#hasViolationExpectedQuantity" title="https://w3id.org/fuskg/user#hasViolationExpectedQuantity">has violation expected quantity</a></li>
+  <li><a href="#hasViolationHistory" title="https://w3id.org/fuskg/user#hasViolationHistory">has violation history</a></li>
+  <li><a href="#hasViolationLevel" title="https://w3id.org/fuskg/user#hasViolationLevel">has violation level</a></li>
+  <li><a href="#hasViolationPriority" title="https://w3id.org/fuskg/user#hasViolationPriority">has violation priority</a></li>
+  <li><a href="#hasViolationQuantity" title="https://w3id.org/fuskg/user#hasViolationQuantity">has violation quantity</a></li>
+  <li><a href="#hasViolationRuleId" title="https://w3id.org/fuskg/user#hasViolationRuleId">has violation rule id</a></li>
+  <li><a href="#hasViolationStartTime" title="https://w3id.org/fuskg/user#hasViolationStartTime">has violation start time</a></li>
+  <li><a href="#hasViolationTiming" title="https://w3id.org/fuskg/user#hasViolationTiming">has violation timing</a></li>
+  <li><a href="#hasViolationValidityTimespan" title="https://w3id.org/fuskg/user#hasViolationValidityTimespan">has violation validity timespan</a></li>
+ </ul>
+ <div class="entity" id="activityDuration">
+  <h3>activity duration<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#activityDuration</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the duration of the activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#EffortCaloriesEquivalent" title="https://w3id.org/fuskg/user#EffortCaloriesEquivalent">Effort Calories Equivalent</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="activityEndTimestamp">
+  <h3>activity end timestamp<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#activityEndTimestamp</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the timestamp of the end of the activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="activityStartTimestamp">
+  <h3>activity start timestamp<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#activityStartTimestamp</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the timestamp of the start of the activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="bounds">
+  <h3>bounds<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#bounds</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the bounds of a violation interval.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDailyCaloricIntake">
+  <h3>has daily caloric intake<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasDailyCaloricIntake</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the daily caloric intake of a user.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMETCorrection">
+  <h3>has MET correction<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasMETCorrection</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the corrected MET of the activity performed by the user.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#hasRuleDefinition">
+  <h3>has rule definition<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasRuleDefinition</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the definition of the MonitoringRule.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasTimestamp">
+  <h3>has timestamp<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasTimestamp</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the timestamp of a Meal or Violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasUserId">
+  <h3>has user id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasUserId</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the id identifying the user.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationEndTime">
+  <h3>has violation end time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationEndTime</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the time at which the violation ends.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationEntity">
+  <h3>has violation entity<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationEntity</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the entity of the violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationEntityType">
+  <h3>has violation entity type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationEntityType</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the entity type of the violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationExpectedQuantity">
+  <h3>has violation expected quantity<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationExpectedQuantity</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the expected quantity of the violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationHistory">
+  <h3>has violation history<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationHistory</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the gistory of the violation as an integer.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationLevel">
+  <h3>has violation level<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationLevel</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the level of the violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationPriority">
+  <h3>has violation priority<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationPriority</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the the priority of the violation as an integer.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationQuantity">
+  <h3>has violation quantity<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationQuantity</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the quantity of the violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationRuleId">
+  <h3>has violation rule id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationRuleId</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the id of the rule violated.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationStartTime">
+  <h3>has violation start time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationStartTime</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the the time at which the violation started.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationTiming">
+  <h3>has violation timing<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationTiming</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the timing of the violation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasViolationValidityTimespan">
+  <h3>has violation validity timespan<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationValidityTimespan</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the timespan during which the violation is valid.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
+ <h3 id="annotationproperties" class="list">Annotation Properties</h3>
+ <ul class="hlist">
+  <li><a href="#https://w3id.org/fuskg/guidelines#activeCategory" title="https://w3id.org/fuskg/guidelines#activeCategory"> <span>active Category</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#appliesTo" title="https://w3id.org/fuskg/guidelines#appliesTo"> <span>applies To</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
+  <li><a href="#http://www.w3.org/2000/01/rdf-schema#domain" title="http://www.w3.org/2000/01/rdf-schema#domain"> <span>domain</span> </a></li>
+  <li><a href="#hasForbiddenCategory" title="https://w3id.org/fuskg/user#hasForbiddenCategory"> <span>has Forbidden Category</span> </a></li>
+  <li><a href="#hasMandatoryCategory" title="https://w3id.org/fuskg/user#hasMandatoryCategory"> <span>has Mandatory Category</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValue" title="https://w3id.org/fuskg/guidelines#hasMonitoredValue"> <span>has Monitored Value</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#hasOperator" title="https://w3id.org/fuskg/guidelines#hasOperator"> <span>has Operator</span> </a></li>
+  <li><a href="#hasOperator" title="https://w3id.org/fuskg/user#hasOperator"> <span>has Operator</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#hasPriority" title="https://w3id.org/fuskg/guidelines#hasPriority"> <span>has Priority</span> </a></li>
+  <li><a href="#hasPriority" title="https://w3id.org/fuskg/user#hasPriority"> <span>has Priority</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#hasRuleId" title="https://w3id.org/fuskg/guidelines#hasRuleId"> <span>has Rule Id</span> </a></li>
+  <li><a href="#isRecipeConsumedFood" title="https://w3id.org/fuskg/user#isRecipeConsumedFood"> <span>is Recipe Consumed Food</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued"> <span>issued</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound"> <span>lower Bound</span> </a></li>
+  <li><a href="#lowerBound" title="https://w3id.org/fuskg/user#lowerBound"> <span>lower Bound</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified"> <span>modified</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#monitoredEntity" title="https://w3id.org/fuskg/guidelines#monitoredEntity"> <span>monitored Entity</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#monitoredEntityType" title="https://w3id.org/fuskg/guidelines#monitoredEntityType"> <span>monitored Entity Type</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
+  <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher"> <span>publisher</span> </a></li>
+  <li><a href="#http://www.w3.org/2000/01/rdf-schema#range" title="http://www.w3.org/2000/01/rdf-schema#range"> <span>range</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights"> <span>rights</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#timing" title="https://w3id.org/fuskg/guidelines#timing"> <span>timing</span> </a></li>
+  <li><a href="#timing" title="https://w3id.org/fuskg/user#timing"> <span>timing</span> </a></li>
+  <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
+  <li><a href="#https://w3id.org/fuskg/guidelines#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound"> <span>upper Bound</span> </a></li>
+  <li><a href="#upperBound" title="https://w3id.org/fuskg/user#upperBound"> <span>upper Bound</span> </a></li>
+ </ul>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#activeCategory">
+  <h3>active Category<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#activeCategory</p>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#appliesTo">
+  <h3>applies To<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#appliesTo</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/creator">
+  <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#domain">
+  <h3>domain<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#domain</p>
+ </div>
+ <div class="entity" id="hasForbiddenCategory">
+  <h3>has Forbidden Category<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasForbiddenCategory</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasMandatoryCategory">
+  <h3>has Mandatory Category<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasMandatoryCategory</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#hasMonitoredValue">
+  <h3>has Monitored Value<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasMonitoredValue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+    <dt>
+     has range
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#hasOperator">
+  <h3>has Operator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasOperator</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasOperator">
+  <h3>has Operator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasOperator</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#hasPriority">
+  <h3>has Priority<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasPriority</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+    <dt>
+     has range
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPriority">
+  <h3>has Priority<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasPriority</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+    <dt>
+     has range
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#hasRuleId">
+  <h3>has Rule Id<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasRuleId</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+    <dt>
+     has range
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isRecipeConsumedFood">
+  <h3>is Recipe Consumed Food<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#isRecipeConsumedFood</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/issued">
+  <h3>issued<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/issued</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/license">
+  <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#lowerBound">
+  <h3>lower Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#lowerBound</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="lowerBound">
+  <h3>lower Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#lowerBound</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/modified">
+  <h3>modified<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#monitoredEntity">
+  <h3>monitored Entity<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#monitoredEntity</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#monitoredEntityType">
+  <h3>monitored Entity Type<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#monitoredEntityType</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
+  <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespacePrefix</p>
+ </div>
+ <div class="entity" id="http://purl.org/vocab/vann/preferredNamespaceUri">
+  <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/publisher">
+  <h3>publisher<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/publisher</p>
+ </div>
+ <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#range">
+  <h3>range<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#range</p>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/rights">
+  <h3>rights<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/rights</p>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#timing">
+  <h3>timing<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#timing</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="timing">
+  <h3>timing<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#timing</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd></dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://purl.org/dc/terms/title">
+  <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
+ </div>
+ <div class="entity" id="https://w3id.org/fuskg/guidelines#upperBound">
+  <h3>upper Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#upperBound</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="upperBound">
+  <h3>upper Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#upperBound</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
+<div id="acknowledgments">
+<h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>
+The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="https://w3id.org/people/dgarijo">Daniel Garijo</a> for developing <a href="https://github.com/dgarijo/Widoco">Widoco</a>, the program used to create the template used in this documentation.</p>
+</div>
+
+
+</div>
+</body>
+</html>

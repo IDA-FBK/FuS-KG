@@ -1,0 +1,142 @@
+<https://w3id.org/fuskg/core> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/creator> "Gianluca Apriceno" .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/creator> "Mauro Dragoni" .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/creator> "Tania Bailoni" .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/issued> "2024-03-01" .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/modified> "2024-04-26" .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/publisher> "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
+<https://w3id.org/fuskg/core> <http://purl.org/dc/terms/title> "Functional Status Knowledge Graph (FuS-KG)"@en .
+<https://w3id.org/fuskg/core> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fscore" .
+<https://w3id.org/fuskg/core> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fuskg/core#" .
+<https://w3id.org/fuskg/core> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#range
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/core#id
+<https://w3id.org/fuskg/core#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/core#interfaceLabel
+<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/2000/01/rdf-schema#range> "" .
+# 
+# https://w3id.org/fuskg/core#source
+<https://w3id.org/fuskg/core#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/core#affectsPerformingOf
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Barrier> .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Activity> .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the relationship between a barrier affecting the performing of an activity."@en .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#label> "affects performing of"@en .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#label> "influenza l'esecuzione di"@it .
+# 
+# https://w3id.org/fuskg/core#concernsConsumptionOf
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Barrier> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the relationship between a barrier and the consumption of a food or nutrient."@en .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "concerns consumption of"@en .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "riguarda il consumo di"@it .
+# 
+# https://w3id.org/fuskg/core#contains
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies that a food contains another food"@en .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contiene"@it .
+# 
+# https://w3id.org/fuskg/core#hasNutrient
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the nutrient(s) contained ia a food."@en .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "ha Nutriente"@it .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "has Nutrient"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/core#Activity
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."@en .
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity"@en .
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività"@it .
+# 
+# https://w3id.org/fuskg/core#Barrier
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers."@en .
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#label> "Barrier"@en .
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#label> "Barriera"@it .
+# 
+# https://w3id.org/fuskg/core#Food
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."@en .
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Alimento"@it .
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Food"@en .
+# 
+# https://w3id.org/fuskg/core#Nutrient
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."@en .
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient"@en .
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "Nutriente"@it .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

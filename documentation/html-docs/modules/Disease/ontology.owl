@@ -1,0 +1,3394 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/fuskg/disease#"
+     xml:base="https://w3id.org/fuskg/disease"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:core="https://w3id.org/fuskg/core#"
+     xmlns:food="https://w3id.org/fuskg/food#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/fuskg/disease">
+        <owl:imports rdf:resource="https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-food.ttl"/>
+        <terms:creator>Gianluca Apriceno</terms:creator>
+        <terms:creator>Mauro Dragoni</terms:creator>
+        <terms:creator>Tania Bailoni</terms:creator>
+        <terms:issued>2024-03-01</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <terms:modified>2024-05-10</terms:modified>
+        <terms:publisher>Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler &lt;https://digitalhealthcenter-en.fbk.eu/home&gt;</terms:publisher>
+        <terms:rights xml:lang="en">CreativeCommons 4.0 NonCommercial-ShareAlike &lt;https://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</terms:rights>
+        <terms:title xml:lang="en">Disease Module of Functional Status Knowledge Graph (FuS-KG)</terms:title>
+        <vann:preferredNamespacePrefix>fsdise</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/fuskg/disease#</vann:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#domain -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#foodId -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/food#foodId">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#isUnspecifiedFood -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/food#isUnspecifiedFood"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#productCategory -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/food#productCategory">
+        <rdfs:domain></rdfs:domain>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/core#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#contains"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/disease#hasDisease -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/disease#hasDisease">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/disease#DiseaseRiskLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/disease#Disease"/>
+        <rdfs:comment xml:lang="en">This property specifies the Disease a Disease Risk Level refers to.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha malattia</rdfs:label>
+        <rdfs:label xml:lang="en">has disease</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/disease#hasFood -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/disease#hasFood">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/disease#DiseaseRiskLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:comment xml:lang="en">This property specifies the Food a Disease Risk Level refers to.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha cibo</rdfs:label>
+        <rdfs:label xml:lang="en">has food</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/disease#riskLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/disease#riskLevel">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/disease#DiseaseRiskLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">This property specifies the risk level of a DiseaseRiskLevel instance as an integer.</rdfs:comment>
+        <rdfs:label xml:lang="it">livello di rischio</rdfs:label>
+        <rdfs:label xml:lang="en">risk level</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#amountCalories -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/food#amountCalories">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">specifies the amount of calories</rdfs:comment>
+        <rdfs:label xml:lang="en">amount of Calories</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; di Calorie</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#amountEnergy -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/food#amountEnergy">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">specifies the amount of energy</rdfs:comment>
+        <rdfs:label xml:lang="en">amount of Energy</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; di Energia</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#amountNutrient -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/food#amountNutrient">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">specifies the amount of the nutrient</rdfs:comment>
+        <rdfs:label xml:lang="en">amount of Nutrient</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; di Nutriente</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#amountWater -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/food#amountWater">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">specifies the amount of water</rdfs:comment>
+        <rdfs:label xml:lang="en">amount of Water</rdfs:label>
+        <rdfs:label xml:lang="it">quantita&apos; di Acqua</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ediblePart -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/food#ediblePart">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">specifies the amount of the edible part of a food</rdfs:comment>
+        <rdfs:label xml:lang="en">edible part</rdfs:label>
+        <rdfs:label xml:lang="it">parte edibile</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#unit -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/food#unit">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">specifies the unit of measure</rdfs:comment>
+        <rdfs:label xml:lang="en">unit</rdfs:label>
+        <rdfs:label xml:lang="it">unita&apos;</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Food -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Food"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Nutrient -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Nutrient"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/disease#Disease -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/disease#Disease">
+        <rdfs:comment xml:lang="en">Root concept that specifies diseases</rdfs:comment>
+        <rdfs:label xml:lang="en">Disease</rdfs:label>
+        <rdfs:label xml:lang="it">Malattia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/disease#DiseaseRiskLevel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/disease#DiseaseRiskLevel">
+        <rdfs:comment xml:lang="en">Concept specifying the risk level of a disease correlated to a food</rdfs:comment>
+        <rdfs:label xml:lang="en">Disease Risk Level</rdfs:label>
+        <rdfs:label xml:lang="it">Livello di Rischio della Malattia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AdultBovineFattyRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AdultBovineFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FattyRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Bovine Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Bovine Fatty Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa di Bovino Adulto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AdultBovineLeanRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AdultBovineLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Bovine Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Bovine Lean Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Bovino Adulto</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AdultGoatLeanRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AdultGoatLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Goat Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Goat Lean Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Capra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AdultSheepFattyRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AdultSheepFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FattyRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Sheep Fatty Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa di Pecora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AdultSheepLeanRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AdultSheepLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Adult Sheep Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Adult Sheep Lean Red Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Pecora</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AgedCheese -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AgedCheese">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Cheese"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Aged Cheese category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aged Cheese</rdfs:label>
+        <rdfs:label xml:lang="it">Formaggi Stagionati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Alanine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Alanine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Alanine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alanina</rdfs:label>
+        <rdfs:label xml:lang="en">Alanine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Alcohol -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Alcohol">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Alcohol amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alcohol</rdfs:label>
+        <rdfs:label xml:lang="it">Alcool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AlcoholicBeverages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AlcoholicBeverages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Beverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Alcoholic Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alcoholic Beverages</rdfs:label>
+        <rdfs:label xml:lang="it">Bevande Alcoliche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Algae -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Algae">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Algae category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Algae</rdfs:label>
+        <rdfs:label xml:lang="it">Alghe</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Aminoacid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Aminoacid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Aminoacid category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aminoacid</rdfs:label>
+        <rdfs:label xml:lang="it">Amminoacidi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AnimalFats -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AnimalFats">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#AnimalFatsAndOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Animal Fats category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Fats</rdfs:label>
+        <rdfs:label xml:lang="it">Grasso Animale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AnimalFatsAndOils -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AnimalFatsAndOils">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FatsAndOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Animal Fats and Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Fats and Oils</rdfs:label>
+        <rdfs:label xml:lang="it">Grassi e Oli Animali</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AnimalLipid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AnimalLipid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Animal Lipid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Lipids</rdfs:label>
+        <rdfs:label xml:lang="it">Lipidi Animali</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AnimalMilk -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AnimalMilk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#MilkAndYogurt"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Animal Milk category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Milk</rdfs:label>
+        <rdfs:label xml:lang="it">Latte Animale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AnimalProtein -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AnimalProtein">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Protein"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Animal Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Animal Protein</rdfs:label>
+        <rdfs:label xml:lang="it">Proteine Animali</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ApolarAminoacid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ApolarAminoacid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Aminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Apolar Aminoacid category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Amminoacidi Apolari</rdfs:label>
+        <rdfs:label xml:lang="en">Apolar Aminoacid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ArachidicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ArachidicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Arachidic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Arachidico</rdfs:label>
+        <rdfs:label xml:lang="en">Arachidic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ArachidonicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ArachidonicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Arachidonic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Arachidonico</rdfs:label>
+        <rdfs:label xml:lang="en">Arachidonic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Arginine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Arginine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Arginine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Arginina</rdfs:label>
+        <rdfs:label xml:lang="en">Arginine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#AsparticAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#AsparticAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Aspartic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Aspartico</rdfs:label>
+        <rdfs:label xml:lang="en">Aspartic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#BasicFood -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#BasicFood">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Basic Food category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alimento Base</rdfs:label>
+        <rdfs:label xml:lang="en">Basic Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Beer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Beer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#AlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Beer category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Beer</rdfs:label>
+        <rdfs:label xml:lang="it">Birra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#BehenicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#BehenicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Behenic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Beenico</rdfs:label>
+        <rdfs:label xml:lang="en">Behenic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#BetaCarotene -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#BetaCarotene">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Beta-Carotene amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Beta Carotene</rdfs:label>
+        <rdfs:label xml:lang="en">Beta-Carotene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Beverages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Beverages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande</rdfs:label>
+        <rdfs:label xml:lang="en">Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Biotin -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Biotin">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Biotin amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Biotin</rdfs:label>
+        <rdfs:label xml:lang="it">Biotina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#BiscuitsAndCrackers -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#BiscuitsAndCrackers">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Bicuits and Crackers category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bicuits and Crackers</rdfs:label>
+        <rdfs:label xml:lang="it">Biscotti e Crackers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Bread -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Bread">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Bread category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Bread</rdfs:label>
+        <rdfs:label xml:lang="it">Pane</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#BrinedFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#BrinedFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Brined Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Brined Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce in Salamoia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Broth -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Broth">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ComposedFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Broth category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Brodo</rdfs:label>
+        <rdfs:label xml:lang="en">Broth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to the sum of Butyric Caproic Caprylic and Capric Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Somma degli Acidi Butirrico Caproico Caprilico e Caprico</rdfs:label>
+        <rdfs:label xml:lang="en">Sum of Butyric Caproic Caprylic and Capric Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Calcium -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Calcium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Calcium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Calcio</rdfs:label>
+        <rdfs:label xml:lang="en">Calcium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CandiedFruits -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CandiedFruits">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Candied Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Candied Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta Candita</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Candy -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Candy">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Candy category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Candy</rdfs:label>
+        <rdfs:label xml:lang="it">Caramelle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CannedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CannedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SausagesAndColdCuts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Canned Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Canned Meat</rdfs:label>
+        <rdfs:label xml:lang="it">Carne in Scatola</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CannedOrCookedFruit -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CannedOrCookedFruit">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Canned or Cooked Fruit category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Canned or Cooked Fruit</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta in Scatola o Cotta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CannedVegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CannedVegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Marinated Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Marinated Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Sott&apos;Olio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Carbs -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Carbs">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Carbs amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carboidrati</rdfs:label>
+        <rdfs:label xml:lang="en">Carbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CarbsSoluble -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CarbsSoluble">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Soluble Carbs amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carboidrati Solubili</rdfs:label>
+        <rdfs:label xml:lang="en">Soluble Carbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Cereals -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Cereals">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cereals category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cereali</rdfs:label>
+        <rdfs:label xml:lang="en">Cereals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CerealsAndGrainProducts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CerealsAndGrainProducts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cereal and Grain Products category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cereal and Grain Products</rdfs:label>
+        <rdfs:label xml:lang="it">Cereali e Prodotti Derivati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Cheese -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Cheese">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#MilkAndDairyProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cheese category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cheese</rdfs:label>
+        <rdfs:label xml:lang="it">Formaggio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Chlorine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Chlorine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Chlorine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chlorine</rdfs:label>
+        <rdfs:label xml:lang="it">Cloro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ChocolateAndCocoa -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ChocolateAndCocoa">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Chocolate and Cocoa category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Chocolate and Cocoa</rdfs:label>
+        <rdfs:label xml:lang="it">Cioccolato e Cacao</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Cholesterol -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Cholesterol">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Cholesterol amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cholesterol</rdfs:label>
+        <rdfs:label xml:lang="it">Colesterolo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CoffeeAndSubstitutes -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CoffeeAndSubstitutes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Beverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Coffee and Substitutes category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Caff  e Sostituti</rdfs:label>
+        <rdfs:label xml:lang="en">Coffee and Substitutes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ColdCuts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ColdCuts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SausagesAndColdCuts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cold Cuts category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cold Cuts</rdfs:label>
+        <rdfs:label xml:lang="it">Salumi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ComposedFood -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ComposedFood">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/fuskg/core#contains"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Composed Food category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alimento Composto</rdfs:label>
+        <rdfs:label xml:lang="en">Composed Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Copper -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Copper">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Copper amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Copper</rdfs:label>
+        <rdfs:label xml:lang="it">Rame</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Cream -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Cream">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SweetSpreads"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Cream category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cream</rdfs:label>
+        <rdfs:label xml:lang="it">Crema</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#CulinaryErbs -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#CulinaryErbs">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Culinary Erbs category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Culinary Erbs</rdfs:label>
+        <rdfs:label xml:lang="it">Erbe Aromatiche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Cystine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Cystine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Cystine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cistina</rdfs:label>
+        <rdfs:label xml:lang="en">Cystine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#DHAAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#DHAAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to DHA Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido DHA</rdfs:label>
+        <rdfs:label xml:lang="en">DHA Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Dessert -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Dessert">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dessert category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dessert</rdfs:label>
+        <rdfs:label xml:lang="it">Dessert</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#DietaryFiber -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#DietaryFiber">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Dietary Fiber amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dietary Fiber</rdfs:label>
+        <rdfs:label xml:lang="it">Fibra Alimentare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#DryAlgae -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#DryAlgae">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Algae"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Algae category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alghe Secche</rdfs:label>
+        <rdfs:label xml:lang="en">Dry Algae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#DryCulinaryErbs -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#DryCulinaryErbs">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CulinaryErbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Culinary Erbs category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dry Culinary Erbs</rdfs:label>
+        <rdfs:label xml:lang="it">Erbe Aromatiche Secche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#DryFruits -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#DryFruits">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Fruits"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dry Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta Secca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#DryMushrooms -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#DryMushrooms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedMushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Dry Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dry Mushrooms</rdfs:label>
+        <rdfs:label xml:lang="it">Funghi Secchi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#EPAAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#EPAAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to EPA Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido EPA</rdfs:label>
+        <rdfs:label xml:lang="en">EPA Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Eggs -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Eggs">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Eggs category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Eggs</rdfs:label>
+        <rdfs:label xml:lang="it">Uova</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#EicosenoicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#EicosenoicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Eicosenoic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Eicosenoico</rdfs:label>
+        <rdfs:label xml:lang="en">Eicosenoic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ErucicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ErucicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Erucic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Erucico</rdfs:label>
+        <rdfs:label xml:lang="en">Erucic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FatsAndOils -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FatsAndOils">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fats and Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fats and Oils</rdfs:label>
+        <rdfs:label xml:lang="it">Grassi e Oli</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FattyRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FattyRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#RedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa</rdfs:label>
+        <rdfs:label xml:lang="en">Fatty Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FattyWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#WhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa</rdfs:label>
+        <rdfs:label xml:lang="en">Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Fish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Fish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FishAndSeafood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FishAndSeafood -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FishAndSeafood">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fish and Seafood category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fish and Seafood</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce, Molluschi e Crostacei</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Flour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Flour">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Flour category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Farine</rdfs:label>
+        <rdfs:label xml:lang="en">Flour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FolicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FolicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Folic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Folico</rdfs:label>
+        <rdfs:label xml:lang="en">Folic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshAlgae -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshAlgae">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Algae"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Algae category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alghe Fresche</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Algae</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshCereals -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshCereals">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Cereals"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Cereals category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cereali Freschi</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Cereals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshCheese -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshCheese">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Cheese"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Cheese category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Formaggi Freschi</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Cheese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshCulinaryErbs -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshCulinaryErbs">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CulinaryErbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Culinary Erbs category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Erbe Aromatiche Fresche</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Culinary Erbs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Fish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Fresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshFruits -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshFruits">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Fruits"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta Fresca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshLegumes -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshLegumes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LegumesAndLegumeProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Legumes</rdfs:label>
+        <rdfs:label xml:lang="it">Legumi Freschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshMollusc -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshMollusc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mollusc"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Mollusc category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Mollusc</rdfs:label>
+        <rdfs:label xml:lang="it">Molluschi Freschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshMushrooms -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshMushrooms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Mushrooms</rdfs:label>
+        <rdfs:label xml:lang="it">Funghi Freschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshNotOilyFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshNotOilyFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshNotOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh White (Not Oily) Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh White Fat Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Bianco Grasso Fresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshNotOilyFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshNotOilyFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh White (Not Oily) Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pesce Fresco Bianco</rdfs:label>
+        <rdfs:label xml:lang="en">White Fresh Fish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshNotOilyLeanFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshNotOilyLeanFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshNotOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh White (Not Oily) Lean Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh White Lean Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Bianco Magro Fresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshNotOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh White (Not Oily) Semi-Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Semi-fat White Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Bianco Semigrasso Fresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshOilyFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshOilyFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshOilyFish"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/fuskg/food#FreshOilyLeanFish"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/fuskg/food#FreshOilyMediumFatFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Oily Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Oily Fat Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Azzurro Grasso Fresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshOilyFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshOilyFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Oily Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Oily Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Fresco Azzurro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshOilyLeanFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshOilyLeanFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshOilyFish"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/fuskg/food#FreshOilyMediumFatFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Oily Lean Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Oily Lean Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Azzurro Magro Fresco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshOilyMediumFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshOilyMediumFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FreshOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Oily Semi-Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Oily Semi-Fat Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Azzurro Fresco Semigrasso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshShellfish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshShellfish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Shellfish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Shellfish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Crostacei Freschi</rdfs:label>
+        <rdfs:label xml:lang="en">Fresh Shellfish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshStarchyVegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshStarchyVegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#StarchyVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Starchy Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Starchy Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Amidacee Fresche</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FreshVegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FreshVegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#StarchyFreeVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fresh Starchy Free Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fresh Starchy Free Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure ed Ortaggi Freschi a Basso Contenuto di Amido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenNotOilyFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenNotOilyFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenNotOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen White (Not Oily) Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen White Fat Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Bianco Grasso Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenNotOilyFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenNotOilyFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen White (Not Oily) Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen White Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Bianco Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenNotOilyLeanFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenNotOilyLeanFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenNotOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen White (Not Oily) Lean Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen White Lean Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Bianco Magro Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenNotOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen White (Not Oily) Semi-Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Semi-fat White Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Bianco Semigrasso Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenOilyFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenOilyFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen Oily Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Oily Fat Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Azzurro Grasso Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenOilyFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenOilyFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen Oily Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Oily Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Azzurro Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenOilyLeanFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenOilyLeanFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen Oily Lean Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Oily Lean Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Azzurro Magro Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenOilyMediumFatFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenOilyMediumFatFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FrozenOilyFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen Oily Semi-Fat Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Oily Semi-Fat Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Azzurro Semigrasso Surgelato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#VegetablesAndLegumes"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Frozen Vegetables and Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frozen Vegetables and Legumes</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure e Legumi Surgelati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Fructose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Fructose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Fructose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fructose</rdfs:label>
+        <rdfs:label xml:lang="it">Fruttosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FruitBasedBeverages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FruitBasedBeverages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Fruits"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruit Based Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fruit Based Beverages</rdfs:label>
+        <rdfs:label xml:lang="it">Spremute o Bevande a base di Frutta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FruitJuices -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FruitJuices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SweetBeveragesAndJuices"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruit Juices category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fruit Juices</rdfs:label>
+        <rdfs:label xml:lang="it">Succhi di Frutta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#FruitPeel -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#FruitPeel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Fruits"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruit Peel category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fruit Peel</rdfs:label>
+        <rdfs:label xml:lang="it">Scorza di Frutta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Fruits -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Fruits">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Fruits category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Fruits</rdfs:label>
+        <rdfs:label xml:lang="it">Frutta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Galactose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Galactose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Galactose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Galactose</rdfs:label>
+        <rdfs:label xml:lang="it">Galattosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Glucose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Glucose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Glucose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Glucose</rdfs:label>
+        <rdfs:label xml:lang="it">Glucosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#GlutamicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#GlutamicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Glutamic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Glutammico</rdfs:label>
+        <rdfs:label xml:lang="en">Glutamic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Glycine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Glycine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Glycine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Glicina</rdfs:label>
+        <rdfs:label xml:lang="en">Glycine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#GoatLeanWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#GoatLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Goat Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Capretto</rdfs:label>
+        <rdfs:label xml:lang="en">Goat Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Histidine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Histidine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Histidine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Histidine</rdfs:label>
+        <rdfs:label xml:lang="it">Istidina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#IceCream -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#IceCream">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Ice Cream category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Gelato</rdfs:label>
+        <rdfs:label xml:lang="en">Ice Cream</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Iodine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Iodine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Iodine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Iodine</rdfs:label>
+        <rdfs:label xml:lang="it">Iodio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Iron -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Iron">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Iron amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ferro</rdfs:label>
+        <rdfs:label xml:lang="en">Iron</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Isoleucine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Isoleucine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Isoleucine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Isoleucina</rdfs:label>
+        <rdfs:label xml:lang="en">Isoleucine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Jam -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Jam">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SweetSpreads"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Jam category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Jam</rdfs:label>
+        <rdfs:label xml:lang="it">Marmellata</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Lactose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Lactose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lactose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lactose</rdfs:label>
+        <rdfs:label xml:lang="it">Lattosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LambFattyWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LambFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lamb Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa di Agnello</rdfs:label>
+        <rdfs:label xml:lang="en">Lamb Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LambLeanWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LambLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lamb Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Agnello</rdfs:label>
+        <rdfs:label xml:lang="en">Lamb Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LauricAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LauricAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lauric Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Laurico</rdfs:label>
+        <rdfs:label xml:lang="en">Lauric Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LeanGameMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LeanGameMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#OtherMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lean Game Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne di Selvaggina Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Lean Game Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LeanRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LeanRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#RedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Lean Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LeanWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#WhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LegumesAndLegumeProducts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LegumesAndLegumeProducts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#VegetablesAndLegumes"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Legumes and Legume Products category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Legumes and Legume Products</rdfs:label>
+        <rdfs:label xml:lang="it">Legumi e Prodotti a Base di Legumi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Leucine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Leucine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Leucine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Leucina</rdfs:label>
+        <rdfs:label xml:lang="en">Leucine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LinoleicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LinoleicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Linoleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Linoleico</rdfs:label>
+        <rdfs:label xml:lang="en">Linoleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#LinolenicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#LinolenicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Linolenic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Linolenico</rdfs:label>
+        <rdfs:label xml:lang="en">Linolenic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Lipid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Lipid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lipids amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lipidi</rdfs:label>
+        <rdfs:label xml:lang="en">Lipids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Lysine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Lysine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Lysine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lisina</rdfs:label>
+        <rdfs:label xml:lang="en">Lysine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Magnesium -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Magnesium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Magnesium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Magnesio</rdfs:label>
+        <rdfs:label xml:lang="en">Magnesium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Maltose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Maltose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Maltose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Maltose</rdfs:label>
+        <rdfs:label xml:lang="it">Maltosio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Manganese -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Manganese">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Manganese amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manganese</rdfs:label>
+        <rdfs:label xml:lang="it">Manganese</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#MarinatedFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#MarinatedFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Marinated Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Marinated Fish</rdfs:label>
+        <rdfs:label xml:lang="it">Pesce Sott&apos;Olio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#MarinatedMushrooms -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#MarinatedMushrooms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedMushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Preserved Marinated Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Funghi Conservati Sott&apos;Olio</rdfs:label>
+        <rdfs:label xml:lang="en">Preserved Marinated Mushrooms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Meat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Meat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne</rdfs:label>
+        <rdfs:label xml:lang="en">Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Methionine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Methionine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Methionine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Methionine</rdfs:label>
+        <rdfs:label xml:lang="it">Metionina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#MilkAndDairyProducts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#MilkAndDairyProducts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Milk and Dairy Products category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Latte e Prodotti Derivati</rdfs:label>
+        <rdfs:label xml:lang="en">Milk and Dairy Products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#MilkAndYogurt -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#MilkAndYogurt">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#MilkAndDairyProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Milk and Yogurt category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Latte e Yogurt</rdfs:label>
+        <rdfs:label xml:lang="en">Milk and Yogurt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Mineral -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Mineral">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Mineral category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Minerali</rdfs:label>
+        <rdfs:label xml:lang="en">Minerals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Mollusc -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Mollusc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FishAndSeafood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Mollusc category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mollusc</rdfs:label>
+        <rdfs:label xml:lang="it">Molluschi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#MonounsaturatedLipid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#MonounsaturatedLipid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Monounsaturated Fat amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi Monoinsaturi</rdfs:label>
+        <rdfs:label xml:lang="en">Monounsaturated Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Mushrooms -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Mushrooms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Funghi</rdfs:label>
+        <rdfs:label xml:lang="en">Mushrooms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#MyristicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#MyristicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Myristic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Miristico</rdfs:label>
+        <rdfs:label xml:lang="en">Myristic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#MyristoleicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#MyristoleicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Myristoleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Miristoleico</rdfs:label>
+        <rdfs:label xml:lang="en">Myristoleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Niacin -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Niacin">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Niacin (Vitamin B3) amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Niacin</rdfs:label>
+        <rdfs:label xml:lang="it">Niacina</rdfs:label>
+        <rdfs:label xml:lang="en">Vitamin B3</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B3</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#NonAlcoholicBeverages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#NonAlcoholicBeverages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Beverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Non-Alcoholic Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande Analcoliche</rdfs:label>
+        <rdfs:label xml:lang="en">Non-Alcoholic Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#NutSeedAndOliveProducts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#NutSeedAndOliveProducts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Nuts, Seeds and Olives category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Noci, Frutta a Guscio, Semi e Olive</rdfs:label>
+        <rdfs:label xml:lang="en">Nuts, Seeds and Olives</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Nuts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Nuts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#NutSeedAndOliveProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Nuts category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Noci e Frutta a Guscio</rdfs:label>
+        <rdfs:label xml:lang="en">Nuts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#OleicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#OleicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Oleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Oleico</rdfs:label>
+        <rdfs:label xml:lang="en">Oleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#OlivesAndOliveProducts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#OlivesAndOliveProducts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#NutSeedAndOliveProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Olives and Olive Products category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Olive e Prodotti di Olive</rdfs:label>
+        <rdfs:label xml:lang="en">Olives and Olive Products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#OtherLeanRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#OtherLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Other Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Altra Carne Rossa Magra</rdfs:label>
+        <rdfs:label xml:lang="en">Other Lean Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#OtherMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#OtherMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Meat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Other Meat Types category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Altri Tipi di Carne</rdfs:label>
+        <rdfs:label xml:lang="en">Other Meat Types</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to other Polyunsaturated Fat amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Altri Grassi Polinsaturi</rdfs:label>
+        <rdfs:label xml:lang="en">Other Polyunsaturated Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PalmiticAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PalmiticAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Palmitic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Palmitico</rdfs:label>
+        <rdfs:label xml:lang="en">Palmitic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PalmitoleicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PalmitoleicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Palmitoleic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Palmitoleico</rdfs:label>
+        <rdfs:label xml:lang="en">Palmitoleic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PantothenicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PantothenicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Pantothenic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Pantotenico</rdfs:label>
+        <rdfs:label xml:lang="en">Pantothenic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Pasta -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Pasta">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pasta category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pasta</rdfs:label>
+        <rdfs:label xml:lang="it">Pasta</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Pastry -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Pastry">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pastry category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Paste e Pasticcini</rdfs:label>
+        <rdfs:label xml:lang="en">Pastry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Phenylalanine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Phenylalanine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Phenylalanine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Fenilalanina</rdfs:label>
+        <rdfs:label xml:lang="en">Phenylalanine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Phosphorus -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Phosphorus">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Phosphorus amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Fosforo</rdfs:label>
+        <rdfs:label xml:lang="en">Phosphorus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PizzaAndFocacciaBread -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PizzaAndFocacciaBread">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pizzas and &quot;Focaccia&quot; Breadcategory.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pizzas and &quot;Focaccia&quot; Bread</rdfs:label>
+        <rdfs:label xml:lang="it">Pizze e Focacce</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PolarAminoacid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PolarAminoacid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Aminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Polar Aminoacid category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Amminoacidi Polari</rdfs:label>
+        <rdfs:label xml:lang="en">Polar Aminoacid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PolyunsaturatedLipid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PolyunsaturatedLipid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Polyunsaturated Fat amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi Polinsaturi</rdfs:label>
+        <rdfs:label xml:lang="en">Polyunsaturated Fat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PorkFattyRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PorkFattyRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FattyRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pork Fatty Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Grassa di Suino</rdfs:label>
+        <rdfs:label xml:lang="en">Pork Fatty Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PorkLeanRedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PorkLeanRedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanRedMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Pork Lean Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa Magra di Suino</rdfs:label>
+        <rdfs:label xml:lang="en">Pork Lean Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Potassium -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Potassium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Potassium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Potassio</rdfs:label>
+        <rdfs:label xml:lang="en">Potassium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PoultryFattyWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PoultryFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Poultry with Skin or Poultry Fatty Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pollame con Pelle</rdfs:label>
+        <rdfs:label xml:lang="en">Poultry with Skin or Poultry Fatty Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PoultryLeanWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PoultryLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Skinned Poultry Lean Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pollame Senza Pelle</rdfs:label>
+        <rdfs:label xml:lang="en">Skinned Poultry Lean Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#PowderedMilk -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#PowderedMilk">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#MilkAndYogurt"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Powdered Milk category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Latte in Polvere</rdfs:label>
+        <rdfs:label xml:lang="en">Powdered Milk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedCereals -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedCereals">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Cereals"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Cereals category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cereali Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Cereals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Fish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pesce Confezionato o Lavorato</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Fish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedLegumes -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedLegumes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LegumesAndLegumeProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Legumi Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Legumes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedMollusc -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedMollusc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mollusc"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Mollusc category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Molluschi Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Mollusc</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedMushrooms -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedMushrooms">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mushrooms"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Mushrooms category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Funghi Confezionati e Lavorati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Mushrooms</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedShellfish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedShellfish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Shellfish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Shellfish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Crostacei Confezionati</rdfs:label>
+        <rdfs:label xml:lang="en">Processed Shellfish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedStarchyVegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedStarchyVegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#StarchyVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Starchy Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Processed Starchy Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Amidacee Conservate e Lavorate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#ProcessedVegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#ProcessedVegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#StarchyFreeVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Processed Starchy Free Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Processed Starchy Free Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure e Ortaggi Conservati a Basso Contenuto di Amido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Proline -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Proline">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Proline amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Prolina</rdfs:label>
+        <rdfs:label xml:lang="en">Proline</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Protein -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Protein">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Protein</rdfs:label>
+        <rdfs:label xml:lang="it">Proteine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#RabbitFattyWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#RabbitFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Rabbit Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa di Coniglio</rdfs:label>
+        <rdfs:label xml:lang="en">Rabbit Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#RabbitLeanWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#RabbitLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Rabbit Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Coniglio</rdfs:label>
+        <rdfs:label xml:lang="en">Rabbit Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#RedMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#RedMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Meat"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/fuskg/food#WhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Red Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Rossa</rdfs:label>
+        <rdfs:label xml:lang="en">Red Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#RetinolEquivalent -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#RetinolEquivalent">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Retinol Equivalent amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Retinol Equivalent</rdfs:label>
+        <rdfs:label xml:lang="it">Retinolo Equivalente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Rice -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Rice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Rice category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Rice</rdfs:label>
+        <rdfs:label xml:lang="it">Riso</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#RoastedNuts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#RoastedNuts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Nuts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Roasted Nuts category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Noci Tostate</rdfs:label>
+        <rdfs:label xml:lang="en">Roasted Nuts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Salt -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Salt">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Salt category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sale</rdfs:label>
+        <rdfs:label xml:lang="en">Salt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SaltedFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SaltedFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Salted Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pesce sotto Sale</rdfs:label>
+        <rdfs:label xml:lang="en">Salted Fish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SaturatedLipid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SaturatedLipid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Saturated Lipids amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lipidi Saturi</rdfs:label>
+        <rdfs:label xml:lang="en">Saturated Lipids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Sausages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Sausages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SausagesAndColdCuts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sausages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Insaccati</rdfs:label>
+        <rdfs:label xml:lang="en">Sausages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SausagesAndColdCuts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SausagesAndColdCuts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sausages and Cold Cuts category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Salumi e Insaccati</rdfs:label>
+        <rdfs:label xml:lang="en">Sausages and Cold Cuts</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Seeds -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Seeds">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#NutSeedAndOliveProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Seeds category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Seeds</rdfs:label>
+        <rdfs:label xml:lang="it">Semi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Selenium -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Selenium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Selenium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Selenio</rdfs:label>
+        <rdfs:label xml:lang="en">Selenium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Serine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Serine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Serina amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Serina</rdfs:label>
+        <rdfs:label xml:lang="en">Serine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Shellfish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Shellfish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FishAndSeafood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Shellfish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Crostacei</rdfs:label>
+        <rdfs:label xml:lang="en">Shellfish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SmokedFish -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SmokedFish">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedFish"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Smoked Fish category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pesce Affumicato</rdfs:label>
+        <rdfs:label xml:lang="en">Smoked Fish</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Sodium -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Sodium">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Sodium amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sodio</rdfs:label>
+        <rdfs:label xml:lang="en">Sodium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SoyProducts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SoyProducts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedLegumes"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Soy Products category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Prodotti a Base di Soia</rdfs:label>
+        <rdfs:label xml:lang="en">Soy Products</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SpecialBread -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SpecialBread">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Bread"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Spercial Bread category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pane Speciale</rdfs:label>
+        <rdfs:label xml:lang="en">Spercial Bread</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Spices -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Spices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Spices category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Spezie</rdfs:label>
+        <rdfs:label xml:lang="en">Spices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SpiritsAndLiquor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SpiritsAndLiquor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#AlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Spirits and Liquor category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Spirits and Liquor</rdfs:label>
+        <rdfs:label xml:lang="it">Superalcolici</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Starch -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Starch">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Starch amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Amido</rdfs:label>
+        <rdfs:label xml:lang="en">Starch</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#StarchyFreeVegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#StarchyFreeVegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Starchy Free Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Starchy Free Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure con Basso Contenuto di amido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#StarchyVegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#StarchyVegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Starchy Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Starchy Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure Amidacee</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#StearicAcid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#StearicAcid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Stearic Acid amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acido Stearico</rdfs:label>
+        <rdfs:label xml:lang="en">Stearic Acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Sucrose -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Sucrose">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Carbs"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Sucrose amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Saccarosio</rdfs:label>
+        <rdfs:label xml:lang="en">Sucrose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SugarAndSweeteners -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SugarAndSweeteners">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sugar category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sugar and Sweeteners</rdfs:label>
+        <rdfs:label xml:lang="it">Zucchero e Dolcificanti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SugarAndSweets -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SugarAndSweets">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sugar and Sweets category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sugar and Sweets</rdfs:label>
+        <rdfs:label xml:lang="it">Zucchero e Dolci</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Sulfur -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Sulfur">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Sulfur amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sulfur</rdfs:label>
+        <rdfs:label xml:lang="it">Zolfo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SweetBeveragesAndJuices -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SweetBeveragesAndJuices">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#NonAlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sweet Beverages and Juices category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande Zuccherate e Succhi</rdfs:label>
+        <rdfs:label xml:lang="en">Sweet Beverages and Juices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SweetSnacksAndBrioches -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SweetSnacksAndBrioches">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sweet Snacks and Brioches category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Merendine Dolci e Brioches</rdfs:label>
+        <rdfs:label xml:lang="en">Sweet Snacks and Brioches</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SweetSpreads -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SweetSpreads">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Sweet Spreads category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Dolci Spalmabili</rdfs:label>
+        <rdfs:label xml:lang="en">Sweet Spreads</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Products to Make Sweets and Cakes category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Prodotti per Fare Dolci e Torte</rdfs:label>
+        <rdfs:label xml:lang="en">Products to Make Sweets and Cakes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Syrups -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Syrups">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#SugarAndSweets"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Syrups category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sciroppi</rdfs:label>
+        <rdfs:label xml:lang="en">Syrups</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#TableCream -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#TableCream">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#MilkAndDairyProducts"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Table Cream category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Panna</rdfs:label>
+        <rdfs:label xml:lang="en">Table Cream</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#TeaBeverages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#TeaBeverages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#NonAlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Tea Based Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande a Base di T </rdfs:label>
+        <rdfs:label xml:lang="en">Tea Based Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Threonine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Threonine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Threonine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Threonine</rdfs:label>
+        <rdfs:label xml:lang="it">Treonina</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#TomatoSauces -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#TomatoSauces">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Tomato Sauces category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Salse di Pomodoro</rdfs:label>
+        <rdfs:label xml:lang="en">Tomato Sauces</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Tryptophan -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Tryptophan">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Tryptophan amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Triptofano</rdfs:label>
+        <rdfs:label xml:lang="en">Tryptophan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Tyrosine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Tyrosine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#PolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Tyrosine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Tirosina</rdfs:label>
+        <rdfs:label xml:lang="en">Tyrosine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Valine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Valine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ApolarAminoacid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Valine amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Valina</rdfs:label>
+        <rdfs:label xml:lang="en">Valine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VealFattyWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VealFattyWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FattyWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Veal Fatty White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Grassa di Vitello</rdfs:label>
+        <rdfs:label xml:lang="en">Veal Fatty White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VealLeanWhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VealLeanWhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#LeanWhiteMeat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Veal Lean White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca Magra di Vitello</rdfs:label>
+        <rdfs:label xml:lang="en">Veal Lean White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetableBasedBeverages -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetableBasedBeverages">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#ProcessedVegetables"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetable Based Beverages category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bevande di Verdura</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetable Based Beverages</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetableLipid -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetableLipid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Lipid"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vegetal Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lipidi Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetable Lipids</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Vegetables -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Vegetables">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#VegetablesAndLegumes"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetables category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vegetables</rdfs:label>
+        <rdfs:label xml:lang="it">Verdure e Ortaggi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetablesAndLegumes -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetablesAndLegumes">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#BasicFood"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetables and Legumes category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vegetables and Legumes</rdfs:label>
+        <rdfs:label xml:lang="it">Verdura, Ortaggi e Legumi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetalEVOOils -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetalEVOOils">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#VegetalOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetal Extra-Vergin Olive Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Oli Extra Vergine di Oliva Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Extra-Vergin Olive Oils</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetalFats -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetalFats">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#VegetalFatsAndOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetal Fats category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Fats</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetalFatsAndOils -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetalFatsAndOils">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#FatsAndOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetal Fats and Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Grassi e Oli Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Fats and Oils</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetalOils -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetalOils">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#VegetalFatsAndOils"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Vegetal Oils category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Oli Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Oils</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VegetalProtein -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VegetalProtein">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Protein"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vegetal Protein amounts.</rdfs:comment>
+        <rdfs:label xml:lang="it">Proteine Vegetali</rdfs:label>
+        <rdfs:label xml:lang="en">Vegetal Protein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Vitamin -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Vitamin">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">Concept denoting nutrients belonging to the Vitamin category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminA -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminA">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin A amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin A</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina A</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminB1 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminB1">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B1 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B1</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminB12 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminB12">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B12 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B12</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B12</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminB2 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminB2">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B2 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B2</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B2</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminB6 -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminB6">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin B6 amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin B6</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina B6</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminC -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminC">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin C amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin C</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina C</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminD -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminD">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin D amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin D</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina D</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#VitaminE -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#VitaminE">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Vitamin"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Vitamin E amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vitamin E</rdfs:label>
+        <rdfs:label xml:lang="it">Vitamina E</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#WaterBeverage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#WaterBeverage">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Beverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Water category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Acqua</rdfs:label>
+        <rdfs:label xml:lang="en">Water</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#WheatFlour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#WheatFlour">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Flour"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Wheat Flour category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Farine Raffinate</rdfs:label>
+        <rdfs:label xml:lang="en">Wheat Flour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#WhiteBread -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#WhiteBread">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Bread"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the White Bread category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Pane Comune</rdfs:label>
+        <rdfs:label xml:lang="en">White Bread</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#WhiteMeat -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#WhiteMeat">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Meat"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the White Meat category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Carne Bianca</rdfs:label>
+        <rdfs:label xml:lang="en">White Meat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#WholeWheatFlour -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#WholeWheatFlour">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Flour"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Whole Wheat Four category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Farine Integrali</rdfs:label>
+        <rdfs:label xml:lang="en">Whole Wheat Four</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Wine -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Wine">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#AlcoholicBeverages"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Wine category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Vino</rdfs:label>
+        <rdfs:label xml:lang="en">Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Yogurt -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Yogurt">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#MilkAndYogurt"/>
+        <rdfs:comment xml:lang="en">Concept denoting foods belonging to the Yogurt category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Yogurt</rdfs:label>
+        <rdfs:label xml:lang="it">Yogurt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/food#Zinc -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/food#Zinc">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/food#Mineral"/>
+        <rdfs:comment xml:lang="en">Concept denoting values corresponding to Zinc amounts.</rdfs:comment>
+        <rdfs:label xml:lang="en">Zinc</rdfs:label>
+        <rdfs:label xml:lang="it">Zinco</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#CerealsAndGrainProducts"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#CulinaryErbs"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#Eggs"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#FatsAndOils"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#FishAndSeafood"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#Fruits"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#Meat"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#MilkAndDairyProducts"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#NutSeedAndOliveProducts"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#Salt"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#SausagesAndColdCuts"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#Spices"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#SugarAndSweets"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/food#VegetablesAndLegumes"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

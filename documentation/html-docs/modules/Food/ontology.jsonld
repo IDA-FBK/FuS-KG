@@ -1,0 +1,4668 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/fuskg/core#contains"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#CulinaryErbs"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#Eggs"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#FatsAndOils"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#FishAndSeafood"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#Fruits"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#Meat"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#MilkAndDairyProducts"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#NutSeedAndOliveProducts"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#Salt"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#SausagesAndColdCuts"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#Spices"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+    }, {
+      "@id" : "https://w3id.org/fuskg/food#VegetablesAndLegumes"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#range",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#Activity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Activity"
+  }, {
+    "@language" : "it",
+    "@value" : "Attività"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#Barrier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Barrier"
+  }, {
+    "@language" : "it",
+    "@value" : "Barriera"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#Food",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Alimento"
+  }, {
+    "@language" : "en",
+    "@value" : "Food"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#Nutrient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Nutrient"
+  }, {
+    "@language" : "it",
+    "@value" : "Nutriente"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#affectsPerformingOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the relationship between a barrier affecting the performing of an activity."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Barrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "affects performing of"
+  }, {
+    "@language" : "it",
+    "@value" : "influenza l'esecuzione di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Activity"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#concernsConsumptionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property defines the relationship between a barrier and the consumption of a food or nutrient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Barrier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "concerns consumption of"
+  }, {
+    "@language" : "it",
+    "@value" : "riguarda il consumo di"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  }, {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property specifies that a food contains another food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains"
+  }, {
+    "@language" : "it",
+    "@value" : "contiene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#hasNutrient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property specifies the nutrient(s) contained ia a food."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "ha Nutriente"
+  }, {
+    "@language" : "en",
+    "@value" : "has Nutrient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#interfaceLabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/core#source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Claudio Eccher"
+  }, {
+    "@value" : "Gianluca Apriceno"
+  }, {
+    "@value" : "Mauro Dragoni"
+  }, {
+    "@value" : "Rosa Maimone"
+  }, {
+    "@value" : "Tania Bailoni"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2017-05-02"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2024-05-13"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@value" : "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>"
+  } ],
+  "http://purl.org/dc/terms/rights" : [ {
+    "@language" : "en",
+    "@value" : "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Food Module of Functional Status Knowledge Graph (FuS-KG)"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "fsfood"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@value" : "https://w3id.org/fuskg/food#"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-core.ttl"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.02"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AdultBovineFattyRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Adult Bovine Fatty Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Adult Bovine Fatty Red Meat"
+  }, {
+    "@language" : "it",
+    "@value" : "Carne Rossa Grassa di Bovino Adulto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FattyRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AdultBovineLeanRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Adult Bovine Lean Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Adult Bovine Lean Red Meat"
+  }, {
+    "@language" : "it",
+    "@value" : "Carne Rossa Magra di Bovino Adulto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AdultGoatLeanRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Adult Goat Lean Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Adult Goat Lean Red Meat"
+  }, {
+    "@language" : "it",
+    "@value" : "Carne Rossa Magra di Capra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AdultSheepFattyRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Adult Sheep Fatty Red Meat"
+  }, {
+    "@language" : "it",
+    "@value" : "Carne Rossa Grassa di Pecora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FattyRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AdultSheepLeanRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Adult Sheep Lean Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Adult Sheep Lean Red Meat"
+  }, {
+    "@language" : "it",
+    "@value" : "Carne Rossa Magra di Pecora"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AgedCheese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Aged Cheese category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aged Cheese"
+  }, {
+    "@language" : "it",
+    "@value" : "Formaggi Stagionati"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Cheese"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Alanine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Alanine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Alanina"
+  }, {
+    "@language" : "en",
+    "@value" : "Alanine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Alcohol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Alcohol amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alcohol"
+  }, {
+    "@language" : "it",
+    "@value" : "Alcool"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AlcoholicBeverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Alcoholic Beverages category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alcoholic Beverages"
+  }, {
+    "@language" : "it",
+    "@value" : "Bevande Alcoliche"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Beverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Algae",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Algae category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Algae"
+  }, {
+    "@language" : "it",
+    "@value" : "Alghe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Aminoacid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting nutrients belonging to the Aminoacid category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Aminoacid"
+  }, {
+    "@language" : "it",
+    "@value" : "Amminoacidi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AnimalFats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Animal Fats category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Animal Fats"
+  }, {
+    "@language" : "it",
+    "@value" : "Grasso Animale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#AnimalFatsAndOils"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AnimalFatsAndOils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Animal Fats and Oils category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Animal Fats and Oils"
+  }, {
+    "@language" : "it",
+    "@value" : "Grassi e Oli Animali"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FatsAndOils"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AnimalLipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Animal Lipid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Animal Lipids"
+  }, {
+    "@language" : "it",
+    "@value" : "Lipidi Animali"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AnimalMilk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Animal Milk category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Animal Milk"
+  }, {
+    "@language" : "it",
+    "@value" : "Latte Animale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#MilkAndYogurt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AnimalProtein",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Animal Protein amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Animal Protein"
+  }, {
+    "@language" : "it",
+    "@value" : "Proteine Animali"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Protein"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting nutrients belonging to the Apolar Aminoacid category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Amminoacidi Apolari"
+  }, {
+    "@language" : "en",
+    "@value" : "Apolar Aminoacid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Aminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ArachidicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Arachidic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Arachidico"
+  }, {
+    "@language" : "en",
+    "@value" : "Arachidic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ArachidonicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Arachidonic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Arachidonico"
+  }, {
+    "@language" : "en",
+    "@value" : "Arachidonic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Arginine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Arginine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Arginina"
+  }, {
+    "@language" : "en",
+    "@value" : "Arginine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#AsparticAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Aspartic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Aspartico"
+  }, {
+    "@language" : "en",
+    "@value" : "Aspartic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#BasicFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Basic Food category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Alimento Base"
+  }, {
+    "@language" : "en",
+    "@value" : "Basic Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Beer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Beer category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Beer"
+  }, {
+    "@language" : "it",
+    "@value" : "Birra"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#AlcoholicBeverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#BehenicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Behenic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Beenico"
+  }, {
+    "@language" : "en",
+    "@value" : "Behenic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#BetaCarotene",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Beta-Carotene amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Beta Carotene"
+  }, {
+    "@language" : "en",
+    "@value" : "Beta-Carotene"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Beverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Beverages category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Bevande"
+  }, {
+    "@language" : "en",
+    "@value" : "Beverages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Biotin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Biotin amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Biotin"
+  }, {
+    "@language" : "it",
+    "@value" : "Biotina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#BiscuitsAndCrackers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Bicuits and Crackers category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bicuits and Crackers"
+  }, {
+    "@language" : "it",
+    "@value" : "Biscotti e Crackers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Bread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Bread category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Bread"
+  }, {
+    "@language" : "it",
+    "@value" : "Pane"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#BrinedFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Brined Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Brined Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce in Salamoia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Broth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Broth category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Brodo"
+  }, {
+    "@language" : "en",
+    "@value" : "Broth"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ComposedFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ButyricCaproicCaprylicCapricAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to the sum of Butyric Caproic Caprylic and Capric Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Somma degli Acidi Butirrico Caproico Caprilico e Caprico"
+  }, {
+    "@language" : "en",
+    "@value" : "Sum of Butyric Caproic Caprylic and Capric Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Calcium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Calcium amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Calcio"
+  }, {
+    "@language" : "en",
+    "@value" : "Calcium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CandiedFruits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Candied Fruits category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Candied Fruits"
+  }, {
+    "@language" : "it",
+    "@value" : "Frutta Candita"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Candy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Candy category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Candy"
+  }, {
+    "@language" : "it",
+    "@value" : "Caramelle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CannedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Canned Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Canned Meat"
+  }, {
+    "@language" : "it",
+    "@value" : "Carne in Scatola"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SausagesAndColdCuts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CannedOrCookedFruit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Canned or Cooked Fruit category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Canned or Cooked Fruit"
+  }, {
+    "@language" : "it",
+    "@value" : "Frutta in Scatola o Cotta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CannedVegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Marinated Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Marinated Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure Sott'Olio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedVegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Carbs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Carbs amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carboidrati"
+  }, {
+    "@language" : "en",
+    "@value" : "Carbs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CarbsSoluble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Soluble Carbs amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carboidrati Solubili"
+  }, {
+    "@language" : "en",
+    "@value" : "Soluble Carbs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Cereals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Cereals category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Cereali"
+  }, {
+    "@language" : "en",
+    "@value" : "Cereals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Cereal and Grain Products category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cereal and Grain Products"
+  }, {
+    "@language" : "it",
+    "@value" : "Cereali e Prodotti Derivati"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Cheese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Cheese category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cheese"
+  }, {
+    "@language" : "it",
+    "@value" : "Formaggio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#MilkAndDairyProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Chlorine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Chlorine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chlorine"
+  }, {
+    "@language" : "it",
+    "@value" : "Cloro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ChocolateAndCocoa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Chocolate and Cocoa category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Chocolate and Cocoa"
+  }, {
+    "@language" : "it",
+    "@value" : "Cioccolato e Cacao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Cholesterol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Cholesterol amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cholesterol"
+  }, {
+    "@language" : "it",
+    "@value" : "Colesterolo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CoffeeAndSubstitutes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Coffee and Substitutes category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Caff  e Sostituti"
+  }, {
+    "@language" : "en",
+    "@value" : "Coffee and Substitutes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Beverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ColdCuts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Cold Cuts category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cold Cuts"
+  }, {
+    "@language" : "it",
+    "@value" : "Salumi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SausagesAndColdCuts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ComposedFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Composed Food category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Alimento Composto"
+  }, {
+    "@language" : "en",
+    "@value" : "Composed Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Copper",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Copper amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Copper"
+  }, {
+    "@language" : "it",
+    "@value" : "Rame"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Cream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Cream category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cream"
+  }, {
+    "@language" : "it",
+    "@value" : "Crema"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SweetSpreads"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#CulinaryErbs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Culinary Erbs category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Culinary Erbs"
+  }, {
+    "@language" : "it",
+    "@value" : "Erbe Aromatiche"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Cystine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Cystine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Cistina"
+  }, {
+    "@language" : "en",
+    "@value" : "Cystine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#DHAAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to DHA Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido DHA"
+  }, {
+    "@language" : "en",
+    "@value" : "DHA Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Dessert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Dessert category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dessert"
+  }, {
+    "@language" : "it",
+    "@value" : "Dessert"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#DietaryFiber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Dietary Fiber amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dietary Fiber"
+  }, {
+    "@language" : "it",
+    "@value" : "Fibra Alimentare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#DryAlgae",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Dry Algae category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Alghe Secche"
+  }, {
+    "@language" : "en",
+    "@value" : "Dry Algae"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Algae"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#DryCulinaryErbs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Dry Culinary Erbs category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dry Culinary Erbs"
+  }, {
+    "@language" : "it",
+    "@value" : "Erbe Aromatiche Secche"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CulinaryErbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#DryFruits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Dry Fruits category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dry Fruits"
+  }, {
+    "@language" : "it",
+    "@value" : "Frutta Secca"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Fruits"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#DryMushrooms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Dry Mushrooms category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dry Mushrooms"
+  }, {
+    "@language" : "it",
+    "@value" : "Funghi Secchi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedMushrooms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#EPAAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to EPA Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido EPA"
+  }, {
+    "@language" : "en",
+    "@value" : "EPA Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Eggs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Eggs category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Eggs"
+  }, {
+    "@language" : "it",
+    "@value" : "Uova"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#EicosenoicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Eicosenoic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Eicosenoico"
+  }, {
+    "@language" : "en",
+    "@value" : "Eicosenoic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ErucicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Erucic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Erucico"
+  }, {
+    "@language" : "en",
+    "@value" : "Erucic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FatsAndOils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fats and Oils category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fats and Oils"
+  }, {
+    "@language" : "it",
+    "@value" : "Grassi e Oli"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FattyRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fatty Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Rossa Grassa"
+  }, {
+    "@language" : "en",
+    "@value" : "Fatty Red Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#RedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FattyWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fatty White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Grassa"
+  }, {
+    "@language" : "en",
+    "@value" : "Fatty White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#WhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Fish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FishAndSeafood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FishAndSeafood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fish and Seafood category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fish and Seafood"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce, Molluschi e Crostacei"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Flour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Flour category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Farine"
+  }, {
+    "@language" : "en",
+    "@value" : "Flour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FolicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Folic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Folico"
+  }, {
+    "@language" : "en",
+    "@value" : "Folic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshAlgae",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Algae category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Alghe Fresche"
+  }, {
+    "@language" : "en",
+    "@value" : "Fresh Algae"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Algae"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshCereals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Cereals category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Cereali Freschi"
+  }, {
+    "@language" : "en",
+    "@value" : "Fresh Cereals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Cereals"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshCheese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Cheese category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Formaggi Freschi"
+  }, {
+    "@language" : "en",
+    "@value" : "Fresh Cheese"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Cheese"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshCulinaryErbs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Culinary Erbs category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Erbe Aromatiche Fresche"
+  }, {
+    "@language" : "en",
+    "@value" : "Fresh Culinary Erbs"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CulinaryErbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Fresco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Fish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshFruits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Fruits category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Fruits"
+  }, {
+    "@language" : "it",
+    "@value" : "Frutta Fresca"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Fruits"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshLegumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Legumes category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Legumes"
+  }, {
+    "@language" : "it",
+    "@value" : "Legumi Freschi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LegumesAndLegumeProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshMollusc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Mollusc category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Mollusc"
+  }, {
+    "@language" : "it",
+    "@value" : "Molluschi Freschi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mollusc"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshMushrooms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Mushrooms category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Mushrooms"
+  }, {
+    "@language" : "it",
+    "@value" : "Funghi Freschi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mushrooms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshNotOilyFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh White (Not Oily) Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh White Fat Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Bianco Grasso Fresco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshNotOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshNotOilyFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh White (Not Oily) Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pesce Fresco Bianco"
+  }, {
+    "@language" : "en",
+    "@value" : "White Fresh Fish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshNotOilyLeanFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh White (Not Oily) Lean Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh White Lean Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Bianco Magro Fresco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshNotOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh White (Not Oily) Semi-Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Semi-fat White Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Bianco Semigrasso Fresco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshNotOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshOilyFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Oily Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Oily Fat Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Azzurro Grasso Fresco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshOilyFish"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshOilyLeanFish"
+  }, {
+    "@id" : "https://w3id.org/fuskg/food#FreshOilyMediumFatFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshOilyFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Oily Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Oily Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Fresco Azzurro"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshOilyLeanFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Oily Lean Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Oily Lean Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Azzurro Magro Fresco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshOilyFish"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshOilyMediumFatFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshOilyMediumFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Oily Semi-Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Oily Semi-Fat Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Azzurro Fresco Semigrasso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FreshOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshShellfish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Shellfish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Crostacei Freschi"
+  }, {
+    "@language" : "en",
+    "@value" : "Fresh Shellfish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Shellfish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshStarchyVegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Starchy Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Starchy Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure Amidacee Fresche"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#StarchyVegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FreshVegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fresh Starchy Free Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fresh Starchy Free Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure ed Ortaggi Freschi a Basso Contenuto di Amido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#StarchyFreeVegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenNotOilyFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen White (Not Oily) Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen White Fat Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Bianco Grasso Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenNotOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenNotOilyFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen White (Not Oily) Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen White Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Bianco Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenNotOilyLeanFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen White (Not Oily) Lean Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen White Lean Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Bianco Magro Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenNotOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenNotOilyMediumFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen White (Not Oily) Semi-Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen Semi-fat White Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Bianco Semigrasso Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenNotOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenOilyFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen Oily Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen Oily Fat Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Azzurro Grasso Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenOilyFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen Oily Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen Oily Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Azzurro Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenOilyLeanFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen Oily Lean Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen Oily Lean Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Azzurro Magro Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenOilyMediumFatFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen Oily Semi-Fat Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen Oily Semi-Fat Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Azzurro Semigrasso Surgelato"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FrozenOilyFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FrozenVegetablesAndLegumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Frozen Vegetables and Legumes category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Frozen Vegetables and Legumes"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure e Legumi Surgelati"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#VegetablesAndLegumes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Fructose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Fructose amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fructose"
+  }, {
+    "@language" : "it",
+    "@value" : "Fruttosio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FruitBasedBeverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fruit Based Beverages category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fruit Based Beverages"
+  }, {
+    "@language" : "it",
+    "@value" : "Spremute o Bevande a base di Frutta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Fruits"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FruitJuices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fruit Juices category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fruit Juices"
+  }, {
+    "@language" : "it",
+    "@value" : "Succhi di Frutta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SweetBeveragesAndJuices"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#FruitPeel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fruit Peel category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fruit Peel"
+  }, {
+    "@language" : "it",
+    "@value" : "Scorza di Frutta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Fruits"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Fruits",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Fruits category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fruits"
+  }, {
+    "@language" : "it",
+    "@value" : "Frutta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Galactose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Galactose amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Galactose"
+  }, {
+    "@language" : "it",
+    "@value" : "Galattosio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Glucose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Glucose amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Glucose"
+  }, {
+    "@language" : "it",
+    "@value" : "Glucosio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#GlutamicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Glutamic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Glutammico"
+  }, {
+    "@language" : "en",
+    "@value" : "Glutamic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Glycine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Glycine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Glicina"
+  }, {
+    "@language" : "en",
+    "@value" : "Glycine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#GoatLeanWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Goat Lean White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Magra di Capretto"
+  }, {
+    "@language" : "en",
+    "@value" : "Goat Lean White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Histidine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Histidine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Histidine"
+  }, {
+    "@language" : "it",
+    "@value" : "Istidina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#IceCream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Ice Cream category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Gelato"
+  }, {
+    "@language" : "en",
+    "@value" : "Ice Cream"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Iodine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Iodine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Iodine"
+  }, {
+    "@language" : "it",
+    "@value" : "Iodio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Iron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Iron amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Ferro"
+  }, {
+    "@language" : "en",
+    "@value" : "Iron"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Isoleucine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Isoleucine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Isoleucina"
+  }, {
+    "@language" : "en",
+    "@value" : "Isoleucine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Jam",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Jam category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Jam"
+  }, {
+    "@language" : "it",
+    "@value" : "Marmellata"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SweetSpreads"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Lactose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Lactose amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Lactose"
+  }, {
+    "@language" : "it",
+    "@value" : "Lattosio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LambFattyWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Lamb Fatty White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Grassa di Agnello"
+  }, {
+    "@language" : "en",
+    "@value" : "Lamb Fatty White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FattyWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LambLeanWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Lamb Lean White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Magra di Agnello"
+  }, {
+    "@language" : "en",
+    "@value" : "Lamb Lean White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LauricAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Lauric Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Laurico"
+  }, {
+    "@language" : "en",
+    "@value" : "Lauric Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LeanGameMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Lean Game Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne di Selvaggina Magra"
+  }, {
+    "@language" : "en",
+    "@value" : "Lean Game Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#OtherMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LeanRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Lean Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Rossa Magra"
+  }, {
+    "@language" : "en",
+    "@value" : "Lean Red Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#RedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LeanWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Lean White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Magra"
+  }, {
+    "@language" : "en",
+    "@value" : "Lean White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#WhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LegumesAndLegumeProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Legumes and Legume Products category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Legumes and Legume Products"
+  }, {
+    "@language" : "it",
+    "@value" : "Legumi e Prodotti a Base di Legumi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#VegetablesAndLegumes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Leucine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Leucine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Leucina"
+  }, {
+    "@language" : "en",
+    "@value" : "Leucine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LinoleicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Linoleic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Linoleico"
+  }, {
+    "@language" : "en",
+    "@value" : "Linoleic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#LinolenicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Linolenic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Linolenico"
+  }, {
+    "@language" : "en",
+    "@value" : "Linolenic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Lipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Lipids amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Lipidi"
+  }, {
+    "@language" : "en",
+    "@value" : "Lipids"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Lysine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Lysine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Lisina"
+  }, {
+    "@language" : "en",
+    "@value" : "Lysine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Magnesium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Magnesium amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Magnesio"
+  }, {
+    "@language" : "en",
+    "@value" : "Magnesium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Maltose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Maltose amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Maltose"
+  }, {
+    "@language" : "it",
+    "@value" : "Maltosio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Manganese",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Manganese amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Manganese"
+  }, {
+    "@language" : "it",
+    "@value" : "Manganese"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#MarinatedFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Marinated Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Marinated Fish"
+  }, {
+    "@language" : "it",
+    "@value" : "Pesce Sott'Olio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#MarinatedMushrooms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Preserved Marinated Mushrooms category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Funghi Conservati Sott'Olio"
+  }, {
+    "@language" : "en",
+    "@value" : "Preserved Marinated Mushrooms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedMushrooms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Meat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne"
+  }, {
+    "@language" : "en",
+    "@value" : "Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Methionine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Methionine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Methionine"
+  }, {
+    "@language" : "it",
+    "@value" : "Metionina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#MilkAndDairyProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Milk and Dairy Products category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Latte e Prodotti Derivati"
+  }, {
+    "@language" : "en",
+    "@value" : "Milk and Dairy Products"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#MilkAndYogurt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Milk and Yogurt category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Latte e Yogurt"
+  }, {
+    "@language" : "en",
+    "@value" : "Milk and Yogurt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#MilkAndDairyProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Mineral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting nutrients belonging to the Mineral category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Minerali"
+  }, {
+    "@language" : "en",
+    "@value" : "Minerals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Mollusc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Mollusc category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mollusc"
+  }, {
+    "@language" : "it",
+    "@value" : "Molluschi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FishAndSeafood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#MonounsaturatedLipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Monounsaturated Fat amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Grassi Monoinsaturi"
+  }, {
+    "@language" : "en",
+    "@value" : "Monounsaturated Fat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Mushrooms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Mushrooms category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Funghi"
+  }, {
+    "@language" : "en",
+    "@value" : "Mushrooms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#MyristicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Myristic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Miristico"
+  }, {
+    "@language" : "en",
+    "@value" : "Myristic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#MyristoleicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Myristoleic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Miristoleico"
+  }, {
+    "@language" : "en",
+    "@value" : "Myristoleic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Niacin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Niacin (Vitamin B3) amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Niacin"
+  }, {
+    "@language" : "it",
+    "@value" : "Niacina"
+  }, {
+    "@language" : "en",
+    "@value" : "Vitamin B3"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina B3"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#NonAlcoholicBeverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Non-Alcoholic Beverages category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Bevande Analcoliche"
+  }, {
+    "@language" : "en",
+    "@value" : "Non-Alcoholic Beverages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Beverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#NutSeedAndOliveProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Nuts, Seeds and Olives category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Noci, Frutta a Guscio, Semi e Olive"
+  }, {
+    "@language" : "en",
+    "@value" : "Nuts, Seeds and Olives"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Nuts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Nuts category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Noci e Frutta a Guscio"
+  }, {
+    "@language" : "en",
+    "@value" : "Nuts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#NutSeedAndOliveProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#OleicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Oleic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Oleico"
+  }, {
+    "@language" : "en",
+    "@value" : "Oleic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#OlivesAndOliveProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Olives and Olive Products category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Olive e Prodotti di Olive"
+  }, {
+    "@language" : "en",
+    "@value" : "Olives and Olive Products"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#NutSeedAndOliveProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#OtherLeanRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Other Lean Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Altra Carne Rossa Magra"
+  }, {
+    "@language" : "en",
+    "@value" : "Other Lean Red Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#OtherMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Other Meat Types category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Altri Tipi di Carne"
+  }, {
+    "@language" : "en",
+    "@value" : "Other Meat Types"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Meat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#OtherPolyunsaturatedLipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to other Polyunsaturated Fat amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Altri Grassi Polinsaturi"
+  }, {
+    "@language" : "en",
+    "@value" : "Other Polyunsaturated Fat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PalmiticAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Palmitic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Palmitico"
+  }, {
+    "@language" : "en",
+    "@value" : "Palmitic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PalmitoleicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Palmitoleic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Palmitoleico"
+  }, {
+    "@language" : "en",
+    "@value" : "Palmitoleic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PantothenicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Pantothenic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Pantotenico"
+  }, {
+    "@language" : "en",
+    "@value" : "Pantothenic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Pasta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Pasta category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pasta"
+  }, {
+    "@language" : "it",
+    "@value" : "Pasta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Pastry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Pastry category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Paste e Pasticcini"
+  }, {
+    "@language" : "en",
+    "@value" : "Pastry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Phenylalanine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Phenylalanine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Fenilalanina"
+  }, {
+    "@language" : "en",
+    "@value" : "Phenylalanine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Phosphorus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Phosphorus amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Fosforo"
+  }, {
+    "@language" : "en",
+    "@value" : "Phosphorus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PizzaAndFocacciaBread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Pizzas and \"Focaccia\" Breadcategory."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Pizzas and \"Focaccia\" Bread"
+  }, {
+    "@language" : "it",
+    "@value" : "Pizze e Focacce"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PolarAminoacid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting nutrients belonging to the Polar Aminoacid category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Amminoacidi Polari"
+  }, {
+    "@language" : "en",
+    "@value" : "Polar Aminoacid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Aminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PolyunsaturatedLipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Polyunsaturated Fat amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Grassi Polinsaturi"
+  }, {
+    "@language" : "en",
+    "@value" : "Polyunsaturated Fat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PorkFattyRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Pork Fatty Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Rossa Grassa di Suino"
+  }, {
+    "@language" : "en",
+    "@value" : "Pork Fatty Red Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FattyRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PorkLeanRedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Pork Lean Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Rossa Magra di Suino"
+  }, {
+    "@language" : "en",
+    "@value" : "Pork Lean Red Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanRedMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Potassium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Potassium amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Potassio"
+  }, {
+    "@language" : "en",
+    "@value" : "Potassium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PoultryFattyWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Poultry with Skin or Poultry Fatty Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pollame con Pelle"
+  }, {
+    "@language" : "en",
+    "@value" : "Poultry with Skin or Poultry Fatty Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FattyWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PoultryLeanWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Skinned Poultry Lean Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pollame Senza Pelle"
+  }, {
+    "@language" : "en",
+    "@value" : "Skinned Poultry Lean Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#PowderedMilk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Powdered Milk category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Latte in Polvere"
+  }, {
+    "@language" : "en",
+    "@value" : "Powdered Milk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#MilkAndYogurt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedCereals",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Cereals category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Cereali Confezionati e Lavorati"
+  }, {
+    "@language" : "en",
+    "@value" : "Processed Cereals"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Cereals"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pesce Confezionato o Lavorato"
+  }, {
+    "@language" : "en",
+    "@value" : "Processed Fish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Fish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedLegumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Legumes category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Legumi Confezionati e Lavorati"
+  }, {
+    "@language" : "en",
+    "@value" : "Processed Legumes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LegumesAndLegumeProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedMollusc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Mollusc category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Molluschi Confezionati e Lavorati"
+  }, {
+    "@language" : "en",
+    "@value" : "Processed Mollusc"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mollusc"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedMushrooms",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Mushrooms category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Funghi Confezionati e Lavorati"
+  }, {
+    "@language" : "en",
+    "@value" : "Processed Mushrooms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mushrooms"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedShellfish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Shellfish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Crostacei Confezionati"
+  }, {
+    "@language" : "en",
+    "@value" : "Processed Shellfish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Shellfish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedStarchyVegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Starchy Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Processed Starchy Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure Amidacee Conservate e Lavorate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#StarchyVegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ProcessedVegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Processed Starchy Free Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Processed Starchy Free Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure e Ortaggi Conservati a Basso Contenuto di Amido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#StarchyFreeVegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Proline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Proline amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Prolina"
+  }, {
+    "@language" : "en",
+    "@value" : "Proline"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Protein",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Protein amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Protein"
+  }, {
+    "@language" : "it",
+    "@value" : "Proteine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#RabbitFattyWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Rabbit Fatty White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Grassa di Coniglio"
+  }, {
+    "@language" : "en",
+    "@value" : "Rabbit Fatty White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FattyWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#RabbitLeanWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Rabbit Lean White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Magra di Coniglio"
+  }, {
+    "@language" : "en",
+    "@value" : "Rabbit Lean White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#RedMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Red Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Rossa"
+  }, {
+    "@language" : "en",
+    "@value" : "Red Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Meat"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://w3id.org/fuskg/food#WhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#RetinolEquivalent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Retinol Equivalent amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Retinol Equivalent"
+  }, {
+    "@language" : "it",
+    "@value" : "Retinolo Equivalente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Rice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Rice category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Rice"
+  }, {
+    "@language" : "it",
+    "@value" : "Riso"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#CerealsAndGrainProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#RoastedNuts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Roasted Nuts category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Noci Tostate"
+  }, {
+    "@language" : "en",
+    "@value" : "Roasted Nuts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Nuts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Salt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Salt category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Sale"
+  }, {
+    "@language" : "en",
+    "@value" : "Salt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SaltedFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Salted Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pesce sotto Sale"
+  }, {
+    "@language" : "en",
+    "@value" : "Salted Fish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SaturatedLipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Saturated Lipids amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Lipidi Saturi"
+  }, {
+    "@language" : "en",
+    "@value" : "Saturated Lipids"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Sausages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Sausages category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Insaccati"
+  }, {
+    "@language" : "en",
+    "@value" : "Sausages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SausagesAndColdCuts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SausagesAndColdCuts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Sausages and Cold Cuts category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Salumi e Insaccati"
+  }, {
+    "@language" : "en",
+    "@value" : "Sausages and Cold Cuts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Seeds",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Seeds category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Seeds"
+  }, {
+    "@language" : "it",
+    "@value" : "Semi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#NutSeedAndOliveProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Selenium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Selenium amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Selenio"
+  }, {
+    "@language" : "en",
+    "@value" : "Selenium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Serine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Serina amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Serina"
+  }, {
+    "@language" : "en",
+    "@value" : "Serine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Shellfish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Shellfish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Crostacei"
+  }, {
+    "@language" : "en",
+    "@value" : "Shellfish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FishAndSeafood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SmokedFish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Smoked Fish category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pesce Affumicato"
+  }, {
+    "@language" : "en",
+    "@value" : "Smoked Fish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedFish"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Sodium",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Sodium amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Sodio"
+  }, {
+    "@language" : "en",
+    "@value" : "Sodium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SoyProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Soy Products category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Prodotti a Base di Soia"
+  }, {
+    "@language" : "en",
+    "@value" : "Soy Products"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedLegumes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SpecialBread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Spercial Bread category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pane Speciale"
+  }, {
+    "@language" : "en",
+    "@value" : "Spercial Bread"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Bread"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Spices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Spices category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Spezie"
+  }, {
+    "@language" : "en",
+    "@value" : "Spices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SpiritsAndLiquor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Spirits and Liquor category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spirits and Liquor"
+  }, {
+    "@language" : "it",
+    "@value" : "Superalcolici"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#AlcoholicBeverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Starch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Starch amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Amido"
+  }, {
+    "@language" : "en",
+    "@value" : "Starch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#StarchyFreeVegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Starchy Free Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Starchy Free Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure con Basso Contenuto di amido"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#StarchyVegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Starchy Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Starchy Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure Amidacee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#StearicAcid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Stearic Acid amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acido Stearico"
+  }, {
+    "@language" : "en",
+    "@value" : "Stearic Acid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Sucrose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Sucrose amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Saccarosio"
+  }, {
+    "@language" : "en",
+    "@value" : "Sucrose"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Carbs"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SugarAndSweeteners",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Sugar category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sugar and Sweeteners"
+  }, {
+    "@language" : "it",
+    "@value" : "Zucchero e Dolcificanti"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SugarAndSweets",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Sugar and Sweets category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sugar and Sweets"
+  }, {
+    "@language" : "it",
+    "@value" : "Zucchero e Dolci"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Sulfur",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Sulfur amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sulfur"
+  }, {
+    "@language" : "it",
+    "@value" : "Zolfo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SweetBeveragesAndJuices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Sweet Beverages and Juices category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Bevande Zuccherate e Succhi"
+  }, {
+    "@language" : "en",
+    "@value" : "Sweet Beverages and Juices"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#NonAlcoholicBeverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SweetSnacksAndBrioches",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Sweet Snacks and Brioches category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Merendine Dolci e Brioches"
+  }, {
+    "@language" : "en",
+    "@value" : "Sweet Snacks and Brioches"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SweetSpreads",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Sweet Spreads category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Dolci Spalmabili"
+  }, {
+    "@language" : "en",
+    "@value" : "Sweet Spreads"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#SweetsAndCakesMakingProducts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Products to Make Sweets and Cakes category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Prodotti per Fare Dolci e Torte"
+  }, {
+    "@language" : "en",
+    "@value" : "Products to Make Sweets and Cakes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Syrups",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Syrups category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Sciroppi"
+  }, {
+    "@language" : "en",
+    "@value" : "Syrups"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#SugarAndSweets"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#TableCream",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Table Cream category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Panna"
+  }, {
+    "@language" : "en",
+    "@value" : "Table Cream"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#MilkAndDairyProducts"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#TeaBeverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Tea Based Beverages category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Bevande a Base di T "
+  }, {
+    "@language" : "en",
+    "@value" : "Tea Based Beverages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#NonAlcoholicBeverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Threonine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Threonine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Threonine"
+  }, {
+    "@language" : "it",
+    "@value" : "Treonina"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#TomatoSauces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Tomato Sauces category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Salse di Pomodoro"
+  }, {
+    "@language" : "en",
+    "@value" : "Tomato Sauces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedVegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Tryptophan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Tryptophan amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Triptofano"
+  }, {
+    "@language" : "en",
+    "@value" : "Tryptophan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Tyrosine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Tyrosine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Tirosina"
+  }, {
+    "@language" : "en",
+    "@value" : "Tyrosine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#PolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Valine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Valine amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Valina"
+  }, {
+    "@language" : "en",
+    "@value" : "Valine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ApolarAminoacid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VealFattyWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Veal Fatty White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Grassa di Vitello"
+  }, {
+    "@language" : "en",
+    "@value" : "Veal Fatty White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FattyWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VealLeanWhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Veal Lean White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca Magra di Vitello"
+  }, {
+    "@language" : "en",
+    "@value" : "Veal Lean White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#LeanWhiteMeat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetableBasedBeverages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Vegetable Based Beverages category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Bevande di Verdura"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetable Based Beverages"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#ProcessedVegetables"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetableLipid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vegetal Protein amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Lipidi Vegetali"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetable Lipids"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Lipid"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Vegetables",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Vegetables category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vegetables"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdure e Ortaggi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#VegetablesAndLegumes"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetablesAndLegumes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Vegetables and Legumes category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vegetables and Legumes"
+  }, {
+    "@language" : "it",
+    "@value" : "Verdura, Ortaggi e Legumi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#BasicFood"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetalEVOOils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Vegetal Extra-Vergin Olive Oils category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Oli Extra Vergine di Oliva Vegetali"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetal Extra-Vergin Olive Oils"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#VegetalOils"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetalFats",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Vegetal Fats category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Grassi Vegetali"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetal Fats"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#VegetalFatsAndOils"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetalFatsAndOils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Vegetal Fats and Oils category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Grassi e Oli Vegetali"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetal Fats and Oils"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#FatsAndOils"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetalOils",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Vegetal Oils category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Oli Vegetali"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetal Oils"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#VegetalFatsAndOils"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VegetalProtein",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vegetal Protein amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Proteine Vegetali"
+  }, {
+    "@language" : "en",
+    "@value" : "Vegetal Protein"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Protein"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Vitamin",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting nutrients belonging to the Vitamin category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin A amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin A"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminB1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin B1 amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin B1"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina B1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminB12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin B12 amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin B12"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina B12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminB2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin B2 amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin B2"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina B2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminB6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin B6 amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin B6"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina B6"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin C amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin C"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina C"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin D amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin D"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina D"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#VitaminE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Vitamin E amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Vitamin E"
+  }, {
+    "@language" : "it",
+    "@value" : "Vitamina E"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Vitamin"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#WaterBeverage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Water category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Acqua"
+  }, {
+    "@language" : "en",
+    "@value" : "Water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Beverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#WheatFlour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Wheat Flour category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Farine Raffinate"
+  }, {
+    "@language" : "en",
+    "@value" : "Wheat Flour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Flour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#WhiteBread",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the White Bread category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Pane Comune"
+  }, {
+    "@language" : "en",
+    "@value" : "White Bread"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Bread"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#WhiteMeat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the White Meat category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Carne Bianca"
+  }, {
+    "@language" : "en",
+    "@value" : "White Meat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Meat"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#WholeWheatFlour",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Whole Wheat Four category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Farine Integrali"
+  }, {
+    "@language" : "en",
+    "@value" : "Whole Wheat Four"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Flour"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Wine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Wine category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Vino"
+  }, {
+    "@language" : "en",
+    "@value" : "Wine"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#AlcoholicBeverages"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Yogurt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting foods belonging to the Yogurt category."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Yogurt"
+  }, {
+    "@language" : "it",
+    "@value" : "Yogurt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#MilkAndYogurt"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#Zinc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concept denoting values corresponding to Zinc amounts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Zinc"
+  }, {
+    "@language" : "it",
+    "@value" : "Zinco"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/fuskg/food#Mineral"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#amountCalories",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "specifies the amount of calories"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "amount of Calories"
+  }, {
+    "@language" : "it",
+    "@value" : "quantita' di Calorie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#amountEnergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "specifies the amount of energy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "amount of Energy"
+  }, {
+    "@language" : "it",
+    "@value" : "quantita' di Energia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#amountNutrient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "specifies the amount of the nutrient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "amount of Nutrient"
+  }, {
+    "@language" : "it",
+    "@value" : "quantita' di Nutriente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#amountWater",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "specifies the amount of water"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "amount of Water"
+  }, {
+    "@language" : "it",
+    "@value" : "quantita' di Acqua"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#ediblePart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "specifies the amount of the edible part of a food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Food"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "edible part"
+  }, {
+    "@language" : "it",
+    "@value" : "parte edibile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#foodId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#isUnspecifiedFood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#productCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://w3id.org/fuskg/food#unit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "specifies the unit of measure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/fuskg/core#Nutrient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "unit"
+  }, {
+    "@language" : "it",
+    "@value" : "unita'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+} ]

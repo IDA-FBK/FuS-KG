@@ -1,0 +1,502 @@
+<https://w3id.org/fuskg/activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fuskg/activity> <http://www.w3.org/2002/07/owl#imports> <https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-core.ttl> .
+<https://w3id.org/fuskg/activity> <http://www.w3.org/2002/07/owl#imports> <https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-multimodal.ttl> .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/creator> "Gianluca Apriceno" .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/creator> "Jacopo Bennati" .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/creator> "Mauro Dragoni" .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/creator> "Tania Bailoni" .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/issued> "2017-05-02" .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/modified> "2024-12-06" .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/publisher> "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
+<https://w3id.org/fuskg/activity> <http://purl.org/dc/terms/title> "Activity Module of Functional Status Knowledge Graph (FuS-KG)"@en .
+<https://w3id.org/fuskg/activity> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fsacti" .
+<https://w3id.org/fuskg/activity> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fuskg/activity#" .
+<https://w3id.org/fuskg/activity> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#range
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/activity#activityCode
+<https://w3id.org/fuskg/activity#activityCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/activity#commonSense
+<https://w3id.org/fuskg/activity#commonSense> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/activity#commonSense> <http://www.w3.org/2000/01/rdf-schema#comment> "This annotation is used to specify common sense labels of activities."@en .
+<https://w3id.org/fuskg/activity#commonSense> <http://www.w3.org/2000/01/rdf-schema#label> "common sense"@en .
+<https://w3id.org/fuskg/activity#commonSense> <http://www.w3.org/2000/01/rdf-schema#label> "senso comue"@it .
+# 
+# https://w3id.org/fuskg/core#id
+<https://w3id.org/fuskg/core#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/core#interfaceLabel
+<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/2000/01/rdf-schema#range> "" .
+# 
+# https://w3id.org/fuskg/core#source
+<https://w3id.org/fuskg/core#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/activity#practicedBy
+<https://w3id.org/fuskg/activity#practicedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/activity#practicedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/activity#SpecializedActivity> .
+<https://w3id.org/fuskg/activity#practicedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/activity#PractitionerType> .
+# 
+# https://w3id.org/fuskg/activity#specializes
+<https://w3id.org/fuskg/activity#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/activity#specializes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/activity#SpecializedActivity> .
+<https://w3id.org/fuskg/activity#specializes> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Activity> .
+# 
+# https://w3id.org/fuskg/core#affectsPerformingOf
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Barrier> .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Activity> .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the relationship between a barrier affecting the performing of an activity."@en .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#label> "affects performing of"@en .
+<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#label> "influenza l'esecuzione di"@it .
+# 
+# https://w3id.org/fuskg/core#concernsConsumptionOf
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Barrier> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the relationship between a barrier and the consumption of a food or nutrient."@en .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "concerns consumption of"@en .
+<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "riguarda il consumo di"@it .
+# 
+# https://w3id.org/fuskg/core#contains
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies that a food contains another food"@en .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contiene"@it .
+# 
+# https://w3id.org/fuskg/core#hasNutrient
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Nutrient> .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the nutrient(s) contained ia a food."@en .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "ha Nutriente"@it .
+<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "has Nutrient"@en .
+# 
+# https://w3id.org/fuskg/multimodal#hasModalDescriptor
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalEntity> .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a ModalEntity with its corresponding ModalDescriptor(s)."@en .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "ha descrittore modale"@it .
+<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "has modal descriptor" .
+# 
+# https://w3id.org/fuskg/multimodal#hasModality
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a ModalDescriptor with its correspondig Modality."@en .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#label> "ha modalita'"@it .
+<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#label> "has modality"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/activity#hasMETValue
+<https://w3id.org/fuskg/activity#hasMETValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/activity#hasMETValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/activity#SpecializedActivity> .
+<https://w3id.org/fuskg/activity#hasMETValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/activity#hasMETValue> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the MET value of an activity."@en .
+<https://w3id.org/fuskg/activity#hasMETValue> <http://www.w3.org/2000/01/rdf-schema#label> "ha valore MET"@en .
+<https://w3id.org/fuskg/activity#hasMETValue> <http://www.w3.org/2000/01/rdf-schema#label> "has MET value"@en .
+# 
+# https://w3id.org/fuskg/activity#hasUnitKCalValue
+<https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/activity#SpecializedActivity> .
+<https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the value of Kcal a person spends per kg of weight performing one minute of an activity."@en .
+<https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/2000/01/rdf-schema#label> "ha valore di unita' di Kcal"@en .
+<https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Kcal unit value"@en .
+# 
+# https://w3id.org/fuskg/multimodal#fps
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#Video> .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#comment> "Frame per second of a Video."@en .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#label> "Frame al secondo"@it .
+<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#label> "Frame per second"@en .
+# 
+# https://w3id.org/fuskg/multimodal#hasPathInArtifact
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "Path inside an artifact (e.g., an archive)."@en .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Path inside artifact"@en .
+<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Percorso dentro artefatto"@it .
+# 
+# https://w3id.org/fuskg/multimodal#height
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Height of an image or video (related to resolution)."@en .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#label> "altezza"@it .
+<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
+# 
+# https://w3id.org/fuskg/multimodal#resourceURL
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL pointing to a resource."@en .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL resource"@en .
+<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL risorsa"@it .
+# 
+# https://w3id.org/fuskg/multimodal#width
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Width of an image or video (related to resolution)."@en .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#label> "larghezza"@it .
+<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#label> "width"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2006/time#ProperInterval
+<http://www.w3.org/2006/time#ProperInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/activity#Bicycling
+<https://w3id.org/fuskg/activity#Bicycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#Bicycling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#Bicycling> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Bicycling category."@en .
+<https://w3id.org/fuskg/activity#Bicycling> <http://www.w3.org/2000/01/rdf-schema#label> "Andare in Bicicletta"@it .
+<https://w3id.org/fuskg/activity#Bicycling> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycling"@en .
+# 
+# https://w3id.org/fuskg/activity#ConditioningExercise
+<https://w3id.org/fuskg/activity#ConditioningExercise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#ConditioningExercise> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#ConditioningExercise> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Conditioning Exercise category."@en .
+<https://w3id.org/fuskg/activity#ConditioningExercise> <http://www.w3.org/2000/01/rdf-schema#label> "Conditioning Exercise"@en .
+<https://w3id.org/fuskg/activity#ConditioningExercise> <http://www.w3.org/2000/01/rdf-schema#label> "Sport da Palestra"@it .
+# 
+# https://w3id.org/fuskg/activity#Dancing
+<https://w3id.org/fuskg/activity#Dancing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#Dancing> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#Dancing> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Dancing category."@en .
+<https://w3id.org/fuskg/activity#Dancing> <http://www.w3.org/2000/01/rdf-schema#label> "Ballo e Danza"@it .
+<https://w3id.org/fuskg/activity#Dancing> <http://www.w3.org/2000/01/rdf-schema#label> "Dancing"@en .
+# 
+# https://w3id.org/fuskg/activity#FishingHunting
+<https://w3id.org/fuskg/activity#FishingHunting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#FishingHunting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#FishingHunting> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Fishing and Hunting category."@en .
+<https://w3id.org/fuskg/activity#FishingHunting> <http://www.w3.org/2000/01/rdf-schema#label> "Caccia e Pesca"@it .
+<https://w3id.org/fuskg/activity#FishingHunting> <http://www.w3.org/2000/01/rdf-schema#label> "Fishing and Hunting"@en .
+# 
+# https://w3id.org/fuskg/activity#HomeActivity
+<https://w3id.org/fuskg/activity#HomeActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#HomeActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#HomeActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Home Activity category."@en .
+<https://w3id.org/fuskg/activity#HomeActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività Domestiche"@it .
+<https://w3id.org/fuskg/activity#HomeActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Home Activity"@en .
+# 
+# https://w3id.org/fuskg/activity#HomeRepair
+<https://w3id.org/fuskg/activity#HomeRepair> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#HomeRepair> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#HomeRepair> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Home Repairs category."@en .
+<https://w3id.org/fuskg/activity#HomeRepair> <http://www.w3.org/2000/01/rdf-schema#label> "Bricolage e Riparazioni Domestiche"@it .
+<https://w3id.org/fuskg/activity#HomeRepair> <http://www.w3.org/2000/01/rdf-schema#label> "Home Repairs"@en .
+# 
+# https://w3id.org/fuskg/activity#LawnGarden
+<https://w3id.org/fuskg/activity#LawnGarden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#LawnGarden> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#LawnGarden> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Lawn and Garden Activities category."@en .
+<https://w3id.org/fuskg/activity#LawnGarden> <http://www.w3.org/2000/01/rdf-schema#label> "Attività in Prato e Giardino"@it .
+<https://w3id.org/fuskg/activity#LawnGarden> <http://www.w3.org/2000/01/rdf-schema#label> "Lawn and Garden Activities"@en .
+# 
+# https://w3id.org/fuskg/activity#LifeActivity
+<https://w3id.org/fuskg/activity#LifeActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#LifeActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Activity> .
+<https://w3id.org/fuskg/activity#LifeActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Life Activity branch. All sub-concepts represent a specific category regading life activities."@en .
+<https://w3id.org/fuskg/activity#LifeActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività di Vita"@it .
+<https://w3id.org/fuskg/activity#LifeActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Life Activity"@en .
+# 
+# https://w3id.org/fuskg/activity#MusicPlaying
+<https://w3id.org/fuskg/activity#MusicPlaying> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#MusicPlaying> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#MusicPlaying> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Music Playing category."@en .
+<https://w3id.org/fuskg/activity#MusicPlaying> <http://www.w3.org/2000/01/rdf-schema#label> "Music Playing"@en .
+<https://w3id.org/fuskg/activity#MusicPlaying> <http://www.w3.org/2000/01/rdf-schema#label> "Suonare Musica"@it .
+# 
+# https://w3id.org/fuskg/activity#Occupation
+<https://w3id.org/fuskg/activity#Occupation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#Occupation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#Occupation> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Occupation category."@en .
+<https://w3id.org/fuskg/activity#Occupation> <http://www.w3.org/2000/01/rdf-schema#label> "Lavori ed Occupazioni"@it .
+<https://w3id.org/fuskg/activity#Occupation> <http://www.w3.org/2000/01/rdf-schema#label> "Occupation"@en .
+# 
+# https://w3id.org/fuskg/activity#PhysicalActivity
+<https://w3id.org/fuskg/activity#PhysicalActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#PhysicalActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Activity> .
+<https://w3id.org/fuskg/activity#PhysicalActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Physical Activity branch. All sub-concepts represent a specific category regarding physical activities."@en .
+<https://w3id.org/fuskg/activity#PhysicalActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività Fisica"@it .
+<https://w3id.org/fuskg/activity#PhysicalActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Physical Activity"@en .
+# 
+# https://w3id.org/fuskg/activity#PractitionerType
+<https://w3id.org/fuskg/activity#PractitionerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies
+<https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Relaxing or Hobby Activities category."@en .
+<https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies> <http://www.w3.org/2000/01/rdf-schema#label> "Hobby e Attivià di Riposo"@it .
+<https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies> <http://www.w3.org/2000/01/rdf-schema#label> "Relaxing and Hobby Activities"@en .
+# 
+# https://w3id.org/fuskg/activity#ReligiousActivities
+<https://w3id.org/fuskg/activity#ReligiousActivities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#ReligiousActivities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#ReligiousActivities> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Religious Activities category."@en .
+<https://w3id.org/fuskg/activity#ReligiousActivities> <http://www.w3.org/2000/01/rdf-schema#label> "Attività Religiose"@it .
+<https://w3id.org/fuskg/activity#ReligiousActivities> <http://www.w3.org/2000/01/rdf-schema#label> "Religious Activities"@en .
+# 
+# https://w3id.org/fuskg/activity#Running
+<https://w3id.org/fuskg/activity#Running> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#Running> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#Running> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Running category."@en .
+<https://w3id.org/fuskg/activity#Running> <http://www.w3.org/2000/01/rdf-schema#label> "Correre"@it .
+<https://w3id.org/fuskg/activity#Running> <http://www.w3.org/2000/01/rdf-schema#label> "Runing"@en .
+# 
+# https://w3id.org/fuskg/activity#SelfCare
+<https://w3id.org/fuskg/activity#SelfCare> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#SelfCare> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#SelfCare> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Self Care category."@en .
+<https://w3id.org/fuskg/activity#SelfCare> <http://www.w3.org/2000/01/rdf-schema#label> "Cura Personale"@it .
+<https://w3id.org/fuskg/activity#SelfCare> <http://www.w3.org/2000/01/rdf-schema#label> "Self Care"@en .
+# 
+# https://w3id.org/fuskg/activity#SexualActivity
+<https://w3id.org/fuskg/activity#SexualActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#SexualActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#SexualActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Sexual Activity category."@en .
+<https://w3id.org/fuskg/activity#SexualActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività Sessuale"@it .
+<https://w3id.org/fuskg/activity#SexualActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Sexual Activity"@en .
+# 
+# https://w3id.org/fuskg/activity#SpecializedActivity
+<https://w3id.org/fuskg/activity#SpecializedActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/activity#Sports
+<https://w3id.org/fuskg/activity#Sports> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#Sports> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#Sports> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Sports category."@en .
+<https://w3id.org/fuskg/activity#Sports> <http://www.w3.org/2000/01/rdf-schema#label> "Sport"@it .
+<https://w3id.org/fuskg/activity#Sports> <http://www.w3.org/2000/01/rdf-schema#label> "Sports"@en .
+# 
+# https://w3id.org/fuskg/activity#Transportation
+<https://w3id.org/fuskg/activity#Transportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#Transportation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#LifeActivity> .
+<https://w3id.org/fuskg/activity#Transportation> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Transportation category."@en .
+<https://w3id.org/fuskg/activity#Transportation> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation"@en .
+<https://w3id.org/fuskg/activity#Transportation> <http://www.w3.org/2000/01/rdf-schema#label> "Trasporti"@it .
+# 
+# https://w3id.org/fuskg/activity#Walking
+<https://w3id.org/fuskg/activity#Walking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#Walking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#Walking> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Walking category."@en .
+<https://w3id.org/fuskg/activity#Walking> <http://www.w3.org/2000/01/rdf-schema#label> "Camminare"@it .
+<https://w3id.org/fuskg/activity#Walking> <http://www.w3.org/2000/01/rdf-schema#label> "Walking"@en .
+# 
+# https://w3id.org/fuskg/activity#WaterActivities
+<https://w3id.org/fuskg/activity#WaterActivities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#WaterActivities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#WaterActivities> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Water Activities category."@en .
+<https://w3id.org/fuskg/activity#WaterActivities> <http://www.w3.org/2000/01/rdf-schema#label> "Attività Acquatiche"@it .
+<https://w3id.org/fuskg/activity#WaterActivities> <http://www.w3.org/2000/01/rdf-schema#label> "Water Activities"@en .
+# 
+# https://w3id.org/fuskg/activity#WinterActivities
+<https://w3id.org/fuskg/activity#WinterActivities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/activity#WinterActivities> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/activity#PhysicalActivity> .
+<https://w3id.org/fuskg/activity#WinterActivities> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting activities belonging to the Winter Activities category."@en .
+<https://w3id.org/fuskg/activity#WinterActivities> <http://www.w3.org/2000/01/rdf-schema#label> "Attività Invernali"@it .
+<https://w3id.org/fuskg/activity#WinterActivities> <http://www.w3.org/2000/01/rdf-schema#label> "Winter Activities"@en .
+# 
+# https://w3id.org/fuskg/core#Activity
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."@en .
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity"@en .
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività"@it .
+# 
+# https://w3id.org/fuskg/core#Barrier
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers."@en .
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#label> "Barrier"@en .
+<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#label> "Barriera"@it .
+# 
+# https://w3id.org/fuskg/core#Food
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."@en .
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Alimento"@it .
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Food"@en .
+# 
+# https://w3id.org/fuskg/core#Nutrient
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."@en .
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient"@en .
+<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "Nutriente"@it .
+# 
+# https://w3id.org/fuskg/multimodal#Audio
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Audio modality."@en .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@en .
+<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@it .
+# 
+# https://w3id.org/fuskg/multimodal#DataStream
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting DataStream modality."@en .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#label> "Data stream"@en .
+<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#label> "Stream dati"@it .
+# 
+# https://w3id.org/fuskg/multimodal#Image
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Image modality."@en .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
+<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Immagine"@it .
+# 
+# https://w3id.org/fuskg/multimodal#ModalDescriptor
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept used to connect a modal entity with its modality."@en .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "Descrittore modale"@it .
+<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "Modal descriptor"@en .
+# 
+# https://w3id.org/fuskg/multimodal#ModalEntity
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Root class used to specify modal entities that can be associated with one or more modal resources."@en .
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entita' Modale"@it .
+<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Modal Entity"@en .
+# 
+# https://w3id.org/fuskg/multimodal#Modality
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent class used to specify a data modality of a resource"@en .
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modalita'"@it .
+<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modality"@en .
+# 
+# https://w3id.org/fuskg/multimodal#Text
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Text modality."@en .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#label> "Testo"@it .
+<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#label> "Text"@en .
+# 
+# https://w3id.org/fuskg/multimodal#Video
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Video modality."@en .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@en .
+<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@it .
+# 
+# https://w3id.org/fuskg/recipe#Recipe
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#ModalEntity> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Text> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#DataStream> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Audio> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,551 @@
+<https://w3id.org/fuskg/user> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/fuskg/user> <http://www.w3.org/2002/07/owl#imports> <https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-guidelines.ttl> .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/creator> "Gianluca Apriceno" .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/creator> "Mauro Dragoni" .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/creator> "Tania Bailoni" .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/issued> "2017-05-02"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-nc-sa/4.0/> .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/modified> "2024-05-21"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/publisher> "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>" .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/rights> "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>"@en .
+<https://w3id.org/fuskg/user> <http://purl.org/dc/terms/title> "User Module of Functional Status Knowledge Graph (FuS-KG)"@en .
+<https://w3id.org/fuskg/user> <http://purl.org/vocab/vann/preferredNamespacePrefix> "fsuser" .
+<https://w3id.org/fuskg/user> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/fuskg/user#" .
+<https://w3id.org/fuskg/user> <http://www.w3.org/2002/07/owl#versionInfo> "1.00"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#domain
+<http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#range
+<http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/guidelines#activeCategory
+<https://w3id.org/fuskg/guidelines#activeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/guidelines#appliesTo
+<https://w3id.org/fuskg/guidelines#appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/guidelines#hasMonitoredValue
+<https://w3id.org/fuskg/guidelines#hasMonitoredValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#hasMonitoredValue> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<https://w3id.org/fuskg/guidelines#hasMonitoredValue> <http://www.w3.org/2000/01/rdf-schema#range> "" .
+# 
+# https://w3id.org/fuskg/guidelines#hasOperator
+<https://w3id.org/fuskg/guidelines#hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#hasOperator> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/guidelines#hasPriority
+<https://w3id.org/fuskg/guidelines#hasPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#hasPriority> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<https://w3id.org/fuskg/guidelines#hasPriority> <http://www.w3.org/2000/01/rdf-schema#range> "" .
+# 
+# https://w3id.org/fuskg/guidelines#hasRuleId
+<https://w3id.org/fuskg/guidelines#hasRuleId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#hasRuleId> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<https://w3id.org/fuskg/guidelines#hasRuleId> <http://www.w3.org/2000/01/rdf-schema#range> "" .
+# 
+# https://w3id.org/fuskg/guidelines#lowerBound
+<https://w3id.org/fuskg/guidelines#lowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#lowerBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/fuskg/guidelines#monitoredEntity
+<https://w3id.org/fuskg/guidelines#monitoredEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#monitoredEntity> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/guidelines#monitoredEntityType
+<https://w3id.org/fuskg/guidelines#monitoredEntityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#monitoredEntityType> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/guidelines#timing
+<https://w3id.org/fuskg/guidelines#timing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#timing> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/guidelines#upperBound
+<https://w3id.org/fuskg/guidelines#upperBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/guidelines#upperBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/fuskg/user#hasForbiddenCategory
+<https://w3id.org/fuskg/user#hasForbiddenCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/user#hasForbiddenCategory> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/user#hasMandatoryCategory
+<https://w3id.org/fuskg/user#hasMandatoryCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/user#hasMandatoryCategory> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/user#hasOperator
+<https://w3id.org/fuskg/user#hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/user#hasOperator> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/user#hasPriority
+<https://w3id.org/fuskg/user#hasPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/user#hasPriority> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+<https://w3id.org/fuskg/user#hasPriority> <http://www.w3.org/2000/01/rdf-schema#range> "" .
+# 
+# https://w3id.org/fuskg/user#isRecipeConsumedFood
+<https://w3id.org/fuskg/user#isRecipeConsumedFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/fuskg/user#lowerBound
+<https://w3id.org/fuskg/user#lowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/user#lowerBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# https://w3id.org/fuskg/user#timing
+<https://w3id.org/fuskg/user#timing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/user#timing> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
+# 
+# https://w3id.org/fuskg/user#upperBound
+<https://w3id.org/fuskg/user#upperBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/fuskg/user#upperBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval
+<https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/guidelines#MonitoringRule> .
+<https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/guidelines#ValueInterval> .
+# 
+# https://w3id.org/fuskg/guidelines#monitors
+<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/guidelines#MonitoringRule> .
+<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the subject of a MonitoringRule."@en .
+<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitora"@it .
+<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitors"@en .
+# 
+# https://w3id.org/fuskg/user#belongsProfile
+<https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/fuskg/user#containsUser> .
+<https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#Profile> .
+<https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies to which Profile a User belongs."@en .
+<https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/2000/01/rdf-schema#label> "appartiena al profilo"@it .
+<https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to profile"@en .
+# 
+# https://w3id.org/fuskg/user#consumed
+<https://w3id.org/fuskg/user#consumed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#consumed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#consumed> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#consumed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies what the user has consumed during a Meal. The Meal is defined as a list of ConsumedFood instances indicating the food and the amount eaten."@en .
+<https://w3id.org/fuskg/user#consumed> <http://www.w3.org/2000/01/rdf-schema#label> "consumed"@en .
+<https://w3id.org/fuskg/user#consumed> <http://www.w3.org/2000/01/rdf-schema#label> "ha consumato"@it .
+# 
+# https://w3id.org/fuskg/user#containsUser
+<https://w3id.org/fuskg/user#containsUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#containsUser> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Profile> .
+<https://w3id.org/fuskg/user#containsUser> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#containsUser> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the user(s) contained in a profile."@en .
+<https://w3id.org/fuskg/user#containsUser> <http://www.w3.org/2000/01/rdf-schema#label> "contains user"@en .
+<https://w3id.org/fuskg/user#containsUser> <http://www.w3.org/2000/01/rdf-schema#label> "contiene l'utente"@it .
+# 
+# https://w3id.org/fuskg/user#hasActivity
+<https://w3id.org/fuskg/user#hasActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#hasActivity> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#PerformedActivity> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#EffortCaloriesEquivalent> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#hasActivity> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Activity> .
+<https://w3id.org/fuskg/user#hasActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies which activity the domain instance refers to."@en .
+<https://w3id.org/fuskg/user#hasActivity> <http://www.w3.org/2000/01/rdf-schema#label> "ha attivita'"@it .
+<https://w3id.org/fuskg/user#hasActivity> <http://www.w3.org/2000/01/rdf-schema#label> "has activity"@en .
+# 
+# https://w3id.org/fuskg/user#hasConsumedFood
+<https://w3id.org/fuskg/user#hasConsumedFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#hasConsumedFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#hasConsumedFood> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#ConsumedFood> .
+<https://w3id.org/fuskg/user#hasConsumedFood> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies what (ConsumedFood) the user has consumed during a Meal. The ConsumedFood instance indicates the food and the amount eaten."@en .
+<https://w3id.org/fuskg/user#hasConsumedFood> <http://www.w3.org/2000/01/rdf-schema#label> "ha Consumato Cibo"@it .
+<https://w3id.org/fuskg/user#hasConsumedFood> <http://www.w3.org/2000/01/rdf-schema#label> "has Consumed Food"@en .
+# 
+# https://w3id.org/fuskg/user#hasFood
+<https://w3id.org/fuskg/user#hasFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#hasFood> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#ConsumedFood> .
+<https://w3id.org/fuskg/user#hasFood> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/user#hasFood> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies which food has been consumed."@en .
+<https://w3id.org/fuskg/user#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "ha Cibo"@it .
+<https://w3id.org/fuskg/user#hasFood> <http://www.w3.org/2000/01/rdf-schema#label> "has Food"@en .
+# 
+# https://w3id.org/fuskg/user#hasUser
+<https://w3id.org/fuskg/user#hasUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#hasUser> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#PerformedActivity> .
+<https://w3id.org/fuskg/user#hasUser> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#hasUser> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies which user the domain instance refers to. In detail which user performed the activity if the domain instance is a PerformedActivity, and which user ate a meal if the domain instance belongs to Meal."@en .
+<https://w3id.org/fuskg/user#hasUser> <http://www.w3.org/2000/01/rdf-schema#label> "ha Utente"@it .
+<https://w3id.org/fuskg/user#hasUser> <http://www.w3.org/2000/01/rdf-schema#label> "has User"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationMeal
+<https://w3id.org/fuskg/user#hasViolationMeal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#hasViolationMeal> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationMeal> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#hasViolationMeal> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies which Meal triggered the violation."@en .
+<https://w3id.org/fuskg/user#hasViolationMeal> <http://www.w3.org/2000/01/rdf-schema#label> "ha violazione sul pasto"@it .
+<https://w3id.org/fuskg/user#hasViolationMeal> <http://www.w3.org/2000/01/rdf-schema#label> "has violation on Meal"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationRule
+<https://w3id.org/fuskg/user#hasViolationRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#hasViolationRule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationRule> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies which rule is violated."@en .
+<https://w3id.org/fuskg/user#hasViolationRule> <http://www.w3.org/2000/01/rdf-schema#label> "ha violazione sulla regola"@it .
+<https://w3id.org/fuskg/user#hasViolationRule> <http://www.w3.org/2000/01/rdf-schema#label> "has violation on rule"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationUser
+<https://w3id.org/fuskg/user#hasViolationUser> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#hasViolationUser> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationUser> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#hasViolationUser> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies which User the violation refers to."@en .
+<https://w3id.org/fuskg/user#hasViolationUser> <http://www.w3.org/2000/01/rdf-schema#label> "ha violazione per l'utente"@it .
+<https://w3id.org/fuskg/user#hasViolationUser> <http://www.w3.org/2000/01/rdf-schema#label> "has violation User"@en .
+# 
+# https://w3id.org/fuskg/user#performed
+<https://w3id.org/fuskg/user#performed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/fuskg/user#performed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#performed> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/user#PerformedActivity> .
+<https://w3id.org/fuskg/user#performed> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies an activity performed by a user. The PerformedActivity instance indicates the activity the User did and its duration."@en .
+<https://w3id.org/fuskg/user#performed> <http://www.w3.org/2000/01/rdf-schema#label> "ha eseguito"@it .
+<https://w3id.org/fuskg/user#performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/guidelines#hasRuleDefinition
+<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/guidelines#MonitoringRule> .
+<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the definition of the MonitoringRule."@en .
+<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "ha definizione della regola"@it .
+<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "has rule definition"@en .
+# 
+# https://w3id.org/fuskg/user#activityDuration
+<https://w3id.org/fuskg/user#activityDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#activityDuration> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#PerformedActivity> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#EffortCaloriesEquivalent> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#activityDuration> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the duration of the activity."@en .
+<https://w3id.org/fuskg/user#activityDuration> <http://www.w3.org/2000/01/rdf-schema#label> "activity duration"@en .
+<https://w3id.org/fuskg/user#activityDuration> <http://www.w3.org/2000/01/rdf-schema#label> "durata attivita'"@it .
+# 
+# https://w3id.org/fuskg/user#activityEndTimestamp
+<https://w3id.org/fuskg/user#activityEndTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#activityEndTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#PerformedActivity> .
+<https://w3id.org/fuskg/user#activityEndTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the timestamp of the end of the activity."@en .
+<https://w3id.org/fuskg/user#activityEndTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "activity end timestamp"@en .
+<https://w3id.org/fuskg/user#activityEndTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp di fine attivita'"@it .
+# 
+# https://w3id.org/fuskg/user#activityStartTimestamp
+<https://w3id.org/fuskg/user#activityStartTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#activityStartTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#PerformedActivity> .
+<https://w3id.org/fuskg/user#activityStartTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the timestamp of the start of the activity."@en .
+<https://w3id.org/fuskg/user#activityStartTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "activity start timestamp"@en .
+<https://w3id.org/fuskg/user#activityStartTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "timestamp di inizio attivita'"@it .
+# 
+# https://w3id.org/fuskg/user#bounds
+<https://w3id.org/fuskg/user#bounds> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#bounds> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#ViolationInterval> .
+<https://w3id.org/fuskg/user#bounds> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/user#bounds> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the bounds of a violation interval."@en .
+<https://w3id.org/fuskg/user#bounds> <http://www.w3.org/2000/01/rdf-schema#label> "bounds"@en .
+<https://w3id.org/fuskg/user#bounds> <http://www.w3.org/2000/01/rdf-schema#label> "limiti"@it .
+# 
+# https://w3id.org/fuskg/user#hasDailyCaloricIntake
+<https://w3id.org/fuskg/user#hasDailyCaloricIntake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasDailyCaloricIntake> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#hasDailyCaloricIntake> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/user#hasDailyCaloricIntake> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the daily caloric intake of a user."@en .
+<https://w3id.org/fuskg/user#hasDailyCaloricIntake> <http://www.w3.org/2000/01/rdf-schema#label> "ha apporto calorico giornaliero"@it .
+<https://w3id.org/fuskg/user#hasDailyCaloricIntake> <http://www.w3.org/2000/01/rdf-schema#label> "has daily caloric intake"@en .
+# 
+# https://w3id.org/fuskg/user#hasMETCorrection
+<https://w3id.org/fuskg/user#hasMETCorrection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasMETCorrection> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#PerformedActivity> .
+<https://w3id.org/fuskg/user#hasMETCorrection> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/fuskg/user#hasMETCorrection> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the corrected MET of the activity performed by the user."@en .
+<https://w3id.org/fuskg/user#hasMETCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "ha MET corretto"@it .
+<https://w3id.org/fuskg/user#hasMETCorrection> <http://www.w3.org/2000/01/rdf-schema#label> "has MET correction"@en .
+# 
+# https://w3id.org/fuskg/user#hasTimestamp
+<https://w3id.org/fuskg/user#hasTimestamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#Violation> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#Meal> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/fuskg/user#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the timestamp of a Meal or Violation."@en .
+<https://w3id.org/fuskg/user#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "ha etichetta temporale"@it .
+<https://w3id.org/fuskg/user#hasTimestamp> <http://www.w3.org/2000/01/rdf-schema#label> "has timestamp"@en .
+# 
+# https://w3id.org/fuskg/user#hasUserId
+<https://w3id.org/fuskg/user#hasUserId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasUserId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#User> .
+<https://w3id.org/fuskg/user#hasUserId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/user#hasUserId> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the id identifying the user."@en .
+<https://w3id.org/fuskg/user#hasUserId> <http://www.w3.org/2000/01/rdf-schema#label> "ha id utente"@it .
+<https://w3id.org/fuskg/user#hasUserId> <http://www.w3.org/2000/01/rdf-schema#label> "has user id"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationEndTime
+<https://w3id.org/fuskg/user#hasViolationEndTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationEndTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationEndTime> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the time at which the violation ends."@en .
+<https://w3id.org/fuskg/user#hasViolationEndTime> <http://www.w3.org/2000/01/rdf-schema#label> "ha orario di fine violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationEndTime> <http://www.w3.org/2000/01/rdf-schema#label> "has violation end time"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationEntity
+<https://w3id.org/fuskg/user#hasViolationEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationEntity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationEntity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/user#hasViolationEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the entity of the violation."@en .
+<https://w3id.org/fuskg/user#hasViolationEntity> <http://www.w3.org/2000/01/rdf-schema#label> "ha entita' di violazine"@it .
+<https://w3id.org/fuskg/user#hasViolationEntity> <http://www.w3.org/2000/01/rdf-schema#label> "has violation entity"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationEntityType
+<https://w3id.org/fuskg/user#hasViolationEntityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationEntityType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationEntityType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/user#hasViolationEntityType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the entity type of the violation."@en .
+<https://w3id.org/fuskg/user#hasViolationEntityType> <http://www.w3.org/2000/01/rdf-schema#label> "ha tipologia di entita' di violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationEntityType> <http://www.w3.org/2000/01/rdf-schema#label> "has violation entity type"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationExpectedQuantity
+<https://w3id.org/fuskg/user#hasViolationExpectedQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationExpectedQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationExpectedQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/user#hasViolationExpectedQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the expected quantity of the violation."@en .
+<https://w3id.org/fuskg/user#hasViolationExpectedQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "ha quantita' di violazione attesa"@it .
+<https://w3id.org/fuskg/user#hasViolationExpectedQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "has violation expected quantity"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationHistory
+<https://w3id.org/fuskg/user#hasViolationHistory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationHistory> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationHistory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/fuskg/user#hasViolationHistory> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the gistory of the violation as an integer."@en .
+<https://w3id.org/fuskg/user#hasViolationHistory> <http://www.w3.org/2000/01/rdf-schema#label> "ha storia di violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationHistory> <http://www.w3.org/2000/01/rdf-schema#label> "has violation history"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationLevel
+<https://w3id.org/fuskg/user#hasViolationLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationLevel> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#ViolationInterval> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/user#Violation> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#hasViolationLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/fuskg/user#hasViolationLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the level of the violation."@en .
+<https://w3id.org/fuskg/user#hasViolationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "ha livello di violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationLevel> <http://www.w3.org/2000/01/rdf-schema#label> "has violation level"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationPriority
+<https://w3id.org/fuskg/user#hasViolationPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationPriority> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationPriority> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://w3id.org/fuskg/user#hasViolationPriority> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the the priority of the violation as an integer."@en .
+<https://w3id.org/fuskg/user#hasViolationPriority> <http://www.w3.org/2000/01/rdf-schema#label> "ha priorita' di violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationPriority> <http://www.w3.org/2000/01/rdf-schema#label> "has violation priority"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationQuantity
+<https://w3id.org/fuskg/user#hasViolationQuantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationQuantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationQuantity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/user#hasViolationQuantity> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the quantity of the violation."@en .
+<https://w3id.org/fuskg/user#hasViolationQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "ha quantita' di violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationQuantity> <http://www.w3.org/2000/01/rdf-schema#label> "has violation quantity"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationRuleId
+<https://w3id.org/fuskg/user#hasViolationRuleId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationRuleId> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationRuleId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://w3id.org/fuskg/user#hasViolationRuleId> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the id of the rule violated."@en .
+<https://w3id.org/fuskg/user#hasViolationRuleId> <http://www.w3.org/2000/01/rdf-schema#label> "ha id della regola violata"@it .
+<https://w3id.org/fuskg/user#hasViolationRuleId> <http://www.w3.org/2000/01/rdf-schema#label> "has violation rule id"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationStartTime
+<https://w3id.org/fuskg/user#hasViolationStartTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationStartTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationStartTime> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the the time at which the violation started."@en .
+<https://w3id.org/fuskg/user#hasViolationStartTime> <http://www.w3.org/2000/01/rdf-schema#label> "ha orario di inizio violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationStartTime> <http://www.w3.org/2000/01/rdf-schema#label> "has violation start time"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationTiming
+<https://w3id.org/fuskg/user#hasViolationTiming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationTiming> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationTiming> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/user#hasViolationTiming> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the timing of the violation."@en .
+<https://w3id.org/fuskg/user#hasViolationTiming> <http://www.w3.org/2000/01/rdf-schema#label> "ha tempistica della violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationTiming> <http://www.w3.org/2000/01/rdf-schema#label> "has violation timing"@en .
+# 
+# https://w3id.org/fuskg/user#hasViolationValidityTimespan
+<https://w3id.org/fuskg/user#hasViolationValidityTimespan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/fuskg/user#hasViolationValidityTimespan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/user#Violation> .
+<https://w3id.org/fuskg/user#hasViolationValidityTimespan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://w3id.org/fuskg/user#hasViolationValidityTimespan> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the timespan during which the violation is valid."@en .
+<https://w3id.org/fuskg/user#hasViolationValidityTimespan> <http://www.w3.org/2000/01/rdf-schema#label> "ha arco temporale di validita' di violazione"@it .
+<https://w3id.org/fuskg/user#hasViolationValidityTimespan> <http://www.w3.org/2000/01/rdf-schema#label> "has violation validity timespan"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/fuskg/core#Activity
+<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/core#Food
+<https://w3id.org/fuskg/core#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/fuskg/guidelines#MonitoringRule
+<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the definition of rules that can be associated to a specific user or to a specific profile in order to support monitoring activities."@en .
+<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/2000/01/rdf-schema#label> "Monitoring Rule"@en .
+<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/2000/01/rdf-schema#label> "Regole di Monitoraggio"@it .
+# 
+# https://w3id.org/fuskg/guidelines#ValueInterval
+<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the definition of numerical intervals of the form [lowerBound, upperBound] that can be associated with an instance of the MonitoringRule concept."@en .
+<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalli"@it .
+<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Value Interval"@en .
+# 
+# https://w3id.org/fuskg/user#Breakfast
+<https://w3id.org/fuskg/user#Breakfast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#Breakfast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#Breakfast> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting meals representing a Breakfast consumed by a user."@en .
+<https://w3id.org/fuskg/user#Breakfast> <http://www.w3.org/2000/01/rdf-schema#label> "Breakfast"@en .
+<https://w3id.org/fuskg/user#Breakfast> <http://www.w3.org/2000/01/rdf-schema#label> "Colazione"@it .
+# 
+# https://w3id.org/fuskg/user#ConsumedFood
+<https://w3id.org/fuskg/user#ConsumedFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#ConsumedFood> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the reification of the relationships between a user and the amount of a specific food consumed during a specific meal."@en .
+<https://w3id.org/fuskg/user#ConsumedFood> <http://www.w3.org/2000/01/rdf-schema#label> "Cibo Consumato"@it .
+<https://w3id.org/fuskg/user#ConsumedFood> <http://www.w3.org/2000/01/rdf-schema#label> "Consumed Food"@en .
+# 
+# https://w3id.org/fuskg/user#Dinner
+<https://w3id.org/fuskg/user#Dinner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#Dinner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#Dinner> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting meals representing a Dinner consumed by a user."@en .
+<https://w3id.org/fuskg/user#Dinner> <http://www.w3.org/2000/01/rdf-schema#label> "Cena"@it .
+<https://w3id.org/fuskg/user#Dinner> <http://www.w3.org/2000/01/rdf-schema#label> "Dinner"@en .
+# 
+# https://w3id.org/fuskg/user#EffortCaloriesEquivalent
+<https://w3id.org/fuskg/user#EffortCaloriesEquivalent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#EffortCaloriesEquivalent> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the reification of the relationships between a user, his/her body features and the energy consuption associated with each activity."@en .
+<https://w3id.org/fuskg/user#EffortCaloriesEquivalent> <http://www.w3.org/2000/01/rdf-schema#label> "Effort Calories Equivalent"@en .
+<https://w3id.org/fuskg/user#EffortCaloriesEquivalent> <http://www.w3.org/2000/01/rdf-schema#label> "Equivalente in Calorie dello Sforzo"@it .
+# 
+# https://w3id.org/fuskg/user#Lunch
+<https://w3id.org/fuskg/user#Lunch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#Lunch> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#Lunch> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting meals representing a Lunch consumed by a user."@en .
+<https://w3id.org/fuskg/user#Lunch> <http://www.w3.org/2000/01/rdf-schema#label> "Lunch"@en .
+<https://w3id.org/fuskg/user#Lunch> <http://www.w3.org/2000/01/rdf-schema#label> "Pranzo"@it .
+# 
+# https://w3id.org/fuskg/user#Meal
+<https://w3id.org/fuskg/user#Meal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#Meal> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept is the abstract representation of the meals that a user can consume during a day. Sub-concepts represent specific types of meals."@en .
+<https://w3id.org/fuskg/user#Meal> <http://www.w3.org/2000/01/rdf-schema#label> "Meal"@en .
+<https://w3id.org/fuskg/user#Meal> <http://www.w3.org/2000/01/rdf-schema#label> "Pasto"@it .
+# 
+# https://w3id.org/fuskg/user#PerformedActivity
+<https://w3id.org/fuskg/user#PerformedActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#PerformedActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the reification of the relationships between a user and the duration of a specific performed activity."@en .
+<https://w3id.org/fuskg/user#PerformedActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività Svolta"@it .
+<https://w3id.org/fuskg/user#PerformedActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Performed Activity"@en .
+# 
+# https://w3id.org/fuskg/user#Profile
+<https://w3id.org/fuskg/user#Profile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#Profile> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the representation of different types of user profiles. Examples are profiles denoting people with specific allergies or dietary habits."@en .
+<https://w3id.org/fuskg/user#Profile> <http://www.w3.org/2000/01/rdf-schema#label> "Profile"@en .
+<https://w3id.org/fuskg/user#Profile> <http://www.w3.org/2000/01/rdf-schema#label> "Profilo"@it .
+# 
+# https://w3id.org/fuskg/user#Snack
+<https://w3id.org/fuskg/user#Snack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#Snack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/user#Meal> .
+<https://w3id.org/fuskg/user#Snack> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting meals representing a Snack consumed by a user."@en .
+<https://w3id.org/fuskg/user#Snack> <http://www.w3.org/2000/01/rdf-schema#label> "Merenda"@it .
+<https://w3id.org/fuskg/user#Snack> <http://www.w3.org/2000/01/rdf-schema#label> "Snack"@en .
+# 
+# https://w3id.org/fuskg/user#User
+<https://w3id.org/fuskg/user#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#User> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the User branch. All sub-concepts represent a specific category of users, if necessary."@en .
+<https://w3id.org/fuskg/user#User> <http://www.w3.org/2000/01/rdf-schema#label> "User"@en .
+<https://w3id.org/fuskg/user#User> <http://www.w3.org/2000/01/rdf-schema#label> "Utente"@it .
+# 
+# https://w3id.org/fuskg/user#Violation
+<https://w3id.org/fuskg/user#Violation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#Violation> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept represents violations associated with a specific user. Instances of the Violation concept can be the result of reasoning activities provided by third-party applications."@en .
+<https://w3id.org/fuskg/user#Violation> <http://www.w3.org/2000/01/rdf-schema#label> "Violation"@en .
+<https://w3id.org/fuskg/user#Violation> <http://www.w3.org/2000/01/rdf-schema#label> "Violazione"@it .
+# 
+# https://w3id.org/fuskg/user#ViolationInterval
+<https://w3id.org/fuskg/user#ViolationInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/fuskg/user#ViolationInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation."@en .
+<https://w3id.org/fuskg/user#ViolationInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalli di Violazione"@it .
+<https://w3id.org/fuskg/user#ViolationInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Violation Interval"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

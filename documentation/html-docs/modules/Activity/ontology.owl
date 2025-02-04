@@ -1,0 +1,861 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/fuskg/activity#"
+     xml:base="https://w3id.org/fuskg/activity"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:bibo="http://purl.org/ontology/bibo/"
+     xmlns:core="https://w3id.org/fuskg/core#"
+     xmlns:dcam="http://purl.org/dc/dcam/"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:vocab="http://www.w3.org/1999/xhtml/vocab#"
+     xmlns:schema="http://schema.org/"
+     xmlns:activity="https://w3id.org/fuskg/activity#">
+    <owl:Ontology rdf:about="https://w3id.org/fuskg/activity">
+        <owl:imports rdf:resource="https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-core.ttl"/>
+        <owl:imports rdf:resource="https://media.githubusercontent.com/media/IDA-FBK/FuS-KG/refs/heads/main/ontology/TBox/fuskg-multimodal.ttl"/>
+        <terms:creator>Gianluca Apriceno</terms:creator>
+        <terms:creator>Jacopo Bennati</terms:creator>
+        <terms:creator>Mauro Dragoni</terms:creator>
+        <terms:creator>Tania Bailoni</terms:creator>
+        <terms:issued>2017-05-02</terms:issued>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+        <terms:modified>2024-12-06</terms:modified>
+        <terms:publisher>Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler &lt;https://digitalhealthcenter-en.fbk.eu/home&gt;</terms:publisher>
+        <terms:rights xml:lang="en">CreativeCommons 4.0 NonCommercial-ShareAlike &lt;https://creativecommons.org/licenses/by-nc-sa/4.0/&gt;</terms:rights>
+        <terms:title xml:lang="en">Activity Module of Functional Status Knowledge Graph (FuS-KG)</terms:title>
+        <vann:preferredNamespacePrefix>fsacti</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://w3id.org/fuskg/activity#</vann:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#domain -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#activityCode -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/activity#activityCode"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#commonSense -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/activity#commonSense">
+        <rdfs:comment xml:lang="en">This annotation is used to specify common sense labels of activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">common sense</rdfs:label>
+        <rdfs:label xml:lang="it">senso comue</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#id -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/core#id"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#interfaceLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/core#interfaceLabel">
+        <rdfs:domain></rdfs:domain>
+        <rdfs:range></rdfs:range>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#source -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/core#source"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#practicedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/activity#practicedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/activity#SpecializedActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/activity#PractitionerType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#specializes -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/activity#specializes">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/activity#SpecializedActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Activity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#affectsPerformingOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#affectsPerformingOf">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Barrier"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Activity"/>
+        <rdfs:comment xml:lang="en">This property defines the relationship between a barrier affecting the performing of an activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">affects performing of</rdfs:label>
+        <rdfs:label xml:lang="it">influenza l&apos;esecuzione di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#concernsConsumptionOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#concernsConsumptionOf">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Barrier"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">This property defines the relationship between a barrier and the consumption of a food or nutrient.</rdfs:comment>
+        <rdfs:label xml:lang="en">concerns consumption of</rdfs:label>
+        <rdfs:label xml:lang="it">riguarda il consumo di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#contains">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:comment xml:lang="en">This property specifies that a food contains another food</rdfs:comment>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:label xml:lang="it">contiene</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#hasNutrient -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#hasNutrient">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
+        <rdfs:comment xml:lang="en">This property specifies the nutrient(s) contained ia a food.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha Nutriente</rdfs:label>
+        <rdfs:label xml:lang="en">has Nutrient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#hasModalDescriptor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/multimodal#hasModalDescriptor">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/multimodal#ModalEntity"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/multimodal#ModalDescriptor"/>
+        <rdfs:comment xml:lang="en">Property used to connect a ModalEntity with its corresponding ModalDescriptor(s).</rdfs:comment>
+        <rdfs:label xml:lang="it">ha descrittore modale</rdfs:label>
+        <rdfs:label>has modal descriptor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#hasModality -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/multimodal#hasModality">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/multimodal#ModalDescriptor"/>
+        <rdfs:range rdf:resource="https://w3id.org/fuskg/multimodal#Modality"/>
+        <rdfs:comment xml:lang="en">Property used to connect a ModalDescriptor with its correspondig Modality.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha modalita&apos;</rdfs:label>
+        <rdfs:label xml:lang="en">has modality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#hasMETValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/activity#hasMETValue">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/activity#SpecializedActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">This property specifies the MET value of an activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">ha valore MET</rdfs:label>
+        <rdfs:label xml:lang="en">has MET value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#hasUnitKCalValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/activity#hasUnitKCalValue">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/activity#SpecializedActivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">This property specifies the value of Kcal a person spends per kg of weight performing one minute of an activity.</rdfs:comment>
+        <rdfs:label xml:lang="en">ha valore di unita&apos; di Kcal</rdfs:label>
+        <rdfs:label xml:lang="en">has Kcal unit value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#fps -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/multimodal#fps">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/multimodal#Video"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Frame per second of a Video.</rdfs:comment>
+        <rdfs:label xml:lang="it">Frame al secondo</rdfs:label>
+        <rdfs:label xml:lang="en">Frame per second</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#hasPathInArtifact -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/multimodal#hasPathInArtifact">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/multimodal#ModalDescriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Path inside an artifact (e.g., an archive).</rdfs:comment>
+        <rdfs:label xml:lang="en">Path inside artifact</rdfs:label>
+        <rdfs:label xml:lang="it">Percorso dentro artefatto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#height -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/multimodal#height">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Image"/>
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Video"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Height of an image or video (related to resolution).</rdfs:comment>
+        <rdfs:label xml:lang="it">altezza</rdfs:label>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#resourceURL -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/multimodal#resourceURL">
+        <rdfs:domain rdf:resource="https://w3id.org/fuskg/multimodal#ModalDescriptor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:comment xml:lang="en">URL pointing to a resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">URL resource</rdfs:label>
+        <rdfs:label xml:lang="it">URL risorsa</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#width -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/fuskg/multimodal#width">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Image"/>
+                    <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Video"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Width of an image or video (related to resolution).</rdfs:comment>
+        <rdfs:label xml:lang="it">larghezza</rdfs:label>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2006/time#ProperInterval -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#ProperInterval"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#Bicycling -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#Bicycling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Bicycling category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Andare in Bicicletta</rdfs:label>
+        <rdfs:label xml:lang="en">Bicycling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#ConditioningExercise -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#ConditioningExercise">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Conditioning Exercise category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Conditioning Exercise</rdfs:label>
+        <rdfs:label xml:lang="it">Sport da Palestra</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#Dancing -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#Dancing">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Dancing category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ballo e Danza</rdfs:label>
+        <rdfs:label xml:lang="en">Dancing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#FishingHunting -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#FishingHunting">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Fishing and Hunting category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Caccia e Pesca</rdfs:label>
+        <rdfs:label xml:lang="en">Fishing and Hunting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#HomeActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#HomeActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Home Activity category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività Domestiche</rdfs:label>
+        <rdfs:label xml:lang="en">Home Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#HomeRepair -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#HomeRepair">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Home Repairs category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Bricolage e Riparazioni Domestiche</rdfs:label>
+        <rdfs:label xml:lang="en">Home Repairs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#LawnGarden -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#LawnGarden">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Lawn and Garden Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività in Prato e Giardino</rdfs:label>
+        <rdfs:label xml:lang="en">Lawn and Garden Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#LifeActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#LifeActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Activity"/>
+        <rdfs:comment xml:lang="en">This is the root concept for the Life Activity branch. All sub-concepts represent a specific category regading life activities.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività di Vita</rdfs:label>
+        <rdfs:label xml:lang="en">Life Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#MusicPlaying -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#MusicPlaying">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Music Playing category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music Playing</rdfs:label>
+        <rdfs:label xml:lang="it">Suonare Musica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#Occupation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#Occupation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Occupation category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Lavori ed Occupazioni</rdfs:label>
+        <rdfs:label xml:lang="en">Occupation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#PhysicalActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#PhysicalActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Activity"/>
+        <rdfs:comment xml:lang="en">This is the root concept for the Physical Activity branch. All sub-concepts represent a specific category regarding physical activities.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività Fisica</rdfs:label>
+        <rdfs:label xml:lang="en">Physical Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#PractitionerType -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#PractitionerType"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Relaxing or Hobby Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Hobby e Attivià di Riposo</rdfs:label>
+        <rdfs:label xml:lang="en">Relaxing and Hobby Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#ReligiousActivities -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#ReligiousActivities">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Religious Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività Religiose</rdfs:label>
+        <rdfs:label xml:lang="en">Religious Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#Running -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#Running">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Running category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Correre</rdfs:label>
+        <rdfs:label xml:lang="en">Runing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#SelfCare -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#SelfCare">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Self Care category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Cura Personale</rdfs:label>
+        <rdfs:label xml:lang="en">Self Care</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#SexualActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#SexualActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Sexual Activity category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività Sessuale</rdfs:label>
+        <rdfs:label xml:lang="en">Sexual Activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#SpecializedActivity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#SpecializedActivity"/>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#Sports -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#Sports">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Sports category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Sport</rdfs:label>
+        <rdfs:label xml:lang="en">Sports</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#Transportation -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#Transportation">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#LifeActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Transportation category.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transportation</rdfs:label>
+        <rdfs:label xml:lang="it">Trasporti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#Walking -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#Walking">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Walking category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Camminare</rdfs:label>
+        <rdfs:label xml:lang="en">Walking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#WaterActivities -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#WaterActivities">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Water Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività Acquatiche</rdfs:label>
+        <rdfs:label xml:lang="en">Water Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/activity#WinterActivities -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/activity#WinterActivities">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/activity#PhysicalActivity"/>
+        <rdfs:comment xml:lang="en">Concept denoting activities belonging to the Winter Activities category.</rdfs:comment>
+        <rdfs:label xml:lang="it">Attività Invernali</rdfs:label>
+        <rdfs:label xml:lang="en">Winter Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Activity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Activity">
+        <rdfs:comment xml:lang="en">This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Activity</rdfs:label>
+        <rdfs:label xml:lang="it">Attività</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Barrier -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Barrier">
+        <rdfs:comment xml:lang="en">This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers.</rdfs:comment>
+        <rdfs:label xml:lang="en">Barrier</rdfs:label>
+        <rdfs:label xml:lang="it">Barriera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Food -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Food">
+        <rdfs:comment xml:lang="en">This is the root concept for the Food branch. All sub-concepts represent a specific category of foods.</rdfs:comment>
+        <rdfs:label xml:lang="it">Alimento</rdfs:label>
+        <rdfs:label xml:lang="en">Food</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/core#Nutrient -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/core#Nutrient">
+        <rdfs:comment xml:lang="en">This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food.</rdfs:comment>
+        <rdfs:label xml:lang="en">Nutrient</rdfs:label>
+        <rdfs:label xml:lang="it">Nutriente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#Audio -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#Audio">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#Modality"/>
+        <rdfs:comment xml:lang="en">Concept denoting Audio modality.</rdfs:comment>
+        <rdfs:label xml:lang="en">Audio</rdfs:label>
+        <rdfs:label xml:lang="it">Audio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#DataStream -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#DataStream">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#Modality"/>
+        <rdfs:comment xml:lang="en">Concept denoting DataStream modality.</rdfs:comment>
+        <rdfs:label xml:lang="en">Data stream</rdfs:label>
+        <rdfs:label xml:lang="it">Stream dati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#Image -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#Image">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#Modality"/>
+        <rdfs:comment xml:lang="en">Concept denoting Image modality.</rdfs:comment>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+        <rdfs:label xml:lang="it">Immagine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#ModalDescriptor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#ModalDescriptor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Resource"/>
+        <rdfs:comment xml:lang="en">Concept used to connect a modal entity with its modality.</rdfs:comment>
+        <rdfs:label xml:lang="it">Descrittore modale</rdfs:label>
+        <rdfs:label xml:lang="en">Modal descriptor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#ModalEntity -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#ModalEntity">
+        <rdfs:comment xml:lang="en">Root class used to specify modal entities that can be associated with one or more modal resources.</rdfs:comment>
+        <rdfs:label xml:lang="it">Entita&apos; Modale</rdfs:label>
+        <rdfs:label xml:lang="en">Modal Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#Modality -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#Modality">
+        <rdfs:comment xml:lang="en">Parent class used to specify a data modality of a resource</rdfs:comment>
+        <rdfs:label xml:lang="it">Modalita&apos;</rdfs:label>
+        <rdfs:label xml:lang="en">Modality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#Text -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#Text">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#Modality"/>
+        <rdfs:comment xml:lang="en">Concept denoting Text modality.</rdfs:comment>
+        <rdfs:label xml:lang="it">Testo</rdfs:label>
+        <rdfs:label xml:lang="en">Text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/multimodal#Video -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/multimodal#Video">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#Modality"/>
+        <rdfs:comment xml:lang="en">Concept denoting Video modality.</rdfs:comment>
+        <rdfs:label xml:lang="en">Video</rdfs:label>
+        <rdfs:label xml:lang="it">Video</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/fuskg/recipe#Recipe -->
+
+
+    <owl:Class rdf:about="https://w3id.org/fuskg/recipe#Recipe">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#ModalEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Audio"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#DataStream"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Image"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Text"/>
+            <rdf:Description rdf:about="https://w3id.org/fuskg/multimodal#Video"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

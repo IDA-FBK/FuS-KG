@@ -1,0 +1,234 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "it", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/fuskg/core" ],
+    "title" : {
+      "en" : "Functional Status Knowledge Graph (FuS-KG)"
+    },
+    "iri" : "https://w3id.org/fuskg/core",
+    "version" : "1.0.0",
+    "author" : [ "Tania Bailoni", "Mauro Dragoni", "Gianluca Apriceno" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Gianluca Apriceno",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mauro Dragoni",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Tania Bailoni",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fscore",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2024-04-26",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fuskg/core#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2024-03-01",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Functional Status Knowledge Graph (FuS-KG)",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/fuskg/core#Nutrient",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nutrient",
+      "en" : "Nutrient",
+      "it" : "Nutriente"
+    },
+    "comment" : {
+      "en" : "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."
+    },
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#Activity",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity",
+      "en" : "Activity",
+      "it" : "Attività"
+    },
+    "comment" : {
+      "en" : "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#Barrier",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Barrier",
+      "en" : "Barrier",
+      "it" : "Barriera"
+    },
+    "comment" : {
+      "en" : "This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers."
+    },
+    "id" : "4"
+  }, {
+    "instances" : 0,
+    "union" : [ "0", "3" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#Food",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Food",
+      "en" : "Food",
+      "it" : "Alimento"
+    },
+    "comment" : {
+      "en" : "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."
+    },
+    "id" : "3"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/fuskg/core#hasNutrient",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasNutrient",
+      "en" : "has Nutrient",
+      "it" : "ha Nutriente"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "This property specifies the nutrient(s) contained ia a food."
+    },
+    "attributes" : [ "object" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#concernsConsumptionOf",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "concernsConsumptionOf",
+      "en" : "concerns consumption of",
+      "it" : "riguarda il consumo di"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "This property defines the relationship between a barrier and the consumption of a food or nutrient."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#contains",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "contains",
+      "en" : "contains",
+      "it" : "contiene"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "This property specifies that a food contains another food"
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/fuskg/core#affectsPerformingOf",
+    "baseIri" : "https://w3id.org/fuskg/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "affectsPerformingOf",
+      "en" : "affects performing of",
+      "it" : "influenza l'esecuzione di"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "This property defines the relationship between a barrier affecting the performing of an activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "8"
+  } ]
+}
