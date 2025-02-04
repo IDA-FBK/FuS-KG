@@ -4,14 +4,18 @@ Welcome to the documentation section of the repository! This directory acts as t
 
 ## Contents
 
-1. [Datasets](https://github.com/IDA-FBK/FuS-KG/tree/main/documentation/datasets)
-2. [Diagrams](https://github.com/IDA-FBK/FuS-KG/tree/main/diagrams)
-3. [Examples](https://github.com/IDA-FBK/FuS-KG/tree/main/example)
-4. [Notebook](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook)
-5. [Ontology](https://github.com/IDA-FBK/FuS-KG/tree/main/ontology)
-6. [Requirements and Competency Questions](https://github.com/IDA-FBK/FuS-KG/tree/main/requirements)
+1. [Code](https://github.com/IDA-FBK/FuS-KG/tree/main/code/)
+2. [Datasets](https://github.com/IDA-FBK/FuS-KG/tree/main/documentation/datasets)
+3. [Diagrams](https://github.com/IDA-FBK/FuS-KG/tree/main/diagrams)
+4. [Examples](https://github.com/IDA-FBK/FuS-KG/tree/main/example)
+5. [Notebook](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook)
+6. [Ontology](https://github.com/IDA-FBK/FuS-KG/tree/main/ontology)
+7. [Requirements and Competency Questions](https://github.com/IDA-FBK/FuS-KG/tree/main/requirements)
 
 ---
+
+### Code
+The code folder contains scripts for processing and linking recipe data, including recipes' names, preparation steps, ingredients, nutrients, and multi-modal information (images/videos) of Recipe1M and Tasty dataset.
 
 ### Datasets
 
