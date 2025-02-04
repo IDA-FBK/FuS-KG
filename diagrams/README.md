@@ -3,6 +3,8 @@
 FuS-KG is a Multi-Modal Knowledge Graph designed to integrate and represent knowledge about food, activities, barriers, diseases, recipes, guidelines, and user interactions.
 The knowledge contained in FuS-KG is currently organized into several modules: **Core**, **Food**, **Activity**, **Barrier**, **Disease**, **Recipes**, **Multi-Modal**, **Temporal**, **Guidelines**, and **User**.
 
+**HTML Documentation** available at [https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html)
+
 ## Modules
 
 ### 1. Core Module
@@ -104,5 +106,4 @@ The **User** module imports the **Guidelines** module, enabling the storage of u
 - **User** and **Profile**: Represent a user and their profile.
 - **PerformedActivity** and **ConsumedFood**: Track activities performed and foods consumed by the user during a meal.
 - **Violation**: Represents a list of a user's violations.
-
 
