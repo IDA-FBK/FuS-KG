@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/user#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/user#","name":"User Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/user#", "dateReleased":"Tue Feb 04 15:07:24 CET 2025", "dateModified":"2024-05-21", "version":"1.00", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/user#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/user#","name":"User Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/user#", "dateReleased":"Tue Feb 04 19:28:35 CET 2025", "dateModified":"2024-05-21", "version":"1.00", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "codeRepository":"https://github.com/IDA-FBK/FuS-KG", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -88,6 +88,8 @@ $(function(){
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>Gianluca Apriceno, Mauro Dragoni, Tania Bailoni. User Module of Functional Status Knowledge Graph (FuS-KG). Revision: 1.00.</dd>
+<dt>Vocabulary maintained at:</dt>
+<dd><a href="https://github.com/IDA-FBK/FuS-KG">https://github.com/IDA-FBK/FuS-KG</a></dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
@@ -160,9 +162,6 @@ This ontology has the following classes and properties.</span>
       <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a>
-   </li>
-   <li>
       <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a>
    </li>
    <li>
@@ -173,9 +172,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#User" title="https://w3id.org/fuskg/user#User">User</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a>
    </li>
    <li>
       <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a>
@@ -205,12 +201,6 @@ This ontology has the following classes and properties.</span>
       <a href="#hasFood" title="https://w3id.org/fuskg/user#hasFood">has Food</a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval"
-         title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">
-         <span>has Monitored Value Interval</span>
-      </a>
-   </li>
-   <li>
       <a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a>
    </li>
    <li>
@@ -221,9 +211,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasViolationUser" title="https://w3id.org/fuskg/user#hasViolationUser">has violation User</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a>
    </li>
    <li>
       <a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a>
@@ -250,10 +237,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasMETCorrection" title="https://w3id.org/fuskg/user#hasMETCorrection">has MET correction</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#hasRuleDefinition"
-         title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a>
    </li>
    <li>
       <a href="#hasTimestamp" title="https://w3id.org/fuskg/user#hasTimestamp">has timestamp</a>
@@ -305,16 +288,6 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://w3id.org/fuskg/guidelines#activeCategory" title="https://w3id.org/fuskg/guidelines#activeCategory">
-         <span>active Category</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#appliesTo" title="https://w3id.org/fuskg/guidelines#appliesTo">
-         <span>applies To</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator">
          <span>creator</span>
       </a>
@@ -335,34 +308,13 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValue"
-         title="https://w3id.org/fuskg/guidelines#hasMonitoredValue">
-         <span>has Monitored Value</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#hasOperator" title="https://w3id.org/fuskg/guidelines#hasOperator">
-         <span>has Operator</span>
-      </a>
-   </li>
-   <li>
       <a href="#hasOperator" title="https://w3id.org/fuskg/user#hasOperator">
          <span>has Operator</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/guidelines#hasPriority" title="https://w3id.org/fuskg/guidelines#hasPriority">
-         <span>has Priority</span>
-      </a>
-   </li>
-   <li>
       <a href="#hasPriority" title="https://w3id.org/fuskg/user#hasPriority">
          <span>has Priority</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#hasRuleId" title="https://w3id.org/fuskg/guidelines#hasRuleId">
-         <span>has Rule Id</span>
       </a>
    </li>
    <li>
@@ -381,11 +333,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/guidelines#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound">
-         <span>lower Bound</span>
-      </a>
-   </li>
-   <li>
       <a href="#lowerBound" title="https://w3id.org/fuskg/user#lowerBound">
          <span>lower Bound</span>
       </a>
@@ -393,18 +340,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
          <span>modified</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#monitoredEntity"
-         title="https://w3id.org/fuskg/guidelines#monitoredEntity">
-         <span>monitored Entity</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#monitoredEntityType"
-         title="https://w3id.org/fuskg/guidelines#monitoredEntityType">
-         <span>monitored Entity Type</span>
       </a>
    </li>
    <li>
@@ -434,11 +369,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/guidelines#timing" title="https://w3id.org/fuskg/guidelines#timing">
-         <span>timing</span>
-      </a>
-   </li>
-   <li>
       <a href="#timing" title="https://w3id.org/fuskg/user#timing">
          <span>timing</span>
       </a>
@@ -446,11 +376,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
          <span>title</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/guidelines#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound">
-         <span>upper Bound</span>
       </a>
    </li>
    <li>
@@ -482,12 +407,10 @@ This section provides details for each class and property defined by User Module
   <li><a href="#EffortCaloriesEquivalent" title="https://w3id.org/fuskg/user#EffortCaloriesEquivalent">Effort Calories Equivalent</a></li>
   <li><a href="#Lunch" title="https://w3id.org/fuskg/user#Lunch">Lunch</a></li>
   <li><a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a></li>
   <li><a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a></li>
   <li><a href="#Profile" title="https://w3id.org/fuskg/user#Profile">Profile</a></li>
   <li><a href="#Snack" title="https://w3id.org/fuskg/user#Snack">Snack</a></li>
   <li><a href="#User" title="https://w3id.org/fuskg/user#User">User</a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a></li>
   <li><a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a></li>
   <li><a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a></li>
  </ul>
@@ -599,21 +522,6 @@ This section provides details for each class and property defined by User Module
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#MonitoringRule">
-  <h3>Monitoring Rule<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#MonitoringRule</p>
-  <div class="comment">
-   <span class="markdown">This concept enables the definition of rules that can be associated to a specific user or to a specific profile in order to support monitoring activities.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval" title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">has Monitored Value Interval</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/fuskg/guidelines#hasRuleDefinition" title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/fuskg/guidelines#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="PerformedActivity">
   <h3>Performed Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#PerformedActivity</p>
@@ -692,21 +600,6 @@ This section provides details for each class and property defined by User Module
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#ValueInterval">
-  <h3>Value Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#ValueInterval</p>
-  <div class="comment">
-   <span class="markdown">This concept enables the definition of numerical intervals of the form [lowerBound, upperBound] that can be associated with an instance of the MonitoringRule concept.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval" title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">has Monitored Value Interval</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="Violation">
   <h3>Violation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Violation</p>
@@ -746,12 +639,10 @@ This section provides details for each class and property defined by User Module
   <li><a href="#hasActivity" title="https://w3id.org/fuskg/user#hasActivity">has activity</a></li>
   <li><a href="#hasConsumedFood" title="https://w3id.org/fuskg/user#hasConsumedFood">has Consumed Food</a></li>
   <li><a href="#hasFood" title="https://w3id.org/fuskg/user#hasFood">has Food</a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval" title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval"> <span>has Monitored Value Interval</span> </a></li>
   <li><a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a></li>
   <li><a href="#hasViolationMeal" title="https://w3id.org/fuskg/user#hasViolationMeal">has violation on Meal</a></li>
   <li><a href="#hasViolationRule" title="https://w3id.org/fuskg/user#hasViolationRule">has violation on rule</a></li>
   <li><a href="#hasViolationUser" title="https://w3id.org/fuskg/user#hasViolationUser">has violation User</a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a></li>
   <li><a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a></li>
  </ul>
  <div class="entity" id="belongsProfile">
@@ -904,26 +795,6 @@ This section provides details for each class and property defined by User Module
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval">
-  <h3>has Monitored Value Interval<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/guidelines#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="hasUser">
   <h3>has User<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasUser</p>
@@ -1013,23 +884,6 @@ This section provides details for each class and property defined by User Module
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#monitors">
-  <h3>monitors<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#monitors</p>
-  <div class="comment">
-   <span class="markdown">This property specifies the subject of a MonitoringRule.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="performed">
   <h3>performed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#performed</p>
@@ -1062,7 +916,6 @@ This section provides details for each class and property defined by User Module
   <li><a href="#bounds" title="https://w3id.org/fuskg/user#bounds">bounds</a></li>
   <li><a href="#hasDailyCaloricIntake" title="https://w3id.org/fuskg/user#hasDailyCaloricIntake">has daily caloric intake</a></li>
   <li><a href="#hasMETCorrection" title="https://w3id.org/fuskg/user#hasMETCorrection">has MET correction</a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#hasRuleDefinition" title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a></li>
   <li><a href="#hasTimestamp" title="https://w3id.org/fuskg/user#hasTimestamp">has timestamp</a></li>
   <li><a href="#hasUserId" title="https://w3id.org/fuskg/user#hasUserId">has user id</a></li>
   <li><a href="#hasViolationEndTime" title="https://w3id.org/fuskg/user#hasViolationEndTime">has violation end time</a></li>
@@ -1194,29 +1047,6 @@ This section provides details for each class and property defined by User Module
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#hasRuleDefinition">
-  <h3>has rule definition<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasRuleDefinition</p>
-  <div class="comment">
-   <span class="markdown">This property specifies the definition of the MonitoringRule.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/guidelines#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
     </dd>
    </dl>
   </div>
@@ -1534,45 +1364,26 @@ This section provides details for each class and property defined by User Module
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
  <h3 id="annotationproperties" class="list">Annotation Properties</h3>
  <ul class="hlist">
-  <li><a href="#https://w3id.org/fuskg/guidelines#activeCategory" title="https://w3id.org/fuskg/guidelines#activeCategory"> <span>active Category</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#appliesTo" title="https://w3id.org/fuskg/guidelines#appliesTo"> <span>applies To</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
   <li><a href="#http://www.w3.org/2000/01/rdf-schema#domain" title="http://www.w3.org/2000/01/rdf-schema#domain"> <span>domain</span> </a></li>
   <li><a href="#hasForbiddenCategory" title="https://w3id.org/fuskg/user#hasForbiddenCategory"> <span>has Forbidden Category</span> </a></li>
   <li><a href="#hasMandatoryCategory" title="https://w3id.org/fuskg/user#hasMandatoryCategory"> <span>has Mandatory Category</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#hasMonitoredValue" title="https://w3id.org/fuskg/guidelines#hasMonitoredValue"> <span>has Monitored Value</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#hasOperator" title="https://w3id.org/fuskg/guidelines#hasOperator"> <span>has Operator</span> </a></li>
   <li><a href="#hasOperator" title="https://w3id.org/fuskg/user#hasOperator"> <span>has Operator</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#hasPriority" title="https://w3id.org/fuskg/guidelines#hasPriority"> <span>has Priority</span> </a></li>
   <li><a href="#hasPriority" title="https://w3id.org/fuskg/user#hasPriority"> <span>has Priority</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#hasRuleId" title="https://w3id.org/fuskg/guidelines#hasRuleId"> <span>has Rule Id</span> </a></li>
   <li><a href="#isRecipeConsumedFood" title="https://w3id.org/fuskg/user#isRecipeConsumedFood"> <span>is Recipe Consumed Food</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued"> <span>issued</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound"> <span>lower Bound</span> </a></li>
   <li><a href="#lowerBound" title="https://w3id.org/fuskg/user#lowerBound"> <span>lower Bound</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified"> <span>modified</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#monitoredEntity" title="https://w3id.org/fuskg/guidelines#monitoredEntity"> <span>monitored Entity</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#monitoredEntityType" title="https://w3id.org/fuskg/guidelines#monitoredEntityType"> <span>monitored Entity Type</span> </a></li>
   <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
   <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher"> <span>publisher</span> </a></li>
   <li><a href="#http://www.w3.org/2000/01/rdf-schema#range" title="http://www.w3.org/2000/01/rdf-schema#range"> <span>range</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights"> <span>rights</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#timing" title="https://w3id.org/fuskg/guidelines#timing"> <span>timing</span> </a></li>
   <li><a href="#timing" title="https://w3id.org/fuskg/user#timing"> <span>timing</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/guidelines#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound"> <span>upper Bound</span> </a></li>
   <li><a href="#upperBound" title="https://w3id.org/fuskg/user#upperBound"> <span>upper Bound</span> </a></li>
  </ul>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#activeCategory">
-  <h3>active Category<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#activeCategory</p>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#appliesTo">
-  <h3>applies To<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#appliesTo</p>
- </div>
  <div class="entity" id="http://purl.org/dc/terms/creator">
   <h3>creator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/creator</p>
@@ -1605,34 +1416,6 @@ This section provides details for each class and property defined by User Module
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#hasMonitoredValue">
-  <h3>has Monitored Value<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasMonitoredValue</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-    <dt>
-     has range
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#hasOperator">
-  <h3>has Operator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasOperator</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="hasOperator">
   <h3>has Operator<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasOperator</p>
@@ -1645,41 +1428,9 @@ This section provides details for each class and property defined by User Module
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#hasPriority">
-  <h3>has Priority<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasPriority</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-    <dt>
-     has range
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="hasPriority">
   <h3>has Priority<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasPriority</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-    <dt>
-     has range
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#hasRuleId">
-  <h3>has Rule Id<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasRuleId</p>
   <div class="description">
    <dl>
     <dt>
@@ -1705,20 +1456,6 @@ This section provides details for each class and property defined by User Module
   <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#lowerBound">
-  <h3>lower Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#lowerBound</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="lowerBound">
   <h3>lower Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#lowerBound</p>
@@ -1736,30 +1473,6 @@ This section provides details for each class and property defined by User Module
  <div class="entity" id="http://purl.org/dc/terms/modified">
   <h3>modified<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#monitoredEntity">
-  <h3>monitored Entity<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#monitoredEntity</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#monitoredEntityType">
-  <h3>monitored Entity Type<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#monitoredEntityType</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
  </div>
  <div class="entity" id="http://purl.org/vocab/vann/preferredNamespacePrefix">
   <h3>preferred Namespace Prefix<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -1781,18 +1494,6 @@ This section provides details for each class and property defined by User Module
   <h3>rights<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/rights</p>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#timing">
-  <h3>timing<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#timing</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="timing">
   <h3>timing<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#timing</p>
@@ -1808,20 +1509,6 @@ This section provides details for each class and property defined by User Module
  <div class="entity" id="http://purl.org/dc/terms/title">
   <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/guidelines#upperBound">
-  <h3>upper Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#upperBound</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
-    </dd>
-   </dl>
-  </div>
  </div>
  <div class="entity" id="upperBound">
   <h3>upper Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>

@@ -101,44 +101,6 @@
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#domain -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#domain"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
-
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#range"/>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#id -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/core#id"/>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#interfaceLabel -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/core#interfaceLabel">
-        <rdfs:domain></rdfs:domain>
-        <rdfs:range></rdfs:range>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#source -->
-
-
-    <owl:AnnotationProperty rdf:about="https://w3id.org/fuskg/core#source"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -310,59 +272,6 @@
         <rdfs:comment xml:lang="en">This property specifies the HealthBarrier that is triggered by the DiseaseRelation.</rdfs:comment>
         <rdfs:label xml:lang="it">e&apos; innescato da</rdfs:label>
         <rdfs:label xml:lang="en">is triggered by</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#affectsPerformingOf -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#affectsPerformingOf">
-        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Barrier"/>
-        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Activity"/>
-        <rdfs:comment xml:lang="en">This property defines the relationship between a barrier affecting the performing of an activity.</rdfs:comment>
-        <rdfs:label xml:lang="en">affects performing of</rdfs:label>
-        <rdfs:label xml:lang="it">influenza l&apos;esecuzione di</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#concernsConsumptionOf -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#concernsConsumptionOf">
-        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Barrier"/>
-        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Food"/>
-        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
-        <rdfs:comment xml:lang="en">This property defines the relationship between a barrier and the consumption of a food or nutrient.</rdfs:comment>
-        <rdfs:label xml:lang="en">concerns consumption of</rdfs:label>
-        <rdfs:label xml:lang="it">riguarda il consumo di</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#contains -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#contains">
-        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
-        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Food"/>
-        <rdfs:comment xml:lang="en">This property specifies that a food contains another food</rdfs:comment>
-        <rdfs:label xml:lang="en">contains</rdfs:label>
-        <rdfs:label xml:lang="it">contiene</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#hasNutrient -->
-
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/fuskg/core#hasNutrient">
-        <rdfs:domain rdf:resource="https://w3id.org/fuskg/core#Food"/>
-        <rdfs:range rdf:resource="https://w3id.org/fuskg/core#Nutrient"/>
-        <rdfs:comment xml:lang="en">This property specifies the nutrient(s) contained ia a food.</rdfs:comment>
-        <rdfs:label xml:lang="it">ha Nutriente</rdfs:label>
-        <rdfs:label xml:lang="en">has Nutrient</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -907,50 +816,6 @@ http://www.w3.org/TR/swbp-n-aryRelations/</rdfs:comment>
         <rdfs:comment>Vigorous-intensity activity is a 7 or 8 on a scale of 0 to 10. Vigorous-intensity activities make your heart, lungs, and muscles work hard. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart</rdfs:comment>
         <rdfs:label xml:lang="it">Vigoroso</rdfs:label>
         <rdfs:label xml:lang="en">Vigorous</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#Activity -->
-
-
-    <owl:Class rdf:about="https://w3id.org/fuskg/core#Activity">
-        <rdfs:comment xml:lang="en">This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities.</rdfs:comment>
-        <rdfs:label xml:lang="en">Activity</rdfs:label>
-        <rdfs:label xml:lang="it">Attività</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#Barrier -->
-
-
-    <owl:Class rdf:about="https://w3id.org/fuskg/core#Barrier">
-        <rdfs:comment xml:lang="en">This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers.</rdfs:comment>
-        <rdfs:label xml:lang="en">Barrier</rdfs:label>
-        <rdfs:label xml:lang="it">Barriera</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#Food -->
-
-
-    <owl:Class rdf:about="https://w3id.org/fuskg/core#Food">
-        <rdfs:comment xml:lang="en">This is the root concept for the Food branch. All sub-concepts represent a specific category of foods.</rdfs:comment>
-        <rdfs:label xml:lang="it">Alimento</rdfs:label>
-        <rdfs:label xml:lang="en">Food</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/fuskg/core#Nutrient -->
-
-
-    <owl:Class rdf:about="https://w3id.org/fuskg/core#Nutrient">
-        <rdfs:comment xml:lang="en">This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food.</rdfs:comment>
-        <rdfs:label xml:lang="en">Nutrient</rdfs:label>
-        <rdfs:label xml:lang="it">Nutriente</rdfs:label>
     </owl:Class>
     
 

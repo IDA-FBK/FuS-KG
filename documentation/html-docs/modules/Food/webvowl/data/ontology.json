@@ -8,7 +8,7 @@
     },
     "iri" : "https://w3id.org/fuskg/food",
     "version" : "1.02",
-    "author" : [ "Tania Bailoni", "Claudio Eccher", "Mauro Dragoni", "Rosa Maimone", "Gianluca Apriceno" ],
+    "author" : [ "Claudio Eccher", "Tania Bailoni", "Mauro Dragoni", "Rosa Maimone", "Gianluca Apriceno" ],
     "other" : {
       "license" : [ {
         "identifier" : "license",
@@ -24,7 +24,12 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Tania Bailoni",
+        "value" : "Rosa Maimone",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mauro Dragoni",
         "type" : "label"
       }, {
         "identifier" : "creator",
@@ -34,24 +39,19 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Rosa Maimone",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
-        "value" : "Mauro Dragoni",
-        "type" : "label"
-      } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "fsfood",
+        "value" : "Tania Bailoni",
         "type" : "label"
       } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "en",
         "value" : "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fsfood",
         "type" : "label"
       } ],
       "publisher" : [ {
@@ -66,28 +66,28 @@
         "value" : "2024-05-13",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
-        "language" : "undefined",
-        "value" : "https://w3id.org/fuskg/food#",
-        "type" : "label"
-      } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "undefined",
         "value" : "1.02",
         "type" : "label"
       } ],
-      "title" : [ {
-        "identifier" : "title",
-        "language" : "en",
-        "value" : "Food Module of Functional Status Knowledge Graph (FuS-KG)",
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fuskg/food#",
         "type" : "label"
       } ],
       "issued" : [ {
         "identifier" : "issued",
         "language" : "undefined",
         "value" : "2017-05-02",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Food Module of Functional Status Knowledge Graph (FuS-KG)",
         "type" : "label"
       } ]
     }
@@ -244,10 +244,10 @@
     "id" : "312",
     "type" : "owl:Class"
   }, {
-    "id" : "278",
+    "id" : "275",
     "type" : "owl:Class"
   }, {
-    "id" : "275",
+    "id" : "278",
     "type" : "owl:Class"
   }, {
     "id" : "149",
@@ -463,19 +463,19 @@
     "id" : "425",
     "type" : "owl:Class"
   }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
     "id" : "298",
     "type" : "owl:Class"
   }, {
     "id" : "426",
     "type" : "owl:Class"
   }, {
-    "id" : "73",
+    "id" : "427",
     "type" : "owl:Class"
   }, {
     "id" : "305",
-    "type" : "owl:Class"
-  }, {
-    "id" : "427",
     "type" : "owl:Class"
   }, {
     "id" : "329",
@@ -496,7 +496,7 @@
     "id" : "281",
     "type" : "owl:Class"
   }, {
-    "id" : "372",
+    "id" : "371",
     "type" : "owl:Class"
   }, {
     "id" : "62",
@@ -532,28 +532,28 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "349",
+    "id" : "422",
     "type" : "owl:Class"
   }, {
-    "id" : "422",
+    "id" : "349",
     "type" : "owl:Class"
   }, {
     "id" : "497",
     "type" : "owl:Class"
   }, {
-    "id" : "124",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "124",
     "type" : "owl:Class"
   }, {
     "id" : "260",
     "type" : "owl:Class"
   }, {
-    "id" : "158",
+    "id" : "98",
     "type" : "owl:Class"
   }, {
-    "id" : "98",
+    "id" : "158",
     "type" : "owl:Class"
   }, {
     "id" : "17",
@@ -583,13 +583,13 @@
     "id" : "364",
     "type" : "owl:Class"
   }, {
-    "id" : "371",
+    "id" : "407",
     "type" : "owl:Class"
   }, {
     "id" : "168",
     "type" : "owl:Class"
   }, {
-    "id" : "407",
+    "id" : "370",
     "type" : "owl:Class"
   }, {
     "id" : "257",
@@ -604,10 +604,10 @@
     "id" : "421",
     "type" : "owl:Class"
   }, {
-    "id" : "536",
+    "id" : "69",
     "type" : "owl:Class"
   }, {
-    "id" : "69",
+    "id" : "536",
     "type" : "owl:Class"
   }, {
     "id" : "155",
@@ -622,7 +622,7 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "379",
+    "id" : "381",
     "type" : "owl:Class"
   }, {
     "id" : "417",
@@ -694,22 +694,22 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "286",
-    "type" : "owl:Class"
-  }, {
     "id" : "79",
     "type" : "owl:Class"
   }, {
     "id" : "539",
     "type" : "owl:Class"
   }, {
+    "id" : "286",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
     "id" : "222",
     "type" : "owl:Class"
   }, {
-    "id" : "374",
+    "id" : "373",
     "type" : "owl:Class"
   }, {
     "id" : "244",
@@ -757,10 +757,10 @@
     "id" : "229",
     "type" : "owl:Class"
   }, {
-    "id" : "133",
+    "id" : "372",
     "type" : "owl:Class"
   }, {
-    "id" : "373",
+    "id" : "133",
     "type" : "owl:Class"
   }, {
     "id" : "265",
@@ -808,10 +808,10 @@
     "id" : "336",
     "type" : "owl:Class"
   }, {
-    "id" : "369",
+    "id" : "136",
     "type" : "owl:Class"
   }, {
-    "id" : "136",
+    "id" : "376",
     "type" : "owl:Class"
   }, {
     "id" : "145",
@@ -841,7 +841,7 @@
     "id" : "319",
     "type" : "owl:Class"
   }, {
-    "id" : "375",
+    "id" : "374",
     "type" : "owl:Class"
   }, {
     "id" : "314",
@@ -1070,7 +1070,7 @@
   }, {
     "instances" : 0,
     "union" : [ "89", "48" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "88"
   }, {
     "iri" : "https://w3id.org/fuskg/food#FreshOilyMediumFatFish",
@@ -1566,20 +1566,6 @@
     "id" : "312",
     "superClasses" : [ "155" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#SugarAndSweeteners",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SugarAndSweeteners",
-      "en" : "Sugar and Sweeteners",
-      "it" : "Zucchero e Dolcificanti"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Sugar category."
-    },
-    "id" : "278",
-    "superClasses" : [ "244" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#CandiedFruits",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -1592,6 +1578,20 @@
       "en" : "Concept denoting foods belonging to the Candied Fruits category."
     },
     "id" : "275",
+    "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#SugarAndSweeteners",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SugarAndSweeteners",
+      "en" : "Sugar and Sweeteners",
+      "it" : "Zucchero e Dolcificanti"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Sugar category."
+    },
+    "id" : "278",
     "superClasses" : [ "244" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FruitJuices",
@@ -1715,7 +1715,7 @@
       "en" : "Lipids",
       "it" : "Lipidi"
     },
-    "subClasses" : [ "131", "136", "82", "91", "96", "102", "106", "112", "117", "122", "69", "75", "79", "9", "15", "20", "25", "31", "39", "43", "372", "373", "374", "375" ],
+    "subClasses" : [ "131", "136", "82", "91", "96", "102", "106", "112", "117", "122", "69", "75", "79", "9", "15", "20", "25", "31", "39", "43", "371", "372", "373", "374" ],
     "comment" : {
       "en" : "Concept denoting values corresponding to Lipids amounts."
     },
@@ -2596,6 +2596,21 @@
     "id" : "425",
     "superClasses" : [ "291" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#WhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhiteMeat",
+      "en" : "White Meat",
+      "it" : "Carne Bianca"
+    },
+    "subClasses" : [ "98", "23" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the White Meat category."
+    },
+    "id" : "73",
+    "superClasses" : [ "7" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#Wine",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -2624,20 +2639,19 @@
     "id" : "426",
     "superClasses" : [ "291" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#WhiteMeat",
+    "iri" : "https://w3id.org/fuskg/food#VitaminA",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "WhiteMeat",
-      "en" : "White Meat",
-      "it" : "Carne Bianca"
+      "IRI-based" : "VitaminA",
+      "en" : "Vitamin A",
+      "it" : "Vitamina A"
     },
-    "subClasses" : [ "98", "23" ],
     "comment" : {
-      "en" : "Concept denoting foods belonging to the White Meat category."
+      "en" : "Concept denoting values corresponding to Vitamin A amounts."
     },
-    "id" : "73",
-    "superClasses" : [ "7" ]
+    "id" : "427",
+    "superClasses" : [ "291" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#ProcessedShellfish",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -2652,20 +2666,6 @@
     },
     "id" : "305",
     "superClasses" : [ "239" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#VitaminA",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VitaminA",
-      "en" : "Vitamin A",
-      "it" : "Vitamina A"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Vitamin A amounts."
-    },
-    "id" : "427",
-    "superClasses" : [ "291" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#LambLeanWhiteMeat",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -2762,7 +2762,7 @@
     "comment" : {
       "en" : "Concept denoting values corresponding to Linoleic Acid amounts."
     },
-    "id" : "372",
+    "id" : "371",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#LegumesAndLegumeProducts",
@@ -2903,20 +2903,6 @@
     "id" : "6",
     "superClasses" : [ "7" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#TomatoSauces",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TomatoSauces",
-      "en" : "Tomato Sauces",
-      "it" : "Salse di Pomodoro"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Tomato Sauces category."
-    },
-    "id" : "349",
-    "superClasses" : [ "260" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#FolicAcid",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -2931,6 +2917,20 @@
     "id" : "422",
     "superClasses" : [ "291" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#TomatoSauces",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TomatoSauces",
+      "en" : "Tomato Sauces",
+      "it" : "Salse di Pomodoro"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Tomato Sauces category."
+    },
+    "id" : "349",
+    "superClasses" : [ "260" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#RoastedNuts",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -2944,21 +2944,6 @@
     },
     "id" : "497",
     "superClasses" : [ "261" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#FattyRedMeat",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FattyRedMeat",
-      "en" : "Fatty Red Meat",
-      "it" : "Carne Rossa Grassa"
-    },
-    "subClasses" : [ "369", "123", "379" ],
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Fatty Red Meat category."
-    },
-    "id" : "124",
-    "superClasses" : [ "6" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#VegetalOils",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -2975,6 +2960,21 @@
     "id" : "35",
     "superClasses" : [ "32" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#FattyRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FattyRedMeat",
+      "en" : "Fatty Red Meat",
+      "it" : "Carne Rossa Grassa"
+    },
+    "subClasses" : [ "376", "123", "381" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fatty Red Meat category."
+    },
+    "id" : "124",
+    "superClasses" : [ "6" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#ProcessedVegetables",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -2990,20 +2990,6 @@
     "id" : "260",
     "superClasses" : [ "108" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#Glycine",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Glycine",
-      "en" : "Glycine",
-      "it" : "Glicina"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Glycine amounts."
-    },
-    "id" : "158",
-    "superClasses" : [ "51" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#LeanWhiteMeat",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3018,6 +3004,20 @@
     },
     "id" : "98",
     "superClasses" : [ "73" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Glycine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Glycine",
+      "en" : "Glycine",
+      "it" : "Glicina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Glycine amounts."
+    },
+    "id" : "158",
+    "superClasses" : [ "51" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#AnimalFats",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3147,19 +3147,19 @@
     "id" : "364",
     "superClasses" : [ "241" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#FrozenOilyLeanFish",
+    "iri" : "https://w3id.org/fuskg/food#Spices",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "FrozenOilyLeanFish",
-      "en" : "Frozen Oily Lean Fish",
-      "it" : "Pesce Azzurro Magro Surgelato"
+      "IRI-based" : "Spices",
+      "en" : "Spices",
+      "it" : "Spezie"
     },
     "comment" : {
-      "en" : "Concept denoting foods belonging to the Frozen Oily Lean Fish category."
+      "en" : "Concept denoting foods belonging to the Spices category."
     },
-    "id" : "371",
-    "superClasses" : [ "180" ]
+    "id" : "407",
+    "superClasses" : [ "176" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#Proline",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3175,19 +3175,19 @@
     "id" : "168",
     "superClasses" : [ "51" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#Spices",
+    "iri" : "https://w3id.org/fuskg/food#FrozenOilyLeanFish",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "Spices",
-      "en" : "Spices",
-      "it" : "Spezie"
+      "IRI-based" : "FrozenOilyLeanFish",
+      "en" : "Frozen Oily Lean Fish",
+      "it" : "Pesce Azzurro Magro Surgelato"
     },
     "comment" : {
-      "en" : "Concept denoting foods belonging to the Spices category."
+      "en" : "Concept denoting foods belonging to the Frozen Oily Lean Fish category."
     },
-    "id" : "407",
-    "superClasses" : [ "176" ]
+    "id" : "370",
+    "superClasses" : [ "180" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#CulinaryErbs",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3246,20 +3246,6 @@
     "id" : "421",
     "superClasses" : [ "291" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#FreshAlgae",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FreshAlgae",
-      "en" : "Fresh Algae",
-      "it" : "Alghe Fresche"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Fresh Algae category."
-    },
-    "id" : "536",
-    "superClasses" : [ "114" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#ArachidonicAcid",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3273,6 +3259,20 @@
     },
     "id" : "69",
     "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshAlgae",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshAlgae",
+      "en" : "Fresh Algae",
+      "it" : "Alghe Fresche"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Algae category."
+    },
+    "id" : "536",
+    "superClasses" : [ "114" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#Mineral",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3344,7 +3344,7 @@
     "comment" : {
       "en" : "Concept denoting foods belonging to the Pork Fatty Red Meat category."
     },
-    "id" : "379",
+    "id" : "381",
     "superClasses" : [ "124" ]
   }, {
     "iri" : "https://w3id.org/fuskg/core#Activity",
@@ -3651,7 +3651,7 @@
       "en" : "Frozen Oily Fish",
       "it" : "Pesce Azzurro Surgelato"
     },
-    "subClasses" : [ "367", "371", "179" ],
+    "subClasses" : [ "367", "370", "179" ],
     "comment" : {
       "en" : "Concept denoting foods belonging to the Frozen Oily Fish category."
     },
@@ -3672,34 +3672,6 @@
     },
     "id" : "1",
     "superClasses" : [ "176" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#VealFattyWhiteMeat",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VealFattyWhiteMeat",
-      "en" : "Veal Fatty White Meat",
-      "it" : "Carne Bianca Grassa di Vitello"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Veal Fatty White Meat category."
-    },
-    "id" : "22",
-    "superClasses" : [ "23" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#ProcessedMollusc",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ProcessedMollusc",
-      "en" : "Processed Mollusc",
-      "it" : "Molluschi Confezionati e Lavorati"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Processed Mollusc category."
-    },
-    "id" : "286",
-    "superClasses" : [ "249" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#DHAAcid",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3729,6 +3701,34 @@
     "id" : "539",
     "superClasses" : [ "155" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#ProcessedMollusc",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ProcessedMollusc",
+      "en" : "Processed Mollusc",
+      "it" : "Molluschi Confezionati e Lavorati"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Processed Mollusc category."
+    },
+    "id" : "286",
+    "superClasses" : [ "249" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#VealFattyWhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VealFattyWhiteMeat",
+      "en" : "Veal Fatty White Meat",
+      "it" : "Carne Bianca Grassa di Vitello"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Veal Fatty White Meat category."
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#Galactose",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3754,7 +3754,7 @@
     "comment" : {
       "en" : "Concept denoting values corresponding to Erucic Acid amounts."
     },
-    "id" : "374",
+    "id" : "373",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#SugarAndSweets",
@@ -3973,6 +3973,20 @@
     "id" : "229",
     "superClasses" : [ "89" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#BehenicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BehenicAcid",
+      "en" : "Behenic Acid",
+      "it" : "Acido Beenico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Behenic Acid amounts."
+    },
+    "id" : "372",
+    "superClasses" : [ "10" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#Valine",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3986,20 +4000,6 @@
     },
     "id" : "133",
     "superClasses" : [ "51" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#BehenicAcid",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BehenicAcid",
-      "en" : "Behenic Acid",
-      "it" : "Acido Beenico"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Behenic Acid amounts."
-    },
-    "id" : "373",
-    "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -4216,20 +4216,6 @@
     "id" : "336",
     "superClasses" : [ "98" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#AdultSheepFattyRedMeat",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AdultSheepFattyRedMeat",
-      "en" : "Adult Sheep Fatty Red Meat",
-      "it" : "Carne Rossa Grassa di Pecora"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category."
-    },
-    "id" : "369",
-    "superClasses" : [ "124" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#Cholesterol",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -4243,6 +4229,20 @@
     },
     "id" : "136",
     "superClasses" : [ "10" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#AdultSheepFattyRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdultSheepFattyRedMeat",
+      "en" : "Adult Sheep Fatty Red Meat",
+      "it" : "Carne Rossa Grassa di Pecora"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category."
+    },
+    "id" : "376",
+    "superClasses" : [ "124" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#Cereals",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -4383,7 +4383,7 @@
     "comment" : {
       "en" : "Concept denoting values corresponding to Myristoleic Acid amounts."
     },
-    "id" : "375",
+    "id" : "374",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#CannedMeat",
@@ -5008,10 +5008,10 @@
     "id" : "368",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "370",
+    "id" : "369",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "376",
+    "id" : "375",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "377",
@@ -5020,10 +5020,10 @@
     "id" : "378",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "380",
+    "id" : "379",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "381",
+    "id" : "380",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "383",
@@ -5596,77 +5596,77 @@
   "propertyAttribute" : [ {
     "range" : "7",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "5"
   }, {
     "range" : "10",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "13",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "11"
   }, {
     "range" : "10",
     "domain" : "15",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "14"
   }, {
     "range" : "18",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "16"
   }, {
     "range" : "10",
     "domain" : "20",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "19"
   }, {
     "range" : "23",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "21"
   }, {
     "range" : "10",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "24"
   }, {
     "range" : "23",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "28"
   }, {
     "range" : "10",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "23",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "range" : "10",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
     "range" : "23",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
     "range" : "10",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "range" : "46",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "44"
   }, {
     "iri" : "https://w3id.org/fuskg/food#amountCalories",
@@ -5686,192 +5686,192 @@
   }, {
     "range" : "62",
     "domain" : "13",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "65"
   }, {
     "range" : "10",
     "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "68"
   }, {
     "range" : "62",
     "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "70"
   }, {
     "range" : "7",
     "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "72"
   }, {
     "range" : "10",
     "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "74"
   }, {
     "range" : "7",
     "domain" : "77",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "76"
   }, {
     "range" : "10",
     "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "78"
   }, {
     "range" : "10",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
     "range" : "85",
     "domain" : "84",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "83"
   }, {
     "range" : "10",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "90"
   }, {
     "range" : "85",
     "domain" : "93",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "92"
   }, {
     "range" : "0",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "94"
   }, {
     "range" : "10",
     "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
     "range" : "73",
     "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "97"
   }, {
     "range" : "0",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "100"
   }, {
     "range" : "10",
     "domain" : "102",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "101"
   }, {
     "range" : "73",
     "domain" : "23",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "103"
   }, {
     "range" : "0",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "104"
   }, {
     "range" : "10",
     "domain" : "106",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "105"
   }, {
     "range" : "109",
     "domain" : "108",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "107"
   }, {
     "range" : "32",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "110"
   }, {
     "range" : "10",
     "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "111"
   }, {
     "range" : "109",
     "domain" : "114",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "113"
   }, {
     "range" : "32",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "115"
   }, {
     "range" : "10",
     "domain" : "117",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "116"
   }, {
     "range" : "109",
     "domain" : "119",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "118"
   }, {
     "range" : "52",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "120"
   }, {
     "range" : "10",
     "domain" : "122",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "121"
   }, {
     "range" : "52",
     "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "125"
   }, {
     "range" : "51",
     "domain" : "129",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "128"
   }, {
     "range" : "10",
     "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "130"
   }, {
     "range" : "51",
     "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "132"
   }, {
     "range" : "10",
     "domain" : "136",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "135"
   }, {
     "range" : "51",
     "domain" : "138",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "137"
   }, {
     "range" : "142",
     "domain" : "141",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "140"
   }, {
     "range" : "145",
     "domain" : "144",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "143"
   }, {
     "range" : "142",
     "domain" : "147",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "146"
   }, {
     "range" : "55",
     "domain" : "149",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "148"
   }, {
     "iri" : "https://w3id.org/fuskg/core#concernsConsumptionOf",
@@ -5891,437 +5891,437 @@
   }, {
     "range" : "87",
     "domain" : "139",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
     "range" : "51",
     "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "153"
   }, {
     "range" : "87",
     "domain" : "86",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "156"
   }, {
     "range" : "51",
     "domain" : "158",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "157"
   }, {
     "range" : "87",
     "domain" : "160",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "159"
   }, {
     "range" : "51",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "161"
   }, {
     "range" : "87",
     "domain" : "163",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "162"
   }, {
     "range" : "51",
     "domain" : "165",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "164"
   }, {
     "range" : "57",
     "domain" : "99",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "166"
   }, {
     "range" : "51",
     "domain" : "168",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "167"
   }, {
     "range" : "57",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "169"
   }, {
     "range" : "51",
     "domain" : "171",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "170"
   }, {
     "range" : "57",
     "domain" : "175",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "174"
   }, {
     "range" : "77",
     "domain" : "182",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "181"
   }, {
     "range" : "142",
     "domain" : "184",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "183"
   }, {
     "range" : "145",
     "domain" : "186",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "185"
   }, {
     "range" : "189",
     "domain" : "188",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "187"
   }, {
     "range" : "192",
     "domain" : "191",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "190"
   }, {
     "range" : "189",
     "domain" : "194",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "193"
   }, {
     "range" : "53",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "195"
   }, {
     "range" : "189",
     "domain" : "198",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "197"
   }, {
     "range" : "53",
     "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "199"
   }, {
     "range" : "189",
     "domain" : "201",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "200"
   }, {
     "range" : "53",
     "domain" : "203",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "202"
   }, {
     "range" : "189",
     "domain" : "205",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "204"
   }, {
     "range" : "53",
     "domain" : "207",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "206"
   }, {
     "range" : "142",
     "domain" : "209",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "208"
   }, {
     "range" : "212",
     "domain" : "211",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "210"
   }, {
     "range" : "142",
     "domain" : "214",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "213"
   }, {
     "range" : "212",
     "domain" : "216",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "215"
   }, {
     "range" : "142",
     "domain" : "218",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "217"
   }, {
     "range" : "191",
     "domain" : "220",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "219"
   }, {
     "range" : "142",
     "domain" : "222",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "221"
   }, {
     "range" : "191",
     "domain" : "224",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "223"
   }, {
     "range" : "142",
     "domain" : "228",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "227"
   }, {
     "range" : "192",
     "domain" : "239",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "242"
   }, {
     "range" : "176",
     "domain" : "246",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "245"
   }, {
     "range" : "249",
     "domain" : "248",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "247"
   }, {
     "range" : "176",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "250"
   }, {
     "range" : "220",
     "domain" : "252",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "251"
   }, {
     "range" : "176",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "253"
   }, {
     "range" : "220",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "254"
   }, {
     "range" : "176",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "255"
   }, {
     "range" : "244",
     "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "266"
   }, {
     "range" : "176",
     "domain" : "269",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "268"
   }, {
     "range" : "244",
     "domain" : "271",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "270"
   }, {
     "range" : "176",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "272"
   }, {
     "range" : "244",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "274"
   }, {
     "range" : "176",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "276"
   }, {
     "range" : "244",
     "domain" : "278",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "277"
   }, {
     "range" : "176",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "279"
   }, {
     "range" : "244",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "280"
   }, {
     "range" : "176",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "282"
   }, {
     "range" : "244",
     "domain" : "127",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "283"
   }, {
     "range" : "176",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "284"
   }, {
     "range" : "249",
     "domain" : "286",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "285"
   }, {
     "range" : "178",
     "domain" : "236",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "287"
   }, {
     "range" : "244",
     "domain" : "289",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "288"
   }, {
     "range" : "178",
     "domain" : "237",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "292"
   }, {
     "range" : "244",
     "domain" : "294",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "293"
   }, {
     "range" : "176",
     "domain" : "244",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "295"
   }, {
     "range" : "244",
     "domain" : "297",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "296"
   }, {
     "range" : "176",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "301"
   }, {
     "range" : "244",
     "domain" : "303",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "302"
   }, {
     "range" : "176",
     "domain" : "46",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "304"
   }, {
     "range" : "64",
     "domain" : "314",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "313"
   }, {
     "range" : "178",
     "domain" : "231",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "315"
   }, {
     "range" : "64",
     "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "316"
   }, {
     "range" : "178",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "317"
   }, {
     "range" : "64",
     "domain" : "319",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "318"
   }, {
     "range" : "178",
     "domain" : "233",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "320"
   }, {
     "range" : "311",
     "domain" : "322",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "321"
   }, {
     "range" : "178",
     "domain" : "234",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "323"
   }, {
     "range" : "244",
     "domain" : "243",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "324"
   }, {
     "range" : "178",
     "domain" : "235",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "325"
   }, {
     "range" : "244",
     "domain" : "327",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "326"
   }, {
     "range" : "98",
     "domain" : "329",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "328"
   }, {
     "range" : "89",
     "domain" : "331",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "330"
   }, {
     "range" : "98",
     "domain" : "333",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "332"
   }, {
     "range" : "89",
     "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "334"
   }, {
     "range" : "98",
     "domain" : "336",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "335"
   }, {
     "range" : "89",
     "domain" : "229",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "337"
   }, {
     "range" : "98",
     "domain" : "339",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "338"
   }, {
     "range" : "89",
     "domain" : "341",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "340"
   }, {
     "range" : "178",
     "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "342"
   }, {
     "range" : "89",
     "domain" : "291",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "343"
   }, {
     "range" : "178",
     "domain" : "177",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "344"
   }, {
     "iri" : "https://w3id.org/fuskg/core#contains",
@@ -6341,47 +6341,47 @@
   }, {
     "range" : "1",
     "domain" : "241",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "347"
   }, {
     "range" : "260",
     "domain" : "349",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "348"
   }, {
     "range" : "1",
     "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "350"
   }, {
     "range" : "260",
     "domain" : "352",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "351"
   }, {
     "range" : "89",
     "domain" : "155",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "353"
   }, {
     "range" : "260",
     "domain" : "259",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "354"
   }, {
     "range" : "89",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "355"
   }, {
     "range" : "98",
     "domain" : "357",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "356"
   }, {
     "range" : "89",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "358"
   }, {
     "iri" : "https://w3id.org/fuskg/core#hasNutrient",
@@ -6401,197 +6401,197 @@
   }, {
     "range" : "6",
     "domain" : "189",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "360"
   }, {
     "range" : "241",
     "domain" : "240",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "361"
   }, {
     "range" : "33",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "362"
   }, {
     "range" : "241",
     "domain" : "364",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "363"
   }, {
     "range" : "33",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "365"
   }, {
     "range" : "180",
     "domain" : "367",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "366"
   }, {
-    "range" : "124",
-    "domain" : "369",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "35",
+    "domain" : "345",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "368"
   }, {
     "range" : "180",
-    "domain" : "371",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "370"
+    "domain" : "370",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "369"
   }, {
     "range" : "124",
-    "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "376"
+    "domain" : "376",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "375"
   }, {
     "range" : "180",
     "domain" : "179",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "377"
   }, {
     "range" : "124",
-    "domain" : "379",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "378"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "379"
+  }, {
+    "range" : "124",
+    "domain" : "381",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "380"
   }, {
-    "range" : "35",
-    "domain" : "345",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "381"
-  }, {
     "range" : "10",
-    "domain" : "372",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "371",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "383"
   }, {
     "range" : "46",
     "domain" : "109",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "384"
   }, {
     "range" : "10",
-    "domain" : "373",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "372",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "385"
   }, {
     "range" : "46",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "386"
   }, {
     "range" : "10",
-    "domain" : "374",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "373",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "387"
   }, {
     "range" : "6",
     "domain" : "124",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "388"
   }, {
     "range" : "10",
-    "domain" : "375",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "374",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "389"
   }, {
     "range" : "226",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "390"
   }, {
     "range" : "1",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "396"
   }, {
     "range" : "7",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "397"
   }, {
     "range" : "33",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "399"
   }, {
     "range" : "46",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "400"
   }, {
     "range" : "87",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "401"
   }, {
     "range" : "192",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "402"
   }, {
     "range" : "64",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "403"
   }, {
     "range" : "269",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "404"
   }, {
     "range" : "244",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "405"
   }, {
     "range" : "407",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "406"
   }, {
     "range" : "1",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "408"
   }, {
     "range" : "7",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "409"
   }, {
     "range" : "226",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "410"
   }, {
     "range" : "33",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "411"
   }, {
     "range" : "273",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "412"
   }, {
     "range" : "87",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "413"
   }, {
     "range" : "192",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "414"
   }, {
     "range" : "407",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "415"
   }, {
     "iri" : "https://w3id.org/fuskg/core#affectsPerformingOf",
@@ -6611,357 +6611,357 @@
   }, {
     "range" : "46",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "418"
   }, {
     "range" : "244",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "430"
   }, {
     "range" : "269",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "431"
   }, {
     "range" : "407",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "432"
   }, {
     "range" : "64",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "433"
   }, {
     "range" : "7",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "439"
   }, {
     "range" : "87",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "440"
   }, {
     "range" : "226",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "441"
   }, {
     "range" : "1",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "442"
   }, {
     "range" : "407",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "443"
   }, {
     "range" : "64",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "444"
   }, {
     "range" : "46",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "445"
   }, {
     "range" : "244",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "446"
   }, {
     "range" : "269",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "447"
   }, {
     "range" : "226",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "448"
   }, {
     "range" : "1",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "449"
   }, {
     "range" : "192",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "450"
   }, {
     "range" : "46",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "451"
   }, {
     "range" : "7",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "452"
   }, {
     "range" : "87",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "453"
   }, {
     "range" : "64",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "454"
   }, {
     "range" : "269",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "455"
   }, {
     "range" : "244",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "456"
   }, {
     "range" : "407",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "459"
   }, {
     "range" : "64",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "460"
   }, {
     "range" : "67",
     "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "461"
   }, {
     "range" : "269",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "462"
   }, {
     "range" : "229",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "463"
   }, {
     "range" : "244",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "464"
   }, {
     "range" : "229",
     "domain" : "178",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "465"
   }, {
     "range" : "407",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "466"
   }, {
     "range" : "108",
     "domain" : "468",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "467"
   }, {
     "range" : "108",
     "domain" : "260",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "469"
   }, {
     "range" : "27",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "470"
   }, {
     "range" : "226",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "471"
   }, {
     "range" : "27",
     "domain" : "434",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "472"
   }, {
     "range" : "119",
     "domain" : "457",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "473"
   }, {
     "range" : "119",
     "domain" : "458",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "474"
   }, {
     "range" : "192",
     "domain" : "249",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "475"
   }, {
     "range" : "46",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "477"
   }, {
     "range" : "244",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "478"
   }, {
     "range" : "269",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "479"
   }, {
     "range" : "226",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "480"
   }, {
     "range" : "407",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "481"
   }, {
     "range" : "64",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "482"
   }, {
     "range" : "244",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "483"
   }, {
     "range" : "407",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "484"
   }, {
     "range" : "60",
     "domain" : "145",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "485"
   }, {
     "range" : "1",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "486"
   }, {
     "range" : "60",
     "domain" : "27",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "487"
   }, {
     "range" : "46",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "488"
   }, {
     "range" : "60",
     "domain" : "393",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "489"
   }, {
     "range" : "60",
     "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "490"
   }, {
     "range" : "60",
     "domain" : "492",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "491"
   }, {
     "range" : "60",
     "domain" : "173",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "493"
   }, {
     "range" : "60",
     "domain" : "495",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "494"
   }, {
     "range" : "261",
     "domain" : "497",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "496"
   }, {
     "range" : "67",
     "domain" : "437",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "498"
   }, {
     "range" : "67",
     "domain" : "438",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "499"
   }, {
     "range" : "269",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "500"
   }, {
     "range" : "226",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "501"
   }, {
     "range" : "64",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "502"
   }, {
     "range" : "46",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "503"
   }, {
     "range" : "244",
     "domain" : "192",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "504"
   }, {
     "range" : "1",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "505"
   }, {
     "range" : "7",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "506"
   }, {
     "range" : "99",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "507"
   }, {
-    "range" : "99",
+    "range" : "56",
     "domain" : "175",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "508"
   }, {
     "range" : "73",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "509"
   }, {
     "range" : "46",
     "domain" : "244",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "510"
   }, {
-    "range" : "56",
+    "range" : "99",
     "domain" : "175",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "511"
   }, {
     "iri" : "https://w3id.org/fuskg/core#contains",
@@ -6976,82 +6976,82 @@
     "comment" : {
       "en" : "This property specifies that a food contains another food"
     },
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "512"
   }, {
     "range" : "46",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "513"
   }, {
     "range" : "244",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "514"
   }, {
     "range" : "46",
     "domain" : "407",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "515"
   }, {
     "range" : "244",
     "domain" : "407",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "516"
   }, {
     "range" : "244",
     "domain" : "269",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "517"
   }, {
     "range" : "407",
     "domain" : "269",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "518"
   }, {
     "range" : "407",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "519"
   }, {
     "range" : "46",
     "domain" : "269",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "520"
   }, {
     "range" : "64",
     "domain" : "269",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "521"
   }, {
     "range" : "46",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "522"
   }, {
     "range" : "244",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "523"
   }, {
     "range" : "269",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "524"
   }, {
     "range" : "46",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "525"
   }, {
     "range" : "407",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "526"
   }, {
     "range" : "64",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "527"
   }, {
     "iri" : "https://w3id.org/fuskg/food#ediblePart",
@@ -7116,302 +7116,302 @@
   }, {
     "range" : "155",
     "domain" : "392",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "544"
   }, {
     "range" : "155",
     "domain" : "394",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "545"
   }, {
     "range" : "155",
     "domain" : "539",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "546"
   }, {
     "range" : "155",
     "domain" : "540",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "547"
   }, {
     "range" : "155",
     "domain" : "395",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "548"
   }, {
     "range" : "155",
     "domain" : "541",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "549"
   }, {
     "range" : "155",
     "domain" : "398",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "550"
   }, {
     "range" : "155",
     "domain" : "312",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "551"
   }, {
     "range" : "155",
     "domain" : "542",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "552"
   }, {
     "range" : "155",
     "domain" : "543",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "553"
   }, {
     "range" : "155",
     "domain" : "538",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "554"
   }, {
     "range" : "224",
     "domain" : "306",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "555"
   }, {
     "range" : "224",
     "domain" : "307",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "556"
   }, {
     "range" : "224",
     "domain" : "308",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "557"
   }, {
     "range" : "224",
     "domain" : "309",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "558"
   }, {
     "range" : "224",
     "domain" : "310",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "559"
   }, {
     "range" : "48",
     "domain" : "176",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "560"
   }, {
     "range" : "48",
     "domain" : "311",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "561"
   }, {
     "range" : "155",
     "domain" : "154",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "562"
   }, {
     "range" : "155",
     "domain" : "537",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "563"
   }, {
     "range" : "239",
     "domain" : "238",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "564"
   }, {
     "range" : "246",
     "domain" : "212",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "565"
   }, {
     "range" : "239",
     "domain" : "305",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "566"
   }, {
     "range" : "291",
     "domain" : "425",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "567"
   }, {
     "range" : "252",
     "domain" : "263",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "568"
   }, {
     "range" : "291",
     "domain" : "426",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "569"
   }, {
     "range" : "252",
     "domain" : "264",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "570"
   }, {
     "range" : "291",
     "domain" : "382",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "571"
   }, {
     "range" : "252",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "572"
   }, {
     "range" : "291",
     "domain" : "427",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "573"
   }, {
     "range" : "257",
     "domain" : "534",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "574"
   }, {
     "range" : "291",
     "domain" : "428",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "575"
   }, {
     "range" : "257",
     "domain" : "256",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "576"
   }, {
     "range" : "291",
     "domain" : "429",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "577"
   }, {
     "range" : "196",
     "domain" : "298",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "578"
   }, {
     "range" : "173",
     "domain" : "435",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "579"
   }, {
     "range" : "196",
     "domain" : "299",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "580"
   }, {
     "range" : "173",
     "domain" : "172",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "581"
   }, {
     "range" : "196",
     "domain" : "300",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "582"
   }, {
     "range" : "246",
     "domain" : "436",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "583"
   }, {
     "range" : "226",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "584"
   }, {
     "range" : "291",
     "domain" : "423",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "585"
   }, {
     "range" : "226",
     "domain" : "262",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "586"
   }, {
     "range" : "291",
     "domain" : "424",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "587"
   }, {
     "range" : "226",
     "domain" : "225",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "588"
   }, {
     "range" : "114",
     "domain" : "536",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "589"
   }, {
     "range" : "176",
     "domain" : "407",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "590"
   }, {
     "range" : "114",
     "domain" : "476",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "591"
   }, {
     "range" : "176",
     "domain" : "257",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "592"
   }, {
     "range" : "291",
     "domain" : "290",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "593"
   }, {
     "range" : "176",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "594"
   }, {
     "range" : "291",
     "domain" : "419",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "595"
   }, {
     "range" : "308",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "596"
   }, {
     "range" : "291",
     "domain" : "420",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "597"
   }, {
     "range" : "308",
     "domain" : "180",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "598"
   }, {
     "range" : "291",
     "domain" : "391",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "599"
   }, {
     "range" : "127",
     "domain" : "258",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "600"
   }, {
     "range" : "291",
     "domain" : "421",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "601"
   }, {
     "range" : "127",
     "domain" : "126",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "602"
   }, {
     "range" : "291",
     "domain" : "422",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "603"
   }, {
     "iri" : "https://w3id.org/fuskg/food#unit",
@@ -7431,52 +7431,52 @@
   }, {
     "range" : "33",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "605"
   }, {
     "range" : "192",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "606"
   }, {
     "range" : "87",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "607"
   }, {
     "range" : "7",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "608"
   }, {
     "range" : "1",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "609"
   }, {
     "range" : "226",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "610"
   }, {
     "range" : "269",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "611"
   }, {
     "range" : "64",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "612"
   }, {
     "range" : "257",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "613"
   }, {
     "range" : "273",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "614"
   } ]
 }

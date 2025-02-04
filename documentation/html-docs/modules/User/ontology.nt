@@ -54,51 +54,6 @@
 # http://www.w3.org/2000/01/rdf-schema#range
 <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# https://w3id.org/fuskg/guidelines#activeCategory
-<https://w3id.org/fuskg/guidelines#activeCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/fuskg/guidelines#appliesTo
-<https://w3id.org/fuskg/guidelines#appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/fuskg/guidelines#hasMonitoredValue
-<https://w3id.org/fuskg/guidelines#hasMonitoredValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#hasMonitoredValue> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-<https://w3id.org/fuskg/guidelines#hasMonitoredValue> <http://www.w3.org/2000/01/rdf-schema#range> "" .
-# 
-# https://w3id.org/fuskg/guidelines#hasOperator
-<https://w3id.org/fuskg/guidelines#hasOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#hasOperator> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-# 
-# https://w3id.org/fuskg/guidelines#hasPriority
-<https://w3id.org/fuskg/guidelines#hasPriority> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#hasPriority> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-<https://w3id.org/fuskg/guidelines#hasPriority> <http://www.w3.org/2000/01/rdf-schema#range> "" .
-# 
-# https://w3id.org/fuskg/guidelines#hasRuleId
-<https://w3id.org/fuskg/guidelines#hasRuleId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#hasRuleId> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-<https://w3id.org/fuskg/guidelines#hasRuleId> <http://www.w3.org/2000/01/rdf-schema#range> "" .
-# 
-# https://w3id.org/fuskg/guidelines#lowerBound
-<https://w3id.org/fuskg/guidelines#lowerBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#lowerBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-# 
-# https://w3id.org/fuskg/guidelines#monitoredEntity
-<https://w3id.org/fuskg/guidelines#monitoredEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#monitoredEntity> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-# 
-# https://w3id.org/fuskg/guidelines#monitoredEntityType
-<https://w3id.org/fuskg/guidelines#monitoredEntityType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#monitoredEntityType> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-# 
-# https://w3id.org/fuskg/guidelines#timing
-<https://w3id.org/fuskg/guidelines#timing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#timing> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-# 
-# https://w3id.org/fuskg/guidelines#upperBound
-<https://w3id.org/fuskg/guidelines#upperBound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/guidelines#upperBound> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
-# 
 # https://w3id.org/fuskg/user#hasForbiddenCategory
 <https://w3id.org/fuskg/user#hasForbiddenCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 <https://w3id.org/fuskg/user#hasForbiddenCategory> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
@@ -139,18 +94,6 @@
 # #
 # #################################################################
 # 
-# 
-# https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval
-<https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/guidelines#MonitoringRule> .
-<https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/guidelines#ValueInterval> .
-# 
-# https://w3id.org/fuskg/guidelines#monitors
-<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/guidelines#MonitoringRule> .
-<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the subject of a MonitoringRule."@en .
-<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitora"@it .
-<https://w3id.org/fuskg/guidelines#monitors> <http://www.w3.org/2000/01/rdf-schema#label> "monitors"@en .
 # 
 # https://w3id.org/fuskg/user#belongsProfile
 <https://w3id.org/fuskg/user#belongsProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -257,14 +200,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #
 # #################################################################
 # 
-# 
-# https://w3id.org/fuskg/guidelines#hasRuleDefinition
-<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/guidelines#MonitoringRule> .
-<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the definition of the MonitoringRule."@en .
-<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "ha definizione della regola"@it .
-<https://w3id.org/fuskg/guidelines#hasRuleDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "has rule definition"@en .
 # 
 # https://w3id.org/fuskg/user#activityDuration
 <https://w3id.org/fuskg/user#activityDuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -459,18 +394,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://w3id.org/fuskg/core#Food
 <https://w3id.org/fuskg/core#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# https://w3id.org/fuskg/guidelines#MonitoringRule
-<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the definition of rules that can be associated to a specific user or to a specific profile in order to support monitoring activities."@en .
-<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/2000/01/rdf-schema#label> "Monitoring Rule"@en .
-<https://w3id.org/fuskg/guidelines#MonitoringRule> <http://www.w3.org/2000/01/rdf-schema#label> "Regole di Monitoraggio"@it .
-# 
-# https://w3id.org/fuskg/guidelines#ValueInterval
-<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/2000/01/rdf-schema#comment> "This concept enables the definition of numerical intervals of the form [lowerBound, upperBound] that can be associated with an instance of the MonitoringRule concept."@en .
-<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Intervalli"@it .
-<https://w3id.org/fuskg/guidelines#ValueInterval> <http://www.w3.org/2000/01/rdf-schema#label> "Value Interval"@en .
 # 
 # https://w3id.org/fuskg/user#Breakfast
 <https://w3id.org/fuskg/user#Breakfast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

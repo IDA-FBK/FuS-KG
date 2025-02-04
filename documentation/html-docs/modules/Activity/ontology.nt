@@ -65,17 +65,6 @@
 <https://w3id.org/fuskg/activity#commonSense> <http://www.w3.org/2000/01/rdf-schema#label> "common sense"@en .
 <https://w3id.org/fuskg/activity#commonSense> <http://www.w3.org/2000/01/rdf-schema#label> "senso comue"@it .
 # 
-# https://w3id.org/fuskg/core#id
-<https://w3id.org/fuskg/core#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# https://w3id.org/fuskg/core#interfaceLabel
-<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/2000/01/rdf-schema#domain> "" .
-<https://w3id.org/fuskg/core#interfaceLabel> <http://www.w3.org/2000/01/rdf-schema#range> "" .
-# 
-# https://w3id.org/fuskg/core#source
-<https://w3id.org/fuskg/core#source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # 
 # 
 # #################################################################
@@ -94,55 +83,6 @@
 <https://w3id.org/fuskg/activity#specializes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/fuskg/activity#specializes> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/activity#SpecializedActivity> .
 <https://w3id.org/fuskg/activity#specializes> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Activity> .
-# 
-# https://w3id.org/fuskg/core#affectsPerformingOf
-<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Barrier> .
-<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Activity> .
-<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the relationship between a barrier affecting the performing of an activity."@en .
-<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#label> "affects performing of"@en .
-<https://w3id.org/fuskg/core#affectsPerformingOf> <http://www.w3.org/2000/01/rdf-schema#label> "influenza l'esecuzione di"@it .
-# 
-# https://w3id.org/fuskg/core#concernsConsumptionOf
-<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Barrier> .
-<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
-<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Nutrient> .
-<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#comment> "This property defines the relationship between a barrier and the consumption of a food or nutrient."@en .
-<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "concerns consumption of"@en .
-<https://w3id.org/fuskg/core#concernsConsumptionOf> <http://www.w3.org/2000/01/rdf-schema#label> "riguarda il consumo di"@it .
-# 
-# https://w3id.org/fuskg/core#contains
-<https://w3id.org/fuskg/core#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
-<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Food> .
-<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies that a food contains another food"@en .
-<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
-<https://w3id.org/fuskg/core#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contiene"@it .
-# 
-# https://w3id.org/fuskg/core#hasNutrient
-<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/core#Food> .
-<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/core#Nutrient> .
-<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the nutrient(s) contained ia a food."@en .
-<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "ha Nutriente"@it .
-<https://w3id.org/fuskg/core#hasNutrient> <http://www.w3.org/2000/01/rdf-schema#label> "has Nutrient"@en .
-# 
-# https://w3id.org/fuskg/multimodal#hasModalDescriptor
-<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalEntity> .
-<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
-<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a ModalEntity with its corresponding ModalDescriptor(s)."@en .
-<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "ha descrittore modale"@it .
-<https://w3id.org/fuskg/multimodal#hasModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "has modal descriptor" .
-# 
-# https://w3id.org/fuskg/multimodal#hasModality
-<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
-<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/fuskg/multimodal#Modality> .
-<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#comment> "Property used to connect a ModalDescriptor with its correspondig Modality."@en .
-<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#label> "ha modalita'"@it .
-<https://w3id.org/fuskg/multimodal#hasModality> <http://www.w3.org/2000/01/rdf-schema#label> "has modality"@en .
 # 
 # 
 # 
@@ -169,62 +109,6 @@
 <https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/2000/01/rdf-schema#label> "ha valore di unita' di Kcal"@en .
 <https://w3id.org/fuskg/activity#hasUnitKCalValue> <http://www.w3.org/2000/01/rdf-schema#label> "has Kcal unit value"@en .
 # 
-# https://w3id.org/fuskg/multimodal#fps
-<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#Video> .
-<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#comment> "Frame per second of a Video."@en .
-<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#label> "Frame al secondo"@it .
-<https://w3id.org/fuskg/multimodal#fps> <http://www.w3.org/2000/01/rdf-schema#label> "Frame per second"@en .
-# 
-# https://w3id.org/fuskg/multimodal#hasPathInArtifact
-<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
-<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#comment> "Path inside an artifact (e.g., an archive)."@en .
-<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Path inside artifact"@en .
-<https://w3id.org/fuskg/multimodal#hasPathInArtifact> <http://www.w3.org/2000/01/rdf-schema#label> "Percorso dentro artefatto"@it .
-# 
-# https://w3id.org/fuskg/multimodal#height
-<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
-<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#comment> "Height of an image or video (related to resolution)."@en .
-<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#label> "altezza"@it .
-<https://w3id.org/fuskg/multimodal#height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
-# 
-# https://w3id.org/fuskg/multimodal#resourceURL
-<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/fuskg/multimodal#ModalDescriptor> .
-<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#comment> "URL pointing to a resource."@en .
-<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL resource"@en .
-<https://w3id.org/fuskg/multimodal#resourceURL> <http://www.w3.org/2000/01/rdf-schema#label> "URL risorsa"@it .
-# 
-# https://w3id.org/fuskg/multimodal#width
-<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
-_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
-<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#comment> "Width of an image or video (related to resolution)."@en .
-<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#label> "larghezza"@it .
-<https://w3id.org/fuskg/multimodal#width> <http://www.w3.org/2000/01/rdf-schema#label> "width"@en .
-# 
 # 
 # 
 # #################################################################
@@ -233,9 +117,6 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #
 # #################################################################
 # 
-# 
-# http://www.w3.org/2006/time#ProperInterval
-<http://www.w3.org/2006/time#ProperInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # https://w3id.org/fuskg/activity#Bicycling
 <https://w3id.org/fuskg/activity#Bicycling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -392,111 +273,5 @@ _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://w3id.org/fuskg/core#Activity
 <https://w3id.org/fuskg/core#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."@en .
-<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activity"@en .
-<https://w3id.org/fuskg/core#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Attività"@it .
-# 
-# https://w3id.org/fuskg/core#Barrier
-<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers."@en .
-<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#label> "Barrier"@en .
-<https://w3id.org/fuskg/core#Barrier> <http://www.w3.org/2000/01/rdf-schema#label> "Barriera"@it .
-# 
-# https://w3id.org/fuskg/core#Food
-<https://w3id.org/fuskg/core#Food> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."@en .
-<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Alimento"@it .
-<https://w3id.org/fuskg/core#Food> <http://www.w3.org/2000/01/rdf-schema#label> "Food"@en .
-# 
-# https://w3id.org/fuskg/core#Nutrient
-<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."@en .
-<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "Nutrient"@en .
-<https://w3id.org/fuskg/core#Nutrient> <http://www.w3.org/2000/01/rdf-schema#label> "Nutriente"@it .
-# 
-# https://w3id.org/fuskg/multimodal#Audio
-<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
-<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Audio modality."@en .
-<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@en .
-<https://w3id.org/fuskg/multimodal#Audio> <http://www.w3.org/2000/01/rdf-schema#label> "Audio"@it .
-# 
-# https://w3id.org/fuskg/multimodal#DataStream
-<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
-<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting DataStream modality."@en .
-<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#label> "Data stream"@en .
-<https://w3id.org/fuskg/multimodal#DataStream> <http://www.w3.org/2000/01/rdf-schema#label> "Stream dati"@it .
-# 
-# https://w3id.org/fuskg/multimodal#Image
-<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
-<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Image modality."@en .
-<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
-<https://w3id.org/fuskg/multimodal#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Immagine"@it .
-# 
-# https://w3id.org/fuskg/multimodal#ModalDescriptor
-<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Resource> .
-<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept used to connect a modal entity with its modality."@en .
-<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "Descrittore modale"@it .
-<https://w3id.org/fuskg/multimodal#ModalDescriptor> <http://www.w3.org/2000/01/rdf-schema#label> "Modal descriptor"@en .
-# 
-# https://w3id.org/fuskg/multimodal#ModalEntity
-<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "Root class used to specify modal entities that can be associated with one or more modal resources."@en .
-<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Entita' Modale"@it .
-<https://w3id.org/fuskg/multimodal#ModalEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Modal Entity"@en .
-# 
-# https://w3id.org/fuskg/multimodal#Modality
-<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent class used to specify a data modality of a resource"@en .
-<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modalita'"@it .
-<https://w3id.org/fuskg/multimodal#Modality> <http://www.w3.org/2000/01/rdf-schema#label> "Modality"@en .
-# 
-# https://w3id.org/fuskg/multimodal#Text
-<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
-<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Text modality."@en .
-<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#label> "Testo"@it .
-<https://w3id.org/fuskg/multimodal#Text> <http://www.w3.org/2000/01/rdf-schema#label> "Text"@en .
-# 
-# https://w3id.org/fuskg/multimodal#Video
-<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#Modality> .
-<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#comment> "Concept denoting Video modality."@en .
-<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@en .
-<https://w3id.org/fuskg/multimodal#Video> <http://www.w3.org/2000/01/rdf-schema#label> "Video"@it .
-# 
-# https://w3id.org/fuskg/recipe#Recipe
-<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#ModalEntity> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    General axioms
-# #
-# #################################################################
-# 
-# 
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid7 <http://www.w3.org/2002/07/owl#members> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Video> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Text> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Image> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#DataStream> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/fuskg/multimodal#Audio> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

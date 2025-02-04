@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/activity#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/activity#","name":"Activity Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/activity#", "dateReleased":"Tue Feb 04 14:42:26 CET 2025", "dateModified":"2024-12-06", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "codeRepository":"https://github.com/IDA-FBK/FuS-KG", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Jacopo Bennati"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/activity#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/activity#","name":"Activity Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/activity#", "dateReleased":"Tue Feb 04 19:13:22 CET 2025", "dateModified":"2024-12-06", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Jacopo Bennati"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -88,15 +88,13 @@ $(function(){
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>Gianluca Apriceno, Jacopo Bennati, Mauro Dragoni, Tania Bailoni. Activity Module of Functional Status Knowledge Graph (FuS-KG). Revision: 1.0.0.</dd>
-<dt>Vocabulary maintained at:</dt>
-<dd><a href="https://github.com/IDA-FBK/FuS-KG">https://github.com/IDA-FBK/FuS-KG</a></dd>
 </dl>
 
 <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
 </div>
 <div class="status">
 <div>
-<span>Ontology Specification Draft</span>
+<span>Activity Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
@@ -138,15 +136,6 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://w3id.org/fuskg/core#Activity" title="https://w3id.org/fuskg/core#Activity">Activity</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#Audio" title="https://w3id.org/fuskg/multimodal#Audio">Audio</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#Barrier" title="https://w3id.org/fuskg/core#Barrier">Barrier</a>
-   </li>
-   <li>
       <a href="#Bicycling" title="https://w3id.org/fuskg/activity#Bicycling">Bicycling</a>
    </li>
    <li>
@@ -157,13 +146,7 @@ This ontology has the following classes and properties.</span>
       <a href="#Dancing" title="https://w3id.org/fuskg/activity#Dancing">Dancing</a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/multimodal#DataStream" title="https://w3id.org/fuskg/multimodal#DataStream">Data stream</a>
-   </li>
-   <li>
       <a href="#FishingHunting" title="https://w3id.org/fuskg/activity#FishingHunting">Fishing and Hunting</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#Food" title="https://w3id.org/fuskg/core#Food">Food</a>
    </li>
    <li>
       <a href="#HomeActivity" title="https://w3id.org/fuskg/activity#HomeActivity">Home Activity</a>
@@ -172,40 +155,19 @@ This ontology has the following classes and properties.</span>
       <a href="#HomeRepair" title="https://w3id.org/fuskg/activity#HomeRepair">Home Repairs</a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a>
-   </li>
-   <li>
       <a href="#LawnGarden" title="https://w3id.org/fuskg/activity#LawnGarden">Lawn and Garden Activities</a>
    </li>
    <li>
       <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/multimodal#ModalDescriptor"
-         title="https://w3id.org/fuskg/multimodal#ModalDescriptor">Modal descriptor</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#ModalEntity" title="https://w3id.org/fuskg/multimodal#ModalEntity">Modal Entity</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a>
-   </li>
-   <li>
       <a href="#MusicPlaying" title="https://w3id.org/fuskg/activity#MusicPlaying">Music Playing</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#Nutrient" title="https://w3id.org/fuskg/core#Nutrient">Nutrient</a>
    </li>
    <li>
       <a href="#Occupation" title="https://w3id.org/fuskg/activity#Occupation">Occupation</a>
    </li>
    <li>
       <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/recipe#Recipe" title="https://w3id.org/fuskg/recipe#Recipe">
-         <span>Recipe</span>
-      </a>
    </li>
    <li>
       <a href="#RelaxingActivityAndHobbies"
@@ -228,13 +190,7 @@ This ontology has the following classes and properties.</span>
       <a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/multimodal#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a>
-   </li>
-   <li>
       <a href="#Transportation" title="https://w3id.org/fuskg/activity#Transportation">Transportation</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a>
    </li>
    <li>
       <a href="#Walking" title="https://w3id.org/fuskg/activity#Walking">Walking</a>
@@ -249,26 +205,6 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://w3id.org/fuskg/core#affectsPerformingOf" title="https://w3id.org/fuskg/core#affectsPerformingOf">affects performing of</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#concernsConsumptionOf"
-         title="https://w3id.org/fuskg/core#concernsConsumptionOf">concerns consumption of</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#contains" title="https://w3id.org/fuskg/core#contains">contains</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#hasModalDescriptor"
-         title="https://w3id.org/fuskg/multimodal#hasModalDescriptor">ha descrittore modale</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#hasModality" title="https://w3id.org/fuskg/multimodal#hasModality">has modality</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#hasNutrient" title="https://w3id.org/fuskg/core#hasNutrient">has Nutrient</a>
-   </li>
-   <li>
       <a href="#practicedBy" title="https://w3id.org/fuskg/activity#practicedBy">
          <span>practiced By</span>
       </a>
@@ -282,26 +218,10 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#https://w3id.org/fuskg/multimodal#fps" title="https://w3id.org/fuskg/multimodal#fps">Frame per second</a>
-   </li>
-   <li>
       <a href="#hasUnitKCalValue" title="https://w3id.org/fuskg/activity#hasUnitKCalValue">ha valore di unita' di Kcal</a>
    </li>
    <li>
       <a href="#hasMETValue" title="https://w3id.org/fuskg/activity#hasMETValue">ha valore MET</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#height" title="https://w3id.org/fuskg/multimodal#height">height</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#hasPathInArtifact"
-         title="https://w3id.org/fuskg/multimodal#hasPathInArtifact">Path inside artifact</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#resourceURL" title="https://w3id.org/fuskg/multimodal#resourceURL">URL resource</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/multimodal#width" title="https://w3id.org/fuskg/multimodal#width">width</a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -322,16 +242,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://www.w3.org/2000/01/rdf-schema#domain" title="http://www.w3.org/2000/01/rdf-schema#domain">
          <span>domain</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#id" title="https://w3id.org/fuskg/core#id">
-         <span>id</span>
-      </a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/core#interfaceLabel" title="https://w3id.org/fuskg/core#interfaceLabel">
-         <span>interface Label</span>
       </a>
    </li>
    <li>
@@ -376,11 +286,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#https://w3id.org/fuskg/core#source" title="https://w3id.org/fuskg/core#source">
-         <span>source</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
          <span>title</span>
       </a>
@@ -403,98 +308,28 @@ This section provides details for each class and property defined by Activity Mo
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
-  <li><a href="#https://w3id.org/fuskg/core#Activity" title="https://w3id.org/fuskg/core#Activity">Activity</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#Audio" title="https://w3id.org/fuskg/multimodal#Audio">Audio</a></li>
-  <li><a href="#https://w3id.org/fuskg/core#Barrier" title="https://w3id.org/fuskg/core#Barrier">Barrier</a></li>
   <li><a href="#Bicycling" title="https://w3id.org/fuskg/activity#Bicycling">Bicycling</a></li>
   <li><a href="#ConditioningExercise" title="https://w3id.org/fuskg/activity#ConditioningExercise">Conditioning Exercise</a></li>
   <li><a href="#Dancing" title="https://w3id.org/fuskg/activity#Dancing">Dancing</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#DataStream" title="https://w3id.org/fuskg/multimodal#DataStream">Data stream</a></li>
   <li><a href="#FishingHunting" title="https://w3id.org/fuskg/activity#FishingHunting">Fishing and Hunting</a></li>
-  <li><a href="#https://w3id.org/fuskg/core#Food" title="https://w3id.org/fuskg/core#Food">Food</a></li>
   <li><a href="#HomeActivity" title="https://w3id.org/fuskg/activity#HomeActivity">Home Activity</a></li>
   <li><a href="#HomeRepair" title="https://w3id.org/fuskg/activity#HomeRepair">Home Repairs</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a></li>
   <li><a href="#LawnGarden" title="https://w3id.org/fuskg/activity#LawnGarden">Lawn and Garden Activities</a></li>
   <li><a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#ModalDescriptor" title="https://w3id.org/fuskg/multimodal#ModalDescriptor">Modal descriptor</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#ModalEntity" title="https://w3id.org/fuskg/multimodal#ModalEntity">Modal Entity</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a></li>
   <li><a href="#MusicPlaying" title="https://w3id.org/fuskg/activity#MusicPlaying">Music Playing</a></li>
-  <li><a href="#https://w3id.org/fuskg/core#Nutrient" title="https://w3id.org/fuskg/core#Nutrient">Nutrient</a></li>
   <li><a href="#Occupation" title="https://w3id.org/fuskg/activity#Occupation">Occupation</a></li>
   <li><a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a></li>
-  <li><a href="#https://w3id.org/fuskg/recipe#Recipe" title="https://w3id.org/fuskg/recipe#Recipe"> <span>Recipe</span> </a></li>
   <li><a href="#RelaxingActivityAndHobbies" title="https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies">Relaxing and Hobby Activities</a></li>
   <li><a href="#ReligiousActivities" title="https://w3id.org/fuskg/activity#ReligiousActivities">Religious Activities</a></li>
   <li><a href="#Running" title="https://w3id.org/fuskg/activity#Running">Runing</a></li>
   <li><a href="#SelfCare" title="https://w3id.org/fuskg/activity#SelfCare">Self Care</a></li>
   <li><a href="#SexualActivity" title="https://w3id.org/fuskg/activity#SexualActivity">Sexual Activity</a></li>
   <li><a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a></li>
   <li><a href="#Transportation" title="https://w3id.org/fuskg/activity#Transportation">Transportation</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a></li>
   <li><a href="#Walking" title="https://w3id.org/fuskg/activity#Walking">Walking</a></li>
   <li><a href="#WaterActivities" title="https://w3id.org/fuskg/activity#WaterActivities">Water Activities</a></li>
   <li><a href="#WinterActivities" title="https://w3id.org/fuskg/activity#WinterActivities">Winter Activities</a></li>
  </ul>
- <div class="entity" id="https://w3id.org/fuskg/core#Activity">
-  <h3>Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#Activity</p>
-  <div class="comment">
-   <span class="markdown">This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/core#affectsPerformingOf" title="https://w3id.org/fuskg/core#affectsPerformingOf">affects performing of</a> <sup class="type-op" title="object property">op</sup>, <a href="#specializes" title="https://w3id.org/fuskg/activity#specializes">specializes</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#Audio">
-  <h3>Audio<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#Audio</p>
-  <div class="comment">
-   <span class="markdown">Concept denoting Audio modality.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#DataStream" title="https://w3id.org/fuskg/multimodal#DataStream">Data stream</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#Barrier">
-  <h3>Barrier<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#Barrier</p>
-  <div class="comment">
-   <span class="markdown">This is the root concept for the Barrier branch. All sub-concepts represent a specific category of barriers.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/core#affectsPerformingOf" title="https://w3id.org/fuskg/core#affectsPerformingOf">affects performing of</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/fuskg/core#concernsConsumptionOf" title="https://w3id.org/fuskg/core#concernsConsumptionOf">concerns consumption of</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="Bicycling">
   <h3>Bicycling<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#Bicycling</p>
@@ -540,27 +375,6 @@ This section provides details for each class and property defined by Activity Mo
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#DataStream">
-  <h3>Data stream<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#DataStream</p>
-  <div class="comment">
-   <span class="markdown">Concept denoting DataStream modality.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Audio" title="https://w3id.org/fuskg/multimodal#Audio">Audio</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="FishingHunting">
   <h3>Fishing and Hunting<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#FishingHunting</p>
@@ -573,27 +387,6 @@ This section provides details for each class and property defined by Activity Mo
    </dt>
    <dd>
     <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#Food">
-  <h3>Food<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#Food</p>
-  <div class="comment">
-   <span class="markdown">This is the root concept for the Food branch. All sub-concepts represent a specific category of foods.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/core#contains" title="https://w3id.org/fuskg/core#contains">contains</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/fuskg/core#hasNutrient" title="https://w3id.org/fuskg/core#hasNutrient">has Nutrient</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/core#concernsConsumptionOf" title="https://w3id.org/fuskg/core#concernsConsumptionOf">concerns consumption of</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/fuskg/core#contains" title="https://w3id.org/fuskg/core#contains">contains</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -627,33 +420,6 @@ This section provides details for each class and property defined by Activity Mo
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#Image">
-  <h3>Image<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#Image</p>
-  <div class="comment">
-   <span class="markdown">Concept denoting Image modality.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#height" title="https://w3id.org/fuskg/multimodal#height">height</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/fuskg/multimodal#width" title="https://w3id.org/fuskg/multimodal#width">width</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Audio" title="https://w3id.org/fuskg/multimodal#Audio">Audio</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#DataStream" title="https://w3id.org/fuskg/multimodal#DataStream">Data stream</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="LawnGarden">
   <h3>Lawn and Garden Activities<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#LawnGarden</p>
@@ -680,82 +446,13 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#https://w3id.org/fuskg/core#Activity" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://w3id.org/fuskg/core#Activity" target="_blank" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
    </dt>
    <dd>
     <a href="#HomeActivity" title="https://w3id.org/fuskg/activity#HomeActivity">Home Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#HomeRepair" title="https://w3id.org/fuskg/activity#HomeRepair">Home Repairs</a> <sup class="type-c" title="class">c</sup>, <a href="#LawnGarden" title="https://w3id.org/fuskg/activity#LawnGarden">Lawn and Garden Activities</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicPlaying" title="https://w3id.org/fuskg/activity#MusicPlaying">Music Playing</a> <sup class="type-c" title="class">c</sup>, <a href="#Occupation" title="https://w3id.org/fuskg/activity#Occupation">Occupation</a> <sup class="type-c" title="class">c</sup>, <a href="#RelaxingActivityAndHobbies" title="https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies">Relaxing and Hobby Activities</a> <sup class="type-c" title="class">c</sup>, <a href="#ReligiousActivities" title="https://w3id.org/fuskg/activity#ReligiousActivities">Religious Activities</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfCare" title="https://w3id.org/fuskg/activity#SelfCare">Self Care</a> <sup class="type-c" title="class">c</sup>, <a href="#SexualActivity" title="https://w3id.org/fuskg/activity#SexualActivity">Sexual Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Transportation" title="https://w3id.org/fuskg/activity#Transportation">Transportation</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#ModalDescriptor">
-  <h3>Modal descriptor<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#ModalDescriptor</p>
-  <div class="comment">
-   <span class="markdown">Concept used to connect a modal entity with its modality.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/ns/dcat#Resource" target="_blank" title="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#hasPathInArtifact" title="https://w3id.org/fuskg/multimodal#hasPathInArtifact">Path inside artifact</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/fuskg/multimodal#resourceURL" title="https://w3id.org/fuskg/multimodal#resourceURL">URL resource</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/fuskg/multimodal#hasModality" title="https://w3id.org/fuskg/multimodal#hasModality">has modality</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#hasModalDescriptor" title="https://w3id.org/fuskg/multimodal#hasModalDescriptor">ha descrittore modale</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#ModalEntity">
-  <h3>Modal Entity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#ModalEntity</p>
-  <div class="comment">
-   <span class="markdown">Root class used to specify modal entities that can be associated with one or more modal resources.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/recipe#Recipe" title="https://w3id.org/fuskg/recipe#Recipe">Recipe</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#hasModalDescriptor" title="https://w3id.org/fuskg/multimodal#hasModalDescriptor">ha descrittore modale</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#Modality">
-  <h3>Modality<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#Modality</p>
-  <div class="comment">
-   <span class="markdown">Parent class used to specify a data modality of a resource</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Audio" title="https://w3id.org/fuskg/multimodal#Audio">Audio</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#DataStream" title="https://w3id.org/fuskg/multimodal#DataStream">Data stream</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#hasModality" title="https://w3id.org/fuskg/multimodal#hasModality">has modality</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -771,21 +468,6 @@ This section provides details for each class and property defined by Activity Mo
    </dt>
    <dd>
     <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#Nutrient">
-  <h3>Nutrient<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#Nutrient</p>
-  <div class="comment">
-   <span class="markdown">This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/core#concernsConsumptionOf" title="https://w3id.org/fuskg/core#concernsConsumptionOf">concerns consumption of</a> <sup class="type-op" title="object property">op</sup>, <a href="#https://w3id.org/fuskg/core#hasNutrient" title="https://w3id.org/fuskg/core#hasNutrient">has Nutrient</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -815,25 +497,13 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#https://w3id.org/fuskg/core#Activity" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://w3id.org/fuskg/core#Activity" target="_blank" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
    </dt>
    <dd>
     <a href="#Bicycling" title="https://w3id.org/fuskg/activity#Bicycling">Bicycling</a> <sup class="type-c" title="class">c</sup>, <a href="#ConditioningExercise" title="https://w3id.org/fuskg/activity#ConditioningExercise">Conditioning Exercise</a> <sup class="type-c" title="class">c</sup>, <a href="#Dancing" title="https://w3id.org/fuskg/activity#Dancing">Dancing</a> <sup class="type-c" title="class">c</sup>, <a href="#FishingHunting" title="https://w3id.org/fuskg/activity#FishingHunting">Fishing and Hunting</a> <sup class="type-c" title="class">c</sup>, <a href="#Running" title="https://w3id.org/fuskg/activity#Running">Runing</a> <sup class="type-c" title="class">c</sup>, <a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a> <sup class="type-c" title="class">c</sup>, <a href="#Walking" title="https://w3id.org/fuskg/activity#Walking">Walking</a> <sup class="type-c" title="class">c</sup>, <a href="#WaterActivities" title="https://w3id.org/fuskg/activity#WaterActivities">Water Activities</a> <sup class="type-c" title="class">c</sup>, <a href="#WinterActivities" title="https://w3id.org/fuskg/activity#WinterActivities">Winter Activities</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/recipe#Recipe">
-  <h3>Recipe<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/recipe#Recipe</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#ModalEntity" title="https://w3id.org/fuskg/multimodal#ModalEntity">Modal Entity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -927,27 +597,6 @@ This section provides details for each class and property defined by Activity Mo
    </dd>
   </dl>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#Text">
-  <h3>Text<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#Text</p>
-  <div class="comment">
-   <span class="markdown">Concept denoting Text modality.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Audio" title="https://w3id.org/fuskg/multimodal#Audio">Audio</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#DataStream" title="https://w3id.org/fuskg/multimodal#DataStream">Data stream</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="Transportation">
   <h3>Transportation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#Transportation</p>
@@ -960,33 +609,6 @@ This section provides details for each class and property defined by Activity Mo
    </dt>
    <dd>
     <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#Video">
-  <h3>Video<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#Video</p>
-  <div class="comment">
-   <span class="markdown">Concept denoting Video modality.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#fps" title="https://w3id.org/fuskg/multimodal#fps">Frame per second</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/fuskg/multimodal#height" title="https://w3id.org/fuskg/multimodal#height">height</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#https://w3id.org/fuskg/multimodal#width" title="https://w3id.org/fuskg/multimodal#width">width</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/multimodal#Audio" title="https://w3id.org/fuskg/multimodal#Audio">Audio</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#DataStream" title="https://w3id.org/fuskg/multimodal#DataStream">Data stream</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a> <sup class="type-c" title="class">c</sup>, <a href="#https://w3id.org/fuskg/multimodal#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1038,156 +660,9 @@ This section provides details for each class and property defined by Activity Mo
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#https://w3id.org/fuskg/core#affectsPerformingOf" title="https://w3id.org/fuskg/core#affectsPerformingOf">affects performing of</a></li>
-  <li><a href="#https://w3id.org/fuskg/core#concernsConsumptionOf" title="https://w3id.org/fuskg/core#concernsConsumptionOf">concerns consumption of</a></li>
-  <li><a href="#https://w3id.org/fuskg/core#contains" title="https://w3id.org/fuskg/core#contains">contains</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#hasModalDescriptor" title="https://w3id.org/fuskg/multimodal#hasModalDescriptor">ha descrittore modale</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#hasModality" title="https://w3id.org/fuskg/multimodal#hasModality">has modality</a></li>
-  <li><a href="#https://w3id.org/fuskg/core#hasNutrient" title="https://w3id.org/fuskg/core#hasNutrient">has Nutrient</a></li>
   <li><a href="#practicedBy" title="https://w3id.org/fuskg/activity#practicedBy"> <span>practiced By</span> </a></li>
   <li><a href="#specializes" title="https://w3id.org/fuskg/activity#specializes"> <span>specializes</span> </a></li>
  </ul>
- <div class="entity" id="https://w3id.org/fuskg/core#affectsPerformingOf">
-  <h3>affects performing of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#affectsPerformingOf</p>
-  <div class="comment">
-   <span class="markdown">This property defines the relationship between a barrier affecting the performing of an activity.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Barrier" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Activity" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#concernsConsumptionOf">
-  <h3>concerns consumption of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#concernsConsumptionOf</p>
-  <div class="comment">
-   <span class="markdown">This property defines the relationship between a barrier and the consumption of a food or nutrient.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Barrier" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Food" title="https://w3id.org/fuskg/core#Food">Food</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Nutrient" title="https://w3id.org/fuskg/core#Nutrient">Nutrient</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#contains">
-  <h3>contains<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#contains</p>
-  <div class="comment">
-   <span class="markdown">This property specifies that a food contains another food</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Food" title="https://w3id.org/fuskg/core#Food">Food</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Food" title="https://w3id.org/fuskg/core#Food">Food</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#hasModalDescriptor">
-  <h3>ha descrittore modale<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#hasModalDescriptor</p>
-  <div class="comment">
-   <span class="markdown">Property used to connect a ModalEntity with its corresponding ModalDescriptor(s).</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#ModalEntity" title="https://w3id.org/fuskg/multimodal#ModalEntity">Modal Entity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#ModalDescriptor" title="https://w3id.org/fuskg/multimodal#ModalDescriptor">Modal descriptor</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#hasModality">
-  <h3>has modality<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#hasModality</p>
-  <div class="comment">
-   <span class="markdown">Property used to connect a ModalDescriptor with its correspondig Modality.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#ModalDescriptor" title="https://w3id.org/fuskg/multimodal#ModalDescriptor">Modal descriptor</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#hasNutrient">
-  <h3>has Nutrient<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#hasNutrient</p>
-  <div class="comment">
-   <span class="markdown">This property specifies the nutrient(s) contained ia a food.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Food" title="https://w3id.org/fuskg/core#Food">Food</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/core#Nutrient" title="https://w3id.org/fuskg/core#Nutrient">Nutrient</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="practicedBy">
   <h3>practiced By<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#practicedBy</p>
@@ -1223,7 +698,7 @@ This section provides details for each class and property defined by Activity Mo
      has range
     </dt>
     <dd>
-     <a href="#https://w3id.org/fuskg/core#Activity" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+     <a href="https://w3id.org/fuskg/core#Activity" target="_blank" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1231,37 +706,9 @@ This section provides details for each class and property defined by Activity Mo
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
-  <li><a href="#https://w3id.org/fuskg/multimodal#fps" title="https://w3id.org/fuskg/multimodal#fps">Frame per second</a></li>
   <li><a href="#hasUnitKCalValue" title="https://w3id.org/fuskg/activity#hasUnitKCalValue">ha valore di unita' di Kcal</a></li>
   <li><a href="#hasMETValue" title="https://w3id.org/fuskg/activity#hasMETValue">ha valore MET</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#height" title="https://w3id.org/fuskg/multimodal#height">height</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#hasPathInArtifact" title="https://w3id.org/fuskg/multimodal#hasPathInArtifact">Path inside artifact</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#resourceURL" title="https://w3id.org/fuskg/multimodal#resourceURL">URL resource</a></li>
-  <li><a href="#https://w3id.org/fuskg/multimodal#width" title="https://w3id.org/fuskg/multimodal#width">width</a></li>
  </ul>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#fps">
-  <h3>Frame per second<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#fps</p>
-  <div class="comment">
-   <span class="markdown">Frame per second of a Video.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#float" target="_blank" title="http://www.w3.org/2001/XMLSchema#float">float</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="hasUnitKCalValue">
   <h3>ha valore di unita' di Kcal<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#hasUnitKCalValue</p>
@@ -1308,98 +755,6 @@ This section provides details for each class and property defined by Activity Mo
    </dl>
   </div>
  </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#height">
-  <h3>height<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#height</p>
-  <div class="comment">
-   <span class="markdown">Height of an image or video (related to resolution).</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#hasPathInArtifact">
-  <h3>Path inside artifact<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#hasPathInArtifact</p>
-  <div class="comment">
-   <span class="markdown">Path inside an artifact (e.g., an archive).</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#ModalDescriptor" title="https://w3id.org/fuskg/multimodal#ModalDescriptor">Modal descriptor</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#resourceURL">
-  <h3>URL resource<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#resourceURL</p>
-  <div class="comment">
-   <span class="markdown">URL pointing to a resource.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#ModalDescriptor" title="https://w3id.org/fuskg/multimodal#ModalDescriptor">Modal descriptor</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/multimodal#width">
-  <h3>width<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/multimodal#width</p>
-  <div class="comment">
-   <span class="markdown">Width of an image or video (related to resolution).</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#https://w3id.org/fuskg/multimodal#Image" title="https://w3id.org/fuskg/multimodal#Image">Image</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#https://w3id.org/fuskg/multimodal#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#int" target="_blank" title="http://www.w3.org/2001/XMLSchema#int">int</a>
-    </dd>
-   </dl>
-  </div>
- </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
  <h3 id="annotationproperties" class="list">Annotation Properties</h3>
  <ul class="hlist">
@@ -1407,8 +762,6 @@ This section provides details for each class and property defined by Activity Mo
   <li><a href="#commonSense" title="https://w3id.org/fuskg/activity#commonSense">common sense</a></li>
   <li><a href="#http://purl.org/dc/terms/creator" title="http://purl.org/dc/terms/creator"> <span>creator</span> </a></li>
   <li><a href="#http://www.w3.org/2000/01/rdf-schema#domain" title="http://www.w3.org/2000/01/rdf-schema#domain"> <span>domain</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/core#id" title="https://w3id.org/fuskg/core#id"> <span>id</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/core#interfaceLabel" title="https://w3id.org/fuskg/core#interfaceLabel"> <span>interface Label</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued"> <span>issued</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified"> <span>modified</span> </a></li>
@@ -1417,7 +770,6 @@ This section provides details for each class and property defined by Activity Mo
   <li><a href="#http://purl.org/dc/terms/publisher" title="http://purl.org/dc/terms/publisher"> <span>publisher</span> </a></li>
   <li><a href="#http://www.w3.org/2000/01/rdf-schema#range" title="http://www.w3.org/2000/01/rdf-schema#range"> <span>range</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights"> <span>rights</span> </a></li>
-  <li><a href="#https://w3id.org/fuskg/core#source" title="https://w3id.org/fuskg/core#source"> <span>source</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
  </ul>
  <div class="entity" id="activityCode">
@@ -1438,26 +790,6 @@ This section provides details for each class and property defined by Activity Mo
  <div class="entity" id="http://www.w3.org/2000/01/rdf-schema#domain">
   <h3>domain<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2000/01/rdf-schema#domain</p>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#id">
-  <h3>id<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#id</p>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#interfaceLabel">
-  <h3>interface Label<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#interfaceLabel</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd></dd>
-    <dt>
-     has range
-    </dt>
-    <dd></dd>
-   </dl>
-  </div>
  </div>
  <div class="entity" id="http://purl.org/dc/terms/issued">
   <h3>issued<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -1490,10 +822,6 @@ This section provides details for each class and property defined by Activity Mo
  <div class="entity" id="http://purl.org/dc/terms/rights">
   <h3>rights<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/rights</p>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/core#source">
-  <h3>source<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/core#source</p>
  </div>
  <div class="entity" id="http://purl.org/dc/terms/title">
   <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>

@@ -19,11 +19,6 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Gianluca Apriceno",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Mauro Dragoni",
         "type" : "label"
       }, {
@@ -31,17 +26,22 @@
         "language" : "undefined",
         "value" : "Tania Bailoni",
         "type" : "label"
-      } ],
-      "rights" : [ {
-        "identifier" : "rights",
-        "language" : "en",
-        "value" : "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>",
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Gianluca Apriceno",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
         "identifier" : "preferredNamespacePrefix",
         "language" : "undefined",
         "value" : "fsbarr",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>",
         "type" : "label"
       } ],
       "publisher" : [ {
@@ -93,10 +93,10 @@
     "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
     "id" : "40",
@@ -150,10 +150,10 @@
     "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "78",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "2",
+    "id" : "78",
     "type" : "owl:Class"
   }, {
     "id" : "12",
@@ -234,10 +234,10 @@
     "id" : "88",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "42",
+    "id" : "92",
     "type" : "owl:Class"
   }, {
-    "id" : "92",
+    "id" : "42",
     "type" : "owl:Class"
   }, {
     "id" : "75",
@@ -331,16 +331,16 @@
         "IRI-based" : "Basketball"
       }
     }, {
-      "iri" : "https://w3id.org/fuskg/barrier#Handball",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "Handball"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#Football",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "Football"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#Handball",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "Handball"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#Baseball",
@@ -378,6 +378,35 @@
     },
     "id" : "30",
     "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid.owl#PhysicalPain",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PhysicalPain"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#KneePain",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "KneePain"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HipPain",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "HipPain"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LegPain",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "LegPain"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/fuskg/barrier#Sign",
     "baseIri" : "https://w3id.org/fuskg/barrier",
@@ -442,16 +471,16 @@
         "IRI-based" : "HasFullTimeStudy"
       }
     }, {
-      "iri" : "https://w3id.org/fuskg/barrier#Sweating",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "Sweating"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#Headache",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "Headache"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#Sweating",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "Sweating"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#HasDisabilityCare",
@@ -466,51 +495,22 @@
         "IRI-based" : "Shakiness"
       }
     }, {
-      "iri" : "https://w3id.org/fuskg/barrier#HasFullTimeJob",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "HasFullTimeJob"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#HasFamily",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "HasFamily"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#HasFullTimeJob",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "HasFullTimeJob"
       }
     } ],
     "comment" : {
       "en" : "This concept specifies different types of sings."
     },
     "id" : "39"
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/doid.owl#PhysicalPain",
-    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PhysicalPain"
-    },
-    "individuals" : [ {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#KneePain",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "KneePain"
-      }
-    }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HipPain",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "HipPain"
-      }
-    }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LegPain",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "LegPain"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise",
     "baseIri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl",
@@ -542,12 +542,6 @@
       "IRI-based" : "LightActivity"
     },
     "individuals" : [ {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Dancing",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "Dancing"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#Jogging",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "comment" : {
@@ -557,16 +551,22 @@
         "IRI-based" : "Jogging"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#SquatJumps",
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Dancing",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
-        "IRI-based" : "SquatJumps"
+        "IRI-based" : "Dancing"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#KickBoxing",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "KickBoxing"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#SquatJumps",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "SquatJumps"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#JumpRope",
@@ -707,15 +707,6 @@
         "IRI-based" : "InclinePushups"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#CrabWalk",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "comment" : {
-        "undefined" : "You probably haven’t done a crab walk since grade school gym, but it’s still a great exercise. Do it on a treadmill, and it will work your hamstrings, glutes, triceps, and core like crazy.\nTo do: Set the treadmill to 1 to 2 mph, then walk behind the treadmill and get into a crab position. Place your hands on the side of the treadmill base, facing away from the treadmill and with your back facing the ground. Keeping your feet flat on the floor and your hips elevated, place your hands on the treadmill belt and walk your hands forward (https://www.womenshealthmag.com/fitness/a19907835/treadmill-exercises/)."
-      },
-      "labels" : {
-        "IRI-based" : "CrabWalk"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#TreadmillPush",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "comment" : {
@@ -723,6 +714,15 @@
       },
       "labels" : {
         "IRI-based" : "TreadmillPush"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#CrabWalk",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "comment" : {
+        "undefined" : "You probably haven’t done a crab walk since grade school gym, but it’s still a great exercise. Do it on a treadmill, and it will work your hamstrings, glutes, triceps, and core like crazy.\nTo do: Set the treadmill to 1 to 2 mph, then walk behind the treadmill and get into a crab position. Place your hands on the side of the treadmill base, facing away from the treadmill and with your back facing the ground. Keeping your feet flat on the floor and your hips elevated, place your hands on the treadmill belt and walk your hands forward (https://www.womenshealthmag.com/fitness/a19907835/treadmill-exercises/)."
+      },
+      "labels" : {
+        "IRI-based" : "CrabWalk"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#WalkingOrJoggingOntreadmill",
@@ -749,15 +749,6 @@
         "IRI-based" : "SideShuffles"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LowSideShuffles",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "comment" : {
-        "undefined" : "This exercise works your hard-to-hit glute medius—basically, your side butt. Nice.\nTo do: Stand sideways on the treadmill, and get into a quarter-squat position, keeping your chest up and core braced. Bring the speed up to 1 to 2 mph. Staying in the quarter-squat position, step toward the front of the treadmill with your closest leg, and then follow with your opposite leg. Switch sides (https://www.womenshealthmag.com/fitness/a19907835/treadmill-exercises/)."
-      },
-      "labels" : {
-        "IRI-based" : "LowSideShuffles"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#WalkingLunges",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "comment" : {
@@ -765,6 +756,15 @@
       },
       "labels" : {
         "IRI-based" : "WalkingLunges"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LowSideShuffles",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "comment" : {
+        "undefined" : "This exercise works your hard-to-hit glute medius—basically, your side butt. Nice.\nTo do: Stand sideways on the treadmill, and get into a quarter-squat position, keeping your chest up and core braced. Bring the speed up to 1 to 2 mph. Staying in the quarter-squat position, step toward the front of the treadmill with your closest leg, and then follow with your opposite leg. Switch sides (https://www.womenshealthmag.com/fitness/a19907835/treadmill-exercises/)."
+      },
+      "labels" : {
+        "IRI-based" : "LowSideShuffles"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#WalkingPlank",
@@ -829,32 +829,6 @@
     "id" : "65",
     "superClasses" : [ "66" ]
   }, {
-    "iri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise",
-    "baseIri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "AnaerobicExcercise"
-    },
-    "individuals" : [ {
-      "iri" : "https://w3id.org/fuskg/barrier#WeightThrow",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "comment" : {
-        "undefined" : "A family of heavy weight throwing events, in which the objective is to either throw the weight as far as possible or as high as possible."
-      },
-      "labels" : {
-        "IRI-based" : "WeightThrow"
-      }
-    }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#WarmUpAndCoolDown",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "WarmUpAndCoolDown"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "78",
-    "superClasses" : [ "38" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/barrier#EnvironmentBarrier",
     "baseIri" : "https://w3id.org/fuskg/barrier",
     "instances" : 1,
@@ -912,6 +886,32 @@
     },
     "id" : "2",
     "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise",
+    "baseIri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AnaerobicExcercise"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/fuskg/barrier#WeightThrow",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "comment" : {
+        "undefined" : "A family of heavy weight throwing events, in which the objective is to either throw the weight as far as possible or as high as possible."
+      },
+      "labels" : {
+        "IRI-based" : "WeightThrow"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#WarmUpAndCoolDown",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "WarmUpAndCoolDown"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/doid.owl#PhysicalBarrier",
     "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
@@ -976,16 +976,16 @@
         "IRI-based" : "LackOfFriendSupport"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LackOfSocialSupport",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "LackOfSocialSupport"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#LackOfPartner",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "LackOfPartner"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LackOfSocialSupport",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "LackOfSocialSupport"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#LackOfColleagueSupport",
@@ -1037,16 +1037,16 @@
       "it" : "Barriera Personale"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/fuskg/barrier#TimeRestriction",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "TimeRestriction"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#FinancialProblem",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "FinancialProblem"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#TimeRestriction",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "TimeRestriction"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#DisabilityCare",
@@ -1136,22 +1136,28 @@
         "IRI-based" : "Shame"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#FeelEmbarrassment",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "FeelEmbarrassment"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#FeelDepressed",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "FeelDepressed"
       }
     }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#FeelEmbarrassment",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "FeelEmbarrassment"
+      }
+    }, {
       "iri" : "https://w3id.org/fuskg/barrier#LackOfSelfEfficacy",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "LackOfSelfEfficacy"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#LackOfCompany",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "LackOfCompany"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#Emotion",
@@ -1164,12 +1170,6 @@
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "Stress"
-      }
-    }, {
-      "iri" : "https://w3id.org/fuskg/barrier#LackOfCompany",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "LackOfCompany"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#Inactive",
@@ -1238,16 +1238,16 @@
         "IRI-based" : "TypeTwoDiabetes"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Asthma",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "Asthma"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#HealthProblems",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "HealthProblems"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Asthma",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "Asthma"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#ChestPain",
@@ -1494,17 +1494,6 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://purl.obolibrary.org/obo/doid.owl#IndoorActivity",
-    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndoorActivity"
-    },
-    "subClasses" : [ "48", "41" ],
-    "attributes" : [ "external" ],
-    "id" : "42",
-    "superClasses" : [ "38" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/barrier#Vigorous",
     "baseIri" : "https://w3id.org/fuskg/barrier",
     "instances" : 0,
@@ -1518,6 +1507,17 @@
     },
     "id" : "92",
     "superClasses" : [ "69" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid.owl#IndoorActivity",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndoorActivity"
+    },
+    "subClasses" : [ "48", "41" ],
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "https://w3id.org/fuskg/barrier#Fear",
     "baseIri" : "https://w3id.org/fuskg/barrier",
@@ -1660,12 +1660,6 @@
         "IRI-based" : "Gymnastics"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#MartialArts",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "MartialArts"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#BikingOrCycling",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "comment" : {
@@ -1673,6 +1667,12 @@
       },
       "labels" : {
         "IRI-based" : "BikingOrCycling"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#MartialArts",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "MartialArts"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#Walking",
@@ -1912,7 +1912,7 @@
       "IRI-based" : "firstName"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "4"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/doid.owl#country",
@@ -1922,7 +1922,7 @@
       "IRI-based" : "country"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "7"
   }, {
     "range" : "12",
@@ -1942,7 +1942,7 @@
       "IRI-based" : "postcode"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "15"
   }, {
     "range" : "19",
@@ -2040,7 +2040,7 @@
       "IRI-based" : "contactNumber"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "56"
   }, {
     "range" : "60",
@@ -2180,7 +2180,7 @@
       "IRI-based" : "address"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "87"
   }, {
     "range" : "69",
@@ -2200,7 +2200,7 @@
       "IRI-based" : "city"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "94"
   }, {
     "range" : "3",
@@ -2331,7 +2331,7 @@
       "IRI-based" : "street"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "111"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/doid.owl#isDefineBy",
@@ -2366,7 +2366,7 @@
       "IRI-based" : "lastName"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "117"
   }, {
     "iri" : "https://w3id.org/fuskg/core#contains",
@@ -2406,7 +2406,7 @@
       "IRI-based" : "DOB"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "121"
   }, {
     "iri" : "https://w3id.org/fuskg/barrier#hasBehavior",
@@ -2431,7 +2431,7 @@
       "IRI-based" : "PatientProperty"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "123"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/doid.owl#state",
@@ -2441,7 +2441,7 @@
       "IRI-based" : "state"
     },
     "domain" : "5",
-    "attributes" : [ "datatype", "external" ],
+    "attributes" : [ "external", "datatype" ],
     "id" : "124"
   } ]
 }
