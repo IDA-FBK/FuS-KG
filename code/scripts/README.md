@@ -31,4 +31,6 @@ Then follow the steps below in order to correctly create the corresponding ABox.
 > 
 > - `ConnectMultiModalInfo/connect_multimodality.py` before running the script, make sure to unzip Metadata.rar and update the corresponding file paths in the script.
 
+---
+
 If you encounter any issues, feel free to reach out.
