@@ -96,14 +96,22 @@ $(function(){
 <span>Core Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+Core module includes the upper level of FuS-KG, i.e., the set of abstract
+concepts defining the main type of knowledge covered by FuS-KG.
+</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<span class="markdown">Core module includes the upper level of FuS-KG, which specifies the set of abstract
+concepts defining the main type of knowledge covered by FuS-KG (i.e., Activity, Barrier, Food, and
+Nutrient) and the main properties defined between them. The properties allow the representation of
+complex foods and their nutrients (i.e., contains specifies that a specific food contains another food,
+and hasNutrient specifies the nutrients of foods) and the connection of particular barriers that affect
+the performing of an activity (i.e., affectsPerformingOf ) or the consumption of foods or nutrients
+(i.e., concernsConsumptionOf ).
+</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -240,11 +248,31 @@ The Core Module has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Core Module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">Core Module: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+	<div style="text-align: center;">
+    <img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/core/core_module.png?raw=true" 
+         alt="Core Module" 
+         style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+<div class="markdown"> The Core module includes the upper level of FuS-KG, which specifies the set of abstract
+concepts defining the main type of knowledge covered by FuS-KG and the main properties defined between them.
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+Concepts include:
 
-</span></div>
+- [Activity](https://w3id.org/fuskg/core#Activity): Actions performed by individuals.  
+- [Barrier](https://w3id.org/fuskg/core#Barrier): Factors that hinder activities or food consumption.  
+- [Food](https://w3id.org/fuskg/core#Food) & [Nutrient](https://w3id.org/fuskg/core#Activity): Representation of complex foods, their components, and their nutritional properties.  
+
+The module establishes connections between these concepts. For example:  
+
+- The [contains](https://w3id.org/fuskg/core#Activity) property links foods with their ingredients.  
+- The [hasNutrient](https://w3id.org/fuskg/core#hasNutrient) property associates foods with their nutritional content.  
+- The [affectsPerformingOf](https://w3id.org/fuskg/core#affectsPerformingOf) property describes how barriers impact activities.  
+- The [concernsConsumptionOf](https://w3id.org/fuskg/core#concernsConsumptionOf) property relates barriers to food consumption.  
+
+</div>
+</div>
    
 
 <!--CROSSREF SECTION-->
@@ -524,10 +552,10 @@ This section provides details for each class and property defined in the Core Mo
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+<!--  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
+Add your references here. It is recommended to have them as a list.</span>-->
 
 </div>
 <div id="acknowledgments">

@@ -99,14 +99,20 @@ $(function(){
 <span>Disease Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+The Disease module imports the Food module and it models the association between
+each BasicFood and nutritional-wise Disease. Each association is modeled through
+a DiseaseRiskLevel entity associating to each pair BasicFood-Disease a risk level.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The Disease module imports the Food module and it models the association between
+a Food and nutritional-wise a Disease. Each association is modeled through a DiseaseRiskLevel
+entity associating to each Food-Disease pair a risk level. In particular, the properties hasFood and
+hasDisease identify respectively the food and the disease an instance of DiseaseRiskLevel refers to,
+and the riskLevel data property specifies the value of the related risk.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -164,11 +170,29 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Disease Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">Disease Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+	<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/disease/disease_module.png?raw=true" 
+			 alt="Disease Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+	<div class="markdown">  
+The Disease module imports the Food module and models the association between a  [Food](https://w3id.org/fuskg/core#Food) and a  [Disease](#Disease) from a nutritional perspective.  
+Each association is represented through a [DiseaseRiskLevel](#DiseaseRiskLevel) entity, which assigns a risk level to each Food-Disease pair.  
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+The module defines the following key properties:  
 
-</span></div>
+- [hasFood](#hasFood): Identifies the food item in the association.
+- [hasDisease](#hasDisease): Specifies the disease related to the food.
+- [riskLevel](#riskLevel): Defines the risk level associated with the Food-Disease pair.
+
+
+	</div>
+
+
+</div>
+
    
 
 <!--CROSSREF SECTION-->
@@ -302,10 +326,11 @@ This section provides details for each class and property defined by Disease Mod
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+<!--  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 Add your references here. It is recommended to have them as a list.</span>
+-->
 
 </div>
 <div id="acknowledgments">

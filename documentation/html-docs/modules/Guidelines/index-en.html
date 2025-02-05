@@ -99,14 +99,21 @@ $(function(){
 <span>Guidelines Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+The Guidelines imports the Barrier and Temporal modules. This module
+aims to model behavioral guidelines associated with users to support reasoning tasks
+about possible recommendations related to the user data that can be collected.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The Guideline Module imports the Barrier and Temporal modules. It aims to model
+behavioral guidelines associated with users to support reasoning tasks about possible recommendations
+related to the user data that can be collected. In particular, the guidelines
+are specified in the MonitoringRule concept. Then, the hasRuleDefinition data property specifies
+the definition of a MonitoruleRule, the hasMonitoredValueInterval property specifies the interval
+monitored (i.e. ValueInterval), and the monitors property associates the rules to the users</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -286,11 +293,29 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Guidelines Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">Guidelines Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/guidelines/guidelines_module.png?raw=true" 
+			 alt="Guidelines Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+	<div class="markdown">  
+The Guideline module imports the Barrier and  
+Temporal modules. It models behavioral guidelines  
+associated with users to support reasoning tasks related to recommendations based on collected user data.  
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+The core concept of this module is [MonitoringRule](#MonitoringRule),  
+which defines specific guidelines for user behavior monitoring.  
 
-</span></div>
+The module introduces the following key properties:  
+
+- [hasRuleDefinition](#hasRuleDefinition): Specifies the definition of a MonitoringRule.  
+- [hasMonitoredValueInterval](#hasMonitoredValueInterval): Defines the monitored interval (i.e., [ValueInterval](#ValueInterval)).  
+- [monitors](#monitors): Associates monitoring rules with users.  
+	</div>
+</div>
+
    
 
 <!--CROSSREF SECTION-->
@@ -617,10 +642,10 @@ This section provides details for each class and property defined by Guidelines 
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+<!--  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
+Add your references here. It is recommended to have them as a list.</span>-->
 
 </div>
 <div id="acknowledgments">

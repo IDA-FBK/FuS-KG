@@ -99,14 +99,33 @@ $(function(){
 <span>Food Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+The Food module imports the Core module and it contains all the knowledge about
+the BasicFood, ComposedFood, and Nutrient. As BasicFood, we mean those foods
+for which fine-grained nutritional information is provided within the sources we
+adopted to build FuS-KG (e.g., Bread). Then, as ComposedFood, we mean those
+foods that are aggregations of instances of BasicFood but for which fine-grained
+nutritional information is available as well (e.s., Tomato Sauce). While Nutrient
+represents the specific nutritional information associated with a BasicFood.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The Food module imports the Core module and it contains all the knowledge about specific
+foods and their nutrients, specifying the BasicFood, ComposedFood, and Nutrient concepts. As
+BasicFood, we mean those foods for which fine-grained nutritional information is provided within
+the sources we adopted to build FuS-KG (e.g., White Bread). This concept is then sub-categorized
+into different food categories (e.g., Cereal and Grain Products, Meat, etc.). As ComposedFood, we
+mean those foods that are aggregations of instances of BasicFood for which fine-grained nutritional
+information is also available (e.g., Tomato Sauce). Nutrient represents the specific nutritional information
+associated with BasicFood and ComposedFood; this concept is sub-categorized into the
+various nutrient classes (e.g., Protein, Vitamin, Dietary Fiber, etc.), and each instance is specified
+by two data properties (i.e., amountNutrient and unit) that represent the value of the amount of the
+nutrient and its unit of measure. Moreover, the data properties amountCalories, amountEnergy and
+amountWater represent respectively the KCal, the Joule of energy or the grams of water that are
+contained in 100 grams of a specific food, and ediblePart indicates the amount of food that is
+edible in 100 grams of the whole food.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -1019,12 +1038,36 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Food Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+ <div id="description"><h2 id="desc" class="list">Food Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+	<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/food/food_module.png?raw=true" 
+			 alt="Food Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+	<div class="markdown"> 
+The Food module imports the Core module and contains all the knowledge about specific foods and their nutrients,  
+specifying the [BasicFood](#BasicFood), [ComposedFood](#ComposedFood), and [Nutrient](https://w3id.org/fuskg/core#Nutrient) concepts.  
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+- [BasicFood](#BasicFood): Foods with fine-grained nutritional information from trusted sources (e.g., White Bread).  
+  - This concept is sub-categorized into different food groups (e.g., Cereal and Grain Products, Meat, etc.).  
+- [ComposedFood](#ComposedFood): Foods that aggregate instances of BasicFood while retaining fine-grained nutritional details (e.g., Tomato Sauce).  
+- [Nutrient](https://w3id.org/fuskg/core##Nutrient): Represents the nutritional information associated with BasicFood and ComposedFood.  
+  - It is further classified into various nutrient categories (e.g., Protein, Vitamin, Dietary Fiber, etc.).  
 
-</span></div>
-   
+Each instance of [Nutrient](https://w3id.org/fuskg/core#Nutrient) is specified by:  
+
+- [amountNutrient](#amountNutrient): The quantity of the nutrient in a given food.  
+- [unit](#unit): The unit of measurement for the nutrient.  
+
+Additional data properties define general food composition:  
+
+- [amountCalories](#amountCalories): The calorie content (KCal) per 100 grams of food.  
+- [amountEnergy](#amountEnergy): The energy content (Joule) per 100 grams of food.  
+- [amountWater](#amountWater): The water content (grams) per 100 grams of food.  
+- [ediblePart](#ediblePart): The portion of food that is edible in 100 grams of the whole food.
+	</div>
+</div>
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Food Module of Functional Status Knowledge Graph (FuS-KG) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -5746,11 +5789,11 @@ This section provides details for each class and property defined by Food Module
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+<!--  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 Add your references here. It is recommended to have them as a list.</span>
-
+-->
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

@@ -99,14 +99,27 @@ $(function(){
 <span>Activity Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+The activity module imports the Core and the Multimodal Modules and it includes the taxonomy of all
+activities covered by FuS-KG together with the knowledge related to the effort
+required to fulfill each activity. The effort is represented through the Metabolic
+Equivalent of Task (MET) coefficient and the calories required to perform 1 minute
+of each activity for each kilogram of body weight.
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<span class="markdown">The activity module imports the Core and the Multimodal modules and it includes the taxonomy of all activities
+covered by FuS-KG together with the knowledge related to the effort required to fulfill each activity.
+The Activity category is divided into two categories (i.e., LifeActivity and PhysicalActivity) that are further sub-categorized. Then, each activity is connected to a SpecializedActivity through the
+specializes property. The SpecializedActivity concept identifies activities specifying their metabolic
+effort based on who performs the activity. In particular, a SpecializedActivity is connected to a
+PractitionerType with the practicedBy property which indicates the type of person that performs
+the activity (i.e., an adult, an older adult, or a wheelchair user), and the effort is represented twofold
+through the Metabolic Equivalent of Task (MET) coefficient using the hasMETValue data property
+and the calories required to perform 1 minute of each activity for each kilogram of body weight
+using the hasUnitKCalValue data property.
+</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -297,11 +310,39 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Activity Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">Activity Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+	<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/activity/activity_module.png?raw=true" 
+			 alt="Activity Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+	<div class="markdown">
+	
+The Activity module imports the Core and the Multimodal module. It introduces a taxonomy of activities within FuS-KG and categorizes activities based on the effort required to perform them, detailing their classification and metabolic impact.  
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+The module divides the <a href="https://w3id.org/fuskg/core#Activity">Activity</a> concept into two main categories:  
 
-</span></div>
+
+- [LifeActivity](#LifeActivity): Daily activities essential for living.
+- [PhysicalActivity](#PhysicalActivity): Activities requiring physical exertion.
+
+
+Each activity is further specialized through the [specializes](#specializes) property, linking it to a  
+[SpecializedActivity](https://w3id.org/fuskg/activity#SpecializedActivity), which defines the metabolic effort required based on the performer.  
+
+The module also introduces connections to individuals performing these activities:  
+
+- The [practicedBy](#practicedBy) property associates a SpecializedActivity with a  
+	[PractitionerType]((https://w3id.org/fuskg/activity#PractitionerType), identifying the type of person performing the activity (e.g., adult, older adult, wheelchair user).
+- The metabolic effort is quantified using two properties:  
+	-- [hasMETValue](#hasMETValue): Specifies the Metabolic Equivalent of Task (MET) coefficient for the activity.
+	-- [hasUnitKCalValue](#hasUnitKCalValue): Represents the calories required per minute per kilogram of body weight to perform the activity.
+		
+
+</div>
+
+</div>
    
 
 <!--CROSSREF SECTION-->
@@ -841,10 +882,10 @@ This section provides details for each class and property defined by Activity Mo
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+<!--  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
+Add your references here. It is recommended to have them as a list.</span>-->
 
 </div>
 <div id="acknowledgments">
