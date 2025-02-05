@@ -99,14 +99,21 @@ $(function(){
 <span>User Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+The User module imports the Guidelines module. This way, the user module may
+access the full knowledge of FuS-KG to enable the storage of any type of data that
+can be collected in several ways (e.g., sensors or mobile applications).</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The User module imports the Guidelines module. This way, the user module may access
+the full knowledge of FuS-KG to enable the storage of any type of data that can be collected
+in several ways (e.g., sensors or mobile applications). This module contains the User and the
+Profile concepts that identify each user with their profile, the PerformedActvity and ConsumedFood
+categories specifying the activity the user performed or the food they consumed during a Meal, and
+the Violation concept that expresses the list of user’s violations.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -388,13 +395,27 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">User Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">User Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/user/user_module.png?raw=true" 
+			 alt="Temporal Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+	<div class="markdown">  
+The User module imports the [Guidelines](#Guidelines) module, allowing access to the full knowledge of FuS-KG. This enables the storage of various types of user data collected through different methods (e.g., sensors, mobile applications).  
 
-</span></div>
+The core concepts of this module include:  
+
+- [User](#User): Represents an individual within the system.  
+- [Profile](#Profile): Defines the user's personal attributes and characteristics.  
+- [PerformedActivity](#PerformedActivity): Specifies the activities performed by the user.  
+- [ConsumedFood](#ConsumedFood): Identifies the food consumed by the user during a [Meal](https://w3id.org/fuskg/temporal#Meal).  
+- [Violation](#Violation): Captures instances where a user has deviated from recommended guidelines.  
+	</div>
+</div>
    
-
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for User Module of Functional Status Knowledge Graph (FuS-KG) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by User Module of Functional Status Knowledge Graph (FuS-KG).
@@ -1530,16 +1551,18 @@ This section provides details for each class and property defined by User Module
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ap" title="Data Properties">ap</sup>: Annotation Properties <br/>
 </div>
 </div>
 </div>
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+<!--  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 Add your references here. It is recommended to have them as a list.</span>
+-->
 
 </div>
 <div id="acknowledgments">

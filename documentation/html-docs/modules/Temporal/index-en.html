@@ -96,14 +96,28 @@ $(function(){
 <span>Temporal Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+The temporal module imports the recipes and activity modules. Then, this module
+is split into two sub-modules. The first one defines the temporal intervals that may be
+of interest to model the guidelines (e.g., Day, Meal). While the second one contains
+the knowledge related to steps to prepare a specific Recipe or perform a specific
+Activity.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The Temporal module imports the Recipes and Activity modules and is split into two sub-modules.
+The first one defines the temporal intervals that may be of interest to model the guidelines (e.g., Day,
+Meal). The second one contains the knowledge related to steps to complete an action; in particular,
+at this stage, we represent the knowledge concerning recipes (Figure 3i) but can be expanded with
+knowledge of other domains like steps to perform a specific activity. The TemporalStep concept
+indicates a step defined as a ProperInterval in the Time ontology; then beforeStep and afterStep
+properties are used to define the sequence of steps, orderedStepBegin and orderedStepEnd specifies
+the begin and end of each step, and hasStepDescription connects a TemporalStep to its description
+(i.e., StepDescription). To represent the specific knowledge of recipes RecipeStep is defined as a
+sub-class of TemporalStep and the property hasFirstRecipeStep is used to connect a recipe to the
+first step required to complete it.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -216,12 +230,36 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Temporal Module of the Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">Temporal Module of the Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+	<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/temporal/temporal_module.png?raw=true" 
+			 alt="Temporal Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+	<div class="markdown">  
+The Temporal module imports the Recipes and Activity modules and is structured into two sub-modules:  
 
-</span></div>
-   
+- The first sub-module defines temporal intervals relevant for modeling guidelines (e.g., [Day](#Day), [Meal](#Meal)).  
+- The second sub-module contains knowledge related to step sequences for completing an action, primarily focusing on recipes but extendable to other domains, such as activity execution.  
+
+The core concept of this module is [TemporalStep](#TemporalStep), which represents a step defined as a ProperInterval in the Time ontology.  
+
+The module introduces the following key properties:  
+
+- [beforeStep](#beforeStep): Defines the step that comes before another.  
+- [afterStep](#afterStep): Defines the step that follows another.  
+- [orderedStepBegin](#orderedStepBegin): Specifies when a step begins.  
+- [orderedStepEnd](#orderedStepEnd): Specifies when a step ends.  
+- [hasStepDescription](#hasStepDescription): Connects a TemporalStep to its description ([StepDescription](#StepDescription)).  
+
+To represent specific recipe-related knowledge, the module defines [RecipeStep](#RecipeStep) as a subclass of TemporalStep. The property [hasFirstRecipeStep](#hasFirstRecipeStep) connects a recipe to the first step required to complete it.  
+	</div>
+
+</div>
+
+
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Temporal Module of the Functional Status Knowledge Graph (FuS-KG) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -594,16 +632,17 @@ This section provides details for each class and property defined by Temporal Mo
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ap" title="Annotation Properties">ap</sup>: Annotation Properties <br/>
 </div>
 </div>
 </div>
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+ <!-- <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
+Add your references here. It is recommended to have them as a list.</span>-->
 
 </div>
 <div id="acknowledgments">
