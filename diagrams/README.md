@@ -36,7 +36,7 @@ Nutritional properties are represented by:
 - `ediblePart`: The edible portion per 100 grams.
 
 ### 3. Activity Module
-The **Activity** module imports the **Core** module and classifies activities into:
+The **Activity** module imports the **Core** and the **Multimodal**  modules and classifies activities into:
 
 - **LifeActivity**: Activities related to daily living.
 - **PhysicalActivity**: Activities involving physical exertion.
@@ -64,7 +64,7 @@ The **Disease** module imports the **Food** module and models food-disease relat
 - `hasRiskLevel`: Specifies the risk level of the food-disease pair.
 
 ### 6. Recipes Module
-The **Recipes** module imports the **Disease** and **Food** modules. A **Recipe** is defined as a group of ingredients (specific foods) and their associated quantities. Key elements include:
+The **Recipes** module imports the **Disease**, **Food**, and **Multimodal** modules. A **Recipe** is defined as a group of ingredients (specific foods) and their associated quantities. Key elements include:
 
 - `hasRecipeFood`: Connects a **Recipe** to its ingredients (**RecipeFood**).
 - `hasFoods`: Links each **RecipeFood** to a specific food (**BasicFood** or **ComposedFood**).
@@ -73,7 +73,7 @@ The **Recipes** module imports the **Disease** and **Food** modules. A **Recipe*
 This module includes sub-modules for recipes collected from various sources and alignments between recipes from different sources.
 
 ### 7. Multi-Modal Module
-The **Multi-Modal** module imports the **Recipes** and **Activity** modules and represents multi-modal knowledge (e.g., images and videos) associated with recipes and activities. Key concepts include:
+The **Multi-Modal** module is imported by the **Recipes** and **Activity** modules and represents multi-modal knowledge (e.g., images and videos) associated with recipes and activities. Key concepts include:
 
 - **ModalDescriptor**: Represents a multi-modal description.
 - **ModalEntity**: Corresponds to a **Recipe** or **Activity**.
