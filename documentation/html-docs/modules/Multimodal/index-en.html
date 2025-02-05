@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/multimodal#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/multimodal#","name":"Multimodal Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/multimodal#", "dateReleased":"Tue Feb 04 19:21:52 CET 2025", "dateModified":"2024-04-26", "version":"1.0", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/multimodal#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/multimodal#","name":"Multimodal Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/multimodal#", "dateReleased":"Wed Feb 05 14:05:01 CET 2025", "dateModified":"2024-04-26", "version":"1.0", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "codeRepository":"https://github.com/IDA-FBK/FuS-KG", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -90,21 +90,30 @@ $(function(){
 <dd><a href="https://github.com/IDA-FBK/FuS-KG">https://github.com/IDA-FBK/FuS-KG</a></dd>
 </dl>
 
-<!--<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>-->
+<!-- <a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>-->
 </div>
 <div class="status">
 <div>
 <span>Multimodal Module Specification</span>
 </div>
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
-This is a placeholder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+The Multimodal module is imported by the Recipes and Activity modules. The module
+contains, when available within the adopted sources, the multi-modal knowledge
+associated with specific Recipe and Activity. In particular, the current version of
+FuS-KG contains knowledge about image and video modalities.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+The Multimodal module is imported by the recipes and activity modules. The module contains,
+when available within the adopted sources, the multi-modal knowledge associated with a
+specific Recipe and Activity. In particular, the current version of FuS-KG contains knowledge about
+image and video modalities. This module specifies the ModalDescriptor category, the ModalEntity
+category which, at the moment, corresponds to a Recipe or Activity and its Modality. In particular,
+a ModalDescriptor is connected to the ModalEntity by the hasModalDescriptor property and to
+the corresponding modality with the hasModality property.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -113,10 +122,7 @@ This is a place holder text for the introduction. The introduction should briefl
 <tbody>
 <tr><td><b>dcat</b></td><td>&lt;http://www.w3.org/ns/dcat#&gt;</td></tr>
 <tr><td><b>dcterms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
-<tr><td><b>fsacti</b></td><td>&lt;https://w3id.org/fuskg/activity#&gt;</td></tr>
-<tr><td><b>fsfood</b></td><td>&lt;https://w3id.org/fuskg/food#&gt;</td></tr>
 <tr><td><b>fsmumo</b></td><td>&lt;https://w3id.org/fuskg/multimodal#&gt;</td></tr>
-<tr><td><b>fsreci</b></td><td>&lt;https://w3id.org/fuskg/recipe#&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
@@ -157,11 +163,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a>
-   </li>
-   <li>
-      <a href="#https://w3id.org/fuskg/recipe#Recipe" title="https://w3id.org/fuskg/recipe#Recipe">
-         <span>Recipe</span>
-      </a>
    </li>
    <li>
       <a href="#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a>
@@ -252,11 +253,29 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">Multimodal Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">Multimodal Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.
+<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/multi-modal/multi-modal_module.png?raw=true" 
+			 alt="Multimodal Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+	<div class="markdown">  
+The Multimodal module is imported by the Recipes and  Activity modules. This module stores multimodal knowledge associated with a specific Recipe or Activity, primarily focusing on image and video modalities.  
 
-</span></div>
+The module defines the following key concepts:  
+
+- [ModalDescriptor](#ModalDescriptor): Represents the descriptor for a modality associated with a Recipe or Activity.  
+- [ModalEntity](#ModalEntity): Corresponds to a Recipe or Activity and its associated modality.  
+
+The following key properties are used to connect the concepts:  
+
+- [hasModalDescriptor](#hasModalDescriptor): Links a [ModalEntity](#ModalEntity) to its [ModalDescriptor](#ModalDescriptor).  
+- [hasModality](#hasModality): Connects a [ModalDescriptor](#ModalDescriptor) to the corresponding modality (e.g., image, video).  
+
+	</div>
+</div>
    
 
 <!--CROSSREF SECTION-->
@@ -271,7 +290,6 @@ This section provides details for each class and property defined by Multimodal 
   <li><a href="#ModalDescriptor" title="https://w3id.org/fuskg/multimodal#ModalDescriptor">Modal descriptor</a></li>
   <li><a href="#ModalEntity" title="https://w3id.org/fuskg/multimodal#ModalEntity">Modal Entity</a></li>
   <li><a href="#Modality" title="https://w3id.org/fuskg/multimodal#Modality">Modality</a></li>
-  <li><a href="#https://w3id.org/fuskg/recipe#Recipe" title="https://w3id.org/fuskg/recipe#Recipe"> <span>Recipe</span> </a></li>
   <li><a href="#Text" title="https://w3id.org/fuskg/multimodal#Text">Text</a></li>
   <li><a href="#Video" title="https://w3id.org/fuskg/multimodal#Video">Video</a></li>
  </ul>
@@ -379,12 +397,6 @@ This section provides details for each class and property defined by Multimodal 
   </div>
   <dl class="description">
    <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#https://w3id.org/fuskg/recipe#Recipe" title="https://w3id.org/fuskg/recipe#Recipe">Recipe</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
     is in domain of
    </dt>
    <dd>
@@ -410,18 +422,6 @@ This section provides details for each class and property defined by Multimodal 
    </dt>
    <dd>
     <a href="#hasModality" title="https://w3id.org/fuskg/multimodal#hasModality">has modality</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="https://w3id.org/fuskg/recipe#Recipe">
-  <h3>Recipe<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/recipe#Recipe</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#ModalEntity" title="https://w3id.org/fuskg/multimodal#ModalEntity">Modal Entity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -704,16 +704,18 @@ This section provides details for each class and property defined by Multimodal 
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ap" title="Annotation Properties">ap</sup>: Annotation Properties <br/>
 </div>
 </div>
 </div>
     
 
 <!--REFERENCES SECTION-->
-  <div id="references">
+<!--  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
 Add your references here. It is recommended to have them as a list.</span>
+-->
 
 </div>
 <div id="acknowledgments">

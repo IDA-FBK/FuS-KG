@@ -32,16 +32,16 @@
         "value" : "Gianluca Apriceno",
         "type" : "label"
       } ],
-      "preferredNamespacePrefix" : [ {
-        "identifier" : "preferredNamespacePrefix",
-        "language" : "undefined",
-        "value" : "fsbarr",
-        "type" : "label"
-      } ],
       "rights" : [ {
         "identifier" : "rights",
         "language" : "en",
         "value" : "CreativeCommons 4.0 NonCommercial-ShareAlike <https://creativecommons.org/licenses/by-nc-sa/4.0/>",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "fsbarr",
         "type" : "label"
       } ],
       "publisher" : [ {
@@ -93,16 +93,16 @@
     "id" : "30",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "39",
     "type" : "owl:Class"
   }, {
-    "id" : "39",
+    "id" : "11",
     "type" : "owl:Class"
   }, {
     "id" : "40",
     "type" : "owl:Class"
   }, {
-    "id" : "41",
+    "id" : "42",
     "type" : "owl:Class"
   }, {
     "id" : "43",
@@ -234,13 +234,13 @@
     "id" : "88",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "92",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
     "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
     "type" : "owl:Class"
   }, {
     "id" : "89",
@@ -379,35 +379,6 @@
     "id" : "30",
     "superClasses" : [ "19" ]
   }, {
-    "iri" : "http://purl.obolibrary.org/obo/doid.owl#PhysicalPain",
-    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "PhysicalPain"
-    },
-    "individuals" : [ {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#KneePain",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "KneePain"
-      }
-    }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HipPain",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "HipPain"
-      }
-    }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LegPain",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "LegPain"
-      }
-    } ],
-    "attributes" : [ "external" ],
-    "id" : "11",
-    "superClasses" : [ "12" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/barrier#Sign",
     "baseIri" : "https://w3id.org/fuskg/barrier",
     "instances" : 0,
@@ -495,16 +466,16 @@
         "IRI-based" : "Shakiness"
       }
     }, {
-      "iri" : "https://w3id.org/fuskg/barrier#HasFamily",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "HasFamily"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#HasFullTimeJob",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "HasFullTimeJob"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#HasFamily",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "HasFamily"
       }
     } ],
     "comment" : {
@@ -512,28 +483,34 @@
     },
     "id" : "39"
   }, {
-    "iri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise",
-    "baseIri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl",
+    "iri" : "http://purl.obolibrary.org/obo/doid.owl#PhysicalPain",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "FlexibilityExcercise"
+      "IRI-based" : "PhysicalPain"
     },
     "individuals" : [ {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Yoga",
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#KneePain",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
-        "IRI-based" : "Yoga"
+        "IRI-based" : "KneePain"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Stretching",
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HipPain",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
-        "IRI-based" : "Stretching"
+        "IRI-based" : "HipPain"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#LegPain",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "LegPain"
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "40",
-    "superClasses" : [ "38" ]
+    "id" : "11",
+    "superClasses" : [ "12" ]
   }, {
     "iri" : "http://purl.obolibrary.org/obo/doid.owl#LightActivity",
     "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
@@ -557,28 +534,28 @@
         "IRI-based" : "Dancing"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#KickBoxing",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "KickBoxing"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#SquatJumps",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "SquatJumps"
       }
     }, {
-      "iri" : "https://w3id.org/fuskg/barrier#JumpRope",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#KickBoxing",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
-        "IRI-based" : "JumpRope"
+        "IRI-based" : "KickBoxing"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#JumpingJacks",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "JumpingJacks"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#JumpRope",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "JumpRope"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#JumpingInPlace",
@@ -588,8 +565,31 @@
       }
     } ],
     "attributes" : [ "external" ],
-    "id" : "41",
-    "superClasses" : [ "42" ]
+    "id" : "40",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise",
+    "baseIri" : "http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlexibilityExcercise"
+    },
+    "individuals" : [ {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Yoga",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "Yoga"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Stretching",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "Stretching"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "38" ]
   }, {
     "instances" : 0,
     "union" : [ "0", "44" ],
@@ -647,7 +647,7 @@
     "subClasses" : [ "47" ],
     "attributes" : [ "external" ],
     "id" : "48",
-    "superClasses" : [ "42" ]
+    "superClasses" : [ "41" ]
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
@@ -725,12 +725,6 @@
         "IRI-based" : "CrabWalk"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#WalkingOrJoggingOntreadmill",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "WalkingOrJoggingOntreadmill"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#ReverseMountainClimbers",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "comment" : {
@@ -738,6 +732,12 @@
       },
       "labels" : {
         "IRI-based" : "ReverseMountainClimbers"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#WalkingOrJoggingOntreadmill",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "WalkingOrJoggingOntreadmill"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#SideShuffles",
@@ -1037,16 +1037,16 @@
       "it" : "Barriera Personale"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/fuskg/barrier#FinancialProblem",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "FinancialProblem"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#TimeRestriction",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "TimeRestriction"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#FinancialProblem",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "FinancialProblem"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#DisabilityCare",
@@ -1136,16 +1136,16 @@
         "IRI-based" : "Shame"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#FeelDepressed",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "FeelDepressed"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#FeelEmbarrassment",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "FeelEmbarrassment"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#FeelDepressed",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "FeelDepressed"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#LackOfSelfEfficacy",
@@ -1154,10 +1154,10 @@
         "IRI-based" : "LackOfSelfEfficacy"
       }
     }, {
-      "iri" : "https://w3id.org/fuskg/barrier#LackOfCompany",
+      "iri" : "https://w3id.org/fuskg/barrier#Stress",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
-        "IRI-based" : "LackOfCompany"
+        "IRI-based" : "Stress"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#Emotion",
@@ -1166,10 +1166,10 @@
         "IRI-based" : "Emotion"
       }
     }, {
-      "iri" : "https://w3id.org/fuskg/barrier#Stress",
+      "iri" : "https://w3id.org/fuskg/barrier#LackOfCompany",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
-        "IRI-based" : "Stress"
+        "IRI-based" : "LackOfCompany"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#Inactive",
@@ -1238,16 +1238,16 @@
         "IRI-based" : "TypeTwoDiabetes"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HealthProblems",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "HealthProblems"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#Asthma",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "Asthma"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HealthProblems",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "HealthProblems"
       }
     }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#ChestPain",
@@ -1268,16 +1268,16 @@
         "IRI-based" : "OtherDisease"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HealthBarrier",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "HealthBarrier"
-      }
-    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#Hypoglycemic",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "labels" : {
         "IRI-based" : "Hypoglycemic"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#HealthBarrier",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "HealthBarrier"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#T2D",
@@ -1307,16 +1307,16 @@
       "it" : "Condizione Climatica"
     },
     "individuals" : [ {
-      "iri" : "https://w3id.org/fuskg/barrier#Earthquake",
-      "baseIri" : "https://w3id.org/fuskg/barrier",
-      "labels" : {
-        "IRI-based" : "Earthquake"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#Flood",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "labels" : {
         "IRI-based" : "Flood"
+      }
+    }, {
+      "iri" : "https://w3id.org/fuskg/barrier#Earthquake",
+      "baseIri" : "https://w3id.org/fuskg/barrier",
+      "labels" : {
+        "IRI-based" : "Earthquake"
       }
     } ],
     "comment" : {
@@ -1494,31 +1494,6 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "https://w3id.org/fuskg/barrier#Vigorous",
-    "baseIri" : "https://w3id.org/fuskg/barrier",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Vigorous",
-      "en" : "Vigorous",
-      "it" : "Vigoroso"
-    },
-    "comment" : {
-      "undefined" : "Vigorous-intensity activity is a 7 or 8 on a scale of 0 to 10. Vigorous-intensity activities make your heart, lungs, and muscles work hard. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart"
-    },
-    "id" : "92",
-    "superClasses" : [ "69" ]
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/doid.owl#IndoorActivity",
-    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "IndoorActivity"
-    },
-    "subClasses" : [ "48", "41" ],
-    "attributes" : [ "external" ],
-    "id" : "42",
-    "superClasses" : [ "38" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/barrier#Fear",
     "baseIri" : "https://w3id.org/fuskg/barrier",
     "instances" : 0,
@@ -1545,6 +1520,31 @@
     },
     "id" : "75",
     "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/doid.owl#IndoorActivity",
+    "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IndoorActivity"
+    },
+    "subClasses" : [ "48", "40" ],
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "38" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/barrier#Vigorous",
+    "baseIri" : "https://w3id.org/fuskg/barrier",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vigorous",
+      "en" : "Vigorous",
+      "it" : "Vigoroso"
+    },
+    "comment" : {
+      "undefined" : "Vigorous-intensity activity is a 7 or 8 on a scale of 0 to 10. Vigorous-intensity activities make your heart, lungs, and muscles work hard. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart"
+    },
+    "id" : "92",
+    "superClasses" : [ "69" ]
   }, {
     "iri" : "https://w3id.org/fuskg/barrier#CognitiveBarrier",
     "baseIri" : "https://w3id.org/fuskg/barrier",
@@ -1585,15 +1585,6 @@
         "IRI-based" : "BackstrokeSwimming"
       }
     }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Swimming",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "comment" : {
-        "undefined" : "The air around pools is usually warm and humid and less likely to induce asthma. Swimming is also less likely to trigger EIA than other exercises. Chlorine can sometimes cause trouble, so that’s something to keep in mind here (https://asthma.net/living/16-ideal-exercises-for-asthma/)."
-      },
-      "labels" : {
-        "IRI-based" : "Swimming"
-      }
-    }, {
       "iri" : "https://w3id.org/fuskg/barrier#FreestyleSwimming",
       "baseIri" : "https://w3id.org/fuskg/barrier",
       "comment" : {
@@ -1601,6 +1592,15 @@
       },
       "labels" : {
         "IRI-based" : "FreestyleSwimming"
+      }
+    }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#Swimming",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "comment" : {
+        "undefined" : "The air around pools is usually warm and humid and less likely to induce asthma. Swimming is also less likely to trigger EIA than other exercises. Chlorine can sometimes cause trouble, so that’s something to keep in mind here (https://asthma.net/living/16-ideal-exercises-for-asthma/)."
+      },
+      "labels" : {
+        "IRI-based" : "Swimming"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#BreaststrokeSwimming",
@@ -1635,7 +1635,7 @@
       "en" : "Exercise Type",
       "undefined" : "Tipo di Esercizio"
     },
-    "subClasses" : [ "78", "37", "42", "60", "40" ],
+    "subClasses" : [ "78", "37", "41", "60", "42" ],
     "comment" : {
       "en" : "This concept represents the root concept of exercise types."
     },
@@ -1660,6 +1660,12 @@
         "IRI-based" : "Gymnastics"
       }
     }, {
+      "iri" : "http://purl.obolibrary.org/obo/doid.owl#MartialArts",
+      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
+      "labels" : {
+        "IRI-based" : "MartialArts"
+      }
+    }, {
       "iri" : "http://purl.obolibrary.org/obo/doid.owl#BikingOrCycling",
       "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
       "comment" : {
@@ -1667,12 +1673,6 @@
       },
       "labels" : {
         "IRI-based" : "BikingOrCycling"
-      }
-    }, {
-      "iri" : "http://purl.obolibrary.org/obo/doid.owl#MartialArts",
-      "baseIri" : "http://purl.obolibrary.org/obo/doid.owl",
-      "labels" : {
-        "IRI-based" : "MartialArts"
       }
     }, {
       "iri" : "https://w3id.org/fuskg/barrier#Walking",
@@ -1967,7 +1967,7 @@
       "IRI-based" : "isTypeOf"
     },
     "domain" : "25",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "24"
   }, {
     "range" : "2",
@@ -1982,7 +1982,7 @@
       "IRI-based" : "hasType"
     },
     "domain" : "26",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "28"
   }, {
     "range" : "19",
@@ -2030,7 +2030,7 @@
     "comment" : {
       "en" : "This property defines the relationship between a barrier affecting the performing of an activity."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "54"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/doid.owl#contactNumber",
@@ -2060,7 +2060,7 @@
     "comment" : {
       "en" : "This property defines the relationship between a barrier and the consumption of a food or nutrient."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "61"
   }, {
     "range" : "60",
@@ -2069,7 +2069,7 @@
     "id" : "62"
   }, {
     "range" : "38",
-    "domain" : "42",
+    "domain" : "41",
     "attributes" : [ "anonymous", "object" ],
     "id" : "67"
   }, {
@@ -2094,7 +2094,7 @@
     "id" : "70"
   }, {
     "range" : "38",
-    "domain" : "40",
+    "domain" : "42",
     "attributes" : [ "anonymous", "object" ],
     "id" : "71"
   }, {
@@ -2103,7 +2103,7 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "72"
   }, {
-    "range" : "42",
+    "range" : "41",
     "domain" : "48",
     "attributes" : [ "anonymous", "object" ],
     "id" : "73"
@@ -2118,8 +2118,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "77"
   }, {
-    "range" : "42",
-    "domain" : "41",
+    "range" : "41",
+    "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
     "id" : "79"
   }, {
@@ -2155,7 +2155,7 @@
       "IRI-based" : "Prevents"
     },
     "domain" : "5",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "84"
   }, {
     "iri" : "https://w3id.org/fuskg/barrier#isTriggeredBy",
@@ -2245,7 +2245,7 @@
       "IRI-based" : "defines"
     },
     "domain" : "5",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "105"
   }, {
     "iri" : "https://w3id.org/fuskg/barrier#hasInteresting",
@@ -2341,7 +2341,7 @@
       "IRI-based" : "isDefineBy"
     },
     "domain" : "25",
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "113"
   }, {
     "iri" : "https://w3id.org/fuskg/barrier#hasDisease",
@@ -2381,7 +2381,7 @@
     "comment" : {
       "en" : "This property specifies that a food contains another food"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "119"
   }, {
     "iri" : "https://w3id.org/fuskg/core#hasNutrient",
@@ -2396,7 +2396,7 @@
     "comment" : {
       "en" : "This property specifies the nutrient(s) contained ia a food."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "120"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/doid.owl#DOB",

@@ -168,6 +168,7 @@
 # https://w3id.org/fuskg/recipe#Recipe
 <https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/core#Food> .
+<https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/fuskg/multimodal#ModalEntity> .
 <https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#comment> "Root concept denoting Recipes collecetd from different sources. Recipes are specified as a list of RecipeFood denoting the ingredients (the specific food and its quantity) of the recipe."@en .
 <https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#label> "Recipe"@en .
 <https://w3id.org/fuskg/recipe#Recipe> <http://www.w3.org/2000/01/rdf-schema#label> "Ricette"@it .

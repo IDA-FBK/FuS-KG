@@ -310,6 +310,7 @@
 
     <owl:Class rdf:about="https://w3id.org/fuskg/recipe#Recipe">
         <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/core#Food"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#ModalEntity"/>
         <rdfs:comment xml:lang="en">Root concept denoting Recipes collecetd from different sources. Recipes are specified as a list of RecipeFood denoting the ingredients (the specific food and its quantity) of the recipe.</rdfs:comment>
         <rdfs:label xml:lang="en">Recipe</rdfs:label>
         <rdfs:label xml:lang="it">Ricette</rdfs:label>

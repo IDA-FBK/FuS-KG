@@ -354,15 +354,6 @@
     
 
 
-    <!-- https://w3id.org/fuskg/recipe#Recipe -->
-
-
-    <owl:Class rdf:about="https://w3id.org/fuskg/recipe#Recipe">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/fuskg/multimodal#ModalEntity"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
