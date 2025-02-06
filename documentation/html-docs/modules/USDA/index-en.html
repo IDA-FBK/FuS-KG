@@ -94,7 +94,9 @@ Aligment of USDA with Functional Status Knowledge Graph (FuS-KG)</span>
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Aligment of USDA with Functional Status Knowledge Graph (FuS-KG)</span>
+The USDA module defines the alignments between the concepts defined in existing modules of FuS-KG and the USDA database. This module defines two main concepts: [USDAFood](#USDAFood) and [USDANutrients](#USDANutrients). [USDAFood](#USDAFood) is defined as a subclass ([rdfs:subClassOf](https://www.w3.org/TR/rdf-schema/#ch_subclassof)) of [fscore:Food](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Food), 
+while [USDANutrients](#USDANutrients) is considered equivalent ([owl:equivalentClass](https://www.w3.org/TR/owl-ref/#equivalentClass-def)) to [fscore:Nutrient](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Nutrient).
+</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -1659,11 +1661,20 @@ This ontology has the following classes and properties.</span>
   
 
 <!--DESCRIPTION SECTION-->
-    <div id="description"><h2 id="desc" class="list">USDA Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div id="description"><h2 id="desc" class="list">USDA Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 
-<span class="markdown">Aligment of USDA with Functional Status Knowledge Graph (FuS-KG)
+	<div style="text-align: center;">
+		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/usda/usda_module.png?raw=true" 
+			 alt="USDA Module" 
+			 style="max-width: 100%; height: auto;">
+	</div>
+	<br>
+<div class="markdown"> The USDA module defines the alignments between the concepts defined in existing modules of FuS-KG with the USDA database. This module defines two concepts:
+- [USDAFood](#USDAFood)
+- [USDANutrients](#USDANutrients)
 
-</span></div>
+where [USDAFood](#USDAFood) [rdfs:subClassOf](https://www.w3.org/TR/rdf-schema/#ch_subclassof) [fscore:Food](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Food) and [USDANutrients](#USDANutrients) [owl:equivalentClass](https://www.w3.org/TR/owl-ref/#equivalentClass-def) [fscore:Nutrient](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Nutrient).
+</div>
    
 
 <!--CROSSREF SECTION-->
