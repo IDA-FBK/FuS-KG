@@ -17,7 +17,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/activity#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/activity#","name":"Activity Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/activity#", "dateReleased":"Tue Feb 04 19:13:22 CET 2025", "dateModified":"2024-12-06", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Jacopo Bennati"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"https://w3id.org/fuskg/activity#","image":"http://vowl.visualdataweb.org/webvowl/#iri=https://w3id.org/fuskg/activity#","name":"Activity Module of Functional Status Knowledge Graph (FuS-KG)", "headline":"Document describing the ontology https://w3id.org/fuskg/activity#", "dateReleased":"Thu Feb 06 14:27:39 CET 2025", "dateModified":"2024-12-06", "version":"1.0.0", "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/", "author":[{"@type":"Person","name":"Gianluca Apriceno"},{"@type":"Person","name":"Jacopo Bennati"},{"@type":"Person","name":"Mauro Dragoni"},{"@type":"Person","name":"Tania Bailoni"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -88,11 +88,9 @@ $(function(){
 </dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
 <!-- <dt>Evaluation:</dt><dd><a href="OOPSevaluation/oopsEval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --><dt>Cite as:</dt>
 <dd>Gianluca Apriceno, Jacopo Bennati, Mauro Dragoni, Tania Bailoni. Activity Module of Functional Status Knowledge Graph (FuS-KG). Revision: 1.0.0.</dd>
-<dt>Vocabulary maintained at:</dt>
-<dd><a href="https://github.com/IDA-FBK/FuS-KG">https://github.com/IDA-FBK/FuS-KG</a></dd>
 </dl>
 
-<!--<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>-->
+<hr/>
 </div>
 <div class="status">
 <div>
@@ -103,13 +101,14 @@ The activity module imports the Core and the Multimodal Modules and it includes 
 activities covered by FuS-KG together with the knowledge related to the effort
 required to fulfill each activity. The effort is represented through the Metabolic
 Equivalent of Task (MET) coefficient and the calories required to perform 1 minute
-of each activity for each kilogram of body weight.
+of each activity for each kilogram of body weight.</span>
 </div>
 <div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">The activity module imports the Core and the Multimodal modules and it includes the taxonomy of all activities
+<span class="markdown">
+The activity module imports the Core and the Multimodal modules and it includes the taxonomy of all activities
 covered by FuS-KG together with the knowledge related to the effort required to fulfill each activity.
 The Activity category is divided into two categories (i.e., LifeActivity and PhysicalActivity) that are further sub-categorized. Then, each activity is connected to a SpecializedActivity through the
 specializes property. The SpecializedActivity concept identifies activities specifying their metabolic
@@ -118,8 +117,7 @@ PractitionerType with the practicedBy property which indicates the type of perso
 the activity (i.e., an adult, an older adult, or a wheelchair user), and the effort is represented twofold
 through the Metabolic Equivalent of Task (MET) coefficient using the hasMETValue data property
 and the calories required to perform 1 minute of each activity for each kilogram of body weight
-using the hasUnitKCalValue data property.
-</span>
+using the hasUnitKCalValue data property.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -185,6 +183,9 @@ This ontology has the following classes and properties.</span>
       <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a>
    </li>
    <li>
+      <a href="#PractionerType" title="https://w3id.org/fuskg/activity#PractionerType">PractionerType</a>
+   </li>
+   <li>
       <a href="#RelaxingActivityAndHobbies"
          title="https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies">Relaxing and Hobby Activities</a>
    </li>
@@ -200,6 +201,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#SexualActivity" title="https://w3id.org/fuskg/activity#SexualActivity">Sexual Activity</a>
+   </li>
+   <li>
+      <a href="#SpecializedActivity" title="https://w3id.org/fuskg/activity#SpecializedActivity">SpecializedActivity</a>
    </li>
    <li>
       <a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a>
@@ -311,6 +315,7 @@ This ontology has the following classes and properties.</span>
 
 <!--DESCRIPTION SECTION-->
 <div id="description"><h2 id="desc" class="list">Activity Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+
 	<div style="text-align: center;">
 		<img src="https://github.com/IDA-FBK/FuS-KG/blob/main/diagrams/activity/activity_module.png?raw=true" 
 			 alt="Activity Module" 
@@ -321,23 +326,21 @@ This ontology has the following classes and properties.</span>
 	
 The Activity module imports the Core and the Multimodal module. It introduces a taxonomy of activities within FuS-KG and categorizes activities based on the effort required to perform them, detailing their classification and metabolic impact.  
 
-The module divides the <a href="https://w3id.org/fuskg/core#Activity">Activity</a> concept into two main categories:  
+The module divides the [Activity](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Activity) concept into two main categories:  
 
 
 - [LifeActivity](#LifeActivity): Daily activities essential for living.
 - [PhysicalActivity](#PhysicalActivity): Activities requiring physical exertion.
 
 
-Each activity is further specialized through the [specializes](#specializes) property, linking it to a  
-[SpecializedActivity](https://w3id.org/fuskg/activity#SpecializedActivity), which defines the metabolic effort required based on the performer.  
+Each activity is further specialized through the [specializes](#specializes) property, linking it to a [SpecializedActivity](#SpecializedActivity), which defines the metabolic effort required based on the performer.  
 
 The module also introduces connections to individuals performing these activities:  
 
-- The [practicedBy](#practicedBy) property associates a SpecializedActivity with a  
-	[PractitionerType]((https://w3id.org/fuskg/activity#PractitionerType), identifying the type of person performing the activity (e.g., adult, older adult, wheelchair user).
+- The [practicedBy](#practicedBy) property associates a [SpecializedActivity](#SpecializedActivity) with a [PractionerType](#PractionerType), identifying the type of person performing the activity (e.g., adult, older adult, wheelchair user).
 - The metabolic effort is quantified using two properties:  
-	-- [hasMETValue](#hasMETValue): Specifies the Metabolic Equivalent of Task (MET) coefficient for the activity.
-	-- [hasUnitKCalValue](#hasUnitKCalValue): Represents the calories required per minute per kilogram of body weight to perform the activity.
+	- [hasMETValue](#hasMETValue): Specifies the Metabolic Equivalent of Task (MET) coefficient for the activity.
+	- [hasUnitKCalValue](#hasUnitKCalValue): Represents the calories required per minute per kilogram of body weight to perform the activity.
 		
 
 </div>
@@ -362,12 +365,14 @@ This section provides details for each class and property defined by Activity Mo
   <li><a href="#MusicPlaying" title="https://w3id.org/fuskg/activity#MusicPlaying">Music Playing</a></li>
   <li><a href="#Occupation" title="https://w3id.org/fuskg/activity#Occupation">Occupation</a></li>
   <li><a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a></li>
+  <li><a href="#PractionerType" title="https://w3id.org/fuskg/activity#PractionerType">PractionerType</a></li>
   <li><a href="#RelaxingActivityAndHobbies" title="https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies">Relaxing and Hobby Activities</a></li>
   <li><a href="#ReligiousActivities" title="https://w3id.org/fuskg/activity#ReligiousActivities">Religious Activities</a></li>
   <li><a href="#Running" title="https://w3id.org/fuskg/activity#Running">Runing</a></li>
   <li><a href="#SelfCare" title="https://w3id.org/fuskg/activity#SelfCare">Self Care</a></li>
   <li><a href="#SexualActivity" title="https://w3id.org/fuskg/activity#SexualActivity">Sexual Activity</a></li>
   <li><a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a></li>
+  <li><a href="#SpecializedActivity" title="https://w3id.org/fuskg/activity#SpecializedActivity">SpecializedActivity</a></li>
   <li><a href="#Transportation" title="https://w3id.org/fuskg/activity#Transportation">Transportation</a></li>
   <li><a href="#Walking" title="https://w3id.org/fuskg/activity#Walking">Walking</a></li>
   <li><a href="#WaterActivities" title="https://w3id.org/fuskg/activity#WaterActivities">Water Activities</a></li>
@@ -550,6 +555,13 @@ This section provides details for each class and property defined by Activity Mo
    </dd>
   </dl>
  </div>
+  <div class="entity" id="PractionerType">
+  <h3>PractionerType<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#PractionerType</p>
+  <div class="comment">
+   <span class="markdown">Concept identifying the type of person performing the activity (e.g., adult, older adult, wheelchair user).</span>
+  </div>
+ </div>
  <div class="entity" id="RelaxingActivityAndHobbies">
   <h3>Relaxing and Hobby Activities<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies</p>
@@ -639,6 +651,13 @@ This section provides details for each class and property defined by Activity Mo
     <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
+ </div>
+ <div class="entity" id="SpecializedActivity">
+  <h3>SpecializedActivity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#SpecializedActivity</p>
+  <div class="comment">
+   <span class="markdown">Concept identifying activities by specifying their metabolic effort based on who performs the activity.</span>
+  </div>
  </div>
  <div class="entity" id="Transportation">
   <h3>Transportation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -876,17 +895,16 @@ This section provides details for each class and property defined by Activity Mo
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
-<sup class="type-ap" title="Annotation Properties">ap</sup>: Annotation Properties <br/>
 </div>
 </div>
 </div>
     
 
 <!--REFERENCES SECTION-->
-<!--  <div id="references">
+  <div id="references">
 <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>-->
+Add your references here. It is recommended to have them as a list.</span>
 
 </div>
 <div id="acknowledgments">
