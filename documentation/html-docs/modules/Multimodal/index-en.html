@@ -100,7 +100,8 @@ $(function(){
 The Multimodal module is imported by the Recipes and Activity modules. The module
 contains, when available within the adopted sources, the multi-modal knowledge
 associated with specific Recipe and Activity. In particular, the current version of
-FuS-KG contains knowledge about image and video modalities.</span>
+FuS-KG contains knowledge about image and video modalities. The definition of this module is aligned
+with the one provided by [Apriceno et al. (2024)](#Apriceno2024) and represents a possible instantiation of it.</span>
 </div>
 <div id="toc"></div> 
 
@@ -113,7 +114,8 @@ specific Recipe and Activity. In particular, the current version of FuS-KG conta
 image and video modalities. This module specifies the ModalDescriptor category, the ModalEntity
 category which, at the moment, corresponds to a Recipe or Activity and its Modality. In particular,
 a ModalDescriptor is connected to the ModalEntity by the hasModalDescriptor property and to
-the corresponding modality with the hasModality property.</span>
+the corresponding modality with the hasModality property. The definition of this module is aligned
+with the one provided by [Apriceno et al. (2024)](#Apriceno2024) and represents a possible instantiation of it.</span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -274,6 +276,7 @@ The following key properties are used to connect the concepts:
 - [hasModalDescriptor](#hasModalDescriptor): Links a [ModalEntity](#ModalEntity) to its [ModalDescriptor](#ModalDescriptor).  
 - [hasModality](#hasModality): Connects a [ModalDescriptor](#ModalDescriptor) to the corresponding modality (e.g., image, video).  
 
+The definition of this module is aligned with the one provided by [Apriceno et al. (2024)](#Apriceno2024) and represents a possible instantiation of it.
 	</div>
 </div>
    
@@ -711,13 +714,17 @@ This section provides details for each class and property defined by Multimodal 
     
 
 <!--REFERENCES SECTION-->
-<!--  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
--->
-
+<div id="references">
+  <h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+  <ol>
+    <li id="Apriceno2024">
+      Apriceno, G., Tamma, V., Bailoni, T., de Berardinis, J., & Dragoni, M. (2024). A pattern to align them all: Integrating different modalities to define multi-modal entities. <i>arXiv preprint</i>. 
+      <a href="https://arxiv.org/abs/2410.13803" target="_blank">https://arxiv.org/abs/2410.13803</a>
+    </li>
+  </ol>
 </div>
+
+
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
