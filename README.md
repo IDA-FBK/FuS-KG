@@ -148,7 +148,7 @@ The USDA database, originally in Excel, was manually reformatted for compatibili
 
 **MMKG materialization**
 
-Using Python scripts with the `rdflib` library ([CODE](https://github.com/IDA-FBK/FuS-KG/tree/main/code)), we parsed TBox concepts and properties and linked entities from all sources (ingredients, nutrition, preparation steps, images, videos). The resulting ABox TTL files and generation scripts are available in the repository. Manual inspections ensured data integrity before publishing. The table below shows the KG metrics by module.
+Using Python scripts ([CODE](https://github.com/IDA-FBK/FuS-KG/tree/main/code)) with the `rdflib` library , we parsed TBox concepts and properties and linked entities from all sources (ingredients, nutrition, preparation steps, images, videos). The resulting ABox TTL files and generation scripts are available in the repository. Manual inspections ensured data integrity before publishing. The table below shows the KG metrics by module.
 
 <div align="center">
 
@@ -180,8 +180,9 @@ Using Python scripts with the `rdflib` library ([CODE](https://github.com/IDA-FB
 </div>
 
 
-**MMKG access**  
-All FuS-KG materials—including [[FusKG-Abox]](/ontology/TBox/), [[FusKG-Abox]](/ontology/ABox/), and [documentation](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html) are hosted on GitHub. Additionally, a [Google Colab notebook](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook) enables interactive SPARQL queries based on CQs associated with the requirements REQs.
+**MMKG access**
+
+All FuS-KG materials, including [[FusKG-Abox]](/ontology/TBox/), [[FusKG-Abox]](/ontology/ABox/), and [documentation](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html) are hosted on GitHub. Additionally, a Google Colab notebook (see below) enables interactive SPARQL queries based on CQs associated with the REQs.
 
 ## 🚀 Google Colab Notebook
 
