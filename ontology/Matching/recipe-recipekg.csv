@@ -1,0 +1,6 @@
+Ontology 1 (https://w3id.org/fuskg/recipe),Relation,Ontology 2 (http://purl.org/recipekg/)
+https://w3id.org/fuskg/recipe#Recipe,=,http://schema.org/Recipe
+https://w3id.org/fuskg/food#Cholesterol,=,http://purl.org/recipeKG.owl#CholesterolData
+https://w3id.org/fuskg/core#Nutrient,=,http://purl.org/recipeKG.owl#NutrientData
+https://w3id.org/fuskg/food#Protein,=,http://purl.org/recipeKG.owl#ProteinData
+https://w3id.org/fuskg/food#Sodium,=,http://purl.org/recipeKG.owl#SodiumData

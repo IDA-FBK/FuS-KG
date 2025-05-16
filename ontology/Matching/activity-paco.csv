@@ -1,0 +1,7 @@
+Ontology 1 (https://w3id.org/fuskg/activity),Relation,Ontology 2 (http://www.semanticweb.org/hyk038/ontologies/2018/7/untitled-ontology-17)
+https://w3id.org/fuskg/activity#HomeRepair,=,http://www.semanticweb.org/hyk038/ontologies/2018/7/untitled-ontology-17#Home_repair
+https://w3id.org/fuskg/core#Activity,=,http://www.semanticweb.org/hyk038/ontologies/2018/7/untitled-ontology-17#Activity
+https://w3id.org/fuskg/activity#Running,=,http://www.semanticweb.org/hyk038/ontologies/2018/7/untitled-ontology-17#Running
+https://w3id.org/fuskg/activity#Walking,=,http://www.semanticweb.org/hyk038/ontologies/2018/7/untitled-ontology-17#Walking
+https://w3id.org/fuskg/activity#Bicycling,=,http://www.semanticweb.org/hyk038/ontologies/2018/7/untitled-ontology-17#Cycling
+https://w3id.org/fuskg/activity#FishingHunting,=,http://www.semanticweb.org/hyk038/ontologies/2018/7/untitled-ontology-17#Fishing
