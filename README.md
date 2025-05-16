@@ -72,7 +72,8 @@ We developed FuS-KG by combining **METHONTOLOGY** and **Modular Ontology Modelin
 
 5. **Integration**
      
-     FuS-KG aligns its core concepts with the DOLCE foundational ontology and integrates external vocabularies to enhance interoperability. These include the Time Ontology (ProperInterval), DCAT (Resource), and AGROVOC for nutritional concepts, enabling linkage with the Linked Open Data (LOD) cloud. We also manually aligned FuS-KG modules with domain ontologies using Protégé. The table        below summarizes the number of matches found per module and target ontology.
+   FuS-KG aligns its core concepts with the DOLCE foundational ontology and integrates external vocabularies to enhance interoperability. These include the Time Ontology (ProperInterval), DCAT (Resource), and AGROVOC for nutritional concepts, enabling linkage with the Linked Open Data (LOD) cloud. To allow ontology integration, we also investigated the presence of possible
+   matches between the modules of the FuS-KG and the available ontologies in the identified domains of FSI. The table below summarizes the number of matches found per module and target ontology (see [Matching](/ontology/Matching/) folder for details)
 
      <div align="center">
         <table>
@@ -97,16 +98,16 @@ We developed FuS-KG by combining **METHONTOLOGY** and **Modular Ontology Modelin
       </div>
 
 
-6. **Implementation**
+7. **Implementation**
    
    FuS-KG is fully represented in Turtle (TTL) format. To manage its size and promote knowledge reuse, we applied the MOMo methodology. MOMo offers flexible guidelines through a sequence of steps to define modular ontologies, allowing engineers to create domain-specific modules as needed.
 
-7. **Evaluation**
+8. **Evaluation**
     
    FuS-KG was thoroughly analyzed using the [OOPS! pitfall scanner](https://oops.linkeddata.es/) to identify potential issues. Most pitfalls detected related to reused ontologies (e.g., HeLiS) and included unconnected elements, missing annotations, and undeclared inverse relationships. All issues in newly developed modules were resolved.
    Consistency checks with Pellet and HermiT reasoners found no errors. Each module was individually evaluated to ensure quality, and the full FuS-KG passed successfully, confirming it is consistent, error-free, and meets all requirements.
 
-8. **Documentation**
+9. **Documentation**
     
    To facilitate community access and reuse, we provide comprehensive [HTML-DOCS](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html) of the FuS-KG ontology, generated using the [Widoco documentation tool](https://github.com/dgarijo/Widoco).
 
@@ -182,7 +183,7 @@ Using Python scripts ([CODE](https://github.com/IDA-FBK/FuS-KG/tree/main/code)) 
 
 **MMKG access**
 
-All FuS-KG materials, including [[FusKG-Abox]](/ontology/TBox/), [[FusKG-Abox]](/ontology/ABox/), and [documentation](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html) are hosted on GitHub. Additionally, a Google Colab notebook (see below) enables interactive SPARQL queries based on CQs associated with the REQs.
+All FuS-KG materials, including [FusKG-Tbox](/ontology/TBox/), [FusKG-Abox](/ontology/ABox/), and [documentation](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html) are hosted on GitHub. Additionally, a Google Colab notebook (see below) enables interactive SPARQL queries based on CQs associated with the REQs.
 
 ## 🚀 Google Colab Notebook
 
