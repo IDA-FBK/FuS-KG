@@ -41,7 +41,7 @@ to guide you through the process of loading and running the notebook.
 
 ### Ontology
 
-The ontology folder contains the [TBox](https://github.com/IDA-FBK/FuS-KG/tree/main/ontology/TBox) and [ABox](https://github.com/IDA-FBK/FuS-KG/tree/main/ontology/ABox) files of FuS-KG.
+The ontology folder contains the [TBox](https://github.com/IDA-FBK/FuS-KG/tree/main/ontology/TBox), [ABox](https://github.com/IDA-FBK/FuS-KG/tree/main/ontology/ABox) files of FuS-KG and the [Matching](../ontology/Matching/) folder that contains the analysis of the matches between the modules of the FuS-KG and the available ontologies in the identified domains of FSI.
 
 ### Requirements and Competency Questions
 
