@@ -110,7 +110,7 @@ of each activity for each kilogram of body weight.</span>
 <span class="markdown">
 The activity module imports the Core and the Multimodal modules and it includes the taxonomy of all activities
 covered by FuS-KG together with the knowledge related to the effort required to fulfill each activity.
-The Activity category is divided into two categories (i.e., LifeActivity and PhysicalActivity) that are further sub-categorized. Then, each activity is connected to a SpecializedActivity through the
+The Activity category is divided into two categories (i.e., NonSportActivity and SportActivity) that are further sub-categorized. Then, each activity is connected to a SpecializedActivity through the
 specializes property. The SpecializedActivity concept identifies activities specifying their metabolic
 effort based on who performs the activity. In particular, a SpecializedActivity is connected to a
 PractitionerType with the practicedBy property which indicates the type of person that performs
@@ -171,7 +171,7 @@ This ontology has the following classes and properties.</span>
       <a href="#LawnGarden" title="https://w3id.org/fuskg/activity#LawnGarden">Lawn and Garden Activities</a>
    </li>
    <li>
-      <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a>
+      <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a>
    </li>
    <li>
       <a href="#MusicPlaying" title="https://w3id.org/fuskg/activity#MusicPlaying">Music Playing</a>
@@ -180,7 +180,7 @@ This ontology has the following classes and properties.</span>
       <a href="#Occupation" title="https://w3id.org/fuskg/activity#Occupation">Occupation</a>
    </li>
    <li>
-      <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a>
+      <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a>
    </li>
    <li>
       <a href="#PractionerType" title="https://w3id.org/fuskg/activity#PractionerType">PractionerType</a>
@@ -194,7 +194,7 @@ This ontology has the following classes and properties.</span>
          title="https://w3id.org/fuskg/activity#ReligiousActivities">Religious Activities</a>
    </li>
    <li>
-      <a href="#Running" title="https://w3id.org/fuskg/activity#Running">Runing</a>
+      <a href="#Running" title="https://w3id.org/fuskg/activity#Running">Running</a>
    </li>
    <li>
       <a href="#SelfCare" title="https://w3id.org/fuskg/activity#SelfCare">Self Care</a>
@@ -329,8 +329,8 @@ The Activity module imports the Core and the Multimodal module. It introduces a 
 The module divides the [Activity](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Activity) concept into two main categories:  
 
 
-- [LifeActivity](#LifeActivity): Daily activities essential for living.
-- [PhysicalActivity](#PhysicalActivity): Activities requiring physical exertion.
+- [NonSportActivity](#NonSportActivity): Daily activities essential for living.
+- [SportActivity](#SportActivity): Activities requiring physical exertion.
 
 
 Each activity is further specialized through the [specializes](#specializes) property, linking it to a [SpecializedActivity](#SpecializedActivity), which defines the metabolic effort required based on the performer.  
@@ -361,14 +361,14 @@ This section provides details for each class and property defined by Activity Mo
   <li><a href="#HomeActivity" title="https://w3id.org/fuskg/activity#HomeActivity">Home Activity</a></li>
   <li><a href="#HomeRepair" title="https://w3id.org/fuskg/activity#HomeRepair">Home Repairs</a></li>
   <li><a href="#LawnGarden" title="https://w3id.org/fuskg/activity#LawnGarden">Lawn and Garden Activities</a></li>
-  <li><a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a></li>
+  <li><a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a></li>
   <li><a href="#MusicPlaying" title="https://w3id.org/fuskg/activity#MusicPlaying">Music Playing</a></li>
   <li><a href="#Occupation" title="https://w3id.org/fuskg/activity#Occupation">Occupation</a></li>
-  <li><a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a></li>
+  <li><a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a></li>
   <li><a href="#PractionerType" title="https://w3id.org/fuskg/activity#PractionerType">PractionerType</a></li>
   <li><a href="#RelaxingActivityAndHobbies" title="https://w3id.org/fuskg/activity#RelaxingActivityAndHobbies">Relaxing and Hobby Activities</a></li>
   <li><a href="#ReligiousActivities" title="https://w3id.org/fuskg/activity#ReligiousActivities">Religious Activities</a></li>
-  <li><a href="#Running" title="https://w3id.org/fuskg/activity#Running">Runing</a></li>
+  <li><a href="#Running" title="https://w3id.org/fuskg/activity#Running">Running</a></li>
   <li><a href="#SelfCare" title="https://w3id.org/fuskg/activity#SelfCare">Self Care</a></li>
   <li><a href="#SexualActivity" title="https://w3id.org/fuskg/activity#SexualActivity">Sexual Activity</a></li>
   <li><a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a></li>
@@ -389,7 +389,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -404,7 +404,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -419,7 +419,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -434,7 +434,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -449,7 +449,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -464,7 +464,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -479,15 +479,15 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="LifeActivity">
-  <h3>Life Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#LifeActivity</p>
+ <div class="entity" id="NonSportActivity">
+  <h3>Non Sport Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#NonSportActivity</p>
   <div class="comment">
-   <span class="markdown">This is the root concept for the Life Activity branch. All sub-concepts represent a specific category regading life activities.</span>
+   <span class="markdown">This is the root concept for the Non Sport Activity branch. All sub-concepts represent a specific category regading life activities.</span>
   </div>
   <dl class="description">
    <dt>
@@ -515,7 +515,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -530,15 +530,15 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="PhysicalActivity">
-  <h3>Physical Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#PhysicalActivity</p>
+ <div class="entity" id="SportActivity">
+  <h3>Sport Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#SportActivity</p>
   <div class="comment">
-   <span class="markdown">This is the root concept for the Physical Activity branch. All sub-concepts represent a specific category regarding physical activities.</span>
+   <span class="markdown">This is the root concept for the Sport Activity branch. All sub-concepts represent a specific category regarding physical activities.</span>
   </div>
   <dl class="description">
    <dt>
@@ -551,7 +551,7 @@ This section provides details for each class and property defined by Activity Mo
     has sub-classes
    </dt>
    <dd>
-    <a href="#Bicycling" title="https://w3id.org/fuskg/activity#Bicycling">Bicycling</a> <sup class="type-c" title="class">c</sup>, <a href="#ConditioningExercise" title="https://w3id.org/fuskg/activity#ConditioningExercise">Conditioning Exercise</a> <sup class="type-c" title="class">c</sup>, <a href="#Dancing" title="https://w3id.org/fuskg/activity#Dancing">Dancing</a> <sup class="type-c" title="class">c</sup>, <a href="#FishingHunting" title="https://w3id.org/fuskg/activity#FishingHunting">Fishing and Hunting</a> <sup class="type-c" title="class">c</sup>, <a href="#Running" title="https://w3id.org/fuskg/activity#Running">Runing</a> <sup class="type-c" title="class">c</sup>, <a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a> <sup class="type-c" title="class">c</sup>, <a href="#Walking" title="https://w3id.org/fuskg/activity#Walking">Walking</a> <sup class="type-c" title="class">c</sup>, <a href="#WaterActivities" title="https://w3id.org/fuskg/activity#WaterActivities">Water Activities</a> <sup class="type-c" title="class">c</sup>, <a href="#WinterActivities" title="https://w3id.org/fuskg/activity#WinterActivities">Winter Activities</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Bicycling" title="https://w3id.org/fuskg/activity#Bicycling">Bicycling</a> <sup class="type-c" title="class">c</sup>, <a href="#ConditioningExercise" title="https://w3id.org/fuskg/activity#ConditioningExercise">Conditioning Exercise</a> <sup class="type-c" title="class">c</sup>, <a href="#Dancing" title="https://w3id.org/fuskg/activity#Dancing">Dancing</a> <sup class="type-c" title="class">c</sup>, <a href="#FishingHunting" title="https://w3id.org/fuskg/activity#FishingHunting">Fishing and Hunting</a> <sup class="type-c" title="class">c</sup>, <a href="#Running" title="https://w3id.org/fuskg/activity#Running">Running</a> <sup class="type-c" title="class">c</sup>, <a href="#Sports" title="https://w3id.org/fuskg/activity#Sports">Sports</a> <sup class="type-c" title="class">c</sup>, <a href="#Walking" title="https://w3id.org/fuskg/activity#Walking">Walking</a> <sup class="type-c" title="class">c</sup>, <a href="#WaterActivities" title="https://w3id.org/fuskg/activity#WaterActivities">Water Activities</a> <sup class="type-c" title="class">c</sup>, <a href="#WinterActivities" title="https://w3id.org/fuskg/activity#WinterActivities">Winter Activities</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -573,7 +573,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -588,12 +588,12 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="Running">
-  <h3>Runing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>Running<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/activity#Running</p>
   <div class="comment">
    <span class="markdown">Concept denoting activities belonging to the Running category.</span>
@@ -603,7 +603,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -618,7 +618,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -633,7 +633,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -648,7 +648,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -670,7 +670,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#LifeActivity" title="https://w3id.org/fuskg/activity#LifeActivity">Life Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#NonSportActivity" title="https://w3id.org/fuskg/activity#NonSportActivity">Non Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -685,7 +685,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -700,7 +700,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -715,7 +715,7 @@ This section provides details for each class and property defined by Activity Mo
     has super-classes
    </dt>
    <dd>
-    <a href="#PhysicalActivity" title="https://w3id.org/fuskg/activity#PhysicalActivity">Physical Activity</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SportActivity" title="https://w3id.org/fuskg/activity#SportActivity">Sport Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
