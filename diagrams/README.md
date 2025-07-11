@@ -38,8 +38,8 @@ Nutritional properties are represented by:
 ### 3. Activity Module
 The **Activity** module imports the **Core** and the **Multimodal**  modules and classifies activities into:
 
-- **LifeActivity**: Activities related to daily living.
-- **PhysicalActivity**: Activities involving physical exertion.
+- **NonSportActivity**: Activities related to daily living.
+- **SportActivity**: Activities involving physical exertion.
 
 Each activity is connected to a **SpecializedActivity** based on the practitioner type (e.g., adult, older adult, wheelchair user) using the `practicedBy` property. Effort is represented by:
 
