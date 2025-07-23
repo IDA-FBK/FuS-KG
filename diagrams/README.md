@@ -50,11 +50,7 @@ Each activity is connected to a **SpecializedActivity** based on the practitione
 The **Barrier** module imports the **Core** module and include:
 
 - **CognitiveBarrier**, **HealthBarrier**, **PsychologicalBarrier**, **PhysicalBarrier**: Categories of barriers affecting activities, foods, or nutrients.
-
-Other key concepts include:
-
-- **StateOfChange**: Represents the user's attitude toward behavior change (e.g., Pre-contemplation, Contemplation).
-- **Patient**: Represents a user with a diagnosis connected to a **DiseaseRelation**, which models the relationship between a disease and a health barrier.
+- **FeatureOfInterest**: Specifies the feature of interest relating to a barrier.
 
 ### 5. Disease Module
 The **Disease** module imports the **Food** module and models food-disease relationships using the **DiseaseRiskLevel** concept. Key properties include:
