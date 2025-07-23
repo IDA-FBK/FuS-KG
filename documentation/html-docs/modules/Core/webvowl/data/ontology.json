@@ -19,17 +19,17 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Gianluca Apriceno",
-        "type" : "label"
-      }, {
-        "identifier" : "creator",
-        "language" : "undefined",
         "value" : "Mauro Dragoni",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
         "value" : "Tania Bailoni",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Gianluca Apriceno",
         "type" : "label"
       } ],
       "rights" : [ {
@@ -44,28 +44,28 @@
         "value" : "fscore",
         "type" : "label"
       } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2024-04-26",
-        "type" : "label"
-      } ],
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
         "value" : "Intelligent Digital Agents Research Group @ Digital Health and Wellbeing Center, Fondazione Bruno Kessler <https://digitalhealthcenter-en.fbk.eu/home>",
         "type" : "label"
       } ],
-      "preferredNamespaceUri" : [ {
-        "identifier" : "preferredNamespaceUri",
+      "modified" : [ {
+        "identifier" : "modified",
         "language" : "undefined",
-        "value" : "https://w3id.org/fuskg/core#",
+        "value" : "2024-04-26",
         "type" : "label"
       } ],
       "versionInfo" : [ {
         "identifier" : "versionInfo",
         "language" : "en",
         "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/fuskg/core#",
         "type" : "label"
       } ],
       "issued" : [ {
@@ -84,10 +84,10 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "0",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "1",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
     "id" : "4",
@@ -96,7 +96,7 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "3",
+    "id" : "1",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -111,7 +111,7 @@
     "comment" : {
       "en" : "This is the root concept for the Nutrient branch. All sub-concepts represent a specific nutrient that can be contained in a specific food."
     },
-    "id" : "0"
+    "id" : "2"
   }, {
     "iri" : "https://w3id.org/fuskg/core#Activity",
     "baseIri" : "https://w3id.org/fuskg/core",
@@ -124,7 +124,7 @@
     "comment" : {
       "en" : "This is the root concept for the Activity branch. All sub-concepts represent a specific category of activities."
     },
-    "id" : "1"
+    "id" : "3"
   }, {
     "iri" : "https://w3id.org/fuskg/core#Barrier",
     "baseIri" : "https://w3id.org/fuskg/core",
@@ -140,8 +140,8 @@
     "id" : "4"
   }, {
     "instances" : 0,
-    "union" : [ "0", "3" ],
-    "attributes" : [ "anonymous", "union" ],
+    "union" : [ "2", "1" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "6"
   }, {
     "iri" : "https://w3id.org/fuskg/core#Food",
@@ -155,10 +155,10 @@
     "comment" : {
       "en" : "This is the root concept for the Food branch. All sub-concepts represent a specific category of foods."
     },
-    "id" : "3"
+    "id" : "1"
   } ],
   "property" : [ {
-    "id" : "2",
+    "id" : "0",
     "type" : "owl:objectProperty"
   }, {
     "id" : "5",
@@ -173,18 +173,18 @@
   "propertyAttribute" : [ {
     "iri" : "https://w3id.org/fuskg/core#hasNutrient",
     "baseIri" : "https://w3id.org/fuskg/core",
-    "range" : "0",
+    "range" : "2",
     "label" : {
       "IRI-based" : "hasNutrient",
       "en" : "has Nutrient",
       "it" : "ha Nutriente"
     },
-    "domain" : "3",
+    "domain" : "1",
     "comment" : {
       "en" : "This property specifies the nutrient(s) contained ia a food."
     },
     "attributes" : [ "object" ],
-    "id" : "2"
+    "id" : "0"
   }, {
     "iri" : "https://w3id.org/fuskg/core#concernsConsumptionOf",
     "baseIri" : "https://w3id.org/fuskg/core",
@@ -203,13 +203,13 @@
   }, {
     "iri" : "https://w3id.org/fuskg/core#contains",
     "baseIri" : "https://w3id.org/fuskg/core",
-    "range" : "3",
+    "range" : "1",
     "label" : {
       "IRI-based" : "contains",
       "en" : "contains",
       "it" : "contiene"
     },
-    "domain" : "3",
+    "domain" : "1",
     "comment" : {
       "en" : "This property specifies that a food contains another food"
     },
@@ -218,7 +218,7 @@
   }, {
     "iri" : "https://w3id.org/fuskg/core#affectsPerformingOf",
     "baseIri" : "https://w3id.org/fuskg/core",
-    "range" : "1",
+    "range" : "3",
     "label" : {
       "IRI-based" : "affectsPerformingOf",
       "en" : "affects performing of",
