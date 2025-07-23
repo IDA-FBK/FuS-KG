@@ -152,6 +152,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a>
    </li>
+   <li>
+      <a href="#ViolationInterval"
+         title="https://w3id.org/fuskg/guidelines#ViolationInterval">Violation Interval</a>
+   </li>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
@@ -162,6 +166,10 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#hasViolationInterval"
+         title="https://w3id.org/fuskg/guidelines#hasViolationInterval">has violation interval</a>
+   </li>
+   <li>
       <a href="#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -170,6 +178,26 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasRuleDefinition"
          title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a>
+   </li>
+   <li>
+      <a href="#bounds" title="https://w3id.org/fuskg/guidelines#bounds">
+         <span>bounds</span>
+      </a>
+   </li>
+   <li>
+      <a href="#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound">
+         <span>lower Bound</span>
+      </a>
+   </li>
+   <li>
+      <a href="#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound">
+         <span>upper Bound</span>
+      </a>
+   </li>
+   <li>
+      <a href="#hasLevel" title="https://w3id.org/fuskg/guidelines#hasLevel">
+         <span>has Level</span>
+      </a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -226,11 +254,6 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound">
-         <span>lower Bound</span>
-      </a>
-   </li>
-   <li>
       <a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified">
          <span>modified</span>
       </a>
@@ -283,11 +306,6 @@ This ontology has the following classes and properties.</span>
          <span>title</span>
       </a>
    </li>
-   <li>
-      <a href="#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound">
-         <span>upper Bound</span>
-      </a>
-   </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
   
@@ -307,8 +325,9 @@ The core concept of this module is [MonitoringRule](#MonitoringRule), which defi
 
 The module introduces the following key properties:  
 
-- [hasRuleDefinition](#hasRuleDefinition): Specifies the definition of a MonitoringRule.  
-- [hasMonitoredValueInterval](#hasMonitoredValueInterval): Defines the monitored interval (i.e., [ValueInterval](#ValueInterval)).  
+- [hasRuleDefinition](#hasRuleDefinition): Specifies the definition of a [MonitoringRule](#MonitoringRule).  
+- [hasMonitoredValueInterval](#hasMonitoredValueInterval): Defines the monitored interval (i.e., [ValueInterval](#ValueInterval)).
+- [hasViolationInterval](#hasViolationInterval) Connects a [MonitoringRule](#MonitoringRule) to a [ViolationInterval](#ViolationInterval) which allows to define tolerances associated with how much a [MonitoringRule](#MonitoringRule) has been violated.
 - [monitors](#monitors): Associates monitoring rules with users.  
 	</div>
 </div>
@@ -323,6 +342,7 @@ This section provides details for each class and property defined by Guidelines 
  <ul class="hlist">
   <li><a href="#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a></li>
   <li><a href="#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a></li>
+  <li><a href="#ViolationInterval" title="https://w3id.org/fuskg/guidelines#ViolationInterval">Violation Interval</a></li>
  </ul>
  <div class="entity" id="MonitoringRule">
   <h3>Monitoring Rule<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -354,10 +374,32 @@ This section provides details for each class and property defined by Guidelines 
    </dd>
   </dl>
  </div>
+  <div class="entity" id="ViolationInterval">
+  <h3>Violation Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#ViolationInterval</p>
+  <div class="comment">
+   <span class="markdown">This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#bounds" title="https://w3id.org/fuskg/guidelines#bounds">bounds</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasLevel" title="https://w3id.org/fuskg/guidelines#hasLevel">has Level</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound">lower Bound</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound">upper Bound</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasViolationInterval" title="https://w3id.org/fuskg/guidelines#hasViolationInterval">has violation interval</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#hasMonitoredValueInterval" title="https://w3id.org/fuskg/guidelines#hasMonitoredValueInterval"> <span>has Monitored Value Interval</span> </a></li>
+  <li><a href="#hasViolationInterval" title="https://w3id.org/fuskg/guidelines#hasViolationInterval">has violation interval</a></li>
   <li><a href="#monitors" title="https://w3id.org/fuskg/guidelines#monitors">monitors</a></li>
  </ul>
  <div class="entity" id="hasMonitoredValueInterval">
@@ -376,6 +418,29 @@ This section provides details for each class and property defined by Guidelines 
     </dt>
     <dd>
      <a href="#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+  <div class="entity" id="hasViolationInterval">
+  <h3>has violation interval<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasViolationInterval</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the ViolationInterval of a MonitoringRule.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MonitoringRule" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ViolationInterval" title="https://w3id.org/fuskg/guidelines#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -401,6 +466,10 @@ This section provides details for each class and property defined by Guidelines 
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
   <li><a href="#hasRuleDefinition" title="https://w3id.org/fuskg/guidelines#hasRuleDefinition">has rule definition</a></li>
+  <li><a href="#hasLevel" title="https://w3id.org/fuskg/guidelines#hasLevel"> <span>has Level</span> </a></li>
+  <li><a href="#bounds" title="https://w3id.org/fuskg/guidelines#bounds"> <span>bounds</span> </a></li>
+  <li><a href="#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound"> <span>lower Bound</span> </a></li>
+  <li><a href="#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound"> <span>upper Bound</span> </a></li>
  </ul>
  <div class="entity" id="hasRuleDefinition">
   <h3>has rule definition<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
@@ -425,6 +494,89 @@ This section provides details for each class and property defined by Guidelines 
    </dl>
   </div>
  </div>
+  <div class="entity" id="hasLevel">
+  <h3>has Level<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#hasLevel</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ViolationInterval" title="https://w3id.org/fuskg/guidelines#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+  <div class="entity" id="bounds">
+  <h3>bounds<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#bounds</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#ViolationInterval" title="https://w3id.org/fuskg/guidelines#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+  <div class="entity" id="lowerBound">
+  <h3>lower Bound<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#lowerBound</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#ViolationInterval" title="https://w3id.org/fuskg/guidelines#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="upperBound">
+  <h3>upper Bound<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#upperBound</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ValueInterval" title="https://w3id.org/fuskg/guidelines#ValueInterval">Value Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#ViolationInterval" title="https://w3id.org/fuskg/guidelines#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="annotationproperties">
  <h3 id="annotationproperties" class="list">Annotation Properties</h3>
  <ul class="hlist">
@@ -438,7 +590,6 @@ This section provides details for each class and property defined by Guidelines 
   <li><a href="#hasRuleId" title="https://w3id.org/fuskg/guidelines#hasRuleId"> <span>has Rule Id</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/issued" title="http://purl.org/dc/terms/issued"> <span>issued</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/license" title="http://purl.org/dc/terms/license"> <span>license</span> </a></li>
-  <li><a href="#lowerBound" title="https://w3id.org/fuskg/guidelines#lowerBound"> <span>lower Bound</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/modified" title="http://purl.org/dc/terms/modified"> <span>modified</span> </a></li>
   <li><a href="#monitoredEntity" title="https://w3id.org/fuskg/guidelines#monitoredEntity"> <span>monitored Entity</span> </a></li>
   <li><a href="#monitoredEntityType" title="https://w3id.org/fuskg/guidelines#monitoredEntityType"> <span>monitored Entity Type</span> </a></li>
@@ -449,7 +600,6 @@ This section provides details for each class and property defined by Guidelines 
   <li><a href="#http://purl.org/dc/terms/rights" title="http://purl.org/dc/terms/rights"> <span>rights</span> </a></li>
   <li><a href="#timing" title="https://w3id.org/fuskg/guidelines#timing"> <span>timing</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
-  <li><a href="#upperBound" title="https://w3id.org/fuskg/guidelines#upperBound"> <span>upper Bound</span> </a></li>
  </ul>
  <div class="entity" id="activeCategory">
   <h3>active Category<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
@@ -535,20 +685,6 @@ This section provides details for each class and property defined by Guidelines 
   <h3>license<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/license</p>
  </div>
- <div class="entity" id="lowerBound">
-  <h3>lower Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#lowerBound</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="http://purl.org/dc/terms/modified">
   <h3>modified<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/modified</p>
@@ -612,20 +748,6 @@ This section provides details for each class and property defined by Guidelines 
  <div class="entity" id="http://purl.org/dc/terms/title">
   <h3>title<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/dc/terms/title</p>
- </div>
- <div class="entity" id="upperBound">
-  <h3>upper Bound<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/guidelines#upperBound</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
-    </dd>
-   </dl>
-  </div>
  </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
