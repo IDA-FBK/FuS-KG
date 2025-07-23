@@ -124,6 +124,7 @@ the Violation concept that expresses the list of user’s violations.</span>
 <tr><td><b>fsacti</b></td><td>&lt;https://w3id.org/fuskg/activity#&gt;</td></tr>
 <tr><td><b>fsbarr</b></td><td>&lt;https://w3id.org/fuskg/barrier#&gt;</td></tr>
 <tr><td><b>fscore</b></td><td>&lt;https://w3id.org/fuskg/core#&gt;</td></tr>
+<tr><td><b>fsdise</b></td><td>&lt;https://w3id.org/fuskg/disease#&gt;</td></tr>
 <tr><td><b>fsguid</b></td><td>&lt;https://w3id.org/fuskg/guidelines#&gt;</td></tr>
 <tr><td><b>fstemp</b></td><td>&lt;https://w3id.org/fuskg/temporal#&gt;</td></tr>
 <tr><td><b>fsuser</b></td><td>&lt;https://w3id.org/fuskg/user#&gt;</td></tr>
@@ -150,10 +151,19 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
+      <a href="#Action" title="https://w3id.org/fuskg/user#Action">Action</a>
+   </li>
+   <li>
       <a href="#Breakfast" title="https://w3id.org/fuskg/user#Breakfast">Breakfast</a>
    </li>
    <li>
       <a href="#ConsumedFood" title="https://w3id.org/fuskg/user#ConsumedFood">Consumed Food</a>
+   </li>
+   <li>
+      <a href="#Contemplation" title="https://w3id.org/fuskg/user#Contemplation">Contemplation</a>
+   </li>
+   <li>
+      <a href="#CurrentCondition" title="https://w3id.org/fuskg/user#CurrentCondition">Current Condition</a>
    </li>
    <li>
       <a href="#Dinner" title="https://w3id.org/fuskg/user#Dinner">Dinner</a>
@@ -166,16 +176,43 @@ This ontology has the following classes and properties.</span>
       <a href="#Lunch" title="https://w3id.org/fuskg/user#Lunch">Lunch</a>
    </li>
    <li>
+      <a href="#Maintenance" title="https://w3id.org/fuskg/user#Maintenance">
+         <span>Maintenance</span>
+      </a>
+   </li>
+   <li>
       <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a>
    </li>
    <li>
       <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a>
    </li>
    <li>
+      <a href="#PreContemplation" title="https://w3id.org/fuskg/user#PreContemplation">
+         <span>Pre Contemplation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Preparation" title="https://w3id.org/fuskg/user#Preparation">
+         <span>Preparation</span>
+      </a>
+   </li>
+   <li>
       <a href="#Profile" title="https://w3id.org/fuskg/user#Profile">Profile</a>
    </li>
    <li>
+      <a href="#DiseaseConditionRelation"
+         title="https://w3id.org/fuskg/user#DiseaseConditionRelation">Relation between Disease and Current Condition</a>
+   </li>
+   <li>
       <a href="#Snack" title="https://w3id.org/fuskg/user#Snack">Snack</a>
+   </li>
+   <li>
+      <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a>
+   </li>
+   <li>
+      <a href="#Termination" title="https://w3id.org/fuskg/user#Termination">
+         <span>Termination</span>
+      </a>
    </li>
    <li>
       <a href="#User" title="https://w3id.org/fuskg/user#User">User</a>
@@ -183,14 +220,15 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a>
    </li>
-   <li>
-      <a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a>
-   </li>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
       <a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a>
+   </li>
+   <li>
+      <a href="#belongsToStageOfChange"
+         title="https://w3id.org/fuskg/user#belongsToStageOfChange">belongs to stage of change</a>
    </li>
    <li>
       <a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a>
@@ -202,7 +240,19 @@ This ontology has the following classes and properties.</span>
       <a href="#hasActivity" title="https://w3id.org/fuskg/user#hasActivity">has activity</a>
    </li>
    <li>
+      <a href="#hasBehavior" title="https://w3id.org/fuskg/user#hasBehavior">has behavior</a>
+   </li>
+   <li>
       <a href="#hasConsumedFood" title="https://w3id.org/fuskg/user#hasConsumedFood">has Consumed Food</a>
+   </li>
+   <li>
+      <a href="#hasCurrentCondition" title="https://w3id.org/fuskg/user#hasCurrentCondition">has current condition</a>
+   </li>
+   <li>
+      <a href="#hasDiagnosis" title="https://w3id.org/fuskg/user#hasDiagnosis">has diagnosis</a>
+   </li>
+   <li>
+      <a href="#hasDisease" title="https://w3id.org/fuskg/user#hasDisease">has disease</a>
    </li>
    <li>
       <a href="#hasFood" title="https://w3id.org/fuskg/user#hasFood">has Food</a>
@@ -222,6 +272,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a>
    </li>
+   <li>
+      <a href="#isTriggeredBy" title="https://w3id.org/fuskg/user#isTriggeredBy">triggeres</a>
+   </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
@@ -234,9 +287,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#activityStartTimestamp"
          title="https://w3id.org/fuskg/user#activityStartTimestamp">activity start timestamp</a>
-   </li>
-   <li>
-      <a href="#bounds" title="https://w3id.org/fuskg/user#bounds">bounds</a>
    </li>
    <li>
       <a href="#hasDailyCaloricIntake"
@@ -391,8 +441,7 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
-</div>
-  
+</div>  
 
 <!--DESCRIPTION SECTION-->
 <div id="description"><h2 id="desc" class="list">User Module of Functional Status Knowledge Graph (FuS-KG): Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -422,19 +471,42 @@ This section provides details for each class and property defined by User Module
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
+  <li><a href="#Action" title="https://w3id.org/fuskg/user#Action">Action</a></li>
   <li><a href="#Breakfast" title="https://w3id.org/fuskg/user#Breakfast">Breakfast</a></li>
   <li><a href="#ConsumedFood" title="https://w3id.org/fuskg/user#ConsumedFood">Consumed Food</a></li>
+  <li><a href="#Contemplation" title="https://w3id.org/fuskg/user#Contemplation">Contemplation</a></li>
+  <li><a href="#CurrentCondition" title="https://w3id.org/fuskg/user#CurrentCondition">Current Condition</a></li>
   <li><a href="#Dinner" title="https://w3id.org/fuskg/user#Dinner">Dinner</a></li>
   <li><a href="#EffortCaloriesEquivalent" title="https://w3id.org/fuskg/user#EffortCaloriesEquivalent">Effort Calories Equivalent</a></li>
   <li><a href="#Lunch" title="https://w3id.org/fuskg/user#Lunch">Lunch</a></li>
+  <li><a href="#Maintenance" title="https://w3id.org/fuskg/user#Maintenance"> <span>Maintenance</span> </a></li>
   <li><a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a></li>
   <li><a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a></li>
+  <li><a href="#PreContemplation" title="https://w3id.org/fuskg/user#PreContemplation"> <span>Pre Contemplation</span> </a></li>
+  <li><a href="#Preparation" title="https://w3id.org/fuskg/user#Preparation"> <span>Preparation</span> </a></li>
   <li><a href="#Profile" title="https://w3id.org/fuskg/user#Profile">Profile</a></li>
+  <li><a href="#DiseaseConditionRelation" title="https://w3id.org/fuskg/user#DiseaseConditionRelation">Relation between Disease and Current Condition</a></li>
   <li><a href="#Snack" title="https://w3id.org/fuskg/user#Snack">Snack</a></li>
+  <li><a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a></li>
+  <li><a href="#Termination" title="https://w3id.org/fuskg/user#Termination"> <span>Termination</span> </a></li>
   <li><a href="#User" title="https://w3id.org/fuskg/user#User">User</a></li>
   <li><a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a></li>
-  <li><a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a></li>
  </ul>
+ <div class="entity" id="Action">
+  <h3>Action<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Action</p>
+  <div class="comment">
+   <span class="markdown">This concept defines the Action state of change.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Breakfast">
   <h3>Breakfast<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Breakfast</p>
@@ -471,6 +543,36 @@ This section provides details for each class and property defined by User Module
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Contemplation">
+  <h3>Contemplation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Contemplation</p>
+  <div class="comment">
+   <span class="markdown">This concept defines the Contemplation state of change.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CurrentCondition">
+  <h3>Current Condition<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#CurrentCondition</p>
+  <div class="comment">
+   <span class="markdown">This concept specifies the current condition of a disease, and is used to inditate the status of each DiseaseConditionRelationus.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCurrentCondition" title="https://w3id.org/fuskg/user#hasCurrentCondition">has current condition</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Dinner">
   <h3>Dinner<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Dinner</p>
@@ -490,7 +592,7 @@ This section provides details for each class and property defined by User Module
   <h3>Effort Calories Equivalent<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#EffortCaloriesEquivalent</p>
   <div class="comment">
-   <span class="markdown">This concept enables the reification of the relationships between a user, his/her body features and the energy consuption associated with each activity.</span>
+   <span class="markdown">This concept enables the reification of the relationships between a user, his/her body features and the energy consumption associated with each activity.</span>
   </div>
   <dl class="description">
    <dt>
@@ -513,6 +615,18 @@ This section provides details for each class and property defined by User Module
    </dt>
    <dd>
     <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Maintenance">
+  <h3>Maintenance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Maintenance</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -564,6 +678,30 @@ This section provides details for each class and property defined by User Module
    </dd>
   </dl>
  </div>
+ <div class="entity" id="PreContemplation">
+  <h3>Pre Contemplation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#PreContemplation</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Preparation">
+  <h3>Preparation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Preparation</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Profile">
   <h3>Profile<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Profile</p>
@@ -585,6 +723,27 @@ This section provides details for each class and property defined by User Module
    </dd>
   </dl>
  </div>
+ <div class="entity" id="DiseaseConditionRelation">
+  <h3>Relation between Disease and Current Condition<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#DiseaseConditionRelation</p>
+  <div class="comment">
+   <span class="markdown">The DiseaseConditionRelation class is created to be a place-holder class. This relation holds the disease type and the name (instance) of the User class. For the example, X has breast tumor at a specific stage and condition, the individual X of type User has a property hasDiagnosis that has a DiseaseConditionRelation (DiseaseRelation_X_1) that in turn has properties hasDisease that identifies the Disease (breast tumor) and hasCurrentCondition that indicates the stage/condition on the disease. please see the website below for more details http://www.w3.org/TR/swbp-n-aryRelations/</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCurrentCondition" title="https://w3id.org/fuskg/user#hasCurrentCondition">has current condition</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDisease" title="https://w3id.org/fuskg/user#hasDisease">has disease</a> <sup class="type-op" title="object property">op</sup>, <a href="#isTriggeredBy" title="https://w3id.org/fuskg/user#isTriggeredBy">triggeres</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasDiagnosis" title="https://w3id.org/fuskg/user#hasDiagnosis">has diagnosis</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Snack">
   <h3>Snack<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Snack</p>
@@ -600,6 +759,39 @@ This section provides details for each class and property defined by User Module
    </dd>
   </dl>
  </div>
+ <div class="entity" id="StageOfChange">
+  <h3>State of Change<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#StageOfChange</p>
+  <div class="comment">
+   <span class="markdown">This concept specifies the attitude toward change of a person.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Action" title="https://w3id.org/fuskg/user#Action">Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Contemplation" title="https://w3id.org/fuskg/user#Contemplation">Contemplation</a> <sup class="type-c" title="class">c</sup>, <a href="#Maintenance" title="https://w3id.org/fuskg/user#Maintenance">Maintenance</a> <sup class="type-c" title="class">c</sup>, <a href="#PreContemplation" title="https://w3id.org/fuskg/user#PreContemplation">Pre Contemplation</a> <sup class="type-c" title="class">c</sup>, <a href="#Preparation" title="https://w3id.org/fuskg/user#Preparation">Preparation</a> <sup class="type-c" title="class">c</sup>, <a href="#Termination" title="https://w3id.org/fuskg/user#Termination">Termination</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#belongsToStageOfChange" title="https://w3id.org/fuskg/user#belongsToStageOfChange">belongs to stage of change</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBehavior" title="https://w3id.org/fuskg/user#hasBehavior">has behavior</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Termination">
+  <h3>Termination<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#Termination</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="User">
   <h3>User<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#User</p>
@@ -611,7 +803,7 @@ This section provides details for each class and property defined by User Module
     is in domain of
    </dt>
    <dd>
-    <a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a> <sup class="type-op" title="object property">op</sup>, <a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDailyCaloricIntake" title="https://w3id.org/fuskg/user#hasDailyCaloricIntake">has daily caloric intake</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasUserId" title="https://w3id.org/fuskg/user#hasUserId">has user id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a> <sup class="type-op" title="object property">op</sup>, <a href="#belongsToStageOfChange" title="https://w3id.org/fuskg/user#belongsToStageOfChange">belongs to stage of change</a> <sup class="type-op" title="object property">op</sup>, <a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBehavior" title="https://w3id.org/fuskg/user#hasBehavior">has behavior</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDailyCaloricIntake" title="https://w3id.org/fuskg/user#hasDailyCaloricIntake">has daily caloric intake</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDiagnosis" title="https://w3id.org/fuskg/user#hasDiagnosis">has diagnosis</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasUserId" title="https://w3id.org/fuskg/user#hasUserId">has user id</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -636,35 +828,26 @@ This section provides details for each class and property defined by User Module
    </dd>
   </dl>
  </div>
- <div class="entity" id="ViolationInterval">
-  <h3>Violation Interval<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#ViolationInterval</p>
-  <div class="comment">
-   <span class="markdown">This concept is used for defining tollerances associated with Violation instances. These tollerances can be used for computing the gravity of each violation.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#bounds" title="https://w3id.org/fuskg/user#bounds">bounds</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasViolationLevel" title="https://w3id.org/fuskg/user#hasViolationLevel">has violation level</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-  </dl>
- </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
   <li><a href="#belongsProfile" title="https://w3id.org/fuskg/user#belongsProfile">belongs to profile</a></li>
+  <li><a href="#belongsToStageOfChange" title="https://w3id.org/fuskg/user#belongsToStageOfChange">belongs to stage of change</a></li>
   <li><a href="#consumed" title="https://w3id.org/fuskg/user#consumed">consumed</a></li>
   <li><a href="#containsUser" title="https://w3id.org/fuskg/user#containsUser">contains user</a></li>
   <li><a href="#hasActivity" title="https://w3id.org/fuskg/user#hasActivity">has activity</a></li>
+  <li><a href="#hasBehavior" title="https://w3id.org/fuskg/user#hasBehavior">has behavior</a></li>
   <li><a href="#hasConsumedFood" title="https://w3id.org/fuskg/user#hasConsumedFood">has Consumed Food</a></li>
+  <li><a href="#hasCurrentCondition" title="https://w3id.org/fuskg/user#hasCurrentCondition">has current condition</a></li>
+  <li><a href="#hasDiagnosis" title="https://w3id.org/fuskg/user#hasDiagnosis">has diagnosis</a></li>
+  <li><a href="#hasDisease" title="https://w3id.org/fuskg/user#hasDisease">has disease</a></li>
   <li><a href="#hasFood" title="https://w3id.org/fuskg/user#hasFood">has Food</a></li>
   <li><a href="#hasUser" title="https://w3id.org/fuskg/user#hasUser">has User</a></li>
   <li><a href="#hasViolationMeal" title="https://w3id.org/fuskg/user#hasViolationMeal">has violation on Meal</a></li>
   <li><a href="#hasViolationRule" title="https://w3id.org/fuskg/user#hasViolationRule">has violation on rule</a></li>
   <li><a href="#hasViolationUser" title="https://w3id.org/fuskg/user#hasViolationUser">has violation User</a></li>
   <li><a href="#performed" title="https://w3id.org/fuskg/user#performed">performed</a></li>
+  <li><a href="#isTriggeredBy" title="https://w3id.org/fuskg/user#isTriggeredBy">triggeres</a></li>
  </ul>
  <div class="entity" id="belongsProfile">
   <h3>belongs to profile<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
@@ -691,6 +874,29 @@ This section provides details for each class and property defined by User Module
     </dt>
     <dd>
      <a href="#containsUser" title="https://w3id.org/fuskg/user#containsUser">contains user</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="belongsToStageOfChange">
+  <h3>belongs to stage of change<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#belongsToStageOfChange</p>
+  <div class="comment">
+   <span class="markdown">This property specifies to which StageOfChange a User belongs.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -765,7 +971,30 @@ This section provides details for each class and property defined by User Module
      has range
     </dt>
     <dd>
-     <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Activity" target="_blank" title="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+     <a href="https://w3id.org/fuskg/core#Activity" target="_blank" title="https://w3id.org/fuskg/core#Activity">Activity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasBehavior">
+  <h3>has behavior<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasBehavior</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the State of change a User is in.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#StageOfChange" title="https://w3id.org/fuskg/user#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -789,6 +1018,75 @@ This section provides details for each class and property defined by User Module
     </dt>
     <dd>
      <a href="#ConsumedFood" title="https://w3id.org/fuskg/user#ConsumedFood">Consumed Food</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCurrentCondition">
+  <h3>has current condition<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasCurrentCondition</p>
+  <div class="comment">
+   <span class="markdown">This property identifies the CurrentCondition of a DiseaseConditionRelation</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DiseaseConditionRelation" title="https://w3id.org/fuskg/user#DiseaseConditionRelation">Relation between Disease and Current Condition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#CurrentCondition" title="https://w3id.org/fuskg/user#CurrentCondition">Current Condition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDiagnosis">
+  <h3>has diagnosis<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasDiagnosis</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the diagnosis of a person connecting the instance of the User to an instance of the class DiseaseConditionRelation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#User" title="https://w3id.org/fuskg/user#User">User</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#DiseaseConditionRelation" title="https://w3id.org/fuskg/user#DiseaseConditionRelation">Relation between Disease and Current Condition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDisease">
+  <h3>has disease<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasDisease</p>
+  <div class="comment">
+   <span class="markdown">The hasDisease property can be called diseaseValue (the type of disease) and specifies the disease related to a DiseaseConditionRelation</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DiseaseConditionRelation" title="https://w3id.org/fuskg/user#DiseaseConditionRelation">Relation between Disease and Current Condition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/fuskg/disease#Disease" target="_blank" title="https://w3id.org/fuskg/disease#Disease">Disease</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -820,13 +1118,16 @@ This section provides details for each class and property defined by User Module
   <h3>has User<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasUser</p>
   <div class="comment">
-   <span class="markdown">This property specifies which user the domain instance refers to. In detail which user performed the activity if the domain instance is a PerformedActivity, and which user ate a meal if the domain instance belongs to Meal.</span>
+   <span class="markdown">This property specifies which user the domain instance refers to. In detail which user performed the activity (PerformedActivity), ate the meal (Meal), or has a disease-condition relation (DiseaseConditionRelation) and .</span>
   </div>
   <div class="description">
    <dl>
     <dt>
      has domain
     </dt>
+    <dd>
+     <a href="#DiseaseConditionRelation" title="https://w3id.org/fuskg/user#DiseaseConditionRelation">Relation between Disease and Current Condition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
     <dd>
      <a href="#Meal" title="https://w3id.org/fuskg/user#Meal">Meal</a> <sup class="type-c" title="class">c</sup>
     </dd>
@@ -879,6 +1180,12 @@ This section provides details for each class and property defined by User Module
     <dd>
      <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/fuskg/guidelines#MonitoringRule" target="_blank" title="https://w3id.org/fuskg/guidelines#MonitoringRule">Monitoring Rule</a> <sup class="type-c" title="class">c</sup>
+    </dd>
    </dl>
   </div>
  </div>
@@ -928,13 +1235,35 @@ This section provides details for each class and property defined by User Module
    </dl>
   </div>
  </div>
+ <div class="entity" id="isTriggeredBy">
+  <h3>triggeres<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#isTriggeredBy</p>
+  <div class="comment">
+   <span class="markdown">This property specifies the Barrier that is triggered by the DiseaseConditionRelation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DiseaseConditionRelation" title="https://w3id.org/fuskg/user#DiseaseConditionRelation">Relation between Disease and Current Condition</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
   <li><a href="#activityDuration" title="https://w3id.org/fuskg/user#activityDuration">activity duration</a></li>
   <li><a href="#activityEndTimestamp" title="https://w3id.org/fuskg/user#activityEndTimestamp">activity end timestamp</a></li>
   <li><a href="#activityStartTimestamp" title="https://w3id.org/fuskg/user#activityStartTimestamp">activity start timestamp</a></li>
-  <li><a href="#bounds" title="https://w3id.org/fuskg/user#bounds">bounds</a></li>
   <li><a href="#hasDailyCaloricIntake" title="https://w3id.org/fuskg/user#hasDailyCaloricIntake">has daily caloric intake</a></li>
   <li><a href="#hasMETCorrection" title="https://w3id.org/fuskg/user#hasMETCorrection">has MET correction</a></li>
   <li><a href="#hasTimestamp" title="https://w3id.org/fuskg/user#hasTimestamp">has timestamp</a></li>
@@ -999,29 +1328,6 @@ This section provides details for each class and property defined by User Module
     </dt>
     <dd>
      <a href="#PerformedActivity" title="https://w3id.org/fuskg/user#PerformedActivity">Performed Activity</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="bounds">
-  <h3>bounds<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/user#bounds</p>
-  <div class="comment">
-   <span class="markdown">This property specifies the bounds of a violation interval.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#double" target="_blank" title="http://www.w3.org/2001/XMLSchema#double">double</a>
     </dd>
    </dl>
   </div>
@@ -1208,7 +1514,7 @@ This section provides details for each class and property defined by User Module
   <h3>has violation history<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationHistory</p>
   <div class="comment">
-   <span class="markdown">This property specifies the gistory of the violation as an integer.</span>
+   <span class="markdown">This property specifies the history of the violation as an integer.</span>
   </div>
   <div class="description">
    <dl>
@@ -1239,7 +1545,7 @@ This section provides details for each class and property defined by User Module
      has domain
     </dt>
     <dd>
-     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ViolationInterval" title="https://w3id.org/fuskg/user#ViolationInterval">Violation Interval</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Violation" title="https://w3id.org/fuskg/user#Violation">Violation</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1254,7 +1560,7 @@ This section provides details for each class and property defined by User Module
   <h3>has violation priority<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationPriority</p>
   <div class="comment">
-   <span class="markdown">This property specifies the the priority of the violation as an integer.</span>
+   <span class="markdown">This property specifies the priority of the violation as an integer.</span>
   </div>
   <div class="description">
    <dl>
@@ -1323,7 +1629,7 @@ This section provides details for each class and property defined by User Module
   <h3>has violation start time<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/user#hasViolationStartTime</p>
   <div class="comment">
-   <span class="markdown">This property specifies the the time at which the violation started.</span>
+   <span class="markdown">This property specifies the time at which the violation started.</span>
   </div>
   <div class="description">
    <dl>
