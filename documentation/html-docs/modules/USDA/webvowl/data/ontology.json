@@ -751,16 +751,16 @@
     "id" : "720",
     "type" : "owl:Class"
   }, {
-    "id" : "730",
-    "type" : "owl:Class"
-  }, {
     "id" : "734",
     "type" : "owl:Class"
   }, {
-    "id" : "702",
+    "id" : "730",
     "type" : "owl:Class"
   }, {
     "id" : "700",
+    "type" : "owl:Class"
+  }, {
+    "id" : "702",
     "type" : "owl:Class"
   }, {
     "id" : "705",
@@ -820,10 +820,10 @@
     "id" : "568",
     "type" : "owl:Class"
   }, {
-    "id" : "562",
+    "id" : "557",
     "type" : "owl:Class"
   }, {
-    "id" : "557",
+    "id" : "562",
     "type" : "owl:Class"
   }, {
     "id" : "565",
@@ -859,10 +859,10 @@
     "id" : "514",
     "type" : "owl:Class"
   }, {
-    "id" : "623",
+    "id" : "519",
     "type" : "owl:Class"
   }, {
-    "id" : "519",
+    "id" : "623",
     "type" : "owl:Class"
   }, {
     "id" : "630",
@@ -871,19 +871,19 @@
     "id" : "626",
     "type" : "owl:Class"
   }, {
-    "id" : "611",
+    "id" : "615",
     "type" : "owl:Class"
   }, {
-    "id" : "615",
+    "id" : "611",
     "type" : "owl:Class"
   }, {
     "id" : "793",
     "type" : "owl:Class"
   }, {
-    "id" : "602",
+    "id" : "598",
     "type" : "owl:Class"
   }, {
-    "id" : "598",
+    "id" : "602",
     "type" : "owl:Class"
   }, {
     "id" : "605",
@@ -943,19 +943,19 @@
     "id" : "371",
     "type" : "owl:Class"
   }, {
-    "id" : "339",
+    "id" : "341",
     "type" : "owl:Class"
   }, {
-    "id" : "341",
+    "id" : "339",
     "type" : "owl:Class"
   }, {
     "id" : "345",
     "type" : "owl:Class"
   }, {
-    "id" : "81",
+    "id" : "347",
     "type" : "owl:Class"
   }, {
-    "id" : "347",
+    "id" : "81",
     "type" : "owl:Class"
   }, {
     "id" : "351",
@@ -997,19 +997,19 @@
     "id" : "296",
     "type" : "owl:Class"
   }, {
-    "id" : "302",
+    "id" : "300",
     "type" : "owl:Class"
   }, {
-    "id" : "300",
+    "id" : "302",
     "type" : "owl:Class"
   }, {
     "id" : "304",
     "type" : "owl:Class"
   }, {
-    "id" : "203",
+    "id" : "481",
     "type" : "owl:Class"
   }, {
-    "id" : "481",
+    "id" : "203",
     "type" : "owl:Class"
   }, {
     "id" : "829",
@@ -1036,10 +1036,10 @@
     "id" : "135",
     "type" : "owl:Class"
   }, {
-    "id" : "117",
+    "id" : "119",
     "type" : "owl:Class"
   }, {
-    "id" : "119",
+    "id" : "117",
     "type" : "owl:Class"
   }, {
     "id" : "97",
@@ -1048,10 +1048,10 @@
     "id" : "123",
     "type" : "owl:Class"
   }, {
-    "id" : "105",
+    "id" : "103",
     "type" : "owl:Class"
   }, {
-    "id" : "103",
+    "id" : "105",
     "type" : "owl:Class"
   }, {
     "id" : "111",
@@ -1066,10 +1066,10 @@
     "id" : "90",
     "type" : "owl:Class"
   }, {
-    "id" : "53",
+    "id" : "48",
     "type" : "owl:Class"
   }, {
-    "id" : "48",
+    "id" : "53",
     "type" : "owl:Class"
   }, {
     "id" : "805",
@@ -1375,10 +1375,10 @@
     "id" : "649",
     "type" : "owl:Class"
   }, {
-    "id" : "389",
+    "id" : "650",
     "type" : "owl:Class"
   }, {
-    "id" : "650",
+    "id" : "389",
     "type" : "owl:Class"
   }, {
     "id" : "651",
@@ -1819,19 +1819,19 @@
     "id" : "812",
     "type" : "owl:Class"
   }, {
-    "id" : "432",
+    "id" : "431",
     "type" : "owl:Class"
   }, {
-    "id" : "431",
+    "id" : "432",
     "type" : "owl:Class"
   }, {
     "id" : "779",
     "type" : "owl:Class"
   }, {
-    "id" : "272",
+    "id" : "1253",
     "type" : "owl:Class"
   }, {
-    "id" : "1253",
+    "id" : "272",
     "type" : "owl:Class"
   }, {
     "id" : "162",
@@ -2333,12 +2333,12 @@
   }, {
     "instances" : 0,
     "union" : [ "50", "51" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "49"
   }, {
     "instances" : 0,
     "union" : [ "50", "5" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "54"
   }, {
     "iri" : "https://w3id.org/fuskg/usda#USDAFood",
@@ -4630,7 +4630,7 @@
     "label" : {
       "IRI-based" : "CoffeeAndSubstitutes",
       "en" : "Coffee and Substitutes",
-      "it" : "Caff  e Sostituti"
+      "it" : "Caffè  e Sostituti"
     },
     "comment" : {
       "en" : "Concept denoting foods belonging to the Coffee and Substitutes category."
@@ -5263,16 +5263,6 @@
     "id" : "720",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1158",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-1158",
-      "en" : "Vitamin E"
-    },
-    "id" : "730",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2005",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -5283,14 +5273,14 @@
     "id" : "734",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2006",
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1158",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "usda-nut-2006",
-      "en" : "SFA 21:0"
+      "IRI-based" : "usda-nut-1158",
+      "en" : "Vitamin E"
     },
-    "id" : "702",
+    "id" : "730",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1159",
@@ -5301,6 +5291,16 @@
       "en" : "cis-beta-Carotene"
     },
     "id" : "700",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2006",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-2006",
+      "en" : "SFA 21:0"
+    },
+    "id" : "702",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2007",
@@ -5525,16 +5525,6 @@
     "id" : "568",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2014",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-2014",
-      "en" : "MUFA 22:1 n-9"
-    },
-    "id" : "562",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1167",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -5543,6 +5533,16 @@
       "en" : "Niacin"
     },
     "id" : "557",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2014",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-2014",
+      "en" : "MUFA 22:1 n-9"
+    },
+    "id" : "562",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1168",
@@ -5660,16 +5660,6 @@
     "id" : "514",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2010",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-2010",
-      "en" : "MUFA 17:1 c"
-    },
-    "id" : "623",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1163",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -5678,6 +5668,16 @@
       "en" : "Vitamin C, reduced ascorbic acid"
     },
     "id" : "519",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2010",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-2010",
+      "en" : "MUFA 17:1 c"
+    },
+    "id" : "623",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2011",
@@ -5700,16 +5700,6 @@
     "id" : "626",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1165",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-1165",
-      "en" : "Thiamin"
-    },
-    "id" : "611",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2012",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -5718,6 +5708,16 @@
       "en" : "MUFA 20:1 c"
     },
     "id" : "615",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1165",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-1165",
+      "en" : "Thiamin"
+    },
+    "id" : "611",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#IceCream",
@@ -5735,16 +5735,6 @@
     "id" : "793",
     "superClasses" : [ "155" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2024",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-2024",
-      "en" : "PUFA 22:5 c"
-    },
-    "id" : "602",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1177",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -5753,6 +5743,16 @@
       "en" : "Folate, total"
     },
     "id" : "598",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2024",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-2024",
+      "en" : "PUFA 22:5 c"
+    },
+    "id" : "602",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1178",
@@ -5950,16 +5950,6 @@
     "id" : "371",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1188",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-1188",
-      "en" : "5-methyl tetrahydrofolate (5-MTHF)"
-    },
-    "id" : "339",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2035",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -5968,6 +5958,16 @@
       "en" : "Soluble dietary fiber (SDFP+SDFS)"
     },
     "id" : "341",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1188",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-1188",
+      "en" : "5-methyl tetrahydrofolate (5-MTHF)"
+    },
+    "id" : "339",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1189",
@@ -5980,16 +5980,6 @@
     "id" : "345",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#CerealGrainsAndPasta",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CerealGrainsAndPasta",
-      "en" : "Cereal Grains and Pasta"
-    },
-    "id" : "81",
-    "superClasses" : [ "2" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2036",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -5999,6 +5989,16 @@
     },
     "id" : "347",
     "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#CerealGrainsAndPasta",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CerealGrainsAndPasta",
+      "en" : "Cereal Grains and Pasta"
+    },
+    "id" : "81",
+    "superClasses" : [ "2" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2037",
     "baseIri" : "https://w3id.org/fuskg/usda",
@@ -6135,16 +6135,6 @@
     "id" : "296",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2034",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-2034",
-      "en" : "Insoluble dietary fiber (IDF)"
-    },
-    "id" : "302",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1187",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -6153,6 +6143,16 @@
       "en" : "Folate, food"
     },
     "id" : "300",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2034",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-2034",
+      "en" : "Insoluble dietary fiber (IDF)"
+    },
+    "id" : "302",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1190",
@@ -6164,21 +6164,6 @@
     },
     "id" : "304",
     "superClasses" : [ "5" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#GlutamicAcid",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "GlutamicAcid",
-      "en" : "Glutamic Acid",
-      "it" : "Acido Glutammico"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Glutamic Acid amounts."
-    },
-    "attributes" : [ "external" ],
-    "id" : "203",
-    "superClasses" : [ "189" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#BiscuitsAndCrackers",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -6194,6 +6179,21 @@
     "attributes" : [ "external" ],
     "id" : "481",
     "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#GlutamicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GlutamicAcid",
+      "en" : "Glutamic Acid",
+      "it" : "Acido Glutammico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Glutamic Acid amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "203",
+    "superClasses" : [ "189" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FruitPeel",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -6280,16 +6280,6 @@
     "id" : "135",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1193",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-1193",
-      "en" : "Tetrahydrofolic acid (THF)"
-    },
-    "id" : "117",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2040",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -6298,6 +6288,16 @@
       "en" : "Other carotenoids"
     },
     "id" : "119",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-1193",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-1193",
+      "en" : "Tetrahydrofolic acid (THF)"
+    },
+    "id" : "117",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-2041",
@@ -6320,16 +6320,6 @@
     "id" : "123",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2042",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-2042",
-      "en" : "Amino acids"
-    },
-    "id" : "105",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1195",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -6338,6 +6328,16 @@
       "en" : "Choline, from phosphocholine"
     },
     "id" : "103",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2042",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-2042",
+      "en" : "Amino acids"
+    },
+    "id" : "105",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1196",
@@ -6380,16 +6380,6 @@
     "id" : "90",
     "superClasses" : [ "5" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2045",
-    "baseIri" : "https://w3id.org/fuskg/usda",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "usda-nut-2045",
-      "en" : "Proximates"
-    },
-    "id" : "53",
-    "superClasses" : [ "5" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/usda#usda-nut-1198",
     "baseIri" : "https://w3id.org/fuskg/usda",
     "instances" : 0,
@@ -6398,6 +6388,16 @@
       "en" : "Betaine"
     },
     "id" : "48",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/usda#usda-nut-2045",
+    "baseIri" : "https://w3id.org/fuskg/usda",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "usda-nut-2045",
+      "en" : "Proximates"
+    },
+    "id" : "53",
     "superClasses" : [ "5" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#Dessert",
@@ -7623,8 +7623,8 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "Niacin",
-      "en" : "Niacin",
-      "it" : "Niacina"
+      "en" : "Vitamin B3",
+      "it" : "Vitamina B3"
     },
     "comment" : {
       "en" : "Concept denoting values corresponding to Niacin (Vitamin B3) amounts."
@@ -7670,6 +7670,21 @@
     "id" : "649",
     "superClasses" : [ "174" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#VitaminE",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VitaminE",
+      "en" : "Vitamin E",
+      "it" : "Vitamina E"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Vitamin E amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "650",
+    "superClasses" : [ "174" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#WhiteMeat",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -7685,21 +7700,6 @@
     "attributes" : [ "external" ],
     "id" : "389",
     "superClasses" : [ "387" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#VitaminE",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VitaminE",
-      "en" : "Vitamin E",
-      "it" : "Vitamina E"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Vitamin E amounts."
-    },
-    "attributes" : [ "external" ],
-    "id" : "650",
-    "superClasses" : [ "174" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#VitaminA",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -9368,6 +9368,21 @@
     "id" : "812",
     "superClasses" : [ "155" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#Eggs",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Eggs",
+      "en" : "Eggs",
+      "it" : "Uova"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Eggs category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "431",
+    "superClasses" : [ "388" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#Fruits",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -9382,21 +9397,6 @@
     },
     "attributes" : [ "external" ],
     "id" : "432",
-    "superClasses" : [ "388" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#Eggs",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Eggs",
-      "en" : "Eggs",
-      "it" : "Uova"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Eggs category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "431",
     "superClasses" : [ "388" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#VegetalEVOOils",
@@ -9414,21 +9414,6 @@
     "id" : "779",
     "superClasses" : [ "778" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#FreshMollusc",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FreshMollusc",
-      "en" : "Fresh Mollusc",
-      "it" : "Molluschi Freschi"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Fresh Mollusc category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "272",
-    "superClasses" : [ "270" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#RabbitFattyWhiteMeat",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -9443,6 +9428,21 @@
     "attributes" : [ "external" ],
     "id" : "1253",
     "superClasses" : [ "470" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FreshMollusc",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FreshMollusc",
+      "en" : "Fresh Mollusc",
+      "it" : "Molluschi Freschi"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fresh Mollusc category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "272",
+    "superClasses" : [ "270" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#MarinatedFish",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -13986,7 +13986,7 @@
     "comment" : {
       "en" : "This property defines the relationship between a barrier and the consumption of a food or nutrient."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "100"
   }, {
     "range" : "5",
@@ -14241,7 +14241,7 @@
     "comment" : {
       "en" : "This property specifies the nutrient(s) contained ia a food."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "219"
   }, {
     "range" : "2",
@@ -14956,7 +14956,7 @@
     "comment" : {
       "en" : "This property defines the relationship between a barrier affecting the performing of an activity."
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "642"
   }, {
     "range" : "27",
@@ -16666,7 +16666,7 @@
     "comment" : {
       "en" : "This property specifies that a food contains another food"
     },
-    "attributes" : [ "external", "someValues", "object" ],
+    "attributes" : [ "someValues", "object", "external" ],
     "id" : "1215"
   }, {
     "range" : "780",
@@ -17446,7 +17446,7 @@
     "comment" : {
       "en" : "This property specifies that a food contains another food"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "1437"
   }, {
     "range" : "210",
