@@ -24,12 +24,12 @@
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Mauro Dragoni",
+        "value" : "Tania Bailoni",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Tania Bailoni",
+        "value" : "Mauro Dragoni",
         "type" : "label"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -56,16 +56,16 @@
         "value" : "2024-05-10",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "en",
-        "value" : "1.0.0",
-        "type" : "label"
-      } ],
       "preferredNamespaceUri" : [ {
         "identifier" : "preferredNamespaceUri",
         "language" : "undefined",
         "value" : "https://w3id.org/fuskg/disease#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0.0",
         "type" : "label"
       } ],
       "title" : [ {
@@ -237,10 +237,10 @@
     "id" : "317",
     "type" : "owl:Class"
   }, {
-    "id" : "283",
+    "id" : "286",
     "type" : "owl:Class"
   }, {
-    "id" : "286",
+    "id" : "283",
     "type" : "owl:Class"
   }, {
     "id" : "159",
@@ -360,10 +360,10 @@
     "id" : "253",
     "type" : "owl:Class"
   }, {
-    "id" : "374",
+    "id" : "55",
     "type" : "owl:Class"
   }, {
-    "id" : "55",
+    "id" : "375",
     "type" : "owl:Class"
   }, {
     "id" : "70",
@@ -459,13 +459,13 @@
     "id" : "431",
     "type" : "owl:Class"
   }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
     "id" : "303",
     "type" : "owl:Class"
   }, {
     "id" : "432",
-    "type" : "owl:Class"
-  }, {
-    "id" : "80",
     "type" : "owl:Class"
   }, {
     "id" : "433",
@@ -492,7 +492,7 @@
     "id" : "289",
     "type" : "owl:Class"
   }, {
-    "id" : "376",
+    "id" : "377",
     "type" : "owl:Class"
   }, {
     "id" : "63",
@@ -531,28 +531,28 @@
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "356",
+    "id" : "428",
     "type" : "owl:Class"
   }, {
-    "id" : "428",
+    "id" : "357",
     "type" : "owl:Class"
   }, {
     "id" : "504",
     "type" : "owl:Class"
   }, {
-    "id" : "128",
+    "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "35",
+    "id" : "128",
     "type" : "owl:Class"
   }, {
     "id" : "264",
     "type" : "owl:Class"
   }, {
-    "id" : "166",
+    "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
+    "id" : "166",
     "type" : "owl:Class"
   }, {
     "id" : "21",
@@ -579,16 +579,16 @@
     "id" : "266",
     "type" : "owl:Class"
   }, {
-    "id" : "371",
+    "id" : "372",
+    "type" : "owl:Class"
+  }, {
+    "id" : "382",
     "type" : "owl:Class"
   }, {
     "id" : "176",
     "type" : "owl:Class"
   }, {
     "id" : "413",
-    "type" : "owl:Class"
-  }, {
-    "id" : "382",
     "type" : "owl:Class"
   }, {
     "id" : "261",
@@ -603,10 +603,10 @@
     "id" : "427",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "542",
     "type" : "owl:Class"
   }, {
-    "id" : "542",
+    "id" : "76",
     "type" : "owl:Class"
   }, {
     "id" : "161",
@@ -621,7 +621,7 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "386",
+    "id" : "354",
     "type" : "owl:Class"
   }, {
     "id" : "423",
@@ -636,10 +636,10 @@
     "id" : "107",
     "type" : "owl:Class"
   }, {
-    "id" : "499",
+    "id" : "236",
     "type" : "owl:Class"
   }, {
-    "id" : "236",
+    "id" : "499",
     "type" : "owl:Class"
   }, {
     "id" : "171",
@@ -675,7 +675,7 @@
     "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "359",
+    "id" : "360",
     "type" : "owl:Class"
   }, {
     "id" : "202",
@@ -693,22 +693,22 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "28",
     "type" : "owl:Class"
   }, {
     "id" : "251",
     "type" : "owl:Class"
   }, {
-    "id" : "28",
+    "id" : "545",
     "type" : "owl:Class"
   }, {
-    "id" : "545",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "232",
     "type" : "owl:Class"
   }, {
-    "id" : "378",
+    "id" : "379",
     "type" : "owl:Class"
   }, {
     "id" : "248",
@@ -756,10 +756,10 @@
     "id" : "233",
     "type" : "owl:Class"
   }, {
-    "id" : "377",
+    "id" : "142",
     "type" : "owl:Class"
   }, {
-    "id" : "142",
+    "id" : "378",
     "type" : "owl:Class"
   }, {
     "id" : "269",
@@ -810,7 +810,7 @@
     "id" : "85",
     "type" : "owl:Class"
   }, {
-    "id" : "380",
+    "id" : "384",
     "type" : "owl:Class"
   }, {
     "id" : "540",
@@ -822,7 +822,7 @@
     "id" : "340",
     "type" : "owl:Class"
   }, {
-    "id" : "375",
+    "id" : "376",
     "type" : "owl:Class"
   }, {
     "id" : "52",
@@ -837,10 +837,10 @@
     "id" : "235",
     "type" : "owl:Class"
   }, {
-    "id" : "366",
+    "id" : "326",
     "type" : "owl:Class"
   }, {
-    "id" : "326",
+    "id" : "367",
     "type" : "owl:Class"
   }, {
     "id" : "321",
@@ -1089,7 +1089,7 @@
   }, {
     "instances" : 0,
     "union" : [ "99", "48" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "98"
   }, {
     "iri" : "https://w3id.org/fuskg/food#FreshOilyMediumFatFish",
@@ -1618,21 +1618,6 @@
     "id" : "317",
     "superClasses" : [ "161" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#CandiedFruits",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "CandiedFruits",
-      "en" : "Candied Fruits",
-      "it" : "Frutta Candita"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Candied Fruits category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "283",
-    "superClasses" : [ "248" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#SugarAndSweeteners",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -1646,6 +1631,21 @@
     },
     "attributes" : [ "external" ],
     "id" : "286",
+    "superClasses" : [ "248" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#CandiedFruits",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CandiedFruits",
+      "en" : "Candied Fruits",
+      "it" : "Frutta Candita"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Candied Fruits category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "283",
     "superClasses" : [ "248" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FruitJuices",
@@ -1777,7 +1777,7 @@
       "en" : "Lipids",
       "it" : "Lipidi"
     },
-    "subClasses" : [ "140", "85", "94", "101", "107", "112", "116", "121", "126", "72", "76", "82", "9", "14", "19", "24", "31", "39", "43", "375", "376", "377", "378", "366" ],
+    "subClasses" : [ "140", "85", "94", "101", "107", "112", "116", "121", "126", "72", "76", "82", "9", "14", "19", "24", "31", "39", "43", "376", "377", "378", "379", "367" ],
     "comment" : {
       "en" : "Concept denoting values corresponding to Lipids amounts."
     },
@@ -1836,7 +1836,7 @@
     "label" : {
       "IRI-based" : "CoffeeAndSubstitutes",
       "en" : "Coffee and Substitutes",
-      "it" : "Caff  e Sostituti"
+      "it" : "Caffè  e Sostituti"
     },
     "comment" : {
       "en" : "Concept denoting foods belonging to the Coffee and Substitutes category."
@@ -1951,21 +1951,6 @@
     "id" : "65",
     "superClasses" : [ "180" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#Sulfur",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Sulfur",
-      "en" : "Sulfur",
-      "it" : "Zolfo"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Sulfur amounts."
-    },
-    "attributes" : [ "external" ],
-    "id" : "397",
-    "superClasses" : [ "161" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#VitaminB12",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -1978,8 +1963,23 @@
       "en" : "Concept denoting values corresponding to Vitamin B12 amounts."
     },
     "attributes" : [ "external" ],
-    "id" : "398",
+    "id" : "397",
     "superClasses" : [ "296" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Sulfur",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sulfur",
+      "en" : "Sulfur",
+      "it" : "Zolfo"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Sulfur amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "398",
+    "superClasses" : [ "161" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#Rice",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -2156,7 +2156,7 @@
       "en" : "Vitamin",
       "it" : "Vitamine"
     },
-    "subClasses" : [ "295", "425", "426", "398", "427", "428", "429", "430", "431", "432", "387", "433", "434", "435" ],
+    "subClasses" : [ "295", "425", "426", "397", "427", "428", "429", "430", "431", "432", "387", "433", "434", "435" ],
     "comment" : {
       "en" : "Concept denoting nutrients belonging to the Vitamin category."
     },
@@ -2241,21 +2241,6 @@
     "id" : "253",
     "superClasses" : [ "180" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#FrozenOilyMediumFatFish",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FrozenOilyMediumFatFish",
-      "en" : "Frozen Oily Semi-Fat Fish",
-      "it" : "Pesce Azzurro Semigrasso Surgelato"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Frozen Oily Semi-Fat Fish category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "374",
-    "superClasses" : [ "184" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#TeaBeverages",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -2270,6 +2255,21 @@
     "attributes" : [ "external" ],
     "id" : "55",
     "superClasses" : [ "53" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenOilyMediumFatFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenOilyMediumFatFish",
+      "en" : "Frozen Oily Semi-Fat Fish",
+      "it" : "Pesce Azzurro Semigrasso Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Oily Semi-Fat Fish category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "375",
+    "superClasses" : [ "184" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FrozenNotOilyFish",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -2653,8 +2653,8 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "Niacin",
-      "en" : "Niacin",
-      "it" : "Vitamina B3"
+      "en" : "Vitamin B3",
+      "it" : "Niacina"
     },
     "comment" : {
       "en" : "Concept denoting values corresponding to Niacin (Vitamin B3) amounts."
@@ -2731,6 +2731,22 @@
     "id" : "431",
     "superClasses" : [ "296" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#WhiteMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WhiteMeat",
+      "en" : "White Meat",
+      "it" : "Carne Bianca"
+    },
+    "subClasses" : [ "109", "29" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the White Meat category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "7" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#Wine",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -2760,22 +2776,6 @@
     "attributes" : [ "external" ],
     "id" : "432",
     "superClasses" : [ "296" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#WhiteMeat",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "WhiteMeat",
-      "en" : "White Meat",
-      "it" : "Carne Bianca"
-    },
-    "subClasses" : [ "109", "29" ],
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the White Meat category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "80",
-    "superClasses" : [ "7" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#VitaminA",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -2909,7 +2909,7 @@
       "en" : "Concept denoting values corresponding to Linoleic Acid amounts."
     },
     "attributes" : [ "external" ],
-    "id" : "376",
+    "id" : "377",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#LegumesAndLegumeProducts",
@@ -3071,21 +3071,6 @@
     "id" : "12",
     "superClasses" : [ "7" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#TomatoSauces",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "TomatoSauces",
-      "en" : "Tomato Sauces",
-      "it" : "Salse di Pomodoro"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Tomato Sauces category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "356",
-    "superClasses" : [ "264" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#FolicAcid",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3101,6 +3086,21 @@
     "id" : "428",
     "superClasses" : [ "296" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#TomatoSauces",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TomatoSauces",
+      "en" : "Tomato Sauces",
+      "it" : "Salse di Pomodoro"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Tomato Sauces category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "357",
+    "superClasses" : [ "264" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#RoastedNuts",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3115,22 +3115,6 @@
     "attributes" : [ "external" ],
     "id" : "504",
     "superClasses" : [ "265" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#FattyRedMeat",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FattyRedMeat",
-      "en" : "Fatty Red Meat",
-      "it" : "Carne Rossa Grassa"
-    },
-    "subClasses" : [ "380", "127", "386" ],
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Fatty Red Meat category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "128",
-    "superClasses" : [ "12" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#VegetalOils",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3148,6 +3132,22 @@
     "id" : "35",
     "superClasses" : [ "32" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#FattyRedMeat",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FattyRedMeat",
+      "en" : "Fatty Red Meat",
+      "it" : "Carne Rossa Grassa"
+    },
+    "subClasses" : [ "384", "127", "354" ],
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Fatty Red Meat category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "128",
+    "superClasses" : [ "12" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#ProcessedVegetables",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3156,28 +3156,13 @@
       "en" : "Processed Starchy Free Vegetables",
       "it" : "Verdure e Ortaggi Conservati a Basso Contenuto di Amido"
     },
-    "subClasses" : [ "356", "359", "263" ],
+    "subClasses" : [ "357", "360", "263" ],
     "comment" : {
       "en" : "Concept denoting foods belonging to the Processed Starchy Free Vegetables category."
     },
     "attributes" : [ "external" ],
     "id" : "264",
     "superClasses" : [ "118" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#Glycine",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Glycine",
-      "en" : "Glycine",
-      "it" : "Glicina"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Glycine amounts."
-    },
-    "attributes" : [ "external" ],
-    "id" : "166",
-    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#LeanWhiteMeat",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3194,6 +3179,21 @@
     "attributes" : [ "external" ],
     "id" : "109",
     "superClasses" : [ "80" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#Glycine",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Glycine",
+      "en" : "Glycine",
+      "it" : "Glicina"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Glycine amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "166",
+    "superClasses" : [ "52" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#AnimalFats",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3329,8 +3329,23 @@
       "en" : "Concept denoting foods belonging to the Aged Cheese category."
     },
     "attributes" : [ "external" ],
-    "id" : "371",
+    "id" : "372",
     "superClasses" : [ "244" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#FrozenOilyLeanFish",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrozenOilyLeanFish",
+      "en" : "Frozen Oily Lean Fish",
+      "it" : "Pesce Azzurro Magro Surgelato"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Frozen Oily Lean Fish category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "382",
+    "superClasses" : [ "184" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#Proline",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3361,21 +3376,6 @@
     "attributes" : [ "external" ],
     "id" : "413",
     "superClasses" : [ "180" ]
-  }, {
-    "iri" : "https://w3id.org/fuskg/food#FrozenOilyLeanFish",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "FrozenOilyLeanFish",
-      "en" : "Frozen Oily Lean Fish",
-      "it" : "Pesce Azzurro Magro Surgelato"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Frozen Oily Lean Fish category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "382",
-    "superClasses" : [ "184" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#CulinaryErbs",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3438,21 +3438,6 @@
     "id" : "427",
     "superClasses" : [ "296" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#ArachidonicAcid",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ArachidonicAcid",
-      "en" : "Arachidonic Acid",
-      "it" : "Acido Arachidonico"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Arachidonic Acid amounts."
-    },
-    "attributes" : [ "external" ],
-    "id" : "76",
-    "superClasses" : [ "10" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#FreshAlgae",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3468,6 +3453,21 @@
     "id" : "542",
     "superClasses" : [ "123" ]
   }, {
+    "iri" : "https://w3id.org/fuskg/food#ArachidonicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ArachidonicAcid",
+      "en" : "Arachidonic Acid",
+      "it" : "Acido Arachidonico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Arachidonic Acid amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "10" ]
+  }, {
     "iri" : "https://w3id.org/fuskg/food#Mineral",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3476,7 +3476,7 @@
       "en" : "Minerals",
       "it" : "Minerali"
     },
-    "subClasses" : [ "160", "543", "544", "397", "400", "545", "546", "401", "547", "404", "317", "548", "193" ],
+    "subClasses" : [ "160", "543", "544", "398", "400", "545", "546", "401", "547", "404", "317", "548", "193" ],
     "comment" : {
       "en" : "Concept denoting nutrients belonging to the Mineral category."
     },
@@ -3543,7 +3543,7 @@
       "en" : "Concept denoting foods belonging to the Pork Fatty Red Meat category."
     },
     "attributes" : [ "external" ],
-    "id" : "386",
+    "id" : "354",
     "superClasses" : [ "128" ]
   }, {
     "iri" : "https://w3id.org/fuskg/core#Activity",
@@ -3605,21 +3605,6 @@
     "id" : "107",
     "superClasses" : [ "10" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#BiscuitsAndCrackers",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BiscuitsAndCrackers",
-      "en" : "Bicuits and Crackers",
-      "it" : "Biscotti e Crackers"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Bicuits and Crackers category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "499",
-    "superClasses" : [ "62" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#GlutamicAcid",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3634,6 +3619,21 @@
     "attributes" : [ "external" ],
     "id" : "236",
     "superClasses" : [ "182" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#BiscuitsAndCrackers",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BiscuitsAndCrackers",
+      "en" : "Bicuits and Crackers",
+      "it" : "Biscotti e Crackers"
+    },
+    "comment" : {
+      "en" : "Concept denoting foods belonging to the Bicuits and Crackers category."
+    },
+    "attributes" : [ "external" ],
+    "id" : "499",
+    "superClasses" : [ "62" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FruitPeel",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3749,7 +3749,7 @@
       "en" : "Cheese",
       "it" : "Formaggio"
     },
-    "subClasses" : [ "243", "371" ],
+    "subClasses" : [ "243", "372" ],
     "comment" : {
       "en" : "Concept denoting foods belonging to the Cheese category."
     },
@@ -3814,7 +3814,7 @@
       "en" : "Concept denoting foods belonging to the Vegetable Based Beverages category."
     },
     "attributes" : [ "external" ],
-    "id" : "359",
+    "id" : "360",
     "superClasses" : [ "264" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#AdultSheepLeanRedMeat",
@@ -3870,7 +3870,7 @@
       "en" : "Frozen Oily Fish",
       "it" : "Pesce Azzurro Surgelato"
     },
-    "subClasses" : [ "374", "382", "183" ],
+    "subClasses" : [ "375", "382", "183" ],
     "comment" : {
       "en" : "Concept denoting foods belonging to the Frozen Oily Fish category."
     },
@@ -3894,20 +3894,20 @@
     "id" : "1",
     "superClasses" : [ "180" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#DHAAcid",
+    "iri" : "https://w3id.org/fuskg/food#VealFattyWhiteMeat",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
     "label" : {
-      "IRI-based" : "DHAAcid",
-      "en" : "DHA Acid",
-      "it" : "Acido DHA"
+      "IRI-based" : "VealFattyWhiteMeat",
+      "en" : "Veal Fatty White Meat",
+      "it" : "Carne Bianca Grassa di Vitello"
     },
     "comment" : {
-      "en" : "Concept denoting values corresponding to DHA Acid amounts."
+      "en" : "Concept denoting foods belonging to the Veal Fatty White Meat category."
     },
     "attributes" : [ "external" ],
-    "id" : "9",
-    "superClasses" : [ "10" ]
+    "id" : "28",
+    "superClasses" : [ "29" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#ProcessedMollusc",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3924,21 +3924,6 @@
     "id" : "251",
     "superClasses" : [ "246" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#VealFattyWhiteMeat",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "VealFattyWhiteMeat",
-      "en" : "Veal Fatty White Meat",
-      "it" : "Carne Bianca Grassa di Vitello"
-    },
-    "comment" : {
-      "en" : "Concept denoting foods belonging to the Veal Fatty White Meat category."
-    },
-    "attributes" : [ "external" ],
-    "id" : "28",
-    "superClasses" : [ "29" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#Chlorine",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -3953,6 +3938,21 @@
     "attributes" : [ "external" ],
     "id" : "545",
     "superClasses" : [ "161" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#DHAAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DHAAcid",
+      "en" : "DHA Acid",
+      "it" : "Acido DHA"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to DHA Acid amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#Galactose",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -3981,7 +3981,7 @@
       "en" : "Concept denoting values corresponding to Erucic Acid amounts."
     },
     "attributes" : [ "external" ],
-    "id" : "378",
+    "id" : "379",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#SugarAndSweets",
@@ -4215,21 +4215,6 @@
     "id" : "233",
     "superClasses" : [ "99" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#BehenicAcid",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "BehenicAcid",
-      "en" : "Behenic Acid",
-      "it" : "Acido Beenico"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Behenic Acid amounts."
-    },
-    "attributes" : [ "external" ],
-    "id" : "377",
-    "superClasses" : [ "10" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#Valine",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -4244,6 +4229,21 @@
     "attributes" : [ "external" ],
     "id" : "142",
     "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#BehenicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BehenicAcid",
+      "en" : "Behenic Acid",
+      "it" : "Acido Beenico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Behenic Acid amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "378",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FreshNotOilyMediumFatFish",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -4502,7 +4502,7 @@
       "en" : "Concept denoting foods belonging to the Adult Sheep Fatty Red Meat category."
     },
     "attributes" : [ "external" ],
-    "id" : "380",
+    "id" : "384",
     "superClasses" : [ "128" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#FreshCulinaryErbs",
@@ -4563,7 +4563,7 @@
       "en" : "Concept denoting values corresponding to Palmitic Acid amounts."
     },
     "attributes" : [ "external" ],
-    "id" : "375",
+    "id" : "376",
     "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#ApolarAminoacid",
@@ -4627,21 +4627,6 @@
     "id" : "235",
     "superClasses" : [ "182" ]
   }, {
-    "iri" : "https://w3id.org/fuskg/food#MyristoleicAcid",
-    "baseIri" : "https://w3id.org/fuskg/food",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "MyristoleicAcid",
-      "en" : "Myristoleic Acid",
-      "it" : "Acido Miristoleico"
-    },
-    "comment" : {
-      "en" : "Concept denoting values corresponding to Myristoleic Acid amounts."
-    },
-    "attributes" : [ "external" ],
-    "id" : "366",
-    "superClasses" : [ "10" ]
-  }, {
     "iri" : "https://w3id.org/fuskg/food#Sausages",
     "baseIri" : "https://w3id.org/fuskg/food",
     "instances" : 0,
@@ -4656,6 +4641,21 @@
     "attributes" : [ "external" ],
     "id" : "326",
     "superClasses" : [ "65" ]
+  }, {
+    "iri" : "https://w3id.org/fuskg/food#MyristoleicAcid",
+    "baseIri" : "https://w3id.org/fuskg/food",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MyristoleicAcid",
+      "en" : "Myristoleic Acid",
+      "it" : "Acido Miristoleico"
+    },
+    "comment" : {
+      "en" : "Concept denoting values corresponding to Myristoleic Acid amounts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "367",
+    "superClasses" : [ "10" ]
   }, {
     "iri" : "https://w3id.org/fuskg/food#CannedMeat",
     "baseIri" : "https://w3id.org/fuskg/food",
@@ -5250,19 +5250,16 @@
     "id" : "353",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "354",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "355",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "357",
+    "id" : "356",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "358",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "360",
+    "id" : "359",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "361",
@@ -5272,15 +5269,15 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "363",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "364",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "365",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "367",
+    "id" : "366",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "368",
@@ -5292,13 +5289,16 @@
     "id" : "370",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "372",
+    "id" : "371",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "373",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "379",
+    "id" : "374",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "380",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "381",
@@ -5307,10 +5307,10 @@
     "id" : "383",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "384",
+    "id" : "385",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "385",
+    "id" : "386",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "388",
@@ -5886,77 +5886,77 @@
   "propertyAttribute" : [ {
     "range" : "7",
     "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "5"
   }, {
     "range" : "10",
     "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "8"
   }, {
     "range" : "7",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "11"
   }, {
     "range" : "10",
     "domain" : "14",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "13"
   }, {
     "range" : "17",
     "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "15"
   }, {
     "range" : "10",
     "domain" : "19",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "18"
   }, {
     "range" : "22",
     "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "20"
   }, {
     "range" : "10",
     "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "23"
   }, {
     "range" : "29",
     "domain" : "28",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "27"
   }, {
     "range" : "10",
     "domain" : "31",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "30"
   }, {
     "range" : "29",
     "domain" : "37",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "36"
   }, {
     "range" : "10",
     "domain" : "39",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "38"
   }, {
     "range" : "29",
     "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "40"
   }, {
     "range" : "10",
     "domain" : "43",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "42"
   }, {
     "range" : "29",
     "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "44"
   }, {
     "iri" : "https://w3id.org/fuskg/disease#hasFood",
@@ -5991,52 +5991,52 @@
   }, {
     "range" : "68",
     "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "66"
   }, {
     "range" : "10",
     "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "71"
   }, {
     "range" : "63",
     "domain" : "17",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
     "range" : "53",
     "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "74"
   }, {
     "range" : "10",
     "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "75"
   }, {
     "range" : "63",
     "domain" : "78",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "77"
   }, {
     "range" : "7",
     "domain" : "80",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "79"
   }, {
     "range" : "10",
     "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
     "range" : "10",
     "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "84"
   }, {
     "range" : "52",
     "domain" : "87",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "86"
   }, {
     "iri" : "https://w3id.org/fuskg/disease#hasDisease",
@@ -6056,142 +6056,142 @@
   }, {
     "range" : "10",
     "domain" : "94",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "93"
   }, {
     "range" : "97",
     "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "95"
   }, {
     "range" : "10",
     "domain" : "101",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "100"
   }, {
     "range" : "97",
     "domain" : "103",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "102"
   }, {
     "range" : "0",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "105"
   }, {
     "range" : "10",
     "domain" : "107",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "106"
   }, {
     "range" : "80",
     "domain" : "109",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "108"
   }, {
     "range" : "0",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "110"
   }, {
     "range" : "10",
     "domain" : "112",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "111"
   }, {
     "range" : "80",
     "domain" : "29",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "113"
   }, {
     "range" : "0",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "114"
   }, {
     "range" : "10",
     "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "115"
   }, {
     "range" : "68",
     "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "117"
   }, {
     "range" : "32",
     "domain" : "34",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "119"
   }, {
     "range" : "10",
     "domain" : "121",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "120"
   }, {
     "range" : "68",
     "domain" : "123",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "122"
   }, {
     "range" : "32",
     "domain" : "35",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "124"
   }, {
     "range" : "10",
     "domain" : "126",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "125"
   }, {
     "range" : "53",
     "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "129"
   }, {
     "range" : "52",
     "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "132"
   }, {
     "range" : "59",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "134"
   }, {
     "range" : "52",
     "domain" : "137",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "136"
   }, {
     "range" : "10",
     "domain" : "140",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "139"
   }, {
     "range" : "52",
     "domain" : "142",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "141"
   }, {
     "range" : "146",
     "domain" : "145",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "144"
   }, {
     "range" : "149",
     "domain" : "148",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "147"
   }, {
     "range" : "146",
     "domain" : "151",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "150"
   }, {
     "range" : "149",
     "domain" : "153",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "152"
   }, {
     "iri" : "https://w3id.org/fuskg/core#concernsConsumptionOf",
@@ -6206,442 +6206,442 @@
     "comment" : {
       "en" : "This property defines the relationship between a barrier and the consumption of a food or nutrient."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "154"
   }, {
     "range" : "146",
     "domain" : "157",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "156"
   }, {
     "range" : "56",
     "domain" : "159",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "158"
   }, {
     "range" : "91",
     "domain" : "143",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "162"
   }, {
     "range" : "52",
     "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "163"
   }, {
     "range" : "91",
     "domain" : "90",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "164"
   }, {
     "range" : "52",
     "domain" : "166",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "165"
   }, {
     "range" : "91",
     "domain" : "168",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "167"
   }, {
     "range" : "52",
     "domain" : "57",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "169"
   }, {
     "range" : "91",
     "domain" : "171",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "170"
   }, {
     "range" : "52",
     "domain" : "173",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "172"
   }, {
     "range" : "59",
     "domain" : "104",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "174"
   }, {
     "range" : "52",
     "domain" : "176",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "175"
   }, {
     "range" : "59",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "179"
   }, {
     "range" : "187",
     "domain" : "186",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "185"
   }, {
     "range" : "146",
     "domain" : "189",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "188"
   }, {
     "range" : "6",
     "domain" : "191",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "190"
   }, {
     "range" : "161",
     "domain" : "193",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "192"
   }, {
     "range" : "196",
     "domain" : "195",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "194"
   }, {
     "range" : "199",
     "domain" : "198",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "197"
   }, {
     "range" : "196",
     "domain" : "187",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "200"
   }, {
     "range" : "199",
     "domain" : "202",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "201"
   }, {
     "range" : "54",
     "domain" : "204",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "203"
   }, {
     "range" : "199",
     "domain" : "206",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "205"
   }, {
     "range" : "54",
     "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "207"
   }, {
     "range" : "199",
     "domain" : "209",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "208"
   }, {
     "range" : "54",
     "domain" : "211",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "210"
   }, {
     "range" : "199",
     "domain" : "213",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "212"
   }, {
     "range" : "54",
     "domain" : "215",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "214"
   }, {
     "range" : "146",
     "domain" : "217",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "216"
   }, {
     "range" : "220",
     "domain" : "219",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "218"
   }, {
     "range" : "146",
     "domain" : "222",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "221"
   }, {
     "range" : "220",
     "domain" : "224",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "223"
   }, {
     "range" : "146",
     "domain" : "226",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "225"
   }, {
     "range" : "187",
     "domain" : "228",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "227"
   }, {
     "range" : "146",
     "domain" : "232",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "231"
   }, {
     "range" : "196",
     "domain" : "246",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "245"
   }, {
     "range" : "180",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "249"
   }, {
     "range" : "246",
     "domain" : "251",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "250"
   }, {
     "range" : "180",
     "domain" : "253",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "252"
   }, {
     "range" : "246",
     "domain" : "255",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "254"
   }, {
     "range" : "180",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "256"
   }, {
     "range" : "228",
     "domain" : "258",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "257"
   }, {
     "range" : "180",
     "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "259"
   }, {
     "range" : "248",
     "domain" : "271",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "270"
   }, {
     "range" : "180",
     "domain" : "273",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "272"
   }, {
     "range" : "248",
     "domain" : "275",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "274"
   }, {
     "range" : "180",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "276"
   }, {
     "range" : "248",
     "domain" : "279",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "278"
   }, {
     "range" : "180",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "280"
   }, {
     "range" : "248",
     "domain" : "283",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "282"
   }, {
     "range" : "180",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "284"
   }, {
     "range" : "248",
     "domain" : "286",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "285"
   }, {
     "range" : "180",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "287"
   }, {
     "range" : "248",
     "domain" : "289",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "288"
   }, {
     "range" : "180",
     "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "290"
   }, {
     "range" : "248",
     "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "291"
   }, {
     "range" : "182",
     "domain" : "239",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "292"
   }, {
     "range" : "248",
     "domain" : "294",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "293"
   }, {
     "range" : "182",
     "domain" : "240",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "297"
   }, {
     "range" : "248",
     "domain" : "299",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "298"
   }, {
     "range" : "182",
     "domain" : "241",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "300"
   }, {
     "range" : "248",
     "domain" : "302",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "301"
   }, {
     "range" : "180",
     "domain" : "248",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "306"
   }, {
     "range" : "248",
     "domain" : "308",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "307"
   }, {
     "range" : "180",
     "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "309"
   }, {
     "range" : "99",
     "domain" : "296",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "318"
   }, {
     "range" : "182",
     "domain" : "181",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "319"
   }, {
     "range" : "65",
     "domain" : "321",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "320"
   }, {
     "range" : "182",
     "domain" : "235",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "322"
   }, {
     "range" : "65",
     "domain" : "64",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "323"
   }, {
     "range" : "182",
     "domain" : "236",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "324"
   }, {
     "range" : "65",
     "domain" : "326",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "325"
   }, {
     "range" : "182",
     "domain" : "237",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "327"
   }, {
     "range" : "316",
     "domain" : "329",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "328"
   }, {
     "range" : "182",
     "domain" : "238",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "330"
   }, {
     "range" : "248",
     "domain" : "247",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "331"
   }, {
     "range" : "109",
     "domain" : "333",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "332"
   }, {
     "range" : "99",
     "domain" : "97",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "334"
   }, {
     "range" : "109",
     "domain" : "336",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "335"
   }, {
     "range" : "99",
     "domain" : "338",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "337"
   }, {
     "range" : "109",
     "domain" : "340",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "339"
   }, {
     "range" : "99",
     "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "341"
   }, {
     "range" : "109",
     "domain" : "343",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "342"
   }, {
     "range" : "99",
     "domain" : "233",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "344"
   }, {
     "range" : "109",
     "domain" : "346",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "345"
   }, {
     "range" : "99",
     "domain" : "348",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "347"
   }, {
     "range" : "182",
     "domain" : "234",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "349"
   }, {
     "iri" : "https://w3id.org/fuskg/core#contains",
@@ -6656,53 +6656,53 @@
     "comment" : {
       "en" : "This property specifies that a food contains another food"
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "351"
   }, {
     "range" : "1",
     "domain" : "0",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "352"
   }, {
-    "range" : "35",
-    "domain" : "350",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "128",
+    "domain" : "354",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "353"
   }, {
     "range" : "1",
     "domain" : "244",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "354"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "355"
   }, {
     "range" : "264",
-    "domain" : "356",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "355"
+    "domain" : "357",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "356"
   }, {
     "range" : "1",
     "domain" : "60",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "357"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "358"
   }, {
     "range" : "264",
-    "domain" : "359",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "358"
+    "domain" : "360",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "359"
   }, {
     "range" : "99",
     "domain" : "161",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "360"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "361"
   }, {
     "range" : "264",
     "domain" : "263",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "361"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "362"
   }, {
     "range" : "99",
     "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "362"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "363"
   }, {
     "iri" : "https://w3id.org/fuskg/core#hasNutrient",
     "baseIri" : "https://w3id.org/fuskg/core",
@@ -6716,202 +6716,202 @@
     "comment" : {
       "en" : "This property specifies the nutrient(s) contained ia a food."
     },
-    "attributes" : [ "object", "external" ],
-    "id" : "363"
+    "attributes" : [ "external", "object" ],
+    "id" : "364"
   }, {
     "range" : "12",
     "domain" : "128",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "364"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "365"
   }, {
     "range" : "10",
-    "domain" : "366",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "365"
+    "domain" : "367",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "366"
   }, {
     "range" : "12",
     "domain" : "199",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "367"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "368"
   }, {
     "range" : "244",
     "domain" : "243",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "368"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "369"
   }, {
     "range" : "33",
     "domain" : "32",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "369"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "370"
   }, {
     "range" : "244",
-    "domain" : "371",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "370"
+    "domain" : "372",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "371"
   }, {
     "range" : "33",
     "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "372"
-  }, {
-    "range" : "184",
-    "domain" : "374",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "373"
   }, {
-    "range" : "128",
-    "domain" : "380",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "379"
+    "range" : "184",
+    "domain" : "375",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "374"
+  }, {
+    "range" : "35",
+    "domain" : "350",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "380"
   }, {
     "range" : "184",
     "domain" : "382",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "381"
   }, {
     "range" : "128",
-    "domain" : "127",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "384",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "383"
   }, {
     "range" : "184",
     "domain" : "183",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "384"
-  }, {
-    "range" : "128",
-    "domain" : "386",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "385"
   }, {
+    "range" : "128",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "386"
+  }, {
     "range" : "10",
-    "domain" : "375",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "376",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "388"
   }, {
     "range" : "273",
     "domain" : "390",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "389"
   }, {
     "range" : "10",
-    "domain" : "376",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "377",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "391"
   }, {
     "range" : "273",
     "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "392"
   }, {
     "range" : "10",
-    "domain" : "377",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "378",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "393"
   }, {
     "range" : "273",
     "domain" : "63",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "394"
   }, {
     "range" : "10",
-    "domain" : "378",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "379",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "395"
   }, {
     "range" : "230",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "396"
   }, {
     "range" : "1",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "402"
   }, {
     "range" : "7",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "403"
   }, {
     "range" : "33",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "405"
   }, {
     "range" : "273",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "406"
   }, {
     "range" : "91",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "407"
   }, {
     "range" : "196",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "408"
   }, {
     "range" : "65",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "409"
   }, {
     "range" : "277",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "410"
   }, {
     "range" : "248",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "411"
   }, {
     "range" : "413",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "412"
   }, {
     "range" : "1",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "414"
   }, {
     "range" : "7",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "415"
   }, {
     "range" : "230",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "416"
   }, {
     "range" : "33",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "417"
   }, {
     "range" : "281",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "418"
   }, {
     "range" : "91",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "419"
   }, {
     "range" : "196",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "420"
   }, {
     "range" : "413",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "421"
   }, {
     "iri" : "https://w3id.org/fuskg/core#affectsPerformingOf",
@@ -6926,362 +6926,362 @@
     "comment" : {
       "en" : "This property defines the relationship between a barrier affecting the performing of an activity."
     },
-    "attributes" : [ "object", "external" ],
+    "attributes" : [ "external", "object" ],
     "id" : "422"
   }, {
     "range" : "273",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "424"
   }, {
     "range" : "248",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "436"
   }, {
     "range" : "277",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "437"
   }, {
     "range" : "413",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "438"
   }, {
     "range" : "65",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "439"
   }, {
     "range" : "7",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "445"
   }, {
     "range" : "91",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "446"
   }, {
     "range" : "230",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "447"
   }, {
     "range" : "1",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "448"
   }, {
     "range" : "413",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "449"
   }, {
     "range" : "65",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "450"
   }, {
     "range" : "273",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "451"
   }, {
     "range" : "248",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "452"
   }, {
     "range" : "277",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "453"
   }, {
     "range" : "230",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "454"
   }, {
     "range" : "1",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "455"
   }, {
     "range" : "196",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "456"
   }, {
     "range" : "273",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "457"
   }, {
     "range" : "7",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "458"
   }, {
     "range" : "91",
     "domain" : "33",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "459"
   }, {
     "range" : "65",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "460"
   }, {
     "range" : "277",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "461"
   }, {
     "range" : "248",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "462"
   }, {
     "range" : "413",
     "domain" : "281",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "465"
   }, {
     "range" : "65",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "466"
   }, {
     "range" : "70",
     "domain" : "444",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "467"
   }, {
     "range" : "277",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "468"
   }, {
     "range" : "70",
     "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "469"
   }, {
     "range" : "248",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "470"
   }, {
     "range" : "233",
     "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "471"
   }, {
     "range" : "413",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "472"
   }, {
     "range" : "233",
     "domain" : "182",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "473"
   }, {
     "range" : "118",
     "domain" : "475",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "474"
   }, {
     "range" : "118",
     "domain" : "264",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "476"
   }, {
     "range" : "230",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "477"
   }, {
     "range" : "26",
     "domain" : "25",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "478"
   }, {
     "range" : "26",
     "domain" : "440",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "479"
   }, {
     "range" : "67",
     "domain" : "463",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "480"
   }, {
     "range" : "67",
     "domain" : "464",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "481"
   }, {
     "range" : "273",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "483"
   }, {
     "range" : "248",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "484"
   }, {
     "range" : "277",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "485"
   }, {
     "range" : "230",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "486"
   }, {
     "range" : "413",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "487"
   }, {
     "range" : "65",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "488"
   }, {
     "range" : "248",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "489"
   }, {
     "range" : "413",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "490"
   }, {
     "range" : "253",
     "domain" : "220",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "491"
   }, {
     "range" : "1",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "492"
   }, {
     "range" : "62",
     "domain" : "149",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "493"
   }, {
     "range" : "273",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "494"
   }, {
     "range" : "62",
     "domain" : "26",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "495"
   }, {
     "range" : "62",
     "domain" : "399",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "496"
   }, {
     "range" : "62",
     "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "497"
   }, {
     "range" : "62",
     "domain" : "499",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "498"
   }, {
     "range" : "62",
     "domain" : "178",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "500"
   }, {
     "range" : "62",
     "domain" : "502",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "501"
   }, {
     "range" : "265",
     "domain" : "504",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "503"
   }, {
     "range" : "70",
     "domain" : "443",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "505"
   }, {
     "range" : "277",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "506"
   }, {
     "range" : "230",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "507"
   }, {
     "range" : "65",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "508"
   }, {
     "range" : "273",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "509"
   }, {
     "range" : "248",
     "domain" : "196",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "510"
   }, {
     "range" : "1",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "511"
   }, {
     "range" : "7",
     "domain" : "91",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "512"
   }, {
     "range" : "104",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "513"
   }, {
     "range" : "58",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "514"
   }, {
     "range" : "80",
     "domain" : "12",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "516"
   }, {
     "range" : "273",
     "domain" : "248",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "517"
   }, {
     "range" : "104",
     "domain" : "135",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "518"
   }, {
     "iri" : "https://w3id.org/fuskg/core#contains",
@@ -7296,82 +7296,82 @@
     "comment" : {
       "en" : "This property specifies that a food contains another food"
     },
-    "attributes" : [ "object", "someValues", "external" ],
+    "attributes" : [ "someValues", "external", "object" ],
     "id" : "519"
   }, {
     "range" : "273",
     "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "520"
   }, {
     "range" : "248",
     "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "521"
   }, {
     "range" : "273",
     "domain" : "413",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "522"
   }, {
     "range" : "248",
     "domain" : "413",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "523"
   }, {
     "range" : "248",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "524"
   }, {
     "range" : "413",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "525"
   }, {
     "range" : "413",
     "domain" : "65",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "526"
   }, {
     "range" : "273",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "527"
   }, {
     "range" : "65",
     "domain" : "277",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "528"
   }, {
     "range" : "273",
     "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "529"
   }, {
     "range" : "248",
     "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "530"
   }, {
     "range" : "277",
     "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "531"
   }, {
     "range" : "273",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "532"
   }, {
     "range" : "413",
     "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "533"
   }, {
     "range" : "65",
     "domain" : "230",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "534"
   }, {
     "iri" : "https://w3id.org/fuskg/food#ediblePart",
@@ -7436,227 +7436,227 @@
   }, {
     "range" : "161",
     "domain" : "544",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "549"
   }, {
     "range" : "161",
-    "domain" : "397",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "398",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "550"
   }, {
     "range" : "161",
     "domain" : "400",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "551"
   }, {
     "range" : "161",
     "domain" : "545",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "552"
   }, {
     "range" : "161",
     "domain" : "546",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "553"
   }, {
     "range" : "161",
     "domain" : "401",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "554"
   }, {
     "range" : "161",
     "domain" : "547",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "555"
   }, {
     "range" : "161",
     "domain" : "404",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "556"
   }, {
     "range" : "161",
     "domain" : "317",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "557"
   }, {
     "range" : "161",
     "domain" : "548",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "558"
   }, {
     "range" : "161",
     "domain" : "543",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "559"
   }, {
     "range" : "195",
     "domain" : "310",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "560"
   }, {
     "range" : "186",
     "domain" : "311",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "561"
   }, {
     "range" : "186",
     "domain" : "312",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "562"
   }, {
     "range" : "186",
     "domain" : "313",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "563"
   }, {
     "range" : "186",
     "domain" : "314",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "564"
   }, {
     "range" : "186",
     "domain" : "315",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "565"
   }, {
     "range" : "48",
     "domain" : "180",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "566"
   }, {
     "range" : "48",
     "domain" : "316",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "567"
   }, {
     "range" : "161",
     "domain" : "160",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "568"
   }, {
     "range" : "204",
     "domain" : "305",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "569"
   }, {
     "range" : "253",
     "domain" : "442",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "570"
   }, {
     "range" : "195",
     "domain" : "242",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "571"
   }, {
     "range" : "296",
     "domain" : "430",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "572"
   }, {
     "range" : "230",
     "domain" : "229",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "573"
   }, {
     "range" : "296",
     "domain" : "431",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "574"
   }, {
     "range" : "258",
     "domain" : "267",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "575"
   }, {
     "range" : "296",
     "domain" : "432",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "576"
   }, {
     "range" : "258",
     "domain" : "268",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "577"
   }, {
     "range" : "296",
     "domain" : "387",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "578"
   }, {
     "range" : "258",
     "domain" : "269",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "579"
   }, {
     "range" : "296",
     "domain" : "433",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "580"
   }, {
     "range" : "261",
     "domain" : "540",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "581"
   }, {
     "range" : "296",
     "domain" : "434",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "582"
   }, {
     "range" : "261",
     "domain" : "260",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "583"
   }, {
     "range" : "296",
     "domain" : "435",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "584"
   }, {
     "range" : "204",
     "domain" : "303",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "585"
   }, {
     "range" : "178",
     "domain" : "441",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "586"
   }, {
     "range" : "204",
     "domain" : "304",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "587"
   }, {
     "range" : "178",
     "domain" : "177",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "588"
   }, {
     "range" : "131",
     "domain" : "130",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "589"
   }, {
     "range" : "296",
     "domain" : "428",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "590"
   }, {
     "range" : "230",
     "domain" : "265",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "591"
   }, {
     "range" : "296",
     "domain" : "429",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "592"
   }, {
     "range" : "230",
     "domain" : "266",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "593"
   }, {
     "iri" : "https://w3id.org/fuskg/disease#riskLevel",
@@ -7676,77 +7676,77 @@
   }, {
     "range" : "228",
     "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "595"
   }, {
     "range" : "180",
     "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "596"
   }, {
     "range" : "123",
     "domain" : "542",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "597"
   }, {
     "range" : "180",
     "domain" : "413",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "598"
   }, {
     "range" : "123",
     "domain" : "482",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "599"
   }, {
     "range" : "180",
     "domain" : "261",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "600"
   }, {
     "range" : "296",
     "domain" : "295",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "601"
   }, {
     "range" : "180",
     "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "602"
   }, {
     "range" : "296",
     "domain" : "425",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "603"
   }, {
     "range" : "313",
     "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "604"
   }, {
     "range" : "296",
     "domain" : "426",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "605"
   }, {
     "range" : "313",
     "domain" : "184",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "606"
   }, {
     "range" : "296",
-    "domain" : "398",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "397",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "607"
   }, {
     "range" : "131",
     "domain" : "262",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "608"
   }, {
     "range" : "296",
     "domain" : "427",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "609"
   }, {
     "iri" : "https://w3id.org/fuskg/food#unit",
@@ -7766,52 +7766,52 @@
   }, {
     "range" : "33",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "611"
   }, {
     "range" : "196",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "612"
   }, {
     "range" : "91",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "613"
   }, {
     "range" : "7",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "614"
   }, {
     "range" : "1",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "615"
   }, {
     "range" : "230",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "616"
   }, {
     "range" : "277",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "617"
   }, {
     "range" : "65",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "618"
   }, {
     "range" : "261",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "619"
   }, {
     "range" : "281",
     "domain" : "62",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "620"
   } ]
 }
