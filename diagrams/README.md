@@ -98,6 +98,7 @@ The **Guidelines** module imports the **Barrier** and **Temporal** modules. It m
 - **MonitoringRule**: Represents a rule.
 - `hasRuleDefinition`: Defines the rule.
 - `hasMonitoredValueInterval`: Specifies the monitored interval.
+- `hasViolationInterval`: Connects a MonitoringRule to a ViolationInterval which allows to define tolerances associated with how much a MonitoringRule has been violated.
 - `monitors`: Links rules to users.
 
 ### 10. User Module
