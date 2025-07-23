@@ -111,13 +111,7 @@ within the Supported Intensity Scale (SIS) manual [[1]](#SIS) and how these barr
 of specific activities. In particular, the barriers are sub-divided into different categories based on
 their type (i.e., CognitiveBarrier, HealthBarrier, PsychologicalBarrier, PhysicalBarrier, etc.) and
 can be connected to an activity, a food or a nutrient as previously described in the core module.
-Also, this module presents the StateOfChange and the Patient concepts. Where the first represents
-the attitude to changing behavior a user may be in (such as Pre-contemplation, Contemplation,
-Preparation, Action, Termination or Maintenance), and the second represents the user as a patient
-that is in a specific state of change (represented by the hasBehavior property) and that can have one
-or more specific diagnosis. The diagnosis of a patient is defined by the property hasDiagnosis that
-connects the instance of a patient to a DiseaseRelation. In turn, DiseaseRelation is a complex object
-defining the relation between a disease and a health barrier specified by the property isTriggeredBy</span>
+Also, this module presents the FeatureOfInterest which specifies the feature of interest relating to a barrier. </span>
 <div id="namespacedeclarations">
 <h3 id="ns" class="list">Namespace declarations</h3>
 <div id="ns" align="center">
@@ -133,7 +127,6 @@ defining the relation between a disease and a health barrier specified by the pr
 <tr><td><b>obo</b></td><td>&lt;http://purl.obolibrary.org/obo/&gt;</td></tr>
 <tr><td><b>oboInOwl</b></td><td>&lt;http://www.geneontology.org/formats/oboInOwl#&gt;</td></tr>
 <tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
-<tr><td><b>physical-activity</b></td><td>&lt;http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#&gt;</td></tr>
 <tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
 <tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
 <tr><td><b>vann</b></td><td>&lt;http://purl.org/vocab/vann/&gt;</td></tr>
@@ -155,70 +148,26 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#Action" title="https://w3id.org/fuskg/barrier#Action">Action</a>
-   </li>
-   <li>
-      <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise"
-         title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise">
-         <span>Aerobic Excercise</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise"
-         title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise">
-         <span>Anaerobic Excercise</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports"
-         title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports">
-         <span>Athletic Sports</span>
-      </a>
-   </li>
-   <li>
       <a href="#ClimaticCondition" title="https://w3id.org/fuskg/barrier#ClimaticCondition">Climatic Condition</a>
    </li>
    <li>
       <a href="#CognitiveBarrier" title="https://w3id.org/fuskg/barrier#CognitiveBarrier">Cognitive Barrier</a>
    </li>
    <li>
-      <a href="#Contemplation" title="https://w3id.org/fuskg/barrier#Contemplation">Contemplation</a>
-   </li>
-   <li>
-      <a href="#DiseaseRelation" title="https://w3id.org/fuskg/barrier#DiseaseRelation">Disease Relation</a>
-   </li>
-   <li>
       <a href="#EnvironmentBarrier"
          title="https://w3id.org/fuskg/barrier#EnvironmentBarrier">Environment Barrier</a>
    </li>
    <li>
-      <a href="#EquipmentCost" title="https://w3id.org/fuskg/barrier#EquipmentCost">
-         <span>Equipment Cost</span>
-      </a>
-   </li>
-   <li>
-      <a href="#ExerciseType" title="https://w3id.org/fuskg/barrier#ExerciseType">Exercise Type</a>
+      <a href="#EquipmentCost" title="https://w3id.org/fuskg/barrier#EquipmentCost">Equipment Cost</a>
    </li>
    <li>
       <a href="#Fear" title="https://w3id.org/fuskg/barrier#Fear">Fear</a>
    </li>
    <li>
-      <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise"
-         title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise">
-         <span>Flexibility Excercise</span>
-      </a>
+      <a href="#FeatureOfInterest" title="https://w3id.org/fuskg/barrier#FeatureOfInterest">Feature of Interest</a>
    </li>
    <li>
       <a href="#HealthBarrier" title="https://w3id.org/fuskg/barrier#HealthBarrier">Health Barrier</a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#IndoorActivity"
-         title="http://purl.obolibrary.org/obo/doid.owl#IndoorActivity">
-         <span>Indoor Activity</span>
-      </a>
-   </li>
-   <li>
-      <a href="#IntensityLevel" title="https://w3id.org/fuskg/barrier#IntensityLevel">Intensity Level</a>
    </li>
    <li>
       <a href="#JobCondition" title="https://w3id.org/fuskg/barrier#JobCondition">Job Condition</a>
@@ -228,32 +177,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#LackOfSupport" title="https://w3id.org/fuskg/barrier#LackOfSupport">Lack of Support</a>
-   </li>
-   <li>
-      <a href="#Light" title="https://w3id.org/fuskg/barrier#Light">Light</a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#LightActivity"
-         title="http://purl.obolibrary.org/obo/doid.owl#LightActivity">
-         <span>Light Activity</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Maintenance" title="https://w3id.org/fuskg/barrier#Maintenance">
-         <span>Maintenance</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Moderate" title="https://w3id.org/fuskg/barrier#Moderate">Moderate</a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment"
-         title="http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment">
-         <span>Needs Equipment</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Patient" title="https://w3id.org/fuskg/barrier#Patient">Patient</a>
    </li>
    <li>
       <a href="#PersonalBarrier" title="https://w3id.org/fuskg/barrier#PersonalBarrier">Personal Barrier</a>
@@ -271,155 +194,17 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
-      <a href="#PreContemplation" title="https://w3id.org/fuskg/barrier#PreContemplation">
-         <span>Pre Contemplation</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Preparation" title="https://w3id.org/fuskg/barrier#Preparation">
-         <span>Preparation</span>
-      </a>
-   </li>
-   <li>
       <a href="#PsychologicalBarrier"
          title="https://w3id.org/fuskg/barrier#PsychologicalBarrier">Psychological Barrier</a>
    </li>
    <li>
-      <a href="#Racing" title="https://w3id.org/fuskg/barrier#Racing">
-         <span>Racing</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Sign" title="https://w3id.org/fuskg/barrier#Sign">Sign</a>
-   </li>
-   <li>
       <a href="#SocialBarrier" title="https://w3id.org/fuskg/barrier#SocialBarrier">Social Barrier</a>
-   </li>
-   <li>
-      <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a>
-   </li>
-   <li>
-      <a href="#Swimming" title="https://w3id.org/fuskg/barrier#Swimming">
-         <span>Swimming</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Termination" title="https://w3id.org/fuskg/barrier#Termination">
-         <span>Termination</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#Treadmill"
-         title="http://purl.obolibrary.org/obo/doid.owl#Treadmill">
-         <span>Treadmill</span>
-      </a>
-   </li>
-   <li>
-      <a href="#Vigorous" title="https://w3id.org/fuskg/barrier#Vigorous">Vigorous</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#hasBehavior" title="https://w3id.org/fuskg/barrier#hasBehavior">has behavior</a>
-   </li>
-   <li>
-      <a href="#hasDiagnosis" title="https://w3id.org/fuskg/barrier#hasDiagnosis">has diagnosis</a>
-   </li>
-   <li>
-      <a href="#hasDisease" title="https://w3id.org/fuskg/barrier#hasDisease">has disease</a>
-   </li>
-   <li>
-      <a href="#hasIntensity" title="https://w3id.org/fuskg/barrier#hasIntensity">has intensity</a>
-   </li>
-   <li>
-      <a href="#hasInteresting" title="https://w3id.org/fuskg/barrier#hasInteresting">has interesting</a>
-   </li>
-   <li>
-      <a href="#hasSign" title="https://w3id.org/fuskg/barrier#hasSign">has sign</a>
-   </li>
-   <li>
-      <a href="#hasSuitable" title="https://w3id.org/fuskg/barrier#hasSuitable">has suitable</a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#hasType" title="http://purl.obolibrary.org/obo/doid.owl#hasType">
-         <span>has Type</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#isDefineBy"
-         title="http://purl.obolibrary.org/obo/doid.owl#isDefineBy">
-         <span>is Define By</span>
-      </a>
-   </li>
-   <li>
-      <a href="#isSignOf" title="https://w3id.org/fuskg/barrier#isSignOf">is sign of</a>
-   </li>
-   <li>
-      <a href="#isSuitableFor" title="https://w3id.org/fuskg/barrier#isSuitableFor">is suitable for</a>
-   </li>
-   <li>
-      <a href="#isTriggeredBy" title="https://w3id.org/fuskg/barrier#isTriggeredBy">is triggered by</a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#isTypeOf" title="http://purl.obolibrary.org/obo/doid.owl#isTypeOf">
-         <span>is Type Of</span>
-      </a>
-   </li>
-</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    class="hlist">
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#address" title="http://purl.obolibrary.org/obo/doid.owl#address">
-         <span>address</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#city" title="http://purl.obolibrary.org/obo/doid.owl#city">
-         <span>city</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#contactNumber"
-         title="http://purl.obolibrary.org/obo/doid.owl#contactNumber">
-         <span>contact Number</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#country" title="http://purl.obolibrary.org/obo/doid.owl#country">
-         <span>country</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#DOB" title="http://purl.obolibrary.org/obo/doid.owl#DOB">
-         <span>D O B</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#firstName"
-         title="http://purl.obolibrary.org/obo/doid.owl#firstName">
-         <span>first Name</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#lastName" title="http://purl.obolibrary.org/obo/doid.owl#lastName">
-         <span>last Name</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#postcode" title="http://purl.obolibrary.org/obo/doid.owl#postcode">
-         <span>postcode</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#state" title="http://purl.obolibrary.org/obo/doid.owl#state">
-         <span>state</span>
-      </a>
-   </li>
-   <li>
-      <a href="#http://purl.obolibrary.org/obo/doid.owl#street" title="http://purl.obolibrary.org/obo/doid.owl#street">
-         <span>street</span>
-      </a>
+      <a href="#hasFeature" title="https://w3id.org/fuskg/barrier#hasFeature">has feature</a>
    </li>
 </ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -487,22 +272,19 @@ The Barrier module imports the Core module and models different types of barrier
 
 The core barrier categories include:  
 
-- [CognitiveBarrier](#CognitiveBarrier)  
-- [HealthBarrier](#HealthBarrier)  
-- [PsychologicalBarrier](#PsychologicalBarrier)  
-- [PhysicalBarrier](http://purl.obolibrary.org/obo/doid.owl#PhysicalBarrier)  
+- [CognitiveBarrier](#CognitiveBarrier)
+- [EnvironmentBarrier](#EnvironmentBarrier)    
+- [HealthBarrier](#HealthBarrier)
+- [PersonalBarrier](#PersonalBarrier)
+- [PhysicalBarrier](http://purl.obolibrary.org/obo/doid.owl#PhysicalBarrier)      
+- [PsychologicalBarrier](#PsychologicalBarrier)
+- [SocialBarrier](#SocialBarrier)    
+
 
 These barriers can be associated with an [Activity](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Activity), [Food](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Food), or [Nutrient](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Nutrient) as previously defined in the Core module.  
 
-Additionally, this module introduces:  
+Additionally, this module introduces the [FeatureOfInterest](#FeatureOfInterest) which specifies the feature of interest relating to a barrier.
 
-- [StateOfChange](#StageOfChange): Represents a user's readiness to change behavior.  
-  - Possible states include Pre-contemplation, Contemplation, Preparation, Action, Termination, or Maintenance.  
-- [Patient](#Patient): Represents a user in a specific StateOfChange.  
-  - The [hasBehavior](#hasBehavior) property links a Patient to their state of change.  
-  - The [hasDiagnosis](#hasDiagnosis) property connects a Patient to a [DiseaseRelation](#DiseaseRelation).  
-
-The [DiseaseRelation](#DiseaseRelation) concept defines the relationship between a disease and a health barrier through the [isTriggeredBy](#isTriggeredBy) property.  
 	</div>
 
 </div>
@@ -513,123 +295,24 @@ The [DiseaseRelation](#DiseaseRelation) concept defines the relationship between
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Barriers Module of Functional Status Knowledge Graph (FuS-KG) classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by Barriers Module of Functional Status Knowledge Graph (FuS-KG).
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
- <h3 id="classes-headline" class="list">Classes</h3>
+  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
-  <li><a href="#Action" title="https://w3id.org/fuskg/barrier#Action">Action</a></li>
-  <li><a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise"> <span>Aerobic Excercise</span> </a></li>
-  <li><a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise"> <span>Anaerobic Excercise</span> </a></li>
-  <li><a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports"> <span>Athletic Sports</span> </a></li>
   <li><a href="#ClimaticCondition" title="https://w3id.org/fuskg/barrier#ClimaticCondition">Climatic Condition</a></li>
   <li><a href="#CognitiveBarrier" title="https://w3id.org/fuskg/barrier#CognitiveBarrier">Cognitive Barrier</a></li>
-  <li><a href="#Contemplation" title="https://w3id.org/fuskg/barrier#Contemplation">Contemplation</a></li>
-  <li><a href="#DiseaseRelation" title="https://w3id.org/fuskg/barrier#DiseaseRelation">Disease Relation</a></li>
   <li><a href="#EnvironmentBarrier" title="https://w3id.org/fuskg/barrier#EnvironmentBarrier">Environment Barrier</a></li>
-  <li><a href="#EquipmentCost" title="https://w3id.org/fuskg/barrier#EquipmentCost"> <span>Equipment Cost</span> </a></li>
-  <li><a href="#ExerciseType" title="https://w3id.org/fuskg/barrier#ExerciseType">Exercise Type</a></li>
+  <li><a href="#EquipmentCost" title="https://w3id.org/fuskg/barrier#EquipmentCost">Equipment Cost</a></li>
   <li><a href="#Fear" title="https://w3id.org/fuskg/barrier#Fear">Fear</a></li>
-  <li><a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise"> <span>Flexibility Excercise</span> </a></li>
+  <li><a href="#FeatureOfInterest" title="https://w3id.org/fuskg/barrier#FeatureOfInterest">Feature of Interest</a></li>
   <li><a href="#HealthBarrier" title="https://w3id.org/fuskg/barrier#HealthBarrier">Health Barrier</a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#IndoorActivity" title="http://purl.obolibrary.org/obo/doid.owl#IndoorActivity"> <span>Indoor Activity</span> </a></li>
-  <li><a href="#IntensityLevel" title="https://w3id.org/fuskg/barrier#IntensityLevel">Intensity Level</a></li>
   <li><a href="#JobCondition" title="https://w3id.org/fuskg/barrier#JobCondition">Job Condition</a></li>
   <li><a href="#LackOfSafety" title="https://w3id.org/fuskg/barrier#LackOfSafety">Lack of Safety</a></li>
   <li><a href="#LackOfSupport" title="https://w3id.org/fuskg/barrier#LackOfSupport">Lack of Support</a></li>
-  <li><a href="#Light" title="https://w3id.org/fuskg/barrier#Light">Light</a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#LightActivity" title="http://purl.obolibrary.org/obo/doid.owl#LightActivity"> <span>Light Activity</span> </a></li>
-  <li><a href="#Maintenance" title="https://w3id.org/fuskg/barrier#Maintenance"> <span>Maintenance</span> </a></li>
-  <li><a href="#Moderate" title="https://w3id.org/fuskg/barrier#Moderate">Moderate</a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment" title="http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment"> <span>Needs Equipment</span> </a></li>
-  <li><a href="#Patient" title="https://w3id.org/fuskg/barrier#Patient">Patient</a></li>
   <li><a href="#PersonalBarrier" title="https://w3id.org/fuskg/barrier#PersonalBarrier">Personal Barrier</a></li>
   <li><a href="#http://purl.obolibrary.org/obo/doid.owl#PhysicalBarrier" title="http://purl.obolibrary.org/obo/doid.owl#PhysicalBarrier"> <span>Physical Barrier</span> </a></li>
   <li><a href="#http://purl.obolibrary.org/obo/doid.owl#PhysicalPain" title="http://purl.obolibrary.org/obo/doid.owl#PhysicalPain"> <span>Physical Pain</span> </a></li>
-  <li><a href="#PreContemplation" title="https://w3id.org/fuskg/barrier#PreContemplation"> <span>Pre Contemplation</span> </a></li>
-  <li><a href="#Preparation" title="https://w3id.org/fuskg/barrier#Preparation"> <span>Preparation</span> </a></li>
   <li><a href="#PsychologicalBarrier" title="https://w3id.org/fuskg/barrier#PsychologicalBarrier">Psychological Barrier</a></li>
-  <li><a href="#Racing" title="https://w3id.org/fuskg/barrier#Racing"> <span>Racing</span> </a></li>
-  <li><a href="#Sign" title="https://w3id.org/fuskg/barrier#Sign">Sign</a></li>
   <li><a href="#SocialBarrier" title="https://w3id.org/fuskg/barrier#SocialBarrier">Social Barrier</a></li>
-  <li><a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a></li>
-  <li><a href="#Swimming" title="https://w3id.org/fuskg/barrier#Swimming"> <span>Swimming</span> </a></li>
-  <li><a href="#Termination" title="https://w3id.org/fuskg/barrier#Termination"> <span>Termination</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#Treadmill" title="http://purl.obolibrary.org/obo/doid.owl#Treadmill"> <span>Treadmill</span> </a></li>
-  <li><a href="#Vigorous" title="https://w3id.org/fuskg/barrier#Vigorous">Vigorous</a></li>
  </ul>
- <div class="entity" id="Action">
-  <h3>Action<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Action</p>
-  <div class="comment">
-   <span class="markdown">This concept defines the Action state of change.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise">
-  <h3>Aerobic Excercise<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#ExerciseType" title="https://w3id.org/fuskg/barrier#ExerciseType">Exercise Type</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#Racing" title="https://w3id.org/fuskg/barrier#Racing">Racing</a> <sup class="type-c" title="class">c</sup>, <a href="#Swimming" title="https://w3id.org/fuskg/barrier#Swimming">Swimming</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#BikingOrCycling" title="http://purl.obolibrary.org/obo/doid.owl#BikingOrCycling">Biking Or Cycling</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#Gymnastics" title="http://purl.obolibrary.org/obo/doid.owl#Gymnastics">Gymnastics</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Hockey" title="https://w3id.org/fuskg/barrier#Hockey">Hockey</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#MartialArts" title="http://purl.obolibrary.org/obo/doid.owl#MartialArts">Martial Arts</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Tennis" title="https://w3id.org/fuskg/barrier#Tennis">Tennis</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Walking" title="https://w3id.org/fuskg/barrier#Walking">Walking</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise">
-  <h3>Anaerobic Excercise<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#ExerciseType" title="https://w3id.org/fuskg/barrier#ExerciseType">Exercise Type</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#WarmUpAndCoolDown" title="http://purl.obolibrary.org/obo/doid.owl#WarmUpAndCoolDown">Warm Up And Cool Down</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#WeightThrow" title="https://w3id.org/fuskg/barrier#WeightThrow">Weight Throw</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports">
-  <h3>Athletic Sports<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#ExerciseType" title="https://w3id.org/fuskg/barrier#ExerciseType">Exercise Type</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#Baseball" title="http://purl.obolibrary.org/obo/doid.owl#Baseball">Baseball</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Basketball" title="https://w3id.org/fuskg/barrier#Basketball">Basketball</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Football" title="https://w3id.org/fuskg/barrier#Football">Football</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#Golf" title="http://purl.obolibrary.org/obo/doid.owl#Golf">Golf</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Handball" title="https://w3id.org/fuskg/barrier#Handball">Handball</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Volleyball" title="https://w3id.org/fuskg/barrier#Volleyball">Volleyball</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="ClimaticCondition">
   <h3>Climatic Condition<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#ClimaticCondition</p>
@@ -642,12 +325,6 @@ This section provides details for each class and property defined by Barriers Mo
    </dt>
    <dd>
     <a href="#EnvironmentBarrier" title="https://w3id.org/fuskg/barrier#EnvironmentBarrier">Environment Barrier</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#Earthquake" title="https://w3id.org/fuskg/barrier#Earthquake">Earthquake</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Flood" title="https://w3id.org/fuskg/barrier#Flood">Flood</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -662,43 +339,7 @@ This section provides details for each class and property defined by Barriers Mo
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Contemplation">
-  <h3>Contemplation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Contemplation</p>
-  <div class="comment">
-   <span class="markdown">This concept defines the Contemplation state of change.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="DiseaseRelation">
-  <h3>Disease Relation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#DiseaseRelation</p>
-  <div class="comment">
-   <span class="markdown">The DiseaseRelation class is created to be a place-holder class. This relation holds the disease type and the name (instance) of the patient class. For the example, X patient has breast tumor), the individual X has a property hasDisease that has another object (DiseaseRelation_1, an instance of the class DiseaseRelation) as its value. please see the website below for more details http://www.w3.org/TR/swbp-n-aryRelations/</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#hasDisease" title="https://w3id.org/fuskg/barrier#hasDisease">has disease</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasDiagnosis" title="https://w3id.org/fuskg/barrier#hasDiagnosis">has diagnosis</a> <sup class="type-op" title="object property">op</sup>, <a href="#isTriggeredBy" title="https://w3id.org/fuskg/barrier#isTriggeredBy">is triggered by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -713,7 +354,7 @@ This section provides details for each class and property defined by Barriers Mo
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -721,50 +362,20 @@ This section provides details for each class and property defined by Barriers Mo
    <dd>
     <a href="#ClimaticCondition" title="https://w3id.org/fuskg/barrier#ClimaticCondition">Climatic Condition</a> <sup class="type-c" title="class">c</sup>, <a href="#EquipmentCost" title="https://w3id.org/fuskg/barrier#EquipmentCost">Equipment Cost</a> <sup class="type-c" title="class">c</sup>, <a href="#LackOfSafety" title="https://w3id.org/fuskg/barrier#LackOfSafety">Lack of Safety</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#DifficultParking" title="https://w3id.org/fuskg/barrier#DifficultParking">Difficult Parking</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#EnvironmentalBarrier" title="http://purl.obolibrary.org/obo/doid.owl#EnvironmentalBarrier">Environmental Barrier</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#EquipmentCost" title="https://w3id.org/fuskg/barrier#EquipmentCost">Equipment Cost</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#HeavyTraffic" title="https://w3id.org/fuskg/barrier#HeavyTraffic">Heavy Traffic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfTransport" title="https://w3id.org/fuskg/barrier#LackOfTransport">Lack Of Transport</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#PoorAccess" title="https://w3id.org/fuskg/barrier#PoorAccess">Poor Access</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#TransportDifficulties" title="http://purl.obolibrary.org/obo/doid.owl#TransportDifficulties">Transport Difficulties</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#WeatherCondition" title="https://w3id.org/fuskg/barrier#WeatherCondition">Weather Condition</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="EquipmentCost">
   <h3>Equipment Cost<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#EquipmentCost</p>
+  <div class="comment">
+   <span class="markdown">This concept specifies the barriers regarding the cost of equipment.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
     <a href="#EnvironmentBarrier" title="https://w3id.org/fuskg/barrier#EnvironmentBarrier">Environment Barrier</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#BicycleCost" title="https://w3id.org/fuskg/barrier#BicycleCost">Bicycle Cost</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#BikeCost" title="https://w3id.org/fuskg/barrier#BikeCost">Bike Cost</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#TreadmillCost" title="https://w3id.org/fuskg/barrier#TreadmillCost">Treadmill Cost</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    <a href="#EquipmentCost">named individual</a>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="ExerciseType">
-  <h3>Exercise Type<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#ExerciseType</p>
-  <div class="comment">
-   <span class="markdown">This concept represents the root concept of exercise types.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise">Aerobic Excercise</a> <sup class="type-c" title="class">c</sup>, <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AnaerobicExcercise">Anaerobic Excercise</a> <sup class="type-c" title="class">c</sup>, <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AthleticSports">Athletic Sports</a> <sup class="type-c" title="class">c</sup>, <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise">Flexibility Excercise</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#IndoorActivity" title="http://purl.obolibrary.org/obo/doid.owl#IndoorActivity">Indoor Activity</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -781,29 +392,20 @@ This section provides details for each class and property defined by Barriers Mo
    <dd>
     <a href="#PsychologicalBarrier" title="https://w3id.org/fuskg/barrier#PsychologicalBarrier">Psychological Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#FearOfHurting" title="https://w3id.org/fuskg/barrier#FearOfHurting">Fear Of Hurting</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FearOfInjury" title="https://w3id.org/fuskg/barrier#FearOfInjury">Fear Of Injury</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
   </dl>
  </div>
- <div class="entity" id="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise">
-  <h3>Flexibility Excercise<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#FlexibilityExcercise</p>
+ <div class="entity" id="FeatureOfInterest">
+  <h3>Feature of Interest<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#FeatureOfInterest</p>
+  <div class="comment">
+   <span class="markdown">This concept specifies different types of features that can be sings.</span>
+  </div>
   <dl class="description">
    <dt>
-    has super-classes
+    is in range of
    </dt>
    <dd>
-    <a href="#ExerciseType" title="https://w3id.org/fuskg/barrier#ExerciseType">Exercise Type</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#Stretching" title="http://purl.obolibrary.org/obo/doid.owl#Stretching">Stretching</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#Yoga" title="http://purl.obolibrary.org/obo/doid.owl#Yoga">Yoga</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="#hasFeature" title="https://w3id.org/fuskg/barrier#hasFeature">has feature</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -818,70 +420,7 @@ This section provides details for each class and property defined by Barriers Mo
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#isDefineBy" title="http://purl.obolibrary.org/obo/doid.owl#isDefineBy">is Define By</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#isTypeOf" title="http://purl.obolibrary.org/obo/doid.owl#isTypeOf">is Type Of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isTriggeredBy" title="https://w3id.org/fuskg/barrier#isTriggeredBy">is triggered by</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#hasType" title="http://purl.obolibrary.org/obo/doid.owl#hasType">has Type</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#Asthma" title="http://purl.obolibrary.org/obo/doid.owl#Asthma">Asthma</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#ChestPain" title="http://purl.obolibrary.org/obo/doid.owl#ChestPain">Chest Pain</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#ChestTightness" title="http://purl.obolibrary.org/obo/doid.owl#ChestTightness">Chest Tightness</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#HealthBarrier" title="http://purl.obolibrary.org/obo/doid.owl#HealthBarrier">Health Barrier</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#HealthProblems" title="http://purl.obolibrary.org/obo/doid.owl#HealthProblems">Health Problems</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#Hypoglycemic" title="http://purl.obolibrary.org/obo/doid.owl#Hypoglycemic">Hypoglycemic</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#OtherDisease" title="http://purl.obolibrary.org/obo/doid.owl#OtherDisease">Other Disease</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#Pain" title="http://purl.obolibrary.org/obo/doid.owl#Pain">Pain</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#T2D" title="https://w3id.org/fuskg/barrier#T2D">T2 D</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#TypeTwoDiabetes" title="http://purl.obolibrary.org/obo/doid.owl#TypeTwoDiabetes">Type Two Diabetes</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#IndoorActivity">
-  <h3>Indoor Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#IndoorActivity</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#ExerciseType" title="https://w3id.org/fuskg/barrier#ExerciseType">Exercise Type</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#LightActivity" title="http://purl.obolibrary.org/obo/doid.owl#LightActivity">Light Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment" title="http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment">Needs Equipment</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="IntensityLevel">
-  <h3>Intensity Level<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#IntensityLevel</p>
-  <div class="comment">
-   <span class="markdown">The level of intensity depends on how hard you have to work to do the activity. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#Light" title="https://w3id.org/fuskg/barrier#Light">Light</a> <sup class="type-c" title="class">c</sup>, <a href="#Moderate" title="https://w3id.org/fuskg/barrier#Moderate">Moderate</a> <sup class="type-c" title="class">c</sup>, <a href="#Vigorous" title="https://w3id.org/fuskg/barrier#Vigorous">Vigorous</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasIntensity" title="https://w3id.org/fuskg/barrier#hasIntensity">has intensity</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#Medium" title="https://w3id.org/fuskg/barrier#Medium">Medium</a> <sup class="type-ni" title="named individual">ni</sup>
+    <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -898,12 +437,6 @@ This section provides details for each class and property defined by Barriers Mo
    <dd>
     <a href="#PersonalBarrier" title="https://w3id.org/fuskg/barrier#PersonalBarrier">Personal Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#JobChanging" title="https://w3id.org/fuskg/barrier#JobChanging">Job Changing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#JobDistance" title="https://w3id.org/fuskg/barrier#JobDistance">Job Distance</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="LackOfSafety">
@@ -918,12 +451,6 @@ This section provides details for each class and property defined by Barriers Mo
    </dt>
    <dd>
     <a href="#EnvironmentBarrier" title="https://w3id.org/fuskg/barrier#EnvironmentBarrier">Environment Barrier</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#LackOfCampusSafety" title="https://w3id.org/fuskg/barrier#LackOfCampusSafety">Lack Of Campus Safety</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfParkSafety" title="https://w3id.org/fuskg/barrier#LackOfParkSafety">Lack Of Park Safety</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#LackOfSafety" title="http://purl.obolibrary.org/obo/doid.owl#LackOfSafety">Lack Of Safety</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -940,111 +467,6 @@ This section provides details for each class and property defined by Barriers Mo
    <dd>
     <a href="#SocialBarrier" title="https://w3id.org/fuskg/barrier#SocialBarrier">Social Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#LackOfColleagueSupport" title="https://w3id.org/fuskg/barrier#LackOfColleagueSupport">Lack Of Colleague Support</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfFamilySupport" title="https://w3id.org/fuskg/barrier#LackOfFamilySupport">Lack Of Family Support</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfNeighborSupport" title="https://w3id.org/fuskg/barrier#LackOfNeighborSupport">Lack Of Neighbor Support</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LakcOfFriendSupport" title="https://w3id.org/fuskg/barrier#LakcOfFriendSupport">Lakc Of Friend Support</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Light">
-  <h3>Light<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Light</p>
-  <div class="comment">
-   <span class="markdown">Light-intensity activities are common daily activities that don't require much effort. On a scale of 0 to 10, light-intensity activity is a 3 or 5. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#IntensityLevel" title="https://w3id.org/fuskg/barrier#IntensityLevel">Intensity Level</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#LightActivity">
-  <h3>Light Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#LightActivity</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#IndoorActivity" title="http://purl.obolibrary.org/obo/doid.owl#IndoorActivity">Indoor Activity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#Dancing" title="http://purl.obolibrary.org/obo/doid.owl#Dancing">Dancing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Jogging" title="https://w3id.org/fuskg/barrier#Jogging">Jogging</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#JumpRope" title="https://w3id.org/fuskg/barrier#JumpRope">Jump Rope</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#JumpingInPlace" title="http://purl.obolibrary.org/obo/doid.owl#JumpingInPlace">Jumping In Place</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#JumpingJacks" title="https://w3id.org/fuskg/barrier#JumpingJacks">Jumping Jacks</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#KickBoxing" title="http://purl.obolibrary.org/obo/doid.owl#KickBoxing">Kick Boxing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#SquatJumps" title="http://purl.obolibrary.org/obo/doid.owl#SquatJumps">Squat Jumps</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Maintenance">
-  <h3>Maintenance<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Maintenance</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Moderate">
-  <h3>Moderate<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Moderate</p>
-  <div class="comment">
-   <span class="markdown">Moderate-intensity activity is a 5 or 6 on a scale of 0 to 10. It produces noticeable increases in breathing and heart rate. A person doing moderate-intensity activity can talk but not sing. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#IntensityLevel" title="https://w3id.org/fuskg/barrier#IntensityLevel">Intensity Level</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment">
-  <h3>Needs Equipment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#IndoorActivity" title="http://purl.obolibrary.org/obo/doid.owl#IndoorActivity">Indoor Activity</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#Treadmill" title="http://purl.obolibrary.org/obo/doid.owl#Treadmill">Treadmill</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#LiftingWeights" title="http://purl.obolibrary.org/obo/doid.owl#LiftingWeights">Lifting Weights</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Patient">
-  <h3>Patient<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Patient</p>
-  <div class="comment">
-   <span class="markdown">This concept defines Patients.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#hasBehavior" title="https://w3id.org/fuskg/barrier#hasBehavior">has behavior</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDiagnosis" title="https://w3id.org/fuskg/barrier#hasDiagnosis">has diagnosis</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasInteresting" title="https://w3id.org/fuskg/barrier#hasInteresting">has interesting</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="PersonalBarrier">
@@ -1058,19 +480,13 @@ This section provides details for each class and property defined by Barriers Mo
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
    </dt>
    <dd>
     <a href="#JobCondition" title="https://w3id.org/fuskg/barrier#JobCondition">Job Condition</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#DisabilityCare" title="http://purl.obolibrary.org/obo/doid.owl#DisabilityCare">Disability Care</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#Discomfort" title="http://purl.obolibrary.org/obo/doid.owl#Discomfort">Discomfort</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Dislike" title="https://w3id.org/fuskg/barrier#Dislike">Dislike</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FinancialProblem" title="https://w3id.org/fuskg/barrier#FinancialProblem">Financial Problem</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#TimeRestriction" title="https://w3id.org/fuskg/barrier#TimeRestriction">Time Restriction</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Unfamiliar" title="https://w3id.org/fuskg/barrier#Unfamiliar">Unfamiliar</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -1082,7 +498,7 @@ This section provides details for each class and property defined by Barriers Mo
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -1102,36 +518,6 @@ This section provides details for each class and property defined by Barriers Mo
    <dd>
     <a href="#http://purl.obolibrary.org/obo/doid.owl#PhysicalBarrier" title="http://purl.obolibrary.org/obo/doid.owl#PhysicalBarrier">Physical Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#HipPain" title="http://purl.obolibrary.org/obo/doid.owl#HipPain">Hip Pain</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#KneePain" title="http://purl.obolibrary.org/obo/doid.owl#KneePain">Knee Pain</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#LegPain" title="http://purl.obolibrary.org/obo/doid.owl#LegPain">Leg Pain</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="PreContemplation">
-  <h3>Pre Contemplation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#PreContemplation</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Preparation">
-  <h3>Preparation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Preparation</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="PsychologicalBarrier">
@@ -1145,64 +531,13 @@ This section provides details for each class and property defined by Barriers Mo
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
    </dt>
    <dd>
     <a href="#Fear" title="https://w3id.org/fuskg/barrier#Fear">Fear</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#BodyImage" title="http://purl.obolibrary.org/obo/doid.owl#BodyImage">Body Image</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Emotion" title="https://w3id.org/fuskg/barrier#Emotion">Emotion</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#FeelDepressed" title="http://purl.obolibrary.org/obo/doid.owl#FeelDepressed">Feel Depressed</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#FeelEmbarrassment" title="http://purl.obolibrary.org/obo/doid.owl#FeelEmbarrassment">Feel Embarrassment</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Inactive" title="https://w3id.org/fuskg/barrier#Inactive">Inactive</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfCompany" title="https://w3id.org/fuskg/barrier#LackOfCompany">Lack Of Company</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfEnjoyment" title="https://w3id.org/fuskg/barrier#LackOfEnjoyment">Lack Of Enjoyment</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfKnowledge" title="https://w3id.org/fuskg/barrier#LackOfKnowledge">Lack Of Knowledge</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfMotivation" title="https://w3id.org/fuskg/barrier#LackOfMotivation">Lack Of Motivation</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfSelfEfficacy" title="https://w3id.org/fuskg/barrier#LackOfSelfEfficacy">Lack Of Self Efficacy</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Lazy" title="https://w3id.org/fuskg/barrier#Lazy">Lazy</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#OtherActivitiesPriorities" title="https://w3id.org/fuskg/barrier#OtherActivitiesPriorities">Other Activities Priorities</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#OtherActivityPreferences" title="https://w3id.org/fuskg/barrier#OtherActivityPreferences">Other Activity Preferences</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Shame" title="https://w3id.org/fuskg/barrier#Shame">Shame</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Stress" title="https://w3id.org/fuskg/barrier#Stress">Stress</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Racing">
-  <h3>Racing<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Racing</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise">Aerobic Excercise</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#CyclingRacing" title="https://w3id.org/fuskg/barrier#CyclingRacing">Cycling Racing</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#WalkRacing" title="https://w3id.org/fuskg/barrier#WalkRacing">Walk Racing</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Sign">
-  <h3>Sign<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Sign</p>
-  <div class="comment">
-   <span class="markdown">This concept specifies different types of sings.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#isSignOf" title="https://w3id.org/fuskg/barrier#isSignOf">is sign of</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasSign" title="https://w3id.org/fuskg/barrier#hasSign">has sign</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#AnxietyOrNervousness" title="https://w3id.org/fuskg/barrier#AnxietyOrNervousness">Anxiety Or Nervousness</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Cold" title="https://w3id.org/fuskg/barrier#Cold">Cold</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Dizziness" title="https://w3id.org/fuskg/barrier#Dizziness">Dizziness</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#HasChildren" title="https://w3id.org/fuskg/barrier#HasChildren">Has Children</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#HasDisabilityCare" title="https://w3id.org/fuskg/barrier#HasDisabilityCare">Has Disability Care</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#HasFamily" title="https://w3id.org/fuskg/barrier#HasFamily">Has Family</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#HasFullTimeJob" title="https://w3id.org/fuskg/barrier#HasFullTimeJob">Has Full Time Job</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#HasFullTimeStudy" title="https://w3id.org/fuskg/barrier#HasFullTimeStudy">Has Full Time Study</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Headache" title="https://w3id.org/fuskg/barrier#Headache">Headache</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Hot" title="https://w3id.org/fuskg/barrier#Hot">Hot</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Hunger" title="https://w3id.org/fuskg/barrier#Hunger">Hunger</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#IrritabilityOrMoodiness" title="https://w3id.org/fuskg/barrier#IrritabilityOrMoodiness">Irritability Or Moodiness</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Raining" title="https://w3id.org/fuskg/barrier#Raining">Raining</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Shakiness" title="https://w3id.org/fuskg/barrier#Shakiness">Shakiness</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Sweating" title="https://w3id.org/fuskg/barrier#Sweating">Sweating</a> <sup class="type-ni" title="named individual">ni</sup>
    </dd>
   </dl>
  </div>
@@ -1217,7 +552,7 @@ This section provides details for each class and property defined by Barriers Mo
     has super-classes
    </dt>
    <dd>
-    <a href="https://w3id.org/fuskg/core#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
+    <a href="https://ida-fbk.github.io/FuS-KG/documentation/html-docs/modules/Core/index-en.html#Barrier" target="_blank" title="https://w3id.org/fuskg/core#Barrier">Barrier</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     has sub-classes
@@ -1225,186 +560,18 @@ This section provides details for each class and property defined by Barriers Mo
    <dd>
     <a href="#LackOfSupport" title="https://w3id.org/fuskg/barrier#LackOfSupport">Lack of Support</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#LackOfColleagueSupport" title="https://w3id.org/fuskg/barrier#LackOfColleagueSupport">Lack Of Colleague Support</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#LackOfFriendSupport" title="http://purl.obolibrary.org/obo/doid.owl#LackOfFriendSupport">Lack Of Friend Support</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#LackOfPartner" title="http://purl.obolibrary.org/obo/doid.owl#LackOfPartner">Lack Of Partner</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#LackOfPartner" title="https://w3id.org/fuskg/barrier#LackOfPartner">Lack Of Partner</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#LackOfSocialSupport" title="http://purl.obolibrary.org/obo/doid.owl#LackOfSocialSupport">Lack Of Social Support</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="StageOfChange">
-  <h3>State of Change<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#StageOfChange</p>
-  <div class="comment">
-   <span class="markdown">This concept pecifies the states of change of a patient.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#Action" title="https://w3id.org/fuskg/barrier#Action">Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Contemplation" title="https://w3id.org/fuskg/barrier#Contemplation">Contemplation</a> <sup class="type-c" title="class">c</sup>, <a href="#Maintenance" title="https://w3id.org/fuskg/barrier#Maintenance">Maintenance</a> <sup class="type-c" title="class">c</sup>, <a href="#PreContemplation" title="https://w3id.org/fuskg/barrier#PreContemplation">Pre Contemplation</a> <sup class="type-c" title="class">c</sup>, <a href="#Preparation" title="https://w3id.org/fuskg/barrier#Preparation">Preparation</a> <sup class="type-c" title="class">c</sup>, <a href="#Termination" title="https://w3id.org/fuskg/barrier#Termination">Termination</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#hasBehavior" title="https://w3id.org/fuskg/barrier#hasBehavior">has behavior</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Swimming">
-  <h3>Swimming<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Swimming</p>
-  <div class="comment">
-   <span class="markdown">Swimming is an excellent form of exercise as it gives a full-body workout https://www.openactive.io/activity-list/#physical-activities---s</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise" title="http://aimlab.cs.uoregon.edu/smash/ontologies/physical-activity.owl#AerobicExcercise">Aerobic Excercise</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#BackstrokeSwimming" title="https://w3id.org/fuskg/barrier#BackstrokeSwimming">Backstroke Swimming</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#BreaststrokeSwimming" title="https://w3id.org/fuskg/barrier#BreaststrokeSwimming">Breaststroke Swimming</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#ButterflySwimming" title="https://w3id.org/fuskg/barrier#ButterflySwimming">Butterfly Swimming</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#FreestyleSwimming" title="https://w3id.org/fuskg/barrier#FreestyleSwimming">Freestyle Swimming</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#Swimming" title="http://purl.obolibrary.org/obo/doid.owl#Swimming">Swimming</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Termination">
-  <h3>Termination<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Termination</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#Treadmill">
-  <h3>Treadmill<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#Treadmill</p>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment" title="http://purl.obolibrary.org/obo/doid.owl#NeedsEquipment">Needs Equipment</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has members
-   </dt>
-   <dd>
-    <a href="#http://purl.obolibrary.org/obo/doid.owl#CrabWalk" title="http://purl.obolibrary.org/obo/doid.owl#CrabWalk">Crab Walk</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#InclinePushups" title="http://purl.obolibrary.org/obo/doid.owl#InclinePushups">Incline Pushups</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#LowSideShuffles" title="http://purl.obolibrary.org/obo/doid.owl#LowSideShuffles">Low Side Shuffles</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#ReverseMountainClimbers" title="http://purl.obolibrary.org/obo/doid.owl#ReverseMountainClimbers">Reverse Mountain Climbers</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#SideShuffles" title="http://purl.obolibrary.org/obo/doid.owl#SideShuffles">Side Shuffles</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#TreadmillPush" title="http://purl.obolibrary.org/obo/doid.owl#TreadmillPush">Treadmill Push</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#WalkingLunges" title="http://purl.obolibrary.org/obo/doid.owl#WalkingLunges">Walking Lunges</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#WalkingOrJoggingOntreadmill" title="http://purl.obolibrary.org/obo/doid.owl#WalkingOrJoggingOntreadmill">Walking Or Jogging Ontreadmill</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#WalkingPlank" title="http://purl.obolibrary.org/obo/doid.owl#WalkingPlank">Walking Plank</a> <sup class="type-ni" title="named individual">ni</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Vigorous">
-  <h3>Vigorous<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#Vigorous</p>
-  <div class="comment">
-   <span class="markdown">Vigorous-intensity activity is a 7 or 8 on a scale of 0 to 10. Vigorous-intensity activities make your heart, lungs, and muscles work hard. https://www.nhlbi.nih.gov/health-topics/physical-activity-and-your-heart</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#IntensityLevel" title="https://w3id.org/fuskg/barrier#IntensityLevel">Intensity Level</a> <sup class="type-c" title="class">c</sup>
-   </dd>
   </dl>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#hasBehavior" title="https://w3id.org/fuskg/barrier#hasBehavior">has behavior</a></li>
-  <li><a href="#hasDiagnosis" title="https://w3id.org/fuskg/barrier#hasDiagnosis">has diagnosis</a></li>
-  <li><a href="#hasDisease" title="https://w3id.org/fuskg/barrier#hasDisease">has disease</a></li>
-  <li><a href="#hasIntensity" title="https://w3id.org/fuskg/barrier#hasIntensity">has intensity</a></li>
-  <li><a href="#hasInteresting" title="https://w3id.org/fuskg/barrier#hasInteresting">has interesting</a></li>
-  <li><a href="#hasSign" title="https://w3id.org/fuskg/barrier#hasSign">has sign</a></li>
-  <li><a href="#hasSuitable" title="https://w3id.org/fuskg/barrier#hasSuitable">has suitable</a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#hasType" title="http://purl.obolibrary.org/obo/doid.owl#hasType"> <span>has Type</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#isDefineBy" title="http://purl.obolibrary.org/obo/doid.owl#isDefineBy"> <span>is Define By</span> </a></li>
-  <li><a href="#isSignOf" title="https://w3id.org/fuskg/barrier#isSignOf">is sign of</a></li>
-  <li><a href="#isSuitableFor" title="https://w3id.org/fuskg/barrier#isSuitableFor">is suitable for</a></li>
-  <li><a href="#isTriggeredBy" title="https://w3id.org/fuskg/barrier#isTriggeredBy">is triggered by</a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#isTypeOf" title="http://purl.obolibrary.org/obo/doid.owl#isTypeOf"> <span>is Type Of</span> </a></li>
+  <li><a href="#hasFeature" title="https://w3id.org/fuskg/barrier#hasFeature">has feature</a></li>
  </ul>
- <div class="entity" id="hasBehavior">
-  <h3>has behavior<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasBehavior</p>
+ <div class="entity" id="hasFeature">
+  <h3>has feature<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasFeature</p>
   <div class="comment">
-   <span class="markdown">This property specifies the State of change a Patient is in.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Patient" title="https://w3id.org/fuskg/barrier#Patient">Patient</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#StageOfChange" title="https://w3id.org/fuskg/barrier#StageOfChange">State of Change</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasDiagnosis">
-  <h3>has diagnosis<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasDiagnosis</p>
-  <div class="comment">
-   <span class="markdown">This property specifies the diagnosis of a Patient connecting the istance of the patient to an instance of the class DiseaseRelation.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Patient" title="https://w3id.org/fuskg/barrier#Patient">Patient</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#DiseaseRelation" title="https://w3id.org/fuskg/barrier#DiseaseRelation">Disease Relation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasDisease">
-  <h3>has disease<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasDisease</p>
-  <div class="comment">
-   <span class="markdown">The hasDisease property can be called diseaseValue (the type of disease) http://www.w3.org/TR/swbp-n-aryRelations/.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#DiseaseRelation" title="https://w3id.org/fuskg/barrier#DiseaseRelation">Disease Relation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasIntensity">
-  <h3>has intensity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasIntensity</p>
-  <div class="comment">
-   <span class="markdown">This property defines the intensity of an instance.</span>
+   <span class="markdown">This property specifies the Feature of Interest relating to a Barrier.</span>
   </div>
   <div class="description">
    <dl>
@@ -1412,369 +579,7 @@ This section provides details for each class and property defined by Barriers Mo
      has range
     </dt>
     <dd>
-     <a href="#IntensityLevel" title="https://w3id.org/fuskg/barrier#IntensityLevel">Intensity Level</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasInteresting">
-  <h3>has interesting<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasInteresting</p>
-  <div class="comment">
-   <span class="markdown">This property specifies what a Patient finds interesting.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Patient" title="https://w3id.org/fuskg/barrier#Patient">Patient</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasSign">
-  <h3>has sign<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasSign</p>
-  <div class="comment">
-   <span class="markdown">This property specifies the Sign relating to the doman instance.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Sign" title="https://w3id.org/fuskg/barrier#Sign">Sign</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#isSignOf" title="https://w3id.org/fuskg/barrier#isSignOf">is sign of</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasSuitable">
-  <h3>has suitable<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#hasSuitable</p>
-  <div class="comment">
-   <span class="markdown">This property specifies what the domain instance has suitable.</span>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#hasType">
-  <h3>has Type<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#hasType</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#HealthBarrier" title="https://w3id.org/fuskg/barrier#HealthBarrier">Health Barrier</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#isDefineBy">
-  <h3>is Define By<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#isDefineBy</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#HealthBarrier" title="https://w3id.org/fuskg/barrier#HealthBarrier">Health Barrier</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="isSignOf">
-  <h3>is sign of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#isSignOf</p>
-  <div class="comment">
-   <span class="markdown">This property specifies what the Sign signifies.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Sign" title="https://w3id.org/fuskg/barrier#Sign">Sign</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#hasSign" title="https://w3id.org/fuskg/barrier#hasSign">has sign</a> <sup class="type-op" title="object property">op</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="isSuitableFor">
-  <h3>is suitable for<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#isSuitableFor</p>
-  <div class="comment">
-   <span class="markdown">This property specifies what is suitable for the domain instance.</span>
-  </div>
- </div>
- <div class="entity" id="isTriggeredBy">
-  <h3>is triggered by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://w3id.org/fuskg/barrier#isTriggeredBy</p>
-  <div class="comment">
-   <span class="markdown">This property specifies the HealthBarrier that is triggered by the DiseaseRelation.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#HealthBarrier" title="https://w3id.org/fuskg/barrier#HealthBarrier">Health Barrier</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#DiseaseRelation" title="https://w3id.org/fuskg/barrier#DiseaseRelation">Disease Relation</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#isTypeOf">
-  <h3>is Type Of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#isTypeOf</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#HealthBarrier" title="https://w3id.org/fuskg/barrier#HealthBarrier">Health Barrier</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
- <h3 id="dataproperties-headline" class="list">Data Properties</h3>
- <ul class="hlist">
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#address" title="http://purl.obolibrary.org/obo/doid.owl#address"> <span>address</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#city" title="http://purl.obolibrary.org/obo/doid.owl#city"> <span>city</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#contactNumber" title="http://purl.obolibrary.org/obo/doid.owl#contactNumber"> <span>contact Number</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#country" title="http://purl.obolibrary.org/obo/doid.owl#country"> <span>country</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#DOB" title="http://purl.obolibrary.org/obo/doid.owl#DOB"> <span>D O B</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#firstName" title="http://purl.obolibrary.org/obo/doid.owl#firstName"> <span>first Name</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#lastName" title="http://purl.obolibrary.org/obo/doid.owl#lastName"> <span>last Name</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#postcode" title="http://purl.obolibrary.org/obo/doid.owl#postcode"> <span>postcode</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#state" title="http://purl.obolibrary.org/obo/doid.owl#state"> <span>state</span> </a></li>
-  <li><a href="#http://purl.obolibrary.org/obo/doid.owl#street" title="http://purl.obolibrary.org/obo/doid.owl#street"> <span>street</span> </a></li>
- </ul>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#address">
-  <h3>address<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#address</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.obolibrary.org/obo/doid.owl#PatientProperty" target="_blank" title="http://purl.obolibrary.org/obo/doid.owl#PatientProperty">Patient Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has sub-properties
-    </dt>
-    <dd>
-     <a href="#http://purl.obolibrary.org/obo/doid.owl#city" title="http://purl.obolibrary.org/obo/doid.owl#city">city</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#country" title="http://purl.obolibrary.org/obo/doid.owl#country">country</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#postcode" title="http://purl.obolibrary.org/obo/doid.owl#postcode">postcode</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#state" title="http://purl.obolibrary.org/obo/doid.owl#state">state</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.obolibrary.org/obo/doid.owl#street" title="http://purl.obolibrary.org/obo/doid.owl#street">street</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#city">
-  <h3>city<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#city</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="#http://purl.obolibrary.org/obo/doid.owl#address" title="http://purl.obolibrary.org/obo/doid.owl#address">address</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#contactNumber">
-  <h3>contact Number<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#contactNumber</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.obolibrary.org/obo/doid.owl#PatientProperty" target="_blank" title="http://purl.obolibrary.org/obo/doid.owl#PatientProperty">Patient Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#country">
-  <h3>country<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#country</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="#http://purl.obolibrary.org/obo/doid.owl#address" title="http://purl.obolibrary.org/obo/doid.owl#address">address</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#DOB">
-  <h3>D O B<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#DOB</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.obolibrary.org/obo/doid.owl#PatientProperty" target="_blank" title="http://purl.obolibrary.org/obo/doid.owl#PatientProperty">Patient Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#firstName">
-  <h3>first Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#firstName</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.obolibrary.org/obo/doid.owl#PatientProperty" target="_blank" title="http://purl.obolibrary.org/obo/doid.owl#PatientProperty">Patient Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#lastName">
-  <h3>last Name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#lastName</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.obolibrary.org/obo/doid.owl#PatientProperty" target="_blank" title="http://purl.obolibrary.org/obo/doid.owl#PatientProperty">Patient Property</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#postcode">
-  <h3>postcode<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#postcode</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="#http://purl.obolibrary.org/obo/doid.owl#address" title="http://purl.obolibrary.org/obo/doid.owl#address">address</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#state">
-  <h3>state<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#state</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="#http://purl.obolibrary.org/obo/doid.owl#address" title="http://purl.obolibrary.org/obo/doid.owl#address">address</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="http://purl.obolibrary.org/obo/doid.owl#street">
-  <h3>street<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://purl.obolibrary.org/obo/doid.owl#street</p>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="#http://purl.obolibrary.org/obo/doid.owl#address" title="http://purl.obolibrary.org/obo/doid.owl#address">address</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+     <a href="#FeatureOfInterest" title="https://w3id.org/fuskg/barrier#FeatureOfInterest">Feature of Interest</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
