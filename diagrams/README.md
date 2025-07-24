@@ -50,7 +50,7 @@ Each activity is connected to a **SpecializedActivity** based on the practitione
 The **Barrier** module imports the **Core** module and include:
 
 - **CognitiveBarrier**, **HealthBarrier**, **PsychologicalBarrier**, **PhysicalBarrier**: Categories of barriers affecting activities, foods, or nutrients.
-- **FeatureOfInterest**: Specifies the feature of interest relating to a barrier.
+- **FeatureOfInterest**: Specifies the feature of interest relating to a barrier.  For example, the fact that it is raining FeatureOfInterest is connected to the weather condition barrier EnvironmentBarrier.
 
 ### 5. Disease Module
 The **Disease** module imports the **Food** module and models food-disease relationships using the **DiseaseRiskLevel** concept. Key properties include:
@@ -101,6 +101,9 @@ The **Guidelines** module imports the **Barrier** and **Temporal** modules. It m
 The **User** module imports the **Guidelines** module, enabling the storage of user data collected through sensors, mobile applications, or other means. Key concepts include:
 
 - **User** and **Profile**: Represent a user and their profile.
+- **Profile**: Defines the user's personal attributes and characteristics.
+- **ConsumedFood**: Identifies the food consumed by the user during a **Meal**.
 - **PerformedActivity** and **ConsumedFood**: Track activities performed and foods consumed by the user during a meal.
 - **Violation**: Represents a list of a user's violations.
-
+- **StageOfChange**: Represents the attitude toward changing behavior a user may be in (such as Pre-contemplation, Contemplation, Preparation, Action, Termination or Maintenance).
+- **DiseaseConditionRelation:** Specifies a complex object representing the current status (i.e., **CurrentCondition**) of a disease a user has that can also trigger some barriers.
