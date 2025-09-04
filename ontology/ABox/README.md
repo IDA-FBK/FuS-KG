@@ -1,6 +1,6 @@
 # Abox
 
-- **fuskg-activities-instatiated.ttl:** contains activity from [Compendium of Physical Activities](https://pacompendium.com/).
+- **fuskg-activity-instatiated.ttl:** contains activity from [Compendium of Physical Activities](https://pacompendium.com/).
 - **fuskg-barriers-instatiated.ttl:** contains instances of barriers.
 - **fuskg-recipes-labels-recipe1m.ttl:** contains recipe labels of [recipe1m+](https://im2recipe.csail.mit.edu/) dataset.
 - **fuskg-recipes-labels-tasty.ttl:** contains recipe labels of [tasty](https://cvml.comp.nus.edu.sg/tasty/) dataset.
