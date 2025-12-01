@@ -1,4 +1,4 @@
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook) [![HTML Documentation](https://img.shields.io/badge/Widoco-Documentation-blue)](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/IDA-FBK/FuS-KG/tree/main/notebook) [![HTML Documentation](https://img.shields.io/badge/Widoco-Documentation-blue)](https://ida-fbk.github.io/FuS-KG/documentation/html-docs/index.html) [![DOI](https://zenodo.org/badge/779478626.svg)](https://doi.org/10.5281/zenodo.17778666)
 
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
